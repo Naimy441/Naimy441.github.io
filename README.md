@@ -1,4 +1,4 @@
-# 🍊 Duke Halal Menu Scraper — How to Use
+# Duke Halal Menu Scraper — How to Use
 
 ## 1. Install Python
 

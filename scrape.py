@@ -5,6 +5,11 @@ from selenium.common.exceptions import NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 
+from reportlab.lib.pagesizes import letter
+from reportlab.lib import colors
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Table, TableStyle, Spacer, PageBreak
+from reportlab.lib.styles import getSampleStyleSheet
+
 # Initialize driver
 print("Initializing Chrome driver...")
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
@@ -183,16 +188,61 @@ for unit in units:
         safe_click(By.XPATH, '//a[contains(text(), "Back")]', "Back (error recovery)")
         continue
 
+driver.quit()
+
 print("\n[✔] Scraping complete. Writing to file...")
 
+# Filter out restaurants with no menu items
+non_empty_halal_data = {
+    r: cats for r, cats in halal_data.items()
+    if any(meals for meals in cats.values())
+}
+
+# Optional TXT logging (can be removed if only using PDF)
 with open("halal_menus.txt", "w", encoding="utf-8") as f:
-    for restaurant, categories in halal_data.items():
+    for restaurant, categories in non_empty_halal_data.items():
         f.write(f"{restaurant}\n")
         for category, meals in categories.items():
+            if not meals:
+                continue
             f.write(f"  {category}:\n")
             for meal in meals:
                 f.write(f"    - {meal}\n")
         f.write("\n")
-
 print("[✓] Data written to halal_menus.txt")
-driver.quit()
+
+print("\n[✔] Generating colorful PDF...")
+
+doc = SimpleDocTemplate("halal_menus.pdf", pagesize=letter)
+elements = []
+styles = getSampleStyleSheet()
+
+for idx, (restaurant, categories) in enumerate(non_empty_halal_data.items()):
+    elements.append(Paragraph(f"<b>{restaurant}</b>", styles['Title']))
+    elements.append(Spacer(1, 10))
+    
+    for category, meals in categories.items():
+        if not meals:
+            continue
+        data = [[f"{category}"]] + [[meal] for meal in meals]
+        t = Table(data, colWidths=[500])
+        t.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (-1, 0), colors.lightblue),
+            ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+            ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
+            ('TEXTCOLOR', (0, 1), (-1, -1), colors.black),
+            ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+            ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+            ('FONTNAME', (0, 1), (-1, -1), 'Helvetica'),
+            ('FONTSIZE', (0, 0), (-1, -1), 10),
+            ('BOTTOMPADDING', (0, 0), (-1, 0), 6),
+            ('GRID', (0, 0), (-1, -1), 0.25, colors.grey),
+        ]))
+        elements.append(t)
+        elements.append(Spacer(1, 12))
+
+    if idx < len(non_empty_halal_data) - 1:
+        elements.append(PageBreak())
+
+doc.build(elements)
+print("[✓] PDF saved as 'halal_menus.pdf'")
