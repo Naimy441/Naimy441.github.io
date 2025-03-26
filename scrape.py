@@ -98,20 +98,25 @@ for unit in units:
                                     halal_data[name][current_category] = []
                             except NoSuchElementException as e:
                                 print(f"    [X] Failed to extract category: {e}")
-                                current_category = None
+                                current_category = "Uncategorized"
+                                if current_category not in halal_data[name]:
+                                    halal_data[name][current_category] = []
 
                         elif "itemPrimaryRow" in row_class or "itemAlternateRow" in row_class:
-                            if current_category:
-                                try:
-                                    meal_elem = row.find_element(By.CSS_SELECTOR, "td a.cbo_nn_itemHover")
-                                    meal_full_text = meal_elem.get_attribute("innerText").strip()
-                                    meal_name = meal_full_text.split("\n")[0]
-                                    if meal_name:
-                                        print(f"      [Meal] {meal_name}")
-                                        if meal_name not in halal_data[name][current_category]:
-                                            halal_data[name][current_category].append(meal_name)
-                                except NoSuchElementException:
-                                    print("      [!] Meal link not found in row.")
+                            if not current_category:
+                                current_category = "Uncategorized"
+                                if current_category not in halal_data[name]:
+                                    halal_data[name][current_category] = []
+                            try:
+                                meal_elem = row.find_element(By.CSS_SELECTOR, "td a.cbo_nn_itemHover")
+                                meal_full_text = meal_elem.get_attribute("innerText").strip()
+                                meal_name = meal_full_text.split("\n")[0]
+                                if meal_name:
+                                    print(f"      [Meal] {meal_name}")
+                                    if meal_name not in halal_data[name][current_category]:
+                                        halal_data[name][current_category].append(meal_name)
+                            except NoSuchElementException:
+                                print("      [!] Meal link not found in row.")
 
                 # Go back to restaurant list
                 safe_click(By.XPATH, '//a[contains(text(), "Back")]', "Back to restaurant list")
