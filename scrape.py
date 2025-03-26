@@ -3,20 +3,31 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
 import time
 
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
+from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib.pagesizes import letter
 from reportlab.lib import colors
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Table, TableStyle, Spacer, PageBreak
-from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib.enums import TA_LEFT
+from reportlab.lib.styles import ParagraphStyle
+
+options = Options()
+options.add_argument("--no-first-run")
+options.add_argument("--no-default-browser-check")
+options.add_argument("--disable-default-apps")
+options.add_argument("--guest")  # Optional: forces a guest session
+
+SECONDS_TO_WAIT = 1
 
 # Initialize driver
 print("Initializing Chrome driver...")
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 driver.get("https://netnutrition.cbord.com/nn-prod/Duke")
 print("Page loaded.")
 
-def safe_click(by, selector, desc="element", delay=0.5):
+def safe_click(by, selector, desc="element", delay=SECONDS_TO_WAIT):
     try:
         elem = driver.find_element(by, selector)
         driver.execute_script("arguments[0].click();", elem)
@@ -29,12 +40,12 @@ def safe_click(by, selector, desc="element", delay=0.5):
 
 # Step 1: Dismiss modal
 print("\n[Step 1] Dismissing modal...")
-time.sleep(0.2)
+time.sleep(SECONDS_TO_WAIT)
 safe_click(By.XPATH, '//button[contains(@onclick, "setIgnoreMobileDisc")]', "Continue button")
 
 # Step 2: Click "Only show Halal" in traitsPanel
 print("\n[Step 2] Applying Halal filter...")
-time.sleep(0.2)
+time.sleep(SECONDS_TO_WAIT)
 safe_click(By.ID, "pref_-99", "Halal filter")
 
 # Step 3: Iterate through open dining units
@@ -53,7 +64,7 @@ for unit in units:
         name = unit.find_element(By.TAG_NAME, "a").text.strip()
         print(f"\n[Unit] Opening: {name}")
         driver.execute_script("arguments[0].click();", unit.find_element(By.TAG_NAME, "a"))
-        time.sleep(0.5)
+        time.sleep(SECONDS_TO_WAIT)
 
         # Locate menu panel
         menu_links = []
@@ -137,7 +148,7 @@ for unit in units:
                 label = menu_link.text.strip()
                 print(f"\n[Menu] Clicking: {label}")
                 driver.execute_script("arguments[0].click();", menu_link)
-                time.sleep(0.5)
+                time.sleep(SECONDS_TO_WAIT)
 
                 item_panel = driver.find_element(By.ID, "itemPanel")
                 panel_text = item_panel.text
@@ -221,33 +232,52 @@ print("\n[✔] Generating colorful PDF...")
 doc = SimpleDocTemplate("halal_menus.pdf", pagesize=letter)
 elements = []
 styles = getSampleStyleSheet()
+title_style = styles['Title']
+normal_style = styles['Normal']
+
+table_header_style = ParagraphStyle(
+    'TableHeader',
+    parent=styles['Normal'],
+    fontName='Helvetica-Bold',
+    fontSize=10,
+    textColor=colors.white,
+    alignment=TA_LEFT,
+    spaceAfter=6
+)
 
 for idx, (restaurant, categories) in enumerate(non_empty_halal_data.items()):
-    elements.append(Paragraph(f"<b>{restaurant}</b>", styles['Title']))
-    elements.append(Spacer(1, 10))
-    
+    section_elements = []
+
+    section_elements.append(Paragraph(restaurant, title_style))
+    section_elements.append(Spacer(1, 8))
+
     for category, meals in categories.items():
         if not meals:
             continue
-        data = [[f"{category}"]] + [[meal] for meal in meals]
+
+        data = [[Paragraph(category, table_header_style)]] + [
+            [Paragraph(meal, normal_style)] for meal in meals
+        ]
+
         t = Table(data, colWidths=[500])
         t.setStyle(TableStyle([
-            ('BACKGROUND', (0, 0), (-1, 0), colors.lightblue),
-            ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
-            ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
+            ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor("#003366")),
+            ('TEXTCOLOR', (0, 0), (-1, 0), colors.white),
+            ('BACKGROUND', (0, 1), (-1, -1), colors.HexColor("#f0f4f7")),
             ('TEXTCOLOR', (0, 1), (-1, -1), colors.black),
             ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
             ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
             ('FONTNAME', (0, 1), (-1, -1), 'Helvetica'),
-            ('FONTSIZE', (0, 0), (-1, -1), 10),
+            ('FONTSIZE', (0, 0), (-1, -1), 9),
+            ('TOPPADDING', (0, 1), (-1, -1), 4),
             ('BOTTOMPADDING', (0, 0), (-1, 0), 6),
             ('GRID', (0, 0), (-1, -1), 0.25, colors.grey),
         ]))
-        elements.append(t)
-        elements.append(Spacer(1, 12))
 
-    if idx < len(non_empty_halal_data) - 1:
-        elements.append(PageBreak())
+        section_elements.append(t)
+        section_elements.append(Spacer(1, 10))
+
+    elements.extend(section_elements)
 
 doc.build(elements)
 print("[✓] PDF saved as 'halal_menus.pdf'")
