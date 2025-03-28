@@ -31,6 +31,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions@github.com"
           git add halal_menus.pdf
-          git commit -m "Update PDF $(date -u)" || echo "No changes to commit"
+          git add halal_menus.txt
+          git commit -m "Scraped NetNutrition $(date -u)" || echo "No changes to commit"
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
           git push origin HEAD:main
