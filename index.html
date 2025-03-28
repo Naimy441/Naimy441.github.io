@@ -18,6 +18,12 @@
   </style>
 </head>
 <body>
-  <embed src="halal_menus.pdf" type="application/pdf" />
+  <script>
+    var embed = document.createElement('embed');
+    // Append a unique timestamp as a query parameter to stop caching
+    embed.src = "halal_menus.pdf?v=" + new Date().getTime();
+    embed.type = "application/pdf";
+    document.body.appendChild(embed);
+  </script>
 </body>
 </html>
