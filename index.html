@@ -9,19 +9,13 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      overflow: hidden;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
     }
   </style>
 </head>
 <body>
-  <iframe src="halal_menus.pdf?v=<?= Date.now() ?>"></iframe>
   <script>
-    document.querySelector('iframe').src = "halal_menus.pdf?v=" + new Date().getTime();
+    // Force reload PDF with cache busting
+    window.location.href = "halal_menus.pdf?v=" + new Date().getTime();
   </script>
 </body>
 </html>
