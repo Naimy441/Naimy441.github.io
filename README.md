@@ -1,5 +1,18 @@
 # Duke Halal Menu Scraper — How to Use
 
+Visit the website [naimy441.github.io](https://naimy441.github.io) to view the latest PDF version of the halal menus.
+
+Alternatively, you can clone this repository and use the scraper scripts provided:
+
+- Use `scrape.py` to run the scraper with an open Chrome window (useful for debugging or watching the scraper in action).
+- Use `bot_scrape.py` to run the scraper in headless mode (recommended for automation or GitHub Actions).
+
+The scripts generate two files:
+- `halal_menus.pdf`: A nicely formatted, colorful PDF version of the scraped menus.
+- `halal_menus.txt`: A simplified, plain-text version of the menus.
+
+---
+
 ## 1. Install Python
 
 Make sure you have **Python 3.x** installed. You can check by running:
@@ -22,23 +35,26 @@ pip install -r requirements.txt
 
 This will install:
 
-- **selenium**: browser automation library  
-- **webdriver-manager**: automatically downloads the right version of ChromeDriver
+- **selenium**: Browser automation library  
+- **webdriver-manager**: Automatically downloads the correct version of ChromeDriver
+- **reportlab**: Generates PDF output
 
 ---
 
 ## 3. Run the Script
 
-Save your script as a file, for example:
+After cloning the repository, navigate to its directory and run one of the following scripts:
+
+**For visual (windowed) scraping:**
 
 ```bash
-halal_scraper.py
+python scrape.py
 ```
 
-Then run it with:
+**For headless scraping (no visible browser window):**
 
 ```bash
-python halal_scraper.py
+python bot_scrape.py
 ```
 
 ---
@@ -50,15 +66,16 @@ python halal_scraper.py
 - Applies the “Halal” filter  
 - Visits each **open** dining unit  
 - Collects **menu categories and Halal meals**  
-- Writes the result into a file named:
+- Writes the result into two output files:
 
 ```
 halal_menus.txt
+halal_menus.pdf
 ```
 
 ---
 
-## 5. Output Example
+## 5. Output Example (`halal_menus.txt`)
 
 ```
 Gothic Grill
@@ -68,11 +85,12 @@ Gothic Grill
     - Beef Patty
 ```
 
+The PDF version (`halal_menus.pdf`) will have a similar layout but in a visually appealing format.
+
 ---
 
 ## 6. Notes
 
-- Make sure **Google Chrome** is installed (it’s used by Selenium)  
-- Don’t worry about ChromeDriver — `webdriver-manager` handles it  
-- The script skips **closed restaurants** and filters out **duplicate meal names**
-
+- Ensure **Google Chrome** is installed (required by Selenium).
+- ChromeDriver installation is automatic, handled by `webdriver-manager`.
+- The script automatically skips **closed restaurants** and removes **duplicate meal names**.
