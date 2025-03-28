@@ -20,9 +20,9 @@ jobs:
         run: |
           pip install selenium webdriver-manager reportlab
 
-      - name: Run Selenium script
+      - name: Run Selenium script in Headless
         run: |
-          python scrape.py
+          python bot_scrape.py
 
       - name: Commit PDF to repo
         run: |
