@@ -20,6 +20,7 @@ options.add_argument("--no-default-browser-check")
 options.add_argument("--disable-default-apps")
 options.add_argument("--no-sandbox")               # Needed for GitHub Actions
 options.add_argument("--disable-dev-shm-usage")      # Prevents issues with limited /dev/shm space
+options.add_argument("--window-size=1920,1080")
 
 SECONDS_TO_WAIT = 1
 
