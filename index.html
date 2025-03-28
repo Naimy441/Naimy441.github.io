@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Halal @ Duke</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     html, body {
       margin: 0;
@@ -10,20 +11,17 @@
       height: 100%;
       overflow: hidden;
     }
-    embed {
-      display: block;
+    iframe {
       width: 100%;
       height: 100%;
+      border: none;
     }
   </style>
 </head>
 <body>
+  <iframe src="halal_menus.pdf?v=<?= Date.now() ?>"></iframe>
   <script>
-    var embed = document.createElement('embed');
-    // Append a unique timestamp as a query parameter to stop caching
-    embed.src = "halal_menus.pdf?v=" + new Date().getTime();
-    embed.type = "application/pdf";
-    document.body.appendChild(embed);
+    document.querySelector('iframe').src = "halal_menus.pdf?v=" + new Date().getTime();
   </script>
 </body>
 </html>
