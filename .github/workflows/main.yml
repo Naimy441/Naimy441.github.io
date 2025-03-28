@@ -1,0 +1,33 @@
+name: Scrape
+
+on:
+  schedule:
+    - cron: '5 15 * * *'
+  workflow_dispatch:
+
+jobs:
+  selenium-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install selenium webdriver-manager reportlab
+
+      - name: Run Selenium script
+        run: |
+          python scrape.py
+
+      - name: Commit PDF to repo
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add halal_menus.pdf
+          git commit -m "Update PDF $(date -u)" || echo "No changes to commit"
+          git push origin main
