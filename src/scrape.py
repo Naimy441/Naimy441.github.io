@@ -215,7 +215,7 @@ non_empty_halal_data = {
 }
 
 # Optional TXT logging (can be removed if only using PDF)
-with open("halal_menus.txt", "w", encoding="utf-8") as f:
+with open("outputs/halal_menus.txt", "w", encoding="utf-8") as f:
     for restaurant, categories in non_empty_halal_data.items():
         f.write(f"{restaurant}\n")
         for category, meals in categories.items():
@@ -229,7 +229,7 @@ print("[✓] Data written to halal_menus.txt")
 
 print("\n[✔] Generating colorful PDF...")
 
-doc = SimpleDocTemplate("halal_menus.pdf", pagesize=letter)
+doc = SimpleDocTemplate("outputs/halal_menus.pdf", pagesize=letter)
 elements = []
 styles = getSampleStyleSheet()
 title_style = styles['Title']

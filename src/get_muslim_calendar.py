@@ -65,7 +65,7 @@ styles.add(ParagraphStyle(name='EventInfo', fontSize=11, leading=14))
 styles.add(ParagraphStyle(name='Description', fontSize=10, leading=13, spaceAfter=10))
 
 # --- Document ---  
-doc = SimpleDocTemplate("muslim_calendar.pdf", pagesize=letter,
+doc = SimpleDocTemplate("outputs/muslim_calendar.pdf", pagesize=letter,
                         rightMargin=40, leftMargin=40, topMargin=40, bottomMargin=40)
 story = []
 
