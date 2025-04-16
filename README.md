@@ -1,15 +1,17 @@
-# Duke Halal Menu Scraper — How to Use
+# Islam @ Duke Scraper — How to Use
 
-Visit the website [naimy441.github.io](https://naimy441.github.io) to view the latest PDF version of the halal menus.
+Visit the website [naimy441.github.io](https://naimy441.github.io) to view the latest PDF version of the halal menus and muslim events.
 
 Alternatively, you can clone this repository and use the scraper scripts provided:
 
 - Use `scrape.py` to run the scraper with an open Chrome window (useful for debugging or watching the scraper in action).
 - Use `bot_scrape.py` to run the scraper in headless mode (recommended for automation or GitHub Actions).
+- Use `get_muslim_calendar.py` to get ICS resource from DukeGroups and output as PDF.
 
 The scripts generate two files:
 - `halal_menus.pdf`: A nicely formatted, colorful PDF version of the scraped menus.
 - `halal_menus.txt`: A simplified, plain-text version of the menus.
+- `muslim_calendar.py`: A nicely formatted, colorful PDF version of the scraped events.
 
 ---
 
@@ -38,6 +40,7 @@ This will install:
 - **selenium**: Browser automation library  
 - **webdriver-manager**: Automatically downloads the correct version of ChromeDriver
 - **reportlab**: Generates PDF output
+- **requests**: Pulls ICS feed for calendar
 
 ---
 
@@ -71,6 +74,13 @@ python bot_scrape.py
 ```
 halal_menus.txt
 halal_menus.pdf
+```
+
+- The script gets the ICS feed directly from DukeGroups
+- Writes the result into one output files:
+
+```
+muslim_calendar.pdf
 ```
 
 ---
