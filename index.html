@@ -9,13 +9,41 @@
       margin: 0;
       padding: 0;
       height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-family: sans-serif;
+      background-color: #f9f9f9;
+    }
+    button {
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      background-color: #00539B; /* Duke Blue */
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #003f7d;
     }
   </style>
 </head>
 <body>
+
+  <h1>Islam @ Duke</h1>
+  <button onclick="redirectToPDF('halal_menus.pdf')">View Halal Menus</button>
+  <button onclick="redirectToPDF('muslim_calendar.pdf')">View Muslim Events</button>
+
   <script>
-    // Force reload PDF with cache busting
-    window.location.href = "halal_menus.pdf?v=" + new Date().getTime();
+    function redirectToPDF(filename) {
+      const timestamp = new Date().getTime();
+      window.location.href = `${filename}?v=${timestamp}`;
+    }
   </script>
+
 </body>
 </html>
