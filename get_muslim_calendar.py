@@ -10,9 +10,7 @@ from reportlab.lib.pagesizes import letter
 from reportlab.lib import colors
 
 # --- Download ICS feed ---
-# 28807 - CML
-# 28808 - MSA
-ics_url = "https://duke.campusgroups.com/ics?group_ids=28807%2C28808&school=duke"
+ics_url = "https://duke.campusgroups.com/ics?group_ids=28807%2C28808%2C28704%2C28600%2C72105%2C73950&school=duke"
 ics_text = requests.get(ics_url).text
 events_raw = re.findall(r"BEGIN:VEVENT(.*?)END:VEVENT", ics_text, re.DOTALL)
 

@@ -83,6 +83,16 @@ halal_menus.pdf
 muslim_calendar.pdf
 ```
 
+ - The calendar includes events from the following groups:
+```
+28807 - CML
+28808 - MSA
+28704 - Graduate and Professional MSA
+28600 - Duke Students for Justice in Palestine
+72105 - Duke Black Muslim Coalition
+73950 - One for All
+```
+
 ---
 
 ## 5. Output Example (`halal_menus.txt`)
