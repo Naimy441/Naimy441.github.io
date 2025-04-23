@@ -41,6 +41,7 @@ This will install:
 - **webdriver-manager**: Automatically downloads the correct version of ChromeDriver
 - **reportlab**: Generates PDF output
 - **requests**: Pulls ICS feed for calendar
+- **beautifulsoup4**: Scrapes Campus Hours
 
 ---
 
@@ -51,19 +52,26 @@ After cloning the repository, navigate to its directory and run one of the follo
 **For visual (windowed) scraping:**
 
 ```bash
-python scrape.py
+python src/scrape.py
 ```
 
 **For headless scraping (no visible browser window):**
 
 ```bash
-python bot_scrape.py
+python src/bot_scrape.py
+```
+
+**For headless scraping (WARNING: this will scrape over 100 pages of food items):**
+
+```bash
+python src/full_scrape.py
 ```
 
 ---
 
 ## 4. What Happens
 
+- The script parses the Campus Hours website for restaurant timings
 - The script opens Duke’s NetNutrition website  
 - Dismisses the initial popup  
 - Applies the “Halal” filter  
@@ -114,3 +122,4 @@ The PDF version (`halal_menus.pdf`) will have a similar layout but in a visually
 - Ensure **Google Chrome** is installed (required by Selenium).
 - ChromeDriver installation is automatic, handled by `webdriver-manager`.
 - The script automatically skips **closed restaurants** and removes **duplicate meal names**.
+- `full_scrape.py` will **not** skip closed restaurants and will scrape **every** food item and topping
