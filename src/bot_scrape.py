@@ -5,13 +5,91 @@ from selenium.common.exceptions import NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 import time
+import requests
+from bs4 import BeautifulSoup
+from datetime import datetime
+import re
 
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib.pagesizes import letter
 from reportlab.lib import colors
-from reportlab.lib.enums import TA_LEFT
+from reportlab.lib.enums import TA_LEFT, TA_CENTER
 from reportlab.lib.styles import ParagraphStyle
+
+# Restaurant name mapping (Duke Campus Hours -> NetNutrition)
+restaurant_name_map_reversed = {
+    "Bella Union": "Bella Union",
+    "Beyu Blue Coffee": "Beyu Blue Coffee",
+    "Bseisu Coffee Bar": "Bseisu Coffee Bar",
+    "Cafe": "Cafe",
+    "Cafe' 300": "Café 300",
+    "Freeman Center for Jewish Life": "Freeman Café",
+    "Ginger & Soy": "Ginger + Soy",
+    "Gothic Grill": "Gothic Grill",
+    "Gyotaku": "Gyotaku",
+    "Il Forno": "Il Forno",
+    "It's Thyme": "It's Thyme",
+    "JB's Roasts and Chops": "J.B.'s Roast & Chops",
+    "Marketplace": "Marketplace",
+    "Nasher Museum Cafe": "Nasher Museum Café",
+    "Red Mango Cafe": "Red Mango",
+    "Saladelia Cafe at Perkins": "Saladalia @ The Perk",
+    "Saladelia Cafe at Sanford": "Sanford Deli",
+    "Sazon": "Sazon",
+    "Sprout": "Sprout",
+    "Tandoor": "Tandoor Indian Cuisine",
+    "The Devil's Krafthouse": "The Devils Krafthouse",
+    "Farmstead": "The Farmstead",
+    "Pitchfork's": "The PitchFork",
+    "The Skillet": "The Skillet",
+    "Trinity Cafe": "Trinity Cafe",
+    "Twinnie's": "Twinnie's",
+    "Zweli's Cafe at Duke Divinity": "Zweli's Café at Duke Divinity",
+}
+
+# Create reverse mapping (NetNutrition -> Duke Campus Hours)
+restaurant_name_map = {v: k for k, v in restaurant_name_map_reversed.items()}
+
+# Function to fetch dining hours
+def get_dining_hours():
+    print("\n[Step 0] Fetching dining hours...")
+    today_str = datetime.today().strftime('%Y-%m-%d')
+    url = f"https://campushours.oit.duke.edu/places/dining?start_date={today_str}"
+    
+    try:
+        response = requests.get(url)
+        soup = BeautifulSoup(response.text, "html.parser")
+        
+        # Find all rows for locations
+        rows = soup.find_all("div", role="row")
+        
+        hours_dict = {}
+        # Extract dining hours
+        for row in rows[1:]:  # Skip header row
+            location_div = row.find("div", role="rowheader")
+            today_cell = row.find_all("div", role="cell")[0] if row.find_all("div", role="cell") else None
+            
+            if location_div and today_cell:
+                internal_name = location_div.get_text(strip=True)
+                raw_hours = today_cell.get_text(strip=True)
+                
+                # Add commas between joined times and special labels
+                formatted_hours = re.sub(r'(?<=[ap]m)(?=\d)', ', ', raw_hours)
+                formatted_hours = re.sub(r'(?<=[ap]m)(?=Noon|Midnight)', ', ', formatted_hours)
+                
+                # Find the matching NetNutrition name
+                netnutrition_name = restaurant_name_map_reversed.get(internal_name, internal_name)
+                hours_dict[netnutrition_name] = formatted_hours
+                
+        print(f"[✓] Found hours for {len(hours_dict)} dining locations")
+        return hours_dict
+    except Exception as e:
+        print(f"[X] Error fetching dining hours: {e}")
+        return {}
+    
+# Get dining hours before starting the scraping process
+dining_hours = get_dining_hours()
 
 options = Options()
 options.add_argument("--headless=new")            # Run in headless mode
@@ -217,10 +295,12 @@ non_empty_halal_data = {
     if any(meals for meals in cats.values())
 }
 
-# Optional TXT logging (can be removed if only using PDF)
 with open("outputs/halal_menus.txt", "w", encoding="utf-8") as f:
     for restaurant, categories in non_empty_halal_data.items():
-        f.write(f"{restaurant}\n")
+        # Add the hours if available
+        hours = dining_hours.get(restaurant, "Hours not available")
+        f.write(f"{restaurant} - {hours}\n")
+        
         for category, meals in categories.items():
             if not meals:
                 continue
@@ -236,6 +316,15 @@ doc = SimpleDocTemplate("outputs/halal_menus.pdf", pagesize=letter)
 elements = []
 styles = getSampleStyleSheet()
 title_style = styles['Title']
+subtitle_style = ParagraphStyle(
+    'Subtitle',
+    parent=styles['Normal'],
+    fontName='Helvetica-Oblique',
+    fontSize=10,
+    textColor=colors.HexColor("#444444"),
+    alignment=TA_CENTER,
+    spaceAfter=12
+)
 normal_style = styles['Normal']
 
 table_header_style = ParagraphStyle(
@@ -248,11 +337,20 @@ table_header_style = ParagraphStyle(
     spaceAfter=6
 )
 
+date_today = datetime.today().strftime('%A, %B %d, %Y')
+elements.append(Paragraph(f"Halal @ Duke - {date_today}", title_style))
+elements.append(Spacer(1, 12))
+
 for idx, (restaurant, categories) in enumerate(non_empty_halal_data.items()):
     section_elements = []
 
+    # Add restaurant name and hours if available
     section_elements.append(Paragraph(restaurant, title_style))
-    section_elements.append(Spacer(1, 8))
+    
+    # Add hours information
+    hours = dining_hours.get(restaurant, "Hours not available")
+    section_elements.append(Paragraph(f"{hours}", subtitle_style))
+    section_elements.append(Spacer(0, 6))
 
     for category, meals in categories.items():
         if not meals:
@@ -279,6 +377,8 @@ for idx, (restaurant, categories) in enumerate(non_empty_halal_data.items()):
 
         section_elements.append(t)
         section_elements.append(Spacer(1, 10))
+
+    section_elements.append(Spacer(1, 10))
 
     elements.extend(section_elements)
 
