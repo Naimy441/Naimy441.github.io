@@ -24,7 +24,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install selenium webdriver-manager reportlab
+          pip install -r requirements.txt
 
       - name: Run Selenium script in Headless
         env:
