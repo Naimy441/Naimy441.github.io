@@ -5,13 +5,16 @@ Visit the website [naimy441.github.io](https://naimy441.github.io) to view the l
 Alternatively, you can clone this repository and use the scraper scripts provided:
 
 - Use `scrape.py` to run the scraper with an open Chrome window (useful for debugging or watching the scraper in action).
-- Use `bot_scrape.py` to run the scraper in headless mode (recommended for automation or GitHub Actions).
+- Use `bot_scrape.py` to run the scraper in headless mode (recommended for automation).
 - Use `get_muslim_calendar.py` to get ICS resource from DukeGroups and output as PDF.
+- Use `full_scrape`.py to run the scraper and get every menu item (over 3000).
 
-The scripts generate two files:
+The scripts generate 5 files:
 - `halal_menus.pdf`: A nicely formatted, colorful PDF version of the scraped menus.
 - `halal_menus.txt`: A simplified, plain-text version of the menus.
 - `muslim_calendar.py`: A nicely formatted, colorful PDF version of the scraped events.
+- `all_menus.pdf`: A PDF that highlights halal items in green and anything else in red.
+- `all_menus.txt`: A plain-text version of the all menus.
 
 ---
 
@@ -103,7 +106,18 @@ muslim_calendar.pdf
 
 ---
 
-## 5. Output Example (`halal_menus.txt`)
+## 5. Output Folders
+
+`bot_scrape.py`
+- `halal_menus.pdf` will output into docs/outputs/
+- `muslim_calendar.pdf` will output into docs/outputs/
+- `halal_menus.txt` will output into outputs/  
+
+`full_scrape.py` will output into outputs/  
+
+`scrape.py` will output into outputs/  
+
+## 6. Output Example (`halal_menus.txt`)
 
 ```
 Gothic Grill
@@ -117,7 +131,7 @@ The PDF version (`halal_menus.pdf`) will have a similar layout but in a visually
 
 ---
 
-## 6. Notes
+## 7. Notes
 
 - Ensure **Google Chrome** is installed (required by Selenium).
 - ChromeDriver installation is automatic, handled by `webdriver-manager`.

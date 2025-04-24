@@ -315,7 +315,7 @@ print("[✓] Data written to halal_menus.txt")
 
 print("\n[✔] Generating colorful PDF...")
 
-doc = SimpleDocTemplate("outputs/halal_menus.pdf", pagesize=letter)
+doc = SimpleDocTemplate("docs/outputs/halal_menus.pdf", pagesize=letter)
 elements = []
 styles = getSampleStyleSheet()
 title_style = styles['Title']
