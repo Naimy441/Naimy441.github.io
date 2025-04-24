@@ -10,12 +10,14 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 import re
 
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, KeepTogether
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib.pagesizes import letter
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_LEFT, TA_CENTER
 from reportlab.lib.styles import ParagraphStyle
+
+SKIP_CLOSED_RESTAURANTS = False
 
 # Restaurant name mapping (Duke Campus Hours -> NetNutrition)
 restaurant_name_map_reversed = {
@@ -138,9 +140,10 @@ print(f"Found {len(units)} total units.")
 for unit in units:
     try:
         status = unit.find_element(By.CLASS_NAME, "badge").text.lower()
-        if "open" not in status:
-            print("Skipping closed unit.")
-            continue
+        if SKIP_CLOSED_RESTAURANTS:
+            if "open" not in status:
+                print("Skipping closed unit.")
+                continue
 
         name = unit.find_element(By.TAG_NAME, "a").text.strip()
         print(f"\n[Unit] Opening: {name}")
@@ -342,20 +345,25 @@ elements.append(Paragraph(f"Halal @ Duke - {date_today}", title_style))
 elements.append(Spacer(1, 12))
 
 for idx, (restaurant, categories) in enumerate(non_empty_halal_data.items()):
-    section_elements = []
+    # Create a list to hold the header and first category
+    header_elements = []
 
     # Add restaurant name and hours if available
-    section_elements.append(Paragraph(restaurant, title_style))
+    header_elements.append(Paragraph(restaurant, title_style))
     
     # Add hours information
     hours = dining_hours.get(restaurant, "Hours not available")
-    section_elements.append(Paragraph(f"{hours}", subtitle_style))
-    section_elements.append(Spacer(0, 6))
+    header_elements.append(Paragraph(f"{hours}", subtitle_style))
+    header_elements.append(Spacer(0, 6))
 
+    # Keep track if we've added the first category
+    first_category_added = False
+    
     for category, meals in categories.items():
         if not meals:
             continue
 
+        # Create table for this category
         data = [[Paragraph(category, table_header_style)]] + [
             [Paragraph(meal, normal_style)] for meal in meals
         ]
@@ -375,12 +383,22 @@ for idx, (restaurant, categories) in enumerate(non_empty_halal_data.items()):
             ('GRID', (0, 0), (-1, -1), 0.25, colors.grey),
         ]))
 
-        section_elements.append(t)
-        section_elements.append(Spacer(1, 10))
+        # Create a list for this category table plus spacer
+        category_elements = [t, Spacer(1, 10)]
 
-    section_elements.append(Spacer(1, 10))
+        if not first_category_added:
+            # Add the first category to the header elements to keep together
+            header_elements.extend(category_elements)
+            first_category_added = True
+            
+            # Wrap the header and first category and add to elements
+            elements.append(KeepTogether(header_elements))
+        else:
+            # Wrap subsequent categories individually
+            elements.append(KeepTogether(category_elements))
 
-    elements.extend(section_elements)
+    # Add extra space between restaurants
+    elements.append(Spacer(1, 10))
 
 doc.build(elements)
 print("[✓] PDF saved as 'halal_menus.pdf'")
