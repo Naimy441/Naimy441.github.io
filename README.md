@@ -70,6 +70,12 @@ python src/bot_scrape.py
 python src/full_scrape.py
 ```
 
+**For headless scraping (WARNING: this takes almost 2 hours to fully run and downloads all nutrition labels):**
+
+```bash
+python src/nutri_scrape.py
+```
+
 ---
 
 ## 4. What Happens
@@ -114,6 +120,7 @@ muslim_calendar.pdf
 - `halal_menus.txt` will output into outputs/  
 
 `full_scrape.py` will output into outputs/  
+`nutri_scrape.py` will output into outputs/
 
 `scrape.py` will output into outputs/  
 
