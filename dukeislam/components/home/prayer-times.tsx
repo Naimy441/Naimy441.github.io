@@ -4,6 +4,7 @@ import { useState } from "react";
 import { CalendarPlus, Check, Link2, MoonStar, Sunrise } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 import { useMounted } from "@/hooks/use-mounted";
 import { useNowMinute } from "@/hooks/use-now";
@@ -33,16 +34,16 @@ export function PrayerTimes({ dateLabel, hijri, prayers }: Props) {
       : prayers.findIndex((p) => p.kind === "prayer" && p.utcMs + 5 * 60_000 > now);
 
   return (
-    <Card className="overflow-hidden py-0">
-      <CardContent className="px-0">
-        <div className="flex flex-wrap items-center justify-between gap-2 border-b border-border/60 bg-muted/40 px-4 py-3 sm:px-5">
-          <div className="flex items-center gap-2.5">
-            <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-primary">
-              <MoonStar className="size-4" />
+    <Card className="py-0 shadow-md">
+      <CardContent className="space-y-4 p-4 sm:p-5">
+        <div className="flex items-center justify-between gap-3">
+          <div className="flex min-w-0 items-center gap-2.5">
+            <span className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+              <MoonStar className="size-4.5" />
             </span>
-            <div>
-              <p className="text-sm font-semibold leading-tight">Prayer times today</p>
-              <p className="text-xs text-muted-foreground">
+            <div className="min-w-0">
+              <p className="text-sm font-semibold leading-tight">Prayer times</p>
+              <p className="truncate text-xs text-muted-foreground">
                 {dateLabel}
                 {hijri ? ` · ${hijri}` : ""}
               </p>
@@ -51,7 +52,7 @@ export function PrayerTimes({ dateLabel, hijri, prayers }: Props) {
           <SubscribeButtons />
         </div>
 
-        <div className="grid grid-cols-6 divide-x divide-border/60">
+        <div className="grid grid-cols-3 gap-1.5 sm:grid-cols-6 sm:gap-2">
           {prayers.map((p, i) => {
             const isNext = i === nextIndex;
             const isSunrise = p.kind === "sunrise";
@@ -59,41 +60,30 @@ export function PrayerTimes({ dateLabel, hijri, prayers }: Props) {
               <div
                 key={p.name}
                 className={cn(
-                  "flex flex-col items-center gap-0.5 px-0.5 py-3.5 text-center transition-colors sm:py-4",
-                  isNext && "bg-primary text-primary-foreground",
-                  isSunrise && "bg-muted/50"
+                  "flex flex-col items-center gap-1 rounded-xl py-3 transition-colors sm:py-3.5",
+                  isNext
+                    ? "bg-primary text-primary-foreground shadow-sm"
+                    : "bg-muted/50",
+                  isSunrise && "opacity-75"
                 )}
               >
                 <span
                   className={cn(
-                    "flex items-center gap-0.5 text-[10px] font-medium sm:text-xs",
-                    isNext ? "text-primary-foreground/80" : "text-muted-foreground"
+                    "flex items-center gap-1 text-[11px] font-medium",
+                    isNext ? "text-primary-foreground/75" : "text-muted-foreground"
                   )}
                 >
                   {isSunrise && <Sunrise className="size-3" />}
                   {p.name}
                 </span>
-                <span
-                  className={cn(
-                    "text-[12px] font-semibold tabular-nums sm:text-sm",
-                    isSunrise && "font-medium text-muted-foreground"
-                  )}
-                >
-                  {p.display}
-                </span>
-                {isNext && (
-                  <span className="mt-0.5 rounded-full bg-primary-foreground/15 px-1.5 py-px text-[9px] font-semibold uppercase tracking-wider">
-                    Next
-                  </span>
-                )}
+                <span className="text-sm font-semibold tabular-nums">{p.display}</span>
               </div>
             );
           })}
         </div>
 
-        <p className="border-t border-border/60 px-4 py-2 text-center text-[11px] text-muted-foreground">
-          ISNA calculation, Shafi Asr, for Duke&apos;s campus · Subscribe once and athan
-          times stay accurate automatically
+        <p className="text-right text-[11px] text-muted-foreground/80">
+          ISNA
         </p>
       </CardContent>
     </Card>
@@ -119,23 +109,36 @@ function SubscribeButtons() {
   };
 
   return (
-    <div className="flex items-center gap-1.5">
-      <Button asChild size="sm" variant="outline" className="h-8 rounded-full bg-card text-xs">
-        <a href={webcalUrl}>
+    <div className="flex shrink-0 items-center gap-1.5">
+      <Button
+        asChild
+        size="sm"
+        variant="outline"
+        className="size-8 rounded-full bg-card p-0 text-xs sm:size-auto sm:px-3 sm:py-1.5"
+      >
+        <a href={webcalUrl} aria-label="Add prayer times to your calendar">
           <CalendarPlus className="size-3.5" />
-          Subscribe
+          <span className="hidden sm:inline">Add to calendar</span>
         </a>
       </Button>
-      <Button
-        size="sm"
-        variant="ghost"
-        onClick={copy}
-        className="h-8 rounded-full px-2.5 text-xs text-muted-foreground"
-        aria-label="Copy calendar link"
-      >
-        {copied ? <Check className="size-3.5 text-emerald-600" /> : <Link2 className="size-3.5" />}
-        {copied ? "Copied" : "Copy link"}
-      </Button>
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <Button
+            size="icon"
+            variant="ghost"
+            onClick={copy}
+            className="size-8 rounded-full text-muted-foreground"
+            aria-label="Copy calendar link"
+          >
+            {copied ? (
+              <Check className="size-3.5 text-emerald-600" />
+            ) : (
+              <Link2 className="size-3.5" />
+            )}
+          </Button>
+        </TooltipTrigger>
+        <TooltipContent>{copied ? "Copied!" : "Copy calendar link"}</TooltipContent>
+      </Tooltip>
     </div>
   );
 }
