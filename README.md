@@ -1,5 +1,17 @@
 # Islam @ Duke Scraper — How to Use
 
+## dukeislam.org — the new website
+
+The `dukeislam/` folder contains the new [dukeislam.org](https://dukeislam.org) website — a modern, mobile-first Next.js app (shadcn/ui + Tailwind) that replaces the PDF-only site with:
+
+- **Halal food** (`/food`): every halal item on campus with hours, search, and full nutrition facts — reads `outputs/halal_menus.txt` at runtime, so it stays fresh from the scraper below without redeploys
+- **Events** (`/events`): a live list + month calendar of Muslim Life events from the DukeGroups feed
+- **Prayer times**: today's timings on the home page (ISNA, Shafi Asr) plus a subscribable, auto-updating athan calendar feed at `/prayers.ics`
+
+It deploys automatically to Vercel on push to `main` (Root Directory: `dukeislam`) and coexists with everything below — the GitHub Actions scraper and the PDFs are unchanged. See [`dukeislam/README.md`](dukeislam/README.md) for details.
+
+---
+
 Visit the website [naimy441.github.io](https://naimy441.github.io) to view the latest PDF version of the halal menus and muslim events.
 
 Alternatively, you can clone this repository and use the scraper scripts provided:
