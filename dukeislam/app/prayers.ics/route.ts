@@ -50,12 +50,18 @@ export async function GET() {
   const now = new Date();
   const year = now.getUTCFullYear();
   const month = now.getUTCMonth() + 1;
+  const nextYear = month === 12 ? year + 1 : year;
+  const nextMonth = month === 12 ? 1 : month + 1;
 
-  // Current month only; the feed regenerates every 12h, so subscribers roll
-  // into each new month automatically.
+  // Current + next month, so subscribers always see ahead even if their
+  // calendar app hasn't re-polled around a month boundary.
   let days: DailyPrayers[] = [];
   try {
-    days = await getMonthPrayers(year, month);
+    const [current, next] = await Promise.all([
+      getMonthPrayers(year, month),
+      getMonthPrayers(nextYear, nextMonth),
+    ]);
+    days = [...current, ...next];
   } catch {
     // Serve an empty (but valid) calendar rather than erroring; the next
     // 12-hour regeneration will retry.

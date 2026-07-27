@@ -21,9 +21,9 @@ pipeline itself was not modified.
 - The home page shows today's five prayer times (plus sunrise) with the next athan
   highlighted. Calculation: ISNA method with Shafi Asr (`method=2&school=0`).
 - `/prayers.ics` is a public calendar feed: a 5-minute event at each athan for the
-  current month. Subscribe via `webcal://dukeislam.org/prayers.ics` (the "Subscribe"
-  button on the home page) and it auto-refreshes — the feed regenerates every 12
-  hours (rolling into each new month) and calendar apps re-poll it periodically
+  current and next month. Subscribe via `webcal://dukeislam.org/prayers.ics` (the
+  "Add to calendar" button on the home page) and it auto-refreshes — the feed
+  regenerates every 12 hours and calendar apps re-poll it periodically
   (`X-PUBLISHED-TTL: PT12H`).
 
 Because menus and events are fetched at runtime with ISR, the site stays fresh
