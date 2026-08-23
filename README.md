@@ -10,6 +10,23 @@ The `dukeislam/` folder contains the new [dukeislam.org](https://dukeislam.org) 
 
 It deploys automatically to Vercel on push to `main` (Root Directory: `dukeislam`) and coexists with everything below — the GitHub Actions scraper and the PDFs are unchanged. See [`dukeislam/README.md`](dukeislam/README.md) for details.
 
+## Refreshing the full halal catalog
+
+The website backfills restaurants that aren't on today's menu from a bundled catalog (`dukeislam/data/nutrition.json`) built from a full nutrition scrape. To rebuild that catalog with the latest menus and nutrition data (roughly once a semester, or whenever menus change):
+
+```bash
+./refresh_catalog.sh
+```
+
+This runs, with a live progress display and per-step logs in `outputs/logs/`:
+
+1. `full_scrape.py` — every menu item with halal flags → `outputs/all_menus.txt/.pdf`
+2. `nutri_scrape.py` — nutrition label for every item (slow, ~2 hours) → `outputs/nutri_menus.json`
+3. `nutri_split.py` — per-restaurant files → `outputs/restaurants/`
+4. `extract-nutrition.mjs` — the compact catalog the website bundles → `dukeislam/data/nutrition.json`
+
+Then review with `git status`, commit, and push — the Vercel deploy picks up the new catalog.
+
 ---
 
 Visit the website [naimy441.github.io](https://naimy441.github.io) to view the latest PDF version of the halal menus and muslim events.
