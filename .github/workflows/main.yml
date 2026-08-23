@@ -3,7 +3,8 @@ name: Scrape
 # Primary triggers come from cron-job.org via workflow_dispatch (starts on
 # time). The schedule entries below are late-firing fallbacks: GitHub cron
 # routinely starts 20-40 min behind, and these UTC times drift an hour in
-# winter when EDT becomes EST.
+# winter when EDT becomes EST. The check job skips the fallback when
+# cron-job.org already ran, so NetNutrition is only scraped once per slot.
 on:
   schedule:
     - cron: '5 12 * * *'  # 8:05 AM EDT / 12:05 UTC
@@ -12,7 +13,41 @@ on:
   workflow_dispatch:
 
 jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      should_run: ${{ steps.decide.outputs.should_run }}
+    steps:
+      - name: Skip fallback if cron-job.org already ran this slot
+        id: decide
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "Triggered by dispatch; always run."
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          # Slots are >=3h apart, so a successful dispatch-triggered run in
+          # the last 2h means cron-job.org already covered this slot.
+          cutoff=$(( $(date -u +%s) - 7200 ))
+          recent=$(curl -fsS \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/main.yml/runs?event=workflow_dispatch&status=success&per_page=10" \
+            | jq --argjson cutoff "$cutoff" \
+              '[.workflow_runs[] | select((.created_at | fromdateiso8601) > $cutoff)] | length')
+          if [ "$recent" -gt 0 ]; then
+            echo "cron-job.org already scraped within the last 2 hours; skipping."
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "No recent on-time run found; running fallback scrape."
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          fi
+
   selenium-run:
+    needs: check
+    if: needs.check.outputs.should_run == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
