@@ -47,3 +47,33 @@ export function getNutritionMap(keys: string[]): Record<string, NutritionInfo> {
   }
   return map;
 }
+
+export interface CatalogRestaurant {
+  name: string;
+  categories: { name: string; items: { name: string; nutritionKey: string }[] }[];
+}
+
+/**
+ * Every restaurant with halal items in the full-catalog nutrition scrape,
+ * regardless of whether it's serving today. Used to backfill the food page so
+ * closed/not-serving spots are still browsable.
+ */
+export function getCatalogRestaurants(): CatalogRestaurant[] {
+  const restaurants: CatalogRestaurant[] = [];
+  for (const [restKey, items] of Object.entries(data.byRestaurant)) {
+    const infos = Object.entries(items);
+    if (infos.length === 0) continue;
+    const byCategory = new Map<string, { name: string; nutritionKey: string }[]>();
+    for (const [itemKey, info] of infos) {
+      const list = byCategory.get(info.category) ?? [];
+      list.push({ name: info.item, nutritionKey: `${restKey}/${itemKey}` });
+      byCategory.set(info.category, list);
+    }
+    restaurants.push({
+      name: infos[0][1].restaurant,
+      categories: [...byCategory.entries()].map(([name, list]) => ({ name, items: list })),
+    });
+  }
+  restaurants.sort((a, b) => a.name.localeCompare(b.name));
+  return restaurants;
+}

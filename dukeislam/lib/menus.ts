@@ -1,11 +1,13 @@
+import { getCampusHours } from "./campus-hours";
 import { parseHours } from "./hours";
-import { findNutritionKey } from "./nutrition";
+import { findNutritionKey, getCatalogRestaurants, normalizeKey } from "./nutrition";
 import type { HalalMenu, Restaurant } from "./types";
 
 const MENU_URL =
-  "https://raw.githubusercontent.com/Naimy441/duke_halal/main/outputs/halal_menus.txt";
+  "https://raw.githubusercontent.com/Naimy441/Naimy441.github.io/main/outputs/halal_menus.txt";
 
-// GitHub Actions re-scrapes twice daily; refresh at most every 30 minutes.
+// Timed fallback only: the scraper pings /api/revalidate after each run,
+// which purges the "menus" tag for an immediate refresh.
 const REVALIDATE_SECONDS = 1800;
 
 /**
@@ -35,6 +37,7 @@ export function parseHalalMenus(text: string): HalalMenu {
         openRanges: parseHours(hours),
         categories: [],
         itemCount: 0,
+        servingToday: true,
       };
       currentCategory = null;
       restaurants.push(current);
@@ -56,19 +59,21 @@ export function parseHalalMenus(text: string): HalalMenu {
   return { restaurants: restaurants.filter((r) => r.itemCount > 0), totalItems };
 }
 
-async function fetchMenuText(): Promise<string> {
-  const res = await fetch(MENU_URL, { next: { revalidate: REVALIDATE_SECONDS } });
-  if (!res.ok) throw new Error(`Failed to fetch halal menus: ${res.status}`);
+async function fetchText(url: string): Promise<string> {
+  const res = await fetch(url, {
+    next: { revalidate: REVALIDATE_SECONDS, tags: ["menus"] },
+  });
+  if (!res.ok) throw new Error(`Failed to fetch ${url}: ${res.status}`);
   return res.text();
 }
 
-async function readLocalMenuText(): Promise<string | null> {
+async function readLocalText(filename: string): Promise<string | null> {
   // Dev/build fallback: the scrape output lives one level above the app.
   try {
     const { readFile } = await import("node:fs/promises");
     const path = await import("node:path");
     return await readFile(
-      path.resolve(process.cwd(), "../outputs/halal_menus.txt"),
+      path.resolve(process.cwd(), `../outputs/${filename}`),
       "utf8"
     );
   } catch {
@@ -76,13 +81,56 @@ async function readLocalMenuText(): Promise<string | null> {
   }
 }
 
-export async function getHalalMenu(): Promise<HalalMenu> {
-  let text: string | null = null;
-  try {
-    text = await fetchMenuText();
-  } catch {
-    text = await readLocalMenuText();
+/**
+ * Overwrites a restaurant's hours with today's live campus hours when
+ * available. "Closed" days get empty openRanges (known closed, as opposed to
+ * null = hours unknown).
+ */
+function applyCampusHours(r: Restaurant, hoursByKey: Map<string, string>): Restaurant {
+  const live = hoursByKey.get(normalizeKey(r.name));
+  if (!live) return r;
+  if (/^closed/i.test(live)) {
+    return { ...r, hours: "Closed today", openRanges: [] };
   }
-  if (!text) return { restaurants: [], totalItems: 0 };
-  return parseHalalMenus(text);
+  return { ...r, hours: live, openRanges: parseHours(live) };
+}
+
+/**
+ * Appends restaurants from the full halal catalog that aren't on today's
+ * scraped halal menu, so every halal option stays browsable. These spots
+ * don't count toward today's item total.
+ */
+function appendCatalogRestaurants(menu: HalalMenu): HalalMenu {
+  const todayKeys = new Set(menu.restaurants.map((r) => normalizeKey(r.name)));
+  for (const catalog of getCatalogRestaurants()) {
+    if (todayKeys.has(normalizeKey(catalog.name))) continue;
+    const categories = catalog.categories.map((c) => ({
+      name: c.name,
+      items: c.items.map((i) => ({
+        name: i.name,
+        category: c.name,
+        nutritionKey: i.nutritionKey,
+      })),
+    }));
+    menu.restaurants.push({
+      name: catalog.name,
+      hours: "",
+      openRanges: null,
+      categories,
+      itemCount: categories.reduce((n, c) => n + c.items.length, 0),
+      servingToday: false,
+    });
+  }
+  return menu;
+}
+
+export async function getHalalMenu(): Promise<HalalMenu> {
+  const [text, campusHours] = await Promise.all([
+    fetchText(MENU_URL).catch(() => readLocalText("halal_menus.txt")),
+    getCampusHours(),
+  ]);
+  const menu = text ? parseHalalMenus(text) : { restaurants: [], totalItems: 0 };
+  appendCatalogRestaurants(menu);
+  menu.restaurants = menu.restaurants.map((r) => applyCampusHours(r, campusHours));
+  return menu;
 }

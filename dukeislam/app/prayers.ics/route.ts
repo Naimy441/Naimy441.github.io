@@ -24,19 +24,30 @@ function escapeIcsText(value: string): string {
 function buildEvents(days: DailyPrayers[], stamp: string): string[] {
   const lines: string[] = [];
   for (const day of days) {
-    for (const prayer of PRAYER_NAMES) {
-      const hhmm = day.timings[prayer];
-      if (!/^\d{1,2}:\d{2}$/.test(hhmm)) continue;
+    const entries: { name: string; hhmm: string | null; description: string }[] = [
+      ...PRAYER_NAMES.map((prayer) => ({
+        name: prayer as string,
+        hhmm: day.timings[prayer],
+        description: `${prayer} athan · dukeislam.org (ISNA, Shafi Asr)`,
+      })),
+      {
+        name: "Sunrise",
+        hhmm: day.sunrise,
+        description: "Sunrise (end of Fajr) · dukeislam.org",
+      },
+    ];
+    for (const { name, hhmm, description } of entries) {
+      if (!hhmm || !/^\d{1,2}:\d{2}$/.test(hhmm)) continue;
       const start = prayerTimeToUtc(day.date, hhmm);
       const end = new Date(start.getTime() + EVENT_MINUTES * 60_000);
       lines.push(
         "BEGIN:VEVENT",
-        `UID:${prayer.toLowerCase()}-${day.date}@dukeislam.org`,
+        `UID:${name.toLowerCase()}-${day.date}@dukeislam.org`,
         `DTSTAMP:${stamp}`,
         `DTSTART:${icsUtc(start)}`,
         `DTEND:${icsUtc(end)}`,
-        `SUMMARY:${prayer}`,
-        `DESCRIPTION:${escapeIcsText(`${prayer} athan · dukeislam.org (ISNA, Shafi Asr)`)}`,
+        `SUMMARY:${name}`,
+        `DESCRIPTION:${escapeIcsText(description)}`,
         `LOCATION:${escapeIcsText(PRAYER_ADDRESS)}`,
         "TRANSP:TRANSPARENT",
         "END:VEVENT"

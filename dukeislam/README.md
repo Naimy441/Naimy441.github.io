@@ -47,7 +47,7 @@ npm run dev
 
 ## Deploying to Vercel
 
-1. Import `Naimy441/duke_halal` in Vercel (Add New → Project).
+1. Import `Naimy441/Naimy441.github.io` in Vercel (Add New → Project).
 2. Set **Root Directory** to `dukeislam`. Framework preset: Next.js. No env vars needed.
 3. Add the `dukeislam.org` domain under Project → Settings → Domains and point your
    DNS at Vercel (A record `76.76.21.21` or the CNAME Vercel shows you).

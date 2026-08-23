@@ -11,7 +11,6 @@ import { isOpenNow } from "@/lib/hours";
 import { useMounted } from "@/hooks/use-mounted";
 import type { HalalMenu, MenuItem, NutritionInfo, Restaurant } from "@/lib/types";
 import { ItemDetail } from "./item-detail";
-import { Stagger, StaggerItem } from "@/components/motion-primitives";
 
 interface Props {
   menu: HalalMenu;
@@ -108,39 +107,41 @@ export function FoodExplorer({ menu, nutrition }: Props) {
         </div>
       </div>
 
-      {/* Results */}
-      <AnimatePresence mode="popLayout" initial={false}>
-        {filtered.length === 0 ? (
-          <motion.div
-            key="empty"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <Card className="py-14 text-center">
-              <CardContent className="space-y-2">
-                <SearchX className="mx-auto size-8 text-muted-foreground" />
-                <p className="font-medium">Nothing matched</p>
-                <p className="text-sm text-muted-foreground">
-                  Try a different search, or clear the filters above.
-                </p>
-              </CardContent>
-            </Card>
-          </motion.div>
-        ) : (
-          <Stagger key="list" className="grid gap-4 md:grid-cols-2" staggerDelay={0.05}>
+      {/* Results — each card owns its enter/exit animation (no viewport-triggered
+          orchestration, which left newly filtered-in cards stuck invisible) */}
+      {filtered.length === 0 ? (
+        <Card className="py-14 text-center">
+          <CardContent className="space-y-2">
+            <SearchX className="mx-auto size-8 text-muted-foreground" />
+            <p className="font-medium">Nothing matched</p>
+            <p className="text-sm text-muted-foreground">
+              Try a different search, or clear the filters above.
+            </p>
+          </CardContent>
+        </Card>
+      ) : (
+        <div className="grid items-start gap-4 md:grid-cols-2">
+          <AnimatePresence mode="popLayout" initial={false}>
             {filtered.map((r) => (
-              <StaggerItem key={r.name}>
+              <motion.div
+                key={r.name}
+                layout
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.97 }}
+                transition={{ duration: 0.22, ease: [0.21, 0.47, 0.32, 0.98] }}
+                className="h-full"
+              >
                 <RestaurantCard
                   restaurant={r}
                   nutrition={nutrition}
                   onSelect={(item) => setSelected({ item, restaurant: r.name })}
                 />
-              </StaggerItem>
+              </motion.div>
             ))}
-          </Stagger>
-        )}
-      </AnimatePresence>
+          </AnimatePresence>
+        </div>
+      )}
 
       <ItemDetail
         open={selected !== null}
@@ -204,7 +205,7 @@ function RestaurantCard({
           <h2 className="text-lg font-semibold leading-tight tracking-tight">
             {restaurant.name}
           </h2>
-          {open !== null && (
+          {open !== null ? (
             <Badge
               variant="outline"
               className={cn(
@@ -222,6 +223,18 @@ function RestaurantCard({
               />
               {open ? "Open" : "Closed"}
             </Badge>
+          ) : (
+            // No parseable hours: catalog-only spots read as closed.
+            !restaurant.servingToday &&
+            !restaurant.openRanges && (
+              <Badge
+                variant="outline"
+                className="shrink-0 gap-1.5 rounded-full border-border bg-muted text-muted-foreground"
+              >
+                <span className="size-1.5 rounded-full bg-muted-foreground/50" />
+                Closed
+              </Badge>
+            )
           )}
         </div>
         {restaurant.hours && (

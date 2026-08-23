@@ -1,7 +1,12 @@
 name: Scrape
 
+# Primary triggers come from cron-job.org via workflow_dispatch (starts on
+# time). The schedule entries below are late-firing fallbacks: GitHub cron
+# routinely starts 20-40 min behind, and these UTC times drift an hour in
+# winter when EDT becomes EST.
 on:
   schedule:
+    - cron: '5 12 * * *'  # 8:05 AM EDT / 12:05 UTC
     - cron: '5 15 * * *'  # 11:05 AM EDT / 15:05 UTC
     - cron: '5 21 * * *'  # 5:05 PM EDT / 21:05 UTC
   workflow_dispatch:
@@ -48,3 +53,14 @@ jobs:
           git commit -m "Scraped NetNutrition & Calendar $(date -u)" || echo "No changes to commit"
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
           git push origin HEAD:main
+
+      - name: Refresh dukeislam.org cache
+        env:
+          REVALIDATE_SECRET: ${{ secrets.REVALIDATE_SECRET }}
+        run: |
+          if [ -n "$REVALIDATE_SECRET" ]; then
+            curl -fsS "https://dukeislam.org/api/revalidate?secret=${REVALIDATE_SECRET}" \
+              || echo "Revalidate ping failed (site falls back to timed revalidation)"
+          else
+            echo "REVALIDATE_SECRET not set; skipping cache refresh"
+          fi

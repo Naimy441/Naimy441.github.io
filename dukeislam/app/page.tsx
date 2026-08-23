@@ -37,7 +37,8 @@ export default async function Home() {
   }
 
   const nextEvents = upcoming.slice(0, 3);
-  const topRestaurants = [...menu.restaurants]
+  const servingToday = menu.restaurants.filter((r) => r.servingToday);
+  const topRestaurants = [...servingToday]
     .sort((a, b) => b.itemCount - a.itemCount)
     .slice(0, 4);
 
@@ -63,7 +64,7 @@ export default async function Home() {
         <FadeIn>
           <div className="grid grid-cols-3 divide-x divide-border/60 rounded-2xl border border-border/60 bg-card shadow-sm md:mx-12">
             <StatCounter value={menu.totalItems} label="Halal items today" />
-            <StatCounter value={menu.restaurants.length} label="Campus spots" />
+            <StatCounter value={servingToday.length} label="Spots serving today" />
             <StatCounter value={upcoming.length} label="Upcoming events" />
           </div>
         </FadeIn>
@@ -177,7 +178,7 @@ export default async function Home() {
             </div>
             <div className="flex flex-wrap justify-center gap-3 text-sm font-medium">
               <a
-                href="https://github.com/Naimy441/duke_halal/raw/main/docs/outputs/halal_menus.pdf"
+                href="https://github.com/Naimy441/Naimy441.github.io/raw/main/docs/outputs/halal_menus.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full border bg-card px-4 py-2 transition-colors hover:border-primary/40"
@@ -185,7 +186,7 @@ export default async function Home() {
                 Halal menus PDF
               </a>
               <a
-                href="https://github.com/Naimy441/duke_halal/raw/main/docs/outputs/muslim_calendar.pdf"
+                href="https://github.com/Naimy441/Naimy441.github.io/raw/main/docs/outputs/muslim_calendar.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full border bg-card px-4 py-2 transition-colors hover:border-primary/40"

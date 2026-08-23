@@ -35,7 +35,7 @@ export function SiteFooter() {
             </li>
             <li>
               <a
-                href="https://github.com/Naimy441/duke_halal"
+                href="https://github.com/Naimy441/Naimy441.github.io"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-foreground"
