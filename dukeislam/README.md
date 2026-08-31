@@ -1,6 +1,6 @@
 # dukeislam.org
 
-Modern web app for Islam @ Duke — every halal food option on Duke's campus plus a live
+Modern web app for DukeIslam — every halal food option on Duke's campus plus a live
 calendar of Muslim Life events. Built with Next.js, Tailwind CSS v4, shadcn/ui, and
 Motion. Mobile-first, works great on desktop.
 

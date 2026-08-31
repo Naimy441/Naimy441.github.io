@@ -26,17 +26,17 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   metadataBase: new URL("https://dukeislam.org"),
   title: {
-    default: "Islam @ Duke — Halal Food & Muslim Life Events",
-    template: "%s · Islam @ Duke",
+    default: "DukeIslam — Halal Food & Muslim Life Events",
+    template: "%s · DukeIslam",
   },
   description:
-    "Every halal option on Duke's campus, updated twice daily, plus a live calendar of Muslim Life events at Duke University.",
+    "Today's prayer times, halal food on campus, and Muslim Life events at Duke University.",
   openGraph: {
-    title: "Islam @ Duke",
+    title: "DukeIslam",
     description:
-      "Every halal option on Duke's campus, updated twice daily, plus a live calendar of Muslim Life events.",
+      "Today's prayer times, halal food on campus, and Muslim Life events at Duke.",
     url: "https://dukeislam.org",
-    siteName: "Islam @ Duke",
+    siteName: "DukeIslam",
     locale: "en_US",
     type: "website",
   },
@@ -61,7 +61,7 @@ export default function RootLayout({
       <body className="flex min-h-dvh flex-col">
         <TooltipProvider>
           <SiteHeader />
-          <main className="flex-1 pb-20 md:pb-0">{children}</main>
+          <main className="flex-1">{children}</main>
           <SiteFooter />
           <BottomNav />
         </TooltipProvider>

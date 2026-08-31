@@ -4,8 +4,22 @@ import { useState } from "react";
 import { CalendarPlus, Check, Link2, MoonStar, Sunrise } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import {
+  Drawer,
+  DrawerContent,
+  DrawerDescription,
+  DrawerHeader,
+  DrawerTitle,
+} from "@/components/ui/drawer";
 import { cn } from "@/lib/utils";
+import { useMediaQuery } from "@/hooks/use-media-query";
 import { useMounted } from "@/hooks/use-mounted";
 import { useNowMinute } from "@/hooks/use-now";
 
@@ -36,20 +50,17 @@ export function PrayerTimes({ dateLabel, hijri, prayers }: Props) {
   return (
     <Card className="py-0 shadow-md">
       <CardContent className="space-y-4 p-4 sm:p-5">
-        <div className="flex items-center justify-between gap-3">
-          <div className="flex min-w-0 items-center gap-2.5">
-            <span className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
-              <MoonStar className="size-4.5" />
-            </span>
-            <div className="min-w-0">
-              <p className="text-sm font-semibold leading-tight">Prayer times</p>
-              <p className="truncate text-xs text-muted-foreground">
-                {dateLabel}
-                {hijri ? ` · ${hijri}` : ""}
-              </p>
-            </div>
+        <div className="flex min-w-0 items-center gap-2.5">
+          <span className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+            <MoonStar className="size-4.5" />
+          </span>
+          <div className="min-w-0">
+            <p className="text-sm font-semibold leading-tight">Prayer times</p>
+            <p className="truncate text-xs text-muted-foreground">
+              {dateLabel}
+              {hijri ? ` · ${hijri}` : ""}
+            </p>
           </div>
-          <SubscribeButtons />
         </div>
 
         <div className="grid grid-cols-3 gap-1.5 sm:grid-cols-6 sm:gap-2">
@@ -82,15 +93,72 @@ export function PrayerTimes({ dateLabel, hijri, prayers }: Props) {
           })}
         </div>
 
-        <p className="text-right text-[11px] text-muted-foreground/80">
-          ISNA
-        </p>
+        <div className="flex items-center justify-between gap-3 border-t border-border/50 pt-3">
+          <p className="text-[11px] text-muted-foreground/70">ISNA method</p>
+          <AddToCalendar />
+        </div>
       </CardContent>
     </Card>
   );
 }
 
-function SubscribeButtons() {
+function AddToCalendar() {
+  const [open, setOpen] = useState(false);
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+
+  const trigger = (
+    <button
+      type="button"
+      onClick={() => setOpen(true)}
+      className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+    >
+      <CalendarPlus className="size-3.5" />
+      Add to calendar
+    </button>
+  );
+
+  if (isDesktop) {
+    return (
+      <>
+        {trigger}
+        <Dialog open={open} onOpenChange={setOpen}>
+          <DialogContent className="max-w-md gap-4 p-6">
+            <DialogHeader>
+              <DialogTitle>Add prayer times to your calendar</DialogTitle>
+              <DialogDescription>
+                Subscribe once and each day&apos;s Fajr through Isha (plus
+                sunrise) will show up in your calendar and stay updated.
+              </DialogDescription>
+            </DialogHeader>
+            <CalendarActions />
+          </DialogContent>
+        </Dialog>
+      </>
+    );
+  }
+
+  return (
+    <>
+      {trigger}
+      <Drawer open={open} onOpenChange={setOpen}>
+        <DrawerContent>
+          <DrawerHeader className="text-left">
+            <DrawerTitle>Add prayer times to your calendar</DrawerTitle>
+            <DrawerDescription>
+              Subscribe once and each day&apos;s Fajr through Isha (plus
+              sunrise) will show up in your calendar and stay updated.
+            </DrawerDescription>
+          </DrawerHeader>
+          <div className="px-4 pb-8">
+            <CalendarActions />
+          </div>
+        </DrawerContent>
+      </Drawer>
+    </>
+  );
+}
+
+function CalendarActions() {
   const mounted = useMounted();
   const [copied, setCopied] = useState(false);
 
@@ -104,41 +172,31 @@ function SubscribeButtons() {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch {
-      // Clipboard unavailable (e.g. non-secure context); the subscribe link still works
+      // Clipboard unavailable; the subscribe link still works
     }
   };
 
   return (
-    <div className="flex shrink-0 items-center gap-1.5">
-      <Button
-        asChild
-        size="sm"
-        variant="outline"
-        className="size-8 rounded-full bg-card p-0 text-xs sm:size-auto sm:px-3 sm:py-1.5"
-      >
-        <a href={webcalUrl} aria-label="Add prayer times to your calendar">
-          <CalendarPlus className="size-3.5" />
-          <span className="hidden sm:inline">Add to calendar</span>
+    <div className="space-y-3">
+      <Button asChild className="h-11 w-full rounded-full text-[15px]">
+        <a href={webcalUrl}>
+          <CalendarPlus className="size-4" />
+          Open in your calendar app
         </a>
       </Button>
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Button
-            size="icon"
-            variant="ghost"
-            onClick={copy}
-            className="size-8 rounded-full text-muted-foreground"
-            aria-label="Copy calendar link"
-          >
-            {copied ? (
-              <Check className="size-3.5 text-emerald-600" />
-            ) : (
-              <Link2 className="size-3.5" />
-            )}
-          </Button>
-        </TooltipTrigger>
-        <TooltipContent>{copied ? "Copied!" : "Copy calendar link"}</TooltipContent>
-      </Tooltip>
+      <Button
+        type="button"
+        variant="outline"
+        className="h-11 w-full rounded-full text-[15px]"
+        onClick={copy}
+      >
+        {copied ? <Check className="size-4 text-emerald-600" /> : <Link2 className="size-4" />}
+        {copied ? "Link copied" : "Copy calendar link"}
+      </Button>
+      <p className="text-xs leading-relaxed text-muted-foreground">
+        On iPhone or Outlook, use the first button. For Google Calendar, copy
+        the link, then go to Settings → Add calendar → From URL.
+      </p>
     </div>
   );
 }

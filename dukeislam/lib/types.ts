@@ -17,8 +17,6 @@ export interface Restaurant {
   openRanges: [number, number][] | null;
   categories: MenuCategory[];
   itemCount: number;
-  /** False for spots backfilled from the full halal catalog (closed / not on today's menu) */
-  servingToday: boolean;
 }
 
 export interface HalalMenu {

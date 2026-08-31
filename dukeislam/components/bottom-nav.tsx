@@ -12,9 +12,9 @@ export function BottomNav() {
   return (
     <nav
       aria-label="Primary"
-      className="fixed inset-x-0 bottom-0 z-40 border-t border-border/60 bg-background/85 pb-[env(safe-area-inset-bottom)] backdrop-blur-md md:hidden"
+      className="fixed inset-x-0 bottom-0 z-40 border-t border-border/50 bg-background/90 pb-[env(safe-area-inset-bottom)] backdrop-blur-md md:hidden"
     >
-      <div className="mx-auto grid h-16 max-w-md grid-cols-3">
+      <div className="mx-auto grid h-14 max-w-md grid-cols-3">
         {navLinks.map((link) => {
           const active =
             link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
@@ -24,19 +24,19 @@ export function BottomNav() {
               key={link.href}
               href={link.href}
               className={cn(
-                "relative flex flex-col items-center justify-center gap-1 text-[11px] font-medium transition-colors",
+                "relative flex flex-col items-center justify-center gap-0.5 text-[11px] font-medium transition-colors",
                 active ? "text-primary" : "text-muted-foreground"
               )}
             >
               {active && (
                 <motion.span
                   layoutId="bottom-nav-indicator"
-                  className="absolute top-0 h-0.5 w-10 rounded-full bg-primary"
+                  className="absolute top-0 h-0.5 w-8 rounded-full bg-primary"
                   transition={{ type: "spring", stiffness: 400, damping: 32 }}
                 />
               )}
-              <Icon className={cn("size-5 transition-transform", active && "scale-110")} />
-              {link.label === "Halal Food" ? "Food" : link.label}
+              <Icon className={cn("size-5", active && "scale-105")} />
+              {link.label}
             </Link>
           );
         })}

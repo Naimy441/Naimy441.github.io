@@ -17,15 +17,13 @@ export function normalizeKey(s: string): string {
 }
 
 /**
- * Finds nutrition facts for a menu item, preferring a match within the same
- * restaurant and falling back to a global item-name match. Returns the lookup
- * key ("restKey/itemKey", with "*" as restKey for global) or null when nothing matches.
+ * Finds nutrition facts for a menu item within the same restaurant. Returns
+ * the lookup key ("restKey/itemKey") or null when nothing matches.
  */
 export function findNutritionKey(restaurant: string, item: string): string | null {
   const restKey = normalizeKey(restaurant);
   const itemKey = normalizeKey(item);
   if (data.byRestaurant[restKey]?.[itemKey]) return `${restKey}/${itemKey}`;
-  if (data.byItem[itemKey]) return `*/${itemKey}`;
   return null;
 }
 
@@ -46,34 +44,4 @@ export function getNutritionMap(keys: string[]): Record<string, NutritionInfo> {
     if (info) map[key] = info;
   }
   return map;
-}
-
-export interface CatalogRestaurant {
-  name: string;
-  categories: { name: string; items: { name: string; nutritionKey: string }[] }[];
-}
-
-/**
- * Every restaurant with halal items in the full-catalog nutrition scrape,
- * regardless of whether it's serving today. Used to backfill the food page so
- * closed/not-serving spots are still browsable.
- */
-export function getCatalogRestaurants(): CatalogRestaurant[] {
-  const restaurants: CatalogRestaurant[] = [];
-  for (const [restKey, items] of Object.entries(data.byRestaurant)) {
-    const infos = Object.entries(items);
-    if (infos.length === 0) continue;
-    const byCategory = new Map<string, { name: string; nutritionKey: string }[]>();
-    for (const [itemKey, info] of infos) {
-      const list = byCategory.get(info.category) ?? [];
-      list.push({ name: info.item, nutritionKey: `${restKey}/${itemKey}` });
-      byCategory.set(info.category, list);
-    }
-    restaurants.push({
-      name: infos[0][1].restaurant,
-      categories: [...byCategory.entries()].map(([name, list]) => ({ name, items: list })),
-    });
-  }
-  restaurants.sort((a, b) => a.name.localeCompare(b.name));
-  return restaurants;
 }

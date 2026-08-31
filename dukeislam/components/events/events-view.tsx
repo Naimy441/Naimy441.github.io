@@ -10,10 +10,13 @@ import {
   ChevronRight,
   ExternalLink,
   MapPin,
+  Search,
+  X,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { cn } from "@/lib/utils";
 import {
@@ -39,15 +42,27 @@ export function EventsView({ payload }: Props) {
   // The upcoming/past split and "now" are computed on the server when the page
   // regenerates (every 30 min), which keeps server and client HTML identical.
   const { events, upcoming, past, asOf } = payload;
+  const [query, setQuery] = useState("");
+
+  const q = query.trim().toLowerCase();
+  const match = (e: MuslimEvent) =>
+    !q ||
+    e.title.toLowerCase().includes(q) ||
+    e.location.toLowerCase().includes(q) ||
+    e.description.toLowerCase().includes(q);
+
+  const filteredUpcoming = upcoming.filter(match);
+  const filteredPast = past.filter(match);
+  const filteredEvents = events.filter(match);
 
   if (events.length === 0) {
     return (
       <Card className="py-16 text-center">
         <CardContent className="space-y-2">
           <CalendarX2 className="mx-auto size-8 text-muted-foreground" />
-          <p className="font-medium">No events found</p>
+          <p className="font-medium">No events right now</p>
           <p className="text-sm text-muted-foreground">
-            The DukeGroups feed didn&apos;t return any events right now. Check back soon.
+            New posts from DukeGroups will show up here.
           </p>
         </CardContent>
       </Card>
@@ -55,24 +70,62 @@ export function EventsView({ payload }: Props) {
   }
 
   return (
-    <Tabs defaultValue="list">
-      <TabsList className="mb-4">
-        <TabsTrigger value="list">Upcoming</TabsTrigger>
-        <TabsTrigger value="calendar">Calendar</TabsTrigger>
-      </TabsList>
+    <div className="space-y-4">
+      <div className="relative">
+        <Search className="pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+        <Input
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Search events…"
+          className="h-11 rounded-full bg-card pl-10 pr-10 text-[15px] shadow-none"
+          aria-label="Search events"
+        />
+        {query && (
+          <button
+            type="button"
+            onClick={() => setQuery("")}
+            className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1 text-muted-foreground hover:bg-muted hover:text-foreground"
+            aria-label="Clear search"
+          >
+            <X className="size-4" />
+          </button>
+        )}
+      </div>
 
-      <TabsContent value="list">
-        <UpcomingList upcoming={upcoming} past={past} />
-      </TabsContent>
+      <Tabs defaultValue="list">
+        <TabsList className="mb-1 h-10 w-full sm:w-auto">
+          <TabsTrigger value="list" className="px-4">
+            Upcoming
+            {filteredUpcoming.length > 0 && (
+              <span className="text-[11px] opacity-60">{filteredUpcoming.length}</span>
+            )}
+          </TabsTrigger>
+          <TabsTrigger value="calendar" className="px-4">
+            Calendar
+          </TabsTrigger>
+        </TabsList>
 
-      <TabsContent value="calendar">
-        <MonthCalendar events={events} now={asOf} />
-      </TabsContent>
-    </Tabs>
+        <TabsContent value="list">
+          <UpcomingList upcoming={filteredUpcoming} past={filteredPast} searching={!!q} />
+        </TabsContent>
+
+        <TabsContent value="calendar">
+          <MonthCalendar events={filteredEvents} now={asOf} />
+        </TabsContent>
+      </Tabs>
+    </div>
   );
 }
 
-function UpcomingList({ upcoming, past }: { upcoming: MuslimEvent[]; past: MuslimEvent[] }) {
+function UpcomingList({
+  upcoming,
+  past,
+  searching,
+}: {
+  upcoming: MuslimEvent[];
+  past: MuslimEvent[];
+  searching: boolean;
+}) {
   const [showPast, setShowPast] = useState(false);
 
   const grouped = useMemo(() => {
@@ -90,9 +143,13 @@ function UpcomingList({ upcoming, past }: { upcoming: MuslimEvent[]; past: Musli
         <Card className="py-12 text-center">
           <CardContent className="space-y-1.5">
             <CalendarDays className="mx-auto size-7 text-muted-foreground" />
-            <p className="font-medium">Nothing scheduled right now</p>
+            <p className="font-medium">
+              {searching ? "Nothing matched" : "Nothing scheduled right now"}
+            </p>
             <p className="text-sm text-muted-foreground">
-              New events land here as soon as groups post them on DukeGroups.
+              {searching
+                ? "Try a different search."
+                : "New events land here when groups post them."}
             </p>
           </CardContent>
         </Card>
@@ -170,7 +227,7 @@ function EventCard({ event, muted = false }: { event: MuslimEvent; muted?: boole
           )}
         </div>
 
-        <h3 className="text-base font-semibold leading-snug tracking-tight sm:text-lg">
+        <h3 className="text-[15px] font-semibold leading-snug tracking-tight sm:text-base">
           {event.title}
         </h3>
 
@@ -227,7 +284,11 @@ function MonthCalendar({ events, now }: { events: MuslimEvent[]; now: number }) 
   const initial = etDateKey(initialKey);
   const [year, setYear] = useState(() => parseInt(initial.slice(0, 4), 10));
   const [month, setMonth] = useState(() => parseInt(initial.slice(5, 7), 10));
-  const [selectedDay, setSelectedDay] = useState<string | null>(null);
+  const [selectedDay, setSelectedDay] = useState<string | null>(() => {
+    if (eventsByDay.has(todayKey)) return todayKey;
+    const next = events.find((e) => new Date(e.end).getTime() >= now);
+    return next ? etDateKey(next.start) : null;
+  });
   const [direction, setDirection] = useState(0);
 
   const cells = monthGrid(year, month);

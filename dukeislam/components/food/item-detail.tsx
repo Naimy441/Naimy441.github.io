@@ -34,8 +34,8 @@ export function ItemDetail({ open, onOpenChange, info, itemName, restaurant }: P
     <NutritionLabel info={info} />
   ) : (
     <p className="rounded-xl bg-muted px-4 py-6 text-center text-sm text-muted-foreground">
-      No nutrition data on file for this item yet. It&apos;s still verified halal on
-      today&apos;s menu.
+      Nutrition facts aren&apos;t on file for this item yet. It&apos;s still on
+      today&apos;s halal menu.
     </p>
   );
 

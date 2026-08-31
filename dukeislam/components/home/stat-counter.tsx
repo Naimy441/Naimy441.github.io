@@ -20,11 +20,13 @@ export function StatCounter({ value, label }: { value: number; label: string }) 
   }, [inView, value]);
 
   return (
-    <div className="flex flex-col items-center gap-1 py-5 text-center">
-      <span ref={ref} className="text-3xl font-semibold tabular-nums text-primary md:text-4xl">
+    <div className="flex flex-col items-center gap-0.5 py-4 text-center md:py-5">
+      <span ref={ref} className="text-2xl font-semibold tabular-nums text-primary md:text-3xl">
         0
       </span>
-      <span className="text-xs font-medium text-muted-foreground md:text-sm">{label}</span>
+      <span className="px-1 text-[11px] font-medium leading-tight text-muted-foreground md:text-sm">
+        {label}
+      </span>
     </div>
   );
 }

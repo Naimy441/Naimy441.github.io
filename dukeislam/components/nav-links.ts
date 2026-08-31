@@ -8,6 +8,6 @@ export interface NavLink {
 
 export const navLinks: NavLink[] = [
   { href: "/", label: "Home", icon: Home },
-  { href: "/food", label: "Halal Food", icon: UtensilsCrossed },
+  { href: "/food", label: "Food", icon: UtensilsCrossed },
   { href: "/events", label: "Events", icon: CalendarDays },
 ];

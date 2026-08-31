@@ -10,18 +10,18 @@ export function SiteHeader() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-40 w-full border-b border-border/50 bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4 sm:px-6">
         <Link href="/" className="group flex items-center gap-2.5">
           <span className="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground transition-transform duration-300 group-hover:rotate-45">
             <StarMark className="size-4.5" />
           </span>
           <span className="text-[15px] font-semibold tracking-tight">
-            Islam <span className="font-display italic text-primary">@</span> Duke
+            Duke<span className="font-display italic text-primary">Islam</span>
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-1 md:flex">
+        <nav className="hidden items-center gap-0.5 md:flex">
           {navLinks.map((link) => {
             const active =
               link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
@@ -30,7 +30,7 @@ export function SiteHeader() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "relative rounded-full px-4 py-1.5 text-sm font-medium transition-colors",
+                  "relative rounded-full px-3.5 py-1.5 text-sm font-medium transition-colors",
                   active
                     ? "text-primary-foreground"
                     : "text-muted-foreground hover:text-foreground"
@@ -48,11 +48,6 @@ export function SiteHeader() {
             );
           })}
         </nav>
-
-        {/* Mobile: compact wordmark only; navigation lives in the bottom bar */}
-        <span className="text-xs font-medium text-muted-foreground md:hidden">
-          dukeislam.org
-        </span>
       </div>
     </header>
   );
