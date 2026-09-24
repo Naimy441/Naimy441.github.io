@@ -11,7 +11,7 @@ pipeline itself was not modified.
 
 | Data | Source | Freshness |
 |------|--------|-----------|
-| Halal menus | `outputs/halal_menus.txt`, fetched at runtime from `raw.githubusercontent.com` | GitHub Actions re-scrapes twice daily; pages revalidate every 30 min (ISR) |
+| Halal menus | `outputs/halal_menus.txt`, fetched at runtime from `raw.githubusercontent.com` | cron-job.org dispatches GitHub Actions three times daily; pages revalidate every 30 min (ISR) |
 | Events | DukeGroups ICS feed, fetched at runtime | Pages revalidate every 30 min (ISR) |
 | Nutrition facts | `data/nutrition.json`, bundled at build | Static snapshot from `outputs/restaurants/*.json` |
 | Prayer times | AlAdhan API (`calendarByAddress`, ISNA method, Shafi Asr) for 2080 Duke University Road | Cached 12h |
@@ -56,9 +56,8 @@ Vercel then auto-deploys on every push to `main`.
 
 ### Coexistence with the existing GitHub Actions setup
 
-Nothing in `.github/workflows/main.yml` was changed. It keeps scraping twice daily and
-committing PDFs + `outputs/halal_menus.txt` to `main`, and GitHub Pages keeps serving
-`docs/` as before.
+The workflow is dispatched by cron-job.org three times daily and commits PDFs +
+`outputs/halal_menus.txt` to `main`; GitHub Pages keeps serving `docs/` as before.
 
 Those bot commits will also trigger Vercel deploys. That's harmless, but unnecessary
 (data is fetched at runtime). To skip them, in Vercel go to Project → Settings → Git →
