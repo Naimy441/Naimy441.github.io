@@ -43,4 +43,6 @@ mobile_order/restaurants.json
 mobile_order/all_restaurant_menus.json
 ```
 
+Each restaurant record includes image URLs, estimated wait time, current open status, takeout/delivery hours, and the full day-by-day hours list returned by Mobile Order.
+
 The temporary captured session is stored locally in `.transact-session.json` with restricted permissions and is not included in the menu JSON exports.

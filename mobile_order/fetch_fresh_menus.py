@@ -76,6 +76,24 @@ def normalize(response: dict) -> dict:
         "location_id": location.get("locationid"),
         "cafeteria_id": location.get("cafeteriaid"),
         "location_key": location.get("locationkey"),
+        "cover_image_url": location.get("cover_picture_url", ""),
+        "icon_image_url": location.get("icon_picture_url", ""),
+        "estimated_wait_time_minutes": location.get("estimated_wait_time"),
+        "currently_open": bool(
+            location.get("is_currently_takeout_open")
+            or location.get("is_currently_delivery_open")
+        ),
+        "takeout_open": bool(location.get("is_currently_takeout_open")),
+        "delivery_open": bool(location.get("is_currently_delivery_open")),
+        "takeout_hours": {
+            "open": location.get("takeout_open_time"),
+            "close": location.get("takeout_close_time"),
+        },
+        "delivery_hours": {
+            "open": location.get("delivery_open_time"),
+            "close": location.get("delivery_close_time"),
+        },
+        "hours": location.get("hours_list") or [],
         "retrieved_at": menu.get("retrieved_at_datetime"),
         "menu_last_updated": menu.get("menu_last_updated_datetime"),
         "source_endpoint": ENDPOINT,
@@ -182,6 +200,13 @@ def main() -> int:
                 "campus_id": normalized.get("campus_id"),
                 "location_id": normalized.get("location_id"),
                 "cafeteria_id": normalized.get("cafeteria_id"),
+                "cover_image_url": normalized.get("cover_image_url", ""),
+                "icon_image_url": normalized.get("icon_image_url", ""),
+                "estimated_wait_time_minutes": normalized.get("estimated_wait_time_minutes"),
+                "currently_open": normalized.get("currently_open", False),
+                "takeout_hours": normalized.get("takeout_hours", {}),
+                "delivery_hours": normalized.get("delivery_hours", {}),
+                "hours": normalized.get("hours", []),
                 "retrieved_at": normalized.get("retrieved_at"),
                 "menu_last_updated": normalized.get("menu_last_updated"),
                 "section_count": len(normalized.get("sections") or []),
