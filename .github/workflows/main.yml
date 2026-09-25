@@ -5,6 +5,9 @@ name: Scrape
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   selenium-run:
     runs-on: ubuntu-latest
@@ -57,4 +60,52 @@ jobs:
               || echo "Revalidate ping failed (site falls back to timed revalidation)"
           else
             echo "REVALIDATE_SECRET not set; skipping cache refresh"
+          fi
+
+      - name: Check Transact session for Mobile Order
+        id: session-check
+        continue-on-error: true
+        env:
+          TRANSACT_LOGIN_TOKEN: ${{ secrets.TRANSACT_LOGIN_TOKEN }}
+          TRANSACT_USER_ID: ${{ secrets.TRANSACT_USER_ID }}
+          TRANSACT_SESSION_ID: ${{ secrets.TRANSACT_SESSION_ID }}
+        run: python3 mobile_order/check_transact_session.py
+
+      - name: Fetch fresh Mobile Order menus
+        id: menu-fetch
+        if: steps.session-check.outcome == 'success'
+        continue-on-error: true
+        env:
+          TRANSACT_LOGIN_TOKEN: ${{ secrets.TRANSACT_LOGIN_TOKEN }}
+          TRANSACT_USER_ID: ${{ secrets.TRANSACT_USER_ID }}
+          TRANSACT_SESSION_ID: ${{ secrets.TRANSACT_SESSION_ID }}
+        run: >-
+          python3 mobile_order/fetch_fresh_menus.py
+          --output-dir mobile_order
+          --delay 0.1
+
+      - name: Commit refreshed Mobile Order menus
+        if: steps.session-check.outcome == 'success' && steps.menu-fetch.outcome == 'success'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add mobile_order/menus mobile_order/restaurants.json mobile_order/all_restaurant_menus.json
+          if git diff --cached --quiet; then
+            echo "No Mobile Order menu changes to commit."
+          else
+            git commit -m "Refresh Mobile Order menus $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi
+
+      - name: Report Mobile Order result
+        if: always()
+        run: |
+          if [[ "${{ steps.session-check.outcome }}" != "success" ]]; then
+            echo "Mobile Order refresh skipped: Transact session check failed."
+          elif [[ "${{ steps.menu-fetch.outcome }}" != "success" ]]; then
+            echo "Mobile Order refresh did not complete; existing files were preserved."
+          else
+            echo "Mobile Order refresh completed."
           fi

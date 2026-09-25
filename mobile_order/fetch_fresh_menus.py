@@ -11,7 +11,9 @@ import argparse
 import json
 import os
 import re
+import shutil
 import sys
+import tempfile
 import time
 from pathlib import Path
 from urllib.error import HTTPError, URLError
@@ -19,6 +21,12 @@ from urllib.request import Request, urlopen
 
 
 ENDPOINT = "https://mobileorderprodapi.transactcampus.com/api_user/getmenu"
+SESSION_FAILURE_MARKERS = (
+    "session has expired",
+    "please log in again",
+    "invalid session",
+    "invalid login token",
+)
 WEEKDAYS = {
     1: "Monday",
     2: "Tuesday",
@@ -144,6 +152,11 @@ def fetch_menu(token: str, user_id: str, session_id: str, campus_id: int, locati
         return json.load(response)
 
 
+def is_session_failure(message: object) -> bool:
+    normalized = str(message or "").lower()
+    return any(marker in normalized for marker in SESSION_FAILURE_MARKERS)
+
+
 def normalize(response: dict) -> dict:
     location = response.get("location") or {}
     menu = response.get("menu") or {}
@@ -243,96 +256,131 @@ def main() -> int:
     index_path = Path(__file__).resolve().parent / "restaurants.json"
     restaurants = json.loads(index_path.read_text(encoding="utf-8"))["restaurants"]
     output_dir = args.output_dir.resolve()
+    output_dir.mkdir(parents=True, exist_ok=True)
     menu_dir = output_dir / "menus"
     menu_dir.mkdir(parents=True, exist_ok=True)
+    staging_root = Path(tempfile.mkdtemp(prefix=".fresh-menus-", dir=output_dir))
+    staging_menu_dir = staging_root / "menus"
+    staging_menu_dir.mkdir()
 
     fresh = []
-    for number, restaurant in enumerate(restaurants, start=1):
-        name = restaurant["restaurant"]
-        location_id = int(restaurant["location_id"])
-        campus_id = int(restaurant["campus_id"])
-        print(f"[{number}/{len(restaurants)}] {name}", flush=True)
-        try:
-            response = fetch_menu(token, user_id, session_id, campus_id, location_id)
-            if response.get("message") != "SUCCESS":
-                print(f"  server message: {response.get('message', 'unknown')}", file=sys.stderr)
-                continue
-            normalized = normalize(response)
-            fresh.append(normalized)
-            filename = f"{slugify(name)}__location-{location_id}.json"
-            (menu_dir / filename).write_text(
-                json.dumps(normalized, ensure_ascii=False, indent=2) + "\n",
-                encoding="utf-8",
+    failed = []
+    try:
+        for number, restaurant in enumerate(restaurants, start=1):
+            name = restaurant["restaurant"]
+            location_id = int(restaurant["location_id"])
+            campus_id = int(restaurant["campus_id"])
+            print(f"[{number}/{len(restaurants)}] {name}", flush=True)
+            try:
+                response = fetch_menu(token, user_id, session_id, campus_id, location_id)
+                message = response.get("message", "unknown")
+                if message != "SUCCESS":
+                    if is_session_failure(message):
+                        print(f"  session failure: {message}", file=sys.stderr)
+                        print(
+                            "Stopped before changing any menu files. Re-capture the session and try again.",
+                            file=sys.stderr,
+                        )
+                        return 3
+                    print(f"  server message: {message}", file=sys.stderr)
+                    failed.append(name)
+                    continue
+                normalized = normalize(response)
+                fresh.append(normalized)
+                filename = f"{slugify(name)}__location-{location_id}.json"
+                (staging_menu_dir / filename).write_text(
+                    json.dumps(normalized, ensure_ascii=False, indent=2) + "\n",
+                    encoding="utf-8",
+                )
+            except HTTPError as error:
+                if error.code in {401, 403}:
+                    print(f"  session failure: HTTP {error.code}", file=sys.stderr)
+                    print(
+                        "Stopped before changing any menu files. Re-capture the session and try again.",
+                        file=sys.stderr,
+                    )
+                    return 3
+                print(f"  HTTP {error.code}; request failed", file=sys.stderr)
+                failed.append(name)
+            except (URLError, TimeoutError, json.JSONDecodeError) as error:
+                print(f"  request failed: {error}", file=sys.stderr)
+                failed.append(name)
+            if number < len(restaurants):
+                time.sleep(max(args.delay, 0))
+
+        if failed or len(fresh) != len(restaurants):
+            print(
+                f"Stopped without changing menu files: {len(fresh)}/{len(restaurants)} menus fetched.",
+                file=sys.stderr,
             )
-        except HTTPError as error:
-            print(f"  HTTP {error.code}; token may be expired or invalid", file=sys.stderr)
-        except (URLError, TimeoutError, json.JSONDecodeError) as error:
-            print(f"  request failed: {error}", file=sys.stderr)
-        if number < len(restaurants):
-            time.sleep(max(args.delay, 0))
+            if failed:
+                print(f"Failed restaurants: {', '.join(failed)}", file=sys.stderr)
+            return 1
 
-    fresh.sort(key=lambda item: item.get("restaurant", "").lower())
-    output_dir.mkdir(parents=True, exist_ok=True)
+        fresh.sort(key=lambda item: item.get("restaurant", "").lower())
 
-    fresh_by_location = {str(item.get("location_id")): item for item in fresh}
-    restaurant_index = []
-    for source_restaurant in restaurants:
-        location_key = str(source_restaurant.get("location_id", ""))
-        normalized = fresh_by_location.get(location_key)
-        if normalized is None:
-            restaurant_index.append(source_restaurant)
-            continue
-        filename = f"{slugify(normalized.get('restaurant', ''))}__location-{normalized.get('location_id')}.json"
-        restaurant_index.append(
-            {
-                "restaurant": normalized.get("restaurant", ""),
-                "campus_id": normalized.get("campus_id"),
-                "location_id": normalized.get("location_id"),
-                "cafeteria_id": normalized.get("cafeteria_id"),
-                "icon_image_url": normalized.get("icon_image_url", ""),
-                "estimated_wait_time_minutes": normalized.get("estimated_wait_time_minutes"),
-                "currently_open": normalized.get("currently_open", False),
-                "takeout_hours": normalized.get("takeout_hours", {}),
-                "delivery_hours": normalized.get("delivery_hours", {}),
-                "hours": normalized.get("hours", []),
-                "retrieved_at": normalized.get("retrieved_at"),
-                "menu_last_updated": normalized.get("menu_last_updated"),
-                "section_count": len(normalized.get("sections") or []),
-                "item_count": sum(
-                    len(section.get("items") or [])
-                    for section in normalized.get("sections") or []
-                ),
-                "file": f"menus/{filename}",
-            }
-        )
-    restaurant_index.sort(key=lambda item: item.get("restaurant", "").lower())
+        fresh_by_location = {str(item.get("location_id")): item for item in fresh}
+        restaurant_index = []
+        for source_restaurant in restaurants:
+            location_key = str(source_restaurant.get("location_id", ""))
+            normalized = fresh_by_location[location_key]
+            filename = f"{slugify(normalized.get('restaurant', ''))}__location-{normalized.get('location_id')}.json"
+            restaurant_index.append(
+                {
+                    "restaurant": normalized.get("restaurant", ""),
+                    "campus_id": normalized.get("campus_id"),
+                    "location_id": normalized.get("location_id"),
+                    "cafeteria_id": normalized.get("cafeteria_id"),
+                    "icon_image_url": normalized.get("icon_image_url", ""),
+                    "estimated_wait_time_minutes": normalized.get("estimated_wait_time_minutes"),
+                    "currently_open": normalized.get("currently_open", False),
+                    "takeout_hours": normalized.get("takeout_hours", {}),
+                    "delivery_hours": normalized.get("delivery_hours", {}),
+                    "hours": normalized.get("hours", []),
+                    "retrieved_at": normalized.get("retrieved_at"),
+                    "menu_last_updated": normalized.get("menu_last_updated"),
+                    "section_count": len(normalized.get("sections") or []),
+                    "item_count": sum(
+                        len(section.get("items") or [])
+                        for section in normalized.get("sections") or []
+                    ),
+                    "file": f"menus/{filename}",
+                }
+            )
+        restaurant_index.sort(key=lambda item: item.get("restaurant", "").lower())
 
-    (output_dir / "restaurants.json").write_text(
-        json.dumps(
-            {
-                "restaurant_count": len(restaurant_index),
-                "restaurants": restaurant_index,
-            },
-            ensure_ascii=False,
-            indent=2,
+        (staging_root / "restaurants.json").write_text(
+            json.dumps(
+                {
+                    "restaurant_count": len(restaurant_index),
+                    "restaurants": restaurant_index,
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+            + "\n",
+            encoding="utf-8",
         )
-        + "\n",
-        encoding="utf-8",
-    )
-    (output_dir / "all_restaurant_menus.json").write_text(
-        json.dumps(
-            {
-                "restaurant_count": len(fresh),
-                "restaurants": fresh,
-            },
-            ensure_ascii=False,
-            indent=2,
+        (staging_root / "all_restaurant_menus.json").write_text(
+            json.dumps(
+                {
+                    "restaurant_count": len(fresh),
+                    "restaurants": fresh,
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+            + "\n",
+            encoding="utf-8",
         )
-        + "\n",
-        encoding="utf-8",
-    )
-    print(f"Fetched {len(fresh)} menus into {output_dir}")
-    return 0 if fresh else 1
+        for staged_file in staging_menu_dir.glob("*.json"):
+            os.replace(staged_file, menu_dir / staged_file.name)
+        os.replace(staging_root / "restaurants.json", output_dir / "restaurants.json")
+        os.replace(staging_root / "all_restaurant_menus.json", output_dir / "all_restaurant_menus.json")
+        print(f"Fetched {len(fresh)} menus into {output_dir}")
+        return 0
+    finally:
+        shutil.rmtree(staging_root, ignore_errors=True)
 
 
 if __name__ == "__main__":

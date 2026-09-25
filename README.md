@@ -27,35 +27,6 @@ This runs, with a live progress display and per-step logs in `outputs/logs/`:
 
 Then review with `git status`, commit, and push — the Vercel deploy picks up the new catalog.
 
-## Building the Mobile Order nutrition catalog
-
-`src/build_mobile_order_catalog.py` keeps the Mobile Order schema intact: every
-food item remains one item, and its option groups and option values stay nested
-under it. It adds a `_nutrition_match` annotation to menu items and option
-values, using exact matches first and Jev through Vercel AI Gateway for
-unresolved top-level menu items. Nested options are never treated as separate
-food items; they receive exact enrichment only when a standalone nutrition
-record exists. Uncertain or missing matches are retained as review data;
-nothing is discarded.
-
-The default input is the full nutrition export and the output is:
-
-```bash
-python3 src/build_mobile_order_catalog.py
-```
-
-This reads `AI_GATEWAY_API_KEY` from the environment or the ignored root
-`.env.local` file, calls `typesafe-ai/jev` at the Gateway evaluation endpoint,
-and writes `outputs/mobile_order_catalog.json`. The Jev response cache is kept
-in the ignored `outputs/mobile_order_catalog.jev-cache.json` file so later runs
-only evaluate new or changed names.
-
-For a local structural smoke test without making Gateway requests:
-
-```bash
-python3 src/build_mobile_order_catalog.py --no-ai --limit 100
-```
-
 ---
 
 Visit the website [naimy441.github.io](https://naimy441.github.io) to view the latest PDF version of the halal menus and muslim events.
