@@ -19,11 +19,100 @@ from urllib.request import Request, urlopen
 
 
 ENDPOINT = "https://mobileorderprodapi.transactcampus.com/api_user/getmenu"
+WEEKDAYS = {
+    1: "Monday",
+    2: "Tuesday",
+    3: "Wednesday",
+    4: "Thursday",
+    5: "Friday",
+    6: "Saturday",
+    7: "Sunday",
+}
 
 
 def slugify(value: str) -> str:
     value = re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
     return value or "restaurant"
+
+
+def format_clock(value: object) -> str | None:
+    if value in (None, ""):
+        return None
+    return str(value)[:5]
+
+
+def service_windows(row: dict, prefix: str) -> list[dict[str, str | None]]:
+    windows = []
+    for suffix in ("", "_2", "_3"):
+        opening = format_clock(row.get(f"{prefix}_open_time{suffix}"))
+        closing = format_clock(row.get(f"{prefix}_close_time{suffix}"))
+        if opening is None or closing is None:
+            continue
+        if suffix and opening == "00:00" and closing == "00:00":
+            continue
+        windows.append({"open": opening, "close": closing})
+    return windows
+
+
+def simple_hours(location: dict) -> dict:
+    weekly = {}
+    for row in location.get("hours_list") or []:
+        takeout = service_windows(row, "takeout")
+        delivery = service_windows(row, "delivery")
+        holiday_date = row.get("holiday_date") or ""
+        holiday_end = row.get("holiday_date_end") or ""
+        label = row.get("label") or WEEKDAYS.get(row.get("day_of_week"), "")
+        if holiday_date or holiday_end:
+            continue
+        if label:
+            day = weekly.setdefault(label, {"takeout": [], "delivery": []})
+            day["takeout"].extend(takeout)
+            day["delivery"].extend(delivery)
+    return weekly
+
+
+def money(value: object) -> float | None:
+    if value in (None, ""):
+        return None
+    return round(float(value) / 100, 2)
+
+
+def compact_option(option: dict) -> dict:
+    return {
+        "name": option.get("name") or option.get("qp_name", ""),
+        "minimum": option.get("minimum"),
+        "maximum": option.get("maximum"),
+        "allow_quantity": bool(option.get("allow_qty")),
+        "values": [
+            {
+                "name": value.get("name") or value.get("qp_name", ""),
+                "price": money(value.get("price")),
+                "is_default": bool(value.get("is_default")),
+                "is_hidden": bool(value.get("is_hidden") or value.get("is_deleted")),
+                "is_out_of_stock": bool(value.get("pos_outofstock")),
+                "max_quantity": value.get("max_quantity"),
+            }
+            for value in option.get("values") or []
+        ],
+    }
+
+
+def compact_item(item: dict) -> dict:
+    return {
+        "name": item.get("name") or item.get("qp_name", ""),
+        "description": item.get("description", ""),
+        "price": money(item.get("price_display", item.get("price_base"))),
+        "options": [compact_option(option) for option in item.get("options") or []],
+        "busy_min": item.get(
+            "busy_minimum_pickup_minutes",
+            item.get("busy_kitchen_print_minutes"),
+        ),
+        "normal_min": item.get(
+            "normal_minimum_pickup_minutes",
+            item.get("normal_kitchen_print_minutes"),
+        ),
+        "is_hidden": bool(item.get("is_hidden")),
+    }
 
 
 def fetch_menu(token: str, user_id: str, session_id: str, campus_id: int, location_id: int) -> dict:
@@ -60,14 +149,17 @@ def normalize(response: dict) -> dict:
     menu = response.get("menu") or {}
     sections = []
     for section in menu.get("sections_1") or []:
-        if section.get("is_hidden", 0) or section.get("is_deleted", 0):
+        if section.get("is_deleted", 0):
             continue
         sections.append(
             {
-                "section_id": section.get("sectionid"),
                 "name": section.get("name", ""),
-                "position": section.get("position"),
-                "items": section.get("items") or [],
+                "is_hidden": bool(section.get("is_hidden")),
+                "items": [
+                    compact_item(item)
+                    for item in section.get("items") or []
+                    if not item.get("is_deleted", 0)
+                ],
             }
         )
     return {
@@ -75,8 +167,6 @@ def normalize(response: dict) -> dict:
         "campus_id": location.get("campusid"),
         "location_id": location.get("locationid"),
         "cafeteria_id": location.get("cafeteriaid"),
-        "location_key": location.get("locationkey"),
-        "cover_image_url": location.get("cover_picture_url", ""),
         "icon_image_url": location.get("icon_picture_url", ""),
         "estimated_wait_time_minutes": location.get("estimated_wait_time"),
         "currently_open": bool(
@@ -93,10 +183,9 @@ def normalize(response: dict) -> dict:
             "open": location.get("delivery_open_time"),
             "close": location.get("delivery_close_time"),
         },
-        "hours": location.get("hours_list") or [],
+        "hours": simple_hours(location),
         "retrieved_at": menu.get("retrieved_at_datetime"),
         "menu_last_updated": menu.get("menu_last_updated_datetime"),
-        "source_endpoint": ENDPOINT,
         "sections": sections,
     }
 
@@ -200,7 +289,6 @@ def main() -> int:
                 "campus_id": normalized.get("campus_id"),
                 "location_id": normalized.get("location_id"),
                 "cafeteria_id": normalized.get("cafeteria_id"),
-                "cover_image_url": normalized.get("cover_image_url", ""),
                 "icon_image_url": normalized.get("icon_image_url", ""),
                 "estimated_wait_time_minutes": normalized.get("estimated_wait_time_minutes"),
                 "currently_open": normalized.get("currently_open", False),
@@ -222,7 +310,6 @@ def main() -> int:
     (output_dir / "restaurants.json").write_text(
         json.dumps(
             {
-                "source_endpoint": ENDPOINT,
                 "restaurant_count": len(restaurant_index),
                 "restaurants": restaurant_index,
             },
@@ -235,7 +322,6 @@ def main() -> int:
     (output_dir / "all_restaurant_menus.json").write_text(
         json.dumps(
             {
-                "source_endpoint": ENDPOINT,
                 "restaurant_count": len(fresh),
                 "restaurants": fresh,
             },

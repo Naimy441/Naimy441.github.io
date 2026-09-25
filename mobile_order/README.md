@@ -43,6 +43,29 @@ mobile_order/restaurants.json
 mobile_order/all_restaurant_menus.json
 ```
 
-Each restaurant record includes image URLs, estimated wait time, current open status, takeout/delivery hours, and the full day-by-day hours list returned by Mobile Order.
+The compact exports keep restaurant names, icon URLs, current open status, estimated wait time, simple weekly takeout/delivery hours, section names, item names and descriptions, prices, inner options such as sizes and add-ons, busy/normal pickup minutes, and visibility flags.
+
+`price` is expressed in dollars.
+
+## Understanding item options
+
+Menu items keep their inner options, including choices such as small/medium/large,
+creamer, creamer amount, and flavor shots. Each option group has these fields:
+
+- `minimum`: the fewest choices the customer must make in that group.
+- `maximum`: the most choices the customer may make in that group.
+- `allow_quantity`: whether a choice can be added with a quantity.
+- `values`: the choices in the group, including their names, prices, defaults,
+  hidden/out-of-stock status, and any per-choice quantity limit.
+
+For example, Bella Union's Espresso item has an **Espresso Sizes** group with
+`minimum: 1` and `maximum: 1`. That means the customer must choose exactly one
+size. A group with `minimum: 0` is optional, while a larger `maximum` allows
+multiple choices.
+
+`max_quantity` applies to one individual choice. A value of `0` generally means
+that the menu did not configure a separate per-choice limit; it does not mean
+the choice is unavailable. Use `is_out_of_stock` to identify unavailable
+choices. `is_hidden` indicates that a choice or item is hidden from customers.
 
 The temporary captured session is stored locally in `.transact-session.json` with restricted permissions and is not included in the menu JSON exports.
