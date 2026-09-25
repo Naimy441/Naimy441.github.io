@@ -69,7 +69,7 @@ jobs:
           TRANSACT_LOGIN_TOKEN: ${{ secrets.TRANSACT_LOGIN_TOKEN }}
           TRANSACT_USER_ID: ${{ secrets.TRANSACT_USER_ID }}
           TRANSACT_SESSION_ID: ${{ secrets.TRANSACT_SESSION_ID }}
-        run: python3 mobile_order/check_transact_session.py
+        run: python3 mobile_order/check_transact_session.py --output-dir outputs/mobile_order
 
       - name: Fetch fresh Mobile Order menus
         id: menu-fetch
@@ -81,7 +81,7 @@ jobs:
           TRANSACT_SESSION_ID: ${{ secrets.TRANSACT_SESSION_ID }}
         run: >-
           python3 mobile_order/fetch_fresh_menus.py
-          --output-dir mobile_order
+          --output-dir outputs/mobile_order
           --delay 0.1
 
       - name: Commit refreshed Mobile Order menus
@@ -91,7 +91,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add mobile_order/menus mobile_order/restaurants.json mobile_order/all_restaurant_menus.json
+          git add outputs/mobile_order/menus outputs/mobile_order/restaurants.json outputs/mobile_order/all_restaurant_menus.json
           if git diff --cached --quiet; then
             echo "No Mobile Order menu changes to commit."
           else

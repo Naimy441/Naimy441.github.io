@@ -27,6 +27,13 @@ This runs, with a live progress display and per-step logs in `outputs/logs/`:
 
 Then review with `git status`, commit, and push — the Vercel deploy picks up the new catalog.
 
+## Mobile Order menus
+
+The Mac Mobile Order workflow refreshes current restaurant menus into
+`outputs/mobile_order/`. Run `./mobile_order/refresh_menus.sh` locally; the
+workflow can also refresh them through GitHub Actions when the saved Transact
+session is valid.
+
 ---
 
 Visit the website [naimy441.github.io](https://naimy441.github.io) to view the latest PDF version of the halal menus and muslim events.

@@ -1,33 +1,32 @@
 {
-  "restaurant": "Cafe 300",
+  "restaurant": "Sazon",
   "campus_id": 19,
-  "location_id": 144,
-  "cafeteria_id": 123,
-  "icon_image_url": "campuses/icon_restaurant_19_18_129_1585848973577.jpg",
-  "icon_image_file": "images/icon_restaurant_19_18_129_1585848973577.jpg",
-  "estimated_wait_time_minutes": 17,
+  "location_id": 533,
+  "cafeteria_id": 475,
+  "icon_image_url": "campuses/icon_location_19_18_127_1701729943321.jpg",
+  "estimated_wait_time_minutes": 12,
   "currently_open": true,
   "takeout_open": true,
   "delivery_open": true,
   "takeout_hours": {
-    "open": "07:00:00",
+    "open": "10:30:00",
     "close": "21:00:00"
   },
   "delivery_hours": {
-    "open": "07:00:00",
+    "open": "10:30:00",
     "close": "21:00:00"
   },
   "hours": {
     "Monday": {
       "takeout": [
         {
-          "open": "07:00",
+          "open": "10:30",
           "close": "21:00"
         }
       ],
       "delivery": [
         {
-          "open": "07:00",
+          "open": "10:30",
           "close": "21:00"
         }
       ]
@@ -35,13 +34,13 @@
     "Tuesday": {
       "takeout": [
         {
-          "open": "07:00",
+          "open": "10:30",
           "close": "21:00"
         }
       ],
       "delivery": [
         {
-          "open": "07:00",
+          "open": "10:30",
           "close": "21:00"
         }
       ]
@@ -49,13 +48,13 @@
     "Wednesday": {
       "takeout": [
         {
-          "open": "07:00",
+          "open": "10:30",
           "close": "21:00"
         }
       ],
       "delivery": [
         {
-          "open": "07:00",
+          "open": "10:30",
           "close": "21:00"
         }
       ]
@@ -63,13 +62,13 @@
     "Thursday": {
       "takeout": [
         {
-          "open": "07:00",
+          "open": "10:30",
           "close": "21:00"
         }
       ],
       "delivery": [
         {
-          "open": "07:00",
+          "open": "10:30",
           "close": "21:00"
         }
       ]
@@ -77,13 +76,13 @@
     "Friday": {
       "takeout": [
         {
-          "open": "07:00",
+          "open": "10:30",
           "close": "21:00"
         }
       ],
       "delivery": [
         {
-          "open": "07:00",
+          "open": "10:30",
           "close": "21:00"
         }
       ]
@@ -91,13 +90,13 @@
     "Saturday": {
       "takeout": [
         {
-          "open": "09:00",
+          "open": "10:30",
           "close": "21:00"
         }
       ],
       "delivery": [
         {
-          "open": "09:00",
+          "open": "10:30",
           "close": "21:00"
         }
       ]
@@ -105,29 +104,124 @@
     "Sunday": {
       "takeout": [
         {
-          "open": "09:00",
+          "open": "10:30",
           "close": "21:00"
         }
       ],
       "delivery": [
         {
-          "open": "09:00",
+          "open": "10:30",
           "close": "21:00"
         }
       ]
     }
   },
-  "retrieved_at": "2026-09-25 00:12:01",
-  "menu_last_updated": "2026-09-25 00:12:02",
+  "retrieved_at": "2026-09-24 16:01:17",
+  "menu_last_updated": "2026-09-24 16:01:17",
   "sections": [
     {
-      "name": "Delivery",
+      "name": "SAZ - Game Day Specials Online",
+      "is_hidden": true,
+      "items": []
+    },
+    {
+      "name": "Sazon Specials",
       "is_hidden": false,
       "items": [
         {
-          "name": "Delivery Fee",
-          "description": "**Attention in order for this to be made a delivery you must select delivery in the top right hand corner. ***",
-          "price": 2.0,
+          "name": "$5 Meal Deal",
+          "description": "1 Street Taco with Chips and Salsa or Plantains",
+          "price": 5.0,
+          "options": [
+            {
+              "name": "Meal Deal Protein",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Chicken",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Portobello",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Meal Deal Side",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Chips and Pico de gallo",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chips with Fire Roasted Salsa",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Plantains",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 22,
+          "is_hidden": false
+        }
+      ]
+    },
+    {
+      "name": "Nourish Meals",
+      "is_hidden": true,
+      "items": [
+        {
+          "name": "Chicken Burrito",
+          "description": "Monterey Jack Cheese Pulled Chicken Shredded Romaine Pico de Gallo Roasted Corn Salsa with a side of Chips and Salsa",
+          "price": 11.65,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Shrimp Tacos",
+          "description": "Shredded Cheese Brown Rice Shredded Romaine Blackened Shrimp Plantains Pico de Gallo Roasted Corn Salsa Habanero Coleslaw",
+          "price": 14.55,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Vegan Arepa Bowl",
+          "description": "Romaine Brown Rice Black Beans Mushrooms Arepa Peppers and Onions Guacamole Pico de Gallo Roasted Corn Salsa Habanero Coleslaw",
+          "price": 10.59,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -136,43 +230,30 @@
       ]
     },
     {
-      "name": "Daily Specials",
-      "is_hidden": false,
-      "items": []
-    },
-    {
-      "name": "Salads",
+      "name": "Build Your Own",
       "is_hidden": false,
       "items": [
         {
-          "name": "Build your own salad",
-          "description": "Base Salad of one lettuce two veggies one protein/cheese and one dressing",
-          "price": 11.99,
+          "name": "2 Tacos",
+          "description": "2 Tacos with choice of protein and toppings",
+          "price": 12.85,
           "options": [
             {
-              "name": "Build Your Own Salad Base",
+              "name": "Taco Tortilla Option",
               "minimum": 0,
               "maximum": 1,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Arugula",
+                  "name": "Corn tortilla",
                   "price": 0.0,
                   "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 2
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
                 },
                 {
-                  "name": "Kale",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Baby Geens",
+                  "name": "Flour tortilla",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -182,133 +263,13 @@
               ]
             },
             {
-              "name": "Build Your Own Salad Veggies",
-              "minimum": 0,
-              "maximum": 4,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Avocado",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Black beans",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Broccoli",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Cabbage",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Carrot",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Cucumber",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Kalamata Olives",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Marinated Mushrooms",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Onions",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Peppers",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pickled Jalapenos",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Tomato",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "White Beans",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Roasted Mushrooms",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Build Your Own Salad Protein",
+              "name": "Base Options",
               "minimum": 0,
               "maximum": 1,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Bacon",
+                  "name": "Shredded Romain",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -316,39 +277,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Chicken",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Egg",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ham",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Salami",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Tortellini",
+                  "name": "Brown Rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
@@ -356,7 +285,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Turkey Sausage",
+                  "name": "White Cilantro Rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -364,597 +293,175 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Pepperoni",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Build Your Own Salad Cheese",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Cheddar",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Feta",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Parmesan",
+                  "name": "Black Beans",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
                   "max_quantity": 0
-                },
-                {
-                  "name": "Mozzarella",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
                 }
               ]
             },
             {
-              "name": "Build Your Own Salad Protein Extra",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Avocado",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Bacon",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chicken",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Egg",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ham",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pepperoni",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Salami",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Tortellini",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Turkey Sausage",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Build Your Own Salad Dressing",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Buffalo Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Creamy Herb Dressing",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No dressing",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ranch",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Sesame Ginger Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Sriracha",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Balsamic",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Oil and Vinegar",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        }
-      ]
-    },
-    {
-      "name": "Bowls",
-      "is_hidden": false,
-      "items": [
-        {
-          "name": "Sweet Oatmeal Bowl",
-          "description": "Freshly-made oatmeal with apples raisins maple syrup butter and spices",
-          "price": 5.55,
-          "options": [
-            {
-              "name": "Sweet Oatmeal Bowl",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No apples",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No butter",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No raisins",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No syrup",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Buffalo Chicken bowl",
-          "description": "Buffalo Chicken Bowl with roasted chicken tossed in buffalo sauce jasmine rice broccoli and ranch dressing drizzle",
-          "price": 10.99,
-          "options": [
-            {
-              "name": "Buffalo Chicken Bowl",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No broccoli",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No buffalo sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No chicken",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No ranch",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No rice",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Dressing on the side",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra Protein",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Ginger Chicken Bowl",
-          "description": "Ginger Chicken Bowl with roasted chicken jasmine rice crunchy veggies cilantro and sesame ginger sauce",
-          "price": 10.99,
-          "options": [
-            {
-              "name": "Ginger Chicken Bowl",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No Cilantro",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No ginger sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No veggies",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Dressing on the side",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No cabbage or carrots",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No edamame",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No red onion",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra Protein",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        }
-      ]
-    },
-    {
-      "name": "Handhelds",
-      "is_hidden": false,
-      "items": [
-        {
-          "name": "Bagel - plain",
-          "description": "Plain bagel Allergens: gluten soy wheat",
-          "price": 3.99,
-          "options": [
-            {
-              "name": "Bagel modifiers",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Add avocado",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add bacon",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "add butter",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "add cream cheese",
-                  "price": 0.85,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add ham",
-                  "price": 1.95,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add mushrooms",
-                  "price": 0.65,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add red pepper",
-                  "price": 0.89,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "add sliced cheese",
-                  "price": 0.65,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add spinach",
-                  "price": 0.89,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add tomato",
-                  "price": 0.89,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Egg & Cheese Croissant",
-          "description": "Egg and cheese served on a buttery croissant",
-          "price": 6.55,
-          "options": [
-            {
-              "name": "300 - Egg & Cheese Croissant",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Add bacon",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add egg",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No cheese",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO egg",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sub for scrambled",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Croissant Breakfast Sandwich Bread",
+              "name": "Proteins",
               "minimum": 1,
               "maximum": 1,
-              "allow_quantity": true,
+              "allow_quantity": false,
               "values": [
                 {
-                  "name": "Croissant",
-                  "price": 0.0,
+                  "name": "Sazon Steak",
+                  "price": 13.29,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chorizo",
+                  "price": 12.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Hot Honey Chicken",
+                  "price": 12.85,
                   "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Keiser",
+                  "name": "Chili Lime Mahi Mahi",
+                  "price": 15.29,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Nadura - Meatless Protein",
+                  "price": 13.55,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Tofrizo",
+                  "price": 11.99,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Grilled Chicken",
+                  "price": 12.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Carnitas",
+                  "price": 12.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Barbacoa",
+                  "price": 12.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Portobello",
+                  "price": 11.99,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cheese-No Protein",
+                  "price": 9.89,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Shredded Chicken",
+                  "price": 11.49,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Blackened Shrimp",
+                  "price": 14.55,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Guac as Protein",
+                  "price": 10.59,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sazon Steak",
+                  "price": 14.55,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Al Pastor",
+                  "price": 11.49,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Maduro Bowl",
+                  "price": 10.47,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Tofrizo",
+                  "price": 11.49,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Toppings",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Fajita Peppers and Onion",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -962,7 +469,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Tortillas",
+                  "name": "Fried Egg",
+                  "price": 1.05,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Black Beans",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -970,7 +485,95 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Bagel",
+                  "name": "Pinto Beans",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Super Food Lettuce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fresh jalapenos",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pickled onions",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sauteed onions",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Plaintains",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Guacamole",
+                  "price": 1.59,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pico de Gallo",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Corn Salsa",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Habanero Coleslaw",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cilantro Lime Slaw",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cotija Cheese",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -978,23 +581,21 @@
                   "max_quantity": 0
                 }
               ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Croissant Breakfast Sandwich",
-          "description": "All butter croissant with turkey sausage scrambled egg and American cheese",
-          "price": 6.99,
-          "options": [
+            },
             {
-              "name": "Croissant Breakfast Sandwich Options",
+              "name": "Cheese Option",
               "minimum": 0,
-              "maximum": 50,
+              "maximum": 1,
               "allow_quantity": true,
               "values": [
+                {
+                  "name": "Monterrey Jack Cheese",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
                 {
                   "name": "No Cheese",
                   "price": 0.0,
@@ -1002,9 +603,17 @@
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
-                },
+                }
+              ]
+            },
+            {
+              "name": "Sauces",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": false,
+              "values": [
                 {
-                  "name": "No Egg",
+                  "name": "Habanero",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1012,7 +621,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Turkey Sausage",
+                  "name": "Chipotle Crema",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1020,23 +629,39 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Add bacon",
-                  "price": 1.09,
+                  "name": "Habanero Red Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Hot Cilantro Aioli",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Add egg",
-                  "price": 1.09,
+                  "name": "Chimichurri",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Sub for scrambled egg",
+                  "name": "Mild Cilantro Aioli",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fresco Sour cream",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1044,98 +669,72 @@
                   "max_quantity": 0
                 }
               ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Crunch Breakfast Dilla",
-          "description": "Breakfast quesadilla with hash browns sausage egg cheese tomato onion and lettuce with sour cream",
-          "price": 10.55,
-          "options": [
+            },
             {
-              "name": "Crunch Breakfast Dilla",
+              "name": "Extras",
               "minimum": 0,
               "maximum": 50,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "No cheese",
+                  "name": "No Extra Protein",
                   "price": 0.0,
                   "is_default": false,
-                  "is_hidden": false,
+                  "is_hidden": true,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "No egg",
-                  "price": 0.0,
+                  "name": "Extra Shrimp Protein",
+                  "price": 5.35,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "No hashbrown",
-                  "price": 0.0,
+                  "name": "Extra Protein-non SteakorShrimp",
+                  "price": 3.19,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "No lettuce",
-                  "price": 0.0,
+                  "name": "Add Chips and Guacamole",
+                  "price": 4.29,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "No onion",
-                  "price": 0.0,
+                  "name": "Add Chips and Pico de Gallo",
+                  "price": 3.19,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "No sausage",
-                  "price": 0.0,
+                  "name": "Add Chips w Fire Roasted Salsa",
+                  "price": 3.19,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "No sour cream",
-                  "price": 0.0,
+                  "name": "Add Chips and Queso",
+                  "price": 4.29,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "No tomato",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add Bacon",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add cheese",
-                  "price": 0.55,
+                  "name": "Extra Steak Protein",
+                  "price": 5.35,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -1144,113 +743,23 @@
               ]
             }
           ],
-          "busy_min": 15,
-          "normal_min": 10,
+          "busy_min": 10,
+          "normal_min": 22,
           "is_hidden": false
         },
         {
-          "name": "Hash Brown Breakfast Burrito",
-          "description": "Hash brown sausage egg cheese and sour cream in a tortilla wrapped to go",
-          "price": 9.55,
+          "name": "Arepa Bowl",
+          "description": "Latin bowl customized with your choice of toppings",
+          "price": 12.85,
           "options": [
             {
-              "name": "300 - Hash Brown Breakfast Burrito",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No cheese",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No egg",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No sausage",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No sour cream",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add bacon",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add cheese",
-                  "price": 0.55,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add egg",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra Protein",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sub scrambled egg",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Build Your Own Sandwich",
-          "description": "Base Sandwich with choice of bread one cheese one meat two veggies two condiments. Comes with chips",
-          "price": 11.99,
-          "options": [
-            {
-              "name": "Build Your Own Sandwich Bread",
+              "name": "Cheese Option",
               "minimum": 0,
               "maximum": 1,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Bagel",
+                  "name": "Monterrey Jack Cheese",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1258,39 +767,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Croissant",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Gluten Free",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Kaiser",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Multigrain",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Tortilla",
+                  "name": "No Cheese",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1300,13 +777,13 @@
               ]
             },
             {
-              "name": "Build Your Own Sandwich Cheese",
+              "name": "Base Options",
               "minimum": 0,
               "maximum": 1,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Cheddar",
+                  "name": "Shredded Romain",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1314,7 +791,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Feta",
+                  "name": "Brown Rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
@@ -1322,31 +799,191 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Parmesan",
+                  "name": "White Cilantro Rice",
                   "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Black Beans",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Proteins",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Sazon Steak",
+                  "price": 13.29,
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
-                  "name": "American",
-                  "price": 0.0,
+                  "name": "Chorizo",
+                  "price": 12.85,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Provolone",
-                  "price": 0.0,
+                  "name": "Hot Honey Chicken",
+                  "price": 12.85,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chili Lime Mahi Mahi",
+                  "price": 15.29,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Swiss",
+                  "name": "Nadura - Meatless Protein",
+                  "price": 13.55,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Tofrizo",
+                  "price": 11.99,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Grilled Chicken",
+                  "price": 12.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Carnitas",
+                  "price": 12.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Barbacoa",
+                  "price": 12.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Portobello",
+                  "price": 11.99,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cheese-No Protein",
+                  "price": 9.89,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Shredded Chicken",
+                  "price": 11.49,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Blackened Shrimp",
+                  "price": 14.55,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Guac as Protein",
+                  "price": 10.59,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sazon Steak",
+                  "price": 14.55,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Al Pastor",
+                  "price": 11.49,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Maduro Bowl",
+                  "price": 10.47,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Tofrizo",
+                  "price": 11.49,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Arepa Option",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Arepa",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Arepa",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1356,13 +993,279 @@
               ]
             },
             {
-              "name": "Build Your Own Sandwich Protein",
+              "name": "Arepa Bowl Toppings",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Fajita Peppers and Onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Add Egg",
+                  "price": 1.05,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Black Beans",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pinto Beans",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Super Food Lettuce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fresh jalapenos",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pickled onions",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Plaintains",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Guacamole",
+                  "price": 1.59,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pico de Gallo",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Corn Salsa",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Habanero Coleslaw",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cilantro Lime Slaw",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cotija Cheese",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Sauces",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Habanero",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chipotle Crema",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Habanero Red Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Hot Cilantro Aioli",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chimichurri",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mild Cilantro Aioli",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fresco Sour cream",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Extras",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No Extra Protein",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Extra Shrimp Protein",
+                  "price": 5.35,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Extra Protein-non SteakorShrimp",
+                  "price": 3.19,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Add Chips and Guacamole",
+                  "price": 4.29,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Add Chips and Pico de Gallo",
+                  "price": 3.19,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Add Chips w Fire Roasted Salsa",
+                  "price": 3.19,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Add Chips and Queso",
+                  "price": 4.29,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Extra Steak Protein",
+                  "price": 5.35,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 10,
+          "normal_min": 22,
+          "is_hidden": false
+        },
+        {
+          "name": "Burrito",
+          "description": "Burrito with Chips and Salsa",
+          "price": 12.85,
+          "options": [
+            {
+              "name": "Cheese Option",
               "minimum": 0,
               "maximum": 1,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Bacon",
+                  "name": "Monterrey Jack Cheese",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1370,39 +1273,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Chicken",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ham",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Salami",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Turkey",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Turkey Sausage",
+                  "name": "No Cheese",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1412,13 +1283,13 @@
               ]
             },
             {
-              "name": "Build Your Own Sandwich Veggies",
+              "name": "Base Options",
               "minimum": 0,
-              "maximum": 2,
+              "maximum": 1,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Arugula",
+                  "name": "Shredded Romain",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1426,167 +1297,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Avocado",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Cabbage",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Carrot",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Cucumber",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Kalamata Olives",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Marinated Mushrooms",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Onions",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Peppers",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pickled Jalapenos",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Tomato",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Mixed Greens",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Build Your Own Sandwich Protein Extra",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bacon",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chicken",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ham",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Salami",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Turkey",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Turkey Sausage",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Build Your Own Sandwich Condiments",
-              "minimum": 0,
-              "maximum": 2,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Buffalo Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Creamy Herb Dressing",
+                  "name": "Brown Rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
@@ -1594,7 +1305,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Hummus",
+                  "name": "White Cilantro Rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1602,7 +1313,175 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Mayo",
+                  "name": "Black Beans",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Proteins",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Sazon Steak",
+                  "price": 13.29,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chorizo",
+                  "price": 12.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Hot Honey Chicken",
+                  "price": 12.85,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chili Lime Mahi Mahi",
+                  "price": 15.29,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Nadura - Meatless Protein",
+                  "price": 13.55,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Tofrizo",
+                  "price": 11.99,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Grilled Chicken",
+                  "price": 12.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Carnitas",
+                  "price": 12.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Barbacoa",
+                  "price": 12.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Portobello",
+                  "price": 11.99,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cheese-No Protein",
+                  "price": 9.89,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Shredded Chicken",
+                  "price": 11.49,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Blackened Shrimp",
+                  "price": 14.55,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Guac as Protein",
+                  "price": 10.59,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sazon Steak",
+                  "price": 14.55,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Al Pastor",
+                  "price": 11.49,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Maduro Bowl",
+                  "price": 10.47,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Tofrizo",
+                  "price": 11.49,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Toppings",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Fajita Peppers and Onion",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1610,7 +1489,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Mustard",
+                  "name": "Fried Egg",
+                  "price": 1.05,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Black Beans",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1618,7 +1505,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Oil & Vinegar",
+                  "name": "Pinto Beans",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1626,7 +1513,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Sesame Ginger Sauce",
+                  "name": "Super Food Lettuce",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1634,7 +1521,79 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Sriracha",
+                  "name": "Fresh jalapenos",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pickled onions",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sauteed onions",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Plaintains",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Guacamole",
+                  "price": 1.59,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pico de Gallo",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Corn Salsa",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Habanero Coleslaw",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cilantro Lime Slaw",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cotija Cheese",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1644,38 +1603,134 @@
               ]
             },
             {
-              "name": "Build Your Own Sandwich Extras",
+              "name": "Sauces",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Habanero",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chipotle Crema",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Habanero Red Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Hot Cilantro Aioli",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chimichurri",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mild Cilantro Aioli",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fresco Sour cream",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Extras",
               "minimum": 0,
               "maximum": 50,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Avocado",
-                  "price": 1.09,
+                  "name": "No Extra Protein",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Extra Shrimp Protein",
+                  "price": 5.35,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Add fried egg",
-                  "price": 1.09,
+                  "name": "Extra Protein-non SteakorShrimp",
+                  "price": 3.19,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Add scrabled egg",
-                  "price": 1.09,
+                  "name": "Add Chips and Guacamole",
+                  "price": 4.29,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Ranch on side",
-                  "price": 0.55,
+                  "name": "Add Chips and Pico de Gallo",
+                  "price": 3.19,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Add Chips w Fire Roasted Salsa",
+                  "price": 3.19,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Add Chips and Queso",
+                  "price": 4.29,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Extra Steak Protein",
+                  "price": 5.35,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -1685,103 +1740,463 @@
             }
           ],
           "busy_min": 15,
-          "normal_min": 10,
+          "normal_min": 22,
           "is_hidden": false
         },
         {
-          "name": "Ashlynnes Spicy Chicken Wrap",
-          "description": "Description: Tortilla wrapped around chicken pickled jalapenos lettuce and onion with BBQ sauce ranch and sriracha",
-          "price": 8.55,
+          "name": "Quesadilla",
+          "description": "Grilled flour tortillas with cheese and your choice of topping",
+          "price": 12.85,
           "options": [
             {
-              "name": "Ashlynnes Spicy Chicken Wrap",
+              "name": "Base Options",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Shredded Romain",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "White Cilantro Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Black Beans",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Proteins",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Sazon Steak",
+                  "price": 13.29,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chorizo",
+                  "price": 12.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Hot Honey Chicken",
+                  "price": 12.85,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chili Lime Mahi Mahi",
+                  "price": 15.29,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Nadura - Meatless Protein",
+                  "price": 13.55,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Tofrizo",
+                  "price": 11.99,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Grilled Chicken",
+                  "price": 12.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Carnitas",
+                  "price": 12.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Barbacoa",
+                  "price": 12.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Portobello",
+                  "price": 11.99,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cheese-No Protein",
+                  "price": 9.89,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Shredded Chicken",
+                  "price": 11.49,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Blackened Shrimp",
+                  "price": 14.55,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Guac as Protein",
+                  "price": 10.59,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sazon Steak",
+                  "price": 14.55,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Al Pastor",
+                  "price": 11.49,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Maduro Bowl",
+                  "price": 10.47,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Tofrizo",
+                  "price": 11.49,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Toppings",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Fajita Peppers and Onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Egg",
+                  "price": 1.05,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Black Beans",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pinto Beans",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Super Food Lettuce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fresh jalapenos",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pickled onions",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sauteed onions",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Plaintains",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Guacamole",
+                  "price": 1.59,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pico de Gallo",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Corn Salsa",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Habanero Coleslaw",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cilantro Lime Slaw",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cotija Cheese",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Sauces",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Habanero",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chipotle Crema",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Habanero Red Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Hot Cilantro Aioli",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chimichurri",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mild Cilantro Aioli",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fresco Sour cream",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Extras",
               "minimum": 0,
               "maximum": 50,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "No bbq sauce",
+                  "name": "No Extra Protein",
                   "price": 0.0,
                   "is_default": false,
-                  "is_hidden": false,
+                  "is_hidden": true,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "No chicken",
-                  "price": 0.0,
+                  "name": "Extra Shrimp Protein",
+                  "price": 5.35,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "No jalapenos",
-                  "price": 0.0,
+                  "name": "Extra Protein-non SteakorShrimp",
+                  "price": 3.19,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "No lettuce",
-                  "price": 0.0,
+                  "name": "Add Chips and Guacamole",
+                  "price": 4.29,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "No onion",
-                  "price": 0.0,
+                  "name": "Add Chips and Pico de Gallo",
+                  "price": 3.19,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "No ranch",
-                  "price": 0.0,
+                  "name": "Add Chips w Fire Roasted Salsa",
+                  "price": 3.19,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "No siracha",
-                  "price": 0.0,
+                  "name": "Add Chips and Queso",
+                  "price": 4.29,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Add bacon",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add cilantro",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add extra protein",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra sauce",
-                  "price": 0.55,
+                  "name": "Extra Steak Protein",
+                  "price": 5.35,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -1791,208 +2206,73 @@
             }
           ],
           "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Chicken Bacon Ranch Wrap",
-          "description": "Roasted chicken with bacon cheese lettuce tomato and ranch in a tortilla",
-          "price": 11.55,
-          "options": [
-            {
-              "name": "Chicken Bacon Ranch Wrap Options",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No bacon",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No cheese",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No chicken",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No lettuce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No ranch",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No tomato",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra Bacon",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra Protein",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ranch on side",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "The Celebrity",
-          "description": "Turkey and salami stacked on a kaiser roll with lettuce provolone and pesto",
-          "price": 9.99,
-          "options": [
-            {
-              "name": "The Celebrity",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No lettuce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No pesto",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No provolone",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Salami",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Turkey",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add Cheese",
-                  "price": 0.55,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra pesto",
-                  "price": 0.55,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra Protein",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sauce on side",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
+          "normal_min": 22,
           "is_hidden": false
         }
       ]
     },
     {
-      "name": "Pizza",
+      "name": "Extras & Drinks",
       "is_hidden": false,
       "items": [
         {
-          "name": "Build your own pizza",
-          "description": "Crispy crust topped with tomato sauce lots of mozzarella cheese. Choice of 3 Veggies and 2 Proteins",
-          "price": 12.99,
+          "name": "Churro Donut",
+          "description": "",
+          "price": 3.55,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "1L Smart Water",
+          "description": "Family Taco Bar - Pick Two meats. Toppings include lettuce beans cheese rice pico. Choice of 2 sauces. Choice of  Flour or corn tortillas.  Chips with choice of  queso or guac. Dessert cookies-+brownies-churros",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Sports Water",
+          "description": "Family Bowl - Two meat choices Chicken or Barbacoa or Carnitas. Toppings include Lettuce Beans Rice Cheese Pico Corn Cilantro Slaw plantains Arepas Sauteed onions. and cookies/brownies/churros",
+          "price": 3.65,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Churros",
+          "description": "10' Churro",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Chips & Guacamole",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Chips & Salsa",
+          "description": "",
+          "price": 2.99,
           "options": [
             {
-              "name": "Build your own pizza personal Sauce",
+              "name": "Salsa Option",
               "minimum": 0,
               "maximum": 1,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "No Sauce",
+                  "name": "Fire Roasted Salsa",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2000,272 +2280,8 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Regular Sauce",
+                  "name": "Pico de Gallo",
                   "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Build Your Own Pizza Veggies",
-              "minimum": 0,
-              "maximum": 3,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Arugula",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Buffalo Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Calabrian Chilies",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Kalamata Olives",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Kale",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Mushrooms",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Onions",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Peppers",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pickled Jalapeno",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ranch",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sriracha",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Tomatoes",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Build Your Own Pizza Protein",
-              "minimum": 0,
-              "maximum": 2,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bacon",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chicken",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra Cheese",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Feta",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ham",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Parmesan",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pepperoni",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Salami",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Turkey Sausage",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Build Your Own Pizza Extras",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Avocado",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra Cheese",
-                  "price": 2.15,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Build Your Own Pizza Protein Exra",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bacon",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chicken",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ham",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pepperoni",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Salami",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Turkey Sausage",
-                  "price": 3.25,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -2279,75 +2295,214 @@
           "is_hidden": false
         },
         {
-          "name": "Cheese Pizza",
-          "description": "Crispy crust topped with tomato sauce lots of mozzarella cheese",
-          "price": 12.99,
-          "options": [
-            {
-              "name": "300 - Cheese pizza options",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Add butter as sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra Cheese",
-                  "price": 2.15,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra sauce",
-                  "price": 0.55,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Light Cheese",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Light sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No mozzarella cheese",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No pizza sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
+          "name": "Chips & Queso",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Chocolate Chip Cookie",
+          "description": "Gourmet Chocolate Chunk Cookie",
+          "price": 3.55,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Cookies and Cream Cookie",
+          "description": "",
+          "price": 3.55,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Iced Brownie",
+          "description": "Iced Chocolate Chunk Brownie",
+          "price": 3.55,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Topo Chico",
+          "description": "",
+          "price": 2.45,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "San Pellegrino Lemon",
+          "description": "",
+          "price": 2.55,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Smart Water 20oz",
+          "description": "",
+          "price": 2.25,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Jarritos",
+          "description": "",
+          "price": 2.35,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "San Pellegrino Blood Orange",
+          "description": "",
+          "price": 2.55,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "San Pellegrino Sparking Water",
+          "description": "",
+          "price": 2.15,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Horchata",
+          "description": "",
+          "price": 4.05,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        }
+      ]
+    },
+    {
+      "name": "Sides",
+      "is_hidden": true,
+      "items": [
+        {
+          "name": "Black Beans",
+          "description": "",
+          "price": 2.69,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Brown Rice",
+          "description": "",
+          "price": 2.69,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Coleslaw",
+          "description": "",
+          "price": 2.69,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Extra Side Sauce",
+          "description": "",
+          "price": 1.35,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Guacamole",
+          "description": "",
+          "price": 1.95,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Maduros",
+          "description": "",
+          "price": 2.69,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Single Taco",
+          "description": "",
+          "price": 4.39,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Tostones",
+          "description": "",
+          "price": 2.69,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "White Rice",
+          "description": "",
+          "price": 2.69,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Egg",
+          "description": "",
+          "price": 1.05,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Queso",
+          "description": "",
+          "price": 1.95,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Mixed Fruit Cup",
+          "description": "Shrimp single taco",
+          "price": 4.59,
+          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false

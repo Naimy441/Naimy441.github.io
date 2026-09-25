@@ -1,6 +1,7 @@
 # Mobile Order menu scraper
 
-This folder contains a Mac workflow that captures fresh menus from the Mobile Order app and saves them as JSON files.
+This folder contains a Mac workflow that captures fresh menus from the Mobile
+Order app and saves the generated files under `outputs/mobile_order/`.
 
 ## Before running
 
@@ -65,43 +66,6 @@ TRANSACT_SESSION_ID
 Copy the values from the local `.transact-session.json` file. Do not commit that
 file or put the Transact values in the cron-job.org URL.
 
-### 2. Push the workflow to `main`
-
-GitHub only makes the workflow available after the workflow file is pushed to
-the repository. Once pushed, test it once from the repository's **Actions** tab
-using **Scrape → Run workflow**.
-
-### 3. Create the cron-job.org request
-
-Create a POST job with the schedule you want and use this URL:
-
-```text
-https://api.github.com/repos/Naimy441/duke_halal/actions/workflows/main.yml/dispatches
-```
-
-Add these request headers:
-
-```text
-Accept: application/vnd.github+json
-Authorization: Bearer YOUR_GITHUB_ACTIONS_TOKEN
-Content-Type: application/json
-```
-
-Use this JSON request body:
-
-```json
-{"ref":"main"}
-```
-
-`YOUR_GITHUB_ACTIONS_TOKEN` should be a fine-grained GitHub token limited to
-this repository with **Actions: Read and write** permission. Update the
-Transact credentials later in GitHub Actions secrets if the session expires;
-the cron job itself does not need to change.
-
-If the Transact session expires, the workflow stops at the session-check step
-and does not overwrite the menu files. The cron-job.org request only starts the
-workflow; check the GitHub Actions run for the final success or failure.
-
 ## Check whether the saved session still works
 
 To test the captured session without opening Mobile Order or refreshing every
@@ -125,14 +89,14 @@ with exit code `3` and leaves the existing menu exports untouched. Use
 Fresh menu files are written directly to:
 
 ```text
-mobile_order/menus/
+outputs/mobile_order/menus/
 ```
 
 The run also refreshes:
 
 ```text
-mobile_order/restaurants.json
-mobile_order/all_restaurant_menus.json
+outputs/mobile_order/restaurants.json
+outputs/mobile_order/all_restaurant_menus.json
 ```
 
 The compact exports keep restaurant names, icon URLs, current open status, estimated wait time, simple weekly takeout/delivery hours, section names, item names and descriptions, prices, inner options such as sizes and add-ons, busy/normal pickup minutes, and visibility flags.
@@ -140,14 +104,13 @@ The compact exports keep restaurant names, icon URLs, current open status, estim
 ### Download restaurant icons once
 
 Icon downloading is separate from the menu refresh workflow. To download the
-icons referenced by the current exports into `mobile_order/images/`, run:
+icons referenced by the current exports into `outputs/mobile_order/images/`, run:
 
 ```bash
 python3 mobile_order/download_restaurant_icons.py
 ```
 
-The script is safe to run again. It also adds `icon_image_file` to the JSON
-records so local consumers can find each downloaded icon.
+The script is safe to run again and does not modify the menu JSON files.
 
 `price` is expressed in dollars.
 

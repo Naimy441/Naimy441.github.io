@@ -14,6 +14,7 @@ from fetch_fresh_menus import fetch_menu, is_session_failure, load_session
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
+DEFAULT_OUTPUT_DIR = SCRIPT_DIR.parent / "outputs" / "mobile_order"
 
 
 def main() -> int:
@@ -25,6 +26,12 @@ def main() -> int:
             os.environ.get("TRANSACT_SESSION_FILE", SCRIPT_DIR / ".transact-session.json")
         ),
         help="Captured session JSON file (default: mobile_order/.transact-session.json)",
+    )
+    parser.add_argument(
+        "--output-dir",
+        type=Path,
+        default=Path(os.environ.get("FRESH_MENU_OUTPUT_DIR", DEFAULT_OUTPUT_DIR)),
+        help="Folder containing restaurants.json",
     )
     args = parser.parse_args()
 
@@ -38,7 +45,7 @@ def main() -> int:
             print(f"Session check could not start: {error}", file=sys.stderr)
             return 2
 
-    index_path = SCRIPT_DIR / "restaurants.json"
+    index_path = args.output_dir.expanduser().resolve() / "restaurants.json"
     try:
         restaurants = json.loads(index_path.read_text(encoding="utf-8"))["restaurants"]
         restaurant = restaurants[0]

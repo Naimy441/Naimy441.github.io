@@ -21,6 +21,8 @@ from urllib.request import Request, urlopen
 
 
 ENDPOINT = "https://mobileorderprodapi.transactcampus.com/api_user/getmenu"
+ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_OUTPUT_DIR = ROOT / "outputs" / "mobile_order"
 SESSION_FAILURE_MARKERS = (
     "session has expired",
     "please log in again",
@@ -228,7 +230,7 @@ def main() -> int:
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=Path(__file__).resolve().parent,
+        default=DEFAULT_OUTPUT_DIR,
     )
     parser.add_argument(
         "--session-file",
@@ -253,10 +255,10 @@ def main() -> int:
             print(error, file=sys.stderr)
             return 2
 
-    index_path = Path(__file__).resolve().parent / "restaurants.json"
-    restaurants = json.loads(index_path.read_text(encoding="utf-8"))["restaurants"]
     output_dir = args.output_dir.resolve()
     output_dir.mkdir(parents=True, exist_ok=True)
+    index_path = output_dir / "restaurants.json"
+    restaurants = json.loads(index_path.read_text(encoding="utf-8"))["restaurants"]
     menu_dir = output_dir / "menus"
     menu_dir.mkdir(parents=True, exist_ok=True)
     staging_root = Path(tempfile.mkdtemp(prefix=".fresh-menus-", dir=output_dir))

@@ -1,142 +1,342 @@
 {
-  "restaurant": "Yalla!",
+  "restaurant": "Ginger & Soy",
   "campus_id": 19,
-  "location_id": 1496,
-  "cafeteria_id": 1333,
-  "icon_image_url": "campuses/icon_location_19_18_127_1693079661953.jpg",
-  "icon_image_file": "images/icon_location_19_18_127_1693079661953.jpg",
-  "estimated_wait_time_minutes": 0,
-  "currently_open": false,
-  "takeout_open": false,
-  "delivery_open": false,
+  "location_id": 170,
+  "cafeteria_id": 142,
+  "icon_image_url": "campuses/icon_restaurant_19_18_129_1585676052860.jpg",
+  "estimated_wait_time_minutes": 12,
+  "currently_open": true,
+  "takeout_open": true,
+  "delivery_open": true,
   "takeout_hours": {
-    "open": "00:00:00",
-    "close": "00:00:00"
+    "open": "11:00:00",
+    "close": "21:00:00"
   },
   "delivery_hours": {
-    "open": "00:00:00",
-    "close": "00:00:00"
+    "open": "11:00:00",
+    "close": "21:00:00"
   },
   "hours": {
     "Monday": {
       "takeout": [
         {
-          "open": "11:30",
-          "close": "14:30"
+          "open": "11:00",
+          "close": "21:00"
         }
       ],
       "delivery": [
         {
-          "open": "11:30",
-          "close": "14:30"
+          "open": "11:00",
+          "close": "21:00"
         }
       ]
     },
     "Tuesday": {
       "takeout": [
         {
-          "open": "11:30",
-          "close": "14:30"
+          "open": "11:00",
+          "close": "21:00"
         }
       ],
       "delivery": [
         {
-          "open": "11:30",
-          "close": "14:30"
+          "open": "11:00",
+          "close": "21:00"
         }
       ]
     },
     "Wednesday": {
       "takeout": [
         {
-          "open": "11:30",
-          "close": "14:30"
+          "open": "11:00",
+          "close": "21:00"
         }
       ],
       "delivery": [
         {
-          "open": "11:30",
-          "close": "14:30"
+          "open": "11:00",
+          "close": "21:00"
         }
       ]
     },
     "Thursday": {
       "takeout": [
         {
-          "open": "11:30",
-          "close": "14:30"
+          "open": "11:00",
+          "close": "21:00"
         }
       ],
       "delivery": [
         {
-          "open": "11:30",
-          "close": "14:30"
+          "open": "11:00",
+          "close": "21:00"
         }
       ]
     },
     "Friday": {
       "takeout": [
         {
-          "open": "00:00",
-          "close": "00:00"
+          "open": "11:00",
+          "close": "21:00"
         }
       ],
       "delivery": [
         {
-          "open": "00:00",
-          "close": "00:00"
+          "open": "11:00",
+          "close": "21:00"
         }
       ]
     },
     "Saturday": {
       "takeout": [
         {
-          "open": "00:00",
-          "close": "00:00"
+          "open": "11:00",
+          "close": "21:00"
         }
       ],
       "delivery": [
         {
-          "open": "00:00",
-          "close": "00:00"
+          "open": "11:00",
+          "close": "21:00"
         }
       ]
     },
     "Sunday": {
       "takeout": [
         {
-          "open": "00:00",
-          "close": "00:00"
+          "open": "11:00",
+          "close": "21:00"
         }
       ],
       "delivery": [
         {
-          "open": "00:00",
-          "close": "00:00"
+          "open": "11:00",
+          "close": "21:00"
         }
       ]
     }
   },
-  "retrieved_at": "2026-09-24 17:44:28",
-  "menu_last_updated": "2026-09-24 17:44:29",
+  "retrieved_at": "2026-09-24 18:21:48",
+  "menu_last_updated": "2026-09-24 18:21:49",
   "sections": [
     {
-      "name": "DAILY DEVIL",
+      "name": "Specials",
+      "is_hidden": false,
+      "items": [
+        {
+          "name": "$5 Meal Deal",
+          "description": "White or Brown Rice 2 Vegetables 1 fried egg and choice of sauce",
+          "price": 5.0,
+          "options": [
+            {
+              "name": "Meal Deal Rice",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "White Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Meal Deal Veggies",
+              "minimum": 0,
+              "maximum": 2,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Broccoli",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Edamame",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Kale Salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Kimchi Slaw",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pickled Carrot",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pickled Radish",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Seasoned Corn",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Spicy Cucumber",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Stir-Fried Cabbage & Red Pepper",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Stir-Fried Zucchini",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sweet Potato",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Meal Deal Sauce",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Eel Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Gochujang Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Lemonaise Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sesame Oil",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Spicy Mayo",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "White Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        }
+      ]
+    },
+    {
+      "name": "Nourish Meals",
       "is_hidden": true,
       "items": [
         {
-          "name": "Daily Devil - 5 Falafel Balls",
-          "description": "Falafel balls served with Small Fry and side of Tahini",
-          "price": 5.0,
+          "name": "Salmon Poke Bowl",
+          "description": "Fresh marinated salmon bowl topped with pickled carrot pickled cabbage kale salad seaweed salad crab salad and crunch. Served with white rice.",
+          "price": 14.55,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
         },
         {
-          "name": "Daily Devil - Pita and Hummus",
-          "description": "",
-          "price": 5.0,
+          "name": "Seoul Bowl",
+          "description": "Korean BBQ beef rice bowl topped with stir-fried zucchini pickled radish pickled carrot kimichi slaw kale salad green onion fried egg sesame seed white sauce and sesame oil. Served with white rice",
+          "price": 12.85,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Tofu Rice Bowl",
+          "description": "White rice teriyaki tofu pickled carrot stir-fried cabbage and red pepper sweet potato seasoned corn and edamame. Sesame oil and green onion",
+          "price": 11.69,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -145,251 +345,47 @@
       ]
     },
     {
-      "name": "PASSOVER",
-      "is_hidden": true,
-      "items": [
-        {
-          "name": "Passover Brisket Meal",
-          "description": "Brisket - mashed potatoes - Israeli salad - pickles - cabbage - matza",
-          "price": 20.0,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Passover Meatball Meal",
-          "description": "meatball - roasted potatos - Israeli salad - pickles - cabbage - matza",
-          "price": 18.0,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Passover Pargiot Meal",
-          "description": "Pargiot - sweet potato - Israeli salad - pickles - cabbage - matza",
-          "price": 18.0,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Passover Ribeye Meal",
-          "description": "Ribeye - French fries - Israeli salad - pickles - cabbage - matza",
-          "price": 22.0,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        }
-      ]
-    },
-    {
-      "name": "PITA SANDWICH",
+      "name": "Everyday Plate",
       "is_hidden": false,
       "items": [
         {
-          "name": "Arayes pita",
-          "description": "pita bread stuffed with ground beef mixed with herbs and meditereanin spices",
-          "price": 13.99,
+          "name": "Pad Thai",
+          "description": "Thai stir-fried rice noodles with eggs vegetables and chicken in a tamarind-based sauce",
+          "price": 12.75,
           "options": [
             {
-              "name": "PITA SANDWICH",
+              "name": "Every day bowl Add On",
               "minimum": 0,
-              "maximum": 5,
+              "maximum": 50,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "NO CABBAGE SALAD",
+                  "name": "Extra Protein",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Egg",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Spring Rolls",
+                  "price": 2.69,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Add-on",
                   "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickles",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Falafel pita",
-          "description": "Crispy chickpea falafel stuffed pita sandwich. Contains gluten. Includes salads sauces brine pickles and fresh pita.",
-          "price": 12.0,
-          "options": [
-            {
-              "name": "PITA SANDWICH",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickles",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -403,58 +399,42 @@
           "is_hidden": false
         },
         {
-          "name": "Pargiot pita",
-          "description": "pita bread pargiot marinated baby chicken israeli salad cabbage salad hummus tahini schug",
-          "price": 11.99,
+          "name": "Hong Kong (Spicy Pork)",
+          "description": "Grilled spicy pork rice bowl topped with steamed broccoli stir-fried cabbage and red pepper cucumber cilantro sesame seed crunch sambal sauce and eel sauce served with white rice brown rice or mixed greens",
+          "price": 12.19,
           "options": [
             {
-              "name": "PITA SANDWICH",
+              "name": "Every day bowl Add On",
               "minimum": 0,
-              "maximum": 5,
+              "maximum": 50,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
+                  "name": "Extra Protein",
+                  "price": 3.25,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
+                  "name": "Fried Egg",
+                  "price": 1.09,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
+                  "name": "Fried Spring Rolls",
+                  "price": 2.69,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickles",
+                  "name": "No Add-on",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -464,63 +444,21 @@
               ]
             },
             {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
+              "name": "Every day bowl base",
+              "minimum": 1,
               "maximum": 1,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Rib eye pita",
-          "description": "pita bread sous vide rib eye strips israeli salad cabbage salad hummus tahini schug",
-          "price": 17.0,
-          "options": [
-            {
-              "name": "PITA SANDWICH",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
+                  "name": "Mixed Greens",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -528,7 +466,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "NO HUMMUS",
+                  "name": "White Rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -536,7 +474,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "NO ISRAELI SALAD",
+                  "name": "No Base",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -544,23 +482,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickles",
+                  "name": "Seasoned rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -570,103 +492,69 @@
               ]
             },
             {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
+              "name": "Hong Kong Rice Bowl",
               "minimum": 0,
-              "maximum": 1,
+              "maximum": 8,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
+                  "name": "No cilantro",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
+                  "name": "No crunch",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No cucumber",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No pickled radish",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No sesame seed",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No steamed broccoli",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No stir-fried cabbage",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Sabich pita",
-          "description": "PITA BREAD SLICED EGGS FRIED EGGPLANT RINGS ISRAELI SALAD  CABBAGE SALAD HUMMUS TAHINI SCHUG (SPICY GREEN SAUCE)",
-          "price": 10.0,
-          "options": [
-            {
-              "name": "PITA SANDWICH",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickles",
+                  "name": "No stir-fried red pepper cabbage",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -676,63 +564,13 @@
               ]
             },
             {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
+              "name": "Hong Kong Rice Bowl Sauce",
               "minimum": 0,
-              "maximum": 1,
+              "maximum": 50,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Shakshuka pita",
-          "description": "pita bread 2 sous vide eggs in shakshuka (tomato base sauce)",
-          "price": 10.0,
-          "options": [
-            {
-              "name": "PITA SANDWICH",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
+                  "name": "No Eel Sauce",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -740,186 +578,8 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "NO HUMMUS",
+                  "name": "No Sambal Sauce",
                   "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickles",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Shwarma pita",
-          "description": "Shawarma Hummus Israeli Salad Cabage Salad and Tahini Inside fresh hot Pita",
-          "price": 16.0,
-          "options": [
-            {
-              "name": "PITA SANDWICH",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickles",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -933,18 +593,26 @@
           "is_hidden": false
         },
         {
-          "name": "Chicken schnitzel  Pita",
-          "description": "Panko-breaded cutlets fried to order stuffed pita sandwich. Includes salads sauces brine pickles and fresh pita.",
-          "price": 16.0,
+          "name": "Thai Curry",
+          "description": "Rich and creamy Thai curry with vegetables and chicken servered with white or brown rice",
+          "price": 11.89,
           "options": [
             {
-              "name": "PITA SANDWICH",
-              "minimum": 0,
-              "maximum": 5,
+              "name": "Every day bowl base",
+              "minimum": 1,
+              "maximum": 1,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "NO CABBAGE SALAD",
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mixed Greens",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -952,7 +620,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "NO HUMMUS",
+                  "name": "White Rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -960,7 +628,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "NO ISRAELI SALAD",
+                  "name": "No Base",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -968,23 +636,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickles",
+                  "name": "Seasoned rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -994,38 +646,208 @@
               ]
             },
             {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
+              "name": "Every day bowl Add On",
               "minimum": 0,
-              "maximum": 1,
+              "maximum": 50,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
+                  "name": "Extra Protein",
+                  "price": 3.25,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
+                  "name": "Fried Egg",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Spring Rolls",
+                  "price": 2.69,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Add-on",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Shanghai (Ginger Chicken)",
+          "description": "Crispy ginger chicken rice bowl topped with stir-fried cabbage & red pepper stir-fried zucchini cilantro crunch white sauce and sesame seed served with white rice brown rice or mixed greens",
+          "price": 12.09,
+          "options": [
+            {
+              "name": "Every day bowl Add On",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Extra Protein",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Egg",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Spring Rolls",
+                  "price": 2.69,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Add-on",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Every day bowl base",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mixed Greens",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "White Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Base",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Seasoned rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Shanghai Rice Bowl",
+              "minimum": 0,
+              "maximum": 6,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No cilantro",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No crunch",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No sesame seed",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No stir-fried cabbage",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
+                  "name": "No stir-fried red pepper cabbage",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
+                  "name": "No stir-fried zucchini",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Shanghai Rice Bowl Sauce",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No White Sauce",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -1039,58 +861,42 @@
           "is_hidden": false
         },
         {
-          "name": "Chicken Shawarma Pita",
-          "description": "Marinated grilled chicken stuffed pita sandwich. Includes salads sauces brine pickles and fresh pita.",
-          "price": 16.0,
+          "name": "Seoul (Korean BBQ Beef)",
+          "description": "Korean BBQ beef rice bowl topped with stir-fried zucchini pickled radish pickled carrot kimchi slaw kale salad green onion fried egg sesame seed gochujang white sauce and sesame oil served with white rice brown rice or mixed greens",
+          "price": 12.85,
           "options": [
             {
-              "name": "PITA SANDWICH",
+              "name": "Every day bowl Add On",
               "minimum": 0,
-              "maximum": 5,
+              "maximum": 50,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
+                  "name": "Extra Protein",
+                  "price": 3.25,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
+                  "name": "Fried Egg",
+                  "price": 1.09,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
+                  "name": "Fried Spring Rolls",
+                  "price": 2.69,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickles",
+                  "name": "No Add-on",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1100,38 +906,150 @@
               ]
             },
             {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
+              "name": "Every day bowl base",
+              "minimum": 1,
               "maximum": 1,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mixed Greens",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
+                  "name": "White Rice",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
+                  "name": "No Base",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Seasoned rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Seoul Rice bowl",
+              "minimum": 0,
+              "maximum": 8,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No fried egg",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No green onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No kale salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No kimchi slaw",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No pickled carrot",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No pickled radish",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No sesame seed",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No stir-fried zucchini",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Seoul Rice bowl sauce",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No Gochujang Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Sesame Oil",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No White Sauce",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -1140,6 +1058,1596 @@
               ]
             }
           ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Extra Vegetables",
+          "description": "",
+          "price": 1.09,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Extra Protein",
+          "description": "",
+          "price": 3.25,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Side Rice",
+          "description": "",
+          "price": 2.49,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Extra Sauce",
+          "description": "",
+          "price": 0.55,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Tteokbokki",
+          "description": "A popular Korean street dish featuring chewy rice cakes simmered in a flavorful sweet and spicy gochujang (Korean chili paste) sauce served with fish cakes a boiled egg onion cabbage green onion and crispy beef dumplings",
+          "price": 12.85,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "California (Teriyaki Tofu)",
+          "description": "Crispy teriyaki tofu rice bowl topped with stir-fried zucchini kale salad steamed broccoli cilantro and cusabi sauce served with white rice brown rice or mixed greens",
+          "price": 11.69,
+          "options": [
+            {
+              "name": "Every day bowl Add On",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Extra Protein",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Egg",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Spring Rolls",
+                  "price": 2.69,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Add-on",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Every day bowl base",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mixed Greens",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "White Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Base",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Seasoned rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "California Rice Bowl",
+              "minimum": 0,
+              "maximum": 5,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No cilantro",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No kale salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No seasoned corn",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No steamed broccoli",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No stir-fried zucchini",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "California Rice Bowl Sauce",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No Cusabi",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Tokyo (Teriyaki Chicken)",
+          "description": "Grilled teriyaki chicken rice bowl topped with seasoned corn sweet potato kale salad edamame green onion crunch spicy mayo eel sauce and sesame seed served white rice brown rice or mixed greens",
+          "price": 12.19,
+          "options": [
+            {
+              "name": "Every day bowl base",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mixed Greens",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "White Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Base",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Seasoned rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Tokyo Rice Bowl",
+              "minimum": 0,
+              "maximum": 7,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No crunch",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No edamame",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No green onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No kale salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No seasoned corn",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No sesame seed",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No sweet potato",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Tokyo Rice Bowl Sauce",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No Eel Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Spicy Mayo",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Every day bowl Add On",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Extra Protein",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Egg",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Spring Rolls",
+                  "price": 2.69,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Add-on",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Lemonaise Salmon Bowl",
+          "description": "Brined roast salmon with stir-fried mixed vegetables and Lemonaise sauce served with white rice brown rice fried rice or mixed greens",
+          "price": 13.29,
+          "options": [
+            {
+              "name": "Every day bowl base",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mixed Greens",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "White Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Base",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Seasoned rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Every day bowl Add On",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Extra Protein",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Egg",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Spring Rolls",
+                  "price": 2.69,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Add-on",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        }
+      ]
+    },
+    {
+      "name": "Make Own Bowl",
+      "is_hidden": false,
+      "items": [
+        {
+          "name": "Make Your Own Bowl",
+          "description": "Choose one protein four vegetable toppings and any sauce served with white rice brown rice or mixed greens",
+          "price": 12.75,
+          "options": [
+            {
+              "name": "Every day bowl base",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mixed Greens",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "White Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Base",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Seasoned rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Build Your Own Rice Bowl Protein",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Bulgogi Beef",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Ginger Chicken",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Spicy Pork",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Teriyaki Chicken",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Teriyaki Tofu",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Build Your Own Rice Bowl Toppings",
+              "minimum": 0,
+              "maximum": 5,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Broccoli",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Edamame",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Kale Salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Kimchi Slaw",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pickled Carrot",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pickled Radish",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pickled Red Cabbage",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Seasoned Corn",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Spicy Cucumber",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Stir-Fried Cabbage & Red Pepper",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Stir-Fried Zucchini",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sweet Potato",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Make Your Own Rice Bowl Sauce",
+              "minimum": 0,
+              "maximum": 2,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Lemonaise Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Eel Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Gochujang Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sambal Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sesame Oil",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Spicy Mayo",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "White Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Ginger Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Teriyaki Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Build Your Own Rice Bowl Garnishes",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Cilantro",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Crunch",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Green Onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sesame Seed",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Build Your Own Bowl Add on",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Extra Protein",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Egg",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Spring Rolls",
+                  "price": 2.69,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Add-on",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Extra Vegetables",
+          "description": "",
+          "price": 1.09,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Extra Protein",
+          "description": "",
+          "price": 3.25,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        }
+      ]
+    },
+    {
+      "name": "Poke",
+      "is_hidden": false,
+      "items": [
+        {
+          "name": "Spicy Tuna Poke",
+          "description": "Fresh spicy tuna bowl topped with pickled carrot pickled cabbage kale salad seaweed salad crab salad and crunch served with white rice brown rice or mixed greens",
+          "price": 14.15,
+          "options": [
+            {
+              "name": "Poke Base",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mixed Greens",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "White Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Gin - Poke Sauce",
+              "minimum": 0,
+              "maximum": 2,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Cusabi Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Eel Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Spicy Mayo Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Gochujang Vinaigrette",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Spicy Tuna Poke Bowl",
+              "minimum": 0,
+              "maximum": 8,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No crab salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No crunch",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No kale salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No pickled cabbage",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No pickled carrot",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No seaweed salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Gin - Poke Bowl Add On",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Extra Protein",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Egg",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Spring Rolls",
+                  "price": 2.79,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Add-on",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Extra Vegetables",
+          "description": "",
+          "price": 1.09,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Extra Crab Seaweed Salad",
+          "description": "",
+          "price": 2.49,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Tuna Poke",
+          "description": "Fresh marinated tuna bowl topped with pickled carrot pickled cabbage kale salad seaweed salad crab salad and crunch served with white rice brown rice or mixed greens",
+          "price": 14.15,
+          "options": [
+            {
+              "name": "Poke Base",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mixed Greens",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "White Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Gin - Poke Sauce",
+              "minimum": 0,
+              "maximum": 2,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Cusabi Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Eel Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Spicy Mayo Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Gochujang Vinaigrette",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Tuna Poke Bowl",
+              "minimum": 0,
+              "maximum": 6,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No crab salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No crunch",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No kale salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No pickled cabbage",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No pickled carrot",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No seaweed salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Gin - Poke Bowl Add On",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Extra Protein",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Egg",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Spring Rolls",
+                  "price": 2.79,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Add-on",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Salmon Poke Bowl",
+          "description": "Fresh marinated salmon bowl topped with pickled carrot pickled cabbage kale salad seaweed salad crab salad and crunch served with white rice brown rice or mixed greens",
+          "price": 14.15,
+          "options": [
+            {
+              "name": "Poke Base",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mixed Greens",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "White Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Gin - Poke Sauce",
+              "minimum": 0,
+              "maximum": 2,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Cusabi Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Eel Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Spicy Mayo Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Gochujang Vinaigrette",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Salmon Poke Bowl",
+              "minimum": 0,
+              "maximum": 7,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No crab salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No crunch",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No kale salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No pickled cabbage",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No pickled carrot",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No seaweed salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Gin - Poke Bowl Add On",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Extra Protein",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Egg",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Spring Rolls",
+                  "price": 2.79,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Add-on",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        }
+      ]
+    },
+    {
+      "name": "Ramen",
+      "is_hidden": false,
+      "items": [
+        {
+          "name": "Spicy Miso Ramen",
+          "description": "",
+          "price": 12.85,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Tonkotsu Ramen",
+          "description": "",
+          "price": 12.85,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Extra Noodle 1ea",
+          "description": "",
+          "price": 3.25,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Extra Ramen Toppings",
+          "description": "",
+          "price": 1.95,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        }
+      ]
+    },
+    {
+      "name": "Small Bites",
+      "is_hidden": false,
+      "items": [
+        {
+          "name": "Fried Beef Dumplings",
+          "description": "Seven fried beef dumplings with chili garlic oil soy and ponzu.",
+          "price": 7.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Fried Chicken Dumplings",
+          "description": "Seven fried chicken dumplings with chili garlic oil soy and ponzu.",
+          "price": 7.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Fried Vegetable Dumplings",
+          "description": "Seven fried vegetable dumplings with chili garlic oil soy and ponzu.",
+          "price": 7.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Vegetable Spring Rolls",
+          "description": "Two crispy vegetable spring rolls with ginger sauce.",
+          "price": 3.49,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Pork Bun",
+          "description": "Three steamed pork buns with chili garlic oil soy and ponzu.",
+          "price": 11.89,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Soup Dumplings",
+          "description": "Five steamed soup dumplings with chili garlic oil soy and ponzu.",
+          "price": 10.89,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Steamed Vegetable Dumplings",
+          "description": "Seven steamed vegetable dumplings with chili garlic oil soy and ponzu.",
+          "price": 7.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Steamed Chicken Dumplings",
+          "description": "Seven steamed chicken dumplings with chili garlic oil soy and ponzu.",
+          "price": 7.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Shrimp Shumai",
+          "description": "Five jumbo shrimp shumai with chili garlic oil soy and ponzu.",
+          "price": 11.89,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Steamed Beef Dumplings",
+          "description": "Seven steamed beef dumplings with chili garlic oil soy and ponzu.",
+          "price": 7.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Bulgogi Spring Rolls",
+          "description": "Three pieces of fried bulgogi spring rolls served with our signature sweet chili sauce.",
+          "price": 8.99,
+          "options": [],
           "busy_min": 5,
           "normal_min": 3,
           "is_hidden": false
@@ -1147,1984 +2655,247 @@
       ]
     },
     {
-      "name": "IN A BOWL",
+      "name": "Drinks",
       "is_hidden": false,
       "items": [
         {
-          "name": "Falafel bowl",
-          "description": "Falafel served over chopped salads. Contains gluten. Includes salads sauces brine pickles and fresh pita.",
-          "price": 14.0,
-          "options": [
-            {
-              "name": "IN A BOWL",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Pargiot bowl",
-          "description": "marinated pargiot (baby chicken) over bed of hummus israeli salad cabbage salad hummus tahini",
-          "price": 12.99,
-          "options": [
-            {
-              "name": "IN A BOWL",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Rib eye bowl",
-          "description": "sliced rib eye over hummus bed pita bread israeli salad cabbage salad hummus tahini",
-          "price": 18.0,
-          "options": [
-            {
-              "name": "IN A BOWL",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Sabich bowl",
-          "description": "2 sliced eggs fried eggplant rings over hummus bed pita bread isreali salad cabbage salad  tahini schug",
-          "price": 12.0,
-          "options": [
-            {
-              "name": "IN A BOWL",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Shakshuka bowl",
-          "description": "2 sous vide eggs  in shakshuka (spicy-ish tomato base) sauce over bed of hummus pita bread tahini schug",
-          "price": 9.99,
-          "options": [
-            {
-              "name": "IN A BOWL",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Shwarma bowl",
-          "description": "Fresh made Hummus bowl topped with Fresh off the Grill Shawarma Israeli Salad Cabbage Salad Tahini and Schug.",
-          "price": 16.0,
-          "options": [
-            {
-              "name": "IN A BOWL",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Chicken schnitzel bowl",
-          "description": "Schnitzel served over chopped salads. Includes salads sauces brine pickles and fresh pita.",
-          "price": 18.0,
-          "options": [
-            {
-              "name": "IN A BOWL",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Chicken Shawarma Salad Bowl",
-          "description": "Shawarma served over chopped salads. Includes salads sauces brine pickles and fresh pita.",
-          "price": 18.0,
-          "options": [
-            {
-              "name": "IN A BOWL",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Hummus & Roasted Veggies Bowl",
-          "description": "Hummus base with roasted garlic cloves jalape�os and mushrooms; brine pickles and fresh pita. Vegan.",
-          "price": 12.0,
-          "options": [
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        }
-      ]
-    },
-    {
-      "name": "ON A PLATE",
-      "is_hidden": false,
-      "items": [
-        {
-          "name": "Chicken schnitzel Plate",
-          "description": "Largest portion. Includes salads sauces brine pickles and fresh pita.",
-          "price": 19.0,
-          "options": [
-            {
-              "name": "ON A PLATE",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickles",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Chicken Shawarma Plate",
-          "description": "Largest portion. Includes salads sauces brine pickles and fresh pita.",
-          "price": 19.0,
-          "options": [
-            {
-              "name": "ON A PLATE",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickles",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Falafel plate",
-          "description": "Largest portion. Contains gluten. Includes salads sauces brine pickles and fresh pita.",
-          "price": 15.0,
-          "options": [
-            {
-              "name": "ON A PLATE",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickles",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Moroccan Style Meatballs",
-          "description": "Served with hummus, Israeli salad, pickles, and pita",
-          "price": 18.0,
-          "options": [
-            {
-              "name": "ON A PLATE",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickles",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Ribe eye plate",
-          "description": "sous vide 8oz rib eye pita bread isreali salad cabbage salad  tahini schug",
-          "price": 20.0,
-          "options": [
-            {
-              "name": "ON A PLATE",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickles",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Sabich plate",
-          "description": "2 sliced eggs fried eggplant circle pita bread isreali salad cabbage salad hummus tahini schug",
-          "price": 14.0,
-          "options": [
-            {
-              "name": "ON A PLATE",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickles",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Shakshuka plate",
-          "description": "3 sous vide eggs in shakshuka (spicy-ish tomato base) sauce pita bread isreali salad cabbage salad hummus tahini schug",
-          "price": 11.99,
-          "options": [
-            {
-              "name": "ON A PLATE",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickles",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Shwarma plate",
-          "description": "Healthy serving of Shawarma Large portions of Hummus Israeli Salad Cabbage Tahini and Schug",
-          "price": 18.0,
-          "options": [
-            {
-              "name": "ON A PLATE",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickles",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Plate",
-          "description": "marinated julienned beef and baby chicken pita bread isreali salad cabbage salad hummus tahini schug",
-          "price": 0.0,
-          "options": [
-            {
-              "name": "ON A PLATE",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickles",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Schnitzel & Fries",
-          "description": "Plate-size portion of schnitzel with small fries brine pickles and fresh pita.",
-          "price": 18.0,
-          "options": [
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        }
-      ]
-    },
-    {
-      "name": "SIDES",
-      "is_hidden": false,
-      "items": [
-        {
-          "name": "Brine Pickles",
+          "name": "S PELLEGRINO SPARKING WATER",
           "description": "",
-          "price": 4.0,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Small fries",
-          "description": "crispy coated spiced fries",
-          "price": 4.0,
+          "price": 2.35,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
         },
         {
-          "name": "Large fries",
-          "description": "crispy coated spiced fries",
-          "price": 7.0,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Cabbage Salad",
+          "name": "Aqua Panna Water",
           "description": "",
-          "price": 4.0,
+          "price": 2.79,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
         },
         {
-          "name": "Hummus",
+          "name": "Izze",
           "description": "",
-          "price": 5.0,
-          "options": [],
+          "price": 2.35,
+          "options": [
+            {
+              "name": "Izze Choice",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Apple",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Blackberry",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Clementine",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Grapefruit",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mango",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
         },
         {
-          "name": "Israeli Salad",
+          "name": "Gatorade",
           "description": "",
-          "price": 4.0,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Pita",
-          "description": "",
-          "price": 1.89,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Schug",
-          "description": "",
-          "price": 2.5,
-          "options": [],
+          "price": 2.55,
+          "options": [
+            {
+              "name": "Gatorade Choice",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Cool Blue",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fruit Punch",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Glacier",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Grape",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Lemon-lime",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Orange",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": true
         },
         {
-          "name": "Tahini",
+          "name": "Tractor",
           "description": "",
-          "price": 2.5,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        }
-      ]
-    },
-    {
-      "name": "Dessert",
-      "is_hidden": false,
-      "items": [
-        {
-          "name": "Kadoor chocolade",
-          "description": "belgian chocolate ball with sweet crunchies",
-          "price": 1.89,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        }
-      ]
-    },
-    {
-      "name": "Beverage",
-      "is_hidden": false,
-      "items": [
-        {
-          "name": "Bottled Water",
-          "description": "Bottled Water",
-          "price": 2.0,
-          "options": [],
+          "price": 4.19,
+          "options": [
+            {
+              "name": "ractor Beverage Option",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Lemonade",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mango Peach",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Punch",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Strawberry Dragon Fruit",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
         },
         {
-          "name": "Limonana",
-          "description": "Mint infused fresh squeezed Lemons",
-          "price": 4.0,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Canned Soda",
+          "name": "ITO EN Tea",
           "description": "",
-          "price": 3.0,
-          "options": [],
+          "price": 3.75,
+          "options": [
+            {
+              "name": "ITO En Tea Option",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Green Tea",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Jasmin Tea",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Milk Tea",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Oolong Tea",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false

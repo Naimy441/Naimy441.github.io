@@ -6,7 +6,7 @@ SCRIPT_DIR="${0:A:h}"
 MOBILE_ORDER_APP="${MOBILE_ORDER_APP:-/Applications/Mobile Order.app}"
 MOBILE_ORDER_EXECUTABLE="$MOBILE_ORDER_APP/Wrapper/TRANSACT.app/Transact Prod"
 SESSION_FILE="${TRANSACT_SESSION_FILE:-$SCRIPT_DIR/.transact-session.json}"
-OUTPUT_DIR="${FRESH_MENU_OUTPUT_DIR:-$SCRIPT_DIR}"
+OUTPUT_DIR="${FRESH_MENU_OUTPUT_DIR:-$SCRIPT_DIR/../outputs/mobile_order}"
 FETCH_DELAY="${TRANSACT_FETCH_DELAY:-0.1}"
 MITM_LOG="/private/tmp/duke-halal-mitmdump.log"
 MITM_PID=""
@@ -148,7 +148,8 @@ recapture_session() {
 progress "Checking the current saved Transact credentials..."
 check_status=0
 python3 "$SCRIPT_DIR/check_transact_session.py" \
-  --session-file "$SESSION_FILE" || check_status=$?
+  --session-file "$SESSION_FILE" \
+  --output-dir "$OUTPUT_DIR" || check_status=$?
 
 if (( check_status == 0 )); then
   progress "Current session works; fetching fresh menus..."
