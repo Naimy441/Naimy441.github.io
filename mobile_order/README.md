@@ -26,7 +26,99 @@ From the project root:
 ./mobile_order/refresh_menus.sh
 ```
 
-The script opens Mobile Order, finds its process automatically, starts headless capture, opens the first available restaurant, captures the session, and fetches all restaurant menus.
+The script first tests the saved credentials and fetches menus directly when
+they still work. If authentication fails, it opens Mobile Order, starts
+headless capture, pauses for the Duke SSO login, opens the first restaurant,
+captures a new session, and retries the fetch.
+
+If Mobile Order is logged out, the script pauses so you can complete the Duke
+SSO login in the app, then retries the restaurant click and captures the new
+session. This interactive recapture step is available when running the script
+from Terminal; cloud runs cannot complete the SSO login.
+
+## Run it in the cloud with cron-job.org
+
+The Mac app is not needed for scheduled fetches once you have a working
+session. The repository's main GitHub Actions workflow includes a Mobile Order
+refresh step:
+
+```text
+.github/workflows/main.yml
+```
+
+The workflow checks the saved Transact credentials, fetches all menus, and
+commits changes to the Mobile Order JSON files. The Mobile Order step is
+non-blocking: if its session is expired or fetching fails, the rest of the
+workflow can still finish normally. It does not use the Mac app, mitmproxy,
+AppleScript, or Accessibility.
+
+### 1. Add the three GitHub Actions secrets
+
+In the repository, open **Settings → Secrets and variables → Actions** and add:
+
+```text
+TRANSACT_LOGIN_TOKEN
+TRANSACT_USER_ID
+TRANSACT_SESSION_ID
+```
+
+Copy the values from the local `.transact-session.json` file. Do not commit that
+file or put the Transact values in the cron-job.org URL.
+
+### 2. Push the workflow to `main`
+
+GitHub only makes the workflow available after the workflow file is pushed to
+the repository. Once pushed, test it once from the repository's **Actions** tab
+using **Scrape → Run workflow**.
+
+### 3. Create the cron-job.org request
+
+Create a POST job with the schedule you want and use this URL:
+
+```text
+https://api.github.com/repos/Naimy441/duke_halal/actions/workflows/main.yml/dispatches
+```
+
+Add these request headers:
+
+```text
+Accept: application/vnd.github+json
+Authorization: Bearer YOUR_GITHUB_ACTIONS_TOKEN
+Content-Type: application/json
+```
+
+Use this JSON request body:
+
+```json
+{"ref":"main"}
+```
+
+`YOUR_GITHUB_ACTIONS_TOKEN` should be a fine-grained GitHub token limited to
+this repository with **Actions: Read and write** permission. Update the
+Transact credentials later in GitHub Actions secrets if the session expires;
+the cron job itself does not need to change.
+
+If the Transact session expires, the workflow stops at the session-check step
+and does not overwrite the menu files. The cron-job.org request only starts the
+workflow; check the GitHub Actions run for the final success or failure.
+
+## Check whether the saved session still works
+
+To test the captured session without opening Mobile Order or refreshing every
+menu, run:
+
+```bash
+python3 mobile_order/check_transact_session.py
+```
+
+The script makes one menu request for the first restaurant and never prints the
+token values. It exits with `0` when the session works, `1` when Transact
+rejects the session because of authentication, and `2` for a missing file,
+network/setup problem, or unrelated server error.
+
+The fetcher itself now stops immediately on a Transact session-expired response
+with exit code `3` and leaves the existing menu exports untouched. Use
+`./mobile_order/refresh_menus.sh` for the interactive recapture flow.
 
 ## Output
 
@@ -43,6 +135,41 @@ mobile_order/restaurants.json
 mobile_order/all_restaurant_menus.json
 ```
 
-Each restaurant record includes image URLs, estimated wait time, current open status, takeout/delivery hours, and the full day-by-day hours list returned by Mobile Order.
+The compact exports keep restaurant names, icon URLs, current open status, estimated wait time, simple weekly takeout/delivery hours, section names, item names and descriptions, prices, inner options such as sizes and add-ons, busy/normal pickup minutes, and visibility flags.
+
+### Download restaurant icons once
+
+Icon downloading is separate from the menu refresh workflow. To download the
+icons referenced by the current exports into `mobile_order/images/`, run:
+
+```bash
+python3 mobile_order/download_restaurant_icons.py
+```
+
+The script is safe to run again. It also adds `icon_image_file` to the JSON
+records so local consumers can find each downloaded icon.
+
+`price` is expressed in dollars.
+
+## Understanding item options
+
+Menu items keep their inner options, including choices such as small/medium/large,
+creamer, creamer amount, and flavor shots. Each option group has these fields:
+
+- `minimum`: the fewest choices the customer must make in that group.
+- `maximum`: the most choices the customer may make in that group.
+- `allow_quantity`: whether a choice can be added with a quantity.
+- `values`: the choices in the group, including their names, prices, defaults,
+  hidden/out-of-stock status, and any per-choice quantity limit.
+
+For example, Bella Union's Espresso item has an **Espresso Sizes** group with
+`minimum: 1` and `maximum: 1`. That means the customer must choose exactly one
+size. A group with `minimum: 0` is optional, while a larger `maximum` allows
+multiple choices.
+
+`max_quantity` applies to one individual choice. A value of `0` generally means
+that the menu did not configure a separate per-choice limit; it does not mean
+the choice is unavailable. Use `is_out_of_stock` to identify unavailable
+choices. `is_hidden` indicates that a choice or item is hidden from customers.
 
 The temporary captured session is stored locally in `.transact-session.json` with restricted permissions and is not included in the menu JSON exports.
