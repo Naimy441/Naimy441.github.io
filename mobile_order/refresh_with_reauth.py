@@ -154,6 +154,11 @@ def main() -> int:
     parser.add_argument("--session-file", type=Path, default=Path(os.environ.get("TRANSACT_SESSION_FILE", DEFAULT_SESSION_FILE)))
     parser.add_argument("--delay", type=float, default=0.1)
     parser.add_argument("--timeout", type=float, default=600)
+    parser.add_argument(
+        "--no-reauth",
+        action="store_true",
+        help="Never run web login; preserve existing outputs if the Blob session is unavailable or expired.",
+    )
     args = parser.parse_args()
 
     output_dir = args.output_dir.expanduser().resolve()
@@ -205,6 +210,13 @@ def main() -> int:
     )
     has_local_session = session_file.is_file()
     if blob_config is not None and not blob_loaded and not has_environment_session and not has_local_session:
+        if args.no_reauth:
+            print(
+                "[mobile-order] No Blob session exists; reauthentication is disabled, "
+                "so existing outputs were preserved.",
+                flush=True,
+            )
+            return 0
         print("[mobile-order] No saved session exists yet; starting the initial login.", flush=True)
         check_result = 1
     else:
@@ -231,8 +243,22 @@ def main() -> int:
         fetch_result = _run(fetch_command, env=session_env)
         if fetch_result != 3:
             return fetch_result
+        if args.no_reauth:
+            print(
+                "[mobile-order] The Blob session expired during fetch; reauthentication "
+                "is disabled, so existing outputs were preserved.",
+                flush=True,
+            )
+            return 0
         print("[mobile-order] Session expired during fetch; starting reauthentication.", flush=True)
     else:
+        if args.no_reauth:
+            print(
+                "[mobile-order] The Blob session is expired or rejected; reauthentication "
+                "is disabled, so existing outputs were preserved.",
+                flush=True,
+            )
+            return 0
         print("[mobile-order] Session is expired; starting reauthentication.", flush=True)
 
     # Do not let stale TRANSACT_* secrets override the newly captured session

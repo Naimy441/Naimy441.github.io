@@ -81,6 +81,7 @@ DEFAULT_PROFILE_DIR = (
     / "DukeHalalMobileOrder"
     / "browser-profile"
 )
+DEFAULT_BLOB_PATH = "mobile-order/transact-session.json"
 
 
 def _load_local_env() -> None:
@@ -177,6 +178,38 @@ def _write_session(path: Path, payload: dict[str, str]) -> None:
 
 def _write_json_private(path: Path, payload: dict[str, str]) -> None:
     _write_session(path, payload)
+
+
+def _upload_session_to_blob_if_configured(session_file: Path) -> bool:
+    """Upload a verified local session when Blob credentials are configured."""
+    token = os.environ.get("BLOB_READ_WRITE_TOKEN", "").strip()
+    store_id = os.environ.get("BLOB_STORE_ID", "").strip()
+    if not token and not store_id:
+        return False
+    if not token or not store_id:
+        raise RuntimeError(
+            "Vercel Blob requires both BLOB_STORE_ID and BLOB_READ_WRITE_TOKEN."
+        )
+    try:
+        from vercel.blob import BlobClient
+    except ImportError as error:
+        raise RuntimeError(
+            "Vercel Blob support requires the `vercel` Python package. "
+            "Run `python3 -m pip install --user vercel`."
+        ) from error
+    try:
+        BlobClient(token=token).put(
+            os.environ.get("TRANSACT_SESSION_BLOB_PATH", DEFAULT_BLOB_PATH),
+            session_file.read_bytes(),
+            access="private",
+            content_type="application/json",
+            overwrite=True,
+        )
+    except Exception as error:
+        raise RuntimeError(
+            f"Could not update the private Vercel Blob session ({type(error).__name__})."
+        ) from error
+    return True
 
 
 def _api_post(
@@ -722,6 +755,13 @@ def main() -> int:
         if check != 0:
             print("The captured web session did not pass validation.", file=sys.stderr)
             return check
+
+        try:
+            if _upload_session_to_blob_if_configured(session_file):
+                progress("Uploaded the verified web session to private Vercel Blob")
+        except RuntimeError as error:
+            print(f"Could not upload the verified session: {error}", file=sys.stderr)
+            return 1
 
         if args.fetch:
             return run_checked(

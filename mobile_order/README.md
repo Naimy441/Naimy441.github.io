@@ -7,10 +7,10 @@ Order app and saves the generated files under `outputs/mobile_order/`.
 
 ### Normal GitHub Actions and web-login flow
 
-- `refresh_with_reauth.py` is the main refresh coordinator. It tests the
-  current Transact session, fetches normally when it works, and starts web SSO
-  recapture only after an authentication failure. When configured, it uses a
-  private Vercel Blob as the persistent session store.
+- `refresh_with_reauth.py` is the main refresh coordinator. In GitHub Actions
+  it downloads the saved session from private Vercel Blob and fetches normally
+  when it works. The `--no-reauth` mode preserves existing outputs when the
+  Blob session is missing or expired.
 - `check_transact_session.py` makes one small menu request to determine whether
   the current login token is usable. Exit code `0` means valid, `1` means an
   authentication rejection, and `2` means a network, file, or setup problem.
@@ -88,70 +88,69 @@ refresh step:
 .github/workflows/main.yml
 ```
 
-The workflow first checks the saved Transact credentials. If they are valid, it
-fetches the menus normally. If Transact rejects them as expired, the workflow
-starts headless mitmdump and headless Chrome, submits the Duke SSO form using
-`TRANSACT_NETID` and `TRANSACT_PASSWORD`, captures a new session, and fetches the menus.
-The workflow also reads and updates the private Blob session using
-`BLOB_STORE_ID` and `BLOB_READ_WRITE_TOKEN`.
-Other network or setup errors do not trigger a blind login. The Mobile Order
-step is non-blocking: if it ultimately fails, the rest of the workflow can
-still finish normally. It does not use the Mac app, AppleScript, or
-Accessibility.
+The workflow downloads the saved session from private Blob and fetches the
+menus when it is valid. If the Blob session is expired or unavailable, it does
+not attempt Duke SSO or MFA; it preserves the existing menu files and lets the
+rest of the workflow continue. The GitHub workflow does not use the Mac app,
+AppleScript, Accessibility, NetID, or password.
 
 ### 1. Add the GitHub Actions secrets
 
 In the repository, open **Settings → Secrets and variables → Actions** and add:
 
 ```text
-TRANSACT_LOGIN_TOKEN
-TRANSACT_USER_ID
-TRANSACT_SESSION_ID
-TRANSACT_NETID
-TRANSACT_PASSWORD
 BLOB_STORE_ID
 BLOB_READ_WRITE_TOKEN
 ```
 
-`TRANSACT_NETID` and `TRANSACT_PASSWORD` are required for automatic
-reauthentication. The three legacy session secrets are optional when the Blob
-store is configured; they can be used to bootstrap a session without logging
-in, but they are not needed after the first successful Blob upload. Do not
-commit captured sessions, passwords, or put any of these values in the
+Do not commit captured sessions, passwords, or put any secret values in the
 cron-job.org URL.
 
 Add `BLOB_STORE_ID` and `BLOB_READ_WRITE_TOKEN` to **GitHub Actions Secrets**
 as well as Vercel. GitHub Actions does not automatically inherit Vercel
 project environment variables. The Blob store must be private.
 
-The first run with no Blob session starts headless Duke login using
-`TRANSACT_NETID` and `TRANSACT_PASSWORD`, then uploads the captured session.
-After that, the workflow uses the Blob session and only logs in again when the
-saved session is rejected. You may remove the legacy
-`TRANSACT_LOGIN_TOKEN`, `TRANSACT_USER_ID`, and `TRANSACT_SESSION_ID` secrets
-once the Blob has been successfully seeded.
+The Blob must first be seeded locally using a successful Mac login. The local
+recapture script uploads the verified session automatically when the Blob
+variables are present in `.env`.
 
 The workflow downloads `mobile-order/transact-session.json` from Blob before
-checking credentials. If the session is valid, it fetches normally. If it is
-expired, it logs in headlessly, uploads the refreshed session back to Blob, and
-fetches the menus. The local runner copy is temporary and is never committed.
+checking the session. If it is valid, it fetches normally. If it is expired,
+it reports that the refresh was skipped and does not change the menu exports.
+The local runner copy is temporary and is never committed.
 
 The helper implementing this decision is:
 
 ```bash
-python3 mobile_order/refresh_with_reauth.py --output-dir outputs/mobile_order
+python3 mobile_order/refresh_with_reauth.py \
+  --output-dir outputs/mobile_order \
+  --delay 0.1 \
+  --no-reauth
 ```
+
+This is also the local test for the GitHub Actions behavior. It reads the
+private Blob session, fetches menus if the session is valid, and preserves the
+existing exports without logging in if the Blob session is expired or missing.
 
 ### Manually test only Mobile Order
 
-To test the Mobile Order workflow without running the other scrapers or
-committing anything, open GitHub Actions and select **Test Mobile Order → Run
-workflow**. This uses `.github/workflows/test-mobile-order.yml`, runs only the
-Mobile Order refresh, and fails visibly if authentication or setup fails.
+To test the Blob-only Mobile Order workflow without running the other scrapers
+or committing anything, open GitHub Actions and select **Test Mobile Order →
+Run workflow**. This uses `.github/workflows/test-mobile-order.yml` and runs
+only the Mobile Order refresh. An expired Blob session is reported as a clean
+skip; setup or network errors remain visible.
 
-For local headless testing, put `TRANSACT_NETID` and `TRANSACT_PASSWORD` in the
-project-root `.env` file and run the same helper. `.env` is ignored by Git.
-Duke MFA or WebAuthn may still require the visible login mode on a local Mac.
+For local recapture and Blob updates, put `TRANSACT_NETID`,
+`TRANSACT_PASSWORD`, `BLOB_STORE_ID`, and `BLOB_READ_WRITE_TOKEN` in the
+project-root `.env` file, then run:
+
+```bash
+python3 mobile_order/recapture_web_session.py --headless-login --fetch
+```
+
+After the session passes validation, the script uploads it to
+`mobile-order/transact-session.json`. `.env` is ignored by Git. Duke MFA or
+WebAuthn may still require the visible login mode on a local Mac.
 
 ## Check whether the saved session still works
 

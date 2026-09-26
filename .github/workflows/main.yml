@@ -44,17 +44,13 @@ jobs:
         id: mobile-order-refresh
         continue-on-error: true
         env:
-          TRANSACT_LOGIN_TOKEN: ${{ secrets.TRANSACT_LOGIN_TOKEN }}
-          TRANSACT_USER_ID: ${{ secrets.TRANSACT_USER_ID }}
-          TRANSACT_SESSION_ID: ${{ secrets.TRANSACT_SESSION_ID }}
-          TRANSACT_NETID: ${{ secrets.TRANSACT_NETID }}
-          TRANSACT_PASSWORD: ${{ secrets.TRANSACT_PASSWORD }}
           BLOB_STORE_ID: ${{ secrets.BLOB_STORE_ID }}
           BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
         run: >-
           python3 mobile_order/refresh_with_reauth.py
           --output-dir outputs/mobile_order
           --delay 0.1
+          --no-reauth
 
       - name: Report Mobile Order result
         if: always()
