@@ -1,0 +1,47 @@
+name: Test Mobile Order
+
+on:
+  workflow_dispatch:
+    inputs:
+      delay:
+        description: "Seconds between menu requests"
+        required: false
+        default: "0.1"
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  mobile-order-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PYTHONUNBUFFERED: "1"
+      TRANSACT_LOGIN_TOKEN: ${{ secrets.TRANSACT_LOGIN_TOKEN }}
+      TRANSACT_USER_ID: ${{ secrets.TRANSACT_USER_ID }}
+      TRANSACT_SESSION_ID: ${{ secrets.TRANSACT_SESSION_ID }}
+      TRANSACT_NETID: ${{ secrets.TRANSACT_NETID }}
+      TRANSACT_PASSWORD: ${{ secrets.TRANSACT_PASSWORD }}
+      BLOB_STORE_ID: ${{ secrets.BLOB_STORE_ID }}
+      BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Mobile Order dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install "mitmproxy==12.2.3" "zstandard>=0.25.0" playwright vercel
+          python -m playwright install --with-deps chromium
+
+      - name: Test Mobile Order refresh
+        run: >-
+          python3 mobile_order/refresh_with_reauth.py
+          --output-dir outputs/mobile_order
+          --delay "${{ inputs.delay }}"

@@ -500,6 +500,19 @@ def launch_headless_browser(
                 page.locator(
                     'input[name="Submit"], input[type="submit"], button[type="submit"]'
                 ).first.click()
+                # A successful Duke credential submission redirects away from
+                # /idp/authn/external and eventually creates the SSO event.
+                # If the page is still the login form after the response has
+                # settled, fail early with a useful explanation instead of
+                # waiting for the full SSO timeout.
+                page.wait_for_timeout(2_000)
+                event_is_new = event_file.exists() and event_file.stat().st_mtime_ns > event_before
+                if not event_is_new and "/idp/authn/external" in page.url:
+                    raise RuntimeError(
+                        "Duke did not redirect after the credentials were submitted. "
+                        "Check TRANSACT_NETID/TRANSACT_PASSWORD, or complete the "
+                        "required MFA challenge in visible-browser mode."
+                    )
             except PlaywrightTimeoutError as error:
                 if not (event_file.exists() and event_file.stat().st_mtime_ns > event_before):
                     raise RuntimeError(

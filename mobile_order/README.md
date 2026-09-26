@@ -142,6 +142,13 @@ The helper implementing this decision is:
 python3 mobile_order/refresh_with_reauth.py --output-dir outputs/mobile_order
 ```
 
+### Manually test only Mobile Order
+
+To test the Mobile Order workflow without running the other scrapers or
+committing anything, open GitHub Actions and select **Test Mobile Order → Run
+workflow**. This uses `.github/workflows/test-mobile-order.yml`, runs only the
+Mobile Order refresh, and fails visibly if authentication or setup fails.
+
 For local headless testing, put `TRANSACT_NETID` and `TRANSACT_PASSWORD` in the
 project-root `.env` file and run the same helper. `.env` is ignored by Git.
 Duke MFA or WebAuthn may still require the visible login mode on a local Mac.
