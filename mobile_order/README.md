@@ -32,6 +32,37 @@ Order app and saves the generated files under `outputs/mobile_order/`.
 - `open_first_menu.applescript` clicks the first available restaurant in the
   Mac app. It requires Terminal Accessibility permission.
 
+### Login background session recapture
+
+The optional login-time web-session recapture is installed as a per-user macOS
+LaunchAgent at:
+
+```text
+~/Library/LaunchAgents/com.dukehalal.transact-recapture.plist
+```
+
+It runs `recapture_web_session.py --headless-login` after a 120-second delay so
+macOS, networking, and Homebrew services have time to finish starting. Its
+output is written to:
+
+```text
+~/Library/Logs/DukeHalal/recapture.log
+~/Library/Logs/DukeHalal/recapture-error.log
+```
+
+To inspect whether macOS has loaded or run it:
+
+```bash
+launchctl print "gui/$(id -u)/com.dukehalal.transact-recapture"
+```
+
+Edit the plist above to change or remove the task. To disable it cleanly,
+unload the LaunchAgent first with:
+
+```bash
+launchctl bootout "gui/$(id -u)/com.dukehalal.transact-recapture"
+```
+
 ### Optional utilities
 
 - `download_restaurant_icons.py` downloads restaurant icon images separately
