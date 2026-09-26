@@ -112,6 +112,33 @@ python3 mobile_order/download_restaurant_icons.py
 
 The script is safe to run again and does not modify the menu JSON files.
 
+### Build a names-only comparison dataset
+
+To create a small dataset containing only restaurant names, dish names, menu
+sections/categories, and Mobile Order option names:
+
+```bash
+python3 mobile_order/build_restaurant_matching_files.py
+```
+
+It writes:
+
+```text
+outputs/mobile_order/restaurant_matching/
+```
+
+Each file in `restaurant_matching/` contains one Mobile Order restaurant and
+the Nutrition restaurant records that are relevant to it. Nutrition records are
+read from the canonical files in `outputs/restaurants/`. Each file also has a
+`restaurant_match` section showing the Mobile Order name, matched Nutrition
+name(s), and whether the pairing used a normalized name or an alias. Dish,
+option group, and option value records keep stable IDs; restaurant-level IDs
+are omitted because each file is already restaurant-scoped. Restaurants
+without a Nutrition source have an empty `nutrition` list. When there is one
+clear Nutrition match, the matching file uses the same filename as its source
+file in `outputs/restaurants/`; unmatched or multi-source restaurants use a
+Mobile Order-based filename.
+
 `price` is expressed in dollars.
 
 ## Understanding item options
