@@ -21,6 +21,9 @@ Order app and saves the generated files under `outputs/mobile_order/`.
   the resulting Transact session, and can fetch menus afterward.
 - `HASH_DISCOVERY_README.md` documents how the native app's SSO hash algorithm
   was identified. It is documentation only and is not required at runtime.
+- `API_ENDPOINTS.md` is the current endpoint worksheet from observed traffic
+  and Ghidra analysis. It separates confirmed request shapes from inferred
+  client methods.
 
 ### Mac Mobile Order app flow
 
