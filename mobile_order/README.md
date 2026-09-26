@@ -113,18 +113,23 @@ BLOB_STORE_ID
 BLOB_READ_WRITE_TOKEN
 ```
 
-Copy the three `TRANSACT_*` values from the local `.transact-session.json` file.
-Add the Duke login values as separate secrets. Do not commit captured sessions,
-passwords, or put any of these values in the cron-job.org URL.
+`TRANSACT_NETID` and `TRANSACT_PASSWORD` are required for automatic
+reauthentication. The three legacy session secrets are optional when the Blob
+store is configured; they can be used to bootstrap a session without logging
+in, but they are not needed after the first successful Blob upload. Do not
+commit captured sessions, passwords, or put any of these values in the
+cron-job.org URL.
 
 Add `BLOB_STORE_ID` and `BLOB_READ_WRITE_TOKEN` to **GitHub Actions Secrets**
 as well as Vercel. GitHub Actions does not automatically inherit Vercel
 project environment variables. The Blob store must be private.
 
-Keep `TRANSACT_LOGIN_TOKEN`, `TRANSACT_USER_ID`, and `TRANSACT_SESSION_ID` if
-you want the workflow to test the existing session and avoid logging in on
-every run. Removing them means the GitHub runner has no saved session to test;
-the current workflow will stop rather than blindly recapture.
+The first run with no Blob session starts headless Duke login using
+`TRANSACT_NETID` and `TRANSACT_PASSWORD`, then uploads the captured session.
+After that, the workflow uses the Blob session and only logs in again when the
+saved session is rejected. You may remove the legacy
+`TRANSACT_LOGIN_TOKEN`, `TRANSACT_USER_ID`, and `TRANSACT_SESSION_ID` secrets
+once the Blob has been successfully seeded.
 
 The workflow downloads `mobile-order/transact-session.json` from Blob before
 checking credentials. If the session is valid, it fetches normally. If it is

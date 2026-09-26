@@ -592,11 +592,6 @@ def main() -> int:
     # The proxy addon does not need the login credentials.
     env.pop("TRANSACT_PASSWORD", None)
     env.pop("TRANSACT_NETID", None)
-    flow_file = Path(f"/private/tmp/duke-halal-web-flow-{os.getpid()}.mitm")
-    flow_file.parent.mkdir(parents=True, exist_ok=True)
-    flow_file.touch(mode=0o600, exist_ok=True)
-    os.chmod(flow_file, 0o600)
-    retain_flow_file = False
     playwright_runtime = None
     browser_context = None
 
@@ -608,15 +603,14 @@ def main() -> int:
         "127.0.0.1",
         "--listen-port",
         str(args.proxy_port),
-        "-w",
-        str(flow_file),
         "-s",
         str(Path(__file__).resolve()),
     ]
     dashboard_token = ""
     if use_dashboard:
         dashboard_token = secrets.token_urlsafe(32)
-        command[command.index("-w"):command.index("-w")] = [
+        addon_index = command.index("-s")
+        command[addon_index:addon_index] = [
             "--web-host",
             "127.0.0.1",
             "--web-port",
@@ -626,22 +620,23 @@ def main() -> int:
             "--set",
             f"web_password={dashboard_token}",
         ]
-    mitm_log = Path("/private/tmp/duke-halal-web-mitm.log")
     progress(
         "Starting mitmweb in browser-proxy mode..."
         if use_dashboard
         else "Starting headless mitmdump in browser-proxy mode..."
     )
-    with mitm_log.open("w", encoding="utf-8") as log_handle:
-        mitm = subprocess.Popen(command, env=env, stdout=log_handle, stderr=subprocess.STDOUT)
+    # Keep mitmproxy output in the current process output so local runs and
+    # GitHub Actions show startup/errors directly, without a platform-specific
+    # temporary log or flow file.
+    mitm = subprocess.Popen(command, env=env)
 
     try:
         if not wait_for_port("127.0.0.1", args.proxy_port, mitm, 15):
-            print(f"{mitm_command} did not start. See {mitm_log}", file=sys.stderr)
+            print(f"{mitm_command} did not start.", file=sys.stderr)
             return 1
         if use_dashboard:
             if not wait_for_port("127.0.0.1", args.web_port, mitm, 15):
-                print(f"mitmweb dashboard did not start. See {mitm_log}", file=sys.stderr)
+                print("mitmweb dashboard did not start.", file=sys.stderr)
                 return 1
             url = (
                 f"http://127.0.0.1:{args.web_port}/?token="
@@ -663,9 +658,7 @@ def main() -> int:
                     event_before,
                 )
             except RuntimeError as error:
-                retain_flow_file = True
                 print(f"Could not start headless Duke login: {error}", file=sys.stderr)
-                print(f"Private mitm flow dump: {flow_file}", file=sys.stderr)
                 return 1
         else:
             progress(f"Opening {args.browser} with a dedicated SSO profile...")
@@ -693,20 +686,14 @@ def main() -> int:
                     TimeoutError,
                     RuntimeError,
                 ) as error:
-                    retain_flow_file = True
                     print(f"Could not complete the Transact SSO exchange: {error}", file=sys.stderr)
-                    print(f"Private mitm flow dump: {flow_file}", file=sys.stderr)
                     return 1
             if mitm.poll() is not None:
-                retain_flow_file = True
-                print(f"{mitm_command} stopped. See {mitm_log}", file=sys.stderr)
+                print(f"{mitm_command} stopped.", file=sys.stderr)
                 return 1
             time.sleep(0.5)
         else:
-            retain_flow_file = True
             print("Timed out waiting for the Duke SSO handoff.", file=sys.stderr)
-            print(f"Inspect the mitm log: {mitm_log}", file=sys.stderr)
-            print(f"Private mitm flow dump: {flow_file}", file=sys.stderr)
             return 1
 
         check = run_checked(
@@ -746,8 +733,6 @@ def main() -> int:
             browser_context.close()
         if playwright_runtime is not None:
             playwright_runtime.stop()
-        if not retain_flow_file:
-            flow_file.unlink(missing_ok=True)
 
 
 if __name__ == "__main__":
