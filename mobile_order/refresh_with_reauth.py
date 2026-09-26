@@ -91,10 +91,16 @@ def _download_blob_session(blob_config: tuple[str, str, str], session_file: Path
     if result is None or getattr(result, "status_code", 0) != 200:
         return False
 
-    stream = getattr(result, "stream", None)
-    if stream is None:
-        raise RuntimeError("The private Vercel Blob session had no content.")
-    contents = b"".join(stream)
+    # Current Vercel Python SDK versions expose downloaded bytes as
+    # `result.content`; older versions exposed an iterable `stream`.
+    contents = getattr(result, "content", None)
+    if contents is None:
+        stream = getattr(result, "stream", None)
+        if stream is None:
+            raise RuntimeError("The private Vercel Blob session had no content.")
+        contents = stream.read() if hasattr(stream, "read") else b"".join(stream)
+    if not isinstance(contents, bytes):
+        contents = bytes(contents)
     try:
         json.loads(contents.decode("utf-8"))
     except (UnicodeDecodeError, json.JSONDecodeError) as error:
