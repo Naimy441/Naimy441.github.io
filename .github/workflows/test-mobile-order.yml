@@ -6,7 +6,7 @@ on:
       delay:
         description: "Seconds between menu requests"
         required: false
-        default: "0.1"
+        default: "0"
         type: string
 
 permissions:
@@ -32,8 +32,7 @@ jobs:
       - name: Install Mobile Order dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install "mitmproxy==12.2.3" "zstandard>=0.25.0" playwright vercel
-          python -m playwright install --with-deps chromium
+          python -m pip install "mitmproxy==12.2.3" "zstandard>=0.25.0" vercel
 
       - name: Test Mobile Order refresh
         run: >-

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Refresh Mobile Order menus and reauthenticate only after an auth failure."""
+"""Refresh Mobile Order menus from a saved API session."""
 
 from __future__ import annotations
 
@@ -158,7 +158,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output-dir", type=Path, default=Path(os.environ.get("FRESH_MENU_OUTPUT_DIR", DEFAULT_OUTPUT_DIR)))
     parser.add_argument("--session-file", type=Path, default=Path(os.environ.get("TRANSACT_SESSION_FILE", DEFAULT_SESSION_FILE)))
-    parser.add_argument("--delay", type=float, default=0.1)
+    parser.add_argument("--delay", type=float, default=0.0)
     parser.add_argument("--timeout", type=float, default=600)
     parser.add_argument(
         "--no-reauth",
@@ -215,10 +215,10 @@ def main() -> int:
         for name in ("TRANSACT_LOGIN_TOKEN", "TRANSACT_USER_ID", "TRANSACT_SESSION_ID")
     )
     has_local_session = session_file.is_file()
-    if blob_config is not None and not blob_loaded and not has_environment_session and not has_local_session:
+    if not has_environment_session and not has_local_session:
         if args.no_reauth:
             print(
-                "[mobile-order] No Blob session exists; reauthentication is disabled, "
+                "[mobile-order] No saved session exists; reauthentication is disabled, "
                 "so existing outputs were preserved.",
                 flush=True,
             )
@@ -251,7 +251,7 @@ def main() -> int:
             return fetch_result
         if args.no_reauth:
             print(
-                "[mobile-order] The Blob session expired during fetch; reauthentication "
+                "[mobile-order] The saved session expired during fetch; reauthentication "
                 "is disabled, so existing outputs were preserved.",
                 flush=True,
             )
@@ -260,7 +260,7 @@ def main() -> int:
     else:
         if args.no_reauth:
             print(
-                "[mobile-order] The Blob session is expired or rejected; reauthentication "
+                "[mobile-order] The saved session is expired or rejected; reauthentication "
                 "is disabled, so existing outputs were preserved.",
                 flush=True,
             )

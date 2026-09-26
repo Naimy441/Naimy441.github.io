@@ -242,7 +242,7 @@ def main() -> int:
             )
         ),
     )
-    parser.add_argument("--delay", type=float, default=0.1)
+    parser.add_argument("--delay", type=float, default=0.0)
     args = parser.parse_args()
 
     token = os.environ.get("TRANSACT_LOGIN_TOKEN")

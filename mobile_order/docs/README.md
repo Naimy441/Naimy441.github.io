@@ -16,9 +16,10 @@ Order app and saves the generated files under `outputs/mobile_order/`.
   authentication rejection, and `2` means a network, file, or setup problem.
 - `fetch_fresh_menus.py` requests every restaurant menu and atomically updates
   the JSON exports under `outputs/mobile_order/`.
-- `recapture_web_session.py` runs mitmdump and headless Chrome, submits the
-  Duke web SSO form, computes the app's HMAC-SHA256 registration hash, captures
-  the resulting Transact session, and can fetch menus afterward.
+- `recapture_web_session.py` is an optional local recovery tool. It can run
+  mitmdump and headless Chrome to submit the Duke web SSO form, compute the
+  app's HMAC-SHA256 registration hash, capture a new Transact session, and fetch
+  menus afterward. It is not used by scheduled refreshes.
 - `HASH_DISCOVERY_README.md` documents how the native app's SSO hash algorithm
   was identified. It is documentation only and is not required at runtime.
 - `API_ENDPOINTS.md` is the current endpoint worksheet from observed traffic
@@ -123,9 +124,10 @@ refresh step:
 ```
 
 The workflow downloads the saved session from private Blob and fetches the
-menus when it is valid. If the Blob session is expired or unavailable, it does
-not attempt Duke SSO or MFA; it preserves the existing menu files and lets the
-rest of the workflow continue. The GitHub workflow does not use the Mac app,
+menus directly from the Transact API when it is valid. If the saved session is
+missing or expired, it does not attempt Duke SSO or MFA; it preserves the
+existing menu files and lets the rest of the workflow continue. The GitHub
+workflow does not install or launch Chromium, and does not use the Mac app,
 AppleScript, Accessibility, NetID, or password.
 
 ### 1. Add the GitHub Actions secrets
@@ -158,13 +160,14 @@ The helper implementing this decision is:
 ```bash
 python3 mobile_order/refresh_with_reauth.py \
   --output-dir outputs/mobile_order \
-  --delay 0.1 \
+  --delay 0 \
   --no-reauth
 ```
 
 This is also the local test for the GitHub Actions behavior. It reads the
-private Blob session, fetches menus if the session is valid, and preserves the
-existing exports without logging in if the Blob session is expired or missing.
+private Blob session, fetches menus through the API if the session is valid,
+and preserves the existing exports without logging in if the Blob session is
+expired or missing.
 
 ### Manually test only Mobile Order
 
@@ -185,6 +188,15 @@ python3 mobile_order/recapture_web_session.py --headless-login --fetch
 After the session passes validation, the script uploads it to
 `mobile-order/transact-session.json`. `.env` is ignored by Git. Duke MFA or
 WebAuthn may still require the visible login mode on a local Mac.
+
+This recovery tool is optional and is not installed or run by the scheduled
+API-only workflow. If you explicitly need it, install Playwright and its local
+browser separately:
+
+```bash
+python3 -m pip install playwright
+python3 -m playwright install chromium
+```
 
 ## Check whether the saved session still works
 

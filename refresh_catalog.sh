@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
-# Refreshes the full halal catalog end to end:
-#   1. full_scrape.py    -> outputs/all_menus.txt + all_menus.pdf (every item, halal-flagged)
-#   2. nutri_scrape.py   -> outputs/nutri_menus.json (nutrition label for every item; SLOW)
-#   3. nutri_split.py    -> outputs/restaurants/*.json + index + summary stats
-#   4. extract-nutrition -> dukeislam/data/nutrition.json (the catalog the website bundles)
+# Refreshes the halal catalog end to end without a browser:
+#   1. netnutrition_client.py -> outputs/netnutrition-direct.json
+#   2. build_catalog_outputs.py -> menu text/PDF + per-restaurant nutrition files
+#   3. extract-nutrition -> dukeislam/data/nutrition.json (the catalog the website bundles)
 #
-# Requires: python3 with requirements.txt installed, Chrome, node.
+# Requires: python3 with requirements.txt installed and node.
 # Full logs for each step are written to outputs/logs/.
 # Afterwards, review with `git status`, then commit and push to update the site.
 set -euo pipefail
 cd "$(dirname "$0")"
 
-TOTAL_STEPS=4
+TOTAL_STEPS=3
 LOG_DIR="outputs/logs/refresh_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$LOG_DIR"
 RUN_START=$SECONDS
@@ -66,11 +65,19 @@ run_step() {
   fi
 }
 
-echo "Refreshing halal catalog (logs in $LOG_DIR)"
-run_step 1 "Full menu scrape" full_scrape python3 src/full_scrape.py
-run_step 2 "Nutrition scrape (slow)" nutri_scrape python3 src/nutri_scrape.py
-run_step 3 "Split per-restaurant files" nutri_split python3 src/nutri_split.py
-run_step 4 "Rebuild website catalog" extract_nutrition node dukeislam/scripts/extract-nutrition.mjs
+CA_ARGS=()
+if [[ -n "${NETNUTRITION_CA_BUNDLE:-}" ]]; then
+  CA_ARGS=(--ca-bundle "$NETNUTRITION_CA_BUNDLE")
+fi
+
+echo "Refreshing halal catalog with direct NetNutrition requests (logs in $LOG_DIR)"
+run_step 1 "Direct menu + nutrition fetch" netnutrition_client \
+  python3 src/netnutrition_client.py --halal-only --nutrition --output outputs/netnutrition-direct.json \
+  "${CA_ARGS[@]}"
+run_step 2 "Build menu + nutrition artifacts" build_catalog_outputs \
+  python3 src/build_catalog_outputs.py --input outputs/netnutrition-direct.json \
+  "${CA_ARGS[@]}"
+run_step 3 "Rebuild website catalog" extract_nutrition node dukeislam/scripts/extract-nutrition.mjs
 
 echo
 echo "All done in $(fmt_time $((SECONDS - RUN_START)))."

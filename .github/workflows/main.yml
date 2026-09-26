@@ -1,4 +1,4 @@
-name: Scrape
+name: Refresh Duke food catalog
 
 # cron-job.org is the sole scheduler. It dispatches this workflow three times
 # per day; keeping scheduling in one place prevents duplicate scrapes/builds.
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  selenium-run:
+  catalog-refresh:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,28 +19,25 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install Chrome
-        run: |
-          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-          sudo apt install -y ./google-chrome-stable_current_amd64.deb
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          python -m playwright install --with-deps chromium
 
-      - name: Run Selenium script in Headless
-        env:
-          CHROME_BIN: /usr/bin/google-chrome
+      - name: Refresh NetNutrition catalog without a browser
         run: |
-          python src/bot_scrape.py
+          ./refresh_catalog.sh
 
       - name: Run Muslim Calendar Script
         run: |
           python src/get_muslim_calendar.py
 
-      - name: Refresh Mobile Order menus with automatic reauthentication
+      - name: Refresh Mobile Order menus from saved API session
         id: mobile-order-refresh
         continue-on-error: true
         env:
@@ -49,7 +46,7 @@ jobs:
         run: >-
           python3 mobile_order/refresh_with_reauth.py
           --output-dir outputs/mobile_order
-          --delay 0.1
+          --delay 0
           --no-reauth
 
       - name: Report Mobile Order result
@@ -61,7 +58,7 @@ jobs:
             echo "Mobile Order refresh completed."
           fi
 
-      - name: Commit PDF to repo
+      - name: Commit refreshed catalog artifacts
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -69,6 +66,8 @@ jobs:
           git config user.email "github-actions@github.com"
           git add docs/outputs/halal_menus.pdf
           git add outputs/halal_menus.txt
+          git add outputs/restaurants
+          git add dukeislam/data/nutrition.json
           git add docs/outputs/muslim_calendar.pdf
           git add outputs/mobile_order/menus outputs/mobile_order/restaurants.json outputs/mobile_order/all_restaurant_menus.json
           git commit -m "Scraped NetNutrition, Calendar & Mobile Order $(date -u)" || echo "No changes to commit"

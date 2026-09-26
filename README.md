@@ -8,11 +8,14 @@ The `dukeislam/` folder contains the new [dukeislam.org](https://dukeislam.org) 
 - **Events** (`/events`): a live list + month calendar of Muslim Life events from the DukeGroups feed
 - **Prayer times**: today's timings on the home page (ISNA, Shafi Asr) plus a subscribable, auto-updating athan calendar feed at `/prayers.ics`
 
-It deploys automatically to Vercel on push to `main` (Root Directory: `dukeislam`) and coexists with everything below — the GitHub Actions scraper and the PDFs are unchanged. See [`dukeislam/README.md`](dukeislam/README.md) for details.
+It deploys automatically to Vercel on push to `main` (Root Directory: `dukeislam`) and is refreshed by the direct NetNutrition workflow below. See [`dukeislam/README.md`](dukeislam/README.md) for details.
 
-## Refreshing the full halal catalog
+## Refreshing the halal catalog
 
-The website backfills restaurants that aren't on today's menu from a bundled catalog (`dukeislam/data/nutrition.json`) built from a full nutrition scrape. To rebuild that catalog with the latest menus and nutrition data (roughly once a semester, or whenever menus change):
+The scheduled refresh uses the direct NetNutrition client as its primary path. It
+fetches the current restaurant/menu/item data and nutrition labels over HTTP, then
+adapts the results into the text, PDF, and website JSON formats. No browser, clicks,
+or hardcoded waits are involved.
 
 ```bash
 ./refresh_catalog.sh
@@ -20,10 +23,9 @@ The website backfills restaurants that aren't on today's menu from a bundled cat
 
 This runs, with a live progress display and per-step logs in `outputs/logs/`:
 
-1. `full_scrape.py` — every menu item with halal flags → `outputs/all_menus.txt/.pdf`
-2. `nutri_scrape.py` — nutrition label for every item (slow, ~2 hours) → `outputs/nutri_menus.json`
-3. `nutri_split.py` — per-restaurant files → `outputs/restaurants/`
-4. `extract-nutrition.mjs` — the compact catalog the website bundles → `dukeislam/data/nutrition.json`
+1. `netnutrition_client.py` — direct requests for current halal items and nutrition → `outputs/netnutrition-direct.json`
+2. `build_catalog_outputs.py` — menu text/PDF and per-restaurant nutrition files
+3. `extract-nutrition.mjs` — the compact catalog the website bundles → `dukeislam/data/nutrition.json`
 
 Then review with `git status`, commit, and push — the Vercel deploy picks up the new catalog.
 
@@ -34,23 +36,39 @@ The Mac Mobile Order workflow refreshes current restaurant menus into
 workflow can also refresh them through GitHub Actions when the saved Transact
 session is valid.
 
+## Direct NetNutrition client
+
+`src/netnutrition_client.py` calls the NetNutrition session endpoints directly,
+without Selenium or browser clicks. It can list restaurants, fetch menus and
+items, and optionally fetch structured nutrition labels:
+
+```bash
+python src/netnutrition_client.py --list-units
+python src/netnutrition_client.py \
+  --unit "Tandoor Indian Cuisine" \
+  --halal-only --nutrition \
+  --output outputs/tandoor-netnutrition.json
+```
+
+Use `--unit-id` to select by NetNutrition `unitOid`, `--max-items` for a small
+test, and `--insecure` only when a local TLS-intercepting proxy is replacing
+the site certificate. The client verifies TLS by default.
+
 ---
 
-Visit the website [naimy441.github.io](https://naimy441.github.io) to view the latest PDF version of the halal menus and muslim events.
+Visit the website [naimy441.github.io](https://naimy441.github.io) to view the latest PDF version of the halal menus and Muslim events.
 
-Alternatively, you can clone this repository and use the scraper scripts provided:
+Alternatively, you can clone this repository and use the scripts provided:
 
-- Use `scrape.py` to run the scraper with an open Chrome window (useful for debugging or watching the scraper in action).
-- Use `bot_scrape.py` to run the scraper in headless mode (recommended for automation).
+- Use `netnutrition_client.py` for the primary no-browser refresh.
 - Use `get_muslim_calendar.py` to get ICS resource from DukeGroups and output as PDF.
-- Use `full_scrape`.py to run the scraper and get every menu item (over 3000).
+- The older Selenium scripts remain available only as historical/debugging fallbacks.
 
-The scripts generate 5 files:
+The refresh generates these catalog artifacts:
 - `halal_menus.pdf`: A nicely formatted, colorful PDF version of the scraped menus.
 - `halal_menus.txt`: A simplified, plain-text version of the menus.
-- `muslim_calendar.py`: A nicely formatted, colorful PDF version of the scraped events.
-- `all_menus.pdf`: A PDF that highlights halal items in green and anything else in red.
-- `all_menus.txt`: A plain-text version of the all menus.
+- `outputs/restaurants/*.json`: Structured per-restaurant nutrition data.
+- `dukeislam/data/nutrition.json`: The compact nutrition snapshot bundled by the website.
 
 ---
 
@@ -74,13 +92,11 @@ Open your terminal or command prompt and run:
 pip install -r requirements.txt
 ```
 
-This will install:
+The direct refresh uses:
 
-- **selenium**: Browser automation library  
-- **webdriver-manager**: Automatically downloads the correct version of ChromeDriver
-- **reportlab**: Generates PDF output
-- **requests**: Pulls ICS feed for calendar
-- **beautifulsoup4**: Scrapes Campus Hours
+- **reportlab**: Generates the PDF output
+- **requests**: Makes direct HTTP requests
+- **beautifulsoup4**: Parses NetNutrition and Campus Hours responses
 
 ---
 
@@ -88,41 +104,34 @@ This will install:
 
 After cloning the repository, navigate to its directory and run one of the following scripts:
 
-**For visual (windowed) scraping:**
+**For the primary direct refresh:**
 
 ```bash
-python src/scrape.py
+./refresh_catalog.sh
 ```
 
-**For headless scraping (no visible browser window):**
+The direct client can also be run by itself:
 
 ```bash
-python src/bot_scrape.py
+python src/netnutrition_client.py --halal-only --nutrition \
+  --output outputs/netnutrition-direct.json
 ```
 
-**For headless scraping (WARNING: this will scrape over 100 pages of food items):**
+If traffic is being intercepted by the local mitmproxy certificate:
 
 ```bash
-python src/full_scrape.py
-```
-
-**For headless scraping (WARNING: this takes almost 2 hours to fully run and downloads all nutrition labels):**
-
-```bash
-python src/nutri_scrape.py
+NETNUTRITION_CA_BUNDLE=~/.mitmproxy/mitmproxy-ca-cert.pem ./refresh_catalog.sh
 ```
 
 ---
 
 ## 4. What Happens
 
-- The script parses the Campus Hours website for restaurant timings
-- The script opens Duke’s NetNutrition website  
-- Dismisses the initial popup  
-- Applies the “Halal” filter  
-- Visits each **open** dining unit  
-- Collects **menu categories and Halal meals**  
-- Writes the result into two output files:
+- The direct client loads the NetNutrition page and keeps one HTTP session
+- It selects units and menus through the observed MVC endpoints
+- It parses menu fragments and requests nutrition labels directly
+- The adapter fetches Campus Hours and preserves the existing output formats
+- Writes the result into the catalog outputs:
 
 ```
 halal_menus.txt
@@ -150,15 +159,15 @@ muslim_calendar.pdf
 
 ## 5. Output Folders
 
-`bot_scrape.py`
-- `halal_menus.pdf` will output into docs/outputs/
-- `muslim_calendar.pdf` will output into docs/outputs/
-- `halal_menus.txt` will output into outputs/  
+The primary refresh writes `halal_menus.pdf` into `docs/outputs/`,
+`halal_menus.txt` and per-restaurant JSON files into `outputs/`, and the bundled
+nutrition catalog into `dukeislam/data/nutrition.json`.
 
-`full_scrape.py` will output into outputs/  
-`nutri_scrape.py` will output into outputs/
+`outputs/nutri_menus.json` is retained only for the older Selenium nutrition
+scraper; the primary direct workflow does not regenerate it.
 
-`scrape.py` will output into outputs/  
+The older Selenium scripts remain available for historical/debugging use, but
+they are no longer part of the scheduled refresh.
 
 ## 6. Output Example (`halal_menus.txt`)
 
@@ -176,7 +185,7 @@ The PDF version (`halal_menus.pdf`) will have a similar layout but in a visually
 
 ## 7. Notes
 
-- Ensure **Google Chrome** is installed (required by Selenium).
-- ChromeDriver installation is automatic, handled by `webdriver-manager`.
-- The script automatically skips **closed restaurants** and removes **duplicate meal names**.
-- `full_scrape.py` will **not** skip closed restaurants and will scrape **every** food item and topping
+- The direct client removes duplicate item names within each restaurant/category.
+- Chrome is only required for the historical Selenium scripts or optional
+  mobile-order session recovery; scheduled refreshes do not launch it.
+- `--delay` defaults to `0`; pass it only when a slower request rate is needed.

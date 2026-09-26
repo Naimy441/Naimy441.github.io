@@ -6,8 +6,9 @@ Motion. Mobile-first, works great on desktop.
 
 ## How data flows
 
-This app is a frontend over the existing scraping pipeline in the repo root — the
-pipeline itself was not modified.
+This app is a frontend over the direct NetNutrition pipeline in the repo root.
+The scheduled refresh uses HTTP requests and HTML-fragment parsing; it does not
+open a browser or click through the site.
 
 | Data | Source | Freshness |
 |------|--------|-----------|
@@ -31,11 +32,11 @@ Because menus and events are fetched at runtime with ISR, the site stays fresh
 
 ### Refreshing nutrition data
 
-After re-running the nutrition scrape (`src/nutri_scrape.py` + `src/nutri_split.py` in
-the repo root), regenerate the bundled snapshot and commit it:
+After refreshing the direct catalog from the repo root, regenerate the bundled
+snapshot and commit it:
 
 ```bash
-npm run extract-nutrition
+./refresh_catalog.sh
 ```
 
 ## Local development
@@ -54,10 +55,11 @@ npm run dev
 
 Vercel then auto-deploys on every push to `main`.
 
-### Coexistence with the existing GitHub Actions setup
+### GitHub Actions refresh
 
-The workflow is dispatched by cron-job.org three times daily and commits PDFs +
-`outputs/halal_menus.txt` to `main`; GitHub Pages keeps serving `docs/` as before.
+The workflow is dispatched by cron-job.org three times daily. It runs the direct
+NetNutrition client, commits the derived menu/PDF/nutrition artifacts, and keeps
+GitHub Pages serving `docs/` as before.
 
 Those bot commits will also trigger Vercel deploys. That's harmless, but unnecessary
 (data is fetched at runtime). To skip them, in Vercel go to Project → Settings → Git →
