@@ -3,6 +3,47 @@
 This folder contains a Mac workflow that captures fresh menus from the Mobile
 Order app and saves the generated files under `outputs/mobile_order/`.
 
+## Files in this folder
+
+### Normal GitHub Actions and web-login flow
+
+- `refresh_with_reauth.py` is the main refresh coordinator. It tests the
+  current Transact session, fetches normally when it works, and starts web SSO
+  recapture only after an authentication failure. When configured, it uses a
+  private Vercel Blob as the persistent session store.
+- `check_transact_session.py` makes one small menu request to determine whether
+  the current login token is usable. Exit code `0` means valid, `1` means an
+  authentication rejection, and `2` means a network, file, or setup problem.
+- `fetch_fresh_menus.py` requests every restaurant menu and atomically updates
+  the JSON exports under `outputs/mobile_order/`.
+- `recapture_web_session.py` runs mitmdump and headless Chrome, submits the
+  Duke web SSO form, computes the app's HMAC-SHA256 registration hash, captures
+  the resulting Transact session, and can fetch menus afterward.
+- `HASH_DISCOVERY_README.md` documents how the native app's SSO hash algorithm
+  was identified. It is documentation only and is not required at runtime.
+
+### Mac Mobile Order app flow
+
+- `refresh_menus.sh` is the all-in-one Mac app workflow. It checks the current
+  session, opens Mobile Order when needed, starts local process capture, opens
+  a restaurant, and fetches fresh menus.
+- `capture_transact_session.py` is the mitmproxy addon used by
+  `refresh_menus.sh` to save session fields from Mobile Order traffic.
+- `open_first_menu.applescript` clicks the first available restaurant in the
+  Mac app. It requires Terminal Accessibility permission.
+
+### Optional utilities
+
+- `download_restaurant_icons.py` downloads restaurant icon images separately
+  into `outputs/mobile_order/images/`.
+- `build_restaurant_matching_files.py` creates the restaurant-scoped
+  names-only comparison files used to match Mobile Order menus with nutrition
+  data.
+- `README.md` is this usage guide.
+
+The `__pycache__/` folder contains automatically generated Python bytecode. It
+is not source code, is ignored by Git, and can be deleted at any time.
+
 ## Before running
 
 Make sure:
@@ -34,8 +75,8 @@ captures a new session, and retries the fetch.
 
 If Mobile Order is logged out, the script pauses so you can complete the Duke
 SSO login in the app, then retries the restaurant click and captures the new
-session. This interactive recapture step is available when running the script
-from Terminal; cloud runs cannot complete the SSO login.
+session. This is the separate Mac-app recapture flow; the GitHub Actions flow
+uses the web SSO recapture described below.
 
 ## Run it in the cloud with cron-job.org
 
@@ -47,13 +88,18 @@ refresh step:
 .github/workflows/main.yml
 ```
 
-The workflow checks the saved Transact credentials, fetches all menus, and
-commits changes to the Mobile Order JSON files. The Mobile Order step is
-non-blocking: if its session is expired or fetching fails, the rest of the
-workflow can still finish normally. It does not use the Mac app, mitmproxy,
-AppleScript, or Accessibility.
+The workflow first checks the saved Transact credentials. If they are valid, it
+fetches the menus normally. If Transact rejects them as expired, the workflow
+starts headless mitmdump and headless Chrome, submits the Duke SSO form using
+`TRANSACT_NETID` and `TRANSACT_PASSWORD`, captures a new session, and fetches the menus.
+The workflow also reads and updates the private Blob session using
+`BLOB_STORE_ID` and `BLOB_READ_WRITE_TOKEN`.
+Other network or setup errors do not trigger a blind login. The Mobile Order
+step is non-blocking: if it ultimately fails, the rest of the workflow can
+still finish normally. It does not use the Mac app, AppleScript, or
+Accessibility.
 
-### 1. Add the three GitHub Actions secrets
+### 1. Add the GitHub Actions secrets
 
 In the repository, open **Settings → Secrets and variables → Actions** and add:
 
@@ -61,10 +107,39 @@ In the repository, open **Settings → Secrets and variables → Actions** and a
 TRANSACT_LOGIN_TOKEN
 TRANSACT_USER_ID
 TRANSACT_SESSION_ID
+TRANSACT_NETID
+TRANSACT_PASSWORD
+BLOB_STORE_ID
+BLOB_READ_WRITE_TOKEN
 ```
 
-Copy the values from the local `.transact-session.json` file. Do not commit that
-file or put the Transact values in the cron-job.org URL.
+Copy the three `TRANSACT_*` values from the local `.transact-session.json` file.
+Add the Duke login values as separate secrets. Do not commit captured sessions,
+passwords, or put any of these values in the cron-job.org URL.
+
+Add `BLOB_STORE_ID` and `BLOB_READ_WRITE_TOKEN` to **GitHub Actions Secrets**
+as well as Vercel. GitHub Actions does not automatically inherit Vercel
+project environment variables. The Blob store must be private.
+
+Keep `TRANSACT_LOGIN_TOKEN`, `TRANSACT_USER_ID`, and `TRANSACT_SESSION_ID` if
+you want the workflow to test the existing session and avoid logging in on
+every run. Removing them means the GitHub runner has no saved session to test;
+the current workflow will stop rather than blindly recapture.
+
+The workflow downloads `mobile-order/transact-session.json` from Blob before
+checking credentials. If the session is valid, it fetches normally. If it is
+expired, it logs in headlessly, uploads the refreshed session back to Blob, and
+fetches the menus. The local runner copy is temporary and is never committed.
+
+The helper implementing this decision is:
+
+```bash
+python3 mobile_order/refresh_with_reauth.py --output-dir outputs/mobile_order
+```
+
+For local headless testing, put `TRANSACT_NETID` and `TRANSACT_PASSWORD` in the
+project-root `.env` file and run the same helper. `.env` is ignored by Git.
+Duke MFA or WebAuthn may still require the visible login mode on a local Mac.
 
 ## Check whether the saved session still works
 

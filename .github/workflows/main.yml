@@ -27,6 +27,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
 
       - name: Run Selenium script in Headless
         env:
@@ -38,34 +39,26 @@ jobs:
         run: |
           python src/get_muslim_calendar.py
 
-      - name: Check Transact session for Mobile Order
-        id: session-check
+      - name: Refresh Mobile Order menus with automatic reauthentication
+        id: mobile-order-refresh
         continue-on-error: true
         env:
           TRANSACT_LOGIN_TOKEN: ${{ secrets.TRANSACT_LOGIN_TOKEN }}
           TRANSACT_USER_ID: ${{ secrets.TRANSACT_USER_ID }}
           TRANSACT_SESSION_ID: ${{ secrets.TRANSACT_SESSION_ID }}
-        run: python3 mobile_order/check_transact_session.py --output-dir outputs/mobile_order
-
-      - name: Fetch fresh Mobile Order menus
-        id: menu-fetch
-        if: steps.session-check.outcome == 'success'
-        continue-on-error: true
-        env:
-          TRANSACT_LOGIN_TOKEN: ${{ secrets.TRANSACT_LOGIN_TOKEN }}
-          TRANSACT_USER_ID: ${{ secrets.TRANSACT_USER_ID }}
-          TRANSACT_SESSION_ID: ${{ secrets.TRANSACT_SESSION_ID }}
+          TRANSACT_NETID: ${{ secrets.TRANSACT_NETID }}
+          TRANSACT_PASSWORD: ${{ secrets.TRANSACT_PASSWORD }}
+          BLOB_STORE_ID: ${{ secrets.BLOB_STORE_ID }}
+          BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
         run: >-
-          python3 mobile_order/fetch_fresh_menus.py
+          python3 mobile_order/refresh_with_reauth.py
           --output-dir outputs/mobile_order
           --delay 0.1
 
       - name: Report Mobile Order result
         if: always()
         run: |
-          if [[ "${{ steps.session-check.outcome }}" != "success" ]]; then
-            echo "Mobile Order refresh skipped: Transact session check failed."
-          elif [[ "${{ steps.menu-fetch.outcome }}" != "success" ]]; then
+          if [[ "${{ steps.mobile-order-refresh.outcome }}" != "success" ]]; then
             echo "Mobile Order refresh did not complete; existing files were preserved."
           else
             echo "Mobile Order refresh completed."
