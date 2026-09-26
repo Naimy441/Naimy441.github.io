@@ -71,11 +71,19 @@ def _blob_client(token: str):
 def _download_blob_session(blob_config: tuple[str, str, str], session_file: Path) -> bool:
     token, _store_id, blob_path = blob_config
     try:
+        from vercel.blob.errors import BlobNotFoundError
+    except ImportError as error:
+        raise RuntimeError(
+            "The installed Vercel package does not include Blob error types."
+        ) from error
+    try:
         result = _blob_client(token).get(
             blob_path,
             access="private",
             use_cache=False,
         )
+    except BlobNotFoundError:
+        return False
     except Exception as error:
         raise RuntimeError(
             f"Could not read the private Vercel Blob session ({type(error).__name__})."
@@ -191,8 +199,17 @@ def main() -> int:
         str(args.delay),
     ]
 
-    print("[mobile-order] Checking the current Transact session...", flush=True)
-    check_result = _run(check_command, env=session_env)
+    has_environment_session = all(
+        session_env.get(name)
+        for name in ("TRANSACT_LOGIN_TOKEN", "TRANSACT_USER_ID", "TRANSACT_SESSION_ID")
+    )
+    has_local_session = session_file.is_file()
+    if blob_config is not None and not blob_loaded and not has_environment_session and not has_local_session:
+        print("[mobile-order] No saved session exists yet; starting the initial login.", flush=True)
+        check_result = 1
+    else:
+        print("[mobile-order] Checking the current Transact session...", flush=True)
+        check_result = _run(check_command, env=session_env)
     if check_result not in {0, 1}:
         print(
             "[mobile-order] Session check failed for a non-authentication reason; "
