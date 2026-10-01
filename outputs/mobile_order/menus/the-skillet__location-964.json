@@ -4,7 +4,7 @@
   "location_id": 964,
   "cafeteria_id": 856,
   "icon_image_url": "campuses/icon_location_19_18_129_1610975062760.jpg",
-  "estimated_wait_time_minutes": 18,
+  "estimated_wait_time_minutes": 15,
   "currently_open": true,
   "takeout_open": true,
   "delivery_open": false,
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-01 11:51:22",
-  "menu_last_updated": "2026-10-01 11:51:22",
+  "retrieved_at": "2026-10-01 12:28:09",
+  "menu_last_updated": "2026-10-01 12:28:09",
   "sections": [
     {
       "name": "Specials",
@@ -321,6 +321,15 @@
       "is_hidden": false,
       "items": [
         {
+          "name": "Vegetarian Omelet Combo",
+          "description": "Mushrooms Peppers Onions Arugula Goat Cheese and Vegetarian Sausage with side Wheat Toast and Mixed Fruit",
+          "price": 10.59,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Beef Brisket Sandwich Combo",
           "description": "Beef Bricket Sandwich with side of Succotash",
           "price": 13.99,
@@ -333,15 +342,6 @@
           "name": "Sauteed Catfish Combo",
           "description": "Locally source catfish with Diced Potatoes Bacon Collard Greens and Hushpuppies",
           "price": 14.99,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Vegetarian Omelet Combo",
-          "description": "Mushrooms Peppers Onions Arugula Goat Cheese and Vegetarian Sausage with side Wheat Toast and Mixed Fruit",
-          "price": 10.59,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -6972,6 +6972,48 @@
           "is_hidden": false
         },
         {
+          "name": "Pork Sausage",
+          "description": "",
+          "price": 3.19,
+          "options": [
+            {
+              "name": "Sausage Selection",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Pork Sausage Patty",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Turkey Sausage Link",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Veggie Sausage Patty",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "3 Eggs",
           "description": "",
           "price": 2.99,
@@ -7057,40 +7099,6 @@
                 {
                   "name": "Sub Tofu",
                   "price": 0.49,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Cinnamon Oatmeal",
-          "description": "",
-          "price": 3.19,
-          "options": [
-            {
-              "name": "Oatmeal Option",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Berries",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chocolate Chips",
-                  "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -7194,6 +7202,40 @@
           "is_hidden": false
         },
         {
+          "name": "Cinnamon Oatmeal",
+          "description": "",
+          "price": 3.19,
+          "options": [
+            {
+              "name": "Oatmeal Option",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Berries",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chocolate Chips",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Plain Grits",
           "description": "",
           "price": 3.19,
@@ -7210,48 +7252,6 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
-        },
-        {
-          "name": "Pork Sausage",
-          "description": "",
-          "price": 3.19,
-          "options": [
-            {
-              "name": "Sausage Selection",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Pork Sausage Patty",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Turkey Sausage Link",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Veggie Sausage Patty",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
         }
       ]
     },
@@ -7259,15 +7259,6 @@
       "name": "Beverages",
       "is_hidden": false,
       "items": [
-        {
-          "name": "Dasani Water 20 oz",
-          "description": "",
-          "price": 1.69,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
         {
           "name": "Apple Juice",
           "description": "",
@@ -7326,6 +7317,15 @@
           "name": "Smartwater 20oz",
           "description": "",
           "price": 2.09,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Dasani Water 20 oz",
+          "description": "",
+          "price": 1.69,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
