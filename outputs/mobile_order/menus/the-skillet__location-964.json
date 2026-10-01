@@ -4,7 +4,7 @@
   "location_id": 964,
   "cafeteria_id": 856,
   "icon_image_url": "campuses/icon_location_19_18_129_1610975062760.jpg",
-  "estimated_wait_time_minutes": 6,
+  "estimated_wait_time_minutes": 18,
   "currently_open": true,
   "takeout_open": true,
   "delivery_open": false,
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-09-30 14:38:46",
-  "menu_last_updated": "2026-09-30 14:38:46",
+  "retrieved_at": "2026-10-01 11:51:22",
+  "menu_last_updated": "2026-10-01 11:51:22",
   "sections": [
     {
       "name": "Specials",
@@ -7070,35 +7070,27 @@
           "is_hidden": false
         },
         {
-          "name": "Pork Sausage",
+          "name": "Cinnamon Oatmeal",
           "description": "",
           "price": 3.19,
           "options": [
             {
-              "name": "Sausage Selection",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": false,
+              "name": "Oatmeal Option",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
               "values": [
                 {
-                  "name": "Pork Sausage Patty",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Turkey Sausage Link",
-                  "price": 0.0,
+                  "name": "Berries",
+                  "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Veggie Sausage Patty",
-                  "price": 0.0,
+                  "name": "Chocolate Chips",
+                  "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -7140,49 +7132,6 @@
         },
         {
           "name": "Mixed Fruit",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Cinnamon Oatmeal",
-          "description": "",
-          "price": 3.19,
-          "options": [
-            {
-              "name": "Oatmeal Option",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Berries",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chocolate Chips",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Morning Star Sausage",
           "description": "",
           "price": 3.19,
           "options": [],
@@ -7252,6 +7201,57 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
+        },
+        {
+          "name": "Morning Star Sausage",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Pork Sausage",
+          "description": "",
+          "price": 3.19,
+          "options": [
+            {
+              "name": "Sausage Selection",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Pork Sausage Patty",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Turkey Sausage Link",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Veggie Sausage Patty",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
         }
       ]
     },
@@ -7305,6 +7305,15 @@
           "is_hidden": false
         },
         {
+          "name": "Fair Life Strawberry Milk",
+          "description": "",
+          "price": 3.69,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Body Armor",
           "description": "",
           "price": 4.19,
@@ -7317,15 +7326,6 @@
           "name": "Smartwater 20oz",
           "description": "",
           "price": 2.09,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Fair Life Strawberry Milk",
-          "description": "",
-          "price": 3.69,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
