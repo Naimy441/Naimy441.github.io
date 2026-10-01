@@ -4,7 +4,7 @@
   "location_id": 170,
   "cafeteria_id": 142,
   "icon_image_url": "campuses/icon_restaurant_19_18_129_1585676052860.jpg",
-  "estimated_wait_time_minutes": 0,
+  "estimated_wait_time_minutes": 14,
   "currently_open": true,
   "takeout_open": true,
   "delivery_open": true,
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-09-30 14:42:21",
-  "menu_last_updated": "2026-09-30 14:42:22",
+  "retrieved_at": "2026-10-01 15:15:34",
+  "menu_last_updated": "2026-10-01 15:15:35",
   "sections": [
     {
       "name": "Specials",
@@ -580,6 +580,56 @@
           "is_hidden": false
         },
         {
+          "name": "Pad Thai",
+          "description": "Thai stir-fried rice noodles with eggs vegetables and chicken in a tamarind-based sauce",
+          "price": 12.75,
+          "options": [
+            {
+              "name": "Every day bowl Add On",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Extra Protein",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Egg",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Spring Rolls",
+                  "price": 2.69,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Add-on",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Hong Kong (Spicy Pork)",
           "description": "Grilled spicy pork rice bowl topped with steamed broccoli stir-fried cabbage and red pepper cucumber cilantro sesame seed crunch sambal sauce and eel sauce served with white rice brown rice or mixed greens",
           "price": 12.19,
@@ -944,50 +994,10 @@
           "is_hidden": false
         },
         {
-          "name": "California (Teriyaki Tofu)",
-          "description": "Crispy teriyaki tofu rice bowl topped with stir-fried zucchini kale salad steamed broccoli cilantro and cusabi sauce served with white rice brown rice or mixed greens",
-          "price": 11.69,
+          "name": "Thai Curry",
+          "description": "Rich and creamy Thai curry with vegetables and chicken servered with white or brown rice",
+          "price": 11.89,
           "options": [
-            {
-              "name": "Every day bowl Add On",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Extra Protein",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Fried Egg",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Fried Spring Rolls",
-                  "price": 2.69,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Add-on",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
             {
               "name": "Every day bowl base",
               "minimum": 1,
@@ -1037,61 +1047,37 @@
               ]
             },
             {
-              "name": "California Rice Bowl",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No cilantro",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No kale salad",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No seasoned corn",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No steamed broccoli",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No stir-fried zucchini",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "California Rice Bowl Sauce",
+              "name": "Every day bowl Add On",
               "minimum": 0,
               "maximum": 50,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "No Cusabi",
+                  "name": "Extra Protein",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Egg",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Spring Rolls",
+                  "price": 2.69,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Add-on",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1103,7 +1089,105 @@
           ],
           "busy_min": 15,
           "normal_min": 10,
-          "is_hidden": false
+          "is_hidden": true
+        },
+        {
+          "name": "Lemonaise Salmon Bowl",
+          "description": "Brined roast salmon with stir-fried mixed vegetables and Lemonaise sauce served with white rice brown rice fried rice or mixed greens",
+          "price": 13.29,
+          "options": [
+            {
+              "name": "Every day bowl base",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mixed Greens",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "White Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Base",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Seasoned rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Every day bowl Add On",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Extra Protein",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Egg",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Spring Rolls",
+                  "price": 2.69,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Add-on",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
         },
         {
           "name": "Seoul (Korean BBQ Beef)",
@@ -1308,9 +1392,9 @@
           "is_hidden": false
         },
         {
-          "name": "Pad Thai",
-          "description": "Thai stir-fried rice noodles with eggs vegetables and chicken in a tamarind-based sauce",
-          "price": 12.75,
+          "name": "California (Teriyaki Tofu)",
+          "description": "Crispy teriyaki tofu rice bowl topped with stir-fried zucchini kale salad steamed broccoli cilantro and cusabi sauce served with white rice brown rice or mixed greens",
+          "price": 11.69,
           "options": [
             {
               "name": "Every day bowl Add On",
@@ -1344,6 +1428,118 @@
                 },
                 {
                   "name": "No Add-on",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Every day bowl base",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mixed Greens",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "White Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Base",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Seasoned rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "California Rice Bowl",
+              "minimum": 0,
+              "maximum": 5,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No cilantro",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No kale salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No seasoned corn",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No steamed broccoli",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No stir-fried zucchini",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "California Rice Bowl Sauce",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No Cusabi",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1356,202 +1552,6 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
-        },
-        {
-          "name": "Thai Curry",
-          "description": "Rich and creamy Thai curry with vegetables and chicken servered with white or brown rice",
-          "price": 11.89,
-          "options": [
-            {
-              "name": "Every day bowl base",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Brown Rice",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Mixed Greens",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "White Rice",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Base",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Seasoned rice",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Every day bowl Add On",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Extra Protein",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Fried Egg",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Fried Spring Rolls",
-                  "price": 2.69,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Add-on",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Lemonaise Salmon Bowl",
-          "description": "Brined roast salmon with stir-fried mixed vegetables and Lemonaise sauce served with white rice brown rice fried rice or mixed greens",
-          "price": 13.29,
-          "options": [
-            {
-              "name": "Every day bowl base",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Brown Rice",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Mixed Greens",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "White Rice",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Base",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Seasoned rice",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Every day bowl Add On",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Extra Protein",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Fried Egg",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Fried Spring Rolls",
-                  "price": 2.69,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Add-on",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
         }
       ]
     },
@@ -1972,8 +1972,8 @@
           "is_hidden": true
         },
         {
-          "name": "Tuna Poke",
-          "description": "Fresh marinated tuna bowl topped with pickled carrot pickled cabbage kale salad seaweed salad crab salad and crunch served with white rice brown rice or mixed greens",
+          "name": "Spicy Tuna Poke",
+          "description": "Fresh spicy tuna bowl topped with pickled carrot pickled cabbage kale salad seaweed salad crab salad and crunch served with white rice brown rice or mixed greens",
           "price": 14.15,
           "options": [
             {
@@ -2049,9 +2049,9 @@
               ]
             },
             {
-              "name": "Tuna Poke Bowl",
+              "name": "Spicy Tuna Poke Bowl",
               "minimum": 0,
-              "maximum": 6,
+              "maximum": 8,
               "allow_quantity": true,
               "values": [
                 {
@@ -2150,8 +2150,8 @@
           "is_hidden": false
         },
         {
-          "name": "Spicy Tuna Poke",
-          "description": "Fresh spicy tuna bowl topped with pickled carrot pickled cabbage kale salad seaweed salad crab salad and crunch served with white rice brown rice or mixed greens",
+          "name": "Tuna Poke",
+          "description": "Fresh marinated tuna bowl topped with pickled carrot pickled cabbage kale salad seaweed salad crab salad and crunch served with white rice brown rice or mixed greens",
           "price": 14.15,
           "options": [
             {
@@ -2227,9 +2227,9 @@
               ]
             },
             {
-              "name": "Spicy Tuna Poke Bowl",
+              "name": "Tuna Poke Bowl",
               "minimum": 0,
-              "maximum": 8,
+              "maximum": 6,
               "allow_quantity": true,
               "values": [
                 {
