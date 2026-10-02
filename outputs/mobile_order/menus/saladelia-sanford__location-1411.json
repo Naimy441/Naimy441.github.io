@@ -4,10 +4,10 @@
   "location_id": 1411,
   "cafeteria_id": 1267,
   "icon_image_url": "campuses/icon_location_19_18_127_1757693875654.jpg",
-  "estimated_wait_time_minutes": 9,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "08:00:00",
     "close": "15:00:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-02 14:38:40",
-  "menu_last_updated": "2026-10-02 14:38:41",
+  "retrieved_at": "2026-10-02 18:31:26",
+  "menu_last_updated": "2026-10-02 18:31:26",
   "sections": [
     {
       "name": "Specials",
@@ -1986,15 +1986,6 @@
           "is_hidden": false
         },
         {
-          "name": "Chorizo Breakfast Scrambler",
-          "description": "",
-          "price": 6.99,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
           "name": "Chicken Parmesan",
           "description": "",
           "price": 10.69,
@@ -2178,6 +2169,15 @@
           ],
           "busy_min": 15,
           "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Chorizo Breakfast Scrambler",
+          "description": "",
+          "price": 6.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
           "is_hidden": false
         },
         {
@@ -2973,15 +2973,6 @@
           "is_hidden": false
         },
         {
-          "name": "Brownie",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Breads",
           "description": "",
           "price": 4.29,
@@ -2995,7 +2986,7 @@
                 {
                   "name": "Apple rum raisin",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -3003,7 +2994,7 @@
                 {
                   "name": "Pumpkin",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -3027,6 +3018,15 @@
               ]
             }
           ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Brownie",
+          "description": "",
+          "price": 4.29,
+          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
