@@ -4,10 +4,10 @@
   "location_id": 147,
   "cafeteria_id": 126,
   "icon_image_url": "campuses/icon_restaurant_19_18_129_1594924777698.jpg",
-  "estimated_wait_time_minutes": 0,
-  "currently_open": false,
-  "takeout_open": false,
-  "delivery_open": false,
+  "estimated_wait_time_minutes": 14,
+  "currently_open": true,
+  "takeout_open": true,
+  "delivery_open": true,
   "takeout_hours": {
     "open": "09:00:00",
     "close": "17:00:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-02 12:37:11",
-  "menu_last_updated": "2026-10-02 12:37:11",
+  "retrieved_at": "2026-10-03 15:02:52",
+  "menu_last_updated": "2026-10-03 15:02:53",
   "sections": [
     {
       "name": "Daily Devil Deal",
@@ -330,7 +330,7 @@
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
-                  "is_out_of_stock": false,
+                  "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
@@ -436,7 +436,7 @@
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
-                  "is_out_of_stock": false,
+                  "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
@@ -481,112 +481,6 @@
                 },
                 {
                   "name": "No Strawberries",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Bowls Add-on",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Vegan protein",
-                  "price": 1.19,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Whey protein",
-                  "price": 1.19,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Honey",
-                  "price": 0.79,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "PB Power Acai Bowl",
-          "description": "Acai puree blended with apple juice blueberries and bananas. Topped with granola blueberries bananas and peanut butter",
-          "price": 11.89,
-          "options": [
-            {
-              "name": "Bowl Base",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Greek Yogurt",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Regular Base",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "PB Power Bowl Acai Bowls",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No Blueberries",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Granola",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Peanut Butter",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Sliced Banana",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -961,6 +855,112 @@
           "busy_min": 5,
           "normal_min": 3,
           "is_hidden": false
+        },
+        {
+          "name": "PB Power Acai Bowl",
+          "description": "Acai puree blended with apple juice blueberries and bananas. Topped with granola blueberries bananas and peanut butter",
+          "price": 11.89,
+          "options": [
+            {
+              "name": "Bowl Base",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Greek Yogurt",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Regular Base",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "PB Power Bowl Acai Bowls",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No Blueberries",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Granola",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Peanut Butter",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Sliced Banana",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Bowls Add-on",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Vegan protein",
+                  "price": 1.19,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Whey protein",
+                  "price": 1.19,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Honey",
+                  "price": 0.79,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
         }
       ]
     },
@@ -968,6 +968,15 @@
       "name": "Smoothies",
       "is_hidden": false,
       "items": [
+        {
+          "name": "Sunny Strawberry Lge",
+          "description": "",
+          "price": 8.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
         {
           "name": "Mango Mojo Reg",
           "description": "Yogurt Mangoes Banana Mango Boba",
@@ -999,15 +1008,6 @@
           "name": "Strawberry Swag Large",
           "description": "",
           "price": 7.99,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Sunny Strawberry Lge",
-          "description": "",
-          "price": 8.99,
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
@@ -11271,32 +11271,16 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Fresh Berry Grilled PB&J",
-          "description": "Peanut butter strawberry jam fresh strawberries fresh blueberries",
-          "price": 6.49,
+          "name": "Grilled Banana PB&J",
+          "description": "Peanut butter strawberry jam banana",
+          "price": 5.99,
           "options": [
             {
-              "name": "Fresh Berry Grilled PB&J",
+              "name": "Grilled Banana PB&J",
               "minimum": 0,
               "maximum": 50,
               "allow_quantity": true,
               "values": [
-                {
-                  "name": "No Fresh Blueberries",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Fresh Strawberries",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
                 {
                   "name": "No Jam",
                   "price": 0.0,
@@ -11307,6 +11291,14 @@
                 },
                 {
                   "name": "No Peanut Butter",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Sliced Banana",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -11433,16 +11425,32 @@
           "is_hidden": false
         },
         {
-          "name": "Grilled Banana PB&J",
-          "description": "Peanut butter strawberry jam banana",
-          "price": 5.99,
+          "name": "Fresh Berry Grilled PB&J",
+          "description": "Peanut butter strawberry jam fresh strawberries fresh blueberries",
+          "price": 6.49,
           "options": [
             {
-              "name": "Grilled Banana PB&J",
+              "name": "Fresh Berry Grilled PB&J",
               "minimum": 0,
               "maximum": 50,
               "allow_quantity": true,
               "values": [
+                {
+                  "name": "No Fresh Blueberries",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Fresh Strawberries",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
                 {
                   "name": "No Jam",
                   "price": 0.0,
@@ -11453,14 +11461,6 @@
                 },
                 {
                   "name": "No Peanut Butter",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Sliced Banana",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
