@@ -77,8 +77,10 @@ echo "Refreshing halal catalog with direct NetNutrition requests (logs in $LOG_D
 run_step 1 "Direct menu + nutrition fetch" netnutrition_client \
   python3 src/netnutrition_client.py --nutrition --output outputs/netnutrition-direct.json \
   "${CA_ARGS[@]}"
+# A library failure must not stop the halal catalog from refreshing.
 run_step 2 "Update nutrition library" update_nutrition_library \
-  python3 src/update_nutrition_library.py --input outputs/netnutrition-direct.json
+  bash -c 'python3 src/update_nutrition_library.py --input outputs/netnutrition-direct.json \
+    || echo "WARNING: nutrition library update failed; keeping the previous library"'
 run_step 3 "Build menu + nutrition artifacts" build_catalog_outputs \
   python3 src/build_catalog_outputs.py --input outputs/netnutrition-direct.json \
   "${CA_ARGS[@]}"

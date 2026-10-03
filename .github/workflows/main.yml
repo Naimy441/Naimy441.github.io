@@ -58,7 +58,10 @@ jobs:
             echo "Mobile Order refresh completed."
           fi
 
+      # Never blocks the commit below: on failure the last good
+      # outputs/nutriuni stays in place (the builder swaps it in atomically).
       - name: Build Nutriuni menus (Mobile Order + NetNutrition)
+        continue-on-error: true
         run: |
           python3 src/build_nutriuni_menus.py
 
