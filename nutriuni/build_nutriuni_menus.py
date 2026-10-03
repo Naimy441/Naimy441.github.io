@@ -56,6 +56,32 @@ NUTRIENTS = (
     "saturated_fat", "trans_fat", "cholesterol", "added_sugar",
 )
 
+# NetNutrition marks labels with icons: allergens the dish contains, and
+# Vegetarian / Vegan / Halal. Published as stable lowercase codes. An empty
+# list only means "nothing marked", never "free of": units that publish no
+# icons of a kind are flagged allergen_info / diet_info: false on the restaurant.
+ALLERGEN_CODES = {
+    "milk": "milk", "egg": "egg", "eggs": "egg", "wheat": "wheat", "gluten": "gluten",
+    "soy": "soy", "peanut": "peanut", "peanuts": "peanut", "tree nut": "tree_nut",
+    "tree nuts": "tree_nut", "fish": "fish", "shellfish": "shellfish", "sesame": "sesame",
+}
+DIET_CODES = {"vegetarian": "vegetarian", "vegan": "vegan"}
+
+
+def icon_codes(icons: Iterable[str]) -> tuple[list[str], list[str]]:
+    contains: set[str] = set()
+    diet: set[str] = set()
+    for icon in icons or []:
+        key = " ".join(str(icon).lower().split())
+        if key in ALLERGEN_CODES:
+            contains.add(ALLERGEN_CODES[key])
+        elif key in DIET_CODES:
+            diet.add(DIET_CODES[key])
+    if "vegan" in diet:
+        diet.add("vegetarian")
+    return sorted(contains), sorted(diet)
+
+
 # ---------------------------------------------------------------------------
 # Text normalization
 # ---------------------------------------------------------------------------
@@ -207,6 +233,8 @@ class Food:
     halal: bool
     last_seen: str
     unit: str
+    contains: list[str] = field(default_factory=list)
+    diet: list[str] = field(default_factory=list)
     tokens: list[str] = field(default_factory=list)
     category_tokens: set[str] = field(default_factory=set)
 
@@ -216,6 +244,8 @@ class Food:
             "serving_size": self.serving_size,
             **self.nutrition,
             "halal": self.halal,
+            **({"contains": self.contains} if self.contains else {}),
+            **({"diet": self.diet} if self.diet else {}),
             # Month precision is enough to warn about old labels and keeps the
             # published files from changing every day the label is re-seen.
             "last_seen": month_of(self.last_seen),
@@ -240,6 +270,7 @@ def load_unit_foods(library_dir: Path, unit: str) -> list[Food]:
             value = (entry.get("nutrients") or {}).get(nutrient)
             if value is not None:
                 nutrition[nutrient] = value
+        contains, diet = icon_codes(entry.get("allergens") or [])
         foods.append(Food(
             id=hashlib.sha1(f"{unit}|{key}".encode()).hexdigest()[:10],
             name=entry["name"],
@@ -249,6 +280,8 @@ def load_unit_foods(library_dir: Path, unit: str) -> list[Food]:
             halal=bool(entry.get("halal")),
             last_seen=entry.get("last_seen", ""),
             unit=unit,
+            contains=contains,
+            diet=diet,
             tokens=tokens(entry["name"]),
             category_tokens=set(tokens(entry.get("category"))),
         ))
@@ -869,6 +902,10 @@ def build(args: argparse.Namespace) -> int:
             "stats": {"items": stats.items, "with_nutrition": stats.with_nutrition},
             "sections": sections,
             "foods": {fid: food.public() for fid, food in sorted(builder.used.items())},
+            # Whether this kitchen marks allergens / diets on its labels at all,
+            # so the app can tell "nothing marked" from "not published".
+            "allergen_info": any(food.contains for food in foods),
+            "diet_info": any(food.diet for food in foods),
         }
         icon = icon_hash = None
         if entry:

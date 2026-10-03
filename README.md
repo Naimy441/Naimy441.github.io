@@ -95,6 +95,12 @@ components, bad labels to ignore) live in `nutriuni/nutriuni_overrides.json`.
 The Nutriuni app's `syncMenus` Cloud Function (in the Nutriuni repository)
 polls `nutriuni/menus/index.json` on `main` every 15 minutes and publishes
 changed restaurants to Firestore, so keep that path and file layout stable.
+Labels carry NetNutrition's icons as `contains` (allergen codes: `milk`,
+`egg`, `wheat`, `gluten`, `soy`, `peanut`, `tree_nut`, `fish`, `shellfish`,
+`sesame`) and `diet` (`vegetarian`, `vegan`; vegan implies vegetarian), omitted
+when empty. An empty list means nothing is marked, not that the food is free of
+it: restaurants whose kitchens publish no such icons have `allergen_info` /
+`diet_info` set to `false`.
 Each file's hash is listed in `index.json`; rebuilding unchanged data produces
 byte-identical files, so nothing is committed or republished. To bundle a
 snapshot into the app itself, run `scripts/sync-menu-data.sh` from the Nutriuni
