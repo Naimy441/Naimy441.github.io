@@ -54,6 +54,7 @@ SCHEMA_VERSION = 1
 NUTRIENTS = (
     "calories", "protein", "carbs", "fat", "fiber", "sugar", "sodium",
     "saturated_fat", "trans_fat", "cholesterol", "added_sugar",
+    "calcium", "iron", "potassium",
 )
 
 # NetNutrition marks labels with icons: allergens the dish contains, and
@@ -235,6 +236,7 @@ class Food:
     unit: str
     contains: list[str] = field(default_factory=list)
     diet: list[str] = field(default_factory=list)
+    ingredients: str | None = None
     tokens: list[str] = field(default_factory=list)
     category_tokens: set[str] = field(default_factory=set)
 
@@ -246,6 +248,7 @@ class Food:
             "halal": self.halal,
             **({"contains": self.contains} if self.contains else {}),
             **({"diet": self.diet} if self.diet else {}),
+            **({"ingredients": self.ingredients} if self.ingredients else {}),
             # Month precision is enough to warn about old labels and keeps the
             # published files from changing every day the label is re-seen.
             "last_seen": month_of(self.last_seen),
@@ -282,6 +285,7 @@ def load_unit_foods(library_dir: Path, unit: str) -> list[Food]:
             unit=unit,
             contains=contains,
             diet=diet,
+            ingredients=entry.get("ingredients"),
             tokens=tokens(entry["name"]),
             category_tokens=set(tokens(entry.get("category"))),
         ))

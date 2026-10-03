@@ -101,6 +101,8 @@ Labels carry NetNutrition's icons as `contains` (allergen codes: `milk`,
 when empty. An empty list means nothing is marked, not that the food is free of
 it: restaurants whose kitchens publish no such icons have `allergen_info` /
 `diet_info` set to `false`.
+Labels also carry `calcium`, `iron` and `potassium` (mg) when NetNutrition lists
+them, and the label's `ingredients` statement when it publishes one.
 Each file's hash is listed in `index.json`; rebuilding unchanged data produces
 byte-identical files, so nothing is committed or republished. To bundle a
 snapshot into the app itself, run `scripts/sync-menu-data.sh` from the Nutriuni

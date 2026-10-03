@@ -41,6 +41,10 @@ NUTRIENT_KEYS = {
     "Total Sugars": "sugar",
     "Added Sugars": "added_sugar",
     "Protein": "protein",
+    "Calcium": "calcium",
+    "Iron": "iron",
+    "Potas.": "potassium",
+    "Potassium": "potassium",
 }
 
 MAX_CALORIES = 2500
@@ -88,6 +92,13 @@ def validate(entry: dict[str, Any]) -> str | None:
     return None
 
 
+def ingredients_of(label: dict[str, Any]) -> dict[str, str]:
+    """The label's ingredient statement, when NetNutrition publishes one."""
+
+    text = " ".join(str(label.get("ingredients") or "").split())
+    return {"ingredients": text} if text else {}
+
+
 def from_direct_item(item: dict[str, Any]) -> dict[str, Any] | None:
     label = item.get("nutrition")
     if not label:
@@ -105,6 +116,7 @@ def from_direct_item(item: dict[str, Any]) -> dict[str, Any] | None:
         "nutrients": nutrients,
         "halal": bool(item.get("halal")),
         "allergens": [a for a in item.get("allergens") or [] if a.lower() != "halal"],
+        **ingredients_of(label),
     }
 
 
@@ -117,8 +129,9 @@ def from_legacy_meal(meal: dict[str, Any], category: str | None) -> dict[str, An
     except (TypeError, ValueError):
         calories = None
     nutrients = {}
+    facts = {**(label.get("secondary_nutrients") or {}), **(label.get("nutrition_facts") or {})}
     for label_name, key in NUTRIENT_KEYS.items():
-        value = (label.get("nutrition_facts") or {}).get(label_name, {}).get("amount")
+        value = (facts.get(label_name) or {}).get("amount")
         if value is not None:
             nutrients[key] = value
     return {
@@ -129,6 +142,7 @@ def from_legacy_meal(meal: dict[str, Any], category: str | None) -> dict[str, An
         "nutrients": nutrients,
         "halal": bool(meal.get("is_halal")),
         "allergens": [],
+        **ingredients_of(label),
     }
 
 
