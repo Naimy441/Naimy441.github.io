@@ -122,8 +122,8 @@ def build_catalog(source: dict[str, Any], hours: dict[str, str]) -> dict[str, An
 
         for menu in unit.get("menus", []):
             for item in menu.get("items", []):
-                # The direct run is normally --halal-only; keep this guard so a
-                # mistakenly broad input cannot pollute the halal artifacts.
+                # The direct crawl keeps every item (Nutriuni needs them all),
+                # so only halal-marked items reach the halal artifacts.
                 if not item.get("halal"):
                     continue
                 category = item.get("category") or "Uncategorized"

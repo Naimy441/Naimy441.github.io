@@ -1,0 +1,232 @@
+{
+  "_comment": [
+    "Hand-reviewed corrections for build_nutriuni_menus.py, keyed by Mobile Order restaurant name.",
+    "netnutrition_units: NetNutrition restaurants whose labels apply. display_name: name shown in the app.",
+    "items: dish name (or 'Section > Dish') -> {food, quantity, components, composed}. food null = never match.",
+    "item_patterns: [{match: regex, ...same fields}] for families such as daily combos.",
+    "values: option value (or 'Group > Value', 'Dish > Group > Value') -> {food, kind, quantity}.",
+    "Food references: 'Label name', 'Label name @ NetNutrition category', 'Label name # serving text'.",
+    "exclude_foods: labels that pass the automatic sanity checks but are known to be wrong.",
+    "netnutrition_only_restaurants: dining locations not on Mobile Order, served straight from NetNutrition."
+  ],
+  "netnutrition_only_restaurants": ["Marketplace", "Duke Marine Lab", "Bseisu Coffee Bar"],
+  "restaurants": {
+    "Bella Union": {"netnutrition_units": ["Bella Union"]},
+    "Beyu Blue": {"netnutrition_units": ["Beyu Blue Coffee"]},
+    "Cafe": {
+      "netnutrition_units": ["Cafe"],
+      "items": {
+        "Chicken Pesto": {"food": "Chicken Pesto Panini"},
+        "Egg Florentine": {"food": "Florentine Crepe"},
+        "Broccoli Quiche Slice": {"food": "Broccoli Quiche"},
+        "Quiche Lorraine Slice": {"food": "Quiche Lorraine"},
+        "Crispy Chicken & Pimento Cheese": {"food": "Fried Chicken Pimiento Cheese Panini"},
+        "Egg n Cheese Croissant": {"food": "Egg and Cheese Croissant"},
+        "French Beef": {"food": "French Beef Panini"},
+        "Chicken Parmesan": {"food": "Chicken Parmesan Panini"}
+      }
+    },
+    "Farmstead  &  Sprout Sandwiches": {
+      "display_name": "Farmstead & Sprout Sandwiches",
+      "netnutrition_units": ["The Farmstead", "Sprout"],
+      "items": {
+        "Farmstead Sandwiches > Brautwurst": {"food": "Bratwurst with Onion and Pepper Sandwich"},
+        "Farmstead Entrees > Brautwurst": {"food": "Bratwurst with Peppers and Onions"},
+        "Salmon Burger": {"food": "Salmon Burger with Bun"},
+        "Gyro": {"food": "Farmstead Lamb Gyro"},
+        "Roasted Turkey": {"food": "Herb Roasted Turkey"},
+        "Falafel Pita Pocket": {"food": "Falafel Pita"},
+        "Plant-Based Chicken Nuggets Meal": {"food": "Plant Based Chicken Nuggets"},
+        "Three Bean Nadura Chili": {"food": "Plant Based Chili with Nadura"},
+        "Plain Oatmeal (No toppings)": {"food": "Oatmeal"}
+      }
+    },
+    "Freeman Center Cafe": {"netnutrition_units": ["Freeman Café"]},
+    "Ginger & Soy": {
+      "netnutrition_units": ["Ginger + Soy"],
+      "items": {"Fried Beef Dumplings": {"food": "Fried Beef Bulgogi Dumplings"}}
+    },
+    "Gothic Grill": {
+      "netnutrition_units": ["Gothic Grill"],
+      "exclude_foods": ["Grilled Onion"],
+      "items": {
+        "Shredded Chicken and Cheese Nachos": {"food": "Chicken Cheese Nachos"},
+        "Fried Shrimp Basket": {"food": "Fried Shrimp @ Small Plates"},
+        "Gothic Smash Burger": {"food": "Gothic Burger"},
+        "Grilled Chicken Parm Sandwich": {"food": "Chicken Parmesan Sandwich"},
+        "Famous Thrive Chicken Salad": {"food": "Chicken Salad Sandwich"},
+        "Veg G Pizza": {"food": "Veg Pizza"},
+        "Mega Pretzel": {"food": "Bavarian Pretzel"},
+        "Fries": {"food": "Fresh Cut Fries"},
+        "Build your own Burger": {"components": ["Beef Patty", "Hamburger Bun"], "composed": true}
+      },
+      "values": {
+        "Chips": {"food": null},
+        "Add Smoked Bacon": {"food": "Bacon"},
+        "3 slices bacon": {"food": "Bacon"}
+      }
+    },
+    "Gyotaku": {
+      "netnutrition_units": ["Gyotaku"],
+      "items": {"Lemonaise": {"food": "Lemonaise Dill Sauce"}}
+    },
+    "Il Forno": {
+      "netnutrition_units": ["Il Forno"],
+      "exclude_foods": ["Pepperoni Pizza Slice"],
+      "items": {
+        "Nadura Supreme Pizza": {"food": "Nadura Supreme Personal Pizza"},
+        "Italiano Pizza": {"food": "Personal Italiano Pizza"},
+        "Personal Cheese Pizza": {"food": "Cheese Pizza @ Personal Artisan Pizza"},
+        "1 Slice Cheese": {"food": "Cheese Pizza Slice"},
+        "2 Slices Cheese": {"food": "Cheese Pizza Slice", "quantity": 2},
+        "$5 Meal Deal": {"components": ["Cheese Pizza Slice", "Breadstick", "Breadstick"], "composed": true}
+      },
+      "values": {
+        "Pick one Slice > Buffalo Chicken": {"food": "Buffalo Chicken Pizza @ Pizza by the Slice"},
+        "Pick Second Slice > Buffalo Chicken": {"food": "Buffalo Chicken Pizza @ Pizza by the Slice"},
+        "Pick one Slice > Pepperoni": {"food": null},
+        "Pick Second Slice > Pepperoni": {"food": null}
+      }
+    },
+    "Its Thyme": {"display_name": "It's Thyme", "netnutrition_units": ["It's Thyme"]},
+    "JBs Roast & Chops": {
+      "display_name": "JB's Roast & Chops",
+      "netnutrition_units": ["J.B.'s Roast & Chops"],
+      "items": {
+        "Prime Rib 5oz": {"food": "Prime Rib # 5 oz"},
+        "Prime Rib 8oz": {"food": "Prime Rib # 8 oz"},
+        "Ribeye 8oz": {"food": "Ribeye"},
+        "Quarter Flame Roasted Chicken": {"food": "Flame Roasted Chicken # Quarter (213g)"},
+        "Half Flame Roasted Chicken": {"food": null},
+        "Yellow Fin Tuna 6oz": {"food": "Grilled Yellow Fin Tuna"},
+        "Atlantic Salmon Filet 6oz": {"food": "Grilled Salmon # 6 oz"},
+        "Mahi Mahi 6oz": {"food": "Chili Rubbed Mahi Mahi # 6 oz"},
+        "Sub Side Paella Mixta": {"food": "Paella Mixta"},
+        "Prime Rib Steak and Cheese": {"food": "Prime Rib Steak Sandwich # 338g"},
+        "Smoke House Chopped Salad": {"food": "Smoked Chophouse Salad"},
+        "Flourless Chocolate Cake": {"food": "Flourless Chocolate Torte"},
+        "Classic Caesar": {"food": "Caesar Salad # 255g"}
+      }
+    },
+    "Pitchfork's": {
+      "netnutrition_units": ["The Pitchfork"],
+      "items": {
+        "Mortys Rueben on Rye Bread": {"food": "Morty's Reuben on Rye Sandwich"},
+        "Falafel Sandwich on Pita": {"food": "Falafel Sandwich on Whole Wheat Pita"},
+        "Vegetable Samosas": {"food": "Vegetable Samosas with Tomato Chutney"},
+        "Side Pulled Pork": {"food": "Pulled Pork Barbecue"},
+        "Side Apple Half": {"food": "Gala Apple Half"},
+        "Side Avocado Half": {"food": "Avocado"},
+        "Side Pico": {"food": "Pico de Gallo"},
+        "Side Raw Onion": {"food": "Onion"},
+        "Side Shrimp": {"food": "Sauteed Shrimp"},
+        "Side Tofu": {"food": "Sauteed Tofu"},
+        "Side Egg": {"food": "Egg Your Way"},
+        "Lime Half": {"food": "Lime"}
+      }
+    },
+    "Red Mango": {
+      "netnutrition_units": ["Red Mango"],
+      "items": {
+        "Choco-Nut Dream Acai Bowl": {"food": "Choc-Nut Dream Bowl"},
+        "PB Power Acai Bowl": {"food": "PB Power Bowl"},
+        "Super PB Cup Regular": {"food": "Super Peanut Butter Cup Smoothie"}
+      }
+    },
+    "Saladelia Perkins": {
+      "netnutrition_units": ["Saladalia @ The Perk"],
+      "items": {
+        "Buffalo Chicken": {"food": "Buffalo Chicken Pita"},
+        "Falafel": {"food": "Falafel on Pita"},
+        "Bacon Jam Club Wrap": {"food": "Bacon Jam Wrap"},
+        "Caprese Focaccia": {"food": "Caprese Focaccia Panini"},
+        "Mediterranean Bento Box": {"food": "Mediterranean Snack Box"},
+        "Chicken Salad Bento Box": {"food": "Chicken Salad Snack Box"},
+        "Espresso": {"food": "Espresso Shot"}
+      }
+    },
+    "Saladelia Sanford": {
+      "netnutrition_units": ["Sanford Deli"],
+      "items": {
+        "Chicken Parmesan": {"food": "Chicken Parmesan Panini"},
+        "French Beef": {"food": "French Beef Panini"},
+        "Mediterranean Bento Box": {"food": "Mediterranean Snack Box"},
+        "Chicken Salad Bento Box": {"food": "Chicken Salad Snack Box"}
+      }
+    },
+    "Sazon": {
+      "netnutrition_units": ["Sazon"],
+      "items": {
+        "Arepa Bowl": {"components": ["Latin Arepa Bowl"], "composed": true}
+      }
+    },
+    "Tandoor": {
+      "netnutrition_units": ["Tandoor Indian Cuisine"],
+      "item_patterns": [
+        {"match": "Specialty .*Combo$", "components": ["Basmati Rice Pilaf", "Naan", "Vegetable Samosa"], "composed": true},
+        {"match": "Combo$", "components": ["Basmati Rice Pilaf", "Naan"], "composed": true},
+        {"match": "^\\$5 Meal Deal$", "components": ["Basmati Rice Pilaf", "Naan"], "composed": true}
+      ],
+      "items": {
+        "Nadura Plant Based Dosai": {"food": "Nadura Chicken Dosa"}
+      },
+      "values": {
+        "Samosa": {"food": "Vegetable Samosa"},
+        "Somosa": {"food": "Vegetable Samosa"},
+        "Add Samosa": {"food": "Vegetable Samosa"},
+        "Extra Samosa": {"food": "Vegetable Samosa"},
+        "Butter Naan": {"food": "Naan"},
+        "Extra Naan": {"food": "Naan"},
+        "Basmati Pulao": {"food": "Basmati Rice Pilaf"},
+        "Chicken Roast (Bone-in)": {"food": "Chicken Roast Masala"},
+        "Chicken Roast (bone-in)": {"food": "Chicken Roast Masala"},
+        "Veggie Malabar W Coconut Milk": {"food": "Veggie Malabar Contains Coconut"}
+      }
+    },
+    "The Devil's Krafthouse": {
+      "netnutrition_units": ["The Devils Krafthouse"],
+      "items": {
+        "Egg & cheese breakfast sandwich": {"food": "Egg and Cheese Sandwich"},
+        "Grilled Veg Goat Cheese Breakfast Bowl": {"food": "Vegetable Goat Cheese Bowl"},
+        "Fried Cheese Curds": {"food": "Cheese Curds"},
+        "Crispy Vegan Tenders": {"food": "Vegan Crispy Garden Tenders"},
+        "Ginger grilled salmon salad": {"food": "Ginger Salmon Salad"},
+        "Grilled Chicken & Goat Cheese Salad": {"food": "Arugula Chicken and Goat Cheese Salad"},
+        "Buffalo chicken tender sandwich": {"food": "Buffalo Tender Sandwich"},
+        "Grilled Mahi Mahi Fish Wrap": {"food": "Griled Mahi Mahi Wrap"},
+        "Flame Grilled Chicken Sandwich": {"food": "Flame Grilled Chicken @ Handhelds"},
+        "$5 Meal Deal Grilled Cheese": {"food": "Grilled Cheese"},
+        "Housemade Chips": {"food": "House Made Chips"},
+        "Side fresh fruit": {"food": "Mixed Fruit Cup"}
+      }
+    },
+    "The Skillet": {
+      "netnutrition_units": ["The Skillet"],
+      "items": {
+        "BLT": {"food": "BLT Sandwich"},
+        "Fried Chicken Tenders(3)": {"food": "Chicken Tender # 3 Piece"},
+        "Homestyle Meatloaf": {"food": "Meatloaf"},
+        "Whole Banana": {"food": null},
+        "Sourdough or Wheat Toast": {"food": "Sourdough Toast"},
+        "Biscuit Plain": {"food": "Biscuit"},
+        "2 Eggs Any Style": {"food": "Two Eggs to Order Any Style"},
+        "Sauteed Catfish Combo": {"food": "Sauteed Catfish"},
+        "Beef Brisket Sandwich Combo": {"food": "Brisket Sandwich"}
+      }
+    },
+    "Trinity": {
+      "netnutrition_units": ["Trinity Cafe"],
+      "exclude_foods": ["Blueberry Bagel", "Plain Bagel"],
+      "items": {
+        "Boiled Eggs": {"food": "Hard Boiled Eggs"},
+        "Chicken Salad 8oz": {"food": "Chicken Salad # 8 oz"},
+        "2 Fruit Yogurt Granola Tray": {"food": "Two Fruits with Granola and Yogurt"},
+        "Croissant": {"food": "Butter Croissant"}
+      }
+    },
+    "Zweli's Cafe at Duke Divinity": {
+      "netnutrition_units": ["Zweli's Café at Duke Divinity"],
+      "items": {"Plain Biscuit": {"food": "Homemade Biscuit"}}
+    }
+  }
+}

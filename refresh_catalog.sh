@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 # Refreshes the halal catalog end to end without a browser:
-#   1. netnutrition_client.py -> outputs/netnutrition-direct.json
-#   2. build_catalog_outputs.py -> menu text/PDF + per-restaurant nutrition files
-#   3. extract-nutrition -> dukeislam/data/nutrition.json (the catalog the website bundles)
+#   1. netnutrition_client.py -> outputs/netnutrition-direct.json (every item, not only halal)
+#   2. update_nutrition_library.py -> outputs/nutrition_library/ (labels accumulated across runs, for Nutriuni)
+#   3. build_catalog_outputs.py -> halal menu text/PDF + per-restaurant nutrition files
+#   4. extract-nutrition -> dukeislam/data/nutrition.json (the catalog the website bundles)
 #
 # Requires: python3 with requirements.txt installed and node.
 # Full logs for each step are written to outputs/logs/.
@@ -10,7 +11,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-TOTAL_STEPS=3
+TOTAL_STEPS=4
 LOG_DIR="outputs/logs/refresh_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$LOG_DIR"
 RUN_START=$SECONDS
@@ -71,13 +72,17 @@ if [[ -n "${NETNUTRITION_CA_BUNDLE:-}" ]]; then
 fi
 
 echo "Refreshing halal catalog with direct NetNutrition requests (logs in $LOG_DIR)"
+# The crawl keeps every item: Nutriuni needs non-halal labels too, and
+# build_catalog_outputs.py filters to halal items itself.
 run_step 1 "Direct menu + nutrition fetch" netnutrition_client \
-  python3 src/netnutrition_client.py --halal-only --nutrition --output outputs/netnutrition-direct.json \
+  python3 src/netnutrition_client.py --nutrition --output outputs/netnutrition-direct.json \
   "${CA_ARGS[@]}"
-run_step 2 "Build menu + nutrition artifacts" build_catalog_outputs \
+run_step 2 "Update nutrition library" update_nutrition_library \
+  python3 src/update_nutrition_library.py --input outputs/netnutrition-direct.json
+run_step 3 "Build menu + nutrition artifacts" build_catalog_outputs \
   python3 src/build_catalog_outputs.py --input outputs/netnutrition-direct.json \
   "${CA_ARGS[@]}"
-run_step 3 "Rebuild website catalog" extract_nutrition node dukeislam/scripts/extract-nutrition.mjs
+run_step 4 "Rebuild website catalog" extract_nutrition node dukeislam/scripts/extract-nutrition.mjs
 
 echo
 echo "All done in $(fmt_time $((SECONDS - RUN_START)))."

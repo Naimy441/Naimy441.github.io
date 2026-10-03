@@ -58,6 +58,10 @@ jobs:
             echo "Mobile Order refresh completed."
           fi
 
+      - name: Build Nutriuni menus (Mobile Order + NetNutrition)
+        run: |
+          python3 src/build_nutriuni_menus.py
+
       - name: Commit refreshed catalog artifacts
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -70,6 +74,7 @@ jobs:
           git add dukeislam/data/nutrition.json
           git add docs/outputs/muslim_calendar.pdf
           git add outputs/mobile_order/menus outputs/mobile_order/restaurants.json outputs/mobile_order/all_restaurant_menus.json
+          git add outputs/nutrition_library outputs/nutriuni
           git commit -m "Scraped NetNutrition, Calendar & Mobile Order $(date -u)" || echo "No changes to commit"
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
           git push origin HEAD:main

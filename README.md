@@ -15,16 +15,20 @@ pip install -r requirements.txt
 
 The workflow is:
 
-1. `src/netnutrition_client.py` fetches restaurants, menus, halal items, and
+1. `src/netnutrition_client.py` fetches restaurants, menus, items, and
    nutrition labels into the ignored intermediate file
    `outputs/netnutrition-direct.json`.
-2. `src/build_catalog_outputs.py` writes the menu text/PDF and
+2. `src/update_nutrition_library.py` merges that crawl into
+   `outputs/nutrition_library/`, which keeps every label NetNutrition has
+   published per restaurant (NetNutrition only shows the current day's menus).
+3. `src/build_catalog_outputs.py` writes the halal menu text/PDF and
    `outputs/restaurants/*.json`.
-3. `dukeislam/scripts/extract-nutrition.mjs` builds the website's compact
+4. `dukeislam/scripts/extract-nutrition.mjs` builds the website's compact
    nutrition file at `dukeislam/data/nutrition.json`.
 
 The request delay defaults to zero. The refresh writes:
 
+- `outputs/nutrition_library/*.json`
 - `outputs/halal_menus.txt`
 - `docs/outputs/halal_menus.pdf`
 - `outputs/restaurants/*.json`
@@ -69,6 +73,32 @@ scheduled catalog refresh:
 direct workflow writes the per-restaurant files directly and does not regenerate
 it. The legacy scripts require the browser/Selenium dependencies in
 `requirements.txt`; `nutri_split.py` itself only needs Python.
+
+## Nutriuni menus
+
+`src/build_nutriuni_menus.py` builds the menu data for the Nutriuni app in
+`outputs/nutriuni/`: Mobile Order's restaurants, dishes, and option groups,
+with NetNutrition labels linked to each dish and option value (sides, sauces,
+proteins). Restaurants that are not on Mobile Order but are on NetNutrition
+(Marketplace, Duke Marine Lab, Bseisu) are included straight from the library.
+The scheduled workflow runs it after the Mobile Order refresh.
+
+```bash
+python src/build_nutriuni_menus.py
+```
+
+Matching is automatic and conservative: a dish is only linked when the names
+clearly agree, so unmatched dishes get no nutrition rather than a wrong one.
+`outputs/nutriuni/match_report.md` lists every link with its score and the
+closest rejected candidates. Reviewed corrections (renamed dishes, combo
+components, bad labels to ignore) live in `src/nutriuni_overrides.json`.
+The Nutriuni app's `syncMenus` Cloud Function (in the Nutriuni repository)
+polls `outputs/nutriuni/index.json` on `main` every 15 minutes and publishes
+changed restaurants to Firestore, so keep that path and file layout stable.
+Each file's hash is listed in `index.json`; rebuilding unchanged data produces
+byte-identical files, so nothing is committed or republished. To bundle a
+snapshot into the app itself, run `scripts/sync-menu-data.sh` from the Nutriuni
+repository.
 
 ## Other refreshes
 
