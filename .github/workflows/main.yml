@@ -59,11 +59,11 @@ jobs:
           fi
 
       # Never blocks the commit below: on failure the last good
-      # outputs/nutriuni stays in place (the builder swaps it in atomically).
+      # nutriuni/menus stays in place (the builder swaps it in atomically).
       - name: Build Nutriuni menus (Mobile Order + NetNutrition)
         continue-on-error: true
         run: |
-          python3 src/build_nutriuni_menus.py
+          python3 nutriuni/build_nutriuni_menus.py
 
       - name: Commit refreshed catalog artifacts
         env:
@@ -77,7 +77,7 @@ jobs:
           git add dukeislam/data/nutrition.json
           git add docs/outputs/muslim_calendar.pdf
           git add outputs/mobile_order/menus outputs/mobile_order/restaurants.json outputs/mobile_order/all_restaurant_menus.json
-          git add outputs/nutrition_library outputs/nutriuni
+          git add nutriuni/nutrition_library nutriuni/menus
           git commit -m "Scraped NetNutrition, Calendar & Mobile Order $(date -u)" || echo "No changes to commit"
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
           git push origin HEAD:main

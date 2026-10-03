@@ -17,13 +17,13 @@ abbreviations, typos such as Baigan/Baingan), weighted by how distinctive each
 word is within that restaurant, and checked from both sides so "Chicken" never
 silently matches "Chicken Alfredo Pasta". Low-confidence pairs are left
 unmatched, because a missing label is better than a wrong one; the app lets the
-user enter nutrition or log without it. ``src/nutriuni_overrides.json`` holds
+user enter nutrition or log without it. ``nutriuni/nutriuni_overrides.json`` holds
 hand-reviewed corrections for the cases a string matcher cannot know.
 
-Outputs ``outputs/nutriuni/`` (index.json, restaurants/*.json, icons/) and a
-review report at ``outputs/nutriuni/match_report.md``.
+Outputs ``nutriuni/menus/`` (index.json, restaurants/*.json, icons/) and a
+review report at ``nutriuni/menus/match_report.md``.
 
-    python src/build_nutriuni_menus.py
+    python nutriuni/build_nutriuni_menus.py
 """
 
 from __future__ import annotations
@@ -45,9 +45,9 @@ from update_nutrition_library import serving_grams, slug as library_slug
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_MOBILE_DIR = ROOT / "outputs" / "mobile_order"
-DEFAULT_LIBRARY_DIR = ROOT / "outputs" / "nutrition_library"
-DEFAULT_OVERRIDES = ROOT / "src" / "nutriuni_overrides.json"
-DEFAULT_OUTPUT_DIR = ROOT / "outputs" / "nutriuni"
+DEFAULT_LIBRARY_DIR = ROOT / "nutriuni" / "nutrition_library"
+DEFAULT_OVERRIDES = ROOT / "nutriuni" / "nutriuni_overrides.json"
+DEFAULT_OUTPUT_DIR = ROOT / "nutriuni" / "menus"
 DEFAULT_HOURS_INDEX = ROOT / "outputs" / "restaurants" / "index.json"
 
 SCHEMA_VERSION = 1

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Refreshes the halal catalog end to end without a browser:
 #   1. netnutrition_client.py -> outputs/netnutrition-direct.json (every item, not only halal)
-#   2. update_nutrition_library.py -> outputs/nutrition_library/ (labels accumulated across runs, for Nutriuni)
+#   2. update_nutrition_library.py -> nutriuni/nutrition_library/ (labels accumulated across runs, for Nutriuni)
 #   3. build_catalog_outputs.py -> halal menu text/PDF + per-restaurant nutrition files
 #   4. extract-nutrition -> dukeislam/data/nutrition.json (the catalog the website bundles)
 #
@@ -79,7 +79,7 @@ run_step 1 "Direct menu + nutrition fetch" netnutrition_client \
   "${CA_ARGS[@]}"
 # A library failure must not stop the halal catalog from refreshing.
 run_step 2 "Update nutrition library" update_nutrition_library \
-  bash -c 'python3 src/update_nutrition_library.py --input outputs/netnutrition-direct.json \
+  bash -c 'python3 nutriuni/update_nutrition_library.py --input outputs/netnutrition-direct.json \
     || echo "WARNING: nutrition library update failed; keeping the previous library"'
 run_step 3 "Build menu + nutrition artifacts" build_catalog_outputs \
   python3 src/build_catalog_outputs.py --input outputs/netnutrition-direct.json \

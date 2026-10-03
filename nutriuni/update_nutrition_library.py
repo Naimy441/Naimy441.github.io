@@ -3,7 +3,7 @@
 
 NetNutrition only shows the menus scheduled for the current day, so a single
 crawl is never the full picture (at night most units return no items at all).
-This script merges each crawl into ``outputs/nutrition_library/<unit>.json``,
+This script merges each crawl into ``nutriuni/nutrition_library/<unit>.json``,
 keeping every item ever seen with its ``first_seen``/``last_seen`` dates, so
 the Nutriuni build can match Mobile Order items against everything NetNutrition
 has published for that restaurant.
@@ -12,8 +12,8 @@ Rows with physically impossible values (e.g. 3,680 kcal in a "4 oz ladle") are
 kept in the file for transparency but flagged ``"valid": false`` so they are
 never served.
 
-    python src/update_nutrition_library.py --input outputs/netnutrition-direct.json
-    python src/update_nutrition_library.py --seed-legacy outputs/nutri_menus.json
+    python nutriuni/update_nutrition_library.py --input outputs/netnutrition-direct.json
+    python nutriuni/update_nutrition_library.py --seed-legacy outputs/nutri_menus.json
 """
 
 from __future__ import annotations
@@ -27,7 +27,7 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_LIBRARY_DIR = ROOT / "outputs" / "nutrition_library"
+DEFAULT_LIBRARY_DIR = ROOT / "nutriuni" / "nutrition_library"
 
 # NetNutrition label name -> compact key used downstream.
 NUTRIENT_KEYS = {
