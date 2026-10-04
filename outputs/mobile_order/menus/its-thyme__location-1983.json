@@ -4,9 +4,9 @@
   "location_id": 1983,
   "cafeteria_id": 1794,
   "icon_image_url": "campuses/icon_location_19_18_127_1704385673480.jpg",
-  "estimated_wait_time_minutes": 0,
+  "estimated_wait_time_minutes": 12,
   "currently_open": true,
-  "takeout_open": false,
+  "takeout_open": true,
   "delivery_open": true,
   "takeout_hours": {
     "open": "11:00:00",
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-03 18:16:00",
-  "menu_last_updated": "2026-10-03 18:16:00",
+  "retrieved_at": "2026-10-04 15:50:48",
+  "menu_last_updated": "2026-10-04 15:50:49",
   "sections": [
     {
       "name": "Build Your Own",
@@ -1206,15 +1206,6 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Classic Pineapple Dole Whip",
-          "description": "",
-          "price": 4.99,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
           "name": "Dole Whip",
           "description": "",
           "price": 4.99,
@@ -1230,6 +1221,15 @@
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
+          "is_hidden": true
+        },
+        {
+          "name": "Classic Pineapple Dole Whip",
+          "description": "",
+          "price": 4.99,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
           "is_hidden": true
         },
         {
@@ -1325,80 +1325,6 @@
                 },
                 {
                   "name": "No Slow-roasted pork",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Southern Thyme",
-          "description": "Baby spinach lemon-thyme chicken roasted tomato and peppers pickled cabbage and onion avocado crisp tostones and cilantro-lime vinaigrette.",
-          "price": 11.89,
-          "options": [
-            {
-              "name": "Southern Thyme",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No avocado",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Baby spinach",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No cilantro-lime vinaigrette",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No crisp tostones",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No lemon-thyme chicken",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No pickled cabbage and onion",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No roasted tomato and peppers",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1569,18 +1495,18 @@
           "is_hidden": false
         },
         {
-          "name": "Kanis Golden Thai Thyme",
-          "description": "Quinoa-brown rice golden Burmese chickpea tofu roasted vegetables cucumber pickled cabbage and carrot basil and sweet chile-lime glaze.",
+          "name": "Southern Thyme",
+          "description": "Baby spinach lemon-thyme chicken roasted tomato and peppers pickled cabbage and onion avocado crisp tostones and cilantro-lime vinaigrette.",
           "price": 11.89,
           "options": [
             {
-              "name": "Kanis Thai Thyme",
+              "name": "Southern Thyme",
               "minimum": 0,
               "maximum": 50,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "No Brown Rice and Quinoa",
+                  "name": "No avocado",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1588,7 +1514,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Carrots",
+                  "name": "No Baby spinach",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1596,7 +1522,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Cucumbers",
+                  "name": "No cilantro-lime vinaigrette",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1604,7 +1530,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Pickled Cabbage",
+                  "name": "No crisp tostones",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1612,7 +1538,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Roasted Vegetables",
+                  "name": "No lemon-thyme chicken",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1620,7 +1546,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Sweet chili Sauce",
+                  "name": "No pickled cabbage and onion",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1628,7 +1554,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Thai Spiced Tofu",
+                  "name": "No roasted tomato and peppers",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1895,6 +1821,80 @@
           "busy_min": 5,
           "normal_min": 3,
           "is_hidden": false
+        },
+        {
+          "name": "Kanis Golden Thai Thyme",
+          "description": "Quinoa-brown rice golden Burmese chickpea tofu roasted vegetables cucumber pickled cabbage and carrot basil and sweet chile-lime glaze.",
+          "price": 11.89,
+          "options": [
+            {
+              "name": "Kanis Thai Thyme",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No Brown Rice and Quinoa",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Carrots",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Cucumbers",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Pickled Cabbage",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Roasted Vegetables",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Sweet chili Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Thai Spiced Tofu",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
         }
       ]
     },
@@ -1913,37 +1913,21 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Hot Honey Chicken Tenders",
-          "description": "Spicy sweet chicken tenders with hot honey chicken it is sweet potato fries",
-          "price": 11.3,
-          "options": [
-            {
-              "name": "Hot Honey Chicken Tenders",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Extra Tenders (2)",
-                  "price": 2.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Extra Tenders",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
+          "name": "Jerk chicken tostones plate",
+          "description": "Jerk chicken tostones plate",
+          "price": 12.49,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Smoky barbacoa loaded fries",
+          "description": "Smoky barbacoa loaded fries",
+          "price": 12.85,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
           "is_hidden": false
         },
         {
@@ -2037,21 +2021,37 @@
           "is_hidden": false
         },
         {
-          "name": "Jerk chicken tostones plate",
-          "description": "Jerk chicken tostones plate",
-          "price": 12.49,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Smoky barbacoa loaded fries",
-          "description": "Smoky barbacoa loaded fries",
-          "price": 12.85,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
+          "name": "Hot Honey Chicken Tenders",
+          "description": "Spicy sweet chicken tenders with hot honey chicken it is sweet potato fries",
+          "price": 11.3,
+          "options": [
+            {
+              "name": "Hot Honey Chicken Tenders",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Extra Tenders (2)",
+                  "price": 2.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Extra Tenders",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
           "is_hidden": false
         },
         {
@@ -2133,6 +2133,15 @@
           "is_hidden": false
         },
         {
+          "name": "Pineapple Tea",
+          "description": "",
+          "price": 3.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
           "name": "Ginger Mint Iced Tea",
           "description": "",
           "price": 2.99,
@@ -2143,15 +2152,6 @@
         },
         {
           "name": "Pomegranite Limeade",
-          "description": "",
-          "price": 3.99,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Pineapple Tea",
           "description": "",
           "price": 3.99,
           "options": [],
