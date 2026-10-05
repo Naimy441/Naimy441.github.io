@@ -4,10 +4,10 @@
   "location_id": 54,
   "cafeteria_id": 50,
   "icon_image_url": "campuses/icon_location_19_18_127_1701730116543.jpg",
-  "estimated_wait_time_minutes": 17,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "10:30:00",
     "close": "21:00:00"
@@ -116,13 +116,22 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-04 20:37:10",
-  "menu_last_updated": "2026-10-04 20:37:11",
+  "retrieved_at": "2026-10-05 00:23:24",
+  "menu_last_updated": "2026-10-05 00:23:25",
   "sections": [
     {
       "name": "ILForno Specials",
       "is_hidden": false,
       "items": [
+        {
+          "name": "$5 Meal Deal",
+          "description": "1 Slice of Cheese Pizza and 2 breadsticks, w/ side of ranch",
+          "price": 5.0,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 22,
+          "is_hidden": false
+        },
         {
           "name": "Daily Special",
           "description": "",
@@ -372,15 +381,6 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": true
-        },
-        {
-          "name": "$5 Meal Deal",
-          "description": "1 Slice of Cheese Pizza and 2 breadsticks, w/ side of ranch",
-          "price": 5.0,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 22,
-          "is_hidden": false
         }
       ]
     },
