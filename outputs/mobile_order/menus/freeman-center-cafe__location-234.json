@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-02 14:20:54",
-  "menu_last_updated": "2026-10-02 14:20:55",
+  "retrieved_at": "2026-10-05 16:20:00",
+  "menu_last_updated": "2026-10-05 16:20:01",
   "sections": [
     {
       "name": "Soups",
@@ -298,10 +298,142 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Fattoush Salad (V+)",
-          "description": "Toasted pita tossed with chopped romaine lettuce fresh diced tomato cucumber red onion and chickpeas served with a lemon olive oil parsley fresh cumin & sumac dressing. Contains: sesame soy wheat.",
+          "name": "Hummus Plate (V+)",
+          "description": "Creamy hummus dip made from chickpeas tahini lemon and spices.  Served with pita chips cucumbers and carrots.  Contains: sesame soy wheat garlic.",
+          "price": 6.99,
+          "options": [],
+          "busy_min": 8,
+          "normal_min": 5,
+          "is_hidden": false
+        },
+        {
+          "name": "Fruit Salad",
+          "description": "An assortment of fresh cut fruit (V+ GF)",
+          "price": 5.49,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Quinoa and Roasted Veggies (V+ GFF)",
+          "description": "Fluffy quinoa with roasted zucchini portabella mushroom red onion and red peppers tossed in an Italian Herb Vinaigrette. Contains garlic.",
           "price": 6.49,
           "options": [
+            {
+              "name": "Salad Add-on",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Chicken",
+                  "price": 5.5,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Croutons contains wheat soy",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Egg",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Hard Boiled Egg",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pita",
+                  "price": 1.75,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Salmon contains fish",
+                  "price": 7.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Tofu V+ contains soy",
+                  "price": 3.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Small Garden Salad (V+ GFF)",
+          "description": "Mixed greens with fresh cherry tomatoes cucumbers carrots and red onions.  Your choice of dressing: balsamic vinaigrette or Italian dressing.  Add:  Grilled Chicken $5 Grilled Salmon $7 Boiled Egg $1.09 Pastrami $6 Turkey $5",
+          "price": 3.79,
+          "options": [
+            {
+              "name": "Salad Dressing",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Fat Free Italian",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fat Free French",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fat Free Raspberry Vinaigrette",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Honey Mustard",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
             {
               "name": "Salad Add-on",
               "minimum": 0,
@@ -560,8 +692,8 @@
           "is_hidden": false
         },
         {
-          "name": "Quinoa and Roasted Veggies (V+ GFF)",
-          "description": "Fluffy quinoa with roasted zucchini portabella mushroom red onion and red peppers tossed in an Italian Herb Vinaigrette. Contains garlic.",
+          "name": "Fattoush Salad (V+)",
+          "description": "Toasted pita tossed with chopped romaine lettuce fresh diced tomato cucumber red onion and chickpeas served with a lemon olive oil parsley fresh cumin & sumac dressing. Contains: sesame soy wheat.",
           "price": 6.49,
           "options": [
             {
@@ -629,140 +761,8 @@
               ]
             }
           ],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Small Garden Salad (V+ GFF)",
-          "description": "Mixed greens with fresh cherry tomatoes cucumbers carrots and red onions.  Your choice of dressing: balsamic vinaigrette or Italian dressing.  Add:  Grilled Chicken $5 Grilled Salmon $7 Boiled Egg $1.09 Pastrami $6 Turkey $5",
-          "price": 3.79,
-          "options": [
-            {
-              "name": "Salad Dressing",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Fat Free Italian",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Fat Free French",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Fat Free Raspberry Vinaigrette",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Honey Mustard",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Salad Add-on",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Chicken",
-                  "price": 5.5,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Croutons contains wheat soy",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Fried Egg",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Hard Boiled Egg",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pita",
-                  "price": 1.75,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Salmon contains fish",
-                  "price": 7.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Tofu V+ contains soy",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
           "busy_min": 15,
           "normal_min": 12,
-          "is_hidden": false
-        },
-        {
-          "name": "Fruit Salad",
-          "description": "An assortment of fresh cut fruit (V+ GF)",
-          "price": 5.49,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Hummus Plate (V+)",
-          "description": "Creamy hummus dip made from chickpeas tahini lemon and spices.  Served with pita chips cucumbers and carrots.  Contains: sesame soy wheat garlic.",
-          "price": 6.99,
-          "options": [],
-          "busy_min": 8,
-          "normal_min": 5,
           "is_hidden": false
         }
       ]
@@ -1883,6 +1883,248 @@
           "is_hidden": false
         },
         {
+          "name": "Pastrami on Rye",
+          "description": "Tender sliced pastrami with lettuce tomato served on rye bread a kosher deli classic.  Comes with a pickle your choice of side and on your choice of bread.  Rye contains: soy wheat",
+          "price": 16.68,
+          "options": [
+            {
+              "name": "Sandwich Bread",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "GF Bread",
+                  "price": 1.59,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pita",
+                  "price": 1.75,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Ciabatta",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Kaiser Roll",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Rye",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Whole Wheat",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Sandwich Options",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Mayo contains egg",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Lettuce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Tomato",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pickle",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mustard",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Lettuce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Tomato",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No avocado",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Pickle",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "no onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Side Options",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Chips",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No side",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pickles & Olives V+",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Side Fries V+",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Side Fruit Cup V+",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Side Garden Salad V+",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Side Israeli Salad V+",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Side Quinoa and Veggies V+",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Side Sante Fe Salad V+",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 10,
+          "normal_min": 7,
+          "is_hidden": false
+        },
+        {
           "name": "Marinated Grilled Portabella Sandwich V+",
           "description": "Marinated grilled portabella mushroom with basil pesto spinach and tomato.  Comes with a pickle your choice of side and on your choice of bread.   Ciabatta contains: soy wheat",
           "price": 12.58,
@@ -2308,248 +2550,6 @@
           ],
           "busy_min": 15,
           "normal_min": 12,
-          "is_hidden": false
-        },
-        {
-          "name": "Pastrami on Rye",
-          "description": "Tender sliced pastrami with lettuce tomato served on rye bread a kosher deli classic.  Comes with a pickle your choice of side and on your choice of bread.  Rye contains: soy wheat",
-          "price": 16.68,
-          "options": [
-            {
-              "name": "Sandwich Bread",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "GF Bread",
-                  "price": 1.59,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pita",
-                  "price": 1.75,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ciabatta",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Kaiser Roll",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Rye",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Whole Wheat",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Sandwich Options",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Mayo contains egg",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Lettuce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Tomato",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Onion",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pickle",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Mustard",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Lettuce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Tomato",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No avocado",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickle",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "no onion",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Side Options",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Chips",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No side",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pickles & Olives V+",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Side Fries V+",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Side Fruit Cup V+",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Side Garden Salad V+",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Side Israeli Salad V+",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Side Quinoa and Veggies V+",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Side Sante Fe Salad V+",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 10,
-          "normal_min": 7,
           "is_hidden": false
         },
         {
@@ -3302,54 +3302,6 @@
               ]
             },
             {
-              "name": "Bagel Spreads",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Butter (contains milk)",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Cheddar Cheese (contains milk)",
-                  "price": 2.5,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Cream Cheese (contains milk)",
-                  "price": 2.5,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Feta Cheese (contains milk)",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Vegan Butter (contains soy)",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
               "name": "Bagel Veggies and Toppings",
               "minimum": 0,
               "maximum": 50,
@@ -3414,6 +3366,54 @@
                 {
                   "name": "Avocado",
                   "price": 2.75,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Bagel Spreads",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Butter (contains milk)",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cheddar Cheese (contains milk)",
+                  "price": 2.5,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cream Cheese (contains milk)",
+                  "price": 2.5,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Feta Cheese (contains milk)",
+                  "price": 6.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Vegan Butter (contains soy)",
+                  "price": 1.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -3759,114 +3759,6 @@
           "is_hidden": false
         },
         {
-          "name": "Coach Scheyer s Pick",
-          "description": "An everything bagel with cream cheese � Duke Mens Basketball Head Coach Jon Scheyers go-to bagel order!",
-          "price": 6.09,
-          "options": [
-            {
-              "name": "Toast Options",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Not Toasted",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Toasted",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "The Rabbi Elana",
-          "description": "Bagel with cream cheese tomato a drizzle of olive oil and Everything Bagel seasoning blend.",
-          "price": 7.79,
-          "options": [
-            {
-              "name": "Toast Options",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Not Toasted",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Toasted",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Bagel Choice",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Everything Bagel (wheat sesame)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Gluten Free Bagel",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Plain Bagel (wheat)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sesame Bagel (wheat sesame)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
           "name": "The Tuna",
           "description": "Tuna salad with lettuce tomato and onion on a bagel.",
           "price": 9.49,
@@ -4013,6 +3905,114 @@
           "busy_min": 5,
           "normal_min": 3,
           "is_hidden": false
+        },
+        {
+          "name": "The Rabbi Elana",
+          "description": "Bagel with cream cheese tomato a drizzle of olive oil and Everything Bagel seasoning blend.",
+          "price": 7.79,
+          "options": [
+            {
+              "name": "Toast Options",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Not Toasted",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Toasted",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Bagel Choice",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Everything Bagel (wheat sesame)",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Gluten Free Bagel",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Plain Bagel (wheat)",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sesame Bagel (wheat sesame)",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Coach Scheyer s Pick",
+          "description": "An everything bagel with cream cheese � Duke Mens Basketball Head Coach Jon Scheyers go-to bagel order!",
+          "price": 6.09,
+          "options": [
+            {
+              "name": "Toast Options",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Not Toasted",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Toasted",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
         }
       ]
     },
@@ -4020,6 +4020,72 @@
       "name": "Hot Entree",
       "is_hidden": false,
       "items": [
+        {
+          "name": "The Halfsies",
+          "description": "A half-order of Freeman's Famous Mac & Cheese and a half-order of salad. The best of both worlds! Make it gluten-free by selecting gluten free pasta with Israeli or tossed salad.",
+          "price": 9.29,
+          "options": [
+            {
+              "name": "Halfies Salad Choice",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Half Fattoush Salad (wheat)",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Half Fruit Salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Half Isreali Salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Pasta Choice",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Gluten Free Pasta",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Regular Pasta",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
         {
           "name": "CCs Mac & Cheese",
           "description": "It is back! Enjoy the Freeman Center Caf�s beloved mac & cheese.",
@@ -4055,18 +4121,18 @@
           "is_hidden": false
         },
         {
-          "name": "The Halfsies",
-          "description": "A half-order of Freeman's Famous Mac & Cheese and a half-order of salad. The best of both worlds! Make it gluten-free by selecting gluten free pasta with Israeli or tossed salad.",
-          "price": 9.29,
+          "name": "Tomato Soup",
+          "description": "Bowl of delicious homemade tomato soup",
+          "price": 5.09,
           "options": [
             {
-              "name": "Pasta Choice",
+              "name": "Soup Options",
               "minimum": 1,
               "maximum": 1,
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Gluten Free Pasta",
+                  "name": "Extra Crackers",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -4074,41 +4140,17 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Regular Pasta",
+                  "name": "No Crackers",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Include crackers",
                   "price": 0.0,
                   "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Halfies Salad Choice",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Half Fattoush Salad (wheat)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Half Fruit Salad",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Half Isreali Salad",
-                  "price": 0.0,
-                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -4187,48 +4229,6 @@
           "busy_min": 5,
           "normal_min": 3,
           "is_hidden": false
-        },
-        {
-          "name": "Tomato Soup",
-          "description": "Bowl of delicious homemade tomato soup",
-          "price": 5.09,
-          "options": [
-            {
-              "name": "Soup Options",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Extra Crackers",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Crackers",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Include crackers",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
         }
       ]
     },
@@ -4237,9 +4237,9 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Israeli Salad",
-          "description": "Diced fresh tomatoes cucumbers onions and parsley with lemon juice.",
-          "price": 6.29,
+          "name": "Fattoush Salad",
+          "description": "Toasted pita tossed with chopped romaine lettuce fresh diced tomato cucumber and chickpeas served with a lemon olive oil parsley cumin & sumac dressing.",
+          "price": 6.49,
           "options": [
             {
               "name": "Salad Addon",
@@ -4279,9 +4279,9 @@
           "is_hidden": false
         },
         {
-          "name": "Fattoush Salad",
-          "description": "Toasted pita tossed with chopped romaine lettuce fresh diced tomato cucumber and chickpeas served with a lemon olive oil parsley cumin & sumac dressing.",
-          "price": 6.49,
+          "name": "Israeli Salad",
+          "description": "Diced fresh tomatoes cucumbers onions and parsley with lemon juice.",
+          "price": 6.29,
           "options": [
             {
               "name": "Salad Addon",
@@ -4426,224 +4426,6 @@
                 {
                   "name": "Medium Hot",
                   "price": 3.69,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Milk Types",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Oat Milk",
-                  "price": 0.89,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soy",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Caffination",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Regular Espresso",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Espresso Decaf",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra Shot Regular",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra Shot Decaf",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Sweetners",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Agave",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Equal",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Honey",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Raw Sugar",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Regular Sugar",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Splenda",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sweet & Low",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Syrups & Sauces",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Caramel",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chocolate Sauce",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sugar Free Vanilla",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Vanilla",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Warm Spice",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Espresso",
-          "description": "A shot of espresso made with our favorite espresso beans.  Served hot.",
-          "price": 1.99,
-          "options": [
-            {
-              "name": "Espresso",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Single Shot",
-                  "price": 1.99,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Double Shot",
-                  "price": 2.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra Shot",
-                  "price": 0.99,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -5051,6 +4833,224 @@
           "is_hidden": false
         },
         {
+          "name": "Espresso",
+          "description": "A shot of espresso made with our favorite espresso beans.  Served hot.",
+          "price": 1.99,
+          "options": [
+            {
+              "name": "Espresso",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Single Shot",
+                  "price": 1.99,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Double Shot",
+                  "price": 2.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Extra Shot",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Milk Types",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Oat Milk",
+                  "price": 0.89,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Soy",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Caffination",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Regular Espresso",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Espresso Decaf",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Extra Shot Regular",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Extra Shot Decaf",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Sweetners",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Agave",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Equal",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Honey",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Raw Sugar",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Regular Sugar",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Splenda",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sweet & Low",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Syrups & Sauces",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Caramel",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chocolate Sauce",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sugar Free Vanilla",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Vanilla",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Warm Spice",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
           "name": "Cafe Mocha",
           "description": "Rich espresso combined with bittersweet mocha sauce and steamed non-dairy milk. Add your favorite condiments if desired.",
           "price": 5.29,
@@ -5079,6 +5079,216 @@
                 },
                 {
                   "name": "Iced Mocha",
+                  "price": 4.79,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Milk Types",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Oat Milk",
+                  "price": 0.89,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Soy",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Caffination",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Regular Espresso",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Espresso Decaf",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Extra Shot Regular",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Extra Shot Decaf",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Sweetners",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Agave",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Equal",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Honey",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Raw Sugar",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Regular Sugar",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Splenda",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sweet & Low",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Syrups & Sauces",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Caramel",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chocolate Sauce",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sugar Free Vanilla",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Vanilla",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Warm Spice",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Cappuccino",
+          "description": "Espresso with steamed non-dairy milk topped with a cap of foam.",
+          "price": 5.29,
+          "options": [
+            {
+              "name": "Cappuccino",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Medium",
+                  "price": 5.29,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Small",
                   "price": 4.79,
                   "is_default": false,
                   "is_hidden": false,
@@ -5437,216 +5647,6 @@
           "busy_min": 5,
           "normal_min": 3,
           "is_hidden": false
-        },
-        {
-          "name": "Cappuccino",
-          "description": "Espresso with steamed non-dairy milk topped with a cap of foam.",
-          "price": 5.29,
-          "options": [
-            {
-              "name": "Cappuccino",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Medium",
-                  "price": 5.29,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small",
-                  "price": 4.79,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Milk Types",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Oat Milk",
-                  "price": 0.89,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soy",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Caffination",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Regular Espresso",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Espresso Decaf",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra Shot Regular",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra Shot Decaf",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Sweetners",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Agave",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Equal",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Honey",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Raw Sugar",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Regular Sugar",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Splenda",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sweet & Low",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Syrups & Sauces",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Caramel",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chocolate Sauce",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sugar Free Vanilla",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Vanilla",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Warm Spice",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
         }
       ]
     },
@@ -5659,30 +5659,6 @@
           "description": "",
           "price": 5.89,
           "options": [
-            {
-              "name": "Milk Types",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Oat Milk",
-                  "price": 0.89,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soy",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
             {
               "name": "Turtle Latte",
               "minimum": 1,
@@ -5708,6 +5684,30 @@
                 {
                   "name": "Iced Turtle Latte",
                   "price": 5.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Milk Types",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Oat Milk",
+                  "price": 0.89,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Soy",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
