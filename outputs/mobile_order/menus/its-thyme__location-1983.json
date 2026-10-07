@@ -4,10 +4,10 @@
   "location_id": 1983,
   "cafeteria_id": 1794,
   "icon_image_url": "campuses/icon_location_19_18_127_1704385673480.jpg",
-  "estimated_wait_time_minutes": 0,
-  "currently_open": false,
-  "takeout_open": false,
-  "delivery_open": false,
+  "estimated_wait_time_minutes": 9,
+  "currently_open": true,
+  "takeout_open": true,
+  "delivery_open": true,
   "takeout_hours": {
     "open": "11:00:00",
     "close": "21:00:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-07 00:26:39",
-  "menu_last_updated": "2026-10-07 00:26:40",
+  "retrieved_at": "2026-10-07 16:50:25",
+  "menu_last_updated": "2026-10-07 16:50:26",
   "sections": [
     {
       "name": "Build Your Own",
@@ -1913,6 +1913,40 @@
       "is_hidden": false,
       "items": [
         {
+          "name": "Hot Honey Chicken Tenders",
+          "description": "Spicy sweet chicken tenders with hot honey chicken it is sweet potato fries",
+          "price": 11.3,
+          "options": [
+            {
+              "name": "Hot Honey Chicken Tenders",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Extra Tenders (2)",
+                  "price": 2.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Extra Tenders",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Taco Thyme",
           "description": "Choice of sweet potato chicken or beef tacos with fire roasted corn w/ poblano cilantro lime black beans brown rice & quinoa mango salsa tomato salsa verde & side of blue corn chips.",
           "price": 11.3,
@@ -2003,49 +2037,6 @@
           "is_hidden": false
         },
         {
-          "name": "Hot Honey Chicken Tenders",
-          "description": "Spicy sweet chicken tenders with hot honey chicken it is sweet potato fries",
-          "price": 11.3,
-          "options": [
-            {
-              "name": "Hot Honey Chicken Tenders",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Extra Tenders (2)",
-                  "price": 2.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Extra Tenders",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Jerk chicken tostones plate",
-          "description": "Jerk chicken tostones plate",
-          "price": 12.49,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
           "name": "Crispy Chickpea Falafel Wrap",
           "description": "Chickpea Falafel quinoa & chia seed wrap shredded kale garlic hummus diced cucumbers pickled red onions green goddess dressing. Served with sweet potato fries",
           "price": 11.89,
@@ -2104,6 +2095,15 @@
           "is_hidden": false
         },
         {
+          "name": "Jerk chicken tostones plate",
+          "description": "Jerk chicken tostones plate",
+          "price": 12.49,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
           "name": "Smoky barbacoa loaded fries",
           "description": "Smoky barbacoa loaded fries",
           "price": 12.85,
@@ -2142,18 +2142,18 @@
           "is_hidden": false
         },
         {
-          "name": "Ginger Mint Iced Tea",
+          "name": "Pomegranite Limeade",
           "description": "",
-          "price": 2.99,
+          "price": 3.99,
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
           "is_hidden": false
         },
         {
-          "name": "Pomegranite Limeade",
+          "name": "Ginger Mint Iced Tea",
           "description": "",
-          "price": 3.99,
+          "price": 2.99,
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
