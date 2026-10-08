@@ -4,10 +4,10 @@
   "location_id": 2272,
   "cafeteria_id": 2079,
   "icon_image_url": "campuses/icon_location_19_18_127_1735832782689.jpg",
-  "estimated_wait_time_minutes": 0,
-  "currently_open": false,
-  "takeout_open": false,
-  "delivery_open": false,
+  "estimated_wait_time_minutes": 12,
+  "currently_open": true,
+  "takeout_open": true,
+  "delivery_open": true,
   "takeout_hours": {
     "open": "10:30:00",
     "close": "15:30:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-06 16:09:31",
-  "menu_last_updated": "2026-10-06 16:09:32",
+  "retrieved_at": "2026-10-08 13:05:04",
+  "menu_last_updated": "2026-10-08 13:05:05",
   "sections": [
     {
       "name": "Specials",
@@ -437,10 +437,34 @@
           "is_hidden": false
         },
         {
-          "name": "Cajun Gator Box",
-          "description": "6-piece Cajun-seasoned alligator bites seasoned crinkle-cut fries Texas toast choice of side and dipping sauce.",
-          "price": 13.29,
+          "name": "Coop Sandwich Box",
+          "description": "3 chicken tenders on a brioche bun special sauce lettuce seasoned crinkle-cut fries and choice of side.",
+          "price": 12.85,
           "options": [
+            {
+              "name": "Cook Option",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Fried",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Grilled",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
             {
               "name": "Coop Side Option",
               "minimum": 0,
@@ -567,34 +591,10 @@
           "is_hidden": false
         },
         {
-          "name": "Coop Sandwich Box",
-          "description": "3 chicken tenders on a brioche bun special sauce lettuce seasoned crinkle-cut fries and choice of side.",
-          "price": 12.85,
+          "name": "Cajun Gator Box",
+          "description": "6-piece Cajun-seasoned alligator bites seasoned crinkle-cut fries Texas toast choice of side and dipping sauce.",
+          "price": 13.29,
           "options": [
-            {
-              "name": "Cook Option",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Fried",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Grilled",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
             {
               "name": "Coop Side Option",
               "minimum": 0,
