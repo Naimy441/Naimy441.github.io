@@ -4,10 +4,10 @@
   "location_id": 1983,
   "cafeteria_id": 1794,
   "icon_image_url": "campuses/icon_location_19_18_127_1704385673480.jpg",
-  "estimated_wait_time_minutes": 9,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "11:00:00",
     "close": "21:00:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-07 16:50:25",
-  "menu_last_updated": "2026-10-07 16:50:26",
+  "retrieved_at": "2026-10-07 23:34:47",
+  "menu_last_updated": "2026-10-07 23:34:48",
   "sections": [
     {
       "name": "Build Your Own",
@@ -1503,80 +1503,6 @@
           "is_hidden": false
         },
         {
-          "name": "Charlies Bowl Beirut",
-          "description": "Quinoa-brown rice chickpea falafel parsley-cucumber quinoa tabbouleh fire-roasted tomato chickpeas sesame-free lemon hummus toum.",
-          "price": 11.89,
-          "options": [
-            {
-              "name": "Charlies Bowl Beirut",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No Chickpea Falafel",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No chickpeas",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No fire-roasted tomatoes",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Parsley-cucumber tabbouleh",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Quinoa-brown rice",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Sesame-free lemon hummus",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Toum",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
           "name": "Carribean Thyme",
           "description": "Yukon and sweet potatoes jerk chicken poblano corn roasted seasonal vegetables fire- roasted tomato mango salsa and tostones.",
           "price": 11.89,
@@ -1643,18 +1569,18 @@
           "is_hidden": false
         },
         {
-          "name": "Kanis Golden Thai Thyme",
-          "description": "Quinoa-brown rice golden Burmese chickpea tofu roasted vegetables cucumber pickled cabbage and carrot basil and sweet chile-lime glaze.",
+          "name": "Charlies Bowl Beirut",
+          "description": "Quinoa-brown rice chickpea falafel parsley-cucumber quinoa tabbouleh fire-roasted tomato chickpeas sesame-free lemon hummus toum.",
           "price": 11.89,
           "options": [
             {
-              "name": "Kanis Thai Thyme",
+              "name": "Charlies Bowl Beirut",
               "minimum": 0,
               "maximum": 50,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "No Brown Rice and Quinoa",
+                  "name": "No Chickpea Falafel",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1662,7 +1588,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Carrots",
+                  "name": "No chickpeas",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1670,7 +1596,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Cucumbers",
+                  "name": "No fire-roasted tomatoes",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1678,7 +1604,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Pickled Cabbage",
+                  "name": "No Parsley-cucumber tabbouleh",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1686,7 +1612,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Roasted Vegetables",
+                  "name": "No Quinoa-brown rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1694,7 +1620,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Sweet chili Sauce",
+                  "name": "No Sesame-free lemon hummus",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1702,7 +1628,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Thai Spiced Tofu",
+                  "name": "No Toum",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1793,6 +1719,80 @@
                 },
                 {
                   "name": "No Tofu",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Kanis Golden Thai Thyme",
+          "description": "Quinoa-brown rice golden Burmese chickpea tofu roasted vegetables cucumber pickled cabbage and carrot basil and sweet chile-lime glaze.",
+          "price": 11.89,
+          "options": [
+            {
+              "name": "Kanis Thai Thyme",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No Brown Rice and Quinoa",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Carrots",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Cucumbers",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Pickled Cabbage",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Roasted Vegetables",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Sweet chili Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Thai Spiced Tofu",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2142,18 +2142,18 @@
           "is_hidden": false
         },
         {
-          "name": "Pomegranite Limeade",
+          "name": "Ginger Mint Iced Tea",
           "description": "",
-          "price": 3.99,
+          "price": 2.99,
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
           "is_hidden": false
         },
         {
-          "name": "Ginger Mint Iced Tea",
+          "name": "Pomegranite Limeade",
           "description": "",
-          "price": 2.99,
+          "price": 3.99,
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
