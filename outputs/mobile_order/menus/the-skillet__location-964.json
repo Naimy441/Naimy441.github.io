@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-08 13:24:34",
-  "menu_last_updated": "2026-10-08 13:24:35",
+  "retrieved_at": "2026-10-09 00:06:49",
+  "menu_last_updated": "2026-10-09 00:06:49",
   "sections": [
     {
       "name": "Specials",
@@ -321,15 +321,6 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Beef Brisket Sandwich Combo",
-          "description": "Beef Bricket Sandwich with side of Succotash",
-          "price": 13.99,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Sauteed Catfish Combo",
           "description": "Locally source catfish with Diced Potatoes Bacon Collard Greens and Hushpuppies",
           "price": 14.99,
@@ -342,6 +333,15 @@
           "name": "Vegetarian Omelet Combo",
           "description": "Mushrooms Peppers Onions Arugula Goat Cheese and Vegetarian Sausage with side Wheat Toast and Mixed Fruit",
           "price": 10.59,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Beef Brisket Sandwich Combo",
+          "description": "Beef Bricket Sandwich with side of Succotash",
+          "price": 13.99,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -4477,7 +4477,7 @@
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
-          "is_hidden": false
+          "is_hidden": true
         },
         {
           "name": "Potato Salad",
@@ -4495,7 +4495,7 @@
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
-          "is_hidden": false
+          "is_hidden": true
         },
         {
           "name": "Watermelon Salad",
@@ -7182,6 +7182,76 @@
           "is_hidden": false
         },
         {
+          "name": "Bacon",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Southern Grits",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Country Ham",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Mixed Fruit",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Cinnamon Oatmeal",
+          "description": "",
+          "price": 3.19,
+          "options": [
+            {
+              "name": "Oatmeal Option",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Berries",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chocolate Chips",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "3 Eggs",
           "description": "",
           "price": 2.99,
@@ -7280,84 +7350,6 @@
           "is_hidden": false
         },
         {
-          "name": "Bacon",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Southern Grits",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Pork Sausage",
-          "description": "",
-          "price": 3.19,
-          "options": [
-            {
-              "name": "Sausage Selection",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Pork Sausage Patty",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Turkey Sausage Link",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Veggie Sausage Patty",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Country Ham",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Mixed Fruit",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Morning Star Sausage",
           "description": "",
           "price": 3.19,
@@ -7430,27 +7422,35 @@
           "is_hidden": false
         },
         {
-          "name": "Cinnamon Oatmeal",
+          "name": "Pork Sausage",
           "description": "",
           "price": 3.19,
           "options": [
             {
-              "name": "Oatmeal Option",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
+              "name": "Sausage Selection",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
               "values": [
                 {
-                  "name": "Berries",
-                  "price": 1.39,
+                  "name": "Pork Sausage Patty",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Turkey Sausage Link",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Chocolate Chips",
-                  "price": 1.39,
+                  "name": "Veggie Sausage Patty",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -7524,18 +7524,18 @@
           "is_hidden": false
         },
         {
-          "name": "Smartwater 20oz",
+          "name": "Body Armor",
           "description": "",
-          "price": 2.09,
+          "price": 4.19,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
         },
         {
-          "name": "Body Armor",
+          "name": "Smartwater 20oz",
           "description": "",
-          "price": 4.19,
+          "price": 2.09,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -7548,7 +7548,7 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Banana Pudding",
+          "name": "Apple Cobbler",
           "description": "",
           "price": 4.99,
           "options": [],
@@ -7557,7 +7557,7 @@
           "is_hidden": false
         },
         {
-          "name": "Apple Cobbler",
+          "name": "Banana Pudding",
           "description": "",
           "price": 4.99,
           "options": [],
