@@ -4,10 +4,10 @@
   "location_id": 2095,
   "cafeteria_id": 1905,
   "icon_image_url": "campuses/icon_location_19_18_127_1756835590933.jpg",
-  "estimated_wait_time_minutes": 12,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "08:00:00",
     "close": "15:00:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-09-23 17:09:50",
-  "menu_last_updated": "2026-09-23 17:09:50",
+  "retrieved_at": "2026-10-09 18:08:29",
+  "menu_last_updated": "2026-10-09 18:08:30",
   "sections": [
     {
       "name": "Coffee",
@@ -4760,40 +4760,6 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Loaves",
-          "description": "",
-          "price": 4.29,
-          "options": [
-            {
-              "name": "Loaves Options",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Iced Lemon Pound Cake",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Iced Pumpkin Vanilla Swirl",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Muffins",
           "description": "",
           "price": 4.29,
@@ -4822,6 +4788,40 @@
                 },
                 {
                   "name": "Lemon Cranberry",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Loaves",
+          "description": "",
+          "price": 4.29,
+          "options": [
+            {
+              "name": "Loaves Options",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Iced Lemon Pound Cake",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Iced Pumpkin Vanilla Swirl",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
