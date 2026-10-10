@@ -1,6 +1,6 @@
 # Nutriuni menu match report
 
-Data version 2026-10-10T15:09:02+00:00.
+Data version 2026-10-10T21:07:48+00:00.
 
 
 ---
@@ -574,12 +574,12 @@ Source: mobile_order; NetNutrition units: The Farmstead, Sprout (106 labels). It
 
 **Breakfast**
 - `Avocado Toast` → **Avocado Toast** (Sandwich (229g), 410 kcal) [exact 2.08]
-- `Breakfast Potatoes` → **Breakfast Potatoes** (3.7 oz Portion (105g), 260 kcal) [exact 2.00]
 - ❔ `French Toast` unmatched (closest: French Toast Sticks 0.92)
-- `Plain Oatmeal (No toppings)` → **Oatmeal** (7.5 oz Portion (213g), 150 kcal) [manual]
-- ❔ `Tofu Scramble and Potatoes` unmatched (closest: Tofu Scramble 0.94)
 - `Breakfast burrito` → **Breakfast Burrito** (Burrito (244g), 300 kcal) [exact 2.00]
 - `Oatmeal (3 Toppings)` → **Oatmeal** (7.5 oz Portion (213g), 150 kcal) [exact 2.08]
+- `Breakfast Potatoes` → **Breakfast Potatoes** (3.7 oz Portion (105g), 260 kcal) [exact 2.00]
+- `Plain Oatmeal (No toppings)` → **Oatmeal** (7.5 oz Portion (213g), 150 kcal) [manual]
+- ❔ `Tofu Scramble and Potatoes` unmatched (closest: Tofu Scramble 0.94)
 
 **Farmstead Sandwiches**
 - `Farmstead Lamb Gyro` → **Farmstead Lamb Gyro** (Sandwich (283g), 620 kcal) [fuzzy 1.08]
@@ -2020,8 +2020,8 @@ Source: mobile_order; NetNutrition units: The Pitchfork (88 labels). Items with 
 
 **Biscuits Bagels Pancakes**
 - `Lox & Bagel` → **Lox and Bagel** (Sandwich (288g), 580 kcal) [exact 2.00]
-- ❔ `Fried Chicken Biscuit` unmatched (closest: Fried Chicken Breast 0.76)
 - `Plain Bagel` → **Plain Bagel** (Bagel (113g), 300 kcal) [fuzzy 1.00]
+- ❔ `Fried Chicken Biscuit` unmatched (closest: Fried Chicken Breast 0.76)
 - `Breakfast Biscuit` → **Breakfast Biscuit** (Biscuit (80g), 250 kcal) [exact 2.00]
 - ❔ `Breakfast Biscuit Protein` unmatched (closest: Breakfast Biscuit 0.80)
 - ❔ `Breakfast Biscuit Egg Cheese & Protein` unmatched (closest: Breakfast Biscuit 0.68)
@@ -2034,14 +2034,14 @@ Source: mobile_order; NetNutrition units: The Pitchfork (88 labels). Items with 
 - `Breakfast Quesadilla` → **Breakfast Quesadilla** (Quesadilla (442g), 890 kcal) [exact 2.00]
 
 **Eggs and Omelettes**
-- `Eggs Your Way` → **Egg Your Way** (2 Egg Portion (92g), 140 kcal) [exact 2.00]
 - `Build Your Own Omelette` composed from its options
+- `Eggs Your Way` → **Egg Your Way** (2 Egg Portion (92g), 140 kcal) [exact 2.00]
 
 **Salads**
+- `E Tu Caesar Salad` → **E Tu Caesar Salad** (Salad (340g), 700 kcal) [exact 2.00]
 - `Arugula Salad` → **Arugula Salad** (Salad (396g), 520 kcal) [exact 2.00]
 - `California Club Salad` → **California Club Salad** (Salad (510g), 960 kcal) [exact 2.00]
 - `Kale Salad` → **Kale Salad** (Salad (323g), 550 kcal) [exact 2.00]
-- `E Tu Caesar Salad` → **E Tu Caesar Salad** (Salad (340g), 700 kcal) [exact 2.00]
 
 **Entrees**
 - `Spaghetti and Meatballs` → **Spaghetti and Meatballs** (Portion (709g), 1350 kcal) [exact 2.00]
@@ -2112,14 +2112,14 @@ Source: mobile_order; NetNutrition units: The Pitchfork (88 labels). Items with 
 **Cold Beverages**
 
 **Grub Late Night**
-- `Black Angus Burger` → **Black Angus Burger** (Sandwich (373g), 720 kcal) [exact 2.08]
 - `Fried Chicken Sandwich` → **Fried Chicken Sandwich** (Sandwich (302g), 670 kcal) [exact 2.00]
-- `Falafel Sandwich on Pita` → **Falafel Sandwich on Whole Wheat Pita** (Sandwich (374g), 810 kcal) [manual]
-- `Grilled Chicken Sandwich` → **Grilled Chicken Sandwich** (Sandwich (293g), 490 kcal) [exact 2.00]
 - `Mac and Cheese Bites` → **Mac and Cheese Bites** (15 Piece Portion (340g), 1250 kcal) [exact 2.08]
-- `Grilled Cheese Sandwich` → **Grilled Cheese Sandwich** (Sandwich (214g), 830 kcal) [exact 2.08]
-- ❔ `Grilled Quesadilla` unmatched (closest: Cheese Quesadilla 0.66)
 - `Vegetable Samosas` → **Vegetable Samosas with Tomato Chutney** (4 Piece Portion (292g), 820 kcal) [manual]
+- `Black Angus Burger` → **Black Angus Burger** (Sandwich (373g), 720 kcal) [exact 2.08]
+- `Grilled Cheese Sandwich` → **Grilled Cheese Sandwich** (Sandwich (214g), 830 kcal) [exact 2.08]
+- `Grilled Chicken Sandwich` → **Grilled Chicken Sandwich** (Sandwich (293g), 490 kcal) [exact 2.00]
+- `Falafel Sandwich on Pita` → **Falafel Sandwich on Whole Wheat Pita** (Sandwich (374g), 810 kcal) [manual]
+- ❔ `Grilled Quesadilla` unmatched (closest: Cheese Quesadilla 0.66)
 - `Chicken Tenders` → **Chicken Tenders** (7.8 oz Portion (221g), 600 kcal) [exact 2.08]
 
 **Option values**
