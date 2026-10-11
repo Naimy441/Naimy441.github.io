@@ -1,6 +1,6 @@
 # Nutriuni menu match report
 
-Data version 2026-10-11T12:07:50+00:00.
+Data version 2026-10-11T15:08:20+00:00.
 
 
 ---
@@ -3094,8 +3094,8 @@ Source: mobile_order; NetNutrition units: The Skillet (107 labels). Items with n
 **Lunch Handhelds**
 - `Shrimp Po Boy` → **Shrimp Po' Boy** (Sandwich (313g), 810 kcal) [exact 2.00]
 - `BLT` → **BLT Sandwich** (Sandwich (325g), 860 kcal) [manual]
-- `Pulled Pork Sandwich` → **Pulled Pork Sandwich** (Sandwich (184g), 500 kcal) [exact 2.00]
 - ❔ `Smoked Beef Brisket Sandwich` unmatched (closest: Smoked Beef Brisket 0.88)
+- `Pulled Pork Sandwich` → **Pulled Pork Sandwich** (Sandwich (184g), 500 kcal) [exact 2.00]
 - ❔ `Fried Chicken Sandwich` unmatched (closest: Fried Chicken Breast 0.80)
 
 **Lunch-Dinner Plates**
@@ -3144,14 +3144,14 @@ Source: mobile_order; NetNutrition units: The Skillet (107 labels). Items with n
 - ❔ `Southern Grits` unmatched (closest: Plain Grits 0.75)
 - `Country Ham` → **Country Ham** (2 Slice Portion (71g), 220 kcal) [exact 2.08]
 - `Mixed Fruit` → **Mixed Fruit** (3 oz Portion (102g), 35 kcal) [exact 2.08]
-- `Cinnamon Oatmeal` → **Cinnamon Oatmeal** (6 oz Portion (170g), 150 kcal) [exact 2.08]
-- ❔ `3 Eggs` unmatched (closest: Cooked Eggs 0.84)
 - `Tater Tots` → **Tater Tots** (4 oz Portion (113g), 290 kcal) [exact 2.08]
 - `Turkey Sausage` → **Turkey Sausage** (4 oz Portion (113g), 210 kcal) [exact 2.08]
 - `Vanilla Greek Yogurt Cup` → **Greek Vanilla Yogurt** (5 oz Portion (142g), 100 kcal) [exact 2.08]
-- `Plain Grits` → **Plain Grits** (4 oz Portion (113g), 70 kcal) [fuzzy 1.08]
 - `Pork Sausage` variants: Pork Sausage Patty ⇐ ['patty']
 - `Pork Sausage` → **Pork Sausage Patty** (4 oz Portion (113g), 370 kcal) [variant]
+- `Plain Grits` → **Plain Grits** (4 oz Portion (113g), 70 kcal) [fuzzy 1.08]
+- `Cinnamon Oatmeal` → **Cinnamon Oatmeal** (6 oz Portion (170g), 150 kcal) [exact 2.08]
+- ❔ `3 Eggs` unmatched (closest: Cooked Eggs 0.84)
 
 **Beverages**
 - ❔ `Fair Life Strawberry Milk` unmatched (closest: Strawberries 0.57)
