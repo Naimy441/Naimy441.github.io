@@ -4,7 +4,7 @@
   "location_id": 236,
   "cafeteria_id": 194,
   "icon_image_url": "campuses/icon_restaurant_19_18_129_1594924391116.jpg",
-  "estimated_wait_time_minutes": 32,
+  "estimated_wait_time_minutes": 10,
   "currently_open": true,
   "takeout_open": true,
   "delivery_open": true,
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-14 13:12:52",
-  "menu_last_updated": "2026-10-14 13:12:53",
+  "retrieved_at": "2026-10-15 15:45:19",
+  "menu_last_updated": "2026-10-15 15:45:20",
   "sections": [
     {
       "name": "Specials",
@@ -128,6 +128,38 @@
           "description": "",
           "price": 5.0,
           "options": [
+            {
+              "name": "Whole Fruit Option",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Apple",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Banana",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Orange",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
             {
               "name": "Meal Deal Option",
               "minimum": 0,
@@ -200,38 +232,6 @@
                 },
                 {
                   "name": "Pumpkin Sweet Bread",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Whole Fruit Option",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Apple",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Banana",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Orange",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -3083,8 +3083,8 @@
           "is_hidden": false
         },
         {
-          "name": "Orange",
-          "description": "",
+          "name": "Healthy Boost",
+          "description": "beet green apple celery carrot ginger",
           "price": 6.45,
           "options": [],
           "busy_min": 15,
@@ -3092,8 +3092,8 @@
           "is_hidden": false
         },
         {
-          "name": "Healthy Boost",
-          "description": "beet green apple celery carrot ginger",
+          "name": "Orange",
+          "description": "",
           "price": 6.45,
           "options": [],
           "busy_min": 15,
@@ -6501,24 +6501,6 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Egg n Cheese Croissant",
-          "description": "",
-          "price": 6.45,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Greek Scrambler",
-          "description": "",
-          "price": 6.95,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "French Beef",
           "description": "Mills Family Farm grass-fed beef organic arugula Swiss caramelized onion tomoto White French",
           "price": 11.35,
@@ -6596,6 +6578,15 @@
               ]
             }
           ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Greek Scrambler",
+          "description": "",
+          "price": 6.95,
+          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -6693,9 +6684,18 @@
           "is_hidden": false
         },
         {
-          "name": "Crispy Chicken & Pimento Cheese",
-          "description": "Chicken tenders pimento cheese pickles arugula oil blend and garlic on sourdough bread",
-          "price": 10.99,
+          "name": "Egg n Cheese Croissant",
+          "description": "",
+          "price": 6.45,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Chicken Pesto",
+          "description": "A hot sandwich with grilled chicken pesto and melted mozzarella cheese. Served with a side of chips.",
+          "price": 10.69,
           "options": [
             {
               "name": "Sandwich Side Option",
@@ -6727,9 +6727,9 @@
           "is_hidden": false
         },
         {
-          "name": "Chicken Pesto",
-          "description": "A hot sandwich with grilled chicken pesto and melted mozzarella cheese. Served with a side of chips.",
-          "price": 10.69,
+          "name": "Crispy Chicken & Pimento Cheese",
+          "description": "Chicken tenders pimento cheese pickles arugula oil blend and garlic on sourdough bread",
+          "price": 10.99,
           "options": [
             {
               "name": "Sandwich Side Option",
@@ -6810,6 +6810,24 @@
           "is_hidden": true
         },
         {
+          "name": "Chicken Shawarma",
+          "description": "all-natural grilled chicken romaine tomato parsley lemon aioli",
+          "price": 9.75,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Falafel",
+          "description": "mixed field greens tomato green pepper pickle lemon tahini",
+          "price": 7.49,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Chicken Caesar Wrap",
           "description": "",
           "price": 9.45,
@@ -6822,15 +6840,6 @@
           "name": "Chicken Salad Croissant",
           "description": "signature chicken salad red onion celery herbed mayonnaise",
           "price": 9.09,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Falafel",
-          "description": "mixed field greens tomato green pepper pickle lemon tahini",
-          "price": 7.49,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -6891,33 +6900,6 @@
           "is_hidden": false
         },
         {
-          "name": "Quesadilla",
-          "description": "",
-          "price": 7.49,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Hummus Veggie Sandwich",
-          "description": "",
-          "price": 6.55,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Chicken Shawarma",
-          "description": "all-natural grilled chicken romaine tomato parsley lemon aioli",
-          "price": 9.75,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Turkey Chimichurri Sandwich",
           "description": "house pickled onion Swiss chimichurri kale slaw",
           "price": 10.05,
@@ -6949,6 +6931,24 @@
           ],
           "busy_min": 15,
           "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Quesadilla",
+          "description": "",
+          "price": 7.49,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Hummus Veggie Sandwich",
+          "description": "",
+          "price": 6.55,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
           "is_hidden": false
         }
       ]
@@ -7099,24 +7099,6 @@
           "is_hidden": true
         },
         {
-          "name": "Hummus & Pita",
-          "description": "",
-          "price": 6.59,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Veggies and Dip",
-          "description": "",
-          "price": 5.69,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Penne Pesto",
           "description": "",
           "price": 5.69,
@@ -7129,6 +7111,24 @@
           "name": "Yogurt",
           "description": "",
           "price": 3.25,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Hummus & Pita",
+          "description": "",
+          "price": 6.59,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Veggies and Dip",
+          "description": "",
+          "price": 5.69,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -7249,15 +7249,6 @@
           "is_hidden": false
         },
         {
-          "name": "Croissant",
-          "description": "",
-          "price": 4.09,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
           "name": "Manhattan Crumb Cake",
           "description": "",
           "price": 4.29,
@@ -7279,6 +7270,15 @@
           "name": "4 inch Cake",
           "description": "",
           "price": 20.79,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Croissant",
+          "description": "",
+          "price": 4.09,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -7348,24 +7348,6 @@
           "is_hidden": false
         },
         {
-          "name": "Chocolate Covered Strawberry (EACH)",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Banana Bread",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
           "name": "Danish",
           "description": "",
           "price": 4.29,
@@ -7400,77 +7382,21 @@
           "is_hidden": true
         },
         {
-          "name": "Dessert Bar",
+          "name": "Chocolate Covered Strawberry (EACH)",
           "description": "",
           "price": 4.29,
-          "options": [
-            {
-              "name": "Dessert Bar",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Cheesecake Brownie",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Fudge Walnut Brownie",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Lemon Bar",
-                  "price": 0.55,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Salted Caramel Fudge Bar",
-                  "price": 0.55,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pecan Bar",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Salted Caramel Fudge Nut Bar (V)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Lemon Bar",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
+          "options": [],
           "busy_min": 15,
           "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Banana Bread",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
           "is_hidden": false
         },
         {
@@ -7533,18 +7459,18 @@
           "is_hidden": false
         },
         {
-          "name": "Sweet Bread",
+          "name": "Dessert Bar",
           "description": "",
           "price": 4.29,
           "options": [
             {
-              "name": "Sweet Breads Option",
+              "name": "Dessert Bar",
               "minimum": 0,
               "maximum": 1,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Apple Rum",
+                  "name": "Cheesecake Brownie",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -7552,15 +7478,47 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Pumpkin",
+                  "name": "Fudge Walnut Brownie",
                   "price": 0.0,
                   "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Lemon",
+                  "name": "Lemon Bar",
+                  "price": 0.55,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Salted Caramel Fudge Bar",
+                  "price": 0.55,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pecan Bar",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Salted Caramel Fudge Nut Bar (V)",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Lemon Bar",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -7639,6 +7597,48 @@
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Sweet Bread",
+          "description": "",
+          "price": 4.29,
+          "options": [
+            {
+              "name": "Sweet Breads Option",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Apple Rum",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pumpkin",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Lemon",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 }
               ]

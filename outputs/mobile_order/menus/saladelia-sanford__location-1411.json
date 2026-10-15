@@ -4,10 +4,10 @@
   "location_id": 1411,
   "cafeteria_id": 1267,
   "icon_image_url": "campuses/icon_location_19_18_127_1757693875654.jpg",
-  "estimated_wait_time_minutes": 9,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "08:00:00",
     "close": "15:00:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-15 14:28:17",
-  "menu_last_updated": "2026-10-15 14:28:18",
+  "retrieved_at": "2026-10-15 17:53:19",
+  "menu_last_updated": "2026-10-15 17:53:20",
   "sections": [
     {
       "name": "Specials",
@@ -1953,18 +1953,18 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Salmon Bowl",
+          "name": "Southwest Chicken Bowl",
           "description": "",
-          "price": 13.55,
+          "price": 10.99,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
         },
         {
-          "name": "Southwest Chicken Bowl",
+          "name": "Salmon Bowl",
           "description": "",
-          "price": 10.99,
+          "price": 13.55,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -2358,6 +2358,15 @@
           "is_hidden": false
         },
         {
+          "name": "Breakfast Croissant",
+          "description": "",
+          "price": 6.95,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Crispy Chicken Panini",
           "description": "",
           "price": 10.99,
@@ -2539,15 +2548,6 @@
               ]
             }
           ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Breakfast Croissant",
-          "description": "",
-          "price": 6.95,
-          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -2850,24 +2850,6 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Chicken Shawarma",
-          "description": "",
-          "price": 9.75,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Falafel Pita",
-          "description": "",
-          "price": 7.49,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Hummus Veggie Wrap",
           "description": "",
           "price": 6.55,
@@ -2938,6 +2920,24 @@
           "busy_min": 5,
           "normal_min": 3,
           "is_hidden": false
+        },
+        {
+          "name": "Chicken Shawarma",
+          "description": "",
+          "price": 9.75,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Falafel Pita",
+          "description": "",
+          "price": 7.49,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
         }
       ]
     },
@@ -2968,6 +2968,56 @@
           "description": "",
           "price": 4.09,
           "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Breads",
+          "description": "",
+          "price": 4.29,
+          "options": [
+            {
+              "name": "Bread Options",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Apple rum raisin",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pumpkin",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Lemon",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Banana",
+                  "price": 4.29,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -3027,56 +3077,6 @@
           "is_hidden": false
         },
         {
-          "name": "Breads",
-          "description": "",
-          "price": 4.29,
-          "options": [
-            {
-              "name": "Bread Options",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Apple rum raisin",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pumpkin",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Lemon",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Banana",
-                  "price": 4.29,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Cookie",
           "description": "",
           "price": 0.0,
@@ -3106,40 +3106,6 @@
                 {
                   "name": "Oatmeal Raisin",
                   "price": 2.69,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Dessert Bar",
-          "description": "",
-          "price": 4.29,
-          "options": [
-            {
-              "name": "SAN - Dessert Bar",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Cheesecake Brownie",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Lemon Bar",
-                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -3185,6 +3151,40 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
+        },
+        {
+          "name": "Dessert Bar",
+          "description": "",
+          "price": 4.29,
+          "options": [
+            {
+              "name": "SAN - Dessert Bar",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Cheesecake Brownie",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Lemon Bar",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
         }
       ]
     },
@@ -3192,6 +3192,15 @@
       "name": "Bottled Beverages",
       "is_hidden": false,
       "items": [
+        {
+          "name": "Kombucha",
+          "description": "",
+          "price": 5.99,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
         {
           "name": "Boxed Water",
           "description": "",
@@ -3226,15 +3235,6 @@
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Kombucha",
-          "description": "",
-          "price": 5.99,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
           "is_hidden": false
         },
         {

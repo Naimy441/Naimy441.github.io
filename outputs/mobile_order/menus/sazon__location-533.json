@@ -4,7 +4,7 @@
   "location_id": 533,
   "cafeteria_id": 475,
   "icon_image_url": "campuses/icon_location_19_18_127_1701729943321.jpg",
-  "estimated_wait_time_minutes": 18,
+  "estimated_wait_time_minutes": 12,
   "currently_open": true,
   "takeout_open": true,
   "delivery_open": true,
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-15 02:02:35",
-  "menu_last_updated": "2026-10-15 02:02:36",
+  "retrieved_at": "2026-10-15 20:30:14",
+  "menu_last_updated": "2026-10-15 20:30:15",
   "sections": [
     {
       "name": "SAZ - Game Day Specials Online",
@@ -239,6 +239,30 @@
           "price": 13.55,
           "options": [
             {
+              "name": "Taco Tortilla Option",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Corn tortilla",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Flour tortilla",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
               "name": "Base Options",
               "minimum": 0,
               "maximum": 1,
@@ -274,30 +298,6 @@
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Taco Tortilla Option",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Corn tortilla",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Flour tortilla",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
                   "max_quantity": 0
                 }
               ]
@@ -1254,34 +1254,10 @@
           "is_hidden": false
         },
         {
-          "name": "Burrito",
-          "description": "Burrito with Chips and Salsa",
+          "name": "Quesadilla",
+          "description": "Grilled flour tortillas with cheese and your choice of topping",
           "price": 13.55,
           "options": [
-            {
-              "name": "Cheese Option",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Monterrey Jack Cheese",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Cheese",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
             {
               "name": "Base Options",
               "minimum": 0,
@@ -1744,10 +1720,34 @@
           "is_hidden": false
         },
         {
-          "name": "Quesadilla",
-          "description": "Grilled flour tortillas with cheese and your choice of topping",
+          "name": "Burrito",
+          "description": "Burrito with Chips and Salsa",
           "price": 13.55,
           "options": [
+            {
+              "name": "Cheese Option",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Monterrey Jack Cheese",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Cheese",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
             {
               "name": "Base Options",
               "minimum": 0,
