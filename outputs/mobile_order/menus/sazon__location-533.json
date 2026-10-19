@@ -4,7 +4,7 @@
   "location_id": 533,
   "cafeteria_id": 475,
   "icon_image_url": "campuses/icon_location_19_18_127_1701729943321.jpg",
-  "estimated_wait_time_minutes": 12,
+  "estimated_wait_time_minutes": 13,
   "currently_open": true,
   "takeout_open": true,
   "delivery_open": true,
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-19 14:44:49",
-  "menu_last_updated": "2026-10-19 14:44:50",
+  "retrieved_at": "2026-10-19 18:48:42",
+  "menu_last_updated": "2026-10-19 18:48:43",
   "sections": [
     {
       "name": "SAZ - Game Day Specials Online",
@@ -210,18 +210,18 @@
           "is_hidden": false
         },
         {
-          "name": "Vegan Arepa Bowl",
-          "description": "Romaine Brown Rice Black Beans Mushrooms Arepa Peppers and Onions Guacamole Pico de Gallo Roasted Corn Salsa Habanero Coleslaw",
-          "price": 10.59,
+          "name": "Shrimp Tacos",
+          "description": "Shredded Cheese Brown Rice Shredded Romaine Blackened Shrimp Plantains Pico de Gallo Roasted Corn Salsa Habanero Coleslaw",
+          "price": 14.55,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
         },
         {
-          "name": "Shrimp Tacos",
-          "description": "Shredded Cheese Brown Rice Shredded Romaine Blackened Shrimp Plantains Pico de Gallo Roasted Corn Salsa Habanero Coleslaw",
-          "price": 14.55,
+          "name": "Vegan Arepa Bowl",
+          "description": "Romaine Brown Rice Black Beans Mushrooms Arepa Peppers and Onions Guacamole Pico de Gallo Roasted Corn Salsa Habanero Coleslaw",
+          "price": 10.59,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -238,6 +238,30 @@
           "description": "2 Tacos with choice of protein and toppings",
           "price": 13.55,
           "options": [
+            {
+              "name": "Taco Tortilla Option",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Corn tortilla",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Flour tortilla",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
             {
               "name": "Base Options",
               "minimum": 0,
@@ -274,30 +298,6 @@
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Taco Tortilla Option",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Corn tortilla",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Flour tortilla",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
                   "max_quantity": 0
                 }
               ]
@@ -2469,6 +2469,15 @@
           "is_hidden": false
         },
         {
+          "name": "Guacamole",
+          "description": "",
+          "price": 1.95,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Maduros",
           "description": "",
           "price": 2.69,
@@ -2517,15 +2526,6 @@
           "name": "White Rice",
           "description": "",
           "price": 2.69,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Guacamole",
-          "description": "",
-          "price": 1.95,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
