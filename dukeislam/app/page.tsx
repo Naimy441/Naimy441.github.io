@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, CalendarDays, MapPin, UtensilsCrossed } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Hero } from "@/components/home/hero";
 import { StatCounter } from "@/components/home/stat-counter";
@@ -103,13 +104,21 @@ export default async function Home() {
                 </p>
               )}
 
-              <Link
-                href="/food"
-                className="group mt-auto inline-flex items-center gap-1 text-sm font-medium text-primary"
-              >
-                See the full menu
-                <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
-              </Link>
+              <div className="mt-auto flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-border/40">
+                <Link
+                  href="/food"
+                  className="group inline-flex items-center gap-1 text-sm font-medium text-primary"
+                >
+                  See the full menu
+                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
+                </Link>
+                <Button asChild variant="outline" size="sm" className="h-8 rounded-lg text-xs gap-1.5 border-primary/30 hover:border-primary hover:bg-primary/5">
+                  <Link href="/food/map">
+                    <MapPin className="size-3.5 text-primary" />
+                    Campus Map
+                  </Link>
+                </Button>
+              </div>
             </CardContent>
           </Card>
         </FadeIn>

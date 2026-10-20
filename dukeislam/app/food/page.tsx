@@ -3,11 +3,19 @@ import { getHalalMenu } from "@/lib/menus";
 import { getNutritionMap } from "@/lib/nutrition";
 import { FoodExplorer } from "@/components/food/food-explorer";
 import { PageHeader } from "@/components/page-header";
+import { FoodViewSwitcher } from "@/components/food/view-switcher";
 
 export const metadata: Metadata = {
-  title: "Halal Food",
+  title: "Duke Halal Dining & Campus Menus",
   description:
-    "Halal items being served on Duke's campus today, with hours and nutrition facts.",
+    "Duke Islam campus guide to halal food at Duke University: daily halal menus, Brodhead Center food stalls, live hours, and nutrition facts.",
+  keywords: [
+    "Duke Islam halal",
+    "Duke halal food",
+    "Duke campus dining",
+    "Brodhead Center halal",
+    "Duke University halal",
+  ],
 };
 
 export default async function FoodPage() {
@@ -22,12 +30,18 @@ export default async function FoodPage() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 md:py-10">
-      <PageHeader
-        title="Halal food"
-        accent="today"
-        description="What's being served on campus right now. Tap a dish for nutrition facts."
-      />
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between mb-2">
+        <PageHeader
+          title="Halal food"
+          accent="today"
+          description="What's being served on campus right now. Tap a dish for nutrition facts."
+        />
+        <div className="shrink-0 mb-4 sm:mb-0">
+          <FoodViewSwitcher />
+        </div>
+      </div>
       <FoodExplorer menu={menu} nutrition={nutrition} />
     </div>
   );
 }
+

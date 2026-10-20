@@ -1,4 +1,4 @@
-import { CalendarDays, Home, UtensilsCrossed, type LucideIcon } from "lucide-react";
+import { CalendarDays, Home, MapPin, UtensilsCrossed, type LucideIcon } from "lucide-react";
 
 export interface NavLink {
   href: string;
@@ -9,5 +9,7 @@ export interface NavLink {
 export const navLinks: NavLink[] = [
   { href: "/", label: "Home", icon: Home },
   { href: "/food", label: "Food", icon: UtensilsCrossed },
+  { href: "/food/map", label: "Map", icon: MapPin },
   { href: "/events", label: "Events", icon: CalendarDays },
 ];
+

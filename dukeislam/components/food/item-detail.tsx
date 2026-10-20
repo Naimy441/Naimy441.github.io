@@ -42,7 +42,10 @@ export function ItemDetail({ open, onOpenChange, info, itemName, restaurant }: P
   if (isDesktop) {
     return (
       <Dialog open={open} onOpenChange={onOpenChange}>
-        <DialogContent className="max-h-[85vh] max-w-md gap-0 overflow-hidden p-0">
+        <DialogContent
+          overlayClassName="bg-transparent backdrop-blur-none"
+          className="max-h-[85vh] max-w-md gap-0 overflow-hidden p-0 shadow-2xl border bg-background"
+        >
           <DialogHeader className="border-b px-6 py-4 text-left">
             <DialogTitle className="text-lg">{itemName}</DialogTitle>
             <DialogDescription>{restaurant} · Halal certified</DialogDescription>
@@ -57,7 +60,10 @@ export function ItemDetail({ open, onOpenChange, info, itemName, restaurant }: P
 
   return (
     <Drawer open={open} onOpenChange={onOpenChange}>
-      <DrawerContent className="max-h-[92dvh]">
+      <DrawerContent
+        overlayClassName="bg-transparent backdrop-blur-none"
+        className="max-h-[92dvh] shadow-2xl border-t bg-background"
+      >
         <DrawerHeader className="border-b pb-3 text-left">
           <DrawerTitle className="text-lg">{itemName}</DrawerTitle>
           <DrawerDescription>{restaurant} · Halal certified</DrawerDescription>

@@ -117,6 +117,18 @@ repository.
   if the tokens are missing or expired, existing exports are preserved.
 - `mobile_order/refresh_menus.sh` is the separate local Mac-app/session-capture
   workflow.
+- `src/duke_maps_client.py` scrapes Duke's official Maps GraphQL API
+  (`https://dm-graphql.api.oit.duke.edu/api`) to refresh campus building
+  footprints (GeoJSON polygons) and dining venue micro-coordinates.
+  *Note:* This is an on-demand utility not hooked to the daily catalog refresh,
+  as physical building boundaries rarely change. Run with:
+  ```bash
+  python3 src/duke_maps_client.py
+  # Inspect a single building (e.g. 35 for Brodhead Center):
+  python3 src/duke_maps_client.py --building-id 35
+  ```
+  Exports to `dukeislam/data/campus-buildings.json`,
+  `dukeislam/data/campus-dining-venues.json`, and `outputs/campus_buildings.geojson`.
 
 ## Website
 

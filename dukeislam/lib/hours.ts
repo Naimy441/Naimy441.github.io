@@ -50,3 +50,10 @@ export function isOpenNow(ranges: [number, number][] | null): boolean | null {
   const now = nowInEasternMinutes();
   return ranges.some(([start, end]) => now >= start && now < end);
 }
+
+export function isClosingSoon(ranges: [number, number][] | null): boolean {
+  if (!ranges) return false;
+  const now = nowInEasternMinutes();
+  return ranges.some(([start, end]) => now >= start && now < end && end - now <= 30);
+}
+

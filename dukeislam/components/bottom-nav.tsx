@@ -14,10 +14,14 @@ export function BottomNav() {
       aria-label="Primary"
       className="fixed inset-x-0 bottom-0 z-40 border-t border-border/50 bg-background/90 pb-[env(safe-area-inset-bottom)] backdrop-blur-md md:hidden"
     >
-      <div className="mx-auto grid h-14 max-w-md grid-cols-3">
+      <div className="mx-auto grid h-14 max-w-md grid-cols-4">
         {navLinks.map((link) => {
           const active =
-            link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
+            link.href === "/"
+              ? pathname === "/"
+              : link.href === "/food"
+              ? pathname === "/food"
+              : pathname.startsWith(link.href);
           const Icon = link.icon;
           return (
             <Link

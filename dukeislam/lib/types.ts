@@ -51,3 +51,61 @@ export interface MuslimEvent {
   start: string;
   end: string;
 }
+
+export interface DiningVenue {
+  id: string;
+  name: string;
+  menuName?: string;
+  building: string;
+  buildingId: number;
+  campus: "West" | "East" | "Central";
+  floor?: string;
+  coordinates: [number, number]; // [lat, lng]
+  isHalalCertified: boolean;
+  halalNotes?: string;
+  cuisine: string;
+  googleMapsUrl: string;
+  dukeMapsUrl: string;
+  mobileOrderId?: number | null;
+  iconUrl?: string;
+}
+
+export interface EnrichedDiningVenue extends DiningVenue {
+  liveRestaurant?: Restaurant;
+  isOpen: boolean | null;
+  isClosingSoon: boolean;
+  halalItemCount: number;
+  hoursString: string;
+}
+
+export interface CampusBuildingProperties {
+  id: string;
+  name: string;
+  shortName: string;
+  campus: "West" | "East" | "Central";
+  isFocus: boolean;
+  isLandmark?: boolean;
+  hasHalal: boolean;
+  fillColor: string;
+  strokeColor: string;
+  fillOpacity: number;
+  strokeWidth: number;
+  center: [number, number];
+  venueIds: string[];
+}
+
+export interface CampusBuildingFeature {
+  type: "Feature";
+  id: string;
+  properties: CampusBuildingProperties;
+  geometry: {
+    type: "Polygon" | "MultiPolygon";
+    coordinates: number[][][] | number[][][][];
+  };
+}
+
+export interface CampusBuildingsCollection {
+  type: "FeatureCollection";
+  features: CampusBuildingFeature[];
+}
+

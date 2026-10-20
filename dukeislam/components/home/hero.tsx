@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "motion/react";
-import { ArrowRight, CalendarDays, UtensilsCrossed } from "lucide-react";
+import { ArrowRight, CalendarDays, MapPin, UtensilsCrossed } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ease = [0.21, 0.47, 0.32, 0.98] as const;
@@ -27,17 +27,37 @@ export function Hero() {
           <span className="font-display italic text-primary">Duke</span>
         </motion.h1>
 
+        <motion.p
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.08, ease }}
+          className="mt-4 max-w-xl text-balance text-sm sm:text-base text-muted-foreground"
+        >
+          The central hub for Duke Islam — daily campus halal menus, verified prayer times, and Muslim student life at Duke University.
+        </motion.p>
+
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.12, ease }}
-          className="mt-7 flex w-full flex-col gap-2.5 sm:w-auto sm:flex-row"
+          className="mt-7 flex w-full flex-col gap-2.5 sm:w-auto sm:flex-row items-center justify-center"
         >
-          <Button asChild size="lg" className="h-11 rounded-full px-6 text-[15px]">
+          <Button asChild size="lg" className="h-11 rounded-full px-6 text-[15px] shadow-sm">
             <Link href="/food">
               <UtensilsCrossed className="size-4" />
               Today&apos;s menu
               <ArrowRight className="size-4 transition-transform group-hover/button:translate-x-0.5" />
+            </Link>
+          </Button>
+          <Button
+            asChild
+            size="lg"
+            variant="outline"
+            className="h-11 rounded-full bg-card/90 px-6 text-[15px] border-primary/40 hover:border-primary hover:bg-primary/5 transition-all shadow-xs"
+          >
+            <Link href="/food/map">
+              <MapPin className="size-4 text-primary" />
+              Campus Map
             </Link>
           </Button>
           <Button

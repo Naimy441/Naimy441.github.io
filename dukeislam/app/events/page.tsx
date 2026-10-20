@@ -4,8 +4,16 @@ import { EventsView } from "@/components/events/events-view";
 import { PageHeader } from "@/components/page-header";
 
 export const metadata: Metadata = {
-  title: "Events",
-  description: "Upcoming Muslim Life events at Duke University.",
+  title: "Duke Muslim Life Events & Activities",
+  description:
+    "Upcoming Duke Islam community events, Jummah prayer schedules, and Muslim Life student gatherings at Duke University.",
+  keywords: [
+    "Duke Islam events",
+    "Duke Muslim Life",
+    "Duke MSA",
+    "Duke Jummah",
+    "Duke University Muslim events",
+  ],
 };
 
 export default async function EventsPage() {
