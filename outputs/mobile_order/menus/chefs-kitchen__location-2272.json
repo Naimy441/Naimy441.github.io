@@ -4,10 +4,10 @@
   "location_id": 2272,
   "cafeteria_id": 2079,
   "icon_image_url": "campuses/icon_location_19_18_127_1735832782689.jpg",
-  "estimated_wait_time_minutes": 0,
-  "currently_open": false,
-  "takeout_open": false,
-  "delivery_open": false,
+  "estimated_wait_time_minutes": 12,
+  "currently_open": true,
+  "takeout_open": true,
+  "delivery_open": true,
   "takeout_hours": {
     "open": "10:30:00",
     "close": "15:30:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-19 18:35:49",
-  "menu_last_updated": "2026-10-19 18:35:50",
+  "retrieved_at": "2026-10-20 15:05:16",
+  "menu_last_updated": "2026-10-20 15:05:16",
   "sections": [
     {
       "name": "Specials",
@@ -129,18 +129,26 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "3-Coop Box",
-          "description": "3 chicken fingers seasoned crinkle-cut fries Texas toast choice of side and dipping sauce.",
-          "price": 12.85,
+          "name": "Hana Huli Huli Chicken",
+          "description": "Chicken marinated in our sweet and savory Huli Huli sauce and finished on our grill.",
+          "price": 11.99,
           "options": [
             {
-              "name": "Cook Option",
-              "minimum": 0,
-              "maximum": 50,
+              "name": "Base Options",
+              "minimum": 1,
+              "maximum": 1,
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Fried",
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mixed Greens",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -148,7 +156,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Grilled",
+                  "name": "White Rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -158,13 +166,13 @@
               ]
             },
             {
-              "name": "Coop Side Option",
+              "name": "Pick 2 Side Options",
               "minimum": 0,
-              "maximum": 1,
+              "maximum": 2,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Cajun Pasta Salad",
+                  "name": "Hawaiian Mac Salad",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -172,7 +180,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Coleslaw",
+                  "name": "Island Coleslaw",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -180,7 +188,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Crinkle-Cut Fries",
+                  "name": "Mango Avocado Salad",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -188,7 +196,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Fruit Cup",
+                  "name": "Mixed Fruit & Berries",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -196,7 +204,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Side",
+                  "name": "Roasted Vegetables",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sauteed Mixed Greens",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -206,13 +222,13 @@
               ]
             },
             {
-              "name": "Toast Option",
+              "name": "Pick 2 Toppings",
               "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": false,
+              "maximum": 2,
+              "allow_quantity": true,
               "values": [
                 {
-                  "name": "No Texas Toast",
+                  "name": "Green Onions",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -220,7 +236,31 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Texas Toast",
+                  "name": "Grilled Pineapple Slice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pickled Red Onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pineapple Salsa",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sesame Cucumbers",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -230,13 +270,13 @@
               ]
             },
             {
-              "name": "Dipping Sauce Options",
+              "name": "Sauce Options",
               "minimum": 0,
               "maximum": 1,
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Cajun Aioli",
+                  "name": "Huli Huli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -244,7 +284,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Coop Sauce",
+                  "name": "Pineapple Aioli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -252,23 +292,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ranch Dressing",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sriracha Thai Chili",
+                  "name": "Spicy Island Aioli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -283,18 +307,26 @@
           "is_hidden": false
         },
         {
-          "name": "Combo Box",
-          "description": "2 chicken fingers gator bites seasoned crinkle-cut fries Texas toast choice of side and dipping sauce.",
+          "name": "Island Shish Kabob",
+          "description": "Flame-cooked beef bites tossed in our house-made smoky teriyaki sauce.",
           "price": 13.99,
           "options": [
             {
-              "name": "Cook Option",
-              "minimum": 0,
-              "maximum": 50,
+              "name": "Base Options",
+              "minimum": 1,
+              "maximum": 1,
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Fried",
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mixed Greens",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -302,7 +334,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Grilled",
+                  "name": "White Rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -312,37 +344,13 @@
               ]
             },
             {
-              "name": "Toast Option",
+              "name": "Pick 2 Side Options",
               "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "No Texas Toast",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Texas Toast",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Coop Side Option",
-              "minimum": 0,
-              "maximum": 1,
+              "maximum": 2,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Cajun Pasta Salad",
+                  "name": "Hawaiian Mac Salad",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -350,7 +358,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Coleslaw",
+                  "name": "Island Coleslaw",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -358,7 +366,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Crinkle-Cut Fries",
+                  "name": "Mango Avocado Salad",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -366,7 +374,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Fruit Cup",
+                  "name": "Mixed Fruit & Berries",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -374,7 +382,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Side",
+                  "name": "Roasted Vegetables",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sauteed Mixed Greens",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -384,13 +400,61 @@
               ]
             },
             {
-              "name": "Dipping Sauce Options",
+              "name": "Pick 2 Toppings",
+              "minimum": 0,
+              "maximum": 2,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Green Onions",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Grilled Pineapple Slice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pickled Red Onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pineapple Salsa",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sesame Cucumbers",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Sauce Options",
               "minimum": 0,
               "maximum": 1,
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Cajun Aioli",
+                  "name": "Huli Huli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -398,7 +462,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Coop Sauce",
+                  "name": "Pineapple Aioli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -406,23 +470,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ranch Dressing",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sriracha Thai Chili",
+                  "name": "Spicy Island Aioli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -437,18 +485,26 @@
           "is_hidden": false
         },
         {
-          "name": "5-Coop Box",
-          "description": "5 chicken fingers seasoned crinkle-cut fries Texas toast choice of side and dipping sauce.",
-          "price": 13.99,
+          "name": "Blackened Mahi Mahi",
+          "description": "All baskets include fries coleslaw & hushpuppies",
+          "price": 15.29,
           "options": [
             {
-              "name": "Cook Option",
-              "minimum": 0,
-              "maximum": 50,
+              "name": "Base Options",
+              "minimum": 1,
+              "maximum": 1,
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Fried",
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mixed Greens",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -456,7 +512,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Grilled",
+                  "name": "White Rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -466,13 +522,13 @@
               ]
             },
             {
-              "name": "Coop Side Option",
+              "name": "Pick 2 Side Options",
               "minimum": 0,
-              "maximum": 1,
+              "maximum": 2,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Cajun Pasta Salad",
+                  "name": "Hawaiian Mac Salad",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -480,7 +536,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Coleslaw",
+                  "name": "Island Coleslaw",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -488,7 +544,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Crinkle-Cut Fries",
+                  "name": "Mango Avocado Salad",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -496,7 +552,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Fruit Cup",
+                  "name": "Mixed Fruit & Berries",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -504,7 +560,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Side",
+                  "name": "Roasted Vegetables",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sauteed Mixed Greens",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -514,13 +578,13 @@
               ]
             },
             {
-              "name": "Toast Option",
+              "name": "Pick 2 Toppings",
               "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": false,
+              "maximum": 2,
+              "allow_quantity": true,
               "values": [
                 {
-                  "name": "No Texas Toast",
+                  "name": "Green Onions",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -528,7 +592,31 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Texas Toast",
+                  "name": "Grilled Pineapple Slice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pickled Red Onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pineapple Salsa",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sesame Cucumbers",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -538,13 +626,13 @@
               ]
             },
             {
-              "name": "Dipping Sauce Options",
+              "name": "Sauce Options",
               "minimum": 0,
               "maximum": 1,
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Cajun Aioli",
+                  "name": "Huli Huli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -552,7 +640,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Coop Sauce",
+                  "name": "Pineapple Aioli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -560,23 +648,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ranch Dressing",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sriracha Thai Chili",
+                  "name": "Spicy Island Aioli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -591,18 +663,26 @@
           "is_hidden": false
         },
         {
-          "name": "Coop Sandwich Box",
-          "description": "3 chicken tenders on a brioche bun special sauce lettuce seasoned crinkle-cut fries and choice of side.",
-          "price": 12.85,
+          "name": "Hawaiian Fried Rice",
+          "description": "Grilled chicken eggs green onion pineapple and rice saut�ed in Polynesian sauce.",
+          "price": 11.99,
           "options": [
             {
-              "name": "Cook Option",
-              "minimum": 0,
-              "maximum": 50,
+              "name": "Base Options",
+              "minimum": 1,
+              "maximum": 1,
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Fried",
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mixed Greens",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -610,7 +690,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Grilled",
+                  "name": "White Rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -620,13 +700,13 @@
               ]
             },
             {
-              "name": "Coop Side Option",
+              "name": "Pick 2 Side Options",
               "minimum": 0,
-              "maximum": 1,
+              "maximum": 2,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Cajun Pasta Salad",
+                  "name": "Hawaiian Mac Salad",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -634,7 +714,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Coleslaw",
+                  "name": "Island Coleslaw",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -642,7 +722,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Crinkle-Cut Fries",
+                  "name": "Mango Avocado Salad",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -650,7 +730,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Fruit Cup",
+                  "name": "Mixed Fruit & Berries",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -658,7 +738,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Side",
+                  "name": "Roasted Vegetables",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sauteed Mixed Greens",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -668,13 +756,13 @@
               ]
             },
             {
-              "name": "Toast Option",
+              "name": "Pick 2 Toppings",
               "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": false,
+              "maximum": 2,
+              "allow_quantity": true,
               "values": [
                 {
-                  "name": "No Texas Toast",
+                  "name": "Green Onions",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -682,7 +770,31 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Texas Toast",
+                  "name": "Grilled Pineapple Slice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pickled Red Onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pineapple Salsa",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sesame Cucumbers",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -692,13 +804,13 @@
               ]
             },
             {
-              "name": "Dipping Sauce Options",
+              "name": "Sauce Options",
               "minimum": 0,
               "maximum": 1,
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Cajun Aioli",
+                  "name": "Huli Huli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -706,7 +818,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Coop Sauce",
+                  "name": "Pineapple Aioli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -714,23 +826,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ranch Dressing",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sriracha Thai Chili",
+                  "name": "Spicy Island Aioli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -745,18 +841,50 @@
           "is_hidden": false
         },
         {
-          "name": "Cajun Gator Box",
-          "description": "6-piece Cajun-seasoned alligator bites seasoned crinkle-cut fries Texas toast choice of side and dipping sauce.",
+          "name": "Pacific Rim Stir Fry",
+          "description": "",
           "price": 13.29,
           "options": [
             {
-              "name": "Coop Side Option",
-              "minimum": 0,
+              "name": "Base Options",
+              "minimum": 1,
               "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mixed Greens",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "White Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Pick 2 Side Options",
+              "minimum": 0,
+              "maximum": 2,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Cajun Pasta Salad",
+                  "name": "Hawaiian Mac Salad",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -764,7 +892,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Coleslaw",
+                  "name": "Island Coleslaw",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -772,7 +900,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Crinkle-Cut Fries",
+                  "name": "Mango Avocado Salad",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -780,7 +908,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Fruit Cup",
+                  "name": "Mixed Fruit & Berries",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -788,7 +916,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Side",
+                  "name": "Roasted Vegetables",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sauteed Mixed Greens",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -798,13 +934,13 @@
               ]
             },
             {
-              "name": "Toast Option",
+              "name": "Pick 2 Toppings",
               "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": false,
+              "maximum": 2,
+              "allow_quantity": true,
               "values": [
                 {
-                  "name": "No Texas Toast",
+                  "name": "Green Onions",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -812,7 +948,31 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Texas Toast",
+                  "name": "Grilled Pineapple Slice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pickled Red Onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pineapple Salsa",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sesame Cucumbers",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -822,13 +982,13 @@
               ]
             },
             {
-              "name": "Dipping Sauce Options",
+              "name": "Sauce Options",
               "minimum": 0,
               "maximum": 1,
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Cajun Aioli",
+                  "name": "Huli Huli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -836,7 +996,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Coop Sauce",
+                  "name": "Pineapple Aioli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -844,23 +1004,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ranch Dressing",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sriracha Thai Chili",
+                  "name": "Spicy Island Aioli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -875,18 +1019,26 @@
           "is_hidden": false
         },
         {
-          "name": "Fried Chicken Salad",
-          "description": "House salad topped with chopped chicken tenders and choice of dressing.",
+          "name": "Nadura Shish Kabobs",
+          "description": "Nadura* meatless protein marinated in Polynesian sauce and grilled.",
           "price": 11.99,
           "options": [
             {
-              "name": "Cook Option",
-              "minimum": 0,
-              "maximum": 50,
+              "name": "Base Options",
+              "minimum": 1,
+              "maximum": 1,
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Fried",
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mixed Greens",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -894,7 +1046,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Grilled",
+                  "name": "White Rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -904,71 +1056,13 @@
               ]
             },
             {
-              "name": "Dipping Sauce Options",
+              "name": "Pick 2 Side Options",
               "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Cajun Aioli",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Coop Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ranch Dressing",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sriracha Thai Chili",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Spicy Cauli Box",
-          "description": "8-piece spicy battered cauliflower nuggets crinkle-cut fries Texas toast choice of side and dipping sauce.",
-          "price": 11.99,
-          "options": [
-            {
-              "name": "Coop Side Option",
-              "minimum": 0,
-              "maximum": 1,
+              "maximum": 2,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Cajun Pasta Salad",
+                  "name": "Hawaiian Mac Salad",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -976,7 +1070,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Coleslaw",
+                  "name": "Island Coleslaw",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -984,7 +1078,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Crinkle-Cut Fries",
+                  "name": "Mango Avocado Salad",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -992,7 +1086,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Fruit Cup",
+                  "name": "Mixed Fruit & Berries",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1000,7 +1094,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Side",
+                  "name": "Roasted Vegetables",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sauteed Mixed Greens",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1010,13 +1112,13 @@
               ]
             },
             {
-              "name": "Toast Option",
+              "name": "Pick 2 Toppings",
               "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": false,
+              "maximum": 2,
+              "allow_quantity": true,
               "values": [
                 {
-                  "name": "No Texas Toast",
+                  "name": "Green Onions",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1024,7 +1126,31 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Texas Toast",
+                  "name": "Grilled Pineapple Slice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pickled Red Onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pineapple Salsa",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sesame Cucumbers",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1034,13 +1160,13 @@
               ]
             },
             {
-              "name": "Dipping Sauce Options",
+              "name": "Sauce Options",
               "minimum": 0,
               "maximum": 1,
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Cajun Aioli",
+                  "name": "Huli Huli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1048,7 +1174,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Coop Sauce",
+                  "name": "Pineapple Aioli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1056,23 +1182,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ranch Dressing",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sriracha Thai Chili",
+                  "name": "Spicy Island Aioli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1095,7 +1205,7 @@
         {
           "name": "Single Side Item",
           "description": "",
-          "price": 0.0,
+          "price": 3.29,
           "options": [
             {
               "name": "Single Side Option",
@@ -1107,37 +1217,85 @@
                   "name": "Cajun Pasta Salad",
                   "price": 1.99,
                   "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
                   "name": "Coleslaw",
                   "price": 1.99,
                   "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
                   "name": "Crinkle-Cut Fries",
                   "price": 1.99,
                   "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
                   "name": "Fruit Cup",
                   "price": 1.99,
                   "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
                   "name": "Texas Toast",
                   "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Hawaiian Mac Salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Island Coleslaw",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mango Avocado Salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mixed Fruit & Berries",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Roasted Vegetables",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sauteed Mixed Greens",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -1158,6 +1316,15 @@
       "items": [
         {
           "name": "Chocolate Chunk Cookie",
+          "description": "",
+          "price": 3.29,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Coconut Cream Pie",
           "description": "",
           "price": 3.29,
           "options": [],
