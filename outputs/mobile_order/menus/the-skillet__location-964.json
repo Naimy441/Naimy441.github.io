@@ -4,7 +4,7 @@
   "location_id": 964,
   "cafeteria_id": 856,
   "icon_image_url": "campuses/icon_location_19_18_129_1610975062760.jpg",
-  "estimated_wait_time_minutes": 42,
+  "estimated_wait_time_minutes": 6,
   "currently_open": true,
   "takeout_open": true,
   "delivery_open": false,
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-11 12:54:43",
-  "menu_last_updated": "2026-10-11 12:54:44",
+  "retrieved_at": "2026-10-21 16:04:57",
+  "menu_last_updated": "2026-10-21 16:04:57",
   "sections": [
     {
       "name": "Specials",
@@ -321,6 +321,15 @@
       "is_hidden": false,
       "items": [
         {
+          "name": "Beef Brisket Sandwich Combo",
+          "description": "Beef Bricket Sandwich with side of Succotash",
+          "price": 13.99,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Sauteed Catfish Combo",
           "description": "Locally source catfish with Diced Potatoes Bacon Collard Greens and Hushpuppies",
           "price": 14.99,
@@ -333,15 +342,6 @@
           "name": "Vegetarian Omelet Combo",
           "description": "Mushrooms Peppers Onions Arugula Goat Cheese and Vegetarian Sausage with side Wheat Toast and Mixed Fruit",
           "price": 10.59,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Beef Brisket Sandwich Combo",
-          "description": "Beef Bricket Sandwich with side of Succotash",
-          "price": 13.99,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -1080,14 +1080,38 @@
           "is_hidden": false
         },
         {
-          "name": "Smoked Beef Brisket Sandwich",
-          "description": "Smoked for 12 hours southern style with sweet smoky sauce with one side",
-          "price": 14.99,
+          "name": "Fried Chicken Sandwich",
+          "description": "Crispy fried chicken thigh served on a Martin�s potato roll with house-pickled red onions Old Bay aioli and a side of your choice.",
+          "price": 11.99,
           "options": [
             {
-              "name": "Pick One Lunch Side",
-              "minimum": 1,
-              "maximum": 1,
+              "name": "Fried Chicken Sandwich",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "No Old Bay Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Pickled Red Onions",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Pick Two Lunch Sides",
+              "minimum": 0,
+              "maximum": 2,
               "allow_quantity": true,
               "values": [
                 {
@@ -1101,7 +1125,7 @@
                 {
                   "name": "Cole Slaw",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -1261,8 +1285,8 @@
               ]
             }
           ],
-          "busy_min": 15,
-          "normal_min": 10,
+          "busy_min": 5,
+          "normal_min": 3,
           "is_hidden": false
         },
         {
@@ -1508,38 +1532,14 @@
           "is_hidden": false
         },
         {
-          "name": "Fried Chicken Sandwich",
-          "description": "Crispy fried chicken thigh served on a Martin�s potato roll with house-pickled red onions Old Bay aioli and a side of your choice.",
-          "price": 11.99,
+          "name": "Smoked Beef Brisket Sandwich",
+          "description": "Smoked for 12 hours southern style with sweet smoky sauce with one side",
+          "price": 14.99,
           "options": [
             {
-              "name": "Fried Chicken Sandwich",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "No Old Bay Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickled Red Onions",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Pick Two Lunch Sides",
-              "minimum": 0,
-              "maximum": 2,
+              "name": "Pick One Lunch Side",
+              "minimum": 1,
+              "maximum": 1,
               "allow_quantity": true,
               "values": [
                 {
@@ -1553,7 +1553,7 @@
                 {
                   "name": "Cole Slaw",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -1713,8 +1713,8 @@
               ]
             }
           ],
-          "busy_min": 5,
-          "normal_min": 3,
+          "busy_min": 15,
+          "normal_min": 10,
           "is_hidden": false
         }
       ]
@@ -4817,30 +4817,6 @@
           "price": 1.99,
           "options": [
             {
-              "name": "Plain Pancake Option",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Single Plain Pancake",
-                  "price": 1.99,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Double Plain Pancake",
-                  "price": 3.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
               "name": "Add Ons",
               "minimum": 0,
               "maximum": 50,
@@ -4889,6 +4865,30 @@
                 {
                   "name": "Add Whipped Cream",
                   "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Plain Pancake Option",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Single Plain Pancake",
+                  "price": 1.99,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Double Plain Pancake",
+                  "price": 3.99,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -7182,78 +7182,6 @@
           "is_hidden": false
         },
         {
-          "name": "Bacon",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Southern Grits",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Country Ham",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Mixed Fruit",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Morning Star Sausage",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Tater Tots",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Turkey Sausage",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Vanilla Greek Yogurt Cup",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Pork Sausage",
           "description": "",
           "price": 3.19,
@@ -7283,76 +7211,6 @@
                 {
                   "name": "Veggie Sausage Patty",
                   "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Whole Red Delicious Apple",
-          "description": "",
-          "price": 1.49,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Whole Banana",
-          "description": "",
-          "price": 0.99,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Whole Orange",
-          "description": "",
-          "price": 1.29,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Plain Grits",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Cinnamon Oatmeal",
-          "description": "",
-          "price": 3.19,
-          "options": [
-            {
-              "name": "Oatmeal Option",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Berries",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chocolate Chips",
-                  "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -7459,6 +7317,148 @@
               ]
             }
           ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Bacon",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Southern Grits",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Country Ham",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Cinnamon Oatmeal",
+          "description": "",
+          "price": 3.19,
+          "options": [
+            {
+              "name": "Oatmeal Option",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Berries",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chocolate Chips",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Mixed Fruit",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Tater Tots",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Turkey Sausage",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Vanilla Greek Yogurt Cup",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Whole Red Delicious Apple",
+          "description": "",
+          "price": 1.49,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Whole Banana",
+          "description": "",
+          "price": 0.99,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Whole Orange",
+          "description": "",
+          "price": 1.29,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Plain Grits",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Morning Star Sausage",
+          "description": "",
+          "price": 3.19,
+          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false

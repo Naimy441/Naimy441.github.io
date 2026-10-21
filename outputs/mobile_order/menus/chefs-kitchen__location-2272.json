@@ -4,10 +4,10 @@
   "location_id": 2272,
   "cafeteria_id": 2079,
   "icon_image_url": "campuses/icon_location_19_18_127_1735832782689.jpg",
-  "estimated_wait_time_minutes": 12,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "10:30:00",
     "close": "15:30:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-20 16:10:23",
-  "menu_last_updated": "2026-10-20 16:10:23",
+  "retrieved_at": "2026-10-21 18:47:53",
+  "menu_last_updated": "2026-10-21 18:47:53",
   "sections": [
     {
       "name": "Specials",
@@ -131,7 +131,7 @@
         {
           "name": "Hana Huli Huli Chicken",
           "description": "Chicken marinated in our sweet and savory Huli Huli sauce and finished on our grill.",
-          "price": 11.99,
+          "price": 12.85,
           "options": [
             {
               "name": "Base Options",
@@ -142,7 +142,7 @@
                 {
                   "name": "Brown Rice",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -150,7 +150,7 @@
                 {
                   "name": "Mixed Greens",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -320,7 +320,7 @@
                 {
                   "name": "Brown Rice",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -328,7 +328,7 @@
                 {
                   "name": "Mixed Greens",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -498,7 +498,7 @@
                 {
                   "name": "Brown Rice",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -506,7 +506,7 @@
                 {
                   "name": "Mixed Greens",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -665,7 +665,7 @@
         {
           "name": "Hawaiian Fried Rice",
           "description": "Grilled chicken eggs green onion pineapple and rice saut�ed in Polynesian sauce.",
-          "price": 11.99,
+          "price": 12.85,
           "options": [
             {
               "name": "Base Options",
@@ -676,7 +676,7 @@
                 {
                   "name": "Brown Rice",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -684,7 +684,7 @@
                 {
                   "name": "Mixed Greens",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -854,7 +854,7 @@
                 {
                   "name": "Brown Rice",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -862,7 +862,7 @@
                 {
                   "name": "Mixed Greens",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -1021,7 +1021,7 @@
         {
           "name": "Nadura Shish Kabobs",
           "description": "Nadura* meatless protein marinated in Polynesian sauce and grilled.",
-          "price": 11.99,
+          "price": 12.85,
           "options": [
             {
               "name": "Base Options",
@@ -1032,7 +1032,7 @@
                 {
                   "name": "Brown Rice",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -1040,7 +1040,7 @@
                 {
                   "name": "Mixed Greens",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -1315,7 +1315,7 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Chocolate Chunk Cookie",
+          "name": "Coconut Cream Pie",
           "description": "",
           "price": 3.29,
           "options": [],
@@ -1324,7 +1324,7 @@
           "is_hidden": false
         },
         {
-          "name": "Coconut Cream Pie",
+          "name": "Chocolate Chunk Cookie",
           "description": "",
           "price": 3.29,
           "options": [],
@@ -1339,17 +1339,8 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Bottled Water",
+          "name": "1L Smart Water",
           "description": "",
-          "price": 2.25,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Farmers Punch",
-          "description": "Refresher made with cherry pomegranate and mango juices.",
           "price": 4.29,
           "options": [],
           "busy_min": 5,
@@ -1357,8 +1348,8 @@
           "is_hidden": false
         },
         {
-          "name": "1L Smart Water",
-          "description": "",
+          "name": "Farmers Punch",
+          "description": "Refresher made with cherry pomegranate and mango juices.",
           "price": 4.29,
           "options": [],
           "busy_min": 5,
@@ -1372,6 +1363,15 @@
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Bottled Water",
+          "description": "",
+          "price": 2.25,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
           "is_hidden": false
         }
       ]

@@ -4,10 +4,10 @@
   "location_id": 1411,
   "cafeteria_id": 1267,
   "icon_image_url": "campuses/icon_location_19_18_127_1757693875654.jpg",
-  "estimated_wait_time_minutes": 9,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "08:00:00",
     "close": "15:00:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-20 18:24:10",
-  "menu_last_updated": "2026-10-20 18:24:11",
+  "retrieved_at": "2026-10-21 18:38:36",
+  "menu_last_updated": "2026-10-21 18:38:37",
   "sections": [
     {
       "name": "Specials",
@@ -1977,9 +1977,18 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Chicken Parmesan",
+          "name": "Chorizo Breakfast Scrambler",
           "description": "",
-          "price": 10.69,
+          "price": 6.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "French Beef",
+          "description": "",
+          "price": 11.35,
           "options": [
             {
               "name": "Sandwich Side Option",
@@ -2172,18 +2181,9 @@
           "is_hidden": false
         },
         {
-          "name": "Chorizo Breakfast Scrambler",
+          "name": "Chicken Parmesan",
           "description": "",
-          "price": 6.99,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "French Beef",
-          "description": "",
-          "price": 11.35,
+          "price": 10.69,
           "options": [
             {
               "name": "Sandwich Side Option",
@@ -2745,9 +2745,9 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Farm Fresh Eggs",
+          "name": "Mediterranean Bento Box",
           "description": "",
-          "price": 3.25,
+          "price": 10.69,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -2755,6 +2755,15 @@
         },
         {
           "name": "Feta Cilantro Bowtie",
+          "description": "",
+          "price": 5.69,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Garbanzo Greek",
           "description": "",
           "price": 5.69,
           "options": [],
@@ -2772,48 +2781,12 @@
           "is_hidden": false
         },
         {
-          "name": "Fresh Fruit",
+          "name": "Focazza",
           "description": "",
-          "price": 5.35,
+          "price": 5.99,
           "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Garbanzo Greek",
-          "description": "",
-          "price": 5.69,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Greek Salad",
-          "description": "",
-          "price": 10.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Mediterranean Bento Box",
-          "description": "",
-          "price": 10.69,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Granola Parfait",
-          "description": "",
-          "price": 6.45,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
+          "busy_min": 5,
+          "normal_min": 3,
           "is_hidden": false
         },
         {
@@ -2835,12 +2808,39 @@
           "is_hidden": false
         },
         {
-          "name": "Focazza",
+          "name": "Granola Parfait",
           "description": "",
-          "price": 5.99,
+          "price": 6.45,
           "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Greek Salad",
+          "description": "",
+          "price": 10.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Farm Fresh Eggs",
+          "description": "",
+          "price": 3.25,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Fresh Fruit",
+          "description": "",
+          "price": 5.35,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
           "is_hidden": false
         }
       ]
@@ -2850,18 +2850,27 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Chicken Shawarma",
+          "name": "Chicken Quesadilla",
           "description": "",
-          "price": 9.75,
+          "price": 7.49,
           "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
+          "busy_min": 5,
+          "normal_min": 3,
           "is_hidden": false
         },
         {
-          "name": "Falafel Pita",
+          "name": "Southwest Chicken Wrap",
           "description": "",
-          "price": 7.49,
+          "price": 9.65,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Chicken Shawarma",
+          "description": "",
+          "price": 9.75,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -2886,36 +2895,18 @@
           "is_hidden": false
         },
         {
-          "name": "Bacon Jam Club Wrap",
+          "name": "Falafel Pita",
           "description": "",
-          "price": 8.99,
+          "price": 7.49,
           "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Caprese Focaccia",
-          "description": "",
-          "price": 9.89,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
+          "busy_min": 15,
+          "normal_min": 10,
           "is_hidden": false
         },
         {
           "name": "Caprese Focaccia Panini",
           "description": "",
           "price": 9.89,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Chicken Quesadilla",
-          "description": "",
-          "price": 7.49,
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
@@ -2931,9 +2922,18 @@
           "is_hidden": false
         },
         {
-          "name": "Southwest Chicken Wrap",
+          "name": "Bacon Jam Club Wrap",
           "description": "",
-          "price": 9.65,
+          "price": 8.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Caprese Focaccia",
+          "description": "",
+          "price": 9.89,
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
@@ -2955,12 +2955,12 @@
           "is_hidden": false
         },
         {
-          "name": "Scone",
+          "name": "Coconut Macaroon",
           "description": "",
-          "price": 4.29,
+          "price": 3.69,
           "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
+          "busy_min": 5,
+          "normal_min": 3,
           "is_hidden": false
         },
         {
@@ -2991,18 +2991,18 @@
           "is_hidden": false
         },
         {
-          "name": "Cheese Danish",
+          "name": "Scone",
           "description": "",
           "price": 4.29,
           "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
+          "busy_min": 15,
+          "normal_min": 10,
           "is_hidden": false
         },
         {
-          "name": "Coconut Macaroon",
+          "name": "Cheese Danish",
           "description": "",
-          "price": 3.69,
+          "price": 4.29,
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
@@ -3211,18 +3211,18 @@
           "is_hidden": false
         },
         {
-          "name": "Natalies Juice",
+          "name": "Olipop",
           "description": "",
-          "price": 3.85,
+          "price": 4.49,
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
           "is_hidden": false
         },
         {
-          "name": "Olipop",
+          "name": "Natalies Juice",
           "description": "",
-          "price": 4.49,
+          "price": 3.85,
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
