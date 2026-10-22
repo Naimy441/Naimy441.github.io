@@ -4,10 +4,10 @@
   "location_id": 2095,
   "cafeteria_id": 1905,
   "icon_image_url": "campuses/icon_location_19_18_127_1756835590933.jpg",
-  "estimated_wait_time_minutes": 17,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "08:00:00",
     "close": "15:00:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-21 14:00:22",
-  "menu_last_updated": "2026-10-21 14:00:23",
+  "retrieved_at": "2026-10-22 15:50:38",
+  "menu_last_updated": "2026-10-22 15:50:38",
   "sections": [
     {
       "name": "Coffee",
@@ -3094,30 +3094,6 @@
           "price": 2.99,
           "options": [
             {
-              "name": "Espresso option",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Decaf Espresso",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra Shot Espresso",
-                  "price": 1.49,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
               "name": "Coffee Temp",
               "minimum": 1,
               "maximum": 1,
@@ -3134,6 +3110,30 @@
                 {
                   "name": "Iced Coffee",
                   "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Espresso option",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Decaf Espresso",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Extra Shot Espresso",
+                  "price": 1.49,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -4760,15 +4760,6 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Cookies",
-          "description": "Double chocolate chunk",
-          "price": 3.09,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Loaves",
           "description": "",
           "price": 4.29,
@@ -4798,15 +4789,6 @@
               ]
             }
           ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Yogurt Parfait",
-          "description": "Fresh Greek yogurt with fresh cut fruit and granola",
-          "price": 6.39,
-          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -4854,24 +4836,6 @@
           "is_hidden": false
         },
         {
-          "name": "Fruit Cup",
-          "description": "Fresh fruit cup cut everyday",
-          "price": 4.99,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Donuts",
-          "description": "Glazed Old Fashion Ring",
-          "price": 2.99,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Brownies",
           "description": "Chocolate Salted Caramel",
           "price": 4.29,
@@ -4890,9 +4854,36 @@
           "is_hidden": false
         },
         {
-          "name": "Chai Pudding",
-          "description": "",
+          "name": "Cookies",
+          "description": "Double chocolate chunk",
+          "price": 3.09,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Donuts",
+          "description": "Glazed Old Fashion Ring",
+          "price": 2.99,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Fruit Cup",
+          "description": "Fresh fruit cup cut everyday",
           "price": 4.99,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Yogurt Parfait",
+          "description": "Fresh Greek yogurt with fresh cut fruit and granola",
+          "price": 6.39,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -4906,6 +4897,15 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
+        },
+        {
+          "name": "Chai Pudding",
+          "description": "",
+          "price": 4.99,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
         }
       ]
     },
@@ -4913,6 +4913,15 @@
       "name": "Quick Bites",
       "is_hidden": false,
       "items": [
+        {
+          "name": "Berry Chia Exhibit (VG)",
+          "description": "Filled fresh with maple-vanilla chia pudding made with oat milk and finished with fresh berries.",
+          "price": 5.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
         {
           "name": "Fresh Fruit (VG)",
           "description": "Filled fresh with a bright mix of seasonal fresh-cut fruit.",
@@ -4932,15 +4941,6 @@
           "is_hidden": false
         },
         {
-          "name": "Roasted Corn & Black Bean Record (VG)",
-          "description": "Filled fresh with roasted corn black beans roasted red pepper pickled onion and cilantro in a bright citrus-herb dressing.",
-          "price": 5.99,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
           "name": "Italian Pasta Citation (V)",
           "description": "Filled fresh with rotini cucumber roasted red pepper sun-roasted tomato feta and herbs in lemon-champagne vinaigrette.",
           "price": 5.99,
@@ -4950,8 +4950,8 @@
           "is_hidden": false
         },
         {
-          "name": "Berry Chia Exhibit (VG)",
-          "description": "Filled fresh with maple-vanilla chia pudding made with oat milk and finished with fresh berries.",
+          "name": "Roasted Corn & Black Bean Record (VG)",
+          "description": "Filled fresh with roasted corn black beans roasted red pepper pickled onion and cilantro in a bright citrus-herb dressing.",
           "price": 5.99,
           "options": [],
           "busy_min": 5,
@@ -4964,33 +4964,6 @@
       "name": "Deli Sandwiches & Wraps",
       "is_hidden": false,
       "items": [
-        {
-          "name": "The Beet & Hummus Appeal (VG)",
-          "description": "Filled fresh with roasted beets garlic-herb hummus arugula carrots and pickled onion with balsamic in a spinach-herb wrap. Filled fresh with roasted beets garlic-herb hummus arugula carrots and pickled onion with balsamic in a spinach-herb wrap.",
-          "price": 11.5,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "The Lavender Brief",
-          "description": "Filled fresh with honey-lavender chicken salad and crisp leaf lettuce on a butter croissant. Includes Kettle Chips",
-          "price": 11.5,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "The Pro Bono Garden Wrap (VG)",
-          "description": "Filled fresh with garlic-herb hummus cucumber carrots roasted red pepper pickled onion spinach and herbs in a spinach-herb wrap. Includes Kettle Chips",
-          "price": 11.5,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
         {
           "name": "Garden Herb Deposition",
           "description": "Filled fresh with grilled garden-herb chicken lemon-basil spread roasted red pepper pickled onion spinach and Parmesan in a spinach-herb wrap. Includes Kettle Chips",
@@ -5019,8 +4992,35 @@
           "is_hidden": false
         },
         {
+          "name": "The Beet & Hummus Appeal (VG)",
+          "description": "Filled fresh with roasted beets garlic-herb hummus arugula carrots and pickled onion with balsamic in a spinach-herb wrap. Filled fresh with roasted beets garlic-herb hummus arugula carrots and pickled onion with balsamic in a spinach-herb wrap.",
+          "price": 11.5,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
           "name": "The Egg Salad Brief (V)",
           "description": "Filled fresh with dill-chive egg salad with Dijon lemon red onion and leaf lettuce on multigrain bread. Includes Kettle Chips",
+          "price": 11.5,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "The Lavender Brief",
+          "description": "Filled fresh with honey-lavender chicken salad and crisp leaf lettuce on a butter croissant. Includes Kettle Chips",
+          "price": 11.5,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "The Pro Bono Garden Wrap (VG)",
+          "description": "Filled fresh with garlic-herb hummus cucumber carrots roasted red pepper pickled onion spinach and herbs in a spinach-herb wrap. Includes Kettle Chips",
           "price": 11.5,
           "options": [],
           "busy_min": 5,
@@ -5067,24 +5067,6 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Modern Caesar Citation",
-          "description": "Filled fresh with romaine Parmesan and garlic croutons with Caesar dressing.",
-          "price": 11.5,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Roasted Beet & Arugula Appeal (V)",
-          "description": "Filled fresh with roasted beets arugula mixed greens feta pickled red onion and sunflower seeds with balsamic vinaigrette.",
-          "price": 11.5,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
           "name": "Gardens Green Verdict (VG)",
           "description": "Filled fresh with mixed garden greens cucumber shaved fennel and pickled radish with lemon-champagne vinaigrette.",
           "price": 11.5,
@@ -5094,8 +5076,26 @@
           "is_hidden": false
         },
         {
+          "name": "Modern Caesar Citation",
+          "description": "Filled fresh with romaine Parmesan and garlic croutons with Caesar dressing.",
+          "price": 11.5,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
           "name": "Precedent Grain Bowl (VG)",
           "description": "Filled fresh with farro roasted seasonal squash caramelized onion and baby spinach with lemon-tahini dressing.",
+          "price": 11.5,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Roasted Beet & Arugula Appeal (V)",
+          "description": "Filled fresh with roasted beets arugula mixed greens feta pickled red onion and sunflower seeds with balsamic vinaigrette.",
           "price": 11.5,
           "options": [],
           "busy_min": 5,
@@ -5118,24 +5118,6 @@
           "is_hidden": false
         },
         {
-          "name": "Power Brief Bento Box",
-          "description": "Filled fresh with grilled garden-herb chicken chilled farro roasted corn-black bean salad and lemon-tahini dip.",
-          "price": 7.99,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Sunflower Tuna Case Box",
-          "description": "Filled fresh with sunflower tuna salad with cucumber carrots fresh fruit and multigrain crackers.",
-          "price": 7.99,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
           "name": "Heirloom Tomato & Burrata Hearing (V)",
           "description": "Filled fresh with heirloom tomatoes creamy burrata arugula basil and balsamic glaze with crostini.",
           "price": 7.99,
@@ -5145,8 +5127,26 @@
           "is_hidden": false
         },
         {
+          "name": "Power Brief Bento Box",
+          "description": "Filled fresh with grilled garden-herb chicken chilled farro roasted corn-black bean salad and lemon-tahini dip.",
+          "price": 7.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
           "name": "Salad Trio Three Exhibits (V)",
           "description": "Filled fresh with three chilled tastes: Italian pasta salad garbanzo bean salad and roasted corn-black bean salad.",
+          "price": 7.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Sunflower Tuna Case Box",
+          "description": "Filled fresh with sunflower tuna salad with cucumber carrots fresh fruit and multigrain crackers.",
           "price": 7.99,
           "options": [],
           "busy_min": 5,
@@ -5183,15 +5183,6 @@
       "name": "Bottled Beverages",
       "is_hidden": false,
       "items": [
-        {
-          "name": "Orange Fanta",
-          "description": "",
-          "price": 2.49,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
         {
           "name": "Lemonade",
           "description": "",
@@ -5235,16 +5226,16 @@
           "is_hidden": false
         },
         {
-          "name": "Milk 2%",
+          "name": "Kombucha",
           "description": "",
-          "price": 2.59,
+          "price": 5.39,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
         },
         {
-          "name": "Milk Strawberry",
+          "name": "Milk 2%",
           "description": "",
           "price": 2.59,
           "options": [],
@@ -5262,6 +5253,15 @@
           "is_hidden": false
         },
         {
+          "name": "Milk Strawberry",
+          "description": "",
+          "price": 2.59,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Minute Maid",
           "description": "",
           "price": 2.49,
@@ -5271,9 +5271,9 @@
           "is_hidden": false
         },
         {
-          "name": "Kombucha",
+          "name": "Orange Fanta",
           "description": "",
-          "price": 5.39,
+          "price": 2.49,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
