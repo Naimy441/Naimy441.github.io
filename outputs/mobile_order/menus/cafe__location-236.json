@@ -4,7 +4,7 @@
   "location_id": 236,
   "cafeteria_id": 194,
   "icon_image_url": "campuses/icon_restaurant_19_18_129_1594924391116.jpg",
-  "estimated_wait_time_minutes": 15,
+  "estimated_wait_time_minutes": 13,
   "currently_open": true,
   "takeout_open": true,
   "delivery_open": true,
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-22 17:35:16",
-  "menu_last_updated": "2026-10-22 17:35:16",
+  "retrieved_at": "2026-10-23 15:09:02",
+  "menu_last_updated": "2026-10-23 15:09:03",
   "sections": [
     {
       "name": "Specials",
@@ -128,6 +128,38 @@
           "description": "",
           "price": 5.0,
           "options": [
+            {
+              "name": "Whole Fruit Option",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Apple",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Banana",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Orange",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
             {
               "name": "Meal Deal Option",
               "minimum": 0,
@@ -200,38 +232,6 @@
                 },
                 {
                   "name": "Pumpkin Sweet Bread",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Whole Fruit Option",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Apple",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Banana",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Orange",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -6510,15 +6510,6 @@
           "is_hidden": false
         },
         {
-          "name": "Greek Scrambler",
-          "description": "",
-          "price": 6.95,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "French Beef",
           "description": "Mills Family Farm grass-fed beef organic arugula Swiss caramelized onion tomoto White French",
           "price": 11.35,
@@ -6596,6 +6587,15 @@
               ]
             }
           ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Greek Scrambler",
+          "description": "",
+          "price": 6.95,
+          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -6693,9 +6693,9 @@
           "is_hidden": false
         },
         {
-          "name": "Chicken Pesto",
-          "description": "A hot sandwich with grilled chicken pesto and melted mozzarella cheese. Served with a side of chips.",
-          "price": 10.69,
+          "name": "Crispy Chicken & Pimento Cheese",
+          "description": "Chicken tenders pimento cheese pickles arugula oil blend and garlic on sourdough bread",
+          "price": 10.99,
           "options": [
             {
               "name": "Sandwich Side Option",
@@ -6727,9 +6727,9 @@
           "is_hidden": false
         },
         {
-          "name": "Crispy Chicken & Pimento Cheese",
-          "description": "Chicken tenders pimento cheese pickles arugula oil blend and garlic on sourdough bread",
-          "price": 10.99,
+          "name": "Chicken Pesto",
+          "description": "A hot sandwich with grilled chicken pesto and melted mozzarella cheese. Served with a side of chips.",
+          "price": 10.69,
           "options": [
             {
               "name": "Sandwich Side Option",
@@ -7357,6 +7357,24 @@
           "is_hidden": false
         },
         {
+          "name": "Chocolate Chip Scone",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Croissant",
+          "description": "",
+          "price": 4.09,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
           "name": "Danish",
           "description": "",
           "price": 4.29,
@@ -7389,24 +7407,6 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": true
-        },
-        {
-          "name": "Croissant",
-          "description": "",
-          "price": 4.09,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Chocolate Chip Scone",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
         },
         {
           "name": "Cupcake",
@@ -7445,6 +7445,48 @@
                 },
                 {
                   "name": "Vanilla Cupcake",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Sweet Bread",
+          "description": "",
+          "price": 4.29,
+          "options": [
+            {
+              "name": "Sweet Breads Option",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Apple Rum",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pumpkin",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Lemon",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -7597,48 +7639,6 @@
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Sweet Bread",
-          "description": "",
-          "price": 4.29,
-          "options": [
-            {
-              "name": "Sweet Breads Option",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Apple Rum",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pumpkin",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Lemon",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
                   "max_quantity": 0
                 }
               ]

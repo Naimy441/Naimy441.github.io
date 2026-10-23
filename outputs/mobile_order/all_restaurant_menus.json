@@ -7,7 +7,7 @@
       "location_id": 966,
       "cafeteria_id": 858,
       "icon_image_url": "campuses/icon_location_19_18_129_1610989976402.jpg",
-      "estimated_wait_time_minutes": 7,
+      "estimated_wait_time_minutes": 8,
       "currently_open": true,
       "takeout_open": true,
       "delivery_open": true,
@@ -29108,7 +29108,7 @@
       "location_id": 236,
       "cafeteria_id": 194,
       "icon_image_url": "campuses/icon_restaurant_19_18_129_1594924391116.jpg",
-      "estimated_wait_time_minutes": 15,
+      "estimated_wait_time_minutes": 13,
       "currently_open": true,
       "takeout_open": true,
       "delivery_open": true,
@@ -29220,8 +29220,8 @@
           ]
         }
       },
-      "retrieved_at": "2026-10-22 17:35:16",
-      "menu_last_updated": "2026-10-22 17:35:16",
+      "retrieved_at": "2026-10-23 15:09:02",
+      "menu_last_updated": "2026-10-23 15:09:03",
       "sections": [
         {
           "name": "Specials",
@@ -29232,6 +29232,38 @@
               "description": "",
               "price": 5.0,
               "options": [
+                {
+                  "name": "Whole Fruit Option",
+                  "minimum": 1,
+                  "maximum": 1,
+                  "allow_quantity": true,
+                  "values": [
+                    {
+                      "name": "Apple",
+                      "price": 0.0,
+                      "is_default": true,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Banana",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Orange",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    }
+                  ]
+                },
                 {
                   "name": "Meal Deal Option",
                   "minimum": 0,
@@ -29304,38 +29336,6 @@
                     },
                     {
                       "name": "Pumpkin Sweet Bread",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    }
-                  ]
-                },
-                {
-                  "name": "Whole Fruit Option",
-                  "minimum": 1,
-                  "maximum": 1,
-                  "allow_quantity": true,
-                  "values": [
-                    {
-                      "name": "Apple",
-                      "price": 0.0,
-                      "is_default": true,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Banana",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Orange",
                       "price": 0.0,
                       "is_default": false,
                       "is_hidden": false,
@@ -35614,15 +35614,6 @@
               "is_hidden": false
             },
             {
-              "name": "Greek Scrambler",
-              "description": "",
-              "price": 6.95,
-              "options": [],
-              "busy_min": 15,
-              "normal_min": 10,
-              "is_hidden": false
-            },
-            {
               "name": "French Beef",
               "description": "Mills Family Farm grass-fed beef organic arugula Swiss caramelized onion tomoto White French",
               "price": 11.35,
@@ -35700,6 +35691,15 @@
                   ]
                 }
               ],
+              "busy_min": 15,
+              "normal_min": 10,
+              "is_hidden": false
+            },
+            {
+              "name": "Greek Scrambler",
+              "description": "",
+              "price": 6.95,
+              "options": [],
               "busy_min": 15,
               "normal_min": 10,
               "is_hidden": false
@@ -35797,9 +35797,9 @@
               "is_hidden": false
             },
             {
-              "name": "Chicken Pesto",
-              "description": "A hot sandwich with grilled chicken pesto and melted mozzarella cheese. Served with a side of chips.",
-              "price": 10.69,
+              "name": "Crispy Chicken & Pimento Cheese",
+              "description": "Chicken tenders pimento cheese pickles arugula oil blend and garlic on sourdough bread",
+              "price": 10.99,
               "options": [
                 {
                   "name": "Sandwich Side Option",
@@ -35831,9 +35831,9 @@
               "is_hidden": false
             },
             {
-              "name": "Crispy Chicken & Pimento Cheese",
-              "description": "Chicken tenders pimento cheese pickles arugula oil blend and garlic on sourdough bread",
-              "price": 10.99,
+              "name": "Chicken Pesto",
+              "description": "A hot sandwich with grilled chicken pesto and melted mozzarella cheese. Served with a side of chips.",
+              "price": 10.69,
               "options": [
                 {
                   "name": "Sandwich Side Option",
@@ -36461,6 +36461,24 @@
               "is_hidden": false
             },
             {
+              "name": "Chocolate Chip Scone",
+              "description": "",
+              "price": 4.29,
+              "options": [],
+              "busy_min": 15,
+              "normal_min": 10,
+              "is_hidden": false
+            },
+            {
+              "name": "Croissant",
+              "description": "",
+              "price": 4.09,
+              "options": [],
+              "busy_min": 15,
+              "normal_min": 10,
+              "is_hidden": true
+            },
+            {
               "name": "Danish",
               "description": "",
               "price": 4.29,
@@ -36493,24 +36511,6 @@
               "busy_min": 15,
               "normal_min": 10,
               "is_hidden": true
-            },
-            {
-              "name": "Croissant",
-              "description": "",
-              "price": 4.09,
-              "options": [],
-              "busy_min": 15,
-              "normal_min": 10,
-              "is_hidden": true
-            },
-            {
-              "name": "Chocolate Chip Scone",
-              "description": "",
-              "price": 4.29,
-              "options": [],
-              "busy_min": 15,
-              "normal_min": 10,
-              "is_hidden": false
             },
             {
               "name": "Cupcake",
@@ -36549,6 +36549,48 @@
                     },
                     {
                       "name": "Vanilla Cupcake",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "busy_min": 15,
+              "normal_min": 10,
+              "is_hidden": false
+            },
+            {
+              "name": "Sweet Bread",
+              "description": "",
+              "price": 4.29,
+              "options": [
+                {
+                  "name": "Sweet Breads Option",
+                  "minimum": 0,
+                  "maximum": 1,
+                  "allow_quantity": true,
+                  "values": [
+                    {
+                      "name": "Apple Rum",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Pumpkin",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Lemon",
                       "price": 0.0,
                       "is_default": false,
                       "is_hidden": false,
@@ -36701,48 +36743,6 @@
                       "is_default": false,
                       "is_hidden": true,
                       "is_out_of_stock": true,
-                      "max_quantity": 0
-                    }
-                  ]
-                }
-              ],
-              "busy_min": 15,
-              "normal_min": 10,
-              "is_hidden": false
-            },
-            {
-              "name": "Sweet Bread",
-              "description": "",
-              "price": 4.29,
-              "options": [
-                {
-                  "name": "Sweet Breads Option",
-                  "minimum": 0,
-                  "maximum": 1,
-                  "allow_quantity": true,
-                  "values": [
-                    {
-                      "name": "Apple Rum",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Pumpkin",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Lemon",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
                       "max_quantity": 0
                     }
                   ]
@@ -37486,7 +37486,7 @@
       "location_id": 144,
       "cafeteria_id": 123,
       "icon_image_url": "campuses/icon_restaurant_19_18_129_1585848973577.jpg",
-      "estimated_wait_time_minutes": 17,
+      "estimated_wait_time_minutes": 16,
       "currently_open": true,
       "takeout_open": true,
       "delivery_open": true,
@@ -37598,8 +37598,8 @@
           ]
         }
       },
-      "retrieved_at": "2026-10-22 16:02:07",
-      "menu_last_updated": "2026-10-22 16:02:07",
+      "retrieved_at": "2026-10-23 15:00:42",
+      "menu_last_updated": "2026-10-23 15:00:42",
       "sections": [
         {
           "name": "Delivery",
@@ -38373,6 +38373,46 @@
               "price": 6.55,
               "options": [
                 {
+                  "name": "Croissant Breakfast Sandwich Bread",
+                  "minimum": 1,
+                  "maximum": 1,
+                  "allow_quantity": true,
+                  "values": [
+                    {
+                      "name": "Croissant",
+                      "price": 0.0,
+                      "is_default": true,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Keiser",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Tortillas",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Bagel",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    }
+                  ]
+                },
+                {
                   "name": "300 - Egg & Cheese Croissant",
                   "minimum": 0,
                   "maximum": 50,
@@ -38412,46 +38452,6 @@
                     },
                     {
                       "name": "Sub for scrambled",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    }
-                  ]
-                },
-                {
-                  "name": "Croissant Breakfast Sandwich Bread",
-                  "minimum": 1,
-                  "maximum": 1,
-                  "allow_quantity": true,
-                  "values": [
-                    {
-                      "name": "Croissant",
-                      "price": 0.0,
-                      "is_default": true,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Keiser",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Tortillas",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Bagel",
                       "price": 0.0,
                       "is_default": false,
                       "is_hidden": false,
@@ -38893,6 +38893,62 @@
                   ]
                 },
                 {
+                  "name": "Build Your Own Sandwich Protein Extra",
+                  "minimum": 0,
+                  "maximum": 50,
+                  "allow_quantity": true,
+                  "values": [
+                    {
+                      "name": "Bacon",
+                      "price": 3.25,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Chicken",
+                      "price": 3.25,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Ham",
+                      "price": 3.25,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Salami",
+                      "price": 3.25,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Turkey",
+                      "price": 3.25,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Turkey Sausage",
+                      "price": 3.25,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    }
+                  ]
+                },
+                {
                   "name": "Build Your Own Sandwich Veggies",
                   "minimum": 0,
                   "maximum": 2,
@@ -38989,62 +39045,6 @@
                     {
                       "name": "Mixed Greens",
                       "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    }
-                  ]
-                },
-                {
-                  "name": "Build Your Own Sandwich Protein Extra",
-                  "minimum": 0,
-                  "maximum": 50,
-                  "allow_quantity": true,
-                  "values": [
-                    {
-                      "name": "Bacon",
-                      "price": 3.25,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Chicken",
-                      "price": 3.25,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Ham",
-                      "price": 3.25,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Salami",
-                      "price": 3.25,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Turkey",
-                      "price": 3.25,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Turkey Sausage",
-                      "price": 3.25,
                       "is_default": false,
                       "is_hidden": false,
                       "is_out_of_stock": false,
@@ -45128,10 +45128,10 @@
       "location_id": 2272,
       "cafeteria_id": 2079,
       "icon_image_url": "campuses/icon_location_19_18_127_1735832782689.jpg",
-      "estimated_wait_time_minutes": 0,
-      "currently_open": false,
-      "takeout_open": false,
-      "delivery_open": false,
+      "estimated_wait_time_minutes": 12,
+      "currently_open": true,
+      "takeout_open": true,
+      "delivery_open": true,
       "takeout_hours": {
         "open": "10:30:00",
         "close": "15:30:00"
@@ -46660,8 +46660,8 @@
           ]
         }
       },
-      "retrieved_at": "2026-10-23 11:59:32",
-      "menu_last_updated": "2026-10-23 11:59:32",
+      "retrieved_at": "2026-10-23 14:43:33",
+      "menu_last_updated": "2026-10-23 14:43:34",
       "sections": [
         {
           "name": "Farmstead Specials",
@@ -46724,24 +46724,6 @@
               "busy_min": 15,
               "normal_min": 10,
               "is_hidden": true
-            },
-            {
-              "name": "Plain Oatmeal (No toppings)",
-              "description": "",
-              "price": 3.45,
-              "options": [],
-              "busy_min": 15,
-              "normal_min": 10,
-              "is_hidden": false
-            },
-            {
-              "name": "Tofu Scramble and Potatoes",
-              "description": "",
-              "price": 8.55,
-              "options": [],
-              "busy_min": 15,
-              "normal_min": 10,
-              "is_hidden": false
             },
             {
               "name": "Avocado Toast",
@@ -46826,173 +46808,19 @@
               "is_hidden": false
             },
             {
-              "name": "Breakfast burrito",
+              "name": "Plain Oatmeal (No toppings)",
               "description": "",
-              "price": 8.55,
-              "options": [
-                {
-                  "name": "SPR - Breakfast burrito Options",
-                  "minimum": 0,
-                  "maximum": 50,
-                  "allow_quantity": true,
-                  "values": [
-                    {
-                      "name": "No  potatoes",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "No chorizo",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "No green pepper",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "No onion",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "No Salsa",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Salsa on side",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    }
-                  ]
-                },
-                {
-                  "name": "Breakfast Entree Side",
-                  "minimum": 0,
-                  "maximum": 1,
-                  "allow_quantity": true,
-                  "values": [
-                    {
-                      "name": "Apple",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Banana",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Orange",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    }
-                  ]
-                }
-              ],
+              "price": 3.45,
+              "options": [],
               "busy_min": 15,
               "normal_min": 10,
               "is_hidden": false
             },
             {
-              "name": "French Toast",
+              "name": "Tofu Scramble and Potatoes",
               "description": "",
               "price": 8.55,
-              "options": [
-                {
-                  "name": "SPR - French Toast Option",
-                  "minimum": 1,
-                  "maximum": 1,
-                  "allow_quantity": false,
-                  "values": [
-                    {
-                      "name": "Honey",
-                      "price": 0.0,
-                      "is_default": true,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Maple Syrup",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Maple Berry Sauce",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    }
-                  ]
-                },
-                {
-                  "name": "Breakfast Entree Side",
-                  "minimum": 0,
-                  "maximum": 1,
-                  "allow_quantity": true,
-                  "values": [
-                    {
-                      "name": "Apple",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Banana",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Orange",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    }
-                  ]
-                }
-              ],
+              "options": [],
               "busy_min": 15,
               "normal_min": 10,
               "is_hidden": false
@@ -47374,6 +47202,178 @@
                       "is_default": false,
                       "is_hidden": true,
                       "is_out_of_stock": true,
+                      "max_quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "busy_min": 15,
+              "normal_min": 10,
+              "is_hidden": false
+            },
+            {
+              "name": "French Toast",
+              "description": "",
+              "price": 8.55,
+              "options": [
+                {
+                  "name": "SPR - French Toast Option",
+                  "minimum": 1,
+                  "maximum": 1,
+                  "allow_quantity": false,
+                  "values": [
+                    {
+                      "name": "Honey",
+                      "price": 0.0,
+                      "is_default": true,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Maple Syrup",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Maple Berry Sauce",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "Breakfast Entree Side",
+                  "minimum": 0,
+                  "maximum": 1,
+                  "allow_quantity": true,
+                  "values": [
+                    {
+                      "name": "Apple",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Banana",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Orange",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "busy_min": 15,
+              "normal_min": 10,
+              "is_hidden": false
+            },
+            {
+              "name": "Breakfast burrito",
+              "description": "",
+              "price": 8.55,
+              "options": [
+                {
+                  "name": "SPR - Breakfast burrito Options",
+                  "minimum": 0,
+                  "maximum": 50,
+                  "allow_quantity": true,
+                  "values": [
+                    {
+                      "name": "No  potatoes",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "No chorizo",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "No green pepper",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "No onion",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "No Salsa",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Salsa on side",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "Breakfast Entree Side",
+                  "minimum": 0,
+                  "maximum": 1,
+                  "allow_quantity": true,
+                  "values": [
+                    {
+                      "name": "Apple",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Banana",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Orange",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
                       "max_quantity": 0
                     }
                   ]
@@ -47998,80 +47998,6 @@
               "is_hidden": false
             },
             {
-              "name": "Chicken Caesar Wrap",
-              "description": "Chicken Caesar Wrap - Romaine Lettuce - Caesar Dressing - Parmesan Cheese - Choice of Whole Fruit",
-              "price": 10.69,
-              "options": [
-                {
-                  "name": "Chicken Ceasar Wrap",
-                  "minimum": 0,
-                  "maximum": 50,
-                  "allow_quantity": true,
-                  "values": [
-                    {
-                      "name": "No Caesar Dressing",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "No Parmesan Cheese",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "No Romaine Lettuce",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    }
-                  ]
-                },
-                {
-                  "name": "Whole Fruit Side",
-                  "minimum": 1,
-                  "maximum": 1,
-                  "allow_quantity": false,
-                  "values": [
-                    {
-                      "name": "Apple",
-                      "price": 0.0,
-                      "is_default": true,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Banana",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Orange",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    }
-                  ]
-                }
-              ],
-              "busy_min": 15,
-              "normal_min": 10,
-              "is_hidden": false
-            },
-            {
               "name": "Turkey Swiss Avocado",
               "description": "Turkey Avocado Greens Tomatoes Peppercorn Dressing",
               "price": 10.69,
@@ -48159,6 +48085,80 @@
               ],
               "busy_min": 6,
               "normal_min": 5,
+              "is_hidden": false
+            },
+            {
+              "name": "Chicken Caesar Wrap",
+              "description": "Chicken Caesar Wrap - Romaine Lettuce - Caesar Dressing - Parmesan Cheese - Choice of Whole Fruit",
+              "price": 10.69,
+              "options": [
+                {
+                  "name": "Chicken Ceasar Wrap",
+                  "minimum": 0,
+                  "maximum": 50,
+                  "allow_quantity": true,
+                  "values": [
+                    {
+                      "name": "No Caesar Dressing",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "No Parmesan Cheese",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "No Romaine Lettuce",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "Whole Fruit Side",
+                  "minimum": 1,
+                  "maximum": 1,
+                  "allow_quantity": false,
+                  "values": [
+                    {
+                      "name": "Apple",
+                      "price": 0.0,
+                      "is_default": true,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Banana",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Orange",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "busy_min": 15,
+              "normal_min": 10,
               "is_hidden": false
             },
             {
@@ -48404,15 +48404,6 @@
           "is_hidden": false,
           "items": [
             {
-              "name": "Tangy Bourbon Chicken (Sweet Potatoes & Green Beans)",
-              "description": "Tangy bourbon Chicken with Roasted Sweet Potatoes and Green Beans",
-              "price": 12.75,
-              "options": [],
-              "busy_min": 15,
-              "normal_min": 10,
-              "is_hidden": false
-            },
-            {
               "name": "Salmon Burger",
               "description": "Salmon Patty Arugula Tomatoes Caramelized Onions Horseradish Aioli",
               "price": 10.69,
@@ -48495,403 +48486,10 @@
               "is_hidden": false
             },
             {
-              "name": "Honey Garlic Chicken",
-              "description": "",
+              "name": "Tangy Bourbon Chicken (Sweet Potatoes & Green Beans)",
+              "description": "Tangy bourbon Chicken with Roasted Sweet Potatoes and Green Beans",
               "price": 12.75,
-              "options": [
-                {
-                  "name": "Meal Deal Sides",
-                  "minimum": 0,
-                  "maximum": 2,
-                  "allow_quantity": true,
-                  "values": [
-                    {
-                      "name": "Baba ghanoush",
-                      "price": 3.0,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Beet salad",
-                      "price": 3.0,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Broccoli",
-                      "price": 2.75,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Brown rice",
-                      "price": 2.75,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Brussel Sprouts",
-                      "price": 2.75,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Carrots",
-                      "price": 2.75,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Cauliflower rice",
-                      "price": 2.05,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Cauliflower salad",
-                      "price": 3.0,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Chickpea salad",
-                      "price": 3.0,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Classic hummus",
-                      "price": 3.0,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Falafel",
-                      "price": 2.75,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Garlic mashed potato",
-                      "price": 2.75,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Green beans",
-                      "price": 2.75,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Kale salad",
-                      "price": 3.0,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Lentils Salad",
-                      "price": 3.0,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Mac and Cheese",
-                      "price": 2.75,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Mixed vegetables",
-                      "price": 2.75,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Orzo Salad",
-                      "price": 3.0,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Potato salad",
-                      "price": 3.0,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Quinoa salad",
-                      "price": 3.0,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Roasted potato",
-                      "price": 2.75,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Spicy hummus",
-                      "price": 3.0,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Stuffed grape leaves",
-                      "price": 3.0,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Sweet mashed potato",
-                      "price": 2.75,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Sweet potato salad",
-                      "price": 3.0,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Wheatberry salad",
-                      "price": 2.05,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "White rice",
-                      "price": 2.75,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 3
-                    },
-                    {
-                      "name": "Smashed Potatoes",
-                      "price": 2.75,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Brown rice",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Brussel Sprouts",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Cauliflower",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Chickpea salad",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Classic hummus w Pita",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Green beans",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Cilantro Hummus w Pita",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Kale salad",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Mac and Cheese",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Orzo Salad",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Quinoa salad",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Roasted Red Bliss Potatoes",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Roasted Sweet Potatoes",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Roasted Vegetables",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Stuffed grape leaves",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Sweet Potato",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "White rice",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Baba ganoush",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Potato Au Gratin",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "White rice with gravy",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    }
-                  ]
-                }
-              ],
+              "options": [],
               "busy_min": 15,
               "normal_min": 10,
               "is_hidden": false
@@ -50104,6 +49702,408 @@
             },
             {
               "name": "Brautwurst",
+              "description": "",
+              "price": 12.75,
+              "options": [
+                {
+                  "name": "Meal Deal Sides",
+                  "minimum": 0,
+                  "maximum": 2,
+                  "allow_quantity": true,
+                  "values": [
+                    {
+                      "name": "Baba ghanoush",
+                      "price": 3.0,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Beet salad",
+                      "price": 3.0,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Broccoli",
+                      "price": 2.75,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Brown rice",
+                      "price": 2.75,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Brussel Sprouts",
+                      "price": 2.75,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Carrots",
+                      "price": 2.75,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Cauliflower rice",
+                      "price": 2.05,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Cauliflower salad",
+                      "price": 3.0,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Chickpea salad",
+                      "price": 3.0,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Classic hummus",
+                      "price": 3.0,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Falafel",
+                      "price": 2.75,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Garlic mashed potato",
+                      "price": 2.75,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Green beans",
+                      "price": 2.75,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Kale salad",
+                      "price": 3.0,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Lentils Salad",
+                      "price": 3.0,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Mac and Cheese",
+                      "price": 2.75,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Mixed vegetables",
+                      "price": 2.75,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Orzo Salad",
+                      "price": 3.0,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Potato salad",
+                      "price": 3.0,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Quinoa salad",
+                      "price": 3.0,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Roasted potato",
+                      "price": 2.75,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Spicy hummus",
+                      "price": 3.0,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Stuffed grape leaves",
+                      "price": 3.0,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Sweet mashed potato",
+                      "price": 2.75,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Sweet potato salad",
+                      "price": 3.0,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Wheatberry salad",
+                      "price": 2.05,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "White rice",
+                      "price": 2.75,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 3
+                    },
+                    {
+                      "name": "Smashed Potatoes",
+                      "price": 2.75,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Brown rice",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Brussel Sprouts",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Cauliflower",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Chickpea salad",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Classic hummus w Pita",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Green beans",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Cilantro Hummus w Pita",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Kale salad",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Mac and Cheese",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Orzo Salad",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Quinoa salad",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Roasted Red Bliss Potatoes",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Roasted Sweet Potatoes",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Roasted Vegetables",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Stuffed grape leaves",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Sweet Potato",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "White rice",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Baba ganoush",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Potato Au Gratin",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "White rice with gravy",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "busy_min": 15,
+              "normal_min": 10,
+              "is_hidden": false
+            },
+            {
+              "name": "Honey Garlic Chicken",
               "description": "",
               "price": 12.75,
               "options": [
@@ -53306,24 +53306,6 @@
           "is_hidden": false,
           "items": [
             {
-              "name": "Plant-Based Chicken Nuggets",
-              "description": "",
-              "price": 7.49,
-              "options": [],
-              "busy_min": 15,
-              "normal_min": 10,
-              "is_hidden": false
-            },
-            {
-              "name": "Entree Only",
-              "description": "",
-              "price": 7.49,
-              "options": [],
-              "busy_min": 15,
-              "normal_min": 10,
-              "is_hidden": true
-            },
-            {
               "name": "Plant-Based Chicken Nuggets Meal",
               "description": "",
               "price": 12.99,
@@ -53864,6 +53846,15 @@
               "is_hidden": false
             },
             {
+              "name": "Plant-Based Chicken Nuggets",
+              "description": "",
+              "price": 7.49,
+              "options": [],
+              "busy_min": 15,
+              "normal_min": 10,
+              "is_hidden": false
+            },
+            {
               "name": "Falafel bowl",
               "description": "Chickpea  Quinoa  Lettuce  Banana pepper  Tomato  Tahini sauce Falafel  Pita w/ hummus",
               "price": 11.79,
@@ -53944,6 +53935,15 @@
               "busy_min": 15,
               "normal_min": 10,
               "is_hidden": false
+            },
+            {
+              "name": "Entree Only",
+              "description": "",
+              "price": 7.49,
+              "options": [],
+              "busy_min": 15,
+              "normal_min": 10,
+              "is_hidden": true
             },
             {
               "name": "3 Composed Salad",
@@ -61756,10 +61756,10 @@
       "location_id": 170,
       "cafeteria_id": 142,
       "icon_image_url": "campuses/icon_restaurant_19_18_129_1585676052860.jpg",
-      "estimated_wait_time_minutes": 0,
-      "currently_open": false,
-      "takeout_open": false,
-      "delivery_open": false,
+      "estimated_wait_time_minutes": 13,
+      "currently_open": true,
+      "takeout_open": true,
+      "delivery_open": true,
       "takeout_hours": {
         "open": "11:00:00",
         "close": "21:00:00"
@@ -64662,9 +64662,9 @@
       "location_id": 1930,
       "cafeteria_id": 1747,
       "icon_image_url": "campuses/icon_location_19_18_127_1704385658448.jpg",
-      "estimated_wait_time_minutes": 0,
-      "currently_open": false,
-      "takeout_open": false,
+      "estimated_wait_time_minutes": 17,
+      "currently_open": true,
+      "takeout_open": true,
       "delivery_open": false,
       "takeout_hours": {
         "open": "11:00:00",
@@ -83629,10 +83629,10 @@
       "location_id": 54,
       "cafeteria_id": 50,
       "icon_image_url": "campuses/icon_location_19_18_127_1701730116543.jpg",
-      "estimated_wait_time_minutes": 0,
-      "currently_open": false,
-      "takeout_open": false,
-      "delivery_open": false,
+      "estimated_wait_time_minutes": 17,
+      "currently_open": true,
+      "takeout_open": true,
+      "delivery_open": true,
       "takeout_hours": {
         "open": "10:30:00",
         "close": "21:00:00"
@@ -89367,10 +89367,10 @@
       "location_id": 1983,
       "cafeteria_id": 1794,
       "icon_image_url": "campuses/icon_location_19_18_127_1704385673480.jpg",
-      "estimated_wait_time_minutes": 0,
-      "currently_open": false,
-      "takeout_open": false,
-      "delivery_open": false,
+      "estimated_wait_time_minutes": 12,
+      "currently_open": true,
+      "takeout_open": true,
+      "delivery_open": true,
       "takeout_hours": {
         "open": "11:00:00",
         "close": "21:00:00"
@@ -89479,8 +89479,8 @@
           ]
         }
       },
-      "retrieved_at": "2026-10-22 17:10:44",
-      "menu_last_updated": "2026-10-22 17:10:45",
+      "retrieved_at": "2026-10-23 15:02:21",
+      "menu_last_updated": "2026-10-23 15:02:22",
       "sections": [
         {
           "name": "Build Your Own",
@@ -90866,72 +90866,6 @@
               "is_hidden": false
             },
             {
-              "name": "Carribean Thyme",
-              "description": "Yukon and sweet potatoes jerk chicken poblano corn roasted seasonal vegetables fire- roasted tomato mango salsa and tostones.",
-              "price": 11.89,
-              "options": [
-                {
-                  "name": "Carribean Thyme",
-                  "minimum": 0,
-                  "maximum": 50,
-                  "allow_quantity": true,
-                  "values": [
-                    {
-                      "name": "No chicken",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "No corn",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "No potatoes",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "No salsa",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "No tomatoes",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "No veggies",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    }
-                  ]
-                }
-              ],
-              "busy_min": 5,
-              "normal_min": 3,
-              "is_hidden": false
-            },
-            {
               "name": "Charlies Bowl Beirut",
               "description": "Quinoa-brown rice chickpea falafel parsley-cucumber quinoa tabbouleh fire-roasted tomato chickpeas sesame-free lemon hummus toum.",
               "price": 11.89,
@@ -91096,18 +91030,18 @@
               "is_hidden": false
             },
             {
-              "name": "Kanis Golden Thai Thyme",
-              "description": "Quinoa-brown rice golden Burmese chickpea tofu roasted vegetables cucumber pickled cabbage and carrot basil and sweet chile-lime glaze.",
+              "name": "Carribean Thyme",
+              "description": "Yukon and sweet potatoes jerk chicken poblano corn roasted seasonal vegetables fire- roasted tomato mango salsa and tostones.",
               "price": 11.89,
               "options": [
                 {
-                  "name": "Kanis Thai Thyme",
+                  "name": "Carribean Thyme",
                   "minimum": 0,
                   "maximum": 50,
                   "allow_quantity": true,
                   "values": [
                     {
-                      "name": "No Brown Rice and Quinoa",
+                      "name": "No chicken",
                       "price": 0.0,
                       "is_default": false,
                       "is_hidden": false,
@@ -91115,7 +91049,7 @@
                       "max_quantity": 0
                     },
                     {
-                      "name": "No Carrots",
+                      "name": "No corn",
                       "price": 0.0,
                       "is_default": false,
                       "is_hidden": false,
@@ -91123,7 +91057,7 @@
                       "max_quantity": 0
                     },
                     {
-                      "name": "No Cucumbers",
+                      "name": "No potatoes",
                       "price": 0.0,
                       "is_default": false,
                       "is_hidden": false,
@@ -91131,7 +91065,7 @@
                       "max_quantity": 0
                     },
                     {
-                      "name": "No Pickled Cabbage",
+                      "name": "No salsa",
                       "price": 0.0,
                       "is_default": false,
                       "is_hidden": false,
@@ -91139,7 +91073,7 @@
                       "max_quantity": 0
                     },
                     {
-                      "name": "No Roasted Vegetables",
+                      "name": "No tomatoes",
                       "price": 0.0,
                       "is_default": false,
                       "is_hidden": false,
@@ -91147,15 +91081,7 @@
                       "max_quantity": 0
                     },
                     {
-                      "name": "No Sweet chili Sauce",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "No Thai Spiced Tofu",
+                      "name": "No veggies",
                       "price": 0.0,
                       "is_default": false,
                       "is_hidden": false,
@@ -91258,6 +91184,80 @@
               "busy_min": 5,
               "normal_min": 3,
               "is_hidden": false
+            },
+            {
+              "name": "Kanis Golden Thai Thyme",
+              "description": "Quinoa-brown rice golden Burmese chickpea tofu roasted vegetables cucumber pickled cabbage and carrot basil and sweet chile-lime glaze.",
+              "price": 11.89,
+              "options": [
+                {
+                  "name": "Kanis Thai Thyme",
+                  "minimum": 0,
+                  "maximum": 50,
+                  "allow_quantity": true,
+                  "values": [
+                    {
+                      "name": "No Brown Rice and Quinoa",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "No Carrots",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "No Cucumbers",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "No Pickled Cabbage",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "No Roasted Vegetables",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "No Sweet chili Sauce",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "No Thai Spiced Tofu",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "busy_min": 5,
+              "normal_min": 3,
+              "is_hidden": false
             }
           ]
         },
@@ -91276,37 +91276,21 @@
           "is_hidden": false,
           "items": [
             {
-              "name": "Hot Honey Chicken Tenders",
-              "description": "Spicy sweet chicken tenders with hot honey chicken it is sweet potato fries",
-              "price": 11.3,
-              "options": [
-                {
-                  "name": "Hot Honey Chicken Tenders",
-                  "minimum": 0,
-                  "maximum": 50,
-                  "allow_quantity": true,
-                  "values": [
-                    {
-                      "name": "Extra Tenders (2)",
-                      "price": 2.99,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "No Extra Tenders",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    }
-                  ]
-                }
-              ],
-              "busy_min": 15,
-              "normal_min": 10,
+              "name": "Jerk chicken tostones plate",
+              "description": "Jerk chicken tostones plate",
+              "price": 12.49,
+              "options": [],
+              "busy_min": 5,
+              "normal_min": 3,
+              "is_hidden": false
+            },
+            {
+              "name": "Smoky barbacoa loaded fries",
+              "description": "Smoky barbacoa loaded fries",
+              "price": 12.85,
+              "options": [],
+              "busy_min": 5,
+              "normal_min": 3,
               "is_hidden": false
             },
             {
@@ -91400,21 +91384,37 @@
               "is_hidden": false
             },
             {
-              "name": "Jerk chicken tostones plate",
-              "description": "Jerk chicken tostones plate",
-              "price": 12.49,
-              "options": [],
-              "busy_min": 5,
-              "normal_min": 3,
-              "is_hidden": false
-            },
-            {
-              "name": "Smoky barbacoa loaded fries",
-              "description": "Smoky barbacoa loaded fries",
-              "price": 12.85,
-              "options": [],
-              "busy_min": 5,
-              "normal_min": 3,
+              "name": "Hot Honey Chicken Tenders",
+              "description": "Spicy sweet chicken tenders with hot honey chicken it is sweet potato fries",
+              "price": 11.3,
+              "options": [
+                {
+                  "name": "Hot Honey Chicken Tenders",
+                  "minimum": 0,
+                  "maximum": 50,
+                  "allow_quantity": true,
+                  "values": [
+                    {
+                      "name": "Extra Tenders (2)",
+                      "price": 2.99,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "No Extra Tenders",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "busy_min": 15,
+              "normal_min": 10,
               "is_hidden": false
             },
             {
@@ -91532,9 +91532,9 @@
       "location_id": 232,
       "cafeteria_id": 190,
       "icon_image_url": "campuses/icon_restaurant_19_18_129_1594924426731.jpg",
-      "estimated_wait_time_minutes": 0,
-      "currently_open": false,
-      "takeout_open": false,
+      "estimated_wait_time_minutes": 20,
+      "currently_open": true,
+      "takeout_open": true,
       "delivery_open": false,
       "takeout_hours": {
         "open": "11:00:00",
@@ -266379,7 +266379,7 @@
       "location_id": 147,
       "cafeteria_id": 126,
       "icon_image_url": "campuses/icon_restaurant_19_18_129_1594924777698.jpg",
-      "estimated_wait_time_minutes": 13,
+      "estimated_wait_time_minutes": 12,
       "currently_open": true,
       "takeout_open": true,
       "delivery_open": true,
@@ -281307,10 +281307,10 @@
       "location_id": 238,
       "cafeteria_id": 196,
       "icon_image_url": "campuses/icon_location_19_18_127_1757693875654.jpg",
-      "estimated_wait_time_minutes": 0,
-      "currently_open": false,
-      "takeout_open": false,
-      "delivery_open": false,
+      "estimated_wait_time_minutes": 17,
+      "currently_open": true,
+      "takeout_open": true,
+      "delivery_open": true,
       "takeout_hours": {
         "open": "08:00:00",
         "close": "17:00:00"
@@ -284579,8 +284579,8 @@
           ]
         }
       },
-      "retrieved_at": "2026-10-22 18:10:58",
-      "menu_last_updated": "2026-10-22 18:10:58",
+      "retrieved_at": "2026-10-23 14:20:32",
+      "menu_last_updated": "2026-10-23 14:20:33",
       "sections": [
         {
           "name": "Specials",
@@ -284591,6 +284591,38 @@
               "description": "",
               "price": 5.0,
               "options": [
+                {
+                  "name": "Whole Fruit Option",
+                  "minimum": 1,
+                  "maximum": 1,
+                  "allow_quantity": true,
+                  "values": [
+                    {
+                      "name": "Apple",
+                      "price": 0.0,
+                      "is_default": true,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Banana",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Orange",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": true,
+                      "is_out_of_stock": true,
+                      "max_quantity": 0
+                    }
+                  ]
+                },
                 {
                   "name": "Meal Deal Option",
                   "minimum": 0,
@@ -284667,38 +284699,6 @@
                       "is_default": false,
                       "is_hidden": false,
                       "is_out_of_stock": false,
-                      "max_quantity": 0
-                    }
-                  ]
-                },
-                {
-                  "name": "Whole Fruit Option",
-                  "minimum": 1,
-                  "maximum": 1,
-                  "allow_quantity": true,
-                  "values": [
-                    {
-                      "name": "Apple",
-                      "price": 0.0,
-                      "is_default": true,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Banana",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Orange",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": true,
-                      "is_out_of_stock": true,
                       "max_quantity": 0
                     }
                   ]
@@ -286440,15 +286440,6 @@
           "is_hidden": false,
           "items": [
             {
-              "name": "Breakfast Croissant",
-              "description": "",
-              "price": 6.95,
-              "options": [],
-              "busy_min": 15,
-              "normal_min": 10,
-              "is_hidden": false
-            },
-            {
               "name": "Chicken Parmesan",
               "description": "",
               "price": 10.69,
@@ -286630,6 +286621,15 @@
                   ]
                 }
               ],
+              "busy_min": 15,
+              "normal_min": 10,
+              "is_hidden": false
+            },
+            {
+              "name": "Breakfast Croissant",
+              "description": "",
+              "price": 6.95,
+              "options": [],
               "busy_min": 15,
               "normal_min": 10,
               "is_hidden": false
@@ -287427,56 +287427,6 @@
               "is_hidden": false
             },
             {
-              "name": "Breads",
-              "description": "",
-              "price": 4.29,
-              "options": [
-                {
-                  "name": "Bread Options",
-                  "minimum": 1,
-                  "maximum": 1,
-                  "allow_quantity": true,
-                  "values": [
-                    {
-                      "name": "Apple rum raisin",
-                      "price": 0.0,
-                      "is_default": true,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Pumpkin",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Lemon",
-                      "price": 0.0,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    },
-                    {
-                      "name": "Banana",
-                      "price": 4.29,
-                      "is_default": false,
-                      "is_hidden": false,
-                      "is_out_of_stock": false,
-                      "max_quantity": 0
-                    }
-                  ]
-                }
-              ],
-              "busy_min": 15,
-              "normal_min": 10,
-              "is_hidden": false
-            },
-            {
               "name": "Croissant",
               "description": "",
               "price": 4.09,
@@ -287528,6 +287478,56 @@
               "options": [],
               "busy_min": 5,
               "normal_min": 3,
+              "is_hidden": false
+            },
+            {
+              "name": "Breads",
+              "description": "",
+              "price": 4.29,
+              "options": [
+                {
+                  "name": "Bread Options",
+                  "minimum": 1,
+                  "maximum": 1,
+                  "allow_quantity": true,
+                  "values": [
+                    {
+                      "name": "Apple rum raisin",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Pumpkin",
+                      "price": 0.0,
+                      "is_default": true,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Lemon",
+                      "price": 0.0,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    },
+                    {
+                      "name": "Banana",
+                      "price": 4.29,
+                      "is_default": false,
+                      "is_hidden": false,
+                      "is_out_of_stock": false,
+                      "max_quantity": 0
+                    }
+                  ]
+                }
+              ],
+              "busy_min": 15,
+              "normal_min": 10,
               "is_hidden": false
             },
             {
@@ -287749,10 +287749,10 @@
       "location_id": 533,
       "cafeteria_id": 475,
       "icon_image_url": "campuses/icon_location_19_18_127_1701729943321.jpg",
-      "estimated_wait_time_minutes": 0,
-      "currently_open": false,
-      "takeout_open": false,
-      "delivery_open": false,
+      "estimated_wait_time_minutes": 12,
+      "currently_open": true,
+      "takeout_open": true,
+      "delivery_open": true,
       "takeout_hours": {
         "open": "10:30:00",
         "close": "21:00:00"
@@ -290295,10 +290295,10 @@
       "location_id": 1410,
       "cafeteria_id": 1266,
       "icon_image_url": "campuses/icon_location_19_18_127_1787589283292.jpg",
-      "estimated_wait_time_minutes": 0,
-      "currently_open": false,
-      "takeout_open": false,
-      "delivery_open": false,
+      "estimated_wait_time_minutes": 12,
+      "currently_open": true,
+      "takeout_open": true,
+      "delivery_open": true,
       "takeout_hours": {
         "open": "10:30:00",
         "close": "21:00:00"
@@ -292944,10 +292944,10 @@
       "location_id": 965,
       "cafeteria_id": 857,
       "icon_image_url": "campuses/icon_location_19_18_129_1610975190893.jpg",
-      "estimated_wait_time_minutes": 0,
-      "currently_open": false,
-      "takeout_open": false,
-      "delivery_open": false,
+      "estimated_wait_time_minutes": 12,
+      "currently_open": true,
+      "takeout_open": true,
+      "delivery_open": true,
       "takeout_hours": {
         "open": "11:00:00",
         "close": "21:00:59"
@@ -298971,9 +298971,9 @@
       "location_id": 1368,
       "cafeteria_id": 1227,
       "icon_image_url": "campuses/icon_location_19_18_129_1632330819887.jpg",
-      "estimated_wait_time_minutes": 0,
-      "currently_open": false,
-      "takeout_open": false,
+      "estimated_wait_time_minutes": 7,
+      "currently_open": true,
+      "takeout_open": true,
       "delivery_open": false,
       "takeout_hours": {
         "open": "11:00:00",
@@ -311582,7 +311582,7 @@
       "location_id": 964,
       "cafeteria_id": 856,
       "icon_image_url": "campuses/icon_location_19_18_129_1610975062760.jpg",
-      "estimated_wait_time_minutes": 13,
+      "estimated_wait_time_minutes": 12,
       "currently_open": true,
       "takeout_open": true,
       "delivery_open": false,
