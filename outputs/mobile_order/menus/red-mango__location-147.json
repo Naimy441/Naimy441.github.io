@@ -4,10 +4,10 @@
   "location_id": 147,
   "cafeteria_id": 126,
   "icon_image_url": "campuses/icon_restaurant_19_18_129_1594924777698.jpg",
-  "estimated_wait_time_minutes": 12,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "09:00:00",
     "close": "17:00:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-08 18:00:25",
-  "menu_last_updated": "2026-10-08 18:00:26",
+  "retrieved_at": "2026-10-24 18:00:39",
+  "menu_last_updated": "2026-10-24 18:00:39",
   "sections": [
     {
       "name": "Daily Devil Deal",
@@ -315,112 +315,6 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Berries & Acai Bowl",
-          "description": "Acai puree blended with apple juice bananas and blueberries. Topped with granola banana blueberries and strawberries",
-          "price": 11.89,
-          "options": [
-            {
-              "name": "Bowl Base",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Greek Yogurt",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Acai Base",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Berries & Acai Bowl",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No  Granola",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Banana",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Strawberries",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No blueberries",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Bowls Add-on",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Vegan protein",
-                  "price": 1.19,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Whey protein",
-                  "price": 1.19,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Honey",
-                  "price": 0.79,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Choco-Nut Dream Acai Bowl",
           "description": "Acai puree blended with apple juice blueberries and bananas. Topped with granola bananas strawberries and Nutella",
           "price": 11.89,
@@ -481,6 +375,112 @@
                 },
                 {
                   "name": "No Strawberries",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Bowls Add-on",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Vegan protein",
+                  "price": 1.19,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Whey protein",
+                  "price": 1.19,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Honey",
+                  "price": 0.79,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Berries & Acai Bowl",
+          "description": "Acai puree blended with apple juice bananas and blueberries. Topped with granola banana blueberries and strawberries",
+          "price": 11.89,
+          "options": [
+            {
+              "name": "Bowl Base",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Greek Yogurt",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Acai Base",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Berries & Acai Bowl",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No  Granola",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Banana",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Strawberries",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No blueberries",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -10893,42 +10893,18 @@
           "is_hidden": false
         },
         {
-          "name": "Cali",
-          "description": "Egg Cheddar Bacon Avocado Spinach Roasted Cherry Tomatoes Balsamic Glaze",
-          "price": 7.29,
+          "name": "Rise & Shine",
+          "description": "Egg Spinach Onion Feta Sun-Dried Tomatoes Flour Tortilla",
+          "price": 6.99,
           "options": [
             {
-              "name": "Cali",
+              "name": "Rise & Shine",
               "minimum": 0,
               "maximum": 50,
               "allow_quantity": true,
               "values": [
                 {
                   "name": "GF Tortilla",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Avocado",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Bacon",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Balsamic glaze",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -10944,7 +10920,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Roasted tomatoes",
+                  "name": "No mozzarella",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -10952,7 +10928,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Shredded Cheddar",
+                  "name": "No avocado",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -10960,7 +10936,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No spinach",
+                  "name": "No Spinach",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No roasted tomatoes",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -11095,18 +11079,42 @@
           "is_hidden": false
         },
         {
-          "name": "Rise & Shine",
-          "description": "Egg Spinach Onion Feta Sun-Dried Tomatoes Flour Tortilla",
-          "price": 6.99,
+          "name": "Cali",
+          "description": "Egg Cheddar Bacon Avocado Spinach Roasted Cherry Tomatoes Balsamic Glaze",
+          "price": 7.29,
           "options": [
             {
-              "name": "Rise & Shine",
+              "name": "Cali",
               "minimum": 0,
               "maximum": 50,
               "allow_quantity": true,
               "values": [
                 {
                   "name": "GF Tortilla",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Avocado",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Bacon",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Balsamic glaze",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -11122,7 +11130,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No mozzarella",
+                  "name": "No Roasted tomatoes",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -11130,7 +11138,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No avocado",
+                  "name": "No Shredded Cheddar",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -11138,15 +11146,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Spinach",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No roasted tomatoes",
+                  "name": "No spinach",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -12375,18 +12375,18 @@
           "is_hidden": false
         },
         {
-          "name": "Carnivore Flatbread Pizza",
-          "description": "Served on naan bread with olive oil arrabiata sauce mozzarella ham salami pepperoni parmesan cheese and oregano",
-          "price": 11.99,
+          "name": "Buffalo Chicken Pizza",
+          "description": "Served on naan bread with olive oil cheddar cheese chicken buffalo sauce and ranch dressing",
+          "price": 9.99,
           "options": [
             {
-              "name": "RED - Carnivore Flatbread Pizza",
+              "name": "Buffalo Chicken Pizza",
               "minimum": 0,
               "maximum": 50,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "No arrabiata sauce",
+                  "name": "No Bacon",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -12394,7 +12394,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No ham",
+                  "name": "No Buffalo Sauce",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -12402,7 +12402,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No mozzarella",
+                  "name": "No Chicken",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -12410,7 +12410,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No olive oil",
+                  "name": "No Ranch Dressing",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -12418,7 +12418,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No oregano",
+                  "name": "No Shredded Cheddar",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -12426,7 +12426,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No parmesan cheese",
+                  "name": "No Olive Oil",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -12434,19 +12434,11 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No pepperoni",
+                  "name": "Gluten Free Wrap",
                   "price": 0.0,
                   "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No salami",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
                   "max_quantity": 0
                 }
               ]
@@ -12745,18 +12737,18 @@
           "is_hidden": false
         },
         {
-          "name": "Buffalo Chicken Pizza",
-          "description": "Served on naan bread with olive oil cheddar cheese chicken buffalo sauce and ranch dressing",
-          "price": 9.99,
+          "name": "Carnivore Flatbread Pizza",
+          "description": "Served on naan bread with olive oil arrabiata sauce mozzarella ham salami pepperoni parmesan cheese and oregano",
+          "price": 11.99,
           "options": [
             {
-              "name": "Buffalo Chicken Pizza",
+              "name": "RED - Carnivore Flatbread Pizza",
               "minimum": 0,
               "maximum": 50,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "No Bacon",
+                  "name": "No arrabiata sauce",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -12764,7 +12756,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Buffalo Sauce",
+                  "name": "No ham",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -12772,7 +12764,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Chicken",
+                  "name": "No mozzarella",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -12780,7 +12772,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Ranch Dressing",
+                  "name": "No olive oil",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -12788,7 +12780,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Shredded Cheddar",
+                  "name": "No oregano",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -12796,7 +12788,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Olive Oil",
+                  "name": "No parmesan cheese",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -12804,11 +12796,19 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Gluten Free Wrap",
+                  "name": "No pepperoni",
                   "price": 0.0,
                   "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No salami",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 }
               ]
@@ -13829,376 +13829,6 @@
           "is_hidden": false
         },
         {
-          "name": "Club Remix",
-          "description": "Chicken ham spinach mozzarella avocado roasted tomatoes",
-          "price": 8.99,
-          "options": [
-            {
-              "name": "Club Remix",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No Avocado",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Chicken",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Ham",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Mozzarella",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Roasted  tomatoes",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Spinach",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "GF Tortilla",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Wheat Tortilla",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Flatbreads Add-on",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Apple Slices",
-                  "price": 0.49,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Avocado",
-                  "price": 1.19,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Bacon",
-                  "price": 1.19,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Falafel",
-                  "price": 1.19,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Grilled Chicken",
-                  "price": 1.19,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ham",
-                  "price": 1.19,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Lettuce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Onion",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pepperoni",
-                  "price": 1.19,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pineapple",
-                  "price": 0.49,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Provolone",
-                  "price": 0.89,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Salami",
-                  "price": 1.19,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Shredded Cheddar",
-                  "price": 0.89,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Shredded Parmesan",
-                  "price": 0.89,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sun-Dried Tomatoes",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Roasted Tomatoes",
-                  "price": 0.49,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Turkey",
-                  "price": 1.19,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Flatbreads Dressings",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Buffalo Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Caesar Dressing",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chipotle Aioli",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Harissa",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Italian Dressing",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pesto",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ranch Dressing",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sriracha",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Teriyaki Glaze",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Tzatziki Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Balsamic Glaze",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Sandwich Side Options",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No Side",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Bag of Veggie Straws",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Baked Lays Chips",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Whole Apple",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Whole Banana",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Buffalo Ranch Fold",
           "description": "Chicken bacon shredded cheddar ranch dressing buffalo sauce",
           "price": 8.99,
@@ -14613,6 +14243,376 @@
                 },
                 {
                   "name": "No turkey",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Wheat Tortilla",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Flatbreads Add-on",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Apple Slices",
+                  "price": 0.49,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Avocado",
+                  "price": 1.19,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Bacon",
+                  "price": 1.19,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Falafel",
+                  "price": 1.19,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Grilled Chicken",
+                  "price": 1.19,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Ham",
+                  "price": 1.19,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Lettuce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pepperoni",
+                  "price": 1.19,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pineapple",
+                  "price": 0.49,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Provolone",
+                  "price": 0.89,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Salami",
+                  "price": 1.19,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Shredded Cheddar",
+                  "price": 0.89,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Shredded Parmesan",
+                  "price": 0.89,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sun-Dried Tomatoes",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Roasted Tomatoes",
+                  "price": 0.49,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Turkey",
+                  "price": 1.19,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Flatbreads Dressings",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Buffalo Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Caesar Dressing",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chipotle Aioli",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Harissa",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Italian Dressing",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pesto",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Ranch Dressing",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sriracha",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Teriyaki Glaze",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Tzatziki Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Balsamic Glaze",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Sandwich Side Options",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No Side",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Bag of Veggie Straws",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Baked Lays Chips",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Whole Apple",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Whole Banana",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Club Remix",
+          "description": "Chicken ham spinach mozzarella avocado roasted tomatoes",
+          "price": 8.99,
+          "options": [
+            {
+              "name": "Club Remix",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No Avocado",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Chicken",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Ham",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Mozzarella",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Roasted  tomatoes",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Spinach",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "GF Tortilla",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
