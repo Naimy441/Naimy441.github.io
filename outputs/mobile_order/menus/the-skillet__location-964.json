@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-22 15:29:54",
-  "menu_last_updated": "2026-10-22 15:29:55",
+  "retrieved_at": "2026-10-24 23:26:09",
+  "menu_last_updated": "2026-10-24 23:26:10",
   "sections": [
     {
       "name": "Specials",
@@ -4817,6 +4817,30 @@
           "price": 1.99,
           "options": [
             {
+              "name": "Plain Pancake Option",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Single Plain Pancake",
+                  "price": 1.99,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Double Plain Pancake",
+                  "price": 3.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
               "name": "Add Ons",
               "minimum": 0,
               "maximum": 50,
@@ -4865,30 +4889,6 @@
                 {
                   "name": "Add Whipped Cream",
                   "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Plain Pancake Option",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Single Plain Pancake",
-                  "price": 1.99,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Double Plain Pancake",
-                  "price": 3.99,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -7084,6 +7084,49 @@
       "is_hidden": false,
       "items": [
         {
+          "name": "Cinnamon Oatmeal",
+          "description": "",
+          "price": 3.19,
+          "options": [
+            {
+              "name": "Oatmeal Option",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Berries",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chocolate Chips",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Bacon",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "2 Eggs",
           "description": "",
           "price": 1.99,
@@ -7182,15 +7225,6 @@
           "is_hidden": false
         },
         {
-          "name": "Bacon",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Southern Grits",
           "description": "",
           "price": 3.19,
@@ -7204,82 +7238,6 @@
           "description": "",
           "price": 3.19,
           "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Pork Sausage",
-          "description": "",
-          "price": 3.19,
-          "options": [
-            {
-              "name": "Sausage Selection",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Pork Sausage Patty",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Turkey Sausage Link",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Veggie Sausage Patty",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Cinnamon Oatmeal",
-          "description": "",
-          "price": 3.19,
-          "options": [
-            {
-              "name": "Oatmeal Option",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Berries",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chocolate Chips",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -7361,6 +7319,48 @@
           "description": "",
           "price": 3.19,
           "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Pork Sausage",
+          "description": "",
+          "price": 3.19,
+          "options": [
+            {
+              "name": "Sausage Selection",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Pork Sausage Patty",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Turkey Sausage Link",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Veggie Sausage Patty",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -7470,33 +7470,6 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Dasani Water 20 oz",
-          "description": "",
-          "price": 1.69,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Apple Juice",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Orange Juice",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Vitamin Water Acai Blueberry Pomegranate",
           "description": "",
           "price": 3.29,
@@ -7540,6 +7513,33 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
+        },
+        {
+          "name": "Dasani Water 20 oz",
+          "description": "",
+          "price": 1.69,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Apple Juice",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Orange Juice",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
         }
       ]
     },
@@ -7548,7 +7548,7 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Apple Cobbler",
+          "name": "Banana Pudding",
           "description": "",
           "price": 4.99,
           "options": [],
@@ -7557,7 +7557,7 @@
           "is_hidden": false
         },
         {
-          "name": "Banana Pudding",
+          "name": "Apple Cobbler",
           "description": "",
           "price": 4.99,
           "options": [],
