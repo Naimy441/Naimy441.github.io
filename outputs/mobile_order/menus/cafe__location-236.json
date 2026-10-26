@@ -4,16 +4,16 @@
   "location_id": 236,
   "cafeteria_id": 194,
   "icon_image_url": "campuses/icon_restaurant_19_18_129_1594924391116.jpg",
-  "estimated_wait_time_minutes": 10,
+  "estimated_wait_time_minutes": 23,
   "currently_open": true,
   "takeout_open": true,
   "delivery_open": true,
   "takeout_hours": {
-    "open": "08:00:00",
+    "open": "07:00:00",
     "close": "22:00:00"
   },
   "delivery_hours": {
-    "open": "08:00:00",
+    "open": "07:00:00",
     "close": "22:00:00"
   },
   "hours": {
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-25 16:46:49",
-  "menu_last_updated": "2026-10-25 16:46:50",
+  "retrieved_at": "2026-10-26 11:44:29",
+  "menu_last_updated": "2026-10-26 11:44:30",
   "sections": [
     {
       "name": "Specials",
@@ -6626,6 +6626,15 @@
           "is_hidden": false
         },
         {
+          "name": "Greek Scrambler",
+          "description": "",
+          "price": 6.95,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Chicken Parmesan",
           "description": "fresh mozzarella house marinara basil",
           "price": 10.69,
@@ -6684,18 +6693,9 @@
           "is_hidden": false
         },
         {
-          "name": "Greek Scrambler",
-          "description": "",
-          "price": 6.95,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Chicken Pesto",
-          "description": "A hot sandwich with grilled chicken pesto and melted mozzarella cheese. Served with a side of chips.",
-          "price": 10.69,
+          "name": "Crispy Chicken & Pimento Cheese",
+          "description": "Chicken tenders pimento cheese pickles arugula oil blend and garlic on sourdough bread",
+          "price": 10.99,
           "options": [
             {
               "name": "Sandwich Side Option",
@@ -6727,9 +6727,9 @@
           "is_hidden": false
         },
         {
-          "name": "Crispy Chicken & Pimento Cheese",
-          "description": "Chicken tenders pimento cheese pickles arugula oil blend and garlic on sourdough bread",
-          "price": 10.99,
+          "name": "Chicken Pesto",
+          "description": "A hot sandwich with grilled chicken pesto and melted mozzarella cheese. Served with a side of chips.",
+          "price": 10.69,
           "options": [
             {
               "name": "Sandwich Side Option",
@@ -6828,24 +6828,6 @@
           "is_hidden": false
         },
         {
-          "name": "Chicken Shawarma",
-          "description": "all-natural grilled chicken romaine tomato parsley lemon aioli",
-          "price": 9.75,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Falafel",
-          "description": "mixed field greens tomato green pepper pickle lemon tahini",
-          "price": 7.49,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Turkey Chimichurri Sandwich",
           "description": "house pickled onion Swiss chimichurri kale slaw",
           "price": 10.05,
@@ -6875,6 +6857,24 @@
               ]
             }
           ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Chicken Shawarma",
+          "description": "all-natural grilled chicken romaine tomato parsley lemon aioli",
+          "price": 9.75,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Falafel",
+          "description": "mixed field greens tomato green pepper pickle lemon tahini",
+          "price": 7.49,
+          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -7285,6 +7285,15 @@
           "is_hidden": true
         },
         {
+          "name": "Pumpkin Sweet Bread",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Danish",
           "description": "",
           "price": 4.29,
@@ -7319,53 +7328,57 @@
           "is_hidden": true
         },
         {
-          "name": "Cupcake",
+          "name": "Quiche Lorraine Slice",
           "description": "",
-          "price": 5.35,
-          "options": [
-            {
-              "name": "Cupcake",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Chocolate Cupcake",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Cookies & Cream Cupcake",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Strawberry Lemonade Cupcake",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Vanilla Cupcake",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
+          "price": 7.49,
+          "options": [],
           "busy_min": 15,
           "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Strawberry Shortcake Slice",
+          "description": "",
+          "price": 6.99,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Tiramisu Slice",
+          "description": "",
+          "price": 6.99,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Blueberry Scone GF",
+          "description": "",
+          "price": 5.35,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Chocolate Covered Strawberry (EACH)",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Banana Bread",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
           "is_hidden": false
         },
         {
@@ -7441,6 +7454,83 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
+        },
+        {
+          "name": "Coconut Macaroon (GF)",
+          "description": "",
+          "price": 3.69,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Cupcake",
+          "description": "",
+          "price": 5.35,
+          "options": [
+            {
+              "name": "Cupcake",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Chocolate Cupcake",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cookies & Cream Cupcake",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Strawberry Lemonade Cupcake",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Vanilla Cupcake",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Chocolate Chip Scone",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Croissant",
+          "description": "",
+          "price": 4.09,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
         },
         {
           "name": "Cookie",
@@ -7557,96 +7647,6 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
-        },
-        {
-          "name": "Pumpkin Sweet Bread",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Quiche Lorraine Slice",
-          "description": "",
-          "price": 7.49,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Strawberry Shortcake Slice",
-          "description": "",
-          "price": 6.99,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Tiramisu Slice",
-          "description": "",
-          "price": 6.99,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Blueberry Scone GF",
-          "description": "",
-          "price": 5.35,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Chocolate Covered Strawberry (EACH)",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Banana Bread",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Coconut Macaroon (GF)",
-          "description": "",
-          "price": 3.69,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Chocolate Chip Scone",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Croissant",
-          "description": "",
-          "price": 4.09,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
         },
         {
           "name": "Muffin",
