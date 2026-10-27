@@ -4,10 +4,10 @@
   "location_id": 2095,
   "cafeteria_id": 1905,
   "icon_image_url": "campuses/icon_location_19_18_127_1756835590933.jpg",
-  "estimated_wait_time_minutes": 17,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "08:00:00",
     "close": "15:00:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-22 15:50:38",
-  "menu_last_updated": "2026-10-22 15:50:38",
+  "retrieved_at": "2026-10-27 19:14:12",
+  "menu_last_updated": "2026-10-27 19:14:12",
   "sections": [
     {
       "name": "Coffee",
@@ -3094,30 +3094,6 @@
           "price": 2.99,
           "options": [
             {
-              "name": "Coffee Temp",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Hot Coffee",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Iced Coffee",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
               "name": "Espresso option",
               "minimum": 0,
               "maximum": 50,
@@ -3134,6 +3110,30 @@
                 {
                   "name": "Extra Shot Espresso",
                   "price": 1.49,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Coffee Temp",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Hot Coffee",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Iced Coffee",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -5184,48 +5184,6 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Lemonade",
-          "description": "",
-          "price": 3.29,
-          "options": [
-            {
-              "name": "Lemonade Flavors",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Lavender",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Raspberry Hibiscus",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Strawberry Watermelon",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Kombucha",
           "description": "",
           "price": 5.39,
@@ -5275,6 +5233,48 @@
           "description": "",
           "price": 2.49,
           "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Lemonade",
+          "description": "",
+          "price": 3.29,
+          "options": [
+            {
+              "name": "Lemonade Flavors",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Lavender",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Raspberry Hibiscus",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Strawberry Watermelon",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
