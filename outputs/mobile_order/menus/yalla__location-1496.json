@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-26 18:20:24",
-  "menu_last_updated": "2026-10-26 18:20:25",
+  "retrieved_at": "2026-10-28 17:16:25",
+  "menu_last_updated": "2026-10-28 17:16:26",
   "sections": [
     {
       "name": "DAILY DEVIL",
@@ -190,9 +190,9 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Arayes pita",
-          "description": "pita bread stuffed with ground beef mixed with herbs and meditereanin spices",
-          "price": 13.99,
+          "name": "Chicken Shawarma Pita",
+          "description": "Marinated grilled chicken stuffed pita sandwich. Includes salads sauces brine pickles and fresh pita.",
+          "price": 16.0,
           "options": [
             {
               "name": "PITA SANDWICH",
@@ -291,14 +291,14 @@
               ]
             }
           ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
         },
         {
-          "name": "Falafel pita",
-          "description": "Crispy chickpea falafel stuffed pita sandwich. Contains gluten. Includes salads sauces brine pickles and fresh pita.",
-          "price": 12.0,
+          "name": "Chicken schnitzel  Pita",
+          "description": "Panko-breaded cutlets fried to order stuffed pita sandwich. Includes salads sauces brine pickles and fresh pita.",
+          "price": 16.0,
           "options": [
             {
               "name": "PITA SANDWICH",
@@ -402,9 +402,9 @@
           "is_hidden": false
         },
         {
-          "name": "Pargiot pita",
-          "description": "pita bread pargiot marinated baby chicken israeli salad cabbage salad hummus tahini schug",
-          "price": 11.99,
+          "name": "Shwarma pita",
+          "description": "Shawarma Hummus Israeli Salad Cabage Salad and Tahini Inside fresh hot Pita",
+          "price": 16.0,
           "options": [
             {
               "name": "PITA SANDWICH",
@@ -505,12 +505,12 @@
           ],
           "busy_min": 15,
           "normal_min": 10,
-          "is_hidden": true
+          "is_hidden": false
         },
         {
-          "name": "Rib eye pita",
-          "description": "pita bread sous vide rib eye strips israeli salad cabbage salad hummus tahini schug",
-          "price": 17.0,
+          "name": "Shakshuka pita",
+          "description": "pita bread 2 sous vide eggs in shakshuka (tomato base sauce)",
+          "price": 10.0,
           "options": [
             {
               "name": "PITA SANDWICH",
@@ -720,9 +720,9 @@
           "is_hidden": true
         },
         {
-          "name": "Shakshuka pita",
-          "description": "pita bread 2 sous vide eggs in shakshuka (tomato base sauce)",
-          "price": 10.0,
+          "name": "Rib eye pita",
+          "description": "pita bread sous vide rib eye strips israeli salad cabbage salad hummus tahini schug",
+          "price": 17.0,
           "options": [
             {
               "name": "PITA SANDWICH",
@@ -826,9 +826,115 @@
           "is_hidden": true
         },
         {
-          "name": "Shwarma pita",
-          "description": "Shawarma Hummus Israeli Salad Cabage Salad and Tahini Inside fresh hot Pita",
-          "price": 16.0,
+          "name": "Pargiot pita",
+          "description": "pita bread pargiot marinated baby chicken israeli salad cabbage salad hummus tahini schug",
+          "price": 11.99,
+          "options": [
+            {
+              "name": "PITA SANDWICH",
+              "minimum": 0,
+              "maximum": 5,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "NO CABBAGE SALAD",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "NO HUMMUS",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "NO ISRAELI SALAD",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "NO TAHINI",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Pickles",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Bottled Water & Fries",
+                  "price": 6.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Small Fries Included",
+                  "price": 3.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "LIMONANA & Fries",
+                  "price": 6.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Soda & Fries",
+                  "price": 6.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Falafel pita",
+          "description": "Crispy chickpea falafel stuffed pita sandwich. Contains gluten. Includes salads sauces brine pickles and fresh pita.",
+          "price": 12.0,
           "options": [
             {
               "name": "PITA SANDWICH",
@@ -932,9 +1038,9 @@
           "is_hidden": false
         },
         {
-          "name": "Chicken schnitzel  Pita",
-          "description": "Panko-breaded cutlets fried to order stuffed pita sandwich. Includes salads sauces brine pickles and fresh pita.",
-          "price": 16.0,
+          "name": "Arayes pita",
+          "description": "pita bread stuffed with ground beef mixed with herbs and meditereanin spices",
+          "price": 13.99,
           "options": [
             {
               "name": "PITA SANDWICH",
@@ -1035,113 +1141,7 @@
           ],
           "busy_min": 15,
           "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Chicken Shawarma Pita",
-          "description": "Marinated grilled chicken stuffed pita sandwich. Includes salads sauces brine pickles and fresh pita.",
-          "price": 16.0,
-          "options": [
-            {
-              "name": "PITA SANDWICH",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "NO CABBAGE SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO HUMMUS",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO ISRAELI SALAD",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO SCHUG (SPICY GREEN SAUCE)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "NO TAHINI",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickles",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "MAKE IT A COMBO -  drink and fries for $4 more",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Bottled Water & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Small Fries Included",
-                  "price": 3.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "LIMONANA & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soda & Fries",
-                  "price": 6.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
+          "is_hidden": true
         }
       ]
     },
