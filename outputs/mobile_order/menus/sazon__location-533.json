@@ -4,10 +4,10 @@
   "location_id": 533,
   "cafeteria_id": 475,
   "icon_image_url": "campuses/icon_location_19_18_127_1701729943321.jpg",
-  "estimated_wait_time_minutes": 12,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "10:30:00",
     "close": "21:00:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-28 15:13:44",
-  "menu_last_updated": "2026-10-28 15:13:45",
+  "retrieved_at": "2026-10-28 21:41:34",
+  "menu_last_updated": "2026-10-28 21:41:35",
   "sections": [
     {
       "name": "SAZ - Game Day Specials Online",
@@ -234,18 +234,18 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Arepa Bowl",
-          "description": "Latin bowl customized with your choice of toppings",
+          "name": "2 Tacos",
+          "description": "2 Tacos with choice of protein and toppings",
           "price": 13.55,
           "options": [
             {
-              "name": "Cheese Option",
+              "name": "Taco Tortilla Option",
               "minimum": 0,
               "maximum": 1,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Monterrey Jack Cheese",
+                  "name": "Corn tortilla",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -253,7 +253,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Cheese",
+                  "name": "Flour tortilla",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -455,31 +455,7 @@
               ]
             },
             {
-              "name": "Arepa Option",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Arepa",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Arepa",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Arepa Bowl Toppings",
+              "name": "Toppings",
               "minimum": 0,
               "maximum": 50,
               "allow_quantity": false,
@@ -493,7 +469,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Add Egg",
+                  "name": "Fried Egg",
                   "price": 1.05,
                   "is_default": false,
                   "is_hidden": false,
@@ -541,6 +517,14 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Sauteed onions",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Plaintains",
                   "price": 0.0,
                   "is_default": false,
@@ -584,12 +568,36 @@
                   "name": "Cilantro Lime Slaw",
                   "price": 0.0,
                   "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
                   "name": "Cotija Cheese",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Cheese Option",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Monterrey Jack Cheese",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Cheese",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1230,18 +1238,18 @@
           "is_hidden": false
         },
         {
-          "name": "2 Tacos",
-          "description": "2 Tacos with choice of protein and toppings",
+          "name": "Arepa Bowl",
+          "description": "Latin bowl customized with your choice of toppings",
           "price": 13.55,
           "options": [
             {
-              "name": "Taco Tortilla Option",
+              "name": "Cheese Option",
               "minimum": 0,
               "maximum": 1,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Corn tortilla",
+                  "name": "Monterrey Jack Cheese",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1249,7 +1257,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Flour tortilla",
+                  "name": "No Cheese",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1451,7 +1459,31 @@
               ]
             },
             {
-              "name": "Toppings",
+              "name": "Arepa Option",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Arepa",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Arepa",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Arepa Bowl Toppings",
               "minimum": 0,
               "maximum": 50,
               "allow_quantity": false,
@@ -1465,7 +1497,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Fried Egg",
+                  "name": "Add Egg",
                   "price": 1.05,
                   "is_default": false,
                   "is_hidden": false,
@@ -1513,14 +1545,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Sauteed onions",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Plaintains",
                   "price": 0.0,
                   "is_default": false,
@@ -1564,36 +1588,12 @@
                   "name": "Cilantro Lime Slaw",
                   "price": 0.0,
                   "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
                   "name": "Cotija Cheese",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Cheese Option",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Monterrey Jack Cheese",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Cheese",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2469,6 +2469,24 @@
           "is_hidden": false
         },
         {
+          "name": "Guacamole",
+          "description": "",
+          "price": 1.95,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Maduros",
+          "description": "",
+          "price": 2.69,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Queso",
           "description": "",
           "price": 1.95,
@@ -2517,24 +2535,6 @@
           "name": "Egg",
           "description": "",
           "price": 1.05,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Guacamole",
-          "description": "",
-          "price": 1.95,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Maduros",
-          "description": "",
-          "price": 2.69,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
