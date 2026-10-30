@@ -4,7 +4,7 @@
   "location_id": 236,
   "cafeteria_id": 194,
   "icon_image_url": "campuses/icon_restaurant_19_18_129_1594924391116.jpg",
-  "estimated_wait_time_minutes": 25,
+  "estimated_wait_time_minutes": 11,
   "currently_open": true,
   "takeout_open": true,
   "delivery_open": true,
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-29 17:04:31",
-  "menu_last_updated": "2026-10-29 17:04:32",
+  "retrieved_at": "2026-10-30 19:56:31",
+  "menu_last_updated": "2026-10-30 19:56:31",
   "sections": [
     {
       "name": "Specials",
@@ -3092,15 +3092,6 @@
           "is_hidden": false
         },
         {
-          "name": "Orange",
-          "description": "",
-          "price": 6.45,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Create Your Own Juice",
           "description": "",
           "price": 6.45,
@@ -3141,6 +3132,15 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": true
+        },
+        {
+          "name": "Orange",
+          "description": "",
+          "price": 6.45,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
         },
         {
           "name": "Strawberry Smoothie",
@@ -6592,49 +6592,6 @@
           "is_hidden": false
         },
         {
-          "name": "Greek Scrambler",
-          "description": "",
-          "price": 6.95,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Egg Bites",
-          "description": "",
-          "price": 6.95,
-          "options": [
-            {
-              "name": "Egg Bite Choice",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Bacon Swiss Arugula",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Spinach Feta Roasted Pepper",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Chicken Parmesan",
           "description": "fresh mozzarella house marinara basil",
           "price": 10.69,
@@ -6693,9 +6650,52 @@
           "is_hidden": false
         },
         {
-          "name": "Crispy Chicken & Pimento Cheese",
-          "description": "Chicken tenders pimento cheese pickles arugula oil blend and garlic on sourdough bread",
-          "price": 10.99,
+          "name": "Egg Bites",
+          "description": "",
+          "price": 6.95,
+          "options": [
+            {
+              "name": "Egg Bite Choice",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Bacon Swiss Arugula",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Spinach Feta Roasted Pepper",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Greek Scrambler",
+          "description": "",
+          "price": 6.95,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Chicken Pesto",
+          "description": "A hot sandwich with grilled chicken pesto and melted mozzarella cheese. Served with a side of chips.",
+          "price": 10.69,
           "options": [
             {
               "name": "Sandwich Side Option",
@@ -6727,9 +6727,9 @@
           "is_hidden": false
         },
         {
-          "name": "Chicken Pesto",
-          "description": "A hot sandwich with grilled chicken pesto and melted mozzarella cheese. Served with a side of chips.",
-          "price": 10.69,
+          "name": "Crispy Chicken & Pimento Cheese",
+          "description": "Chicken tenders pimento cheese pickles arugula oil blend and garlic on sourdough bread",
+          "price": 10.99,
           "options": [
             {
               "name": "Sandwich Side Option",
@@ -6817,6 +6817,40 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": true
+        },
+        {
+          "name": "Turkey Chimichurri Sandwich",
+          "description": "house pickled onion Swiss chimichurri kale slaw",
+          "price": 10.05,
+          "options": [
+            {
+              "name": "Turkey Chimichurri Panini",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No Onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Swiss",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
         },
         {
           "name": "Chicken Salad Croissant",
@@ -6915,40 +6949,6 @@
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Turkey Chimichurri Sandwich",
-          "description": "house pickled onion Swiss chimichurri kale slaw",
-          "price": 10.05,
-          "options": [
-            {
-              "name": "Turkey Chimichurri Panini",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No Onion",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Swiss",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
           "is_hidden": false
         }
       ]
@@ -7258,6 +7258,15 @@
           "is_hidden": true
         },
         {
+          "name": "4 inch Cake",
+          "description": "",
+          "price": 20.79,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
           "name": "Danish",
           "description": "",
           "price": 4.29,
@@ -7287,123 +7296,6 @@
               ]
             }
           ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "4 inch Cake",
-          "description": "",
-          "price": 20.79,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Broccoli Quiche Slice",
-          "description": "",
-          "price": 7.49,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Chocolate Croissant",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Pumpkin Sweet Bread",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Quiche Lorraine Slice",
-          "description": "",
-          "price": 7.49,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Strawberry Shortcake Slice",
-          "description": "",
-          "price": 6.99,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Tiramisu Slice",
-          "description": "",
-          "price": 6.99,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Blueberry Scone GF",
-          "description": "",
-          "price": 5.35,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Chocolate Covered Strawberry (EACH)",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Banana Bread",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Coconut Macaroon (GF)",
-          "description": "",
-          "price": 3.69,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Chocolate Chip Scone",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Croissant",
-          "description": "",
-          "price": 4.09,
-          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": true
@@ -7607,6 +7499,51 @@
           "is_hidden": false
         },
         {
+          "name": "Broccoli Quiche Slice",
+          "description": "",
+          "price": 7.49,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Chocolate Croissant",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Pumpkin Sweet Bread",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Quiche Lorraine Slice",
+          "description": "",
+          "price": 7.49,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Strawberry Shortcake Slice",
+          "description": "",
+          "price": 6.99,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
           "name": "Sweet Bread",
           "description": "",
           "price": 4.29,
@@ -7644,6 +7581,69 @@
               ]
             }
           ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Tiramisu Slice",
+          "description": "",
+          "price": 6.99,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Banana Bread",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Coconut Macaroon (GF)",
+          "description": "",
+          "price": 3.69,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Chocolate Chip Scone",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Croissant",
+          "description": "",
+          "price": 4.09,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Chocolate Covered Strawberry (EACH)",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Blueberry Scone GF",
+          "description": "",
+          "price": 5.35,
+          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -8337,24 +8337,6 @@
           "is_hidden": false
         },
         {
-          "name": "Chocolove",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Simply Gum",
-          "description": "",
-          "price": 5.45,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
           "name": "Simply Gummies",
           "description": "",
           "price": 5.79,
@@ -8367,6 +8349,24 @@
           "name": "Five-Seed Parmesan Crackers",
           "description": "",
           "price": 3.19,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Chocolove",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Simply Gum",
+          "description": "",
+          "price": 5.45,
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
