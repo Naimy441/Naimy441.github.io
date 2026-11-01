@@ -4,7 +4,7 @@
   "location_id": 233,
   "cafeteria_id": 191,
   "icon_image_url": "campuses/icon_restaurant_19_18_129_1594924756817.jpg",
-  "estimated_wait_time_minutes": 50,
+  "estimated_wait_time_minutes": 12,
   "currently_open": true,
   "takeout_open": true,
   "delivery_open": true,
@@ -148,8 +148,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-01 13:53:54",
-  "menu_last_updated": "2026-11-01 13:53:55",
+  "retrieved_at": "2026-11-01 21:18:36",
+  "menu_last_updated": "2026-11-01 21:18:37",
   "sections": [
     {
       "name": "Pastries",
@@ -160,72 +160,6 @@
       "name": "Biscuits Bagels Pancakes",
       "is_hidden": false,
       "items": [
-        {
-          "name": "Lox & Bagel",
-          "description": "",
-          "price": 11.69,
-          "options": [
-            {
-              "name": "Lox Options",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No Capers",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Cream Cheese",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Red Onion",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Salmon",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Tomato",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Changes",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
         {
           "name": "Fried Chicken Biscuit",
           "description": "",
@@ -319,6 +253,72 @@
                 },
                 {
                   "name": "No Side",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Lox & Bagel",
+          "description": "",
+          "price": 11.69,
+          "options": [
+            {
+              "name": "Lox Options",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No Capers",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Cream Cheese",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Red Onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Salmon",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Tomato",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Changes",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1537,7 +1537,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -1545,7 +1545,7 @@
                 {
                   "name": "Fruit",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -1941,7 +1941,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -1949,7 +1949,7 @@
                 {
                   "name": "Fruit",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -2005,7 +2005,7 @@
                 {
                   "name": "Scrambled",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -2053,7 +2053,7 @@
                 {
                   "name": "Fried",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -2165,7 +2165,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -2173,7 +2173,7 @@
                 {
                   "name": "Fruit",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -2455,7 +2455,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -2463,7 +2463,7 @@
                 {
                   "name": "Fruit",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -2585,152 +2585,6 @@
       "name": "Salads",
       "is_hidden": false,
       "items": [
-        {
-          "name": "California Club Salad",
-          "description": "Crispy romaine, tomatoes, bacon, chicken breast, avocado, and croutons with Caesar dressing.",
-          "price": 10.69,
-          "options": [
-            {
-              "name": "California Club Salad Options",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Dressing on the side",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra Dressing",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Light Dressing",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Avocado",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Bacon",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Croutons",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Dressing",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Romaine - Sub Mix Greens",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Turkey - Sub Chicken",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Tomatoes",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chicken 4oz",
-                  "price": 2.15,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Salmon 4oz",
-                  "price": 5.35,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Shrimp (6)",
-                  "price": 4.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Veggie Patty 5oz",
-                  "price": 4.65,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Steak",
-                  "price": 5.79,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Nadura Plant Protein Patty",
-                  "price": 4.65,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
         {
           "name": "Arugula Salad",
           "description": "Organic arugula served with Red Delicious Apples local goat cheese and honey-lime dressing.",
@@ -2947,6 +2801,152 @@
                 {
                   "name": "Shrimp (6)",
                   "price": 4.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "California Club Salad",
+          "description": "Crispy romaine, tomatoes, bacon, chicken breast, avocado, and croutons with Caesar dressing.",
+          "price": 10.69,
+          "options": [
+            {
+              "name": "California Club Salad Options",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Dressing on the side",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Extra Dressing",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Light Dressing",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Avocado",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Bacon",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Croutons",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Dressing",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Romaine - Sub Mix Greens",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Turkey - Sub Chicken",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Tomatoes",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chicken 4oz",
+                  "price": 2.15,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Salmon 4oz",
+                  "price": 5.35,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Shrimp (6)",
+                  "price": 4.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Veggie Patty 5oz",
+                  "price": 4.65,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Steak",
+                  "price": 5.79,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Nadura Plant Protein Patty",
+                  "price": 4.65,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -6301,7 +6301,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -6333,7 +6333,7 @@
                 {
                   "name": "Tots",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -6951,7 +6951,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -6983,7 +6983,7 @@
                 {
                   "name": "Tots",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -7385,7 +7385,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -7417,7 +7417,7 @@
                 {
                   "name": "Tots",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -7843,7 +7843,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -7875,7 +7875,7 @@
                 {
                   "name": "Tots",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -8253,7 +8253,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -8285,7 +8285,7 @@
                 {
                   "name": "Tots",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -8895,7 +8895,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -8927,7 +8927,7 @@
                 {
                   "name": "Tots",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -9353,7 +9353,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -9385,7 +9385,7 @@
                 {
                   "name": "Tots",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -9771,7 +9771,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -9803,7 +9803,7 @@
                 {
                   "name": "Tots",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -10435,7 +10435,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -10467,7 +10467,7 @@
                 {
                   "name": "Tots",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -10751,7 +10751,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -10783,7 +10783,7 @@
                 {
                   "name": "Tots",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -11121,7 +11121,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -11153,7 +11153,7 @@
                 {
                   "name": "Tots",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -11643,7 +11643,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -11675,7 +11675,7 @@
                 {
                   "name": "Tots",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -12119,7 +12119,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -12151,7 +12151,7 @@
                 {
                   "name": "Tots",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -12428,6 +12428,15 @@
       "is_hidden": false,
       "items": [
         {
+          "name": "Smoked Salmon",
+          "description": "",
+          "price": 6.45,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Side of Toast",
           "description": "",
           "price": 2.15,
@@ -12481,15 +12490,6 @@
               ]
             }
           ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Smoked Salmon",
-          "description": "",
-          "price": 6.45,
-          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -13383,7 +13383,7 @@
                 {
                   "name": "Scrambled",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -13431,7 +13431,7 @@
                 {
                   "name": "Fried",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -13816,6 +13816,464 @@
       "is_hidden": false,
       "items": [
         {
+          "name": "Grilled Chicken Sandwich",
+          "description": "Marinated and seared served on brioche roll with cheese lettuce tomato pickles and onions. Served with tots fries salad or fruit",
+          "price": 12.85,
+          "options": [
+            {
+              "name": "Grilled Chicken Options",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "No Cheese",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Gluten Friendly Option",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Bread",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Lettuce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Side",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No tomato",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Pickle",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "All Lunch-Dinner Bread Options",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Sub Brioche Bun",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cuban Bread",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sub Gluten Free Bread",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No bread",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sub  Pita",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sub Rye Bread",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sub Sourdough Bread",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sub Wheat Bread",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Wrap",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sub Large Flour Tortilla",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sub Rye",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sub Sourdough",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Lunch-Dinner Side Options",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Fries",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Broccoli",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Side Caesar",
+                  "price": 1.25,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Oatmeal (7am-3pm only)",
+                  "price": 1.25,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Tots",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Side Salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Side Salad Dressing on Side",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Side Salad No Dressing",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Caesar(rom parm drs crouton)",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cheese Fries",
+                  "price": 1.25,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cheese Tots",
+                  "price": 1.25,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Half Fries Half Salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Half Fries Half Tots",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Half Tots Half Salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mixed Fruit",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Watermelon Salad",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Black Bean and Corn Salad",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pesto Penne Pasta Salad",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Roasted Tomato Penne Pasta Salad",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Curried Cauliflower",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sweet Potato Fries",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Potato Salad",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Rice (5pm-11pm only)",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chickpea Salad",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Broccoli Salad",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Noodle Salad",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Bowtie Pasta Salad",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Roasted Vegetables",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chicken Salad",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Butternut Squash Salad",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mango Salad",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Side",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Deli Case Side (Write In)",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 20,
+          "normal_min": 15,
+          "is_hidden": false
+        },
+        {
           "name": "Nadura Plant Protein Patty Single",
           "description": "3.5oz Nadura Plant Protein Patty burger with lettuce cheese onions pickles and Russian dressing on brioche roll. Served with tots fries salad or fruit",
           "price": 12.79,
@@ -14189,7 +14647,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -14221,7 +14679,7 @@
                 {
                   "name": "Tots",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -14458,18 +14916,26 @@
           "is_hidden": false
         },
         {
-          "name": "Falafel Sandwich on Pita",
-          "description": "House made chick pea fritters with lettuce tomatoes cucumber and choice of tahini or tzatziki sauce. Served with tots fries salad or fruit.",
+          "name": "Wings Your Way",
+          "description": "Half a dozen jumbo wings, served with tots fries salad or fruit.",
           "price": 12.35,
           "options": [
             {
-              "name": "Falafel Options",
-              "minimum": 0,
-              "maximum": 50,
+              "name": "Wings Options",
+              "minimum": 1,
+              "maximum": 1,
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "No Cucumbers",
+                  "name": "Barbecue",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Buffalo",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -14477,23 +14943,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Lettuce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sub Gluten Free Bread",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Side",
+                  "name": "Cackalacky",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
@@ -14501,111 +14951,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Tzatziki (yogurt and cucumber)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Tahini Sauce (vegan - Sesame)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Tomato",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Veggie Add On",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Apple",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Avocado",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Broccoli",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Grilled Onions",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Jalapeno",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Lettuce",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Mixed Veggies",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Mushrooms",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Additional Veggies",
+                  "name": "Half-N-Half",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
@@ -14613,63 +14959,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Pickles",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Raw Onions",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Spinach",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Tomato",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Toppings Add On",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Cheese",
-                  "price": 0.65,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Double Cheese",
-                  "price": 1.29,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Additional Toppings",
+                  "name": "Plain (No Sauce)",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -14677,24 +14967,40 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Pico",
-                  "price": 1.09,
+                  "name": "Teriyaki",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Salsa Roja",
-                  "price": 1.09,
+                  "name": "Thai Chili",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Sour Cream",
-                  "price": 1.09,
+                  "name": "Vindaloo",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Lemon pepper",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mango habanero",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -14711,7 +15017,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -14743,7 +15049,7 @@
                 {
                   "name": "Tots",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -15169,7 +15475,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -15201,7 +15507,7 @@
                 {
                   "name": "Tots",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -15438,34 +15744,18 @@
           "is_hidden": false
         },
         {
-          "name": "Grilled Chicken Sandwich",
-          "description": "Marinated and seared served on brioche roll with cheese lettuce tomato pickles and onions. Served with tots fries salad or fruit",
-          "price": 12.85,
+          "name": "Falafel Sandwich on Pita",
+          "description": "House made chick pea fritters with lettuce tomatoes cucumber and choice of tahini or tzatziki sauce. Served with tots fries salad or fruit.",
+          "price": 12.35,
           "options": [
             {
-              "name": "Grilled Chicken Options",
+              "name": "Falafel Options",
               "minimum": 0,
               "maximum": 50,
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "No Cheese",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Gluten Friendly Option",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Bread",
+                  "name": "No Cucumbers",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -15481,6 +15771,14 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Sub Gluten Free Bread",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "No Side",
                   "price": 0.0,
                   "is_default": false,
@@ -15489,7 +15787,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No tomato",
+                  "name": "Tzatziki (yogurt and cucumber)",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -15497,7 +15795,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Onion",
+                  "name": "Tahini Sauce (vegan - Sesame)",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -15505,7 +15803,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Pickle",
+                  "name": "No Tomato",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Sauce",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -15515,29 +15821,13 @@
               ]
             },
             {
-              "name": "All Lunch-Dinner Bread Options",
+              "name": "Veggie Add On",
               "minimum": 0,
               "maximum": 50,
-              "allow_quantity": false,
+              "allow_quantity": true,
               "values": [
                 {
-                  "name": "Sub Brioche Bun",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Cuban Bread",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sub Gluten Free Bread",
+                  "name": "Apple",
                   "price": 1.09,
                   "is_default": false,
                   "is_hidden": false,
@@ -15545,23 +15835,63 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No bread",
-                  "price": 0.0,
+                  "name": "Avocado",
+                  "price": 1.09,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Sub  Pita",
-                  "price": 0.0,
+                  "name": "Broccoli",
+                  "price": 1.09,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Sub Rye Bread",
+                  "name": "Grilled Onions",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Jalapeno",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Lettuce",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mixed Veggies",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mushrooms",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Additional Veggies",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
@@ -15569,15 +15899,63 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Sub Sourdough Bread",
-                  "price": 0.0,
+                  "name": "Pickles",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Raw Onions",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Spinach",
+                  "price": 0.99,
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Sub Wheat Bread",
+                  "name": "Tomato",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Toppings Add On",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Cheese",
+                  "price": 0.65,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Double Cheese",
+                  "price": 1.29,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Additional Toppings",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -15585,32 +15963,24 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Wrap",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sub Large Flour Tortilla",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sub Rye",
-                  "price": 0.0,
+                  "name": "Pico",
+                  "price": 1.09,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Sub Sourdough",
-                  "price": 0.0,
+                  "name": "Salsa Roja",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sour Cream",
+                  "price": 1.09,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -15627,7 +15997,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -15659,7 +16029,7 @@
                 {
                   "name": "Tots",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -15893,6 +16263,328 @@
           ],
           "busy_min": 20,
           "normal_min": 15,
+          "is_hidden": false
+        },
+        {
+          "name": "Udon Noodle Salad",
+          "description": "",
+          "price": 6.99,
+          "options": [
+            {
+              "name": "Lunch-Dinner Protein Choice",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Add Pulled Pork",
+                  "price": 4.29,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Add Egg",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 10
+                },
+                {
+                  "name": "Add Bacon",
+                  "price": 3.45,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 10
+                },
+                {
+                  "name": "Add Chicken 4 oz",
+                  "price": 2.15,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 10
+                },
+                {
+                  "name": "Add Chicken 8 oz",
+                  "price": 4.29,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 10
+                },
+                {
+                  "name": "Add Ham",
+                  "price": 3.45,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 10
+                },
+                {
+                  "name": "Add Fried Chicken Breast",
+                  "price": 3.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 10
+                },
+                {
+                  "name": "Add Chorizo",
+                  "price": 2.79,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 10
+                },
+                {
+                  "name": "Add Turkey",
+                  "price": 3.45,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 10
+                },
+                {
+                  "name": "Add Steak",
+                  "price": 5.79,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 10
+                },
+                {
+                  "name": "Add Veggie Patty",
+                  "price": 4.65,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 10
+                },
+                {
+                  "name": "Add Nadura Plant Protein Patty",
+                  "price": 4.65,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Add Salmon 4oz",
+                  "price": 5.35,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 10
+                },
+                {
+                  "name": "Add Angus Burger Patty",
+                  "price": 3.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 10
+                },
+                {
+                  "name": "Add Shrimp",
+                  "price": 4.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 10
+                },
+                {
+                  "name": "Add Tofu",
+                  "price": 2.79,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 10
+                },
+                {
+                  "name": "Add Corned Beef",
+                  "price": 4.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 10
+                }
+              ]
+            },
+            {
+              "name": "Veggie Add On",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Apple",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Avocado",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Broccoli",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Grilled Onions",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Jalapeno",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Lettuce",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mixed Veggies",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mushrooms",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Additional Veggies",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pickles",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Raw Onions",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Spinach",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Tomato",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Toppings Add On",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Cheese",
+                  "price": 0.65,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Double Cheese",
+                  "price": 1.29,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Additional Toppings",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pico",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Salsa Roja",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sour Cream",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 5,
+          "normal_min": 3,
           "is_hidden": false
         },
         {
@@ -16277,7 +16969,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -16309,377 +17001,7 @@
                 {
                   "name": "Tots",
                   "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Side Salad",
-                  "price": 0.0,
                   "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Side Salad Dressing on Side",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Side Salad No Dressing",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Caesar(rom parm drs crouton)",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Cheese Fries",
-                  "price": 1.25,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Cheese Tots",
-                  "price": 1.25,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Half Fries Half Salad",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Half Fries Half Tots",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Half Tots Half Salad",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Mixed Fruit",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Watermelon Salad",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Black Bean and Corn Salad",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pesto Penne Pasta Salad",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Roasted Tomato Penne Pasta Salad",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Curried Cauliflower",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sweet Potato Fries",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Potato Salad",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Rice (5pm-11pm only)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chickpea Salad",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Broccoli Salad",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Noodle Salad",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Bowtie Pasta Salad",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Roasted Vegetables",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chicken Salad",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Butternut Squash Salad",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Mango Salad",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Side",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Deli Case Side (Write In)",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 20,
-          "normal_min": 15,
-          "is_hidden": false
-        },
-        {
-          "name": "Wings Your Way",
-          "description": "Half a dozen jumbo wings, served with tots fries salad or fruit.",
-          "price": 12.35,
-          "options": [
-            {
-              "name": "Wings Options",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Barbecue",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Buffalo",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Cackalacky",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Half-N-Half",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Plain (No Sauce)",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Teriyaki",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Thai Chili",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Vindaloo",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Lemon pepper",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Mango habanero",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Lunch-Dinner Side Options",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Fries",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Broccoli",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Side Caesar",
-                  "price": 1.25,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Oatmeal (7am-3pm only)",
-                  "price": 1.25,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Tots",
-                  "price": 0.0,
-                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -17345,7 +17667,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -17377,7 +17699,7 @@
                 {
                   "name": "Tots",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -17611,328 +17933,6 @@
           ],
           "busy_min": 20,
           "normal_min": 15,
-          "is_hidden": false
-        },
-        {
-          "name": "Udon Noodle Salad",
-          "description": "",
-          "price": 6.99,
-          "options": [
-            {
-              "name": "Lunch-Dinner Protein Choice",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Add Pulled Pork",
-                  "price": 4.29,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add Egg",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 10
-                },
-                {
-                  "name": "Add Bacon",
-                  "price": 3.45,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 10
-                },
-                {
-                  "name": "Add Chicken 4 oz",
-                  "price": 2.15,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 10
-                },
-                {
-                  "name": "Add Chicken 8 oz",
-                  "price": 4.29,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 10
-                },
-                {
-                  "name": "Add Ham",
-                  "price": 3.45,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 10
-                },
-                {
-                  "name": "Add Fried Chicken Breast",
-                  "price": 3.85,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 10
-                },
-                {
-                  "name": "Add Chorizo",
-                  "price": 2.79,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 10
-                },
-                {
-                  "name": "Add Turkey",
-                  "price": 3.45,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 10
-                },
-                {
-                  "name": "Add Steak",
-                  "price": 5.79,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 10
-                },
-                {
-                  "name": "Add Veggie Patty",
-                  "price": 4.65,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 10
-                },
-                {
-                  "name": "Add Nadura Plant Protein Patty",
-                  "price": 4.65,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add Salmon 4oz",
-                  "price": 5.35,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 10
-                },
-                {
-                  "name": "Add Angus Burger Patty",
-                  "price": 3.85,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 10
-                },
-                {
-                  "name": "Add Shrimp",
-                  "price": 4.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 10
-                },
-                {
-                  "name": "Add Tofu",
-                  "price": 2.79,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 10
-                },
-                {
-                  "name": "Add Corned Beef",
-                  "price": 4.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 10
-                }
-              ]
-            },
-            {
-              "name": "Veggie Add On",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Apple",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Avocado",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Broccoli",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Grilled Onions",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Jalapeno",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Lettuce",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Mixed Veggies",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Mushrooms",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Additional Veggies",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pickles",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Raw Onions",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Spinach",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Tomato",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Toppings Add On",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Cheese",
-                  "price": 0.65,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Double Cheese",
-                  "price": 1.29,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Additional Toppings",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pico",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Salsa Roja",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sour Cream",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 5,
-          "normal_min": 3,
           "is_hidden": false
         },
         {
@@ -18325,7 +18325,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -18357,7 +18357,7 @@
                 {
                   "name": "Tots",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -18628,40 +18628,6 @@
           "is_hidden": false
         },
         {
-          "name": "Vegetable Samosas",
-          "description": "Vegan curried potato dumplings served with tomato chutney.",
-          "price": 12.55,
-          "options": [
-            {
-              "name": "Samosa Option",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "No Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Tomato Chutney",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 20,
-          "normal_min": 15,
-          "is_hidden": false
-        },
-        {
           "name": "Mac and Cheese Bites",
           "description": "Fried macaroni and gouda cheese bites. Served with ranch dressing",
           "price": 13.35,
@@ -18696,6 +18662,40 @@
           "is_hidden": false
         },
         {
+          "name": "Vegetable Samosas",
+          "description": "Vegan curried potato dumplings served with tomato chutney.",
+          "price": 12.55,
+          "options": [
+            {
+              "name": "Samosa Option",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "No Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Tomato Chutney",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 20,
+          "normal_min": 15,
+          "is_hidden": false
+        },
+        {
           "name": "Chicken Tenders",
           "description": "4 juice fried tenders and your choice of side",
           "price": 10.69,
@@ -18709,7 +18709,7 @@
                 {
                   "name": "Fries",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -18741,7 +18741,7 @@
                 {
                   "name": "Tots",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
