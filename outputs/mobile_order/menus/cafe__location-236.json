@@ -4,7 +4,7 @@
   "location_id": 236,
   "cafeteria_id": 194,
   "icon_image_url": "campuses/icon_restaurant_19_18_129_1594924391116.jpg",
-  "estimated_wait_time_minutes": 0,
+  "estimated_wait_time_minutes": 21,
   "currently_open": true,
   "takeout_open": true,
   "delivery_open": true,
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-30 19:56:31",
-  "menu_last_updated": "2026-10-30 19:56:31",
+  "retrieved_at": "2026-11-01 14:45:57",
+  "menu_last_updated": "2026-11-01 14:45:58",
   "sections": [
     {
       "name": "Specials",
@@ -128,6 +128,38 @@
           "description": "",
           "price": 5.0,
           "options": [
+            {
+              "name": "Whole Fruit Option",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Apple",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Banana",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Orange",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
             {
               "name": "Meal Deal Option",
               "minimum": 0,
@@ -200,38 +232,6 @@
                 },
                 {
                   "name": "Pumpkin Sweet Bread",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Whole Fruit Option",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Apple",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Banana",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Orange",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -3056,42 +3056,6 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Apple",
-          "description": "",
-          "price": 6.45,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Carrot",
-          "description": "",
-          "price": 6.45,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Green Monster",
-          "description": "kale cucumber celery organic baby spinach green apple",
-          "price": 6.45,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Healthy Boost",
-          "description": "beet green apple celery carrot ginger",
-          "price": 6.45,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Create Your Own Juice",
           "description": "",
           "price": 6.45,
@@ -3132,6 +3096,42 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": true
+        },
+        {
+          "name": "Apple",
+          "description": "",
+          "price": 6.45,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Carrot",
+          "description": "",
+          "price": 6.45,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Green Monster",
+          "description": "kale cucumber celery organic baby spinach green apple",
+          "price": 6.45,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Healthy Boost",
+          "description": "beet green apple celery carrot ginger",
+          "price": 6.45,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
         },
         {
           "name": "Orange",
@@ -5236,6 +5236,222 @@
           "price": 5.05,
           "options": [
             {
+              "name": "Sweet Crepe Add Ons",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Cinn Sugar",
+                  "price": 0.5,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fruit - Apple",
+                  "price": 1.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fresh Banana",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Gelato - Hazelnut",
+                  "price": 2.25,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Gelato - Pistachio",
+                  "price": 2.25,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Gluten Free",
+                  "price": 2.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Banana",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sauce - Foster",
+                  "price": 0.5,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Nutella",
+                  "price": 1.65,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sauce - Suzette",
+                  "price": 0.5,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Add Nitrogen Whipped Cream",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Add Banana",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Add Strawberries",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fresh Banana and Strawberries",
+                  "price": 1.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chocolate Sauce",
+                  "price": 0.55,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Gelato - Cappuccino",
+                  "price": 2.45,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Gelato - Chocolate",
+                  "price": 2.45,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Gelato - Dolce de Leche",
+                  "price": 2.45,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Gelato - Mint Chocolate",
+                  "price": 2.45,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Gelato - Salted Caramel",
+                  "price": 2.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Gelato - Vanilla",
+                  "price": 2.45,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Gelato - Pomegranate",
+                  "price": 2.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sorbet - Lemon",
+                  "price": 2.45,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sorbet - Mango",
+                  "price": 2.45,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sorbet - Mixed Berry",
+                  "price": 2.45,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
               "name": "Crepe Add Ons",
               "minimum": 0,
               "maximum": 50,
@@ -5492,222 +5708,6 @@
                 {
                   "name": "No Add-on",
                   "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Sweet Crepe Add Ons",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Cinn Sugar",
-                  "price": 0.5,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Fruit - Apple",
-                  "price": 1.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Fresh Banana",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Gelato - Hazelnut",
-                  "price": 2.25,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Gelato - Pistachio",
-                  "price": 2.25,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Gluten Free",
-                  "price": 2.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Banana",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sauce - Foster",
-                  "price": 0.5,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Nutella",
-                  "price": 1.65,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sauce - Suzette",
-                  "price": 0.5,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add Nitrogen Whipped Cream",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add Banana",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add Strawberries",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Fresh Banana and Strawberries",
-                  "price": 1.85,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chocolate Sauce",
-                  "price": 0.55,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Gelato - Cappuccino",
-                  "price": 2.45,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Gelato - Chocolate",
-                  "price": 2.45,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Gelato - Dolce de Leche",
-                  "price": 2.45,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Gelato - Mint Chocolate",
-                  "price": 2.45,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Gelato - Salted Caramel",
-                  "price": 2.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Gelato - Vanilla",
-                  "price": 2.45,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Gelato - Pomegranate",
-                  "price": 2.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sorbet - Lemon",
-                  "price": 2.45,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sorbet - Mango",
-                  "price": 2.45,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sorbet - Mixed Berry",
-                  "price": 2.45,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -6501,15 +6501,6 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Egg n Cheese Croissant",
-          "description": "",
-          "price": 6.45,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "French Beef",
           "description": "Mills Family Farm grass-fed beef organic arugula Swiss caramelized onion tomoto White French",
           "price": 11.35,
@@ -6587,6 +6578,15 @@
               ]
             }
           ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Egg n Cheese Croissant",
+          "description": "",
+          "price": 6.45,
+          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -6819,40 +6819,6 @@
           "is_hidden": true
         },
         {
-          "name": "Turkey Chimichurri Sandwich",
-          "description": "house pickled onion Swiss chimichurri kale slaw",
-          "price": 10.05,
-          "options": [
-            {
-              "name": "Turkey Chimichurri Panini",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No Onion",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Swiss",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Chicken Salad Croissant",
           "description": "signature chicken salad red onion celery herbed mayonnaise",
           "price": 9.09,
@@ -6949,6 +6915,40 @@
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Turkey Chimichurri Sandwich",
+          "description": "house pickled onion Swiss chimichurri kale slaw",
+          "price": 10.05,
+          "options": [
+            {
+              "name": "Turkey Chimichurri Panini",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No Onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Swiss",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
           "is_hidden": false
         }
       ]
@@ -7267,35 +7267,46 @@
           "is_hidden": true
         },
         {
-          "name": "Danish",
+          "name": "Broccoli Quiche Slice",
+          "description": "",
+          "price": 7.49,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Chocolate Croissant",
           "description": "",
           "price": 4.29,
-          "options": [
-            {
-              "name": "CAF - Danish Option",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Cheese",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Raspberry",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Pumpkin Sweet Bread",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Quiche Lorraine Slice",
+          "description": "",
+          "price": 7.49,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Strawberry Shortcake Slice",
+          "description": "",
+          "price": 6.99,
+          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": true
@@ -7375,6 +7386,15 @@
           "is_hidden": false
         },
         {
+          "name": "Tiramisu Slice",
+          "description": "",
+          "price": 6.99,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
           "name": "Cookie",
           "description": "",
           "price": 0.0,
@@ -7449,6 +7469,118 @@
           "is_hidden": false
         },
         {
+          "name": "Blueberry Scone GF",
+          "description": "",
+          "price": 5.35,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Chocolate Covered Strawberry (EACH)",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Banana Bread",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Danish",
+          "description": "",
+          "price": 4.29,
+          "options": [
+            {
+              "name": "CAF - Danish Option",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Cheese",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Raspberry",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Coconut Macaroon (GF)",
+          "description": "",
+          "price": 3.69,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Sweet Bread",
+          "description": "",
+          "price": 4.29,
+          "options": [
+            {
+              "name": "Sweet Breads Option",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Apple Rum",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pumpkin",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Lemon",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Cupcake",
           "description": "",
           "price": 5.35,
@@ -7499,120 +7631,6 @@
           "is_hidden": false
         },
         {
-          "name": "Broccoli Quiche Slice",
-          "description": "",
-          "price": 7.49,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Chocolate Croissant",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Pumpkin Sweet Bread",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Quiche Lorraine Slice",
-          "description": "",
-          "price": 7.49,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Strawberry Shortcake Slice",
-          "description": "",
-          "price": 6.99,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Sweet Bread",
-          "description": "",
-          "price": 4.29,
-          "options": [
-            {
-              "name": "Sweet Breads Option",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Apple Rum",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pumpkin",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Lemon",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Tiramisu Slice",
-          "description": "",
-          "price": 6.99,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Banana Bread",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Coconut Macaroon (GF)",
-          "description": "",
-          "price": 3.69,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
           "name": "Chocolate Chip Scone",
           "description": "",
           "price": 4.29,
@@ -7629,24 +7647,6 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": true
-        },
-        {
-          "name": "Chocolate Covered Strawberry (EACH)",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Blueberry Scone GF",
-          "description": "",
-          "price": 5.35,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
         },
         {
           "name": "Muffin",
@@ -8337,24 +8337,6 @@
           "is_hidden": false
         },
         {
-          "name": "Simply Gummies",
-          "description": "",
-          "price": 5.79,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Five-Seed Parmesan Crackers",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
           "name": "Chocolove",
           "description": "",
           "price": 4.29,
@@ -8367,6 +8349,24 @@
           "name": "Simply Gum",
           "description": "",
           "price": 5.45,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Simply Gummies",
+          "description": "",
+          "price": 5.79,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Five-Seed Parmesan Crackers",
+          "description": "",
+          "price": 3.19,
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
