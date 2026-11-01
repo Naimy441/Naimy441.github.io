@@ -4,10 +4,10 @@
   "location_id": 1983,
   "cafeteria_id": 1794,
   "icon_image_url": "campuses/icon_location_19_18_127_1704385673480.jpg",
-  "estimated_wait_time_minutes": 13,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "11:00:00",
     "close": "20:00:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-10-31 20:57:37",
-  "menu_last_updated": "2026-10-31 20:57:38",
+  "retrieved_at": "2026-10-31 21:42:03",
+  "menu_last_updated": "2026-10-31 21:42:04",
   "sections": [
     {
       "name": "Build Your Own",
@@ -151,14 +151,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "White Rice",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Maple Zaatar Sweet Potatoes",
                   "price": 0.0,
                   "is_default": false,
@@ -176,6 +168,14 @@
                 },
                 {
                   "name": "Basil Roasted Potatoes",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "White Rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -239,14 +239,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Smoky Black Beans",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Carolina Pulled Pork BBQ",
                   "price": 0.0,
                   "is_default": false,
@@ -255,7 +247,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Jerk Chicken",
+                  "name": "Kalua Pork",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -263,7 +255,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Kalua Pork",
+                  "name": "Smoky Black Beans",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Jerk Chicken",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -375,15 +375,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Cajun Pinto Beans",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Roasted Seasonal Veggies",
+                  "name": "Smoky Black Beans",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -399,7 +391,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Smoky Black Beans",
+                  "name": "Fried Tostones",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -407,7 +399,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Fried Tostones",
+                  "name": "Cajun Pinto Beans",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Roasted Seasonal Veggies",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -422,46 +422,6 @@
               "maximum": 3,
               "allow_quantity": true,
               "values": [
-                {
-                  "name": "Roasted Red Peppers",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Fire Roasted Tomatoes",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Seasonal Veggies",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Quinoa",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Peppers & Onions",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
                 {
                   "name": "Avocado",
                   "price": 0.99,
@@ -479,23 +439,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Marinated Artichokes",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Arugula",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Black Beans",
+                  "name": "Roasted Red Peppers",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
@@ -511,7 +455,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Quinoa",
+                  "name": "Arugula",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
@@ -519,7 +463,31 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Avocado",
+                  "name": "Seasonal Veggies",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Marinated Artichokes",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Black Beans",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Quinoa",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
@@ -535,7 +503,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Apple Slices",
+                  "name": "Roasted Seasonal Vegetables",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
@@ -543,7 +511,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Roasted Seasonal Vegetables",
+                  "name": "Quinoa",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
@@ -559,7 +527,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Pickled Watermelon Raddish",
+                  "name": "Sunflower Seeds",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -567,7 +535,39 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Sunflower Seeds",
+                  "name": "Fire Roasted Tomatoes",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Peppers & Onions",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Avocado",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Apple Slices",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pickled Watermelon Raddish",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -833,30 +833,6 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Mango Cream",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Traditional Acai",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Passion Fruit",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Chia Pudding",
                   "price": 0.0,
                   "is_default": false,
@@ -870,6 +846,14 @@
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pitaya Dragon Fruit",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
@@ -889,15 +873,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Pitaya Dragon Fruit",
+                  "name": "Mango Cream",
                   "price": 0.0,
                   "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Cacao Cream",
+                  "name": "Traditional Acai",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -917,14 +901,6 @@
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ube",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
@@ -953,11 +929,35 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Passion Fruit",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Ube",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Pumpkin Spice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cacao Cream",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 }
               ]
@@ -968,6 +968,30 @@
               "maximum": 2,
               "allow_quantity": true,
               "values": [
+                {
+                  "name": "Sliced Kiwi",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Diced Pineapple",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Dried Cranberries",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
                 {
                   "name": "Sliced Banana",
                   "price": 0.0,
@@ -985,31 +1009,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Sliced Kiwi",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Dried Cranberries",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Shredded Coconut",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Diced Pineapple",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1025,22 +1025,6 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Cacao Nibs",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Honey Oat Granola",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Chia Seeds",
                   "price": 0.0,
                   "is_default": false,
@@ -1050,6 +1034,22 @@
                 },
                 {
                   "name": "Chia Pudding",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Honey Drizzle",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Candied Cranberries",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1065,35 +1065,11 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Honey Drizzle",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Bee Pollen",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Candid Cranberries",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Candied Cranberries",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
@@ -1105,11 +1081,35 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Cacao Nibs",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Honey Oat Granola",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Sunbutter",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Candid Cranberries",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
                   "max_quantity": 0
                 }
               ]
@@ -1120,6 +1120,14 @@
               "maximum": 50,
               "allow_quantity": true,
               "values": [
+                {
+                  "name": "Cacao Nibs",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
                 {
                   "name": "Chia Pudding",
                   "price": 0.99,
@@ -1137,14 +1145,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Cacao Nibs",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Honey Drizzle",
                   "price": 0.99,
                   "is_default": false,
@@ -1169,14 +1169,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Pumpkin Seeds",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Bee Pollen",
                   "price": 0.99,
                   "is_default": false,
@@ -1190,6 +1182,14 @@
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pumpkin Seeds",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
                   "max_quantity": 0
                 }
               ]
@@ -1206,6 +1206,24 @@
       "is_hidden": true,
       "items": [
         {
+          "name": "Dole Whip",
+          "description": "",
+          "price": 4.99,
+          "options": [],
+          "busy_min": 1,
+          "normal_min": 1,
+          "is_hidden": false
+        },
+        {
+          "name": "Strawberry Dole Whip",
+          "description": "",
+          "price": 4.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": true
+        },
+        {
           "name": "Classic Mango Dole Whip",
           "description": "",
           "price": 4.99,
@@ -1217,7 +1235,7 @@
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Pineapple",
+                  "name": "Pineapple and Mango Swirl",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1225,7 +1243,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Pineapple and Mango Swirl",
+                  "name": "Pineapple",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1248,30 +1266,12 @@
           "is_hidden": false
         },
         {
-          "name": "Dole Whip",
-          "description": "",
-          "price": 4.99,
-          "options": [],
-          "busy_min": 1,
-          "normal_min": 1,
-          "is_hidden": false
-        },
-        {
           "name": "Classic Pineapple Dole Whip",
           "description": "",
           "price": 4.99,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Strawberry Dole Whip",
-          "description": "",
-          "price": 4.99,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
           "is_hidden": true
         }
       ]
@@ -1308,14 +1308,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Cajun Pinto Beans",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "No Shredded beef",
                   "price": 0.0,
                   "is_default": false,
@@ -1324,15 +1316,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Arugula",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Heirloom Potato Medley",
+                  "name": "No Cajun Pinto Beans",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1349,6 +1333,22 @@
                 },
                 {
                   "name": "No Peppers",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Arugula",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Heirloom Potato Medley",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1381,14 +1381,6 @@
               "maximum": 50,
               "allow_quantity": true,
               "values": [
-                {
-                  "name": "No potatoes",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
                 {
                   "name": "No veggies",
                   "price": 0.0,
@@ -1428,255 +1420,9 @@
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Green Devil Delight",
-          "description": "Spinach and kale golden chickpea tofu roasted broccoli avocado chickpeas carrot pickled cabbage and white-bean herb Green Goddess.",
-          "price": 11.89,
-          "options": [
-            {
-              "name": "Green Devil Delight",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No Carrots",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
                 },
                 {
-                  "name": "No Kale",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Avocado",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Chickpeas",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Picked Cabage",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Tofu",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Gothic Green Goddess Ranch",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Spinach",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Broccoli",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Kanis Golden Thai Thyme",
-          "description": "Quinoa-brown rice golden Burmese chickpea tofu roasted vegetables cucumber pickled cabbage and carrot basil and sweet chile-lime glaze.",
-          "price": 11.89,
-          "options": [
-            {
-              "name": "Kanis Thai Thyme",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No Cucumbers",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Brown Rice and Quinoa",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Carrots",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Roasted Vegetables",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Sweet chili Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickled Cabbage",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Thai Spiced Tofu",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Nuvias Carnival Caliente",
-          "description": "Brown rice slow-roasted barbacoa beef cilantro-lime black beans poblano corn mango salsa pickled onion and jalape�o smoky chipotle and fresh lime.",
-          "price": 11.89,
-          "options": [
-            {
-              "name": "Nuvias Carnival Caliente",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No Mango Salsa",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Shredded Beef",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Black Beans",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Cilantro",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickled Jalapenos",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Chipotle Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Brown Rice",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Lime Wedge",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Pickled Red Onion",
+                  "name": "No potatoes",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1718,14 +1464,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No crisp island cabbage",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "No rosemary-thyme potatoes",
                   "price": 0.0,
                   "is_default": false,
@@ -1734,7 +1472,105 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "No crisp island cabbage",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "No grilled pineapple",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Green Devil Delight",
+          "description": "Spinach and kale golden chickpea tofu roasted broccoli avocado chickpeas carrot pickled cabbage and white-bean herb Green Goddess.",
+          "price": 11.89,
+          "options": [
+            {
+              "name": "Green Devil Delight",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No Tofu",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Gothic Green Goddess Ranch",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Spinach",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Carrots",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Kale",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Broccoli",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Avocado",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Chickpeas",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Picked Cabage",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1760,22 +1596,6 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "No crisp tostones",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No roasted tomato and peppers",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "No Baby spinach",
                   "price": 0.0,
                   "is_default": false,
@@ -1793,6 +1613,22 @@
                 },
                 {
                   "name": "No avocado",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No crisp tostones",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No roasted tomato and peppers",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1823,6 +1659,170 @@
           "is_hidden": false
         },
         {
+          "name": "Kanis Golden Thai Thyme",
+          "description": "Quinoa-brown rice golden Burmese chickpea tofu roasted vegetables cucumber pickled cabbage and carrot basil and sweet chile-lime glaze.",
+          "price": 11.89,
+          "options": [
+            {
+              "name": "Kanis Thai Thyme",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No Carrots",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Roasted Vegetables",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Sweet chili Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Cucumbers",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Brown Rice and Quinoa",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Pickled Cabbage",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Thai Spiced Tofu",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Nuvias Carnival Caliente",
+          "description": "Brown rice slow-roasted barbacoa beef cilantro-lime black beans poblano corn mango salsa pickled onion and jalape�o smoky chipotle and fresh lime.",
+          "price": 11.89,
+          "options": [
+            {
+              "name": "Nuvias Carnival Caliente",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No Black Beans",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Cilantro",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Pickled Jalapenos",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Mango Salsa",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Chipotle Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Shredded Beef",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Brown Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Lime Wedge",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Pickled Red Onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
           "name": "Charlies Bowl Beirut",
           "description": "Quinoa-brown rice chickpea falafel parsley-cucumber quinoa tabbouleh fire-roasted tomato chickpeas sesame-free lemon hummus toum.",
           "price": 11.89,
@@ -1833,22 +1833,6 @@
               "maximum": 50,
               "allow_quantity": true,
               "values": [
-                {
-                  "name": "No fire-roasted tomatoes",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Sesame-free lemon hummus",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
                 {
                   "name": "No Chickpea Falafel",
                   "price": 0.0,
@@ -1867,6 +1851,22 @@
                 },
                 {
                   "name": "No Toum",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No fire-roasted tomatoes",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Sesame-free lemon hummus",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1924,6 +1924,14 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "No pickled red onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "No diced cucumbers",
                   "price": 0.0,
                   "is_default": false,
@@ -1933,14 +1941,6 @@
                 },
                 {
                   "name": "No kale",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No pickled red onion",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1971,6 +1971,40 @@
           "is_hidden": false
         },
         {
+          "name": "Hot Honey Chicken Tenders",
+          "description": "Spicy sweet chicken tenders with hot honey chicken it is sweet potato fries",
+          "price": 11.3,
+          "options": [
+            {
+              "name": "Hot Honey Chicken Tenders",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Extra Tenders (2)",
+                  "price": 2.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Extra Tenders",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Taco Thyme",
           "description": "Choice of sweet potato chicken or beef tacos with fire roasted corn w/ poblano cilantro lime black beans brown rice & quinoa mango salsa tomato salsa verde & side of blue corn chips.",
           "price": 11.3,
@@ -1982,7 +2016,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Chicken",
+                  "name": "Beef",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1990,7 +2024,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Beef",
+                  "name": "Chicken",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2030,14 +2064,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No salsa verde",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "No beans",
                   "price": 0.0,
                   "is_default": false,
@@ -2052,61 +2078,35 @@
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Hot Honey Chicken Tenders",
-          "description": "Spicy sweet chicken tenders with hot honey chicken it is sweet potato fries",
-          "price": 11.3,
-          "options": [
-            {
-              "name": "Hot Honey Chicken Tenders",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
+                },
                 {
-                  "name": "No Extra Tenders",
+                  "name": "No salsa verde",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
-                },
-                {
-                  "name": "Extra Tenders (2)",
-                  "price": 2.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
                 }
               ]
             }
           ],
           "busy_min": 15,
           "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Jerk chicken tostones plate",
-          "description": "Jerk chicken tostones plate",
-          "price": 12.49,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
           "is_hidden": false
         },
         {
           "name": "Smoky barbacoa loaded fries",
           "description": "Smoky barbacoa loaded fries",
           "price": 12.85,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Jerk chicken tostones plate",
+          "description": "Jerk chicken tostones plate",
+          "price": 12.49,
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
@@ -2133,15 +2133,6 @@
           "is_hidden": false
         },
         {
-          "name": "Pomegranite Limeade",
-          "description": "",
-          "price": 3.99,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
           "name": "Pineapple Tea",
           "description": "",
           "price": 3.99,
@@ -2154,6 +2145,15 @@
           "name": "Ginger Mint Iced Tea",
           "description": "",
           "price": 2.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Pomegranite Limeade",
+          "description": "",
+          "price": 3.99,
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
