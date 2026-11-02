@@ -4,7 +4,7 @@
   "location_id": 235,
   "cafeteria_id": 193,
   "icon_image_url": "campuses/icon_restaurant_19_18_129_1594924817707.jpg",
-  "estimated_wait_time_minutes": 12,
+  "estimated_wait_time_minutes": 17,
   "currently_open": true,
   "takeout_open": true,
   "delivery_open": true,
@@ -156,8 +156,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-02 13:06:43",
-  "menu_last_updated": "2026-11-02 13:06:44",
+  "retrieved_at": "2026-11-02 15:58:49",
+  "menu_last_updated": "2026-11-02 15:58:49",
   "sections": [
     {
       "name": "Farmstead Specials",
@@ -225,15 +225,6 @@
           "name": "Plain Oatmeal (No toppings)",
           "description": "",
           "price": 3.45,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Tofu Scramble and Potatoes",
-          "description": "",
-          "price": 8.55,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -317,6 +308,15 @@
               ]
             }
           ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Tofu Scramble and Potatoes",
+          "description": "",
+          "price": 8.55,
+          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -1900,6 +1900,15 @@
       "is_hidden": false,
       "items": [
         {
+          "name": "Tangy Bourbon Chicken (Sweet Potatoes & Green Beans)",
+          "description": "Tangy bourbon Chicken with Roasted Sweet Potatoes and Green Beans",
+          "price": 12.75,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Salmon Burger",
           "description": "Salmon Patty Arugula Tomatoes Caramelized Onions Horseradish Aioli",
           "price": 10.69,
@@ -1977,15 +1986,6 @@
               ]
             }
           ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Tangy Bourbon Chicken (Sweet Potatoes & Green Beans)",
-          "description": "Tangy bourbon Chicken with Roasted Sweet Potatoes and Green Beans",
-          "price": 12.75,
-          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -7360,6 +7360,186 @@
           "is_hidden": true
         },
         {
+          "name": "Falafel bowl",
+          "description": "Chickpea  Quinoa  Lettuce  Banana pepper  Tomato  Tahini sauce Falafel  Pita w/ hummus",
+          "price": 11.79,
+          "options": [
+            {
+              "name": "Falafel Bowl Options",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No Tahini Dressing",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Tomato",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Banana Pepper",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Mixed Greens",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Quinoa",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Chickpea",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Regular Hummus",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Spicy Hummas",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "3 Composed Salad",
+          "description": "Pick 3 - Kale salad sweet potato  Chick pea  Orzo  Quinoa  Cauliflower Hummus spicy w/ pita Hummer regular w/ pita Grape leafs",
+          "price": 10.69,
+          "options": [
+            {
+              "name": "3 Composed Salad (Pick 3)",
+              "minimum": 0,
+              "maximum": 3,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Cauliflower",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chick Pea",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Grape Leafs",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Hummas regular w pita",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Hummus spicy w pita",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Kale Salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Orzo",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Quinoa",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sweet Potato",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Beet Salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Chickpea Stew",
           "description": "",
           "price": 12.75,
@@ -7748,186 +7928,6 @@
                 },
                 {
                   "name": "White rice with gravy",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Falafel bowl",
-          "description": "Chickpea  Quinoa  Lettuce  Banana pepper  Tomato  Tahini sauce Falafel  Pita w/ hummus",
-          "price": 11.79,
-          "options": [
-            {
-              "name": "Falafel Bowl Options",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No Tahini Dressing",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Tomato",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Banana Pepper",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Mixed Greens",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Quinoa",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Chickpea",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Regular Hummus",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Spicy Hummas",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "3 Composed Salad",
-          "description": "Pick 3 - Kale salad sweet potato  Chick pea  Orzo  Quinoa  Cauliflower Hummus spicy w/ pita Hummer regular w/ pita Grape leafs",
-          "price": 10.69,
-          "options": [
-            {
-              "name": "3 Composed Salad (Pick 3)",
-              "minimum": 0,
-              "maximum": 3,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Cauliflower",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chick Pea",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Grape Leafs",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Hummas regular w pita",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Hummus spicy w pita",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Kale Salad",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Orzo",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Quinoa",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sweet Potato",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Beet Salad",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -9009,6 +9009,15 @@
       "is_hidden": true,
       "items": [
         {
+          "name": "Pellegrino flavored",
+          "description": "",
+          "price": 2.25,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Sparkling Pellegrino",
           "description": "",
           "price": 2.89,
@@ -9030,15 +9039,6 @@
           "name": "Minute Maid",
           "description": "",
           "price": 3.45,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Pellegrino flavored",
-          "description": "",
-          "price": 2.25,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
