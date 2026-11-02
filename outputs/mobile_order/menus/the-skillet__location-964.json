@@ -4,16 +4,16 @@
   "location_id": 964,
   "cafeteria_id": 856,
   "icon_image_url": "campuses/icon_location_19_18_129_1610975062760.jpg",
-  "estimated_wait_time_minutes": 6,
+  "estimated_wait_time_minutes": 13,
   "currently_open": true,
   "takeout_open": true,
   "delivery_open": false,
   "takeout_hours": {
-    "open": "08:00:00",
+    "open": "07:00:00",
     "close": "21:00:00"
   },
   "delivery_hours": {
-    "open": "08:00:00",
+    "open": "07:00:00",
     "close": "21:00:00"
   },
   "hours": {
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-01 18:03:35",
-  "menu_last_updated": "2026-11-01 18:03:35",
+  "retrieved_at": "2026-11-01 23:59:56",
+  "menu_last_updated": "2026-11-01 23:59:57",
   "sections": [
     {
       "name": "Specials",
@@ -7236,28 +7236,35 @@
           "is_hidden": false
         },
         {
-          "name": "Plain Grits",
+          "name": "Cinnamon Oatmeal",
           "description": "",
           "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Bacon",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Southern Grits",
-          "description": "",
-          "price": 3.19,
-          "options": [],
+          "options": [
+            {
+              "name": "Oatmeal Option",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Berries",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chocolate Chips",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -7305,7 +7312,7 @@
           "is_hidden": false
         },
         {
-          "name": "Country Ham",
+          "name": "Plain Grits",
           "description": "",
           "price": 3.19,
           "options": [],
@@ -7314,7 +7321,16 @@
           "is_hidden": false
         },
         {
-          "name": "Mixed Fruit",
+          "name": "Bacon",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Southern Grits",
           "description": "",
           "price": 3.19,
           "options": [],
@@ -7421,7 +7437,7 @@
           "is_hidden": false
         },
         {
-          "name": "Morning Star Sausage",
+          "name": "Country Ham",
           "description": "",
           "price": 3.19,
           "options": [],
@@ -7430,35 +7446,19 @@
           "is_hidden": false
         },
         {
-          "name": "Cinnamon Oatmeal",
+          "name": "Mixed Fruit",
           "description": "",
           "price": 3.19,
-          "options": [
-            {
-              "name": "Oatmeal Option",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Berries",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chocolate Chips",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Morning Star Sausage",
+          "description": "",
+          "price": 3.19,
+          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
