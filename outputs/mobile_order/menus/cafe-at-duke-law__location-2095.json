@@ -4,10 +4,10 @@
   "location_id": 2095,
   "cafeteria_id": 1905,
   "icon_image_url": "campuses/icon_location_19_18_127_1756835590933.jpg",
-  "estimated_wait_time_minutes": 17,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "08:00:00",
     "close": "15:00:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-04 14:56:37",
-  "menu_last_updated": "2026-11-04 14:56:38",
+  "retrieved_at": "2026-11-05 20:37:41",
+  "menu_last_updated": "2026-11-05 20:37:42",
   "sections": [
     {
       "name": "Coffee",
@@ -4760,46 +4760,35 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Brownies",
-          "description": "Chocolate Salted Caramel",
+          "name": "Loaves",
+          "description": "",
           "price": 4.29,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Coffee Cake",
-          "description": "Cinnamon coffee cake",
-          "price": 3.99,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Cookies",
-          "description": "Double chocolate chunk",
-          "price": 3.09,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Donuts",
-          "description": "Glazed Old Fashion Ring",
-          "price": 2.99,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Fruit Cup",
-          "description": "Fresh fruit cup cut everyday",
-          "price": 4.99,
-          "options": [],
+          "options": [
+            {
+              "name": "Loaves Options",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Iced Lemon Pound Cake",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Iced Pumpkin Vanilla Swirl",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -4847,35 +4836,46 @@
           "is_hidden": false
         },
         {
-          "name": "Loaves",
-          "description": "",
+          "name": "Brownies",
+          "description": "Chocolate Salted Caramel",
           "price": 4.29,
-          "options": [
-            {
-              "name": "Loaves Options",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Iced Lemon Pound Cake",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Iced Pumpkin Vanilla Swirl",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Coffee Cake",
+          "description": "Cinnamon coffee cake",
+          "price": 3.99,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Cookies",
+          "description": "Double chocolate chunk",
+          "price": 3.09,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Donuts",
+          "description": "Glazed Old Fashion Ring",
+          "price": 2.99,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Fruit Cup",
+          "description": "Fresh fruit cup cut everyday",
+          "price": 4.99,
+          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
