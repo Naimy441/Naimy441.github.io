@@ -4,10 +4,10 @@
   "location_id": 533,
   "cafeteria_id": 475,
   "icon_image_url": "campuses/icon_location_19_18_127_1701729943321.jpg",
-  "estimated_wait_time_minutes": 16,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "10:30:00",
     "close": "21:00:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-04 21:34:36",
-  "menu_last_updated": "2026-11-04 21:34:37",
+  "retrieved_at": "2026-11-04 23:25:03",
+  "menu_last_updated": "2026-11-04 23:25:04",
   "sections": [
     {
       "name": "SAZ - Game Day Specials Online",
@@ -172,7 +172,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Chips and Pico de gallo",
+                  "name": "Chips with Fire Roasted Salsa",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -180,7 +180,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Chips with Fire Roasted Salsa",
+                  "name": "Chips and Pico de gallo",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -201,6 +201,15 @@
       "is_hidden": true,
       "items": [
         {
+          "name": "Vegan Arepa Bowl",
+          "description": "Romaine Brown Rice Black Beans Mushrooms Arepa Peppers and Onions Guacamole Pico de Gallo Roasted Corn Salsa Habanero Coleslaw",
+          "price": 10.59,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Chicken Burrito",
           "description": "Monterey Jack Cheese Pulled Chicken Shredded Romaine Pico de Gallo Roasted Corn Salsa with a side of Chips and Salsa",
           "price": 11.65,
@@ -213,15 +222,6 @@
           "name": "Shrimp Tacos",
           "description": "Shredded Cheese Brown Rice Shredded Romaine Blackened Shrimp Plantains Pico de Gallo Roasted Corn Salsa Habanero Coleslaw",
           "price": 14.55,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Vegan Arepa Bowl",
-          "description": "Romaine Brown Rice Black Beans Mushrooms Arepa Peppers and Onions Guacamole Pico de Gallo Roasted Corn Salsa Habanero Coleslaw",
-          "price": 10.59,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -285,7 +285,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Corn tortilla",
+                  "name": "Flour tortilla",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -293,7 +293,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Flour tortilla",
+                  "name": "Corn tortilla",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -365,16 +365,16 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Portobello",
-                  "price": 11.99,
+                  "name": "Cheese-No Protein",
+                  "price": 9.89,
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Cheese-No Protein",
-                  "price": 9.89,
+                  "name": "Portobello",
+                  "price": 11.99,
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
@@ -461,23 +461,7 @@
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Fried Egg",
-                  "price": 1.05,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Black Beans",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Fajita Peppers and Onion",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -494,6 +478,22 @@
                 },
                 {
                   "name": "Pickled onions",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Egg",
+                  "price": 1.05,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fajita Peppers and Onion",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -589,7 +589,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "No Cheese",
+                  "name": "Monterrey Jack Cheese",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -597,7 +597,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Monterrey Jack Cheese",
+                  "name": "No Cheese",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -613,7 +613,7 @@
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Chipotle Crema",
+                  "name": "Habanero",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -621,7 +621,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Habanero",
+                  "name": "Chipotle Crema",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -677,18 +677,18 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "No Extra Protein",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Extra Shrimp Protein",
                   "price": 5.35,
                   "is_default": false,
                   "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Extra Protein",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
@@ -831,19 +831,19 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Tofrizo",
-                  "price": 11.99,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Hot Honey Chicken",
                   "price": 12.85,
                   "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Tofrizo",
+                  "price": 11.99,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
@@ -879,14 +879,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Grilled Chicken",
-                  "price": 12.85,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Portobello",
                   "price": 11.99,
                   "is_default": false,
@@ -895,7 +887,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Carnitas",
+                  "name": "Grilled Chicken",
                   "price": 12.85,
                   "is_default": false,
                   "is_hidden": false,
@@ -908,6 +900,14 @@
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Carnitas",
+                  "price": 12.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
@@ -975,7 +975,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "No Arepa",
+                  "name": "Arepa",
                   "price": 0.0,
                   "is_default": true,
                   "is_hidden": false,
@@ -983,7 +983,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Arepa",
+                  "name": "No Arepa",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1015,15 +1015,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Black Beans",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Super Food Lettuce",
+                  "name": "Pickled onions",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1047,7 +1039,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Pickled onions",
+                  "name": "Black Beans",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Super Food Lettuce",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1215,7 +1215,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Add Chips w Fire Roasted Salsa",
+                  "name": "Add Chips and Pico de Gallo",
                   "price": 3.19,
                   "is_default": false,
                   "is_hidden": false,
@@ -1223,7 +1223,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Add Chips and Pico de Gallo",
+                  "name": "Add Chips w Fire Roasted Salsa",
                   "price": 3.19,
                   "is_default": false,
                   "is_hidden": false,
@@ -1283,46 +1283,6 @@
               ]
             },
             {
-              "name": "Base Options",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Shredded Romain",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Brown Rice",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "White Cilantro Rice",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Black Beans",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
               "name": "Proteins",
               "minimum": 1,
               "maximum": 1,
@@ -1337,19 +1297,19 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Tofrizo",
-                  "price": 11.99,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Hot Honey Chicken",
                   "price": 12.85,
                   "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Tofrizo",
+                  "price": 11.99,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
@@ -1377,19 +1337,19 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Portobello",
-                  "price": 11.99,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Grilled Chicken",
                   "price": 12.85,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Portobello",
+                  "price": 11.99,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
@@ -1475,37 +1435,53 @@
               ]
             },
             {
+              "name": "Base Options",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Shredded Romain",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "White Cilantro Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Black Beans",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
               "name": "Toppings",
               "minimum": 0,
               "maximum": 50,
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Black Beans",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Pickled onions",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Super Food Lettuce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pinto Beans",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1530,6 +1506,30 @@
                 },
                 {
                   "name": "Fresh jalapenos",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Black Beans",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Super Food Lettuce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pinto Beans",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1673,18 +1673,18 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Extra Shrimp Protein",
-                  "price": 5.35,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "No Extra Protein",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Extra Shrimp Protein",
+                  "price": 5.35,
+                  "is_default": false,
+                  "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
@@ -1803,19 +1803,19 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Hot Honey Chicken",
-                  "price": 12.85,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Tofrizo",
                   "price": 11.99,
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Hot Honey Chicken",
+                  "price": 12.85,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
@@ -1867,19 +1867,19 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Shredded Chicken",
-                  "price": 11.49,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Carnitas",
                   "price": 12.85,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Shredded Chicken",
+                  "price": 11.49,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
@@ -1963,7 +1963,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Black Beans",
+                  "name": "Super Food Lettuce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pinto Beans",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1979,7 +1987,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Pinto Beans",
+                  "name": "Black Beans",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1988,14 +1996,6 @@
                 },
                 {
                   "name": "Pickled onions",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Super Food Lettuce",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2139,18 +2139,18 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "No Extra Protein",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Extra Shrimp Protein",
                   "price": 5.35,
                   "is_default": false,
                   "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Extra Protein",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
@@ -2171,7 +2171,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Add Chips and Pico de Gallo",
+                  "name": "Add Chips w Fire Roasted Salsa",
                   "price": 3.19,
                   "is_default": false,
                   "is_hidden": false,
@@ -2179,7 +2179,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Add Chips w Fire Roasted Salsa",
+                  "name": "Add Chips and Pico de Gallo",
                   "price": 3.19,
                   "is_default": false,
                   "is_hidden": false,
@@ -2350,7 +2350,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Blueberry",
+                  "name": "Raspberry",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2358,7 +2358,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Raspberry",
+                  "name": "Blueberry",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2451,7 +2451,34 @@
           "is_hidden": false
         },
         {
+          "name": "Single Taco",
+          "description": "",
+          "price": 4.39,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Tostones",
+          "description": "",
+          "price": 2.69,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Extra Side Sauce",
+          "description": "",
+          "price": 1.35,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Maduros",
           "description": "",
           "price": 2.69,
           "options": [],
@@ -2478,9 +2505,9 @@
           "is_hidden": false
         },
         {
-          "name": "White Rice",
+          "name": "Queso",
           "description": "",
-          "price": 2.69,
+          "price": 1.95,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -2496,36 +2523,9 @@
           "is_hidden": false
         },
         {
-          "name": "Queso",
-          "description": "",
-          "price": 1.95,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Extra Side Sauce",
-          "description": "",
-          "price": 1.35,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Maduros",
+          "name": "White Rice",
           "description": "",
           "price": 2.69,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Single Taco",
-          "description": "",
-          "price": 4.39,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,

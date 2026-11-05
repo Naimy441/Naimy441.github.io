@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-04 21:12:32",
-  "menu_last_updated": "2026-11-04 21:12:33",
+  "retrieved_at": "2026-11-05 12:12:23",
+  "menu_last_updated": "2026-11-05 12:12:23",
   "sections": [
     {
       "name": "Kosher",
@@ -247,6 +247,40 @@
       "is_hidden": false,
       "items": [
         {
+          "name": "Nitro Cold Brew",
+          "description": "",
+          "price": 5.99,
+          "options": [
+            {
+              "name": "Nitro Flavors",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Mocha",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sweet",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Americano",
           "description": "",
           "price": 4.69,
@@ -346,6 +380,22 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Oat Milk",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Half & Half",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Flavor Shot",
                   "price": 0.5,
                   "is_default": false,
@@ -362,31 +412,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Oat Milk",
+                  "name": "Soy Milk",
                   "price": 0.0,
                   "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
                   "name": "2% Milk",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Half & Half",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soy Milk",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -434,7 +468,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Pumpkin Spice",
+                  "name": "Chai Tea Spice",
                   "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
@@ -442,7 +476,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Chai Tea Spice",
+                  "name": "Pumpkin Spice",
                   "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
@@ -506,7 +540,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Caramel Sauce",
+                  "name": "White Chocolate",
                   "price": 1.19,
                   "is_default": false,
                   "is_hidden": false,
@@ -514,7 +548,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "White Chocolate",
+                  "name": "Caramel Sauce",
                   "price": 1.19,
                   "is_default": false,
                   "is_hidden": false,
@@ -531,30 +565,6 @@
               "values": [
                 {
                   "name": "Slenda",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Honey",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Equal",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Regular Sugar",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -584,27 +594,9 @@
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Nitro Cold Brew",
-          "description": "",
-          "price": 5.99,
-          "options": [
-            {
-              "name": "Nitro Flavors",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
+                },
                 {
-                  "name": "Mocha",
+                  "name": "Honey",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -612,9 +604,17 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Sweet",
+                  "name": "Equal",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Regular Sugar",
+                  "price": 0.0,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -686,7 +686,15 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Whole",
+                  "name": "Skim",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Soy",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -710,23 +718,15 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Whole",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Half & Half",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Skim",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soy",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -741,6 +741,30 @@
               "maximum": 50,
               "allow_quantity": true,
               "values": [
+                {
+                  "name": "Hazelnut",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Vanilla",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Salty Caramel",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
                 {
                   "name": "Chai Tea Spice",
                   "price": 1.39,
@@ -766,22 +790,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Peppermint",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Salty Caramel",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Caramel",
                   "price": 1.39,
                   "is_default": false,
@@ -790,7 +798,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Pumpkin Spice",
+                  "name": "Peppermint",
                   "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
@@ -798,15 +806,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Hazelnut",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Vanilla",
+                  "name": "Pumpkin Spice",
                   "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
@@ -838,7 +838,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Agave",
+                  "name": "Raw Sugar",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -846,7 +846,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Raw Sugar",
+                  "name": "Agave",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -936,7 +936,31 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "Oat Milk",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Soy",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Skim",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Oat Milk",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
@@ -960,38 +984,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Soy Milk",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Oat Milk",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Skim",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Oat Milk",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Half & Half",
                   "price": 0.0,
                   "is_default": false,
@@ -1001,6 +993,14 @@
                 },
                 {
                   "name": "2% Milk",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Soy Milk",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1040,30 +1040,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Chai Tea Spice",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sugar Free Vanilla",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Winter Spice",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Hazelnut",
                   "price": 0.99,
                   "is_default": false,
@@ -1080,7 +1056,31 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Chai Tea Spice",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Pumpkin Spice",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sugar Free Vanilla",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Winter Spice",
                   "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
@@ -1128,6 +1128,14 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "Sweet & Low",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Honey",
                   "price": 0.0,
                   "is_default": false,
@@ -1153,14 +1161,6 @@
                 },
                 {
                   "name": "Regular Sugar",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sweet & Low",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1282,6 +1282,14 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "2% Milk",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Skim",
                   "price": 0.0,
                   "is_default": false,
@@ -1295,14 +1303,6 @@
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "2% Milk",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
@@ -1362,6 +1362,14 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "Salty Caramel",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Hazelnut",
                   "price": 0.99,
                   "is_default": false,
@@ -1379,14 +1387,6 @@
                 },
                 {
                   "name": "Peppermint",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Salty Caramel",
                   "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
@@ -1450,7 +1450,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "White Chocolate",
+                  "name": "Chocolate",
                   "price": 1.19,
                   "is_default": false,
                   "is_hidden": false,
@@ -1458,7 +1458,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Chocolate",
+                  "name": "White Chocolate",
                   "price": 1.19,
                   "is_default": false,
                   "is_hidden": false,
@@ -1514,7 +1514,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Sweet & Low",
+                  "name": "Honey",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1522,7 +1522,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Honey",
+                  "name": "Sweet & Low",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1588,7 +1588,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Whole",
+                  "name": "2% Milk",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1604,27 +1604,27 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Soy Milk",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "2% Milk",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Flavor Shot",
                   "price": 0.5,
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Whole",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Soy Milk",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
@@ -1668,15 +1668,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Sugar Free Vanilla",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pumpkin Spice",
+                  "name": "Salty Caramel",
                   "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
@@ -1692,14 +1684,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Winter Spice",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Peppermint",
                   "price": 1.39,
                   "is_default": false,
@@ -1708,7 +1692,23 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Salty Caramel",
+                  "name": "Pumpkin Spice",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sugar Free Vanilla",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Winter Spice",
                   "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
@@ -1748,6 +1748,22 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "Honey",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Slenda",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Agave",
                   "price": 0.0,
                   "is_default": false,
@@ -1772,14 +1788,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Equal",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Regular Sugar",
                   "price": 0.0,
                   "is_default": false,
@@ -1788,15 +1796,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Honey",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Slenda",
+                  "name": "Equal",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1902,6 +1902,38 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "Flavor Shot",
+                  "price": 0.5,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Whole",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Soy",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Oat Milk",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Skim",
                   "price": 0.0,
                   "is_default": false,
@@ -1918,14 +1950,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Half & Half",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Soy Milk",
                   "price": 0.0,
                   "is_default": false,
@@ -1934,11 +1958,11 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Flavor Shot",
-                  "price": 0.5,
+                  "name": "Half & Half",
+                  "price": 0.0,
                   "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
@@ -1947,30 +1971,6 @@
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Whole",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Oat Milk",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soy",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
                   "max_quantity": 0
                 }
               ]
@@ -1982,15 +1982,15 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Hazelnut",
-                  "price": 0.99,
+                  "name": "Chai Tea Spice",
+                  "price": 1.39,
                   "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Vanilla",
+                  "name": "Sugar Free Vanilla",
                   "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
@@ -1999,6 +1999,14 @@
                 },
                 {
                   "name": "Caramel",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Winter Spice",
                   "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
@@ -2022,31 +2030,23 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Hazelnut",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Vanilla",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Salty Caramel",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chai Tea Spice",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sugar Free Vanilla",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Winter Spice",
                   "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
@@ -2062,6 +2062,14 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "White Chocolate",
+                  "price": 1.19,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Caramel Sauce",
                   "price": 1.19,
                   "is_default": false,
@@ -2076,14 +2084,6 @@
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
-                },
-                {
-                  "name": "White Chocolate",
-                  "price": 1.19,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
                 }
               ]
             },
@@ -2093,6 +2093,22 @@
               "maximum": 10,
               "allow_quantity": true,
               "values": [
+                {
+                  "name": "Agave",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Raw Sugar",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
                 {
                   "name": "Equal",
                   "price": 0.0,
@@ -2126,22 +2142,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Agave",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Raw Sugar",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Sweet & Low",
                   "price": 0.0,
                   "is_default": false,
@@ -2155,15 +2155,6 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
-        },
-        {
-          "name": "Empty Cup",
-          "description": "",
-          "price": 0.29,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
         },
         {
           "name": "Espresso",
@@ -2249,7 +2240,31 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "2% Milk",
+                  "name": "Skim",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Oat Milk",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Half & Half",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Soy Milk",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2273,19 +2288,11 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Skim",
+                  "name": "2% Milk",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Oat Milk",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
@@ -2303,22 +2310,6 @@
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
-                },
-                {
-                  "name": "Half & Half",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soy Milk",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
                 }
               ]
             },
@@ -2328,6 +2319,22 @@
               "maximum": 10,
               "allow_quantity": true,
               "values": [
+                {
+                  "name": "Honey",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Slenda",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
                 {
                   "name": "Raw Sugar",
                   "price": 0.0,
@@ -2354,22 +2361,6 @@
                 },
                 {
                   "name": "Regular Sugar",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Honey",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Slenda",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2435,6 +2426,30 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "Soy Milk",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Soy",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "2% Milk",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Whole",
                   "price": 0.0,
                   "is_default": false,
@@ -2468,30 +2483,6 @@
                 },
                 {
                   "name": "Half & Half",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soy Milk",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soy",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "2% Milk",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2539,7 +2530,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Chocolate",
+                  "name": "White Chocolate",
                   "price": 1.19,
                   "is_default": false,
                   "is_hidden": false,
@@ -2555,7 +2546,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "White Chocolate",
+                  "name": "Chocolate",
                   "price": 1.19,
                   "is_default": false,
                   "is_hidden": false,
@@ -2570,166 +2561,13 @@
           "is_hidden": false
         },
         {
-          "name": "Hot Tea",
-          "description": "Single Tea Bag",
-          "price": 2.39,
-          "options": [
-            {
-              "name": "Hot Teas Flavors",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Organic Earl Grey",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Hot Cinnamon Spice",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Organic Peppermint",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "English Breakfast",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Assam",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Egyptian Chamomile",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Alpine Berry",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Tropical Green",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Jasmine",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Turmeric",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Sweetners",
-              "minimum": 0,
-              "maximum": 10,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Agave",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Raw Sugar",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Honey",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Slenda",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sweet & Low",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Equal",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Regular Sugar",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
+          "name": "Double Espresso",
+          "description": "",
+          "price": 0.0,
+          "options": [],
           "busy_min": 15,
           "normal_min": 10,
-          "is_hidden": false
+          "is_hidden": true
         },
         {
           "name": "Carmel Mocha",
@@ -2743,43 +2581,11 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Whole",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Flavor Shot",
-                  "price": 0.5,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Oat Milk",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Soy",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soy Milk",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
@@ -2813,6 +2619,38 @@
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
+                },
+                {
+                  "name": "Flavor Shot",
+                  "price": 0.5,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Oat Milk",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Whole",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Soy Milk",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
                 }
               ]
             },
@@ -2822,6 +2660,14 @@
               "maximum": 50,
               "allow_quantity": false,
               "values": [
+                {
+                  "name": "Med",
+                  "price": 6.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
                 {
                   "name": "Iced",
                   "price": 6.99,
@@ -2841,14 +2687,6 @@
                 {
                   "name": "Large",
                   "price": 7.19,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Med",
-                  "price": 6.99,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -2903,7 +2741,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Caramel Sauce",
+                  "name": "Chocolate",
                   "price": 1.19,
                   "is_default": false,
                   "is_hidden": false,
@@ -2919,7 +2757,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Chocolate",
+                  "name": "Caramel Sauce",
                   "price": 1.19,
                   "is_default": false,
                   "is_hidden": false,
@@ -2935,23 +2773,31 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Equal",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Regular Sugar",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Agave",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Honey",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Slenda",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Equal",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2975,15 +2821,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Honey",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Slenda",
+                  "name": "Regular Sugar",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -3097,14 +2935,6 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Oat Milk",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Skim",
                   "price": 0.0,
                   "is_default": false,
@@ -3137,6 +2967,22 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Soy",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Oat Milk",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Flavor Shot",
                   "price": 0.5,
                   "is_default": false,
@@ -3159,14 +3005,6 @@
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
-                },
-                {
-                  "name": "Soy",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
                 }
               ]
             },
@@ -3186,6 +3024,22 @@
                 },
                 {
                   "name": "Pumpkin Spice",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Caramel",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Peppermint",
                   "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
@@ -3217,22 +3071,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Caramel",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Peppermint",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Hazelnut",
                   "price": 0.99,
                   "is_default": false,
@@ -3257,7 +3095,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "White Chocolate",
+                  "name": "Chocolate",
                   "price": 1.19,
                   "is_default": false,
                   "is_hidden": false,
@@ -3273,7 +3111,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Chocolate",
+                  "name": "White Chocolate",
                   "price": 1.19,
                   "is_default": false,
                   "is_hidden": false,
@@ -3289,7 +3127,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Agave",
+                  "name": "Honey",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -3297,15 +3135,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Raw Sugar",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sweet & Low",
+                  "name": "Slenda",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -3329,7 +3159,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Honey",
+                  "name": "Agave",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -3337,7 +3167,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Slenda",
+                  "name": "Raw Sugar",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sweet & Low",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -3443,6 +3281,22 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "Soy",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Oat Milk",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Soy Milk",
                   "price": 0.0,
                   "is_default": false,
@@ -3460,30 +3314,6 @@
                 },
                 {
                   "name": "Whole",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soy",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "2% Milk",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Oat Milk",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -3513,6 +3343,14 @@
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
+                },
+                {
+                  "name": "2% Milk",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
                 }
               ]
             },
@@ -3522,6 +3360,38 @@
               "maximum": 50,
               "allow_quantity": true,
               "values": [
+                {
+                  "name": "Caramel",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Peppermint",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pumpkin Spice",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Salty Caramel",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
                 {
                   "name": "Hazelnut",
                   "price": 0.99,
@@ -3555,38 +3425,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Salty Caramel",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Caramel",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Peppermint",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pumpkin Spice",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Vanilla",
                   "price": 1.39,
                   "is_default": false,
@@ -3611,7 +3449,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Caramel Sauce",
+                  "name": "White Chocolate",
                   "price": 1.19,
                   "is_default": false,
                   "is_hidden": false,
@@ -3619,7 +3457,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "White Chocolate",
+                  "name": "Caramel Sauce",
                   "price": 1.19,
                   "is_default": false,
                   "is_hidden": false,
@@ -3636,22 +3474,6 @@
               "values": [
                 {
                   "name": "Slenda",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Equal",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Regular Sugar",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -3684,6 +3506,22 @@
                 },
                 {
                   "name": "Honey",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Equal",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Regular Sugar",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -3797,6 +3635,14 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "2% Milk",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Flavor Shot",
                   "price": 0.5,
                   "is_default": false,
@@ -3845,14 +3691,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "2% Milk",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Oat Milk",
                   "price": 0.0,
                   "is_default": false,
@@ -3877,6 +3715,14 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "Chocolate",
+                  "price": 1.19,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "White Chocolate",
                   "price": 1.19,
                   "is_default": false,
@@ -3891,14 +3737,6 @@
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
-                },
-                {
-                  "name": "Chocolate",
-                  "price": 1.19,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
                 }
               ]
             },
@@ -3908,6 +3746,22 @@
               "maximum": 10,
               "allow_quantity": true,
               "values": [
+                {
+                  "name": "Honey",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Slenda",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
                 {
                   "name": "Sweet & Low",
                   "price": 0.0,
@@ -3942,22 +3796,6 @@
                 },
                 {
                   "name": "Regular Sugar",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Honey",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Slenda",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -4063,7 +3901,15 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Soy Milk",
+                  "name": "Flavor Shot",
+                  "price": 0.5,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Whole",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -4072,6 +3918,30 @@
                 },
                 {
                   "name": "2% Milk",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Soy Milk",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Soy",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Oat Milk",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -4101,38 +3971,6 @@
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
-                },
-                {
-                  "name": "Flavor Shot",
-                  "price": 0.5,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Whole",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soy",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Oat Milk",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
                 }
               ]
             },
@@ -4142,30 +3980,6 @@
               "maximum": 50,
               "allow_quantity": true,
               "values": [
-                {
-                  "name": "Pumpkin Spice",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Hazelnut",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Vanilla",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
                 {
                   "name": "Chai Tea Spice",
                   "price": 1.39,
@@ -4199,6 +4013,14 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Pumpkin Spice",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Caramel",
                   "price": 1.39,
                   "is_default": false,
@@ -4208,6 +4030,22 @@
                 },
                 {
                   "name": "Peppermint",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Hazelnut",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Vanilla",
                   "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
@@ -4255,15 +4093,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Equal",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Regular Sugar",
+                  "name": "Sweet & Low",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -4287,7 +4117,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Slenda",
+                  "name": "Equal",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -4295,7 +4125,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Sweet & Low",
+                  "name": "Regular Sugar",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Slenda",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -4316,15 +4154,6 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
-        },
-        {
-          "name": "Double Espresso",
-          "description": "",
-          "price": 0.0,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
         },
         {
           "name": "Steamer",
@@ -4370,6 +4199,22 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "Soy",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "2% Milk",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Skim",
                   "price": 0.0,
                   "is_default": false,
@@ -4383,6 +4228,14 @@
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Half & Half",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
@@ -4402,14 +4255,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Half & Half",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Soy Milk",
                   "price": 0.0,
                   "is_default": false,
@@ -4418,23 +4263,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Soy",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Oat Milk",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "2% Milk",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -4450,7 +4279,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Pumpkin Spice",
+                  "name": "Peppermint",
                   "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
@@ -4467,6 +4296,14 @@
                 },
                 {
                   "name": "Vanilla",
+                  "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Caramel",
                   "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
@@ -4498,7 +4335,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Peppermint",
+                  "name": "Pumpkin Spice",
                   "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
@@ -4507,14 +4344,6 @@
                 },
                 {
                   "name": "Salty Caramel",
-                  "price": 1.39,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Caramel",
                   "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
@@ -4530,7 +4359,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Raw Sugar",
+                  "name": "Agave",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -4538,7 +4367,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Sweet & Low",
+                  "name": "Raw Sugar",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -4562,7 +4391,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Agave",
+                  "name": "Sweet & Low",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -4684,6 +4513,38 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "Flavor Shot",
+                  "price": 0.5,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Whole",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Soy Milk",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Oat Milk",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Skim",
                   "price": 0.0,
                   "is_default": false,
@@ -4716,38 +4577,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Oat Milk",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Flavor Shot",
-                  "price": 0.5,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Whole",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Soy Milk",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Soy",
                   "price": 0.0,
                   "is_default": false,
@@ -4764,14 +4593,6 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Chocolate",
-                  "price": 1.19,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Caramel Sauce",
                   "price": 1.19,
                   "is_default": false,
@@ -4781,6 +4602,14 @@
                 },
                 {
                   "name": "White Chocolate",
+                  "price": 1.19,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chocolate",
                   "price": 1.19,
                   "is_default": false,
                   "is_hidden": false,
@@ -4797,22 +4626,6 @@
               "values": [
                 {
                   "name": "Sweet & Low",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Honey",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Slenda",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -4845,6 +4658,184 @@
                 },
                 {
                   "name": "Raw Sugar",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Honey",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Slenda",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Hot Tea",
+          "description": "Single Tea Bag",
+          "price": 2.39,
+          "options": [
+            {
+              "name": "Hot Teas Flavors",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Turmeric",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Organic Earl Grey",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "English Breakfast",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Assam",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Egyptian Chamomile",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Hot Cinnamon Spice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Organic Peppermint",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Alpine Berry",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Tropical Green",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Jasmine",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Sweetners",
+              "minimum": 0,
+              "maximum": 10,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Equal",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Regular Sugar",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Honey",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Agave",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Raw Sugar",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Slenda",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sweet & Low",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -4910,6 +4901,22 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Organic Peppermint",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Jasmine",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Egyptian Chamomile",
                   "price": 0.0,
                   "is_default": false,
@@ -4942,7 +4949,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Jasmine",
+                  "name": "Hot Cinnamon Spice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -4959,22 +4966,6 @@
                 },
                 {
                   "name": "Organic Earl Grey",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Organic Peppermint",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Hot Cinnamon Spice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -5014,6 +5005,14 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "2% milk",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Skim",
                   "price": 0.0,
                   "is_default": false,
@@ -5028,14 +5027,6 @@
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
-                },
-                {
-                  "name": "2% milk",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
                 }
               ]
             },
@@ -5045,6 +5036,14 @@
               "maximum": 10,
               "allow_quantity": true,
               "values": [
+                {
+                  "name": "Equal",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
                 {
                   "name": "Regular Sugar",
                   "price": 0.0,
@@ -5063,14 +5062,6 @@
                 },
                 {
                   "name": "Slenda",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Equal",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -5109,6 +5100,15 @@
           "is_hidden": false
         },
         {
+          "name": "Empty Cup",
+          "description": "",
+          "price": 0.29,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
           "name": "Extra Shot",
           "description": "",
           "price": 0.0,
@@ -5139,15 +5139,6 @@
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Gold Peak Green Tea",
-          "description": "",
-          "price": 4.09,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
           "is_hidden": false
         },
         {
@@ -5185,6 +5176,15 @@
           "is_hidden": false
         },
         {
+          "name": "Gold Peak Green Tea",
+          "description": "",
+          "price": 4.09,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
           "name": "Naked Juice",
           "description": "",
           "price": 0.0,
@@ -5212,7 +5212,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Green Machine",
+                  "name": "Berry Blast",
+                  "price": 6.49,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Blue Machine",
                   "price": 6.49,
                   "is_default": false,
                   "is_hidden": false,
@@ -5236,15 +5244,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Berry Blast",
-                  "price": 6.49,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Blue Machine",
+                  "name": "Green Machine",
                   "price": 6.49,
                   "is_default": false,
                   "is_hidden": false,
@@ -5304,6 +5304,14 @@
               "allow_quantity": false,
               "values": [
                 {
+                  "name": "Root Beer",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Diet Coke",
                   "price": 2.49,
                   "is_default": false,
@@ -5312,7 +5320,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Root Beer",
+                  "name": "Coke",
+                  "price": 3.29,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Orange",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
@@ -5330,25 +5346,9 @@
                 {
                   "name": "Sprite",
                   "price": 3.29,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Coke",
-                  "price": 3.29,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Orange",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
                   "max_quantity": 0
                 }
               ]
@@ -5370,6 +5370,14 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "Soy Milk",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Skim",
                   "price": 0.0,
                   "is_default": false,
@@ -5386,7 +5394,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Soy Milk",
+                  "name": "Half & Half",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -5394,7 +5402,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Half & Half",
+                  "name": "2% Milk",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -5407,14 +5415,6 @@
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "2% Milk",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
@@ -5498,7 +5498,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Agave",
+                  "name": "Honey",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -5506,7 +5506,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Raw Sugar",
+                  "name": "Slenda",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -5530,23 +5530,23 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Agave",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Raw Sugar",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Sweet & Low",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Honey",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Slenda",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -5580,7 +5580,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Mango",
+                  "name": "Strawberry",
                   "price": 6.89,
                   "is_default": false,
                   "is_hidden": false,
@@ -5588,7 +5588,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Strawberry",
+                  "name": "Mango",
                   "price": 6.89,
                   "is_default": false,
                   "is_hidden": false,
@@ -5637,6 +5637,14 @@
               "allow_quantity": false,
               "values": [
                 {
+                  "name": "TRI - Chicken Burritos",
+                  "price": 6.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "TRI - Bacon Egg Cheese Burrito",
                   "price": 5.99,
                   "is_default": false,
@@ -5663,14 +5671,6 @@
                 {
                   "name": "TRI - Egg Cheese Burrito",
                   "price": 4.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "TRI - Chicken Burritos",
-                  "price": 6.99,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -5704,9 +5704,9 @@
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Original",
+                  "name": "Brown Sugar",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -5720,15 +5720,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Apple Cinnamon",
+                  "name": "Original",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Brown Sugar",
+                  "name": "Apple Cinnamon",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -5749,6 +5749,48 @@
       "is_hidden": false,
       "items": [
         {
+          "name": "Bagel",
+          "description": "",
+          "price": 1.99,
+          "options": [
+            {
+              "name": "Bagels",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Plain Bagel",
+                  "price": 1.99,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Blueberry Bagel",
+                  "price": 1.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cinnamon Bagel",
+                  "price": 1.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Croissant",
           "description": "",
           "price": 0.0,
@@ -5759,30 +5801,6 @@
               "maximum": 50,
               "allow_quantity": true,
               "values": [
-                {
-                  "name": "Butter Croissant",
-                  "price": 4.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ham and Cheese Croissant",
-                  "price": 3.99,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Cherry Turnover",
-                  "price": 3.29,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
                 {
                   "name": "Spinach Ricotta Croissant",
                   "price": 3.99,
@@ -5800,11 +5818,184 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Cherry Turnover",
+                  "price": 3.29,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Butter Croissant",
+                  "price": 4.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Ham and Cheese Croissant",
+                  "price": 3.99,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Chocolate Croissant",
                   "price": 3.99,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Cookies",
+          "description": "",
+          "price": 0.0,
+          "options": [
+            {
+              "name": "Cookies",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Party M & M Cookie",
+                  "price": 3.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chocolate Chip Cookie",
+                  "price": 3.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Oatmeal Raisin Cookie",
+                  "price": 3.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sugar Cookie",
+                  "price": 3.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Double Chocolate Chip Cookie",
+                  "price": 3.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Biscotti",
+          "description": "Homemade Lemon Loaf Cake with White Icing",
+          "price": 3.79,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Muffin",
+          "description": "",
+          "price": 0.0,
+          "options": [
+            {
+              "name": "Muffins",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Blueberry Muffin",
+                  "price": 3.49,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Lemon Poppy Seed Muffin",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Orange Blossom Muffin",
+                  "price": 3.49,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Apple Cinnamon Muffin",
+                  "price": 3.49,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chocolate Cappuccino Muffin",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Double Chocolate Chip",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chocolate Chip Muffin",
+                  "price": 3.49,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Vanilla Pound Cake Muffin",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
                   "max_quantity": 0
                 }
               ]
@@ -5825,6 +6016,14 @@
               "maximum": 50,
               "allow_quantity": true,
               "values": [
+                {
+                  "name": "Chocolate Chip Scone",
+                  "price": 3.49,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
                 {
                   "name": "White Chocolate Raspberry Scone",
                   "price": 0.0,
@@ -5858,82 +6057,16 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Cranberry Orange Scone",
-                  "price": 3.49,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chocolate Chip Scone",
-                  "price": 3.49,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Brown Sugar Cinnamon",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
                   "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Cookies",
-          "description": "",
-          "price": 0.0,
-          "options": [
-            {
-              "name": "Cookies",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Party M & M Cookie",
-                  "price": 3.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
                 },
                 {
-                  "name": "Sugar Cookie",
-                  "price": 3.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chocolate Chip Cookie",
-                  "price": 3.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Oatmeal Raisin Cookie",
-                  "price": 3.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Double Chocolate Chip Cookie",
-                  "price": 3.99,
+                  "name": "Cranberry Orange Scone",
+                  "price": 3.49,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -5942,66 +6075,6 @@
               ]
             }
           ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Bagel",
-          "description": "",
-          "price": 1.99,
-          "options": [
-            {
-              "name": "Bagels",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Blueberry Bagel",
-                  "price": 1.99,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Plain Bagel",
-                  "price": 1.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Cinnamon Bagel",
-                  "price": 1.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Biscotti",
-          "description": "Homemade Lemon Loaf Cake with White Icing",
-          "price": 3.79,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Triple Chocolate Chip Brownie",
-          "description": "",
-          "price": 4.29,
-          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -6016,100 +6089,9 @@
           "is_hidden": false
         },
         {
-          "name": "Muffin",
+          "name": "Triple Chocolate Chip Brownie",
           "description": "",
-          "price": 0.0,
-          "options": [
-            {
-              "name": "Muffins",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Apple Cinnamon Muffin",
-                  "price": 3.49,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chocolate Cappuccino Muffin",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chocolate Chip Muffin",
-                  "price": 3.49,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Vanilla Pound Cake Muffin",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Blueberry Muffin",
-                  "price": 3.49,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Lemon Poppy Seed Muffin",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Orange Blossom Muffin",
-                  "price": 3.49,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Double Chocolate Chip",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Lemon Loaf",
-          "description": "",
-          "price": 3.49,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Cherry Turnover",
-          "description": "",
-          "price": 3.39,
+          "price": 4.29,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -6132,6 +6114,24 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
+        },
+        {
+          "name": "Lemon Loaf",
+          "description": "",
+          "price": 3.49,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Cherry Turnover",
+          "description": "",
+          "price": 3.39,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
         }
       ]
     },
@@ -6143,15 +6143,6 @@
           "name": "Sabra Hummus",
           "description": "",
           "price": 5.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Brown Rice Sriracha Salmon",
-          "description": "",
-          "price": 10.99,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -6170,6 +6161,15 @@
           "name": "Boiled Eggs",
           "description": "",
           "price": 1.99,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Brown Rice Sriracha Salmon",
+          "description": "",
+          "price": 10.99,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -6204,7 +6204,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Balsalmic",
+                  "name": "Italian",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -6212,7 +6212,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Italian",
+                  "name": "Balsalmic",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -6246,7 +6246,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Italian",
+                  "name": "Balsalmic",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -6254,7 +6254,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Balsalmic",
+                  "name": "Italian",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -6304,14 +6304,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Caesar",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Balsalmic",
                   "price": 0.0,
                   "is_default": false,
@@ -6321,6 +6313,14 @@
                 },
                 {
                   "name": "Ranch",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Caesar",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -6380,22 +6380,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Pineapple",
-                  "price": 5.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Strawberry",
-                  "price": 5.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Grapes",
                   "price": 5.99,
                   "is_default": false,
@@ -6404,7 +6388,23 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Pineapple",
+                  "price": 5.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Mixed Fruit",
+                  "price": 5.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Strawberry",
                   "price": 5.99,
                   "is_default": false,
                   "is_hidden": false,
@@ -6438,23 +6438,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Chobani Vanilla Yogurt",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Yoplait Greek Yogurt",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Oikos Yogurt",
+                  "name": "Chobani Peach Yogurt",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -6470,6 +6454,14 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Oikos Yogurt",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Chobani Plain Yogurt",
                   "price": 0.0,
                   "is_default": false,
@@ -6478,7 +6470,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Chobani Peach Yogurt",
+                  "name": "Chobani Vanilla Yogurt",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Yoplait Greek Yogurt",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -6608,7 +6608,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Banana",
+                  "name": "Oranges",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -6616,7 +6616,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Oranges",
+                  "name": "Banana",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -6637,7 +6637,7 @@
       "is_hidden": true,
       "items": [
         {
-          "name": "California Sushi",
+          "name": "Veggie Sushi",
           "description": "",
           "price": 8.45,
           "options": [],
@@ -6655,16 +6655,7 @@
           "is_hidden": true
         },
         {
-          "name": "Spicy Tuna Sushi",
-          "description": "",
-          "price": 9.95,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Veggie Sushi",
+          "name": "California Sushi",
           "description": "",
           "price": 8.45,
           "options": [],
@@ -6673,22 +6664,13 @@
           "is_hidden": true
         },
         {
-          "name": "White Tiger Sushi",
+          "name": "Spicy Tuna Sushi",
           "description": "",
-          "price": 11.05,
+          "price": 9.95,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Shrimp Tempura Sushi",
-          "description": "",
-          "price": 11.79,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
+          "is_hidden": true
         },
         {
           "name": "Blossom Sushi",
@@ -6701,6 +6683,24 @@
         },
         {
           "name": "Red Dragon Sushi 11.05",
+          "description": "",
+          "price": 11.79,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "White Tiger Sushi",
+          "description": "",
+          "price": 11.05,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Shrimp Tempura Sushi",
           "description": "",
           "price": 11.79,
           "options": [],
@@ -6724,24 +6724,6 @@
           "is_hidden": false
         },
         {
-          "name": "Moms Spaghetti with Meat Sauce Pasta Bak",
-          "description": "",
-          "price": 6.49,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Spinach Mushroom and Alfredo Pasta Bake",
-          "description": "",
-          "price": 6.89,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Chicken Basil Pesto Alfredo Pasta Bake",
           "description": "",
           "price": 6.89,
@@ -6758,6 +6740,24 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
+        },
+        {
+          "name": "Moms Spaghetti with Meat Sauce Pasta Bak",
+          "description": "",
+          "price": 6.49,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Spinach Mushroom and Alfredo Pasta Bake",
+          "description": "",
+          "price": 6.89,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
         }
       ]
     },
@@ -6765,6 +6765,15 @@
       "name": "Sandwiches",
       "is_hidden": false,
       "items": [
+        {
+          "name": "Sun Butter and Jelly",
+          "description": "",
+          "price": 5.49,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
         {
           "name": "Chicken Salad Croissant",
           "description": "",
@@ -6777,7 +6786,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Hot Sandwich",
+                  "name": "Cold Sandwich",
                   "price": 0.0,
                   "is_default": true,
                   "is_hidden": false,
@@ -6785,7 +6794,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Cold Sandwich",
+                  "name": "Hot Sandwich",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -6809,16 +6818,16 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Mayonnaise Packet",
-                  "price": 0.0,
+                  "name": "Chips",
+                  "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Chips",
-                  "price": 1.39,
+                  "name": "Mayonnaise Packet",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -6835,15 +6844,6 @@
           "name": "BBQ Turkey Sandwich",
           "description": "",
           "price": 5.89,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Sun Butter and Jelly",
-          "description": "",
-          "price": 5.49,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -6870,16 +6870,16 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Chips",
-                  "price": 1.39,
+                  "name": "Mayonnaise Packet",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Mayonnaise Packet",
-                  "price": 0.0,
+                  "name": "Chips",
+                  "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -6912,16 +6912,16 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Chips",
-                  "price": 1.39,
+                  "name": "Mustard Packet",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Mustard Packet",
-                  "price": 0.0,
+                  "name": "Chips",
+                  "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -6954,7 +6954,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Mayonnaise Packet",
+                  "name": "Mustard Packet",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -6962,7 +6962,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Mustard Packet",
+                  "name": "Mayonnaise Packet",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -7014,7 +7014,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Mayonnaise Packet",
+                  "name": "Mustard Packet",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -7022,7 +7022,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Mustard Packet",
+                  "name": "Mayonnaise Packet",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -7089,14 +7089,6 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Mayonnaise Packet",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Mustard Packet",
                   "price": 0.0,
                   "is_default": false,
@@ -7107,6 +7099,14 @@
                 {
                   "name": "Chips",
                   "price": 1.39,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mayonnaise Packet",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -7149,7 +7149,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Cold Sandwich",
+                  "name": "Hot Sandwich",
                   "price": 0.0,
                   "is_default": true,
                   "is_hidden": false,
@@ -7157,7 +7157,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Hot Sandwich",
+                  "name": "Cold Sandwich",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -7173,8 +7173,8 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Chips",
-                  "price": 1.39,
+                  "name": "Mustard Packet",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -7189,8 +7189,8 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Mustard Packet",
-                  "price": 0.0,
+                  "name": "Chips",
+                  "price": 1.39,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -7215,7 +7215,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Mustard Packet",
+                  "name": "Mayonnaise Packet",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -7223,7 +7223,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Mayonnaise Packet",
+                  "name": "Mustard Packet",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -7257,6 +7257,14 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "Mayonnaise Packet",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Chips",
                   "price": 1.39,
                   "is_default": false,
@@ -7266,14 +7274,6 @@
                 },
                 {
                   "name": "Mustard Packet",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Mayonnaise Packet",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,

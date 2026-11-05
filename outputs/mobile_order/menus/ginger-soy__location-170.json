@@ -4,10 +4,10 @@
   "location_id": 170,
   "cafeteria_id": 142,
   "icon_image_url": "campuses/icon_restaurant_19_18_129_1585676052860.jpg",
-  "estimated_wait_time_minutes": 12,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "11:00:00",
     "close": "21:00:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-04 18:10:45",
-  "menu_last_updated": "2026-11-04 18:10:45",
+  "retrieved_at": "2026-11-05 01:27:47",
+  "menu_last_updated": "2026-11-05 01:27:48",
   "sections": [
     {
       "name": "Specials",
@@ -175,30 +175,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Broccoli",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Spicy Cucumber",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sweet Potato",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Kimchi Slaw",
                   "price": 0.0,
                   "is_default": false,
@@ -223,6 +199,22 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Spicy Cucumber",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sweet Potato",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Kale Salad",
                   "price": 0.0,
                   "is_default": false,
@@ -240,6 +232,14 @@
                 },
                 {
                   "name": "Stir-Fried Cabbage & Red Pepper",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Broccoli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -271,7 +271,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Spicy Mayo",
+                  "name": "Gochujang Sauce",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -295,7 +295,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Gochujang Sauce",
+                  "name": "Spicy Mayo",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -360,7 +360,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "White Rice",
+                  "name": "Brown Rice",
                   "price": 0.0,
                   "is_default": true,
                   "is_hidden": false,
@@ -368,7 +368,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Brown Rice",
+                  "name": "White Rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -408,6 +408,22 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "No green onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No sesame seed",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "No kale salad",
                   "price": 0.0,
                   "is_default": false,
@@ -424,15 +440,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No green onion",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No sesame seed",
+                  "name": "No crunch",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -454,14 +462,6 @@
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
-                },
-                {
-                  "name": "No crunch",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
                 }
               ]
             },
@@ -472,7 +472,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "No Eel Sauce",
+                  "name": "No Spicy Mayo",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -480,7 +480,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Spicy Mayo",
+                  "name": "No Eel Sauce",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -496,16 +496,16 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Extra Protein",
-                  "price": 3.25,
+                  "name": "Fried Spring Rolls",
+                  "price": 2.69,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Fried Spring Rolls",
-                  "price": 2.69,
+                  "name": "Extra Protein",
+                  "price": 3.25,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -554,8 +554,8 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Add-on",
-                  "price": 0.0,
+                  "name": "Fried Spring Rolls",
+                  "price": 2.69,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -570,8 +570,8 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Fried Spring Rolls",
-                  "price": 2.69,
+                  "name": "No Add-on",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -594,7 +594,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Seasoned rice",
+                  "name": "Mixed Greens",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -610,7 +610,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "White Rice",
+                  "name": "Seasoned rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -618,7 +618,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Mixed Greens",
+                  "name": "White Rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -633,22 +633,6 @@
               "maximum": 8,
               "allow_quantity": true,
               "values": [
-                {
-                  "name": "No pickled radish",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No stir-fried cabbage",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
                 {
                   "name": "No cucumber",
                   "price": 0.0,
@@ -674,6 +658,30 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "No stir-fried red pepper cabbage",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No pickled radish",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No stir-fried cabbage",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
                   "name": "No crunch",
                   "price": 0.0,
                   "is_default": false,
@@ -683,14 +691,6 @@
                 },
                 {
                   "name": "No sesame seed",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No stir-fried red pepper cabbage",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -748,6 +748,14 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Extra Protein",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "No Add-on",
                   "price": 0.0,
                   "is_default": false,
@@ -758,14 +766,6 @@
                 {
                   "name": "Fried Egg",
                   "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra Protein",
-                  "price": 3.25,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -788,7 +788,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "White Rice",
+                  "name": "Brown Rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -796,7 +796,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Brown Rice",
+                  "name": "White Rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -828,6 +828,14 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "No sesame seed",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "No crunch",
                   "price": 0.0,
                   "is_default": false,
@@ -845,14 +853,6 @@
                 },
                 {
                   "name": "No stir-fried zucchini",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No sesame seed",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -926,16 +926,16 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Fried Egg",
-                  "price": 1.09,
+                  "name": "Fried Spring Rolls",
+                  "price": 2.69,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Fried Spring Rolls",
-                  "price": 2.69,
+                  "name": "Fried Egg",
+                  "price": 1.09,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -958,14 +958,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "White Rice",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Seasoned rice",
                   "price": 0.0,
                   "is_default": false,
@@ -974,7 +966,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Base",
+                  "name": "Brown Rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -982,7 +974,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Brown Rice",
+                  "name": "White Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Base",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -997,6 +997,14 @@
               "maximum": 8,
               "allow_quantity": true,
               "values": [
+                {
+                  "name": "No stir-fried zucchini",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
                 {
                   "name": "No kale salad",
                   "price": 0.0,
@@ -1014,7 +1022,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No stir-fried zucchini",
+                  "name": "No fried egg",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1052,14 +1060,6 @@
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
-                },
-                {
-                  "name": "No fried egg",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
                 }
               ]
             },
@@ -1078,177 +1078,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No White Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "No Gochujang Sauce",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "California (Teriyaki Tofu)",
-          "description": "Crispy teriyaki tofu rice bowl topped with stir-fried zucchini kale salad steamed broccoli cilantro and cusabi sauce served with white rice brown rice or mixed greens",
-          "price": 11.69,
-          "options": [
-            {
-              "name": "Every day bowl Add On",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Fried Egg",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
                 },
                 {
-                  "name": "No Add-on",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra Protein",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Fried Spring Rolls",
-                  "price": 2.69,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Every day bowl base",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Brown Rice",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Seasoned rice",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Base",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Mixed Greens",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "White Rice",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "California Rice Bowl",
-              "minimum": 0,
-              "maximum": 5,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No kale salad",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No stir-fried zucchini",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No seasoned corn",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No cilantro",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No steamed broccoli",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "California Rice Bowl Sauce",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No Cusabi",
+                  "name": "No White Sauce",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1261,24 +1099,6 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
-        },
-        {
-          "name": "Extra Vegetables",
-          "description": "",
-          "price": 1.09,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Extra Protein",
-          "description": "",
-          "price": 3.25,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
         },
         {
           "name": "Pad Thai",
@@ -1300,6 +1120,14 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Extra Protein",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "No Add-on",
                   "price": 0.0,
                   "is_default": false,
@@ -1310,14 +1138,6 @@
                 {
                   "name": "Fried Egg",
                   "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra Protein",
-                  "price": 3.25,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -1350,7 +1170,163 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Seasoned rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "White Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Mixed Greens",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Base",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Every day bowl Add On",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Fried Spring Rolls",
+                  "price": 2.69,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Egg",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Add-on",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Extra Protein",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Extra Vegetables",
+          "description": "",
+          "price": 1.09,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "Extra Protein",
+          "description": "",
+          "price": 3.25,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "California (Teriyaki Tofu)",
+          "description": "Crispy teriyaki tofu rice bowl topped with stir-fried zucchini kale salad steamed broccoli cilantro and cusabi sauce served with white rice brown rice or mixed greens",
+          "price": 11.69,
+          "options": [
+            {
+              "name": "Every day bowl Add On",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Fried Egg",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Extra Protein",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Add-on",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Spring Rolls",
+                  "price": 2.69,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Every day bowl base",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Mixed Greens",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Brown Rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1384,37 +1360,61 @@
               ]
             },
             {
-              "name": "Every day bowl Add On",
+              "name": "California Rice Bowl",
+              "minimum": 0,
+              "maximum": 5,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No kale salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No cilantro",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No seasoned corn",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No steamed broccoli",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No stir-fried zucchini",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "California Rice Bowl Sauce",
               "minimum": 0,
               "maximum": 50,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Fried Spring Rolls",
-                  "price": 2.69,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra Protein",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Fried Egg",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Add-on",
+                  "name": "No Cusabi",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1426,7 +1426,7 @@
           ],
           "busy_min": 15,
           "normal_min": 10,
-          "is_hidden": true
+          "is_hidden": false
         },
         {
           "name": "Thai Curry",
@@ -1440,9 +1440,17 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "No Base",
+                  "name": "Mixed Greens",
                   "price": 0.0,
                   "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Seasoned rice",
+                  "price": 0.0,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -1456,15 +1464,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Mixed Greens",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Seasoned rice",
+                  "name": "No Base",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1488,14 +1488,6 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Fried Egg",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Extra Protein",
                   "price": 3.25,
                   "is_default": false,
@@ -1506,6 +1498,14 @@
                 {
                   "name": "No Add-on",
                   "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Egg",
+                  "price": 1.09,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -1527,15 +1527,6 @@
           "is_hidden": true
         },
         {
-          "name": "Extra Sauce",
-          "description": "",
-          "price": 0.55,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
           "name": "Side Rice",
           "description": "",
           "price": 2.49,
@@ -1552,6 +1543,15 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
+        },
+        {
+          "name": "Extra Sauce",
+          "description": "",
+          "price": 0.55,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
         }
       ]
     },
@@ -1675,7 +1675,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Stir-Fried Cabbage & Red Pepper",
+                  "name": "Kale Salad",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1683,7 +1683,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Kale Salad",
+                  "name": "Stir-Fried Cabbage & Red Pepper",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1731,6 +1731,14 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Kimchi Slaw",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Edamame",
                   "price": 0.0,
                   "is_default": false,
@@ -1753,14 +1761,6 @@
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
-                },
-                {
-                  "name": "Kimchi Slaw",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
                 }
               ]
             },
@@ -1771,14 +1771,6 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Lemonaise Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Eel Sauce",
                   "price": 0.0,
                   "is_default": false,
@@ -1787,11 +1779,11 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Sambal Sauce",
+                  "name": "Lemonaise Sauce",
                   "price": 0.0,
                   "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
@@ -1811,19 +1803,11 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Spicy Mayo",
+                  "name": "Sambal Sauce",
                   "price": 0.0,
                   "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Teriyaki Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
@@ -1836,6 +1820,22 @@
                 },
                 {
                   "name": "Gochujang Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Spicy Mayo",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Teriyaki Sauce",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1907,16 +1907,16 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Add-on",
-                  "price": 0.0,
+                  "name": "Fried Egg",
+                  "price": 1.09,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Fried Egg",
-                  "price": 1.09,
+                  "name": "No Add-on",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -1965,14 +1965,6 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Brown Rice",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "White Rice",
                   "price": 0.0,
                   "is_default": false,
@@ -1982,6 +1974,14 @@
                 },
                 {
                   "name": "Mixed Greens",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Brown Rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2005,14 +2005,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Spicy Mayo Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Gochujang Vinaigrette",
                   "price": 0.0,
                   "is_default": false,
@@ -2022,6 +2014,14 @@
                 },
                 {
                   "name": "Cusabi Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Spicy Mayo Sauce",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2053,22 +2053,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No crunch",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No pickled carrot",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "No crab salad",
                   "price": 0.0,
                   "is_default": false,
@@ -2078,6 +2062,22 @@
                 },
                 {
                   "name": "No pickled cabbage",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No crunch",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No pickled carrot",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2093,22 +2093,6 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Extra Protein",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Add-on",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Fried Egg",
                   "price": 1.09,
                   "is_default": false,
@@ -2119,6 +2103,22 @@
                 {
                   "name": "Fried Spring Rolls",
                   "price": 2.79,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Extra Protein",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Add-on",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -2151,7 +2151,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Mixed Greens",
+                  "name": "Brown Rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2159,7 +2159,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Brown Rice",
+                  "name": "Mixed Greens",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2175,14 +2175,6 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Cusabi Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Eel Sauce",
                   "price": 0.0,
                   "is_default": false,
@@ -2192,6 +2184,14 @@
                 },
                 {
                   "name": "Spicy Mayo Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cusabi Sauce",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2215,14 +2215,6 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "No pickled carrot",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "No crab salad",
                   "price": 0.0,
                   "is_default": false,
@@ -2232,6 +2224,14 @@
                 },
                 {
                   "name": "No pickled cabbage",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No crunch",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2255,7 +2255,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No crunch",
+                  "name": "No pickled carrot",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2271,16 +2271,8 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Fried Spring Rolls",
-                  "price": 2.79,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Add-on",
-                  "price": 0.0,
+                  "name": "Extra Protein",
+                  "price": 3.25,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -2295,8 +2287,16 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Extra Protein",
-                  "price": 3.25,
+                  "name": "Fried Spring Rolls",
+                  "price": 2.79,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Add-on",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -2329,7 +2329,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "White Rice",
+                  "name": "Mixed Greens",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2337,7 +2337,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Mixed Greens",
+                  "name": "White Rice",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2369,7 +2369,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Spicy Mayo Sauce",
+                  "name": "Eel Sauce",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2377,7 +2377,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Eel Sauce",
+                  "name": "Spicy Mayo Sauce",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2409,6 +2409,14 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "No seaweed salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "No kale salad",
                   "price": 0.0,
                   "is_default": false,
@@ -2426,14 +2434,6 @@
                 },
                 {
                   "name": "No pickled carrot",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No seaweed salad",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2457,14 +2457,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Fried Egg",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Extra Protein",
                   "price": 3.25,
                   "is_default": false,
@@ -2475,6 +2467,14 @@
                 {
                   "name": "Fried Spring Rolls",
                   "price": 2.79,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Egg",
+                  "price": 1.09,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -2554,6 +2554,15 @@
       "is_hidden": false,
       "items": [
         {
+          "name": "Steamed Beef Dumplings",
+          "description": "Seven steamed beef dumplings with chili garlic oil soy and ponzu.",
+          "price": 7.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
           "name": "Vegetable Spring Rolls",
           "description": "Two crispy vegetable spring rolls with ginger sauce.",
           "price": 3.49,
@@ -2566,6 +2575,24 @@
           "name": "Pork Bun",
           "description": "Three steamed pork buns with chili garlic oil soy and ponzu.",
           "price": 11.89,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Fried Chicken Dumplings",
+          "description": "Seven fried chicken dumplings with chili garlic oil soy and ponzu.",
+          "price": 7.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Fried Vegetable Dumplings",
+          "description": "Seven fried vegetable dumplings with chili garlic oil soy and ponzu.",
+          "price": 7.99,
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
@@ -2593,33 +2620,6 @@
           "name": "Soup Dumplings",
           "description": "Five steamed soup dumplings with chili garlic oil soy and ponzu.",
           "price": 10.89,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Steamed Beef Dumplings",
-          "description": "Seven steamed beef dumplings with chili garlic oil soy and ponzu.",
-          "price": 7.99,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Fried Chicken Dumplings",
-          "description": "Seven fried chicken dumplings with chili garlic oil soy and ponzu.",
-          "price": 7.99,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Fried Vegetable Dumplings",
-          "description": "Seven fried vegetable dumplings with chili garlic oil soy and ponzu.",
-          "price": 7.99,
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
@@ -2678,6 +2678,14 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Clementine",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Grapefruit",
                   "price": 0.0,
                   "is_default": false,
@@ -2700,27 +2708,10 @@
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
-                },
-                {
-                  "name": "Clementine",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
                 }
               ]
             }
           ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "S PELLEGRINO SPARKING WATER",
-          "description": "",
-          "price": 2.35,
-          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -2737,25 +2728,9 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Fruit Punch",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Lemon-lime",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Glacier",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -2783,6 +2758,22 @@
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
+                },
+                {
+                  "name": "Fruit Punch",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Lemon-lime",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
                 }
               ]
             }
@@ -2790,65 +2781,6 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": true
-        },
-        {
-          "name": "Aqua Panna Water",
-          "description": "",
-          "price": 2.79,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Tractor",
-          "description": "",
-          "price": 4.19,
-          "options": [
-            {
-              "name": "ractor Beverage Option",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Strawberry Dragon Fruit",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Lemonade",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Punch",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Mango Peach",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
         },
         {
           "name": "ITO EN Tea",
@@ -2896,6 +2828,74 @@
               ]
             }
           ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Tractor",
+          "description": "",
+          "price": 4.19,
+          "options": [
+            {
+              "name": "ractor Beverage Option",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Lemonade",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Punch",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mango Peach",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Strawberry Dragon Fruit",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "S PELLEGRINO SPARKING WATER",
+          "description": "",
+          "price": 2.35,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Aqua Panna Water",
+          "description": "",
+          "price": 2.79,
+          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
