@@ -4,10 +4,10 @@
   "location_id": 238,
   "cafeteria_id": 196,
   "icon_image_url": "campuses/icon_location_19_18_127_1757693875654.jpg",
-  "estimated_wait_time_minutes": 17,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "08:00:00",
     "close": "17:00:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-03 15:05:45",
-  "menu_last_updated": "2026-11-03 15:05:46",
+  "retrieved_at": "2026-11-06 22:08:53",
+  "menu_last_updated": "2026-11-06 22:08:54",
   "sections": [
     {
       "name": "Specials",
@@ -2860,86 +2860,10 @@
           "is_hidden": false
         },
         {
-          "name": "Cookie",
-          "description": "",
-          "price": 0.0,
-          "options": [
-            {
-              "name": "Cookie Option",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Black & White",
-                  "price": 4.29,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chocolate Chip",
-                  "price": 2.69,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Oatmeal Raisin",
-                  "price": 2.69,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sprinkle",
-                  "price": 2.69,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Chocolate Croissant",
           "description": "",
           "price": 4.29,
           "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Scones",
-          "description": "",
-          "price": 4.29,
-          "options": [
-            {
-              "name": "Scone Option",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Chocolate Chip Scone",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -2990,46 +2914,72 @@
           "is_hidden": false
         },
         {
-          "name": "Sweet Bread",
+          "name": "Cookie",
           "description": "",
-          "price": 4.29,
+          "price": 0.0,
           "options": [
             {
-              "name": "Sweet Breads Option",
+              "name": "Cookie Option",
               "minimum": 0,
               "maximum": 1,
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Apple Rum",
-                  "price": 0.0,
+                  "name": "Black & White",
+                  "price": 4.29,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Pumpkin",
-                  "price": 0.0,
+                  "name": "Chocolate Chip",
+                  "price": 2.69,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Lemon",
-                  "price": 0.0,
+                  "name": "Oatmeal Raisin",
+                  "price": 2.69,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Bananna Bread",
-                  "price": 0.0,
+                  "name": "Sprinkle",
+                  "price": 2.69,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Scones",
+          "description": "",
+          "price": 4.29,
+          "options": [
+            {
+              "name": "Scone Option",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Chocolate Chip Scone",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": true,
                   "max_quantity": 0
                 }
               ]
@@ -3076,6 +3026,56 @@
                 },
                 {
                   "name": "Coffee Cake",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Sweet Bread",
+          "description": "",
+          "price": 4.29,
+          "options": [
+            {
+              "name": "Sweet Breads Option",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Apple Rum",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pumpkin",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Lemon",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Bananna Bread",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
