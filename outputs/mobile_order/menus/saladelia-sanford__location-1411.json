@@ -4,10 +4,10 @@
   "location_id": 1411,
   "cafeteria_id": 1267,
   "icon_image_url": "campuses/icon_location_19_18_127_1757693875654.jpg",
-  "estimated_wait_time_minutes": 0,
-  "currently_open": false,
-  "takeout_open": false,
-  "delivery_open": false,
+  "estimated_wait_time_minutes": 9,
+  "currently_open": true,
+  "takeout_open": true,
+  "delivery_open": true,
   "takeout_hours": {
     "open": "08:00:00",
     "close": "15:00:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-05 18:11:02",
-  "menu_last_updated": "2026-11-05 18:11:03",
+  "retrieved_at": "2026-11-06 13:03:38",
+  "menu_last_updated": "2026-11-06 13:03:39",
   "sections": [
     {
       "name": "Specials",
@@ -1977,6 +1977,15 @@
       "is_hidden": false,
       "items": [
         {
+          "name": "Breakfast Croissant",
+          "description": "",
+          "price": 6.95,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Chicken Parmesan",
           "description": "",
           "price": 10.69,
@@ -2163,12 +2172,12 @@
           "is_hidden": false
         },
         {
-          "name": "Breakfast Croissant",
+          "name": "Chorizo Breakfast Scrambler",
           "description": "",
-          "price": 6.95,
+          "price": 6.99,
           "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
+          "busy_min": 5,
+          "normal_min": 3,
           "is_hidden": false
         },
         {
@@ -2544,15 +2553,6 @@
           "is_hidden": false
         },
         {
-          "name": "Chorizo Breakfast Scrambler",
-          "description": "",
-          "price": 6.99,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
           "name": "Greek Scrambler",
           "description": "",
           "price": 6.95,
@@ -2850,33 +2850,6 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Chicken Arugula",
-          "description": "",
-          "price": 10.59,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Bacon Jam Club Wrap",
-          "description": "",
-          "price": 8.99,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Caprese Focaccia",
-          "description": "",
-          "price": 9.89,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
           "name": "Chicken Shawarma",
           "description": "",
           "price": 9.75,
@@ -2901,6 +2874,33 @@
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Chicken Arugula",
+          "description": "",
+          "price": 10.59,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Bacon Jam Club Wrap",
+          "description": "",
+          "price": 8.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Caprese Focaccia",
+          "description": "",
+          "price": 9.89,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
           "is_hidden": false
         },
         {
@@ -2991,15 +2991,6 @@
           "is_hidden": false
         },
         {
-          "name": "Cheese Danish",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
           "name": "Breads",
           "description": "",
           "price": 4.29,
@@ -3047,6 +3038,15 @@
           ],
           "busy_min": 15,
           "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Cheese Danish",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
           "is_hidden": false
         },
         {
@@ -3132,7 +3132,7 @@
                 {
                   "name": "Blueberry",
                   "price": 0.0,
-                  "is_default": false,
+                  "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -3140,7 +3140,7 @@
                 {
                   "name": "Coffee cake",
                   "price": 0.0,
-                  "is_default": true,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
@@ -3229,15 +3229,6 @@
           "is_hidden": false
         },
         {
-          "name": "Spindrift Sparkling Water",
-          "description": "",
-          "price": 2.99,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
           "name": "Bottled Soda",
           "description": "",
           "price": 2.35,
@@ -3269,6 +3260,15 @@
           ],
           "busy_min": 15,
           "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Spindrift Sparkling Water",
+          "description": "",
+          "price": 2.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
           "is_hidden": false
         }
       ]
