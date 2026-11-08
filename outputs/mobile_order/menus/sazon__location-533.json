@@ -4,10 +4,10 @@
   "location_id": 533,
   "cafeteria_id": 475,
   "icon_image_url": "campuses/icon_location_19_18_127_1701729943321.jpg",
-  "estimated_wait_time_minutes": 13,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "10:30:00",
     "close": "21:00:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-06 00:33:16",
-  "menu_last_updated": "2026-11-06 00:33:17",
+  "retrieved_at": "2026-11-08 00:36:21",
+  "menu_last_updated": "2026-11-08 00:36:21",
   "sections": [
     {
       "name": "SAZ - Game Day Specials Online",
@@ -1283,6 +1283,46 @@
               ]
             },
             {
+              "name": "Base Options",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Shredded Romain",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Brown Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "White Cilantro Rice",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Black Beans",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
               "name": "Proteins",
               "minimum": 1,
               "maximum": 1,
@@ -1427,46 +1467,6 @@
                 {
                   "name": "Tofrizo",
                   "price": 11.49,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Base Options",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Shredded Romain",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Brown Rice",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "White Cilantro Rice",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Black Beans",
-                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
