@@ -1,6 +1,6 @@
 # Nutriuni menu match report
 
-Data version 2026-11-08T16:11:14+00:00.
+Data version 2026-11-08T22:09:24+00:00.
 
 
 ---
@@ -2071,9 +2071,9 @@ Source: mobile_order; NetNutrition units: The Pitchfork (88 labels). Items with 
 
 
 **Biscuits Bagels Pancakes**
-- ❔ `Fried Chicken Biscuit` unmatched (closest: Fried Chicken Breast 0.76)
 - `Lox & Bagel` → **Lox and Bagel** (Sandwich (288g), 580 kcal) [exact 2.00]
 - `Plain Bagel` → **Plain Bagel** (Bagel (113g), 300 kcal) [fuzzy 1.00]
+- ❔ `Fried Chicken Biscuit` unmatched (closest: Fried Chicken Breast 0.76)
 - `Breakfast Biscuit` → **Breakfast Biscuit** (Biscuit (80g), 250 kcal) [exact 2.00]
 - ❔ `Breakfast Biscuit Protein` unmatched (closest: Breakfast Biscuit 0.80)
 - ❔ `Breakfast Biscuit Egg Cheese & Protein` unmatched (closest: Breakfast Biscuit 0.68)
@@ -2098,9 +2098,9 @@ Source: mobile_order; NetNutrition units: The Pitchfork (88 labels). Items with 
 **Entrees**
 - `Spaghetti and Meatballs` → **Spaghetti and Meatballs** (Portion (709g), 1350 kcal) [exact 2.00]
 - ❔ `Spaghetti No Meatballs` unmatched (closest: Spaghetti and Meatballs 0.80)
+- `Veggie Lasagna` → **Veggie Lasagna** (10 oz Portion (283g), 360 kcal) [exact 2.00]
 - `Chicken Parmesan` → **Chicken Parmesan Pitchfork** (Portion (652g), 880 kcal) [fuzzy 1.00]
 - ❔ `Flank Steak Frites` unmatched (closest: Steak 0.60)
-- `Veggie Lasagna` → **Veggie Lasagna** (10 oz Portion (283g), 360 kcal) [exact 2.00]
 - `Salmon Hot Pot` → **Salmon Hot Pot** (Portion (919g), 1380 kcal) [exact 2.00]
 - `Veggie Hot Pot` → **Veggie Hot Pot Pitchfork** (Portion (573g), 500 kcal) [fuzzy 1.00]
 
@@ -2165,11 +2165,11 @@ Source: mobile_order; NetNutrition units: The Pitchfork (88 labels). Items with 
 
 **Grub Late Night**
 - `Falafel Sandwich on Pita` → **Falafel Sandwich on Whole Wheat Pita** (Sandwich (374g), 810 kcal) [manual]
-- ❔ `Grilled Quesadilla` unmatched (closest: Cheese Quesadilla 0.66)
-- `Grilled Chicken Sandwich` → **Grilled Chicken Sandwich** (Sandwich (293g), 490 kcal) [exact 2.00]
 - `Fried Chicken Sandwich` → **Fried Chicken Sandwich** (Sandwich (302g), 670 kcal) [exact 2.00]
-- `Black Angus Burger` → **Black Angus Burger** (Sandwich (373g), 720 kcal) [exact 2.08]
+- `Grilled Chicken Sandwich` → **Grilled Chicken Sandwich** (Sandwich (293g), 490 kcal) [exact 2.00]
 - `Grilled Cheese Sandwich` → **Grilled Cheese Sandwich** (Sandwich (214g), 830 kcal) [exact 2.08]
+- ❔ `Grilled Quesadilla` unmatched (closest: Cheese Quesadilla 0.66)
+- `Black Angus Burger` → **Black Angus Burger** (Sandwich (373g), 720 kcal) [exact 2.08]
 - `Vegetable Samosas` → **Vegetable Samosas with Tomato Chutney** (4 Piece Portion (292g), 820 kcal) [manual]
 - `Mac and Cheese Bites` → **Mac and Cheese Bites** (15 Piece Portion (340g), 1250 kcal) [exact 2.08]
 - `Chicken Tenders` → **Chicken Tenders** (7.8 oz Portion (221g), 600 kcal) [exact 2.08]
@@ -3301,23 +3301,23 @@ Source: mobile_order; NetNutrition units: Trinity Cafe (281 labels). Items with 
 - `Americano` variants: Americano ⇐ ['large']; Iced Americano ⇐ ['iced', 'medium']; Americano ⇐ ['small']; Americano ⇐ ['medium']
 - `Americano` → **Americano** (Small (340g), 0 kcal) [exact 2.02]
 - `Hot Tea` → **Hot Tea** (Small (328g), 0 kcal) [exact 2.00]
-- `Cafe Au Lait` variants: Cafe Au Lait Oat Milk ⇐ ['large', 'oat']; Cafe Au Lait Skim Milk ⇐ ['large', 'skim']; Cafe Au Lait Soy Milk ⇐ ['medium', 'soy']; Cafe Au Lait Soy Milk ⇐ ['small', 'soy']; Cafe Au Lait Whole Milk ⇐ ['small', 'whole']; Iced Cafe Au Lait Oat Milk ⇐ ['iced', 'medium', 'oat']; Iced Cafe Au Lait Skim Milk ⇐ ['iced', 'medium', 'skim']; Iced Cafe Au Lait Soy Milk ⇐ ['iced', 'medium', 'soy']; Iced Cafe Au Lait Whole Milk ⇐ ['iced', 'medium', 'whole']; Cafe Au Lait Soy Milk ⇐ ['large', 'soy']; Cafe Au Lait Oat Milk ⇐ ['medium', 'oat']; Cafe Au Lait Whole Milk ⇐ ['medium', 'whole']; Cafe Au Lait Oat Milk ⇐ ['oat', 'small']; Cafe Au Lait Skim Milk ⇐ ['medium', 'skim']; Cafe Au Lait Skim Milk ⇐ ['skim', 'small']; Cafe Au Lait Whole Milk ⇐ ['large', 'whole']
-- `Cafe Au Lait` → **Cafe Au Lait Whole Milk** (Small (340g), 110 kcal) [variant]
-- `Caramelado` variants: Caramelado Oat Milk ⇐ ['large', 'oat']; Caramelado Skim Milk ⇐ ['medium', 'skim']; Caramelado Skim Milk ⇐ ['skim', 'small']; Caramelado Soy Milk ⇐ ['small', 'soy']; Carmelado Whole Milk ⇐ ['large', 'whole']; Iced Caramelado Skim Milk ⇐ ['iced', 'medium', 'skim']; Iced Caramelado Soy Milk ⇐ ['iced', 'medium', 'soy']; Iced Caramelado Whole Milk ⇐ ['iced', 'medium', 'whole']; Iced Carmelado Oat Milk ⇐ ['iced', 'medium', 'oat']; Caramelado Skim Milk ⇐ ['large', 'skim']; Caramelado Oat Milk ⇐ ['oat', 'small']; Caramelado Soy Milk ⇐ ['medium', 'soy']; Carmelado Whole Milk ⇐ ['medium', 'whole']; Carmelado Whole Milk ⇐ ['small', 'whole']; Caramelado Oat Milk ⇐ ['medium', 'oat']; Caramelado Soy Milk ⇐ ['large', 'soy']
-- `Caramelado` → **Carmelado Whole Milk** (Large (567g), 490 kcal) [variant]
-- `Dirty Chai` variants: Dirty Chai Tea Latte Oat Milk ⇐ ['large', 'latte', 'oat', 'tea']; Dirty Chai Tea Latte Skim Milk ⇐ ['large', 'latte', 'skim', 'tea']; Dirty Chai Tea Latte Skim Milk ⇐ ['latte', 'medium', 'skim', 'tea']; Dirty Chai Tea Latte Soy Milk ⇐ ['large', 'latte', 'soy', 'tea']; Dirty Chai Tea Latte Soy Milk ⇐ ['latte', 'small', 'soy', 'tea']; Dirty Chai Tea Latte Whole Milk ⇐ ['latte', 'medium', 'tea', 'whole']; Iced Dirty Chai Tea Latte Oat ⇐ ['iced', 'latte', 'medium', 'oat', 'tea']; Iced Dirty Chai Tea Latte Skim ⇐ ['iced', 'latte', 'medium', 'skim', 'tea']; Iced Dirty Chai Tea Latte Soy ⇐ ['iced', 'latte', 'medium', 'soy', 'tea']; Iced Dirty Chai Tea Latte Whole ⇐ ['iced', 'latte', 'medium', 'tea', 'whole']; Dirty Chai Tea Latte Skim Milk ⇐ ['latte', 'skim', 'small', 'tea']; Dirty Chai Tea Latte Soy Milk ⇐ ['latte', 'medium', 'soy', 'tea']; Dirty Chai Tea Latte Oat Milk ⇐ ['latte', 'oat', 'small', 'tea']; Dirty Chai Tea Latte Whole Milk ⇐ ['large', 'latte', 'tea', 'whole']; Dirty Chai Tea Latte Oat Milk ⇐ ['latte', 'medium', 'oat', 'tea']
+- `Dirty Chai` variants: Dirty Chai Tea Latte Oat Milk ⇐ ['large', 'latte', 'oat', 'tea']; Dirty Chai Tea Latte Skim Milk ⇐ ['large', 'latte', 'skim', 'tea']; Dirty Chai Tea Latte Skim Milk ⇐ ['latte', 'medium', 'skim', 'tea']; Dirty Chai Tea Latte Skim Milk ⇐ ['latte', 'skim', 'small', 'tea']; Dirty Chai Tea Latte Soy Milk ⇐ ['large', 'latte', 'soy', 'tea']; Dirty Chai Tea Latte Soy Milk ⇐ ['latte', 'medium', 'soy', 'tea']; Dirty Chai Tea Latte Soy Milk ⇐ ['latte', 'small', 'soy', 'tea']; Dirty Chai Tea Latte Whole Milk ⇐ ['latte', 'medium', 'tea', 'whole']; Iced Dirty Chai Tea Latte Oat ⇐ ['iced', 'latte', 'medium', 'oat', 'tea']; Iced Dirty Chai Tea Latte Skim ⇐ ['iced', 'latte', 'medium', 'skim', 'tea']; Iced Dirty Chai Tea Latte Soy ⇐ ['iced', 'latte', 'medium', 'soy', 'tea']; Iced Dirty Chai Tea Latte Whole ⇐ ['iced', 'latte', 'medium', 'tea', 'whole']; Dirty Chai Tea Latte Oat Milk ⇐ ['latte', 'oat', 'small', 'tea']; Dirty Chai Tea Latte Whole Milk ⇐ ['large', 'latte', 'tea', 'whole']; Dirty Chai Tea Latte Oat Milk ⇐ ['latte', 'medium', 'oat', 'tea']
 - ❔ `Dirty Chai` unmatched (closest: Dirty Chai Tea Latte Oat Milk 0.76)
+- `Caramelado` variants: Caramelado Oat Milk ⇐ ['large', 'oat']; Caramelado Skim Milk ⇐ ['large', 'skim']; Caramelado Skim Milk ⇐ ['medium', 'skim']; Caramelado Skim Milk ⇐ ['skim', 'small']; Caramelado Soy Milk ⇐ ['small', 'soy']; Carmelado Whole Milk ⇐ ['large', 'whole']; Iced Caramelado Skim Milk ⇐ ['iced', 'medium', 'skim']; Iced Caramelado Soy Milk ⇐ ['iced', 'medium', 'soy']; Iced Caramelado Whole Milk ⇐ ['iced', 'medium', 'whole']; Iced Carmelado Oat Milk ⇐ ['iced', 'medium', 'oat']; Caramelado Oat Milk ⇐ ['oat', 'small']; Caramelado Soy Milk ⇐ ['medium', 'soy']; Carmelado Whole Milk ⇐ ['medium', 'whole']; Carmelado Whole Milk ⇐ ['small', 'whole']; Caramelado Oat Milk ⇐ ['medium', 'oat']; Caramelado Soy Milk ⇐ ['large', 'soy']
+- `Caramelado` → **Carmelado Whole Milk** (Large (567g), 490 kcal) [variant]
 - `Hot Chocolate` variants: Hot Chocolate Oat Milk ⇐ ['oat', 'small']; Hot Chocolate Skim Milk ⇐ ['medium', 'skim']; Hot Chocolate Soy Milk ⇐ ['medium', 'soy']; Hot Chocolate Soy Milk ⇐ ['small', 'soy']; Hot Chocolate Whole Milk ⇐ ['medium', 'whole']; Hot Chocolate Oat Milk ⇐ ['large', 'oat']; Hot Chocolate Oat Milk ⇐ ['medium', 'oat']; Hot Chocolate Whole Milk ⇐ ['large', 'whole']; Hot Chocolate Skim Milk ⇐ ['large', 'skim']; Hot Chocolate Soy Milk ⇐ ['large', 'soy']; Hot Chocolate Skim Milk ⇐ ['skim', 'small']; Hot Chocolate Whole Milk ⇐ ['small', 'whole']
 - `Hot Chocolate` → **Hot Chocolate Whole Milk** (Medium (465g), 450 kcal) [variant]
-- `Chai Latte` variants: Chai Tea Latte Oat Milk ⇐ ['medium', 'oat', 'tea']; Chai Tea Latte Skim Milk ⇐ ['large', 'skim', 'tea']; Chai Tea Latte Skim Milk ⇐ ['skim', 'small', 'tea']; Chai Tea Latte Soy Milk ⇐ ['medium', 'soy', 'tea']; Chai Tea Latte Whole Milk ⇐ ['small', 'tea', 'whole']; Iced Chai Tea Latte Skim Milk ⇐ ['iced', 'medium', 'skim', 'tea']; Iced Chai Tea Latte Soy Milk ⇐ ['iced', 'medium', 'soy', 'tea']; Iced Chai Tea Latte Whole Milk ⇐ ['iced', 'medium', 'tea', 'whole']; Chai Tea Latte Oat Milk ⇐ ['oat', 'small', 'tea']; Chai Tea Latte Whole Milk ⇐ ['large', 'tea', 'whole']; Chai Tea Latte Whole Milk ⇐ ['medium', 'tea', 'whole']; Chai Tea Latte Oat Milk ⇐ ['large', 'oat', 'tea']; Chai Tea Latte Soy Milk ⇐ ['large', 'soy', 'tea']; Chai Tea Latte Soy Milk ⇐ ['small', 'soy', 'tea']
-- ❔ `Chai Latte` unmatched (closest: Chai Tea Latte Oat Milk 0.77)
+- `Cafe Au Lait` variants: Cafe Au Lait Oat Milk ⇐ ['large', 'oat']; Cafe Au Lait Skim Milk ⇐ ['large', 'skim']; Cafe Au Lait Soy Milk ⇐ ['large', 'soy']; Cafe Au Lait Soy Milk ⇐ ['medium', 'soy']; Cafe Au Lait Soy Milk ⇐ ['small', 'soy']; Cafe Au Lait Whole Milk ⇐ ['small', 'whole']; Iced Cafe Au Lait Oat Milk ⇐ ['iced', 'medium', 'oat']; Iced Cafe Au Lait Skim Milk ⇐ ['iced', 'medium', 'skim']; Iced Cafe Au Lait Soy Milk ⇐ ['iced', 'medium', 'soy']; Iced Cafe Au Lait Whole Milk ⇐ ['iced', 'medium', 'whole']; Cafe Au Lait Oat Milk ⇐ ['medium', 'oat']; Cafe Au Lait Whole Milk ⇐ ['medium', 'whole']; Cafe Au Lait Oat Milk ⇐ ['oat', 'small']; Cafe Au Lait Skim Milk ⇐ ['medium', 'skim']; Cafe Au Lait Skim Milk ⇐ ['skim', 'small']; Cafe Au Lait Whole Milk ⇐ ['large', 'whole']
+- `Cafe Au Lait` → **Cafe Au Lait Whole Milk** (Small (340g), 110 kcal) [variant]
 - `Latte` variants: Chai Tea Latte Oat Milk ⇐ ['chai', 'medium', 'oat', 'tea']; Chai Tea Latte Skim Milk ⇐ ['chai', 'large', 'skim', 'tea']; Chai Tea Latte Skim Milk ⇐ ['chai', 'skim', 'small', 'tea']; Chai Tea Latte Soy Milk ⇐ ['chai', 'medium', 'soy', 'tea']; Chai Tea Latte Whole Milk ⇐ ['chai', 'small', 'tea', 'whole']; Iced Chai Tea Latte Skim Milk ⇐ ['chai', 'iced', 'medium', 'skim', 'tea']; Iced Chai Tea Latte Soy Milk ⇐ ['chai', 'iced', 'medium', 'soy', 'tea']; Iced Chai Tea Latte Whole Milk ⇐ ['chai', 'iced', 'medium', 'tea', 'whole']; Iced Latte Oat Milk ⇐ ['iced', 'medium', 'oat']; Iced Latte Skim Milk ⇐ ['iced', 'medium', 'skim']; Iced Latte Whole Milk ⇐ ['iced', 'medium', 'whole']; Latte Oat Milk ⇐ ['oat', 'small']; Latte Skim Milk ⇐ ['medium', 'skim']; Latte Soy Milk ⇐ ['large', 'soy']; Latte Whole Milk ⇐ ['large', 'whole']; Chai Tea Latte Oat Milk ⇐ ['chai', 'oat', 'small', 'tea']; Chai Tea Latte Whole Milk ⇐ ['chai', 'large', 'tea', 'whole']; Chai Tea Latte Whole Milk ⇐ ['chai', 'medium', 'tea', 'whole']; Latte Soy Milk ⇐ ['medium', 'soy']; Latte Whole Milk ⇐ ['small', 'whole']; Chai Tea Latte Oat Milk ⇐ ['chai', 'large', 'oat', 'tea']; Latte Oat Milk ⇐ ['medium', 'oat']; Latte Soy Milk ⇐ ['small', 'soy']; Chai Tea Latte Soy Milk ⇐ ['chai', 'large', 'soy', 'tea']; Chai Tea Latte Soy Milk ⇐ ['chai', 'small', 'soy', 'tea']; Latte Oat Milk ⇐ ['large', 'oat']; Latte Skim Milk ⇐ ['large', 'skim']
 - `Latte` → **Latte Whole Milk** (Large (598g), 340 kcal) [variant]
-- `Steamer` variants: Steamer Oat Milk ⇐ ['medium', 'oat']; Steamer Skim Milk ⇐ ['medium', 'skim']; Steamer Soy Milk ⇐ ['medium', 'soy']; Steamer Whole Milk ⇐ ['large', 'whole']; Steamer Whole Milk ⇐ ['small', 'whole']; Steamer Whole Milk ⇐ ['medium', 'whole']; Steamer Oat Milk ⇐ ['oat', 'small']; Steamer Skim Milk ⇐ ['large', 'skim']; Steamer Soy Milk ⇐ ['small', 'soy']; Steamer Soy Milk ⇐ ['large', 'soy']; Steamer Skim Milk ⇐ ['skim', 'small']; Steamer Oat Milk ⇐ ['large', 'oat']
+- `Steamer` variants: Steamer Oat Milk ⇐ ['medium', 'oat']; Steamer Skim Milk ⇐ ['medium', 'skim']; Steamer Soy Milk ⇐ ['medium', 'soy']; Steamer Whole Milk ⇐ ['large', 'whole']; Steamer Whole Milk ⇐ ['medium', 'whole']; Steamer Whole Milk ⇐ ['small', 'whole']; Steamer Oat Milk ⇐ ['oat', 'small']; Steamer Skim Milk ⇐ ['large', 'skim']; Steamer Soy Milk ⇐ ['small', 'soy']; Steamer Soy Milk ⇐ ['large', 'soy']; Steamer Skim Milk ⇐ ['skim', 'small']; Steamer Oat Milk ⇐ ['large', 'oat']
 - `Steamer` → **Steamer Whole Milk** (Small (340g), 220 kcal) [variant]
 - `Red Eye` variants: Iced Red Eye ⇐ ['iced', 'medium']; Red Eye ⇐ ['medium']; Red Eye ⇐ ['small']; Red Eye ⇐ ['large']
 - `Red Eye` → **Red Eye** (Small (340g), 0 kcal) [exact 2.02]
 - ❔ `White Choc Mocha` unmatched (closest: White Chocolate Cranberry Cookie 0.63)
+- `Chai Latte` variants: Chai Tea Latte Oat Milk ⇐ ['medium', 'oat', 'tea']; Chai Tea Latte Skim Milk ⇐ ['large', 'skim', 'tea']; Chai Tea Latte Skim Milk ⇐ ['skim', 'small', 'tea']; Chai Tea Latte Soy Milk ⇐ ['medium', 'soy', 'tea']; Chai Tea Latte Whole Milk ⇐ ['small', 'tea', 'whole']; Iced Chai Tea Latte Skim Milk ⇐ ['iced', 'medium', 'skim', 'tea']; Iced Chai Tea Latte Soy Milk ⇐ ['iced', 'medium', 'soy', 'tea']; Iced Chai Tea Latte Whole Milk ⇐ ['iced', 'medium', 'tea', 'whole']; Chai Tea Latte Oat Milk ⇐ ['oat', 'small', 'tea']; Chai Tea Latte Whole Milk ⇐ ['large', 'tea', 'whole']; Chai Tea Latte Whole Milk ⇐ ['medium', 'tea', 'whole']; Chai Tea Latte Oat Milk ⇐ ['large', 'oat', 'tea']; Chai Tea Latte Soy Milk ⇐ ['large', 'soy', 'tea']; Chai Tea Latte Soy Milk ⇐ ['small', 'soy', 'tea']
+- ❔ `Chai Latte` unmatched (closest: Chai Tea Latte Oat Milk 0.77)
 
 **Cold Beverages**
 - ❔ `Gold Peak Sweet Tea` unmatched (closest: Gold Peak Sweetened Tea 0.69)
@@ -3329,17 +3329,17 @@ Source: mobile_order; NetNutrition units: Trinity Cafe (281 labels). Items with 
 - `Egg and Cheese Burrito` → **Egg and Cheese Burrito** (Wrap (329g), 690 kcal) [exact 2.00]
 
 **Pastries**
-- `Scones` variants: Apple Cinnamon Scone ⇐ ['apple', 'cinnamon']; Cranberry Orange Scone ⇐ ['cranberry', 'orange']; Blueberry Scone ⇐ ['blueberry']
-- ❔ `Scones` unmatched (closest: Blueberry Scone 0.78)
+- `Cinnamon Rolls` → **Cinnamon Roll** (Roll (267g), 840 kcal) [exact 2.00]
 - `Cream Cheese` → **Cream Cheese** (Pkg (28g), 70 kcal) [exact 2.00]
 - `Lemon Loaf` → **Lemon Loaf** (Loaf (130g), 260 kcal) [exact 2.00]
 - `Triple Chocolate Chip Brownie` → **Triple Chocolate Chip Brownie** (5x8 Cut Serving (190g), 750 kcal) [exact 2.00]
 - ❔ `Rice Krispy Treat` unmatched (closest: Rice Krispie Treat 0.65)
 - `Cherry Turnover` → **Cherry Turnover** (Turnover (133g), 390 kcal) [exact 2.00]
 - ❔ `Biscotti` unmatched (closest: Biscotti TC 0.80)
+- `Scones` variants: Apple Cinnamon Scone ⇐ ['apple', 'cinnamon']; Cranberry Orange Scone ⇐ ['cranberry', 'orange']; Blueberry Scone ⇐ ['blueberry']
+- ❔ `Scones` unmatched (closest: Blueberry Scone 0.78)
 - `Bagel` variants: Cinnamon Bagel ⇐ ['cinnamon']
 - ❔ `Bagel` unmatched (closest: Cinnamon Bagel 0.81)
-- `Cinnamon Rolls` → **Cinnamon Roll** (Roll (267g), 840 kcal) [exact 2.00]
 - `Muffin` variants: Orange Blossom Muffin ⇐ ['blossom', 'orange']; Chocolate Chip Muffin ⇐ ['chip', 'chocolate']; Blueberry Muffin ⇐ ['blueberry']; Apple Cinnamon Muffin ⇐ ['apple', 'cinnamon']
 - ❔ `Muffin` unmatched (closest: Blueberry Muffin 0.77)
 - `Croissant` → **Butter Croissant** (Pastry (85g), 310 kcal) [manual]
