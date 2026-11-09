@@ -1,6 +1,6 @@
 # Nutriuni menu match report
 
-Data version 2026-11-09T13:11:26+00:00.
+Data version 2026-11-09T16:11:29+00:00.
 
 
 ---
@@ -71,31 +71,31 @@ Source: mobile_order; NetNutrition units: Beyu Blue Coffee (136 labels). Items w
 
 
 **Drip coffee**
-- `Coffee` variants: Coffee ⇐ []; Iced Coffee ⇐ ['iced']
-- `Coffee` → **Coffee** (12 oz (340g), 0 kcal) [fuzzy 1.00]
-- `Au Lait` variants: Au Lait Oat Milk ⇐ ['oat']; Au Lait Whole Milk ⇐ ['whole']; Iced Au Lait Oat Milk ⇐ ['iced', 'oat']; Iced Au Lait Whole Milk ⇐ ['iced', 'whole']
-- `Au Lait` → **Au Lait Whole Milk** (16 oz (454g), 90 kcal) [variant]
 - `Mexican Coffee` variants: Iced Mexican Coffee ⇐ ['iced']; Mexican Coffee ⇐ []
 - `Mexican Coffee` → **Mexican Coffee** (8 oz (227g), 25 kcal) [fuzzy 1.00]
+- `Au Lait` variants: Au Lait Oat Milk ⇐ ['oat']; Au Lait Whole Milk ⇐ ['whole']; Iced Au Lait Oat Milk ⇐ ['iced', 'oat']; Iced Au Lait Whole Milk ⇐ ['iced', 'whole']
+- `Au Lait` → **Au Lait Whole Milk** (16 oz (454g), 90 kcal) [variant]
+- `Coffee` variants: Coffee ⇐ []; Iced Coffee ⇐ ['iced']
+- `Coffee` → **Coffee** (12 oz (340g), 0 kcal) [fuzzy 1.00]
 - ❔ `Cold Brew` unmatched (closest: NItro Cold Brew 0.89)
 
 **ESPRESSO CLASSICS**
-- `Cappuccino` variants: Cappuccino Oat Milk ⇐ ['oat']; Cappuccino Whole Milk ⇐ ['whole']; Iced Cappuccino Oat Milk ⇐ ['iced', 'oat']; Iced Cappuccino Whole Milk ⇐ ['iced', 'whole']
-- `Cappuccino` → **Cappuccino Whole Milk** (16 oz (454g), 200 kcal) [variant]
-- `Mocha` variants: Iced Mocha Oat Milk ⇐ ['iced', 'oat']; Iced Mocha Whole Milk ⇐ ['iced', 'whole']; Mocha Oat Milk ⇐ ['oat']; Mocha Whole Milk ⇐ ['whole']
-- `Mocha` → **Mocha Whole Milk** (8 oz (227g), 160 kcal) [variant]
-- ❔ `ESPRESSO DOUBLE SHOT` unmatched (closest: Espresso 0.62)
-- ❔ `Iced Shaken Espresso` unmatched (closest: Espresso 0.68)
-- `Red Eye` variants: Iced Red Eye ⇐ ['iced']; Red Eye ⇐ []
-- `Red Eye` → **Red Eye** (16 oz (454g), 0 kcal) [exact 2.08]
-- `Americano` variants: Americano ⇐ []; Iced Americano ⇐ ['iced']
-- `Americano` → **Americano** (16 oz (454g), 0 kcal) [exact 2.08]
 - `Cortado` variants: Cortado Oat Milk ⇐ ['oat']; Cortado Whole Milk ⇐ ['whole']
 - `Cortado` → **Cortado Whole Milk** (5 oz (142g), 60 kcal) [variant]
 - `Latte` variants: Iced Latte Oat Milk ⇐ ['iced', 'oat']; Iced Latte Whole Milk ⇐ ['iced', 'whole']; Latte Oat Milk ⇐ ['oat']; Latte Whole Milk ⇐ ['whole']
 - `Latte` → **Latte Whole Milk** (8 oz (227g), 120 kcal) [variant]
 - `FLAT WHITE` variants: Flat White Whole Milk ⇐ ['whole']
 - `FLAT WHITE` → **Flat White Whole Milk** (8 oz (227g), 100 kcal) [variant]
+- `Mocha` variants: Iced Mocha Oat Milk ⇐ ['iced', 'oat']; Iced Mocha Whole Milk ⇐ ['iced', 'whole']; Mocha Oat Milk ⇐ ['oat']; Mocha Whole Milk ⇐ ['whole']
+- `Mocha` → **Mocha Whole Milk** (8 oz (227g), 160 kcal) [variant]
+- `Cappuccino` variants: Cappuccino Oat Milk ⇐ ['oat']; Cappuccino Whole Milk ⇐ ['whole']; Iced Cappuccino Oat Milk ⇐ ['iced', 'oat']; Iced Cappuccino Whole Milk ⇐ ['iced', 'whole']
+- `Cappuccino` → **Cappuccino Whole Milk** (16 oz (454g), 200 kcal) [variant]
+- `Americano` variants: Americano ⇐ []; Iced Americano ⇐ ['iced']
+- `Americano` → **Americano** (16 oz (454g), 0 kcal) [exact 2.08]
+- `Red Eye` variants: Iced Red Eye ⇐ ['iced']; Red Eye ⇐ []
+- `Red Eye` → **Red Eye** (16 oz (454g), 0 kcal) [exact 2.08]
+- ❔ `ESPRESSO DOUBLE SHOT` unmatched (closest: Espresso 0.62)
+- ❔ `Iced Shaken Espresso` unmatched (closest: Espresso 0.68)
 
 **SPECIALTY COFFEES**
 - `Dirty Chai` variants: Dirty Chai Oat Milk ⇐ ['oat']; Dirty Chai Whole Milk ⇐ ['whole']; Iced Dirty Chai Oat Milk ⇐ ['iced', 'oat']; Iced Dirty Chai Whole Milk ⇐ ['iced', 'whole']
@@ -114,12 +114,12 @@ Source: mobile_order; NetNutrition units: Beyu Blue Coffee (136 labels). Items w
 **TEA & NON COFFEE**
 - `Chai Latte` variants: Chai Latte Oat Milk ⇐ ['oat']; Chai Latte Whole Milk ⇐ ['whole']; Iced Chai Latte Oat Milk ⇐ ['iced', 'oat']; Iced Chai Latte Whole Milk ⇐ ['iced', 'whole']
 - `Chai Latte` → **Chai Latte Whole Milk** (12 oz (340g), 210 kcal) [variant]
-- `Hot Chocolate` variants: Hot Chocolate Oat Milk ⇐ ['oat']; Hot Chocolate Whole Milk ⇐ ['whole']
-- `Hot Chocolate` → **Hot Chocolate Whole Milk** (8 oz (227g), 190 kcal) [variant]
 - `Matcha Latte` variants: Iced Matcha Latte Oat Milk ⇐ ['iced', 'oat']; Iced Matcha Latte Whole Milk ⇐ ['iced', 'whole']; Matcha Latte Oat Milk ⇐ ['oat']; Matcha Latte Whole Milk ⇐ ['whole']
 - `Matcha Latte` → **Matcha Latte Whole Milk** (12 oz (340g), 250 kcal) [variant]
 - `Smoothie` variants: Mango Smoothie ⇐ ['mango']; Pineapple Smoothie ⇐ ['pineapple']; Strawberry Smoothie ⇐ ['strawberry']
 - `Smoothie` → **Mango Smoothie** (16 oz (454g), 530 kcal) [variant]
+- `Hot Chocolate` variants: Hot Chocolate Oat Milk ⇐ ['oat']; Hot Chocolate Whole Milk ⇐ ['whole']
+- `Hot Chocolate` → **Hot Chocolate Whole Milk** (8 oz (227g), 190 kcal) [variant]
 - `Steamer` variants: Steamer Oat Milk ⇐ ['oat']; Steamer Whole Milk ⇐ ['whole']
 - `Steamer` → **Steamer Whole Milk** (8 oz (227g), 150 kcal) [variant]
 
@@ -582,12 +582,12 @@ Source: mobile_order; NetNutrition units: The Farmstead, Sprout (106 labels). It
 - `$5 Meal Deal` composed from its options
 
 **Breakfast**
-- `Avocado Toast` → **Avocado Toast** (Sandwich (229g), 410 kcal) [exact 2.08]
-- `Breakfast Potatoes` → **Breakfast Potatoes** (3.7 oz Portion (105g), 260 kcal) [exact 2.00]
 - `Plain Oatmeal (No toppings)` → **Oatmeal** (7.5 oz Portion (213g), 150 kcal) [manual]
 - ❔ `Tofu Scramble and Potatoes` unmatched (closest: Tofu Scramble 0.94)
-- `Breakfast burrito` → **Breakfast Burrito** (Burrito (244g), 300 kcal) [exact 2.00]
+- `Avocado Toast` → **Avocado Toast** (Sandwich (229g), 410 kcal) [exact 2.08]
 - ❔ `French Toast` unmatched (closest: French Toast Sticks 0.92)
+- `Breakfast Potatoes` → **Breakfast Potatoes** (3.7 oz Portion (105g), 260 kcal) [exact 2.00]
+- `Breakfast burrito` → **Breakfast Burrito** (Burrito (244g), 300 kcal) [exact 2.00]
 - `Oatmeal (3 Toppings)` → **Oatmeal** (7.5 oz Portion (213g), 150 kcal) [exact 2.08]
 
 **Farmstead Sandwiches**
@@ -617,9 +617,9 @@ Source: mobile_order; NetNutrition units: The Farmstead, Sprout (106 labels). It
 - `Black Bean Burger` → **Black Bean Burger Sandwich** (Sandwich (232g), 440 kcal) [fuzzy 1.00]
 
 **Sprout Entrees**
+- `Plant-Based Chicken Nuggets` → **Plant Based Chicken Nuggets** (3.35 oz Portion (100g), 230 kcal) [exact 2.08]
 - `Plant-Based Chicken Nuggets Meal` → **Plant Based Chicken Nuggets** (3.35 oz Portion (100g), 230 kcal) [manual]
 - `Avocado Toast` → **Avocado Toast** (Sandwich (229g), 410 kcal) [exact 2.00]
-- `Plant-Based Chicken Nuggets` → **Plant Based Chicken Nuggets** (3.35 oz Portion (100g), 230 kcal) [exact 2.08]
 - `Chickpea Stew` → **Chickpea Stew** (11.25 oz Portion (319g), 110 kcal) [exact 2.08]
 - `Three Bean Nadura Chili` → **Plant Based Chili with Nadura** (8.64 oz Portion (245g), 170 kcal) [manual]
 
@@ -1657,9 +1657,9 @@ Source: mobile_order; NetNutrition units: J.B.'s Roast & Chops (56 labels). Item
 - `Prime Rib 8oz` → **Prime Rib** (8 oz Portion (227g), 560 kcal) [manual]
 
 **Rotisserie**
-- ❔ `Bone-In Pork Chop 6 oz` unmatched (closest: Pork Chop 0.69)
 - `Beef Skewer` → **Beef Skewer** (Skewer (218g), 400 kcal) [exact 2.00]
 - `Ribeye 8oz` → **Ribeye** (Portion (224g), 550 kcal) [manual]
+- ❔ `Bone-In Pork Chop 6 oz` unmatched (closest: Pork Chop 0.69)
 
 **Chop House Classics**
 - `Quarter Flame Roasted Chicken` → **Flame Roasted Chicken** (Quarter (213g), 490 kcal) [manual]
