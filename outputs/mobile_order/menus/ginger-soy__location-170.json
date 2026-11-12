@@ -4,10 +4,10 @@
   "location_id": 170,
   "cafeteria_id": 142,
   "icon_image_url": "campuses/icon_restaurant_19_18_129_1585676052860.jpg",
-  "estimated_wait_time_minutes": 12,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "11:00:00",
     "close": "21:00:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-11 21:46:07",
-  "menu_last_updated": "2026-11-11 21:46:08",
+  "retrieved_at": "2026-11-12 00:14:49",
+  "menu_last_updated": "2026-11-12 00:14:50",
   "sections": [
     {
       "name": "Specials",
@@ -1323,15 +1323,6 @@
           "is_hidden": true
         },
         {
-          "name": "Tteokbokki",
-          "description": "A popular Korean street dish featuring chewy rice cakes simmered in a flavorful sweet and spicy gochujang (Korean chili paste) sauce served with fish cakes a boiled egg onion cabbage green onion and crispy beef dumplings",
-          "price": 12.85,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Thai Curry",
           "description": "Rich and creamy Thai curry with vegetables and chicken servered with white or brown rice",
           "price": 11.89,
@@ -1430,6 +1421,65 @@
           "is_hidden": true
         },
         {
+          "name": "Tteokbokki",
+          "description": "A popular Korean street dish featuring chewy rice cakes simmered in a flavorful sweet and spicy gochujang (Korean chili paste) sauce served with fish cakes a boiled egg onion cabbage green onion and crispy beef dumplings",
+          "price": 12.85,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Pad Thai",
+          "description": "Thai stir-fried rice noodles with eggs vegetables and chicken in a tamarind-based sauce",
+          "price": 12.75,
+          "options": [
+            {
+              "name": "Every day bowl Add On",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Extra Protein",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Egg",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Spring Rolls",
+                  "price": 2.69,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Add-on",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Lemonaise Salmon Bowl",
           "description": "Brined roast salmon with stir-fried mixed vegetables and Lemonaise sauce served with white rice brown rice fried rice or mixed greens",
           "price": 13.29,
@@ -1526,56 +1576,6 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": true
-        },
-        {
-          "name": "Pad Thai",
-          "description": "Thai stir-fried rice noodles with eggs vegetables and chicken in a tamarind-based sauce",
-          "price": 12.75,
-          "options": [
-            {
-              "name": "Every day bowl Add On",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Extra Protein",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Fried Egg",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Fried Spring Rolls",
-                  "price": 2.69,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Add-on",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
         }
       ]
     },
@@ -2817,6 +2817,56 @@
           "is_hidden": false
         },
         {
+          "name": "ITO EN Tea",
+          "description": "",
+          "price": 3.75,
+          "options": [
+            {
+              "name": "ITO En Tea Option",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Green Tea",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Jasmin Tea",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Milk Tea",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Oolong Tea",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Izze",
           "description": "",
           "price": 2.35,
@@ -2861,56 +2911,6 @@
                 },
                 {
                   "name": "Mango",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "ITO EN Tea",
-          "description": "",
-          "price": 3.75,
-          "options": [
-            {
-              "name": "ITO En Tea Option",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Green Tea",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Jasmin Tea",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Milk Tea",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Oolong Tea",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
