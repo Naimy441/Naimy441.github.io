@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-12 17:59:46",
-  "menu_last_updated": "2026-11-12 17:59:46",
+  "retrieved_at": "2026-11-13 15:45:06",
+  "menu_last_updated": "2026-11-13 15:45:07",
   "sections": [
     {
       "name": "Specials",
@@ -128,6 +128,38 @@
           "description": "",
           "price": 5.0,
           "options": [
+            {
+              "name": "Whole Fruit Option",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Apple",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Banana",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Orange",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                }
+              ]
+            },
             {
               "name": "Meal Deal Option",
               "minimum": 0,
@@ -204,38 +236,6 @@
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Whole Fruit Option",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Apple",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Banana",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Orange",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
                   "max_quantity": 0
                 }
               ]
@@ -1977,9 +1977,9 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Chicken Parmesan",
+          "name": "French Beef",
           "description": "",
-          "price": 10.69,
+          "price": 11.35,
           "options": [
             {
               "name": "Sandwich Side Option",
@@ -2172,9 +2172,9 @@
           "is_hidden": false
         },
         {
-          "name": "French Beef",
+          "name": "Crispy Chicken Panini",
           "description": "",
-          "price": 11.35,
+          "price": 10.99,
           "options": [
             {
               "name": "Sandwich Side Option",
@@ -2367,9 +2367,9 @@
           "is_hidden": false
         },
         {
-          "name": "Crispy Chicken Panini",
+          "name": "Greek Scrambler",
           "description": "",
-          "price": 10.99,
+          "price": 6.95,
           "options": [
             {
               "name": "Sandwich Side Option",
@@ -2553,9 +2553,9 @@
           "is_hidden": false
         },
         {
-          "name": "Greek Scrambler",
+          "name": "Chicken Parmesan",
           "description": "",
-          "price": 6.95,
+          "price": 10.69,
           "options": [
             {
               "name": "Sandwich Side Option",
@@ -2850,6 +2850,15 @@
       "is_hidden": false,
       "items": [
         {
+          "name": "Chicken Shawarma",
+          "description": "",
+          "price": 9.75,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Falafel Pita",
           "description": "",
           "price": 7.49,
@@ -2929,15 +2938,6 @@
           "busy_min": 5,
           "normal_min": 3,
           "is_hidden": false
-        },
-        {
-          "name": "Chicken Shawarma",
-          "description": "",
-          "price": 9.75,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
         }
       ]
     },
@@ -3000,33 +3000,6 @@
           "is_hidden": false
         },
         {
-          "name": "Coconut Macaroon",
-          "description": "",
-          "price": 3.69,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Manhattan Coffee Crumb Cake",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Zaatar Croissant",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
           "name": "Breads",
           "description": "",
           "price": 4.29,
@@ -3074,6 +3047,33 @@
           ],
           "busy_min": 15,
           "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Coconut Macaroon",
+          "description": "",
+          "price": 3.69,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Manhattan Coffee Crumb Cake",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Zaatar Croissant",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
           "is_hidden": false
         },
         {
