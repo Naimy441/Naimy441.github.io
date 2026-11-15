@@ -4,10 +4,10 @@
   "location_id": 54,
   "cafeteria_id": 50,
   "icon_image_url": "campuses/icon_location_19_18_127_1701730116543.jpg",
-  "estimated_wait_time_minutes": 17,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "10:30:00",
     "close": "21:00:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-09 19:57:43",
-  "menu_last_updated": "2026-11-09 19:57:43",
+  "retrieved_at": "2026-11-15 00:23:03",
+  "menu_last_updated": "2026-11-15 00:23:03",
   "sections": [
     {
       "name": "ILForno Specials",
@@ -394,9 +394,9 @@
       "is_hidden": true,
       "items": [
         {
-          "name": "ILF - Blackened Shrimp Rigatoni Pasta",
-          "description": "Rigatoni with Pomodoro Sauce Blackened Shrimp Spinach Roasted Red Peppers and Mozzarella Cheese",
-          "price": 14.55,
+          "name": "Chicken Basil Pesto Pasta",
+          "description": "Seared chicken fresh basil pesto sauce rigatoni roasted tomatoes roasted peppers and parmesan cheese",
+          "price": 12.85,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -412,9 +412,9 @@
           "is_hidden": false
         },
         {
-          "name": "Chicken Basil Pesto Pasta",
-          "description": "Seared chicken fresh basil pesto sauce rigatoni roasted tomatoes roasted peppers and parmesan cheese",
-          "price": 12.85,
+          "name": "ILF - Blackened Shrimp Rigatoni Pasta",
+          "description": "Rigatoni with Pomodoro Sauce Blackened Shrimp Spinach Roasted Red Peppers and Mozzarella Cheese",
+          "price": 14.55,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -436,72 +436,6 @@
       "name": "Pizza",
       "is_hidden": false,
       "items": [
-        {
-          "name": "Nadura Supreme Pizza",
-          "description": "Nadura* meat-free mince mushrooms onions peppers and a red sauce base.",
-          "price": 12.85,
-          "options": [
-            {
-              "name": "Nadura Supreme Pizza",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No mushrooms",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Nadura meat-free mince",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No onions",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No peppers",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No red sauce base",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Gluten Free Cauliflower Crust",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
         {
           "name": "Italiano Pizza",
           "description": "Salami giant pepperoni ham onions banana peppers bruschetta tomatoes and creamy Italian sauce.",
@@ -563,6 +497,72 @@
                 },
                 {
                   "name": "No Salami",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Gluten Free Cauliflower Crust",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Nadura Supreme Pizza",
+          "description": "Nadura* meat-free mince mushrooms onions peppers and a red sauce base.",
+          "price": 12.85,
+          "options": [
+            {
+              "name": "Nadura Supreme Pizza",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No mushrooms",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Nadura meat-free mince",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No onions",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No peppers",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No red sauce base",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -4100,6 +4100,15 @@
           "is_hidden": false
         },
         {
+          "name": "Nadura Ragu Pasta",
+          "description": "Nadura meat-free mince rigatoni parma rosa sauce garlic butter red peppers and caramelized onions.",
+          "price": 13.55,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
           "name": "Buffalo Chicken Pasta",
           "description": "Seared chicken rigatoni Alfredo sauce hot sauce and green onions.",
           "price": 12.85,
@@ -4112,15 +4121,6 @@
           "name": "Burrata & Meatballs",
           "description": "A 4 oz. ball of burrata three meatballs red sauce olive oil Parmesan a drizzle of basil pesto and fresh basil.",
           "price": 14.55,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Nadura Ragu Pasta",
-          "description": "Nadura meat-free mince rigatoni parma rosa sauce garlic butter red peppers and caramelized onions.",
-          "price": 13.55,
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
