@@ -5,9 +5,9 @@
   "cafeteria_id": 2079,
   "icon_image_url": "campuses/icon_location_19_18_127_1735832782689.jpg",
   "estimated_wait_time_minutes": 0,
-  "currently_open": true,
+  "currently_open": false,
   "takeout_open": false,
-  "delivery_open": true,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "10:30:00",
     "close": "15:30:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-16 16:04:18",
-  "menu_last_updated": "2026-11-16 16:04:18",
+  "retrieved_at": "2026-11-16 17:04:04",
+  "menu_last_updated": "2026-11-16 17:04:04",
   "sections": [
     {
       "name": "Specials",
@@ -129,10 +129,300 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Black & Blue Smasher",
-          "description": "Single or double smashburger steak seasoning marbled blue cheese smoked bacon caramelized onion and garlic aioli. All Smashers served on a butter-toasted potato bun. Includes a side.",
+          "name": "Nadura Smasher (V)",
+          "description": "Nadura Plant-based single or double smashburger cheddar cheese lettuce tomato onion pickle and garlic aioli. All Smashers served on a butter-toasted potato bun. Includes a side.",
+          "price": 13.99,
+          "options": [
+            {
+              "name": "CKN - Veggie Entree Option",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Double",
+                  "price": 13.99,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Single",
+                  "price": 11.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Nadura Smasher Toppings",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "No Cheese",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Garlic Aioli",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Lettuce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Pickle",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Tomato",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Entree Bread Option",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "8-inch Bread Roll",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Gluten Free Bread",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Salad Style - No Bread",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Wrap",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Entree Side Options",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Beer-Battered Fries",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fresh Mixed Fruit",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Garden Salad",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Side",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Onion Rings",
+                  "price": 0.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Smasher Sauce Options",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "BBQ Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cilantro Aioli",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Garlic Aioli",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Ketchup",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mayonnaise",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mustard",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Ranch",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Rodeo Smasher",
+          "description": "Single or double smashburger steak seasoning cheddar cheese smoked bacon onion ring pickle and BBQ sauce. All Smashers served on a butter-toasted potato bun. Includes a side.",
           "price": 0.0,
           "options": [
+            {
+              "name": "Rodeo Toppings",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "No Bacon",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No BBQ Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Cheese",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Onion Rings",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Pickle",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
             {
               "name": "Entree Option",
               "minimum": 0,
@@ -315,27 +605,67 @@
           "is_hidden": false
         },
         {
-          "name": "Nadura Smasher (V)",
-          "description": "Nadura Plant-based single or double smashburger cheddar cheese lettuce tomato onion pickle and garlic aioli. All Smashers served on a butter-toasted potato bun. Includes a side.",
-          "price": 13.99,
+          "name": "Black & Blue Smasher",
+          "description": "Single or double smashburger steak seasoning marbled blue cheese smoked bacon caramelized onion and garlic aioli. All Smashers served on a butter-toasted potato bun. Includes a side.",
+          "price": 0.0,
           "options": [
             {
-              "name": "CKN - Veggie Entree Option",
-              "minimum": 1,
+              "name": "Entree Option",
+              "minimum": 0,
               "maximum": 1,
-              "allow_quantity": false,
+              "allow_quantity": true,
               "values": [
                 {
-                  "name": "Double",
-                  "price": 13.99,
-                  "is_default": true,
+                  "name": "Double Smasher",
+                  "price": 13.65,
+                  "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Single",
-                  "price": 11.99,
+                  "name": "Single Smasher",
+                  "price": 10.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Black and Blue Smasher Toppings",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "No Bacon",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Carmelized Onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Cheese",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Garlic Aioli",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -530,6 +860,70 @@
               ]
             },
             {
+              "name": "Classic Smasher Toppings",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Add Bacon",
+                  "price": 1.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Cheese",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Ketchup",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Lettuce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Mayo",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Tomato",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
               "name": "Entree Bread Option",
               "minimum": 0,
               "maximum": 1,
@@ -716,6 +1110,54 @@
               ]
             },
             {
+              "name": "Perlas Smasher Toppings",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Add Bacon",
+                  "price": 1.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Cheese",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Cilantro Aioli",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Guacamole",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Jalapenos",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
               "name": "Entree Bread Option",
               "minimum": 0,
               "maximum": 1,
@@ -878,13 +1320,13 @@
           "price": 13.65,
           "options": [
             {
-              "name": "Entree Bread Option",
+              "name": "Chicken Smasher Toppings",
               "minimum": 0,
-              "maximum": 1,
+              "maximum": 50,
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "8-inch Bread Roll",
+                  "name": "No Cheese",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -892,7 +1334,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Gluten Free Bread",
+                  "name": "No Garlic Aioli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -900,31 +1342,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Salad Style - No Bread",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Wrap",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Entree Side Options",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Beer-Battered Fries",
+                  "name": "No Lettuce",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -932,15 +1350,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Fresh Mixed Fruit",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Garden Salad",
+                  "name": "No Onion",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -948,7 +1358,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Side",
+                  "name": "No Pickle",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -956,106 +1366,8 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Onion Rings",
-                  "price": 0.99,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Smasher Sauce Options",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "BBQ Sauce",
+                  "name": "No Tomato",
                   "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Cilantro Aioli",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Garlic Aioli",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ketchup",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Mayonnaise",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Mustard",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ranch",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Rodeo Smasher",
-          "description": "Single or double smashburger steak seasoning cheddar cheese smoked bacon onion ring pickle and BBQ sauce. All Smashers served on a butter-toasted potato bun. Includes a side.",
-          "price": 0.0,
-          "options": [
-            {
-              "name": "Entree Option",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Double Smasher",
-                  "price": 13.65,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Single Smasher",
-                  "price": 10.99,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,

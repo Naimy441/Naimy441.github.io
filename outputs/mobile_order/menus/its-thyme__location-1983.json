@@ -4,9 +4,9 @@
   "location_id": 1983,
   "cafeteria_id": 1794,
   "icon_image_url": "campuses/icon_location_19_18_127_1704385673480.jpg",
-  "estimated_wait_time_minutes": 0,
+  "estimated_wait_time_minutes": 13,
   "currently_open": true,
-  "takeout_open": false,
+  "takeout_open": true,
   "delivery_open": true,
   "takeout_hours": {
     "open": "11:00:00",
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-14 14:13:13",
-  "menu_last_updated": "2026-11-14 14:13:14",
+  "retrieved_at": "2026-11-16 16:15:11",
+  "menu_last_updated": "2026-11-16 16:15:11",
   "sections": [
     {
       "name": "Build Your Own",
@@ -1206,15 +1206,6 @@
       "is_hidden": true,
       "items": [
         {
-          "name": "Dole Whip",
-          "description": "",
-          "price": 4.99,
-          "options": [],
-          "busy_min": 1,
-          "normal_min": 1,
-          "is_hidden": false
-        },
-        {
           "name": "Classic Pineapple Dole Whip",
           "description": "",
           "price": 4.99,
@@ -1222,6 +1213,15 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": true
+        },
+        {
+          "name": "Dole Whip",
+          "description": "",
+          "price": 4.99,
+          "options": [],
+          "busy_min": 1,
+          "normal_min": 1,
+          "is_hidden": false
         },
         {
           "name": "Strawberry Dole Whip",
@@ -1325,6 +1325,80 @@
                 },
                 {
                   "name": "No Slow-roasted pork",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Southern Thyme",
+          "description": "Baby spinach lemon-thyme chicken roasted tomato and peppers pickled cabbage and onion avocado crisp tostones and cilantro-lime vinaigrette.",
+          "price": 11.89,
+          "options": [
+            {
+              "name": "Southern Thyme",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No avocado",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Baby spinach",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No cilantro-lime vinaigrette",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No crisp tostones",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No lemon-thyme chicken",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No pickled cabbage and onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No roasted tomato and peppers",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1481,80 +1555,6 @@
                 },
                 {
                   "name": "No veggies",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Southern Thyme",
-          "description": "Baby spinach lemon-thyme chicken roasted tomato and peppers pickled cabbage and onion avocado crisp tostones and cilantro-lime vinaigrette.",
-          "price": 11.89,
-          "options": [
-            {
-              "name": "Southern Thyme",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No avocado",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Baby spinach",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No cilantro-lime vinaigrette",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No crisp tostones",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No lemon-thyme chicken",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No pickled cabbage and onion",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No roasted tomato and peppers",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2148,21 +2148,21 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Pineapple Tea",
-          "description": "",
-          "price": 3.99,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
           "name": "Our Signature Lavender Lemonade",
           "description": "",
           "price": 3.99,
           "options": [],
           "busy_min": 5,
           "normal_min": 0,
+          "is_hidden": false
+        },
+        {
+          "name": "Pineapple Tea",
+          "description": "",
+          "price": 3.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
           "is_hidden": false
         },
         {

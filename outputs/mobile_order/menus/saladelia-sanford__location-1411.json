@@ -4,10 +4,10 @@
   "location_id": 1411,
   "cafeteria_id": 1267,
   "icon_image_url": "campuses/icon_location_19_18_127_1757693875654.jpg",
-  "estimated_wait_time_minutes": 9,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "08:00:00",
     "close": "15:00:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-13 18:45:17",
-  "menu_last_updated": "2026-11-13 18:45:18",
+  "retrieved_at": "2026-11-16 18:02:02",
+  "menu_last_updated": "2026-11-16 18:02:03",
   "sections": [
     {
       "name": "Specials",
@@ -2163,15 +2163,6 @@
           "is_hidden": false
         },
         {
-          "name": "Chorizo Breakfast Scrambler",
-          "description": "",
-          "price": 6.99,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
           "name": "French Beef",
           "description": "",
           "price": 11.35,
@@ -2544,15 +2535,6 @@
           "is_hidden": false
         },
         {
-          "name": "Breakfast Croissant",
-          "description": "",
-          "price": 6.95,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Greek Scrambler",
           "description": "",
           "price": 6.95,
@@ -2737,6 +2719,24 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
+        },
+        {
+          "name": "Breakfast Croissant",
+          "description": "",
+          "price": 6.95,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Chorizo Breakfast Scrambler",
+          "description": "",
+          "price": 6.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
         }
       ]
     },
@@ -2744,15 +2744,6 @@
       "name": "Salads and Snack Boxes",
       "is_hidden": false,
       "items": [
-        {
-          "name": "Farm Fresh Eggs",
-          "description": "",
-          "price": 3.25,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
         {
           "name": "Feta Cilantro Bowtie",
           "description": "",
@@ -2842,6 +2833,15 @@
           "busy_min": 5,
           "normal_min": 3,
           "is_hidden": false
+        },
+        {
+          "name": "Farm Fresh Eggs",
+          "description": "",
+          "price": 3.25,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
         }
       ]
     },
@@ -2849,33 +2849,6 @@
       "name": "Sandwiches & Wraps",
       "is_hidden": false,
       "items": [
-        {
-          "name": "Falafel Pita",
-          "description": "",
-          "price": 7.49,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Hummus Veggie Wrap",
-          "description": "",
-          "price": 6.55,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Chicken Arugula",
-          "description": "",
-          "price": 10.59,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
         {
           "name": "Bacon Jam Club Wrap",
           "description": "",
@@ -2938,6 +2911,33 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
+        },
+        {
+          "name": "Falafel Pita",
+          "description": "",
+          "price": 7.49,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Hummus Veggie Wrap",
+          "description": "",
+          "price": 6.55,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Chicken Arugula",
+          "description": "",
+          "price": 10.59,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
         }
       ]
     },
@@ -2959,6 +2959,56 @@
           "description": "",
           "price": 4.29,
           "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Breads",
+          "description": "",
+          "price": 4.29,
+          "options": [
+            {
+              "name": "Bread Options",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Apple rum raisin",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pumpkin",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Lemon",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Banana",
+                  "price": 4.29,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -3018,56 +3068,6 @@
           "is_hidden": false
         },
         {
-          "name": "Breads",
-          "description": "",
-          "price": 4.29,
-          "options": [
-            {
-              "name": "Bread Options",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Apple rum raisin",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pumpkin",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Lemon",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Banana",
-                  "price": 4.29,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Zaatar Croissant",
           "description": "",
           "price": 4.29,
@@ -3119,40 +3119,6 @@
           "is_hidden": false
         },
         {
-          "name": "Muffins",
-          "description": "",
-          "price": 4.29,
-          "options": [
-            {
-              "name": "Muffins Options",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Blueberry",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Coffee cake",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Dessert Bar",
           "description": "",
           "price": 4.29,
@@ -3185,6 +3151,40 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
+        },
+        {
+          "name": "Muffins",
+          "description": "",
+          "price": 4.29,
+          "options": [
+            {
+              "name": "Muffins Options",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Blueberry",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Coffee cake",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
         }
       ]
     },
@@ -3192,6 +3192,24 @@
       "name": "Bottled Beverages",
       "is_hidden": false,
       "items": [
+        {
+          "name": "Kombucha",
+          "description": "",
+          "price": 5.99,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Boxed Water",
+          "description": "",
+          "price": 3.35,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
         {
           "name": "Natalies Juice",
           "description": "",
@@ -3217,24 +3235,6 @@
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Kombucha",
-          "description": "",
-          "price": 5.99,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Boxed Water",
-          "description": "",
-          "price": 3.35,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
           "is_hidden": false
         },
         {
