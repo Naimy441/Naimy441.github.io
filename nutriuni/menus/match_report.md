@@ -1,10 +1,10 @@
 # Nutriuni menu match report
 
-Data version 2026-11-16T22:09:23+00:00.
+Data version 2026-11-17T13:07:29+00:00.
 
 
 ---
-Totals: 1992/2914 items with nutrition (1907 base labels, 58 composed); 3727/10593 option components matched.
+Totals: 1992/2915 items with nutrition (1907 base labels, 58 composed); 3727/10593 option components matched.
 
 
 ## Bella Union
@@ -14,7 +14,7 @@ Source: mobile_order; NetNutrition units: Bella Union (23 labels). Items with nu
 
 **Coffee**
 - `Cafe au Lait` variants: Cafe Au Lait Soy Milk ⇐ ['soy']; Cafe Au Lait Whole Milk ⇐ ['whole']
-- `Cafe au Lait` → **Cafe Au Lait Whole Milk** (20 oz (567g), 330 kcal) [variant]
+- `Cafe au Lait` → **Cafe Au Lait Whole Milk** (12 oz (340g), 200 kcal) [variant]
 
 **Espresso**
 - ❔ `Cafe Americano` unmatched (closest: Americano Regular 0.86)
@@ -582,12 +582,12 @@ Source: mobile_order; NetNutrition units: The Farmstead, Sprout (107 labels). It
 - `$5 Meal Deal` composed from its options
 
 **Breakfast**
-- `Avocado Toast` → **Avocado Toast** (Sandwich (229g), 410 kcal) [exact 2.08]
-- `Plain Oatmeal (No toppings)` → **Oatmeal** (7.5 oz Portion (213g), 150 kcal) [manual]
 - `Breakfast Potatoes` → **Breakfast Potatoes** (3.7 oz Portion (105g), 260 kcal) [exact 2.00]
+- `Plain Oatmeal (No toppings)` → **Oatmeal** (7.5 oz Portion (213g), 150 kcal) [manual]
 - ❔ `Tofu Scramble and Potatoes` unmatched (closest: Tofu Scramble 0.94)
-- ❔ `French Toast` unmatched (closest: French Toast Sticks 0.92)
+- `Avocado Toast` → **Avocado Toast** (Sandwich (229g), 410 kcal) [exact 2.08]
 - `Breakfast burrito` → **Breakfast Burrito** (Burrito (244g), 300 kcal) [exact 2.00]
+- ❔ `French Toast` unmatched (closest: French Toast Sticks 0.92)
 - `Oatmeal (3 Toppings)` → **Oatmeal** (7.5 oz Portion (213g), 150 kcal) [exact 2.08]
 
 **Farmstead Sandwiches**
@@ -602,8 +602,8 @@ Source: mobile_order; NetNutrition units: The Farmstead, Sprout (107 labels). It
 - `Tangy Bourbon Chicken (Sweet Potatoes & Green Beans)` → **Tangy Bourbon Chicken** (6.8 oz Portion (193g), 360 kcal) [exact 2.08]
 - `Honey Garlic Chicken` → **Honey Garlic Chicken** (6 oz Portion (170g), 350 kcal) [exact 2.08]
 - ❔ `Bourbon Garlic Chicken` unmatched (closest: Tangy Bourbon Chicken 0.71)
-- `Brautwurst` → **Bratwurst with Peppers and Onions** (8 oz Portion (225g), 330 kcal) [manual]
 - `Quarter Chicken` → **Chicken** (4 oz Portion (113g), 120 kcal) [exact 2.00]
+- `Brautwurst` → **Bratwurst with Peppers and Onions** (8 oz Portion (225g), 330 kcal) [manual]
 - `Atlantic Blackened Salmon Fillets` → **Atlantic Blackened Salmon Fillets** (5.5 oz Portion (156g), 290 kcal) [exact 2.08]
 
 **Carving Station**
@@ -617,8 +617,8 @@ Source: mobile_order; NetNutrition units: The Farmstead, Sprout (107 labels). It
 - `Black Bean Burger` → **Black Bean Burger Sandwich** (Sandwich (232g), 440 kcal) [fuzzy 1.00]
 
 **Sprout Entrees**
-- `Plant-Based Chicken Nuggets Meal` → **Plant Based Chicken Nuggets** (3.35 oz Portion (100g), 230 kcal) [manual]
 - `Plant-Based Chicken Nuggets` → **Plant Based Chicken Nuggets** (3.35 oz Portion (100g), 230 kcal) [exact 2.08]
+- `Plant-Based Chicken Nuggets Meal` → **Plant Based Chicken Nuggets** (3.35 oz Portion (100g), 230 kcal) [manual]
 - `Avocado Toast` → **Avocado Toast** (Sandwich (229g), 410 kcal) [exact 2.00]
 - `Chickpea Stew` → **Chickpea Stew** (11.25 oz Portion (319g), 110 kcal) [exact 2.08]
 - `Three Bean Nadura Chili` → **Plant Based Chili with Nadura** (8.64 oz Portion (245g), 170 kcal) [manual]
@@ -991,15 +991,15 @@ Source: mobile_order; NetNutrition units: Ginger + Soy (102 labels). Items with 
 - ❔ `Spicy Miso Ramen` unmatched (closest: Spicy Miso Soup 0.64)
 
 **Small Bites**
-- `Vegetable Spring Rolls` → **Vegetable Spring Roll** (2 Piece Portion (8g), 15 kcal) [exact 2.05]
-- `Fried Chicken Dumplings` → **Fried Chicken Dumplings** (7 Dumpling Portion (158g), 280 kcal) [exact 2.05]
-- `Shrimp Shumai` → **Shrimp Shumai** (5.65 oz Portion (160g), 290 kcal) [exact 2.05]
 - `Pork Bun` → **Pork Buns** (Bun (170g), 420 kcal) [exact 2.05]
 - `Steamed Vegetable Dumplings` → **Steamed Vegetable Dumpling** (7 Dumpling Portion (125g), 220 kcal) [exact 2.05]
 - `Fried Beef Dumplings` → **Fried Beef Bulgogi Dumplings** (7 Dumpling Portion (158g), 340 kcal) [manual]
 - `Fried Vegetable Dumplings` → **Fried Vegetable Dumpling** (7 Dumpling Portion (125g), 230 kcal) [exact 2.05]
+- `Fried Chicken Dumplings` → **Fried Chicken Dumplings** (7 Dumpling Portion (158g), 280 kcal) [exact 2.05]
+- `Shrimp Shumai` → **Shrimp Shumai** (5.65 oz Portion (160g), 290 kcal) [exact 2.05]
 - `Soup Dumplings` → **Soup Dumpling** (Dumpling Portion (142g), 200 kcal) [exact 2.05]
 - `Steamed Chicken Dumplings` → **Steamed Chicken Dumpling** (7 Dumpling Portion (151g), 210 kcal) [exact 2.05]
+- `Vegetable Spring Rolls` → **Vegetable Spring Roll** (2 Piece Portion (8g), 15 kcal) [exact 2.05]
 - `Bulgogi Spring Rolls` → **Bulgogi Spring Roll** (3 Roll Portion (165g), 550 kcal) [exact 2.05]
 - `Steamed Beef Dumplings` → **Steamed Beef Dumplings** (7 Dumpling Portion (151g), 270 kcal) [exact 2.05]
 
@@ -1057,32 +1057,32 @@ Source: mobile_order; NetNutrition units: Ginger + Soy (102 labels). Items with 
 
 ## Gothic Grill
 
-Source: mobile_order; NetNutrition units: Gothic Grill (120 labels). Items with nutrition: 44/94 (47%); base labels 40, composed 3; option components matched 342/1002.
+Source: mobile_order; NetNutrition units: Gothic Grill (120 labels). Items with nutrition: 44/95 (46%); base labels 40, composed 3; option components matched 342/1002.
 
 
 **Specials**
 
 **Small Plates**
 - `Tortilla Chips with Guacamole` → **Tortilla Chips with Guacamole** (10 oz Portion (283g), 720 kcal) [exact 2.08]
+- `Buffalo Chicken Mac and Cheese` → **Buffalo Chicken Macaroni and Cheese** (10 oz Portion (283g), 490 kcal) [exact 2.08]
 - `Fried Shrimp Basket` → **Fried Shrimp** (4 oz Portion (125g), 280 kcal) [manual]
 - `Chicken Tenders` → **Chicken Tenders** (4 Pc Portion (165g), 300 kcal) [exact 2.08]
-- `Buffalo Chicken Mac and Cheese` → **Buffalo Chicken Macaroni and Cheese** (10 oz Portion (283g), 490 kcal) [exact 2.08]
-- `Crispy Cauliflower` → **Crispy Cauliflower** (5.5 oz Portion (158g), 380 kcal) [exact 2.08]
-- `Sweet Potato Waffle Fries` → **Sweet Potato Waffle Fries** (4.5 oz Portion (128g), 380 kcal) [exact 2.08]
 - `Mozzarella Sticks(3)` → **Mozzarella Sticks** (6 oz Portion (195g), 640 kcal) [exact 2.08]
+- `Sweet Potato Waffle Fries` → **Sweet Potato Waffle Fries** (4.5 oz Portion (128g), 380 kcal) [exact 2.08]
+- `Crispy Cauliflower` → **Crispy Cauliflower** (5.5 oz Portion (158g), 380 kcal) [exact 2.08]
 - `Mega Pretzel` → **Bavarian Pretzel** (Portion (283g), 720 kcal) [manual]
 - `Shredded Chicken and Cheese Nachos` → **Chicken Cheese Nachos** (Portion (496g), 990 kcal) [manual]
 
 **Soups and Salads**
 - `Caesar Salad` variants: Caesar Salad ⇐ []; Crispy Chicken Caesar Salad ⇐ ['chicken', 'crispy']
 - `Caesar Salad` → **Caesar Salad** (Salad (376g), 860 kcal) [exact 2.04]
+- ❔ `Grilled Mahi Mahi salad` unmatched (closest: Blackened Mahi Mahi 0.72)
 - `Grilled Chicken salad` → **Grilled Chicken Salad** (Salad (510g), 430 kcal) [fuzzy 1.04]
 - `Crispy Buffalo Chicken Salad` → **Crispy Buffalo Chicken Salad** (Salad (567g), 670 kcal) [exact 2.04]
-- ❔ `Grilled Mahi Mahi salad` unmatched (closest: Blackened Mahi Mahi 0.72)
-- `Build Your Own Salad` composed from its options
-- `Caprese Salad` → **Caprese Salad** (Salad (471g), 570 kcal) [exact 2.04]
 - `Crispy Chicken Caesar Salad` → **Crispy Chicken Caesar Salad** (Salad (510g), 1250 kcal) [exact 2.04]
+- `Caprese Salad` → **Caprese Salad** (Salad (471g), 570 kcal) [exact 2.04]
 - ❔ `Fiesta Chicken Salad` unmatched (closest: Grilled Chicken Salad 0.75)
+- `Build Your Own Salad` composed from its options
 
 **Tacos**
 - ❔ `Tacos Steak` unmatched (closest: Steak 0.71)
@@ -1090,42 +1090,42 @@ Source: mobile_order; NetNutrition units: Gothic Grill (120 labels). Items with 
 **Burgers**
 - ❔ `Build your own Burger` unmatched (closest: Gothic Burger 0.57)
 - `Build your own Burger` + components: Beef Patty, Hamburger Bun
+- ❔ `Pizza Burger` unmatched (closest: Gothic Burger 0.73)
+- `The NC Burger` → **NC Burger** (Sandwich (422g), 1030 kcal) [exact 2.00]
 - `Double Patty Melt Burger` → **Double Patty Melt Sandwich** (Sandwich (298g), 760 kcal) [fuzzy 0.83]
 - `Gothic Smash Burger` → **Gothic Burger** (Sandwich (408g), 1180 kcal) [manual]
 - `Cali Smash Burger` → **Cali Smash Burger** (Sandwich (550g), 750 kcal) [exact 2.00]
-- `The NC Burger` → **NC Burger** (Sandwich (422g), 1030 kcal) [exact 2.00]
 - ❔ `Bahn Mi Burger` unmatched (closest: Gothic Burger 0.57)
-- ❔ `Pizza Burger` unmatched (closest: Gothic Burger 0.73)
 
 **Sandwiches**
-- `BLTA` → **BLT-A Sandwich** (Sandwich (274g), 280 kcal) [fuzzy 1.08]
 - `Chicken Caesar Wrap` → **Chicken Caesar Wrap** (Wrap (393g), 870 kcal) [exact 2.08]
-- `Buffalo Chicken Wrap` → **Buffalo Chicken Wrap** (Wrap (350g), 830 kcal) [exact 2.08]
-- `Buffalo Shrimp Wrap` → **Buffalo Shrimp Wrap** (Wrap (379g), 760 kcal) [exact 2.08]
-- `Grilled Chicken Parm Sandwich` → **Chicken Parmesan Sandwich** (Sandwich (283g), 490 kcal) [manual]
-- `Southern Fried Chicken Sandwich` → **Southern Fried Chicken Sandwich** (Sandwich (193g), 410 kcal) [exact 2.00]
+- `BLTA` → **BLT-A Sandwich** (Sandwich (274g), 280 kcal) [fuzzy 1.08]
 - `Chicken Philly` → **Chicken Philly Sandwich** (Sandwich (188g), 350 kcal) [fuzzy 1.08]
-- `Philly Cheesesteak` → **Philly Cheesesteak Sandwich** (Sandwich (175g), 300 kcal) [fuzzy 1.08]
 - ❔ `Chicken Focaccia` unmatched (closest: Grilled Chicken Sandwich 0.67)
 - ❔ `Turkey Grinder` unmatched (closest: Turkey Club Wrap 0.59)
+- `Buffalo Chicken Wrap` → **Buffalo Chicken Wrap** (Wrap (350g), 830 kcal) [exact 2.08]
+- `Grilled Chicken Parm Sandwich` → **Chicken Parmesan Sandwich** (Sandwich (283g), 490 kcal) [manual]
+- `Southern Fried Chicken Sandwich` → **Southern Fried Chicken Sandwich** (Sandwich (193g), 410 kcal) [exact 2.00]
+- `Philly Cheesesteak` → **Philly Cheesesteak Sandwich** (Sandwich (175g), 300 kcal) [fuzzy 1.08]
+- ❔ `Grilled Cheese` unmatched (closest: Macaroni and Cheese Cup 0.73)
+- ❔ `Crispy Sweet Chili Chicken Sandwich` unmatched (closest: Grilled Chicken Sandwich 0.58)
+- `Buffalo Shrimp Wrap` → **Buffalo Shrimp Wrap** (Wrap (379g), 760 kcal) [exact 2.08]
 - `Vegetable Cheesesteak` → **Vegetable Cheesesteak** (Sandwich (258g), 340 kcal) [exact 2.08]
 - `Grilled Chicken Sandwich` → **Grilled Chicken Sandwich** (Sandwich (333g), 390 kcal) [fuzzy 1.00]
-- ❔ `Grilled Cheese` unmatched (closest: Macaroni and Cheese Cup 0.73)
-- ❔ `Crispy Buffalo Chicken Sandwich` unmatched (closest: Crispy Buffalo Chicken Salad 0.76)
-- ❔ `Crispy Sweet Chili Chicken Sandwich` unmatched (closest: Grilled Chicken Sandwich 0.58)
-- ❔ `Chicken Bahn Mi Sandwich` unmatched (closest: Grilled Chicken Sandwich 0.60)
-- `Turkey Club Wrap` → **Turkey Club Wrap** (Wrap (442g), 650 kcal) [exact 2.08]
-- ❔ `Steak Wrap` unmatched (closest: Steak 0.79)
 - ❔ `Chicken Focaccia` unmatched (closest: Grilled Chicken Sandwich 0.67)
+- ❔ `Crispy Buffalo Chicken Sandwich` unmatched (closest: Crispy Buffalo Chicken Salad 0.76)
+- `Turkey Club Wrap` → **Turkey Club Wrap** (Wrap (442g), 650 kcal) [exact 2.08]
+- ❔ `Chicken Bahn Mi Sandwich` unmatched (closest: Grilled Chicken Sandwich 0.60)
+- ❔ `Steak Wrap` unmatched (closest: Steak 0.79)
 - `Buffalo Cauliflower Wrap` → **Buffalo Cauliflower Wrap** (Wrap (435g), 1020 kcal) [exact 2.08]
 
 **Pizzas**
+- `Island Pizza` → **Island Pizza** (Pizza (622g), 1210 kcal) [exact 2.00]
 - `Buffalo Chicken Pizza` → **Buffalo Chicken Pizza** (Pizza (594g), 1370 kcal) [exact 2.00]
 - ❔ `Cali Chicken Pizza` unmatched (closest: Cali Pizza 0.88)
-- `Island Pizza` → **Island Pizza** (Pizza (622g), 1210 kcal) [exact 2.00]
-- `Meateater Pizza` → **Meateater Pizza** (Pizza (566g), 1410 kcal) [exact 2.00]
 - `Veg G Pizza` → **Veg Pizza** (Pizza (618g), 880 kcal) [manual]
 - `Build Your Own Calzone` composed from its options
+- `Meateater Pizza` → **Meateater Pizza** (Pizza (566g), 1410 kcal) [exact 2.00]
 - `BBQ Chicken Pizza` → **Barbecue Chicken Pizza** (Pizza (634g), 1130 kcal) [exact 2.00]
 - `Pepperoni Calzone` → **Pepperoni Calzone** (Calzone (469g), 1200 kcal) [exact 2.00]
 - `Veggie Calzone` → **Veggie Calzone** (Calzone (550g), 1090 kcal) [exact 2.00]
@@ -2068,8 +2068,8 @@ Source: mobile_order; NetNutrition units: The Pitchfork (88 labels). Items with 
 
 
 **Biscuits Bagels Pancakes**
-- ❔ `Fried Chicken Biscuit` unmatched (closest: Fried Chicken Breast 0.76)
 - `Lox & Bagel` → **Lox and Bagel** (Sandwich (288g), 580 kcal) [exact 2.00]
+- ❔ `Fried Chicken Biscuit` unmatched (closest: Fried Chicken Breast 0.76)
 - `Plain Bagel` → **Plain Bagel** (Bagel (113g), 300 kcal) [fuzzy 1.00]
 - `Breakfast Biscuit` → **Breakfast Biscuit** (Biscuit (80g), 250 kcal) [exact 2.00]
 - ❔ `Breakfast Biscuit Protein` unmatched (closest: Breakfast Biscuit 0.80)
@@ -2089,15 +2089,15 @@ Source: mobile_order; NetNutrition units: The Pitchfork (88 labels). Items with 
 **Salads**
 - `Kale Salad` → **Kale Salad** (Salad (323g), 550 kcal) [exact 2.00]
 - `Arugula Salad` → **Arugula Salad** (Salad (396g), 520 kcal) [exact 2.00]
-- `California Club Salad` → **California Club Salad** (Salad (510g), 960 kcal) [exact 2.00]
 - `E Tu Caesar Salad` → **E Tu Caesar Salad** (Salad (340g), 700 kcal) [exact 2.00]
+- `California Club Salad` → **California Club Salad** (Salad (510g), 960 kcal) [exact 2.00]
 
 **Entrees**
-- `Spaghetti and Meatballs` → **Spaghetti and Meatballs** (Portion (709g), 1350 kcal) [exact 2.00]
 - ❔ `Spaghetti No Meatballs` unmatched (closest: Spaghetti and Meatballs 0.80)
-- `Veggie Hot Pot` → **Veggie Hot Pot Pitchfork** (Portion (573g), 500 kcal) [fuzzy 1.00]
-- ❔ `Flank Steak Frites` unmatched (closest: Steak 0.60)
+- `Spaghetti and Meatballs` → **Spaghetti and Meatballs** (Portion (709g), 1350 kcal) [exact 2.00]
 - `Chicken Parmesan` → **Chicken Parmesan Pitchfork** (Portion (652g), 880 kcal) [fuzzy 1.00]
+- ❔ `Flank Steak Frites` unmatched (closest: Steak 0.60)
+- `Veggie Hot Pot` → **Veggie Hot Pot Pitchfork** (Portion (573g), 500 kcal) [fuzzy 1.00]
 - `Salmon Hot Pot` → **Salmon Hot Pot** (Portion (919g), 1380 kcal) [exact 2.00]
 - `Veggie Lasagna` → **Veggie Lasagna** (10 oz Portion (283g), 360 kcal) [exact 2.00]
 
@@ -2161,14 +2161,14 @@ Source: mobile_order; NetNutrition units: The Pitchfork (88 labels). Items with 
 **Cold Beverages**
 
 **Grub Late Night**
-- `Grilled Chicken Sandwich` → **Grilled Chicken Sandwich** (Sandwich (293g), 490 kcal) [exact 2.00]
 - `Fried Chicken Sandwich` → **Fried Chicken Sandwich** (Sandwich (302g), 670 kcal) [exact 2.00]
-- `Grilled Cheese Sandwich` → **Grilled Cheese Sandwich** (Sandwich (214g), 830 kcal) [exact 2.08]
-- `Falafel Sandwich on Pita` → **Falafel Sandwich on Whole Wheat Pita** (Sandwich (374g), 810 kcal) [manual]
+- `Grilled Chicken Sandwich` → **Grilled Chicken Sandwich** (Sandwich (293g), 490 kcal) [exact 2.00]
 - `Black Angus Burger` → **Black Angus Burger** (Sandwich (373g), 720 kcal) [exact 2.08]
+- `Falafel Sandwich on Pita` → **Falafel Sandwich on Whole Wheat Pita** (Sandwich (374g), 810 kcal) [manual]
 - ❔ `Grilled Quesadilla` unmatched (closest: Cheese Quesadilla 0.66)
-- `Vegetable Samosas` → **Vegetable Samosas with Tomato Chutney** (4 Piece Portion (292g), 820 kcal) [manual]
+- `Grilled Cheese Sandwich` → **Grilled Cheese Sandwich** (Sandwich (214g), 830 kcal) [exact 2.08]
 - `Mac and Cheese Bites` → **Mac and Cheese Bites** (15 Piece Portion (340g), 1250 kcal) [exact 2.08]
+- `Vegetable Samosas` → **Vegetable Samosas with Tomato Chutney** (4 Piece Portion (292g), 820 kcal) [manual]
 - `Chicken Tenders` → **Chicken Tenders** (7.8 oz Portion (221g), 600 kcal) [exact 2.08]
 
 **Option values**
@@ -2311,16 +2311,16 @@ Source: mobile_order; NetNutrition units: Red Mango (173 labels). Items with nut
 **Specials**
 
 **Power Bowls**
-- `Choco-Nut Dream Acai Bowl` → **Choc-Nut Dream Bowl** (Bowl (499g), 730 kcal) [manual]
 - `Berries & Acai Bowl` → **Berries and Acai Bowl** (Bowl (524g), 620 kcal) [exact 2.04]
+- `Choco-Nut Dream Acai Bowl` → **Choc-Nut Dream Bowl** (Bowl (499g), 730 kcal) [manual]
 - `PB Power Acai Bowl` → **PB Power Bowl** (Bowl (344g), 610 kcal) [manual]
 
 **Smoothies**
+- ❔ `Sunny Strawberry Lge` unmatched (closest: Sunny Strawberry Smoothie 1.04)
 - `Mango Mojo Reg` → **Mango Mojo Smoothie** (16 oz (451g), 370 kcal) [fuzzy 1.03]
 - `Strawberry Swag Reg` → **Strawberry Swag Smoothie** (16 oz (451g), 390 kcal) [fuzzy 1.03]
 - ❔ `Mango Mojo Large` unmatched (closest: Mango Mojo Smoothie 1.03)
 - ❔ `Strawberry Swag Large` unmatched (closest: Strawberry Swag Smoothie 1.03)
-- ❔ `Sunny Strawberry Lge` unmatched (closest: Sunny Strawberry Smoothie 1.04)
 - `Sunny Strawberry Reg` → **Sunny Strawberry Smoothie** (16 oz (473g), 350 kcal) [fuzzy 1.04]
 - ❔ `Pina Colada Large` unmatched (closest: Pina Colada Smoothie 1.03)
 - `Pina Colada Regular` → **Pina Colada Smoothie** (24 oz (680g), 710 kcal) [fuzzy 1.03]
@@ -2714,8 +2714,8 @@ Source: mobile_order; NetNutrition units: Sazon (65 labels). Items with nutritio
 - `Arepa Bowl` + components: Latin Arepa Bowl
 
 **Extras & Drinks**
-- `Churros` → **Churros** (1 Churro (36g), 130 kcal) [exact 2.00]
 - ❔ `Churro Donut` unmatched (closest: Churros 0.70)
+- `Churros` → **Churros** (1 Churro (36g), 130 kcal) [exact 2.00]
 - ❔ `Chips & Guacamole` unmatched (closest: Chips 0.73)
 - `Chips & Salsa` → **Chips and Salsa** (Portion (152g), 370 kcal) [exact 2.00]
 - ❔ `Chips & Queso` unmatched (closest: Chips 0.73)
@@ -2953,10 +2953,10 @@ Source: mobile_order; NetNutrition units: The Devils Krafthouse (128 labels). It
 
 
 **Brunch**
-- `Side of breakfast potatoes` → **Breakfast Potatoes** (4 oz Portion (113g), 170 kcal) [exact 2.00]
-- `Baco Egg and Cheese Bagel` → **Bacon Egg and Cheese Bagel** (Sandwich (246g), 560 kcal) [fuzzy 0.98]
-- `Turkey Sausage Egg and Cheese Bagel` → **Turkey Sausage Egg Bagel** (Sandwich (210g), 470 kcal) [fuzzy 0.93]
 - `Breakfast potato bowl` → **Breakfast Potato Bowl** (Bowl (454g), 790 kcal) [exact 2.00]
+- `Side of breakfast potatoes` → **Breakfast Potatoes** (4 oz Portion (113g), 170 kcal) [exact 2.00]
+- `Turkey Sausage Egg and Cheese Bagel` → **Turkey Sausage Egg Bagel** (Sandwich (210g), 470 kcal) [fuzzy 0.93]
+- `Baco Egg and Cheese Bagel` → **Bacon Egg and Cheese Bagel** (Sandwich (246g), 560 kcal) [fuzzy 0.98]
 - `Southwest wrap` → **Southwest Wrap** (Wrap (383g), 760 kcal) [exact 2.00]
 - `Southwest Breakfast Bowl` → **Southwest Breakfast Bowl** (Bowl (468g), 930 kcal) [exact 2.00]
 - `Egg & cheese breakfast sandwich` → **Egg and Cheese Sandwich** (Sandwich (141g), 350 kcal) [manual]
@@ -2964,9 +2964,9 @@ Source: mobile_order; NetNutrition units: The Devils Krafthouse (128 labels). It
 
 **Small Plates**
 - `Sweet Potato Fries` → **Sweet Potato Fries** (10 oz Portion (207g), 550 kcal) [exact 2.08]
-- `Fried Cheese Curds` → **Cheese Curds** (5 oz Portion (156g), 620 kcal) [manual]
 - `Onion Rings` → **Battered Onion Rings** (5 oz Portion (153g), 490 kcal) [fuzzy 1.08]
 - ❔ `Fried Green Tomatoes` unmatched (closest: Tomato 0.63)
+- `Fried Cheese Curds` → **Cheese Curds** (5 oz Portion (156g), 620 kcal) [manual]
 - `Chicken Wings` → **Chicken Wings** (6 Pc Portion (286g), 720 kcal) [exact 2.08]
 - `Nachos` → **Nachos** (Plate (450g), 710 kcal) [exact 2.08]
 - `Chicken Tenders` → **Chicken Tenders** (4 Pc Portion (217g), 530 kcal) [exact 2.08]
@@ -2975,11 +2975,11 @@ Source: mobile_order; NetNutrition units: The Devils Krafthouse (128 labels). It
 
 **Salads**
 - `Mixed Arugula Salad` → **Mixed Arugula Salad** (Salad (326g), 390 kcal) [exact 2.00]
-- `Buffalo bacon ranch bowl` → **Buffalo Bacon Ranch Bowl** (Bowl (411g), 860 kcal) [exact 2.08]
-- `Fried chicken salad` → **Fried Chicken Salad** (Salad (411g), 500 kcal) [exact 2.00]
 - `Ginger grilled salmon salad` → **Ginger Salmon Salad** (Salad (504g), 620 kcal) [manual]
+- `Fried chicken salad` → **Fried Chicken Salad** (Salad (411g), 500 kcal) [exact 2.00]
 - `Southwest Chicken Cobb Salad` → **Southwest Chicken Cobb Salad** (Salad (569g), 760 kcal) [exact 2.00]
 - `Caribbean Fish Salad` → **Caribbean Fish Salad** (Salad (473g), 480 kcal) [exact 2.00]
+- `Buffalo bacon ranch bowl` → **Buffalo Bacon Ranch Bowl** (Bowl (411g), 860 kcal) [exact 2.08]
 - `Grilled Chicken & Goat Cheese Salad` → **Arugula Chicken and Goat Cheese Salad** (Salad (407g), 460 kcal) [manual]
 
 **Handhelds**
@@ -2989,28 +2989,28 @@ Source: mobile_order; NetNutrition units: The Devils Krafthouse (128 labels). It
 - `Flame Grilled Chicken Sandwich` → **Flame Grilled Chicken** (Sandwich (245g), 370 kcal) [manual]
 - `Turkey and Havarti` → **Turkey and Havarti** (Sandwich (255g), 500 kcal) [exact 2.08]
 - `Ginger Salmon Wrap` → **Salmon Ginger Wrap** (Wrap (323g), 590 kcal) [exact 2.08]
-- ❔ `Grilled Chicken Wrap` unmatched (closest: Flame Grilled Chicken 0.68)
 - ❔ `DKH Quesadilla` unmatched (closest: Cheese Quesadilla 0.64)
+- ❔ `Grilled Chicken Wrap` unmatched (closest: Flame Grilled Chicken 0.68)
 
 **Burgers**
 - `Mushroom and Swiss Burger` → **Mushroom Swiss Burger** (Sandwich (342g), 600 kcal) [exact 2.00]
-- `Brie and Bacon Jam Burger` → **Brie and Bacon Jam Burger** (Sandwich (335g), 730 kcal) [exact 2.00]
 - `Devils Krafthouse Burger` → **Krafthouse Burger** (Sandwich (300g), 740 kcal) [fuzzy 1.00]
+- ❔ `Turkey Burger` unmatched (closest: Krafthouse Burger 0.66)
+- ❔ `Augusta Burger` unmatched (closest: Krafthouse Burger 0.62)
+- ❔ `French Onion Burger` unmatched (closest: Krafthouse Burger 0.57)
+- `Brecky Burger` → **Brecky Burger** (Sandwich (309g), 770 kcal) [exact 2.00]
+- `$5 Meal Deal Chicken Wrap` composed from its options
+- ❔ `Nadura Burger` unmatched (closest: Krafthouse Burger 0.62)
+- `BBQ Bacon Burger` → **BBQ Bacon Burger** (Sandwich (342g), 810 kcal) [exact 2.00]
+- `Brie and Bacon Jam Burger` → **Brie and Bacon Jam Burger** (Sandwich (335g), 730 kcal) [exact 2.00]
+- `Queso Burger` → **Queso Burger** (Sandwich (334g), 640 kcal) [exact 2.00]
 - ❔ `Build Your Own Burger` unmatched (closest: Krafthouse Burger 0.55)
 - `Build Your Own Burger` composed from its options
-- ❔ `Turkey Burger` unmatched (closest: Krafthouse Burger 0.66)
-- ❔ `French Onion Burger` unmatched (closest: Krafthouse Burger 0.57)
-- `BBQ Bacon Burger` → **BBQ Bacon Burger** (Sandwich (342g), 810 kcal) [exact 2.00]
-- `$5 Meal Deal Chicken Wrap` composed from its options
-- `Brecky Burger` → **Brecky Burger** (Sandwich (309g), 770 kcal) [exact 2.00]
-- ❔ `Augusta Burger` unmatched (closest: Krafthouse Burger 0.62)
-- `Queso Burger` → **Queso Burger** (Sandwich (334g), 640 kcal) [exact 2.00]
-- ❔ `Nadura Burger` unmatched (closest: Krafthouse Burger 0.62)
 
 **Sides**
-- `Side fresh fruit` → **Mixed Fruit Cup** (12 oz Portion (340g), 160 kcal) [manual]
 - `Fresh Cut Fries` → **Fresh Cut Fries** (4 oz Portion (113g), 240 kcal) [exact 2.00]
 - ❔ `Queso` unmatched (closest: Queso Burger 0.85)
+- `Side fresh fruit` → **Mixed Fruit Cup** (12 oz Portion (340g), 160 kcal) [manual]
 - `Housemade Chips` → **House Made Chips** (4 oz Portion (136g), 420 kcal) [manual]
 - ❔ `Side salad` unmatched (closest: Mixed Arugula Salad 0.67)
 
@@ -3080,8 +3080,8 @@ Source: mobile_order; NetNutrition units: The Devils Krafthouse (128 labels). It
 - `Fruit Cup` → Mixed Fruit Cup (12 oz Portion (340g), 160 kcal) [fuzzy 1.00]
 - `Ginger Ale` → —
 - `gluten free bread` → —
-- `Honey Mustard` → Honey Mustard Sauce (2 oz Portion (57g), 130 kcal) [fuzzy 1.00]
 - `Honey mustard` → Honey Mustard Sauce (2 oz Portion (57g), 130 kcal) [fuzzy 1.08]
+- `Honey Mustard` → Honey Mustard Sauce (2 oz Portion (57g), 130 kcal) [fuzzy 1.00]
 - `House Chips` → House Made Chips (4 oz Portion (136g), 420 kcal) [exact 2.00]
 - `Jerk sauce` → —
 - `Ketchup` → Ketchup (2 Pkt Portion (18g), 20 kcal) [exact 2.02]
@@ -3142,9 +3142,9 @@ Source: mobile_order; NetNutrition units: The Skillet (107 labels). Items with n
 **Lunch Handhelds**
 - `Shrimp Po Boy` → **Shrimp Po' Boy** (Sandwich (313g), 810 kcal) [exact 2.00]
 - `BLT` → **BLT Sandwich** (Sandwich (325g), 860 kcal) [manual]
+- `Pulled Pork Sandwich` → **Pulled Pork Sandwich** (Sandwich (184g), 500 kcal) [exact 2.00]
 - ❔ `Smoked Beef Brisket Sandwich` unmatched (closest: Smoked Beef Brisket 0.88)
 - ❔ `Fried Chicken Sandwich` unmatched (closest: Fried Chicken Breast 0.80)
-- `Pulled Pork Sandwich` → **Pulled Pork Sandwich** (Sandwich (184g), 500 kcal) [exact 2.00]
 
 **Lunch-Dinner Plates**
 - ❔ `3 Sides Platter` unmatched (closest: Combo Plate 0.68)
@@ -3295,56 +3295,56 @@ Source: mobile_order; NetNutrition units: Trinity Cafe (283 labels). Items with 
 
 
 **Hot Beverages**
-- `Hot Tea` → **Hot Tea** (Small (328g), 0 kcal) [exact 2.00]
 - `Americano` variants: Americano ⇐ ['small']; Iced Americano ⇐ ['iced', 'medium']; Americano ⇐ ['medium']; Americano ⇐ ['large']
 - `Americano` → **Americano** (Small (340g), 0 kcal) [exact 2.02]
-- `Dirty Chai` variants: Dirty Chai Tea Latte Oat Milk ⇐ ['latte', 'medium', 'oat', 'tea']; Dirty Chai Tea Latte Skim Milk ⇐ ['large', 'latte', 'skim', 'tea']; Dirty Chai Tea Latte Skim Milk ⇐ ['latte', 'skim', 'small', 'tea']; Dirty Chai Tea Latte Soy Milk ⇐ ['latte', 'small', 'soy', 'tea']; Dirty Chai Tea Latte Whole Milk ⇐ ['latte', 'medium', 'tea', 'whole']; Iced Dirty Chai Tea Latte Oat ⇐ ['iced', 'latte', 'medium', 'oat', 'tea']; Iced Dirty Chai Tea Latte Skim ⇐ ['iced', 'latte', 'medium', 'skim', 'tea']; Iced Dirty Chai Tea Latte Soy ⇐ ['iced', 'latte', 'medium', 'soy', 'tea']; Iced Dirty Chai Tea Latte Whole ⇐ ['iced', 'latte', 'medium', 'tea', 'whole']; Dirty Chai Tea Latte Skim Milk ⇐ ['latte', 'medium', 'skim', 'tea']; Dirty Chai Tea Latte Soy Milk ⇐ ['large', 'latte', 'soy', 'tea']; Dirty Chai Tea Latte Soy Milk ⇐ ['latte', 'medium', 'soy', 'tea']; Dirty Chai Tea Latte Oat Milk ⇐ ['large', 'latte', 'oat', 'tea']; Dirty Chai Tea Latte Oat Milk ⇐ ['latte', 'oat', 'small', 'tea']; Dirty Chai Tea Latte Whole Milk ⇐ ['large', 'latte', 'tea', 'whole']
+- `Hot Chocolate` variants: Hot Chocolate Oat Milk ⇐ ['large', 'oat']; Hot Chocolate Skim Milk ⇐ ['medium', 'skim']; Hot Chocolate Soy Milk ⇐ ['large', 'soy']; Hot Chocolate Whole Milk ⇐ ['large', 'whole']; Hot Chocolate Skim Milk ⇐ ['skim', 'small']; Hot Chocolate Soy Milk ⇐ ['medium', 'soy']; Hot Chocolate Whole Milk ⇐ ['small', 'whole']; Hot Chocolate Oat Milk ⇐ ['medium', 'oat']; Hot Chocolate Soy Milk ⇐ ['small', 'soy']; Hot Chocolate Oat Milk ⇐ ['oat', 'small']; Hot Chocolate Skim Milk ⇐ ['large', 'skim']; Hot Chocolate Whole Milk ⇐ ['medium', 'whole']
+- `Hot Chocolate` → **Hot Chocolate Whole Milk** (Large (582g), 560 kcal) [variant]
+- `Dirty Chai` variants: Dirty Chai Tea Latte Oat Milk ⇐ ['latte', 'medium', 'oat', 'tea']; Dirty Chai Tea Latte Skim Milk ⇐ ['latte', 'medium', 'skim', 'tea']; Dirty Chai Tea Latte Soy Milk ⇐ ['latte', 'small', 'soy', 'tea']; Dirty Chai Tea Latte Whole Milk ⇐ ['large', 'latte', 'tea', 'whole']; Iced Dirty Chai Tea Latte Oat ⇐ ['iced', 'latte', 'medium', 'oat', 'tea']; Iced Dirty Chai Tea Latte Skim ⇐ ['iced', 'latte', 'medium', 'skim', 'tea']; Iced Dirty Chai Tea Latte Soy ⇐ ['iced', 'latte', 'medium', 'soy', 'tea']; Iced Dirty Chai Tea Latte Whole ⇐ ['iced', 'latte', 'medium', 'tea', 'whole']; Dirty Chai Tea Latte Skim Milk ⇐ ['large', 'latte', 'skim', 'tea']; Dirty Chai Tea Latte Skim Milk ⇐ ['latte', 'skim', 'small', 'tea']; Dirty Chai Tea Latte Whole Milk ⇐ ['latte', 'medium', 'tea', 'whole']; Dirty Chai Tea Latte Soy Milk ⇐ ['large', 'latte', 'soy', 'tea']; Dirty Chai Tea Latte Soy Milk ⇐ ['latte', 'medium', 'soy', 'tea']; Dirty Chai Tea Latte Oat Milk ⇐ ['large', 'latte', 'oat', 'tea']; Dirty Chai Tea Latte Oat Milk ⇐ ['latte', 'oat', 'small', 'tea']
 - ❔ `Dirty Chai` unmatched (closest: Dirty Chai Tea Latte Oat Milk 0.76)
-- `Cafe Au Lait` variants: Cafe Au Lait Oat Milk ⇐ ['oat', 'small']; Cafe Au Lait Skim Milk ⇐ ['medium', 'skim']; Cafe Au Lait Skim Milk ⇐ ['skim', 'small']; Cafe Au Lait Soy Milk ⇐ ['medium', 'soy']; Cafe Au Lait Soy Milk ⇐ ['small', 'soy']; Cafe Au Lait Whole Milk ⇐ ['medium', 'whole']; Iced Cafe Au Lait Oat Milk ⇐ ['iced', 'medium', 'oat']; Iced Cafe Au Lait Skim Milk ⇐ ['iced', 'medium', 'skim']; Iced Cafe Au Lait Soy Milk ⇐ ['iced', 'medium', 'soy']; Iced Cafe Au Lait Whole Milk ⇐ ['iced', 'medium', 'whole']; Cafe Au Lait Soy Milk ⇐ ['large', 'soy']; Cafe Au Lait Whole Milk ⇐ ['large', 'whole']; Cafe Au Lait Oat Milk ⇐ ['medium', 'oat']; Cafe Au Lait Skim Milk ⇐ ['large', 'skim']; Cafe Au Lait Whole Milk ⇐ ['small', 'whole']; Cafe Au Lait Oat Milk ⇐ ['large', 'oat']
+- `Caramelado` variants: Caramelado Oat Milk ⇐ ['oat', 'small']; Caramelado Skim Milk ⇐ ['skim', 'small']; Caramelado Soy Milk ⇐ ['medium', 'soy']; Carmelado Whole Milk ⇐ ['medium', 'whole']; Iced Caramelado Skim Milk ⇐ ['iced', 'medium', 'skim']; Iced Caramelado Soy Milk ⇐ ['iced', 'medium', 'soy']; Iced Caramelado Whole Milk ⇐ ['iced', 'medium', 'whole']; Iced Carmelado Oat Milk ⇐ ['iced', 'medium', 'oat']; Caramelado Oat Milk ⇐ ['large', 'oat']; Caramelado Skim Milk ⇐ ['large', 'skim']; Caramelado Soy Milk ⇐ ['large', 'soy']; Carmelado Whole Milk ⇐ ['large', 'whole']; Caramelado Skim Milk ⇐ ['medium', 'skim']; Carmelado Whole Milk ⇐ ['small', 'whole']; Caramelado Oat Milk ⇐ ['medium', 'oat']; Caramelado Soy Milk ⇐ ['small', 'soy']
+- `Caramelado` → **Carmelado Whole Milk** (Medium (454g), 400 kcal) [variant]
+- `Cafe Au Lait` variants: Cafe Au Lait Oat Milk ⇐ ['oat', 'small']; Cafe Au Lait Skim Milk ⇐ ['large', 'skim']; Cafe Au Lait Soy Milk ⇐ ['small', 'soy']; Cafe Au Lait Whole Milk ⇐ ['medium', 'whole']; Iced Cafe Au Lait Oat Milk ⇐ ['iced', 'medium', 'oat']; Iced Cafe Au Lait Skim Milk ⇐ ['iced', 'medium', 'skim']; Iced Cafe Au Lait Soy Milk ⇐ ['iced', 'medium', 'soy']; Iced Cafe Au Lait Whole Milk ⇐ ['iced', 'medium', 'whole']; Cafe Au Lait Skim Milk ⇐ ['medium', 'skim']; Cafe Au Lait Skim Milk ⇐ ['skim', 'small']; Cafe Au Lait Soy Milk ⇐ ['medium', 'soy']; Cafe Au Lait Soy Milk ⇐ ['large', 'soy']; Cafe Au Lait Whole Milk ⇐ ['large', 'whole']; Cafe Au Lait Oat Milk ⇐ ['medium', 'oat']; Cafe Au Lait Whole Milk ⇐ ['small', 'whole']; Cafe Au Lait Oat Milk ⇐ ['large', 'oat']
 - `Cafe Au Lait` → **Cafe Au Lait Whole Milk** (Medium (454g), 150 kcal) [variant]
-- `Hot Chocolate` variants: Hot Chocolate Oat Milk ⇐ ['large', 'oat']; Hot Chocolate Skim Milk ⇐ ['skim', 'small']; Hot Chocolate Soy Milk ⇐ ['medium', 'soy']; Hot Chocolate Whole Milk ⇐ ['small', 'whole']; Hot Chocolate Oat Milk ⇐ ['medium', 'oat']; Hot Chocolate Skim Milk ⇐ ['medium', 'skim']; Hot Chocolate Soy Milk ⇐ ['small', 'soy']; Hot Chocolate Soy Milk ⇐ ['large', 'soy']; Hot Chocolate Oat Milk ⇐ ['oat', 'small']; Hot Chocolate Skim Milk ⇐ ['large', 'skim']; Hot Chocolate Whole Milk ⇐ ['medium', 'whole']; Hot Chocolate Whole Milk ⇐ ['large', 'whole']
-- `Hot Chocolate` → **Hot Chocolate Whole Milk** (Small (349g), 330 kcal) [variant]
-- `Caramelado` variants: Caramelado Oat Milk ⇐ ['large', 'oat']; Caramelado Skim Milk ⇐ ['large', 'skim']; Caramelado Soy Milk ⇐ ['large', 'soy']; Carmelado Whole Milk ⇐ ['large', 'whole']; Iced Caramelado Skim Milk ⇐ ['iced', 'medium', 'skim']; Iced Caramelado Soy Milk ⇐ ['iced', 'medium', 'soy']; Iced Caramelado Whole Milk ⇐ ['iced', 'medium', 'whole']; Iced Carmelado Oat Milk ⇐ ['iced', 'medium', 'oat']; Caramelado Skim Milk ⇐ ['medium', 'skim']; Caramelado Skim Milk ⇐ ['skim', 'small']; Caramelado Soy Milk ⇐ ['medium', 'soy']; Carmelado Whole Milk ⇐ ['small', 'whole']; Caramelado Oat Milk ⇐ ['medium', 'oat']; Carmelado Whole Milk ⇐ ['medium', 'whole']; Caramelado Oat Milk ⇐ ['oat', 'small']; Caramelado Soy Milk ⇐ ['small', 'soy']
-- `Caramelado` → **Carmelado Whole Milk** (Large (567g), 490 kcal) [variant]
-- `Chai Latte` variants: Chai Tea Latte Oat Milk ⇐ ['large', 'oat', 'tea']; Chai Tea Latte Skim Milk ⇐ ['skim', 'small', 'tea']; Chai Tea Latte Soy Milk ⇐ ['small', 'soy', 'tea']; Chai Tea Latte Whole Milk ⇐ ['large', 'tea', 'whole']; Iced Chai Tea Latte Skim Milk ⇐ ['iced', 'medium', 'skim', 'tea']; Iced Chai Tea Latte Soy Milk ⇐ ['iced', 'medium', 'soy', 'tea']; Iced Chai Tea Latte Whole Milk ⇐ ['iced', 'medium', 'tea', 'whole']; Chai Tea Latte Skim Milk ⇐ ['large', 'skim', 'tea']; Chai Tea Latte Oat Milk ⇐ ['oat', 'small', 'tea']; Chai Tea Latte Soy Milk ⇐ ['medium', 'soy', 'tea']; Chai Tea Latte Whole Milk ⇐ ['medium', 'tea', 'whole']; Chai Tea Latte Whole Milk ⇐ ['small', 'tea', 'whole']; Chai Tea Latte Soy Milk ⇐ ['large', 'soy', 'tea']; Chai Tea Latte Oat Milk ⇐ ['medium', 'oat', 'tea']
-- ❔ `Chai Latte` unmatched (closest: Chai Tea Latte Oat Milk 0.77)
+- `Hot Tea` → **Hot Tea** (Small (328g), 0 kcal) [exact 2.00]
+- `Steamer` variants: Steamer Oat Milk ⇐ ['oat', 'small']; Steamer Skim Milk ⇐ ['medium', 'skim']; Steamer Soy Milk ⇐ ['small', 'soy']; Steamer Whole Milk ⇐ ['large', 'whole']; Steamer Oat Milk ⇐ ['medium', 'oat']; Steamer Skim Milk ⇐ ['large', 'skim']; Steamer Whole Milk ⇐ ['small', 'whole']; Steamer Soy Milk ⇐ ['medium', 'soy']; Steamer Whole Milk ⇐ ['medium', 'whole']; Steamer Skim Milk ⇐ ['skim', 'small']; Steamer Soy Milk ⇐ ['large', 'soy']; Steamer Oat Milk ⇐ ['large', 'oat']
+- `Steamer` → **Steamer Whole Milk** (Small (340g), 220 kcal) [variant]
+- ❔ `White Choc Mocha` unmatched (closest: White Chocolate Cranberry Cookie 0.63)
 - `Red Eye` variants: Iced Red Eye ⇐ ['iced', 'medium']; Red Eye ⇐ ['small']; Red Eye ⇐ ['large']; Red Eye ⇐ ['medium']
 - `Red Eye` → **Red Eye** (Small (340g), 0 kcal) [exact 2.02]
-- `Latte` variants: Chai Tea Latte Oat Milk ⇐ ['chai', 'large', 'oat', 'tea']; Chai Tea Latte Skim Milk ⇐ ['chai', 'skim', 'small', 'tea']; Chai Tea Latte Soy Milk ⇐ ['chai', 'small', 'soy', 'tea']; Chai Tea Latte Whole Milk ⇐ ['chai', 'large', 'tea', 'whole']; Iced Chai Tea Latte Skim Milk ⇐ ['chai', 'iced', 'medium', 'skim', 'tea']; Iced Chai Tea Latte Soy Milk ⇐ ['chai', 'iced', 'medium', 'soy', 'tea']; Iced Chai Tea Latte Whole Milk ⇐ ['chai', 'iced', 'medium', 'tea', 'whole']; Iced Latte Oat Milk ⇐ ['iced', 'medium', 'oat']; Iced Latte Skim Milk ⇐ ['iced', 'medium', 'skim']; Iced Latte Whole Milk ⇐ ['iced', 'medium', 'whole']; Latte Oat Milk ⇐ ['oat', 'small']; Latte Skim Milk ⇐ ['medium', 'skim']; Latte Soy Milk ⇐ ['medium', 'soy']; Latte Whole Milk ⇐ ['large', 'whole']; Latte Soy Milk ⇐ ['large', 'soy']; Chai Tea Latte Skim Milk ⇐ ['chai', 'large', 'skim', 'tea']; Chai Tea Latte Oat Milk ⇐ ['chai', 'oat', 'small', 'tea']; Chai Tea Latte Soy Milk ⇐ ['chai', 'medium', 'soy', 'tea']; Chai Tea Latte Whole Milk ⇐ ['chai', 'medium', 'tea', 'whole']; Chai Tea Latte Whole Milk ⇐ ['chai', 'small', 'tea', 'whole']; Latte Oat Milk ⇐ ['large', 'oat']; Latte Oat Milk ⇐ ['medium', 'oat']; Latte Skim Milk ⇐ ['skim', 'small']; Latte Soy Milk ⇐ ['small', 'soy']; Latte Whole Milk ⇐ ['small', 'whole']; Chai Tea Latte Soy Milk ⇐ ['chai', 'large', 'soy', 'tea']; Chai Tea Latte Oat Milk ⇐ ['chai', 'medium', 'oat', 'tea']; Latte Skim Milk ⇐ ['large', 'skim']
+- `Latte` variants: Chai Tea Latte Oat Milk ⇐ ['chai', 'large', 'oat', 'tea']; Chai Tea Latte Skim Milk ⇐ ['chai', 'skim', 'small', 'tea']; Chai Tea Latte Soy Milk ⇐ ['chai', 'medium', 'soy', 'tea']; Chai Tea Latte Whole Milk ⇐ ['chai', 'small', 'tea', 'whole']; Iced Chai Tea Latte Skim Milk ⇐ ['chai', 'iced', 'medium', 'skim', 'tea']; Iced Chai Tea Latte Soy Milk ⇐ ['chai', 'iced', 'medium', 'soy', 'tea']; Iced Chai Tea Latte Whole Milk ⇐ ['chai', 'iced', 'medium', 'tea', 'whole']; Iced Latte Oat Milk ⇐ ['iced', 'medium', 'oat']; Iced Latte Skim Milk ⇐ ['iced', 'medium', 'skim']; Iced Latte Whole Milk ⇐ ['iced', 'medium', 'whole']; Latte Oat Milk ⇐ ['medium', 'oat']; Latte Skim Milk ⇐ ['medium', 'skim']; Latte Soy Milk ⇐ ['small', 'soy']; Latte Whole Milk ⇐ ['large', 'whole']; Chai Tea Latte Soy Milk ⇐ ['chai', 'small', 'soy', 'tea']; Chai Tea Latte Whole Milk ⇐ ['chai', 'large', 'tea', 'whole']; Latte Oat Milk ⇐ ['oat', 'small']; Latte Soy Milk ⇐ ['medium', 'soy']; Latte Soy Milk ⇐ ['large', 'soy']; Chai Tea Latte Skim Milk ⇐ ['chai', 'large', 'skim', 'tea']; Chai Tea Latte Oat Milk ⇐ ['chai', 'oat', 'small', 'tea']; Chai Tea Latte Whole Milk ⇐ ['chai', 'medium', 'tea', 'whole']; Latte Oat Milk ⇐ ['large', 'oat']; Latte Skim Milk ⇐ ['skim', 'small']; Latte Whole Milk ⇐ ['small', 'whole']; Chai Tea Latte Soy Milk ⇐ ['chai', 'large', 'soy', 'tea']; Chai Tea Latte Oat Milk ⇐ ['chai', 'medium', 'oat', 'tea']; Latte Skim Milk ⇐ ['large', 'skim']
 - `Latte` → **Latte Whole Milk** (Large (598g), 340 kcal) [variant]
-- ❔ `White Choc Mocha` unmatched (closest: White Chocolate Cranberry Cookie 0.63)
-- `Steamer` variants: Steamer Oat Milk ⇐ ['medium', 'oat']; Steamer Skim Milk ⇐ ['large', 'skim']; Steamer Soy Milk ⇐ ['small', 'soy']; Steamer Whole Milk ⇐ ['small', 'whole']; Steamer Soy Milk ⇐ ['medium', 'soy']; Steamer Whole Milk ⇐ ['large', 'whole']; Steamer Whole Milk ⇐ ['medium', 'whole']; Steamer Oat Milk ⇐ ['oat', 'small']; Steamer Skim Milk ⇐ ['medium', 'skim']; Steamer Skim Milk ⇐ ['skim', 'small']; Steamer Soy Milk ⇐ ['large', 'soy']; Steamer Oat Milk ⇐ ['large', 'oat']
-- `Steamer` → **Steamer Whole Milk** (Small (340g), 220 kcal) [variant]
+- `Chai Latte` variants: Chai Tea Latte Oat Milk ⇐ ['large', 'oat', 'tea']; Chai Tea Latte Skim Milk ⇐ ['skim', 'small', 'tea']; Chai Tea Latte Soy Milk ⇐ ['medium', 'soy', 'tea']; Chai Tea Latte Whole Milk ⇐ ['small', 'tea', 'whole']; Iced Chai Tea Latte Skim Milk ⇐ ['iced', 'medium', 'skim', 'tea']; Iced Chai Tea Latte Soy Milk ⇐ ['iced', 'medium', 'soy', 'tea']; Iced Chai Tea Latte Whole Milk ⇐ ['iced', 'medium', 'tea', 'whole']; Chai Tea Latte Soy Milk ⇐ ['small', 'soy', 'tea']; Chai Tea Latte Whole Milk ⇐ ['large', 'tea', 'whole']; Chai Tea Latte Skim Milk ⇐ ['large', 'skim', 'tea']; Chai Tea Latte Oat Milk ⇐ ['oat', 'small', 'tea']; Chai Tea Latte Whole Milk ⇐ ['medium', 'tea', 'whole']; Chai Tea Latte Soy Milk ⇐ ['large', 'soy', 'tea']; Chai Tea Latte Oat Milk ⇐ ['medium', 'oat', 'tea']
+- ❔ `Chai Latte` unmatched (closest: Chai Tea Latte Oat Milk 0.77)
 
 **Cold Beverages**
-- ❔ `Gold Peak Sweet Tea` unmatched (closest: Gold Peak Sweetened Tea 0.70)
 - ❔ `Gold Peak Unsweet Tea` unmatched (closest: Gold Peak Sweetened Tea 0.68)
+- ❔ `Gold Peak Sweet Tea` unmatched (closest: Gold Peak Sweetened Tea 0.70)
 - ❔ `Gold Peak Green Tea` unmatched (closest: Gold Peak Sweetened Tea 0.70)
 
 **Breakfast**
-- `Egg and Cheese Burrito` → **Egg and Cheese Burrito** (Wrap (329g), 690 kcal) [exact 2.00]
 - `Burrito` variants: Chicken Burrito ⇐ ['chicken']; Bacon Egg and Cheese Burrito ⇐ ['bacon', 'cheese', 'egg']; Egg and Cheese Burrito ⇐ ['cheese', 'egg']
+- `Egg and Cheese Burrito` → **Egg and Cheese Burrito** (Wrap (329g), 690 kcal) [exact 2.00]
 
 **Pastries**
-- `Cinnamon Rolls` → **Cinnamon Roll** (Roll (267g), 840 kcal) [exact 2.00]
 - `Cream Cheese` → **Cream Cheese** (Pkg (28g), 70 kcal) [exact 2.00]
-- `Lemon Loaf` → **Lemon Loaf** (Loaf (130g), 260 kcal) [exact 2.00]
-- `Triple Chocolate Chip Brownie` → **Triple Chocolate Chip Brownie** (8x10 Cut Serving (93g), 370 kcal) [exact 2.00]
-- ❔ `Rice Krispy Treat` unmatched (closest: Rice Krispie Treat 0.65)
-- `Cherry Turnover` → **Cherry Turnover** (Turnover (133g), 390 kcal) [exact 2.00]
 - ❔ `Biscotti` unmatched (closest: Biscotti TC 0.80)
-- `Scones` variants: Blueberry Scone ⇐ ['blueberry']; Apple Cinnamon Scone ⇐ ['apple', 'cinnamon']; Cranberry Orange Scone ⇐ ['cranberry', 'orange']
-- ❔ `Scones` unmatched (closest: Blueberry Scone 0.78)
+- `Lemon Loaf` → **Lemon Loaf** (Loaf (130g), 260 kcal) [exact 2.00]
+- `Cherry Turnover` → **Cherry Turnover** (Turnover (133g), 390 kcal) [exact 2.00]
+- ❔ `Rice Krispy Treat` unmatched (closest: Rice Krispie Treat 0.65)
+- `Cinnamon Rolls` → **Cinnamon Roll** (Roll (267g), 840 kcal) [exact 2.00]
 - `Bagel` variants: Cinnamon Bagel ⇐ ['cinnamon']
 - ❔ `Bagel` unmatched (closest: Cinnamon Bagel 0.81)
-- `Muffin` variants: Blueberry Muffin ⇐ ['blueberry']; Orange Blossom Muffin ⇐ ['blossom', 'orange']; Chocolate Chip Muffin ⇐ ['chip', 'chocolate']; Apple Cinnamon Muffin ⇐ ['apple', 'cinnamon']
+- `Muffin` variants: Chocolate Chip Muffin ⇐ ['chip', 'chocolate']; Blueberry Muffin ⇐ ['blueberry']; Orange Blossom Muffin ⇐ ['blossom', 'orange']; Apple Cinnamon Muffin ⇐ ['apple', 'cinnamon']
 - ❔ `Muffin` unmatched (closest: Blueberry Muffin 0.77)
+- `Scones` variants: Apple Cinnamon Scone ⇐ ['apple', 'cinnamon']; Blueberry Scone ⇐ ['blueberry']; Cranberry Orange Scone ⇐ ['cranberry', 'orange']
+- ❔ `Scones` unmatched (closest: Blueberry Scone 0.78)
+- `Triple Chocolate Chip Brownie` → **Triple Chocolate Chip Brownie** (8x10 Cut Serving (93g), 370 kcal) [exact 2.00]
 - `Croissant` → **Butter Croissant** (Pastry (85g), 310 kcal) [manual]
 
 **Grab & Go**
 - `Boiled Eggs` → **Hard Boiled Eggs** (2 Egg Serving (94g), 150 kcal) [manual]
-- `Chicken Salad 8oz` → **Chicken Salad** (8 oz Container (227g), 540 kcal) [manual]
 - ❔ `Tuna Salad 8oz` unmatched (closest: Tuna Salad 0.75)
+- `Chicken Salad 8oz` → **Chicken Salad** (8 oz Container (227g), 540 kcal) [manual]
 - `Caesar Salad` → **Caesar Salad** (Salad (142g), 210 kcal) [exact 2.00]
 - `Chicken Caesar Salad` → **Chicken Caesar Salad** (Salad (198g), 300 kcal) [exact 2.00]
 - `Garden Salad` → **Garden Salad** (Salad (184g), 35 kcal) [exact 2.00]
@@ -3358,10 +3358,10 @@ Source: mobile_order; NetNutrition units: Trinity Cafe (283 labels). Items with 
 - ❔ `Marinara & Mozzarella Cheese Pasta Bake` unmatched (closest: Macaroni and Cheese Pasta Bake 0.62)
 
 **Sandwiches**
+- `Chicken Salad Croissant` → **Chicken Salad Croissant** (Sandwich (213g), 670 kcal) [exact 2.02]
 - ❔ `BBQ Turkey Sandwich` unmatched (closest: Turkey and Provolone on White Sandwich 0.56)
 - `Vegan Tuna Sandwich` → **Vegan Tuna Sandwich** (Sandwich (247g), 540 kcal) [exact 2.00]
 - ❔ `Sun Butter and Jelly` unmatched (closest: Butter 0.61)
-- `Chicken Salad Croissant` → **Chicken Salad Croissant** (Sandwich (213g), 670 kcal) [exact 2.02]
 - `Ham and Provolone Sandwich on White` → **Ham and Provolone on White Sandwich** (Sandwich (172g), 440 kcal) [exact 2.00]
 - `Turkey and Provolone Sandwich on White` → **Turkey and Provolone on White Sandwich** (Sandwich (170g), 370 kcal) [exact 2.00]
 - `Turkey Bacon Club Ciabatta` → **Turkey and Bacon Club Ciabatta** (Sandwich (258g), 690 kcal) [exact 2.02]
@@ -3373,8 +3373,8 @@ Source: mobile_order; NetNutrition units: Trinity Cafe (283 labels). Items with 
 
 **Option values**
 
-- `2% milk` → —
 - `2% Milk` → —
+- `2% milk` → —
 - `Agave` → —
 - `Alpine Berry` → —
 - `Apple Cinnamon` → —
@@ -3609,7 +3609,7 @@ Source: mobile_order; NetNutrition units: Zweli's Café at Duke Divinity (47 lab
 
 ## Marketplace
 
-Source: netnutrition; NetNutrition units: Marketplace (1126 labels). Items with nutrition: 976/976 (100%); base labels 976, composed 0; option components matched -.
+Source: netnutrition; NetNutrition units: Marketplace (1128 labels). Items with nutrition: 976/976 (100%); base labels 976, composed 0; option components matched -.
 
 
 ## Duke Marine Lab
