@@ -4,10 +4,10 @@
   "location_id": 2272,
   "cafeteria_id": 2079,
   "icon_image_url": "campuses/icon_location_19_18_127_1735832782689.jpg",
-  "estimated_wait_time_minutes": 12,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "10:30:00",
     "close": "15:30:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-17 15:37:40",
-  "menu_last_updated": "2026-11-17 15:37:41",
+  "retrieved_at": "2026-11-17 18:56:05",
+  "menu_last_updated": "2026-11-17 18:56:06",
   "sections": [
     {
       "name": "Specials",
@@ -129,8 +129,8 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Black & Blue Smasher",
-          "description": "Single or double smashburger steak seasoning marbled blue cheese smoked bacon caramelized onion and garlic aioli. All Smashers served on a butter-toasted potato bun. Includes a side.",
+          "name": "Perlas Latin Smasher",
+          "description": "Single or double smashburger pepperjack cheese jalapenos pico de gallo guacamole and cilantro aioli. All Smashers served on a butter-toasted potato bun. Includes a side.",
           "price": 0.0,
           "options": [
             {
@@ -158,22 +158,14 @@
               ]
             },
             {
-              "name": "Black and Blue Smasher Toppings",
+              "name": "Perlas Smasher Toppings",
               "minimum": 0,
               "maximum": 50,
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "No Bacon",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Carmelized Onion",
-                  "price": 0.0,
+                  "name": "Add Bacon",
+                  "price": 1.25,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -188,7 +180,23 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Garlic Aioli",
+                  "name": "No Cilantro Aioli",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Guacamole",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Jalapenos",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -831,8 +839,8 @@
           "is_hidden": false
         },
         {
-          "name": "Classic Smasher",
-          "description": "Single or double smashburger American cheese lettuce onion tomato pickle mayonnaise and ketchup. All Smashers served on a butter-toasted potato bun. Includes a side.",
+          "name": "Black & Blue Smasher",
+          "description": "Single or double smashburger steak seasoning marbled blue cheese smoked bacon caramelized onion and garlic aioli. All Smashers served on a butter-toasted potato bun. Includes a side.",
           "price": 0.0,
           "options": [
             {
@@ -860,14 +868,22 @@
               ]
             },
             {
-              "name": "Classic Smasher Toppings",
+              "name": "Black and Blue Smasher Toppings",
               "minimum": 0,
               "maximum": 50,
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Add Bacon",
-                  "price": 1.25,
+                  "name": "No Bacon",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Carmelized Onion",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -882,39 +898,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Ketchup",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Lettuce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Mayo",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Onion",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Tomato",
+                  "name": "No Garlic Aioli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1081,8 +1065,8 @@
           "is_hidden": false
         },
         {
-          "name": "Perlas Latin Smasher",
-          "description": "Single or double smashburger pepperjack cheese jalapenos pico de gallo guacamole and cilantro aioli. All Smashers served on a butter-toasted potato bun. Includes a side.",
+          "name": "Classic Smasher",
+          "description": "Single or double smashburger American cheese lettuce onion tomato pickle mayonnaise and ketchup. All Smashers served on a butter-toasted potato bun. Includes a side.",
           "price": 0.0,
           "options": [
             {
@@ -1110,7 +1094,7 @@
               ]
             },
             {
-              "name": "Perlas Smasher Toppings",
+              "name": "Classic Smasher Toppings",
               "minimum": 0,
               "maximum": 50,
               "allow_quantity": false,
@@ -1132,7 +1116,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Cilantro Aioli",
+                  "name": "No Ketchup",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1140,7 +1124,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Guacamole",
+                  "name": "No Lettuce",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1148,7 +1132,23 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Jalapenos",
+                  "name": "No Mayo",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Tomato",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1618,6 +1618,15 @@
       "is_hidden": false,
       "items": [
         {
+          "name": "Bottled Water",
+          "description": "",
+          "price": 2.25,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Farmers Punch",
           "description": "Refresher made with cherry pomegranate and mango juices.",
           "price": 4.29,
@@ -1633,15 +1642,6 @@
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Bottled Water",
-          "description": "",
-          "price": 2.25,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
           "is_hidden": false
         },
         {
