@@ -4,7 +4,7 @@
   "location_id": 964,
   "cafeteria_id": 856,
   "icon_image_url": "campuses/icon_location_19_18_129_1610975062760.jpg",
-  "estimated_wait_time_minutes": 12,
+  "estimated_wait_time_minutes": 24,
   "currently_open": true,
   "takeout_open": true,
   "delivery_open": false,
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-17 12:51:19",
-  "menu_last_updated": "2026-11-17 12:51:20",
+  "retrieved_at": "2026-11-17 16:08:01",
+  "menu_last_updated": "2026-11-17 16:08:02",
   "sections": [
     {
       "name": "Specials",
@@ -4817,6 +4817,30 @@
           "price": 1.99,
           "options": [
             {
+              "name": "Plain Pancake Option",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Single Plain Pancake",
+                  "price": 1.99,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Double Plain Pancake",
+                  "price": 3.99,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
               "name": "Add Ons",
               "minimum": 0,
               "maximum": 50,
@@ -4865,30 +4889,6 @@
                 {
                   "name": "Add Whipped Cream",
                   "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Plain Pancake Option",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Single Plain Pancake",
-                  "price": 1.99,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Double Plain Pancake",
-                  "price": 3.99,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -7084,114 +7084,6 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Bacon",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Southern Grits",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Country Ham",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Mixed Fruit",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Tater Tots",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Turkey Sausage",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Vanilla Greek Yogurt Cup",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Whole Red Delicious Apple",
-          "description": "",
-          "price": 1.49,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Whole Banana",
-          "description": "",
-          "price": 0.99,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Whole Orange",
-          "description": "",
-          "price": 1.29,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Plain Grits",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Morning Star Sausage",
-          "description": "",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "2 Eggs",
           "description": "",
           "price": 1.99,
@@ -7285,6 +7177,147 @@
               ]
             }
           ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Bacon",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Southern Grits",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Country Ham",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Mixed Fruit",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Morning Star Sausage",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Tater Tots",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Pork Sausage",
+          "description": "",
+          "price": 3.19,
+          "options": [
+            {
+              "name": "Sausage Selection",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Pork Sausage Patty",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Turkey Sausage Link",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Veggie Sausage Patty",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Turkey Sausage",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Vanilla Greek Yogurt Cup",
+          "description": "",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Whole Red Delicious Apple",
+          "description": "",
+          "price": 1.49,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Whole Banana",
+          "description": "",
+          "price": 0.99,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Whole Orange",
+          "description": "",
+          "price": 1.29,
+          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -7388,43 +7421,10 @@
           "is_hidden": false
         },
         {
-          "name": "Pork Sausage",
+          "name": "Plain Grits",
           "description": "",
           "price": 3.19,
-          "options": [
-            {
-              "name": "Sausage Selection",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Pork Sausage Patty",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Turkey Sausage Link",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Veggie Sausage Patty",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
+          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -7470,33 +7470,6 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Fair Life Strawberry Milk",
-          "description": "",
-          "price": 3.69,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Body Armor",
-          "description": "",
-          "price": 4.19,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Smartwater 20oz",
-          "description": "",
-          "price": 2.09,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Dasani Water 20 oz",
           "description": "",
           "price": 1.69,
@@ -7536,6 +7509,33 @@
           "name": "Fair Life Chocolate Milk",
           "description": "",
           "price": 3.69,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Fair Life Strawberry Milk",
+          "description": "",
+          "price": 3.69,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Body Armor",
+          "description": "",
+          "price": 4.19,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Smartwater 20oz",
+          "description": "",
+          "price": 2.09,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,

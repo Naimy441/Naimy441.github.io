@@ -4,9 +4,9 @@
   "location_id": 232,
   "cafeteria_id": 190,
   "icon_image_url": "campuses/icon_restaurant_19_18_129_1594924426731.jpg",
-  "estimated_wait_time_minutes": 0,
-  "currently_open": false,
-  "takeout_open": false,
+  "estimated_wait_time_minutes": 12,
+  "currently_open": true,
+  "takeout_open": true,
   "delivery_open": false,
   "takeout_hours": {
     "open": "11:00:00",
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-16 21:43:58",
-  "menu_last_updated": "2026-11-16 21:43:59",
+  "retrieved_at": "2026-11-17 16:08:53",
+  "menu_last_updated": "2026-11-17 16:08:54",
   "sections": [
     {
       "name": "Specials",
@@ -2173,66 +2173,10 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Beef Skewer",
+          "name": "Bone-In Pork Chop 6 oz",
           "description": "",
-          "price": 14.99,
+          "price": 13.99,
           "options": [
-            {
-              "name": "Temps",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": false,
-              "values": [
-                {
-                  "name": "Medium",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Medium Rare",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Medium Well",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Temp",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Rare",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Well Done",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
             {
               "name": "Pick Two Entree Sides",
               "minimum": 0,
@@ -2961,10 +2905,66 @@
           "is_hidden": false
         },
         {
-          "name": "Bone-In Pork Chop 6 oz",
+          "name": "Beef Skewer",
           "description": "",
-          "price": 13.99,
+          "price": 14.99,
           "options": [
+            {
+              "name": "Temps",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": false,
+              "values": [
+                {
+                  "name": "Medium",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Medium Rare",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Medium Well",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Temp",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Rare",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Well Done",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
             {
               "name": "Pick Two Entree Sides",
               "minimum": 0,
@@ -6272,15 +6272,6 @@
           "is_hidden": false
         },
         {
-          "name": "8oz Prime Rib",
-          "description": "",
-          "price": 20.79,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "5oz Prime Rib",
           "description": "",
           "price": 13.55,
@@ -6290,9 +6281,9 @@
           "is_hidden": false
         },
         {
-          "name": "Shrimp Skewer",
+          "name": "8oz Prime Rib",
           "description": "",
-          "price": 5.35,
+          "price": 20.79,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -6302,6 +6293,15 @@
           "name": "Half Chicken a la Brasa",
           "description": "",
           "price": 8.55,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Shrimp Skewer",
+          "description": "",
+          "price": 5.35,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -7902,54 +7902,6 @@
               ]
             },
             {
-              "name": "Black and Blue Burger Modifications",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "No Blue Cheese",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Changes",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Green Mustard",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Mixed Greens",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Red Onion",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
               "name": "Pick Sandwich Side",
               "minimum": 0,
               "maximum": 1,
@@ -8045,6 +7997,54 @@
                 },
                 {
                   "name": "Twice Baked Potato",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Black and Blue Burger Modifications",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "No Blue Cheese",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Changes",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Green Mustard",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Mixed Greens",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Red Onion",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -8889,18 +8889,18 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Tiramisu",
-          "description": "Mascarpone Cream On Coffee And Rum Soaked Sponge Cake and Dusted With Imported Cocoa.",
-          "price": 6.45,
+          "name": "Flourless Chocolate Cake",
+          "description": "Made with a blend of four chocolates and finished with ganache. Gluten Friendly",
+          "price": 5.35,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
         },
         {
-          "name": "Flourless Chocolate Cake",
-          "description": "Made with a blend of four chocolates and finished with ganache. Gluten Friendly",
-          "price": 5.35,
+          "name": "Tiramisu",
+          "description": "Mascarpone Cream On Coffee And Rum Soaked Sponge Cake and Dusted With Imported Cocoa.",
+          "price": 6.45,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -9017,7 +9017,7 @@
       "is_hidden": true,
       "items": [
         {
-          "name": "House Made Steak Sauce",
+          "name": "Chimichurri",
           "description": "",
           "price": 1.09,
           "options": [],
@@ -9035,7 +9035,7 @@
           "is_hidden": false
         },
         {
-          "name": "Red Wine and Shallot Butter",
+          "name": "House Made Steak Sauce",
           "description": "",
           "price": 1.09,
           "options": [],
@@ -9044,7 +9044,7 @@
           "is_hidden": false
         },
         {
-          "name": "Chimichurri",
+          "name": "Red Wine and Shallot Butter",
           "description": "",
           "price": 1.09,
           "options": [],
