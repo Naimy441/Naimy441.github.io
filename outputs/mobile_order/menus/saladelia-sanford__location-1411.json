@@ -4,10 +4,10 @@
   "location_id": 1411,
   "cafeteria_id": 1267,
   "icon_image_url": "campuses/icon_location_19_18_127_1757693875654.jpg",
-  "estimated_wait_time_minutes": 9,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "08:00:00",
     "close": "15:00:00"
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-20 16:47:01",
-  "menu_last_updated": "2026-11-20 16:47:02",
+  "retrieved_at": "2026-11-23 17:38:55",
+  "menu_last_updated": "2026-11-23 17:38:55",
   "sections": [
     {
       "name": "Specials",
@@ -128,6 +128,38 @@
           "description": "",
           "price": 5.0,
           "options": [
+            {
+              "name": "Whole Fruit Option",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Orange",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Apple",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Banana",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
             {
               "name": "Meal Deal Option",
               "minimum": 0,
@@ -143,14 +175,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Blueberry Muffin",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Cardamom",
                   "price": 0.0,
                   "is_default": false,
@@ -159,23 +183,23 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Chocolate Chip Muffin",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chocolate Chip Scone",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Chocolate Croissant",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pumpkin Sweet Bread",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chocolate Chip Muffin",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -199,31 +223,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Pumpkin Sweet Bread",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Whole Fruit Option",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Apple",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Banana",
+                  "name": "Blueberry Muffin",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -231,11 +231,11 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Orange",
+                  "name": "Chocolate Chip Scone",
                   "price": 0.0,
                   "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 }
               ]
@@ -287,7 +287,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Hot",
+                  "name": "Iced",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -295,7 +295,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Iced",
+                  "name": "Hot",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -351,19 +351,19 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Soy Milk",
-                  "price": 0.85,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "2%",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Soy Milk",
+                  "price": 0.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 }
               ]
@@ -419,16 +419,16 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Large",
-                  "price": 5.35,
+                  "name": "Small",
+                  "price": 4.85,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Small",
-                  "price": 4.85,
+                  "name": "Large",
+                  "price": 5.35,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -603,19 +603,19 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Soy Milk",
-                  "price": 0.85,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "2%",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Soy Milk",
+                  "price": 0.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 }
               ]
@@ -627,7 +627,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Hot",
+                  "name": "Iced",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -635,7 +635,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Iced",
+                  "name": "Hot",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -873,19 +873,19 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Soy Milk",
-                  "price": 0.85,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "2%",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Soy Milk",
+                  "price": 0.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 }
               ]
@@ -897,7 +897,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Hot",
+                  "name": "Iced",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -905,7 +905,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Iced",
+                  "name": "Hot",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -979,19 +979,19 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Soy Milk",
-                  "price": 0.85,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "2%",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Soy Milk",
+                  "price": 0.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 }
               ]
@@ -1003,7 +1003,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Hot",
+                  "name": "Iced",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1011,7 +1011,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Iced",
+                  "name": "Hot",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1061,7 +1061,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Hot",
+                  "name": "Iced",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1069,7 +1069,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Iced",
+                  "name": "Hot",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1095,16 +1095,16 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Large",
-                  "price": 5.35,
+                  "name": "Small",
+                  "price": 4.85,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Small",
-                  "price": 4.85,
+                  "name": "Large",
+                  "price": 5.35,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -1225,19 +1225,19 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Soy Milk",
-                  "price": 0.85,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "2%",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Soy Milk",
+                  "price": 0.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 }
               ]
@@ -1307,19 +1307,19 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Soy Milk",
-                  "price": 0.85,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "2%",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Soy Milk",
+                  "price": 0.85,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 }
               ]
@@ -1331,7 +1331,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Hot",
+                  "name": "Iced",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1339,7 +1339,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Iced",
+                  "name": "Hot",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1543,7 +1543,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Hot",
+                  "name": "Iced",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1551,7 +1551,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Iced",
+                  "name": "Hot",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1785,7 +1785,7 @@
         {
           "name": "Reusable Mug Coffee",
           "description": "",
-          "price": 2.79,
+          "price": 2.59,
           "options": [
             {
               "name": "Reusble Mug Coffee Size",
@@ -1794,16 +1794,16 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Large",
-                  "price": 2.79,
+                  "name": "Small",
+                  "price": 2.59,
                   "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Small",
-                  "price": 2.59,
+                  "name": "Large",
+                  "price": 2.79,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -1842,15 +1842,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Chai Fusion",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Mocha Blast",
+                  "name": "Matcha",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1866,16 +1858,24 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Vega Shot",
-                  "price": 1.89,
+                  "name": "Mocha Blast",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Matcha",
+                  "name": "Chai Fusion",
                   "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Vega Shot",
+                  "price": 1.89,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -1900,7 +1900,7 @@
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Jamicame Crazy",
+                  "name": "Rasberry Rush",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
@@ -1908,15 +1908,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Mango Madness",
-                  "price": 0.0,
+                  "name": "Vega Shot",
+                  "price": 1.89,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Rasberry Rush",
+                  "name": "Jamicame Crazy",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
@@ -1932,8 +1932,8 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Vega Shot",
-                  "price": 1.89,
+                  "name": "Mango Madness",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -1953,18 +1953,18 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Salmon Bowl",
+          "name": "Southwest Chicken Bowl",
           "description": "",
-          "price": 13.55,
+          "price": 10.99,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
         },
         {
-          "name": "Southwest Chicken Bowl",
+          "name": "Salmon Bowl",
           "description": "",
-          "price": 10.99,
+          "price": 13.55,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -1977,15 +1977,6 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Breakfast Croissant",
-          "description": "",
-          "price": 6.95,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Chicken Parmesan",
           "description": "",
           "price": 10.69,
@@ -1997,7 +1988,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "No Side Option",
+                  "name": "Sea Salt Kettle Chips",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2005,7 +1996,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Sea Salt Kettle Chips",
+                  "name": "No Side Option",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2311,7 +2302,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Hummus",
+                  "name": "Kale",
                   "price": 2.4,
                   "is_default": false,
                   "is_hidden": true,
@@ -2319,7 +2310,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Kale",
+                  "name": "Hummus",
                   "price": 2.4,
                   "is_default": false,
                   "is_hidden": true,
@@ -2355,15 +2346,6 @@
           ],
           "busy_min": 15,
           "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Chorizo Breakfast Scrambler",
-          "description": "",
-          "price": 6.99,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
           "is_hidden": false
         },
         {
@@ -2506,7 +2488,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Hummus",
+                  "name": "Kale",
                   "price": 2.4,
                   "is_default": false,
                   "is_hidden": true,
@@ -2514,7 +2496,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Kale",
+                  "name": "Hummus",
                   "price": 2.4,
                   "is_default": false,
                   "is_hidden": true,
@@ -2553,6 +2535,15 @@
           "is_hidden": false
         },
         {
+          "name": "Breakfast Croissant",
+          "description": "",
+          "price": 6.95,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "Greek Scrambler",
           "description": "",
           "price": 6.95,
@@ -2564,7 +2555,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "No Side Option",
+                  "name": "Sea Salt Kettle Chips",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2572,7 +2563,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Sea Salt Kettle Chips",
+                  "name": "No Side Option",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2737,6 +2728,15 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
+        },
+        {
+          "name": "Chorizo Breakfast Scrambler",
+          "description": "",
+          "price": 6.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
         }
       ]
     },
@@ -2754,27 +2754,9 @@
           "is_hidden": false
         },
         {
-          "name": "Feta Cilantro Bowtie",
-          "description": "",
-          "price": 5.69,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Chicken Salad Bento Box",
+          "name": "Mediterranean Bento Box",
           "description": "",
           "price": 10.69,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Fresh Fruit",
-          "description": "",
-          "price": 5.35,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -2790,18 +2772,36 @@
           "is_hidden": false
         },
         {
-          "name": "Greek Salad",
+          "name": "Feta Cilantro Bowtie",
           "description": "",
-          "price": 10.19,
+          "price": 5.69,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
         },
         {
-          "name": "Mediterranean Bento Box",
+          "name": "Fresh Fruit",
+          "description": "",
+          "price": 5.35,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Chicken Salad Bento Box",
           "description": "",
           "price": 10.69,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Grilled Rosemary Salmon Salad",
+          "description": "",
+          "price": 12.85,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -2817,9 +2817,9 @@
           "is_hidden": false
         },
         {
-          "name": "Grilled Rosemary Salmon Salad",
+          "name": "Greek Salad",
           "description": "",
-          "price": 12.85,
+          "price": 10.19,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -2849,6 +2849,60 @@
       "name": "Sandwiches & Wraps",
       "is_hidden": false,
       "items": [
+        {
+          "name": "Bacon Jam Club Wrap",
+          "description": "",
+          "price": 8.99,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Caprese Focaccia Panini",
+          "description": "",
+          "price": 9.89,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Chicken Salad Croissant",
+          "description": "",
+          "price": 9.09,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Caprese Focaccia",
+          "description": "",
+          "price": 9.89,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Chicken Quesadilla",
+          "description": "",
+          "price": 7.49,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Southwest Chicken Wrap",
+          "description": "",
+          "price": 9.65,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
         {
           "name": "Chicken Shawarma",
           "description": "",
@@ -2884,60 +2938,6 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
-        },
-        {
-          "name": "Bacon Jam Club Wrap",
-          "description": "",
-          "price": 8.99,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Caprese Focaccia",
-          "description": "",
-          "price": 9.89,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Caprese Focaccia Panini",
-          "description": "",
-          "price": 9.89,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Chicken Quesadilla",
-          "description": "",
-          "price": 7.49,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Chicken Salad Croissant",
-          "description": "",
-          "price": 9.09,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Southwest Chicken Wrap",
-          "description": "",
-          "price": 9.65,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
         }
       ]
     },
@@ -2948,7 +2948,7 @@
         {
           "name": "Breads",
           "description": "",
-          "price": 4.29,
+          "price": 8.58,
           "options": [
             {
               "name": "Bread Options",
@@ -2957,8 +2957,8 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Apple rum raisin",
-                  "price": 0.0,
+                  "name": "Banana",
+                  "price": 4.29,
                   "is_default": true,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -2973,7 +2973,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Lemon",
+                  "name": "Apple rum raisin",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2981,8 +2981,8 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Banana",
-                  "price": 4.29,
+                  "name": "Lemon",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -2991,24 +2991,6 @@
               ]
             }
           ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Chocolate Croissant",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Scone",
-          "description": "",
-          "price": 4.29,
-          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -3018,102 +3000,6 @@
           "description": "",
           "price": 4.09,
           "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Brownie",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Hazelnut Chocolate Candies",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Cheese Danish",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Coconut Macaroon",
-          "description": "",
-          "price": 3.69,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Manhattan Coffee Crumb Cake",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Zaatar Croissant",
-          "description": "",
-          "price": 4.29,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
-          "is_hidden": false
-        },
-        {
-          "name": "Cookie",
-          "description": "",
-          "price": 0.0,
-          "options": [
-            {
-              "name": "Cookie Option",
-              "minimum": 0,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Black & White",
-                  "price": 4.29,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Chocolate Chip",
-                  "price": 2.69,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Oatmeal Raisin",
-                  "price": 2.69,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
@@ -3153,6 +3039,93 @@
           "is_hidden": false
         },
         {
+          "name": "Cookie",
+          "description": "",
+          "price": 0.0,
+          "options": [
+            {
+              "name": "Cookie Option",
+              "minimum": 0,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Oatmeal Raisin",
+                  "price": 2.69,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Black & White",
+                  "price": 4.29,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Chocolate Chip",
+                  "price": 2.69,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Chocolate Croissant",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Hazelnut Chocolate Candies",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Zaatar Croissant",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Scone",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Manhattan Coffee Crumb Cake",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
           "name": "Dessert Bar",
           "description": "",
           "price": 4.29,
@@ -3164,7 +3137,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Cheesecake Brownie",
+                  "name": "Lemon Bar",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -3172,7 +3145,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Lemon Bar",
+                  "name": "Cheesecake Brownie",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -3185,6 +3158,33 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
+        },
+        {
+          "name": "Brownie",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Cheese Danish",
+          "description": "",
+          "price": 4.29,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
+          "name": "Coconut Macaroon",
+          "description": "",
+          "price": 3.69,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
         }
       ]
     },
@@ -3192,15 +3192,6 @@
       "name": "Bottled Beverages",
       "is_hidden": false,
       "items": [
-        {
-          "name": "Kombucha",
-          "description": "",
-          "price": 5.99,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
         {
           "name": "Boxed Water",
           "description": "",
@@ -3211,18 +3202,18 @@
           "is_hidden": false
         },
         {
-          "name": "Natalies Juice",
+          "name": "Kombucha",
           "description": "",
-          "price": 3.85,
+          "price": 5.99,
           "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
+          "busy_min": 15,
+          "normal_min": 10,
           "is_hidden": false
         },
         {
-          "name": "Olipop",
+          "name": "Natalies Juice",
           "description": "",
-          "price": 4.49,
+          "price": 3.85,
           "options": [],
           "busy_min": 5,
           "normal_min": 3,
@@ -3249,7 +3240,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Coke",
+                  "name": "Diet Coke",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -3257,7 +3248,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Diet Coke",
+                  "name": "Coke",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -3269,6 +3260,15 @@
           ],
           "busy_min": 15,
           "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Olipop",
+          "description": "",
+          "price": 4.49,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
           "is_hidden": false
         }
       ]
