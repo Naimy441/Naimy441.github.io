@@ -10,11 +10,11 @@
   "delivery_open": true,
   "takeout_hours": {
     "open": "07:00:00",
-    "close": "20:30:00"
+    "close": "19:30:00"
   },
   "delivery_hours": {
     "open": "07:00:00",
-    "close": "20:30:00"
+    "close": "19:30:00"
   },
   "hours": {
     "Monday": {
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-22 20:54:46",
-  "menu_last_updated": "2026-11-22 20:54:46",
+  "retrieved_at": "2026-11-24 00:20:20",
+  "menu_last_updated": "2026-11-24 00:20:21",
   "sections": [
     {
       "name": "Delivery",
@@ -155,7 +155,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Kale",
+                  "name": "Arugula",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
@@ -163,7 +163,7 @@
                   "max_quantity": 2
                 },
                 {
-                  "name": "Arugula",
+                  "name": "Kale",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
@@ -187,35 +187,11 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Pickled Jalapenos",
+                  "name": "Avocado",
                   "price": 0.0,
                   "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Roasted Mushrooms",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Broccoli",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Peppers",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
@@ -227,35 +203,11 @@
                   "max_quantity": 2
                 },
                 {
-                  "name": "Carrot",
+                  "name": "Broccoli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "White Beans",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Marinated Mushrooms",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Avocado",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
@@ -267,7 +219,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Kalamata Olives",
+                  "name": "Carrot",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -283,7 +235,39 @@
                   "max_quantity": 2
                 },
                 {
+                  "name": "Kalamata Olives",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 2
+                },
+                {
+                  "name": "Marinated Mushrooms",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 2
+                },
+                {
                   "name": "Onions",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 2
+                },
+                {
+                  "name": "Peppers",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pickled Jalapenos",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -297,6 +281,22 @@
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 2
+                },
+                {
+                  "name": "White Beans",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Roasted Mushrooms",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
                 }
               ]
             },
@@ -307,27 +307,11 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Egg",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Bacon",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Tortellini",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
@@ -339,15 +323,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Salami",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pepperoni",
+                  "name": "Egg",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -363,7 +339,31 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Salami",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Tortellini",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Turkey Sausage",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pepperoni",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -378,14 +378,6 @@
               "maximum": 1,
               "allow_quantity": true,
               "values": [
-                {
-                  "name": "Mozzarella",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
                 {
                   "name": "Cheddar",
                   "price": 0.0,
@@ -409,6 +401,14 @@
                   "is_hidden": true,
                   "is_out_of_stock": true,
                   "max_quantity": 0
+                },
+                {
+                  "name": "Mozzarella",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
                 }
               ]
             },
@@ -419,6 +419,22 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "Avocado",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Bacon",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Chicken",
                   "price": 3.25,
                   "is_default": false,
@@ -427,23 +443,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Pepperoni",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Turkey Sausage",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Bacon",
+                  "name": "Egg",
                   "price": 3.25,
                   "is_default": false,
                   "is_hidden": false,
@@ -459,23 +459,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Tortellini",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Avocado",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Egg",
+                  "name": "Pepperoni",
                   "price": 3.25,
                   "is_default": false,
                   "is_hidden": false,
@@ -484,6 +468,22 @@
                 },
                 {
                   "name": "Salami",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Tortellini",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Turkey Sausage",
                   "price": 3.25,
                   "is_default": false,
                   "is_hidden": false,
@@ -507,14 +507,6 @@
                   "max_quantity": 2
                 },
                 {
-                  "name": "Ranch",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 2
-                },
-                {
                   "name": "Creamy Herb Dressing",
                   "price": 0.0,
                   "is_default": false,
@@ -523,12 +515,20 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Oil and Vinegar",
+                  "name": "No dressing",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
+                },
+                {
+                  "name": "Ranch",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 2
                 },
                 {
                   "name": "Sesame Ginger Sauce",
@@ -537,14 +537,6 @@
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 2
-                },
-                {
-                  "name": "No dressing",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
                 },
                 {
                   "name": "Sriracha",
@@ -556,6 +548,14 @@
                 },
                 {
                   "name": "Balsamic",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Oil and Vinegar",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -595,7 +595,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No syrup",
+                  "name": "No butter",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -611,7 +611,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No butter",
+                  "name": "No syrup",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -637,7 +637,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "No chicken",
+                  "name": "No broccoli",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -646,6 +646,22 @@
                 },
                 {
                   "name": "No buffalo sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No chicken",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No ranch",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -669,24 +685,8 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No broccoli",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Extra Protein",
                   "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No ranch",
-                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -711,15 +711,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Dressing on the side",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No red onion",
+                  "name": "No Cilantro",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -735,22 +727,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No cabbage or carrots",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Cilantro",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "No veggies",
                   "price": 0.0,
                   "is_default": false,
@@ -759,7 +735,31 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Dressing on the side",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No cabbage or carrots",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "No edamame",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No red onion",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -799,7 +799,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Add bacon",
+                  "name": "Add avocado",
                   "price": 1.09,
                   "is_default": false,
                   "is_hidden": false,
@@ -807,16 +807,8 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Add ham",
-                  "price": 1.95,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "add sliced cheese",
-                  "price": 0.65,
+                  "name": "Add bacon",
+                  "price": 1.09,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -831,30 +823,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Add mushrooms",
-                  "price": 0.65,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add spinach",
-                  "price": 0.89,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add avocado",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "add cream cheese",
                   "price": 0.85,
                   "is_default": false,
@@ -863,7 +831,39 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Add ham",
+                  "price": 1.95,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Add mushrooms",
+                  "price": 0.65,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Add red pepper",
+                  "price": 0.89,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "add sliced cheese",
+                  "price": 0.65,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Add spinach",
                   "price": 0.89,
                   "is_default": false,
                   "is_hidden": false,
@@ -891,46 +891,6 @@
           "price": 6.55,
           "options": [
             {
-              "name": "Croissant Breakfast Sandwich Bread",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Tortillas",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Bagel",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Croissant",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Keiser",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
               "name": "300 - Egg & Cheese Croissant",
               "minimum": 0,
               "maximum": 50,
@@ -945,8 +905,8 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "NO egg",
-                  "price": 0.0,
+                  "name": "Add egg",
+                  "price": 1.09,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -961,8 +921,8 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Add egg",
-                  "price": 1.09,
+                  "name": "NO egg",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -970,6 +930,46 @@
                 },
                 {
                   "name": "Sub for scrambled",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Croissant Breakfast Sandwich Bread",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Croissant",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Keiser",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Tortillas",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Bagel",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -995,15 +995,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Add egg",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sub for scrambled egg",
+                  "name": "No Cheese",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1012,14 +1004,6 @@
                 },
                 {
                   "name": "No Egg",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No Cheese",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1037,6 +1021,22 @@
                 {
                   "name": "Add bacon",
                   "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Add egg",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sub for scrambled egg",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -1061,23 +1061,15 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "No cheese",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "No egg",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No onion",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No tomato",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1093,7 +1085,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No sausage",
+                  "name": "No lettuce",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1101,15 +1093,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Add cheese",
-                  "price": 0.55,
+                  "name": "No onion",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "No lettuce",
+                  "name": "No sausage",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1125,7 +1117,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No cheese",
+                  "name": "No tomato",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1135,6 +1127,14 @@
                 {
                   "name": "Add Bacon",
                   "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Add cheese",
+                  "price": 0.55,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -1167,31 +1167,23 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No sour cream",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add egg",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sub scrambled egg",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "No egg",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No sausage",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No sour cream",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1207,6 +1199,22 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Add cheese",
+                  "price": 0.55,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Add egg",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Extra Protein",
                   "price": 3.25,
                   "is_default": false,
@@ -1215,16 +1223,8 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No sausage",
+                  "name": "Sub scrambled egg",
                   "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add cheese",
-                  "price": 0.55,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -1249,11 +1249,11 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Multigrain",
+                  "name": "Bagel",
                   "price": 0.0,
                   "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
@@ -1265,7 +1265,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Bagel",
+                  "name": "Gluten Free",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1281,11 +1281,11 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Gluten Free",
+                  "name": "Multigrain",
                   "price": 0.0,
                   "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
@@ -1321,14 +1321,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "American",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Parmesan",
                   "price": 0.0,
                   "is_default": false,
@@ -1337,7 +1329,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Swiss",
+                  "name": "American",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1346,6 +1338,14 @@
                 },
                 {
                   "name": "Provolone",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Swiss",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1361,6 +1361,14 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "Bacon",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Chicken",
                   "price": 0.0,
                   "is_default": false,
@@ -1369,15 +1377,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Turkey",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Bacon",
+                  "name": "Ham",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1393,7 +1393,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Ham",
+                  "name": "Turkey",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1417,39 +1417,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Marinated Mushrooms",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Pickled Jalapenos",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Cabbage",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Kalamata Olives",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 2
-                },
-                {
-                  "name": "Peppers",
+                  "name": "Arugula",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1465,7 +1433,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Arugula",
+                  "name": "Cabbage",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1473,11 +1441,35 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Carrot",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 2
+                },
+                {
                   "name": "Cucumber",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
+                  "max_quantity": 2
+                },
+                {
+                  "name": "Kalamata Olives",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 2
+                },
+                {
+                  "name": "Marinated Mushrooms",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
                   "max_quantity": 2
                 },
                 {
@@ -1489,7 +1481,15 @@
                   "max_quantity": 2
                 },
                 {
-                  "name": "Carrot",
+                  "name": "Peppers",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pickled Jalapenos",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1521,6 +1521,14 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "Bacon",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Chicken",
                   "price": 3.25,
                   "is_default": false,
@@ -1537,7 +1545,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Turkey Sausage",
+                  "name": "Salami",
                   "price": 3.25,
                   "is_default": false,
                   "is_hidden": false,
@@ -1553,15 +1561,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Bacon",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Salami",
+                  "name": "Turkey Sausage",
                   "price": 3.25,
                   "is_default": false,
                   "is_hidden": false,
@@ -1577,6 +1577,14 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "Buffalo Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Creamy Herb Dressing",
                   "price": 0.0,
                   "is_default": false,
@@ -1585,23 +1593,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Mustard",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sriracha",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Buffalo Sauce",
+                  "name": "Hummus",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1617,7 +1609,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Sesame Ginger Sauce",
+                  "name": "Mustard",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1633,7 +1625,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Hummus",
+                  "name": "Sesame Ginger Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Sriracha",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1649,15 +1649,15 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Ranch on side",
-                  "price": 0.55,
+                  "name": "Avocado",
+                  "price": 1.09,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Avocado",
+                  "name": "Add fried egg",
                   "price": 1.09,
                   "is_default": false,
                   "is_hidden": false,
@@ -1673,8 +1673,8 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Add fried egg",
-                  "price": 1.09,
+                  "name": "Ranch on side",
+                  "price": 0.55,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -1699,6 +1699,14 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "No bbq sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "No chicken",
                   "price": 0.0,
                   "is_default": false,
@@ -1707,63 +1715,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No onion",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add bacon",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra sauce",
-                  "price": 0.55,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "No jalapenos",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No ranch",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add extra protein",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No siracha",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No bbq sauce",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1779,8 +1731,56 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "No onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No ranch",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No siracha",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Add bacon",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Add cilantro",
                   "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Add extra protein",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Extra sauce",
+                  "price": 0.55,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -1805,31 +1805,15 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "No bacon",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "No cheese",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No ranch",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra Bacon",
-                  "price": 1.09,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ranch on side",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1845,8 +1829,32 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "No lettuce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No ranch",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "No tomato",
                   "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Extra Bacon",
+                  "price": 1.09,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -1861,15 +1869,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No bacon",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "No lettuce",
+                  "name": "Ranch on side",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1903,39 +1903,23 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Salami",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add Cheese",
-                  "price": 0.55,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Sauce on side",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Extra pesto",
-                  "price": 0.55,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "No pesto",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No provolone",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Salami",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1951,6 +1935,22 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Add Cheese",
+                  "price": 0.55,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Extra pesto",
+                  "price": 0.55,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Extra Protein",
                   "price": 3.25,
                   "is_default": false,
@@ -1959,7 +1959,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No provolone",
+                  "name": "Sauce on side",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2015,6 +2015,14 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "Arugula",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Buffalo Sauce",
                   "price": 0.0,
                   "is_default": false,
@@ -2031,55 +2039,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Mushrooms",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pickled Jalapeno",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Arugula",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Tomatoes",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Kalamata Olives",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Onions",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ranch",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2095,6 +2055,22 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Mushrooms",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Onions",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Peppers",
                   "price": 0.0,
                   "is_default": false,
@@ -2103,7 +2079,31 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Pickled Jalapeno",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Ranch",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Sriracha",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Tomatoes",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -2127,11 +2127,11 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Feta",
+                  "name": "Chicken",
                   "price": 0.0,
                   "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
@@ -2140,6 +2140,22 @@
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Feta",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Ham",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
@@ -2159,22 +2175,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Chicken",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Ham",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Salami",
                   "price": 0.0,
                   "is_default": false,
@@ -2185,6 +2185,30 @@
                 {
                   "name": "Turkey Sausage",
                   "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            },
+            {
+              "name": "Build Your Own Pizza Extras",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Avocado",
+                  "price": 1.09,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Extra Cheese",
+                  "price": 2.15,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -2207,23 +2231,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Pepperoni",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Chicken",
-                  "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Salami",
                   "price": 3.25,
                   "is_default": false,
                   "is_hidden": false,
@@ -2239,32 +2247,24 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Turkey Sausage",
+                  "name": "Pepperoni",
                   "price": 3.25,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            },
-            {
-              "name": "Build Your Own Pizza Extras",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Extra Cheese",
-                  "price": 2.15,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Avocado",
-                  "price": 1.09,
+                  "name": "Salami",
+                  "price": 3.25,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Turkey Sausage",
+                  "price": 3.25,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -2289,16 +2289,16 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Extra Cheese",
-                  "price": 2.15,
+                  "name": "Add butter as sauce",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
                 {
-                  "name": "Light sauce",
-                  "price": 0.0,
+                  "name": "Extra Cheese",
+                  "price": 2.15,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -2313,23 +2313,23 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No mozzarella cheese",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Add butter as sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Light Cheese",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Light sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No mozzarella cheese",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
