@@ -1,6 +1,6 @@
 # Nutriuni menu match report
 
-Data version 2026-11-25T13:07:13+00:00.
+Data version 2026-11-25T22:07:07+00:00.
 
 
 ---
@@ -584,11 +584,11 @@ Source: mobile_order; NetNutrition units: The Farmstead, Sprout (107 labels). It
 **Breakfast**
 - `Avocado Toast` → **Avocado Toast** (Sandwich (229g), 410 kcal) [exact 2.08]
 - ❔ `French Toast` unmatched (closest: French Toast Sticks 0.92)
+- `Breakfast Potatoes` → **Breakfast Potatoes** (3.7 oz Portion (105g), 260 kcal) [exact 2.00]
 - `Breakfast burrito` → **Breakfast Burrito** (Burrito (244g), 300 kcal) [exact 2.00]
-- `Oatmeal (3 Toppings)` → **Oatmeal** (7.5 oz Portion (213g), 150 kcal) [exact 2.08]
 - `Plain Oatmeal (No toppings)` → **Oatmeal** (7.5 oz Portion (213g), 150 kcal) [manual]
 - ❔ `Tofu Scramble and Potatoes` unmatched (closest: Tofu Scramble 0.94)
-- `Breakfast Potatoes` → **Breakfast Potatoes** (3.7 oz Portion (105g), 260 kcal) [exact 2.00]
+- `Oatmeal (3 Toppings)` → **Oatmeal** (7.5 oz Portion (213g), 150 kcal) [exact 2.08]
 
 **Farmstead Sandwiches**
 - `Farmstead Lamb Gyro` → **Farmstead Lamb Gyro** (Sandwich (283g), 620 kcal) [fuzzy 1.08]
@@ -2730,7 +2730,7 @@ Source: mobile_order; NetNutrition units: Sazon (65 labels). Items with nutritio
 - `Add Egg` → Fried Egg (Egg (57g), 110 kcal) [fuzzy 1.04]
 - `Arepa` → —
 - `Barbacoa` → —
-- `Black Beans` → Black Beans (Taco Portion (99g), 30 kcal) [exact 2.04]
+- `Black Beans` → Black Beans (Arepa Bowl Portion (99g), 30 kcal) [exact 2.04]
 - `Blackened Shrimp` → Blackened Shrimp (Arepa Bowl Portion (139g), 150 kcal) [exact 2.04]
 - `Blueberry` → —
 - `Carnitas` → —
@@ -2969,8 +2969,8 @@ Source: mobile_order; NetNutrition units: The Devils Krafthouse (128 labels). It
 - `Onion Rings` → **Battered Onion Rings** (5 oz Portion (153g), 490 kcal) [fuzzy 1.08]
 - `Nachos` → **Nachos** (Plate (450g), 710 kcal) [exact 2.08]
 - `Crispy Vegan Tenders` → **Vegan Crispy Garden Tenders** (7 oz Portion (216g), 490 kcal) [manual]
-- `Mac and Cheese Bites` → **Mac and Cheese Bites** (6.9 oz Portion (196g), 600 kcal) [exact 2.08]
 - `Fried Cheese Curds` → **Cheese Curds** (5 oz Portion (156g), 620 kcal) [manual]
+- `Mac and Cheese Bites` → **Mac and Cheese Bites** (6.9 oz Portion (196g), 600 kcal) [exact 2.08]
 - ❔ `Fried Green Tomatoes` unmatched (closest: Tomato 0.63)
 
 **Salads**
@@ -3009,8 +3009,8 @@ Source: mobile_order; NetNutrition units: The Devils Krafthouse (128 labels). It
 
 **Sides**
 - `Housemade Chips` → **House Made Chips** (4 oz Portion (136g), 420 kcal) [manual]
-- ❔ `Side salad` unmatched (closest: Mixed Arugula Salad 0.67)
 - `Side fresh fruit` → **Mixed Fruit Cup** (12 oz Portion (340g), 160 kcal) [manual]
+- ❔ `Side salad` unmatched (closest: Mixed Arugula Salad 0.67)
 - `Fresh Cut Fries` → **Fresh Cut Fries** (4 oz Portion (113g), 240 kcal) [exact 2.00]
 - ❔ `Queso` unmatched (closest: Queso Burger 0.85)
 
