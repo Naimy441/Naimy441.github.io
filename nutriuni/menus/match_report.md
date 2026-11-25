@@ -1,6 +1,6 @@
 # Nutriuni menu match report
 
-Data version 2026-11-24T22:08:18+00:00.
+Data version 2026-11-25T13:07:13+00:00.
 
 
 ---
@@ -991,17 +991,17 @@ Source: mobile_order; NetNutrition units: Ginger + Soy (102 labels). Items with 
 - ❔ `Spicy Miso Ramen` unmatched (closest: Spicy Miso Soup 0.64)
 
 **Small Bites**
-- `Vegetable Spring Rolls` → **Vegetable Spring Roll** (2 Piece Portion (8g), 15 kcal) [exact 2.05]
-- `Pork Bun` → **Pork Buns** (Bun (170g), 420 kcal) [exact 2.05]
-- `Fried Beef Dumplings` → **Fried Beef Bulgogi Dumplings** (7 Dumpling Portion (158g), 340 kcal) [manual]
-- `Steamed Chicken Dumplings` → **Steamed Chicken Dumpling** (7 Dumpling Portion (151g), 210 kcal) [exact 2.05]
-- `Steamed Vegetable Dumplings` → **Steamed Vegetable Dumpling** (7 Dumpling Portion (125g), 220 kcal) [exact 2.05]
-- `Shrimp Shumai` → **Shrimp Shumai** (5.65 oz Portion (160g), 290 kcal) [exact 2.05]
-- `Bulgogi Spring Rolls` → **Bulgogi Spring Roll** (3 Roll Portion (165g), 550 kcal) [exact 2.05]
-- `Steamed Beef Dumplings` → **Steamed Beef Dumplings** (7 Dumpling Portion (151g), 270 kcal) [exact 2.05]
 - `Fried Chicken Dumplings` → **Fried Chicken Dumplings** (7 Dumpling Portion (158g), 280 kcal) [exact 2.05]
 - `Fried Vegetable Dumplings` → **Fried Vegetable Dumpling** (7 Dumpling Portion (125g), 230 kcal) [exact 2.05]
+- `Steamed Vegetable Dumplings` → **Steamed Vegetable Dumpling** (7 Dumpling Portion (125g), 220 kcal) [exact 2.05]
+- `Shrimp Shumai` → **Shrimp Shumai** (5.65 oz Portion (160g), 290 kcal) [exact 2.05]
+- `Fried Beef Dumplings` → **Fried Beef Bulgogi Dumplings** (7 Dumpling Portion (158g), 340 kcal) [manual]
+- `Steamed Chicken Dumplings` → **Steamed Chicken Dumpling** (7 Dumpling Portion (151g), 210 kcal) [exact 2.05]
+- `Bulgogi Spring Rolls` → **Bulgogi Spring Roll** (3 Roll Portion (165g), 550 kcal) [exact 2.05]
+- `Steamed Beef Dumplings` → **Steamed Beef Dumplings** (7 Dumpling Portion (151g), 270 kcal) [exact 2.05]
 - `Soup Dumplings` → **Soup Dumpling** (Dumpling Portion (142g), 200 kcal) [exact 2.05]
+- `Vegetable Spring Rolls` → **Vegetable Spring Roll** (2 Piece Portion (8g), 15 kcal) [exact 2.05]
+- `Pork Bun` → **Pork Buns** (Bun (170g), 420 kcal) [exact 2.05]
 
 **Drinks**
 
@@ -1063,26 +1063,26 @@ Source: mobile_order; NetNutrition units: Gothic Grill (120 labels). Items with 
 **Specials**
 
 **Small Plates**
-- `Buffalo Chicken Mac and Cheese` → **Buffalo Chicken Macaroni and Cheese** (10 oz Portion (283g), 490 kcal) [exact 2.08]
-- `Tortilla Chips with Guacamole` → **Tortilla Chips with Guacamole** (10 oz Portion (283g), 720 kcal) [exact 2.08]
-- `Fried Shrimp Basket` → **Fried Shrimp** (4 oz Portion (125g), 280 kcal) [manual]
 - `Chicken Tenders` → **Chicken Tenders** (4 Pc Portion (165g), 300 kcal) [exact 2.08]
-- `Crispy Cauliflower` → **Crispy Cauliflower** (5.5 oz Portion (158g), 380 kcal) [exact 2.08]
-- `Sweet Potato Waffle Fries` → **Sweet Potato Waffle Fries** (4.5 oz Portion (128g), 380 kcal) [exact 2.08]
-- `Mega Pretzel` → **Bavarian Pretzel** (Portion (283g), 720 kcal) [manual]
+- `Fried Shrimp Basket` → **Fried Shrimp** (4 oz Portion (125g), 280 kcal) [manual]
 - `Mozzarella Sticks(3)` → **Mozzarella Sticks** (6 oz Portion (195g), 640 kcal) [exact 2.08]
+- `Sweet Potato Waffle Fries` → **Sweet Potato Waffle Fries** (4.5 oz Portion (128g), 380 kcal) [exact 2.08]
+- `Buffalo Chicken Mac and Cheese` → **Buffalo Chicken Macaroni and Cheese** (10 oz Portion (283g), 490 kcal) [exact 2.08]
+- `Crispy Cauliflower` → **Crispy Cauliflower** (5.5 oz Portion (158g), 380 kcal) [exact 2.08]
+- `Mega Pretzel` → **Bavarian Pretzel** (Portion (283g), 720 kcal) [manual]
+- `Tortilla Chips with Guacamole` → **Tortilla Chips with Guacamole** (10 oz Portion (283g), 720 kcal) [exact 2.08]
 - `Shredded Chicken and Cheese Nachos` → **Chicken Cheese Nachos** (Portion (496g), 990 kcal) [manual]
 
 **Soups and Salads**
 - `Caesar Salad` variants: Caesar Salad ⇐ []; Crispy Chicken Caesar Salad ⇐ ['chicken', 'crispy']
 - `Caesar Salad` → **Caesar Salad** (Salad (376g), 860 kcal) [exact 2.04]
-- `Crispy Buffalo Chicken Salad` → **Crispy Buffalo Chicken Salad** (Salad (567g), 670 kcal) [exact 2.04]
 - `Grilled Chicken salad` → **Grilled Chicken Salad** (Salad (510g), 430 kcal) [fuzzy 1.04]
-- ❔ `Grilled Mahi Mahi salad` unmatched (closest: Blackened Mahi Mahi 0.72)
+- `Crispy Buffalo Chicken Salad` → **Crispy Buffalo Chicken Salad** (Salad (567g), 670 kcal) [exact 2.04]
 - `Build Your Own Salad` composed from its options
+- ❔ `Grilled Mahi Mahi salad` unmatched (closest: Blackened Mahi Mahi 0.72)
+- ❔ `Fiesta Chicken Salad` unmatched (closest: Grilled Chicken Salad 0.75)
 - `Caprese Salad` → **Caprese Salad** (Salad (471g), 570 kcal) [exact 2.04]
 - `Crispy Chicken Caesar Salad` → **Crispy Chicken Caesar Salad** (Salad (510g), 1250 kcal) [exact 2.04]
-- ❔ `Fiesta Chicken Salad` unmatched (closest: Grilled Chicken Salad 0.75)
 
 **Tacos**
 - ❔ `Tacos Steak` unmatched (closest: Steak 0.71)
@@ -1091,51 +1091,51 @@ Source: mobile_order; NetNutrition units: Gothic Grill (120 labels). Items with 
 - ❔ `Build your own Burger` unmatched (closest: Gothic Burger 0.57)
 - `Build your own Burger` + components: Beef Patty, Hamburger Bun
 - `Double Patty Melt Burger` → **Double Patty Melt Sandwich** (Sandwich (298g), 760 kcal) [fuzzy 0.83]
+- `Gothic Smash Burger` → **Gothic Burger** (Sandwich (408g), 1180 kcal) [manual]
 - `The NC Burger` → **NC Burger** (Sandwich (422g), 1030 kcal) [exact 2.00]
 - `Cali Smash Burger` → **Cali Smash Burger** (Sandwich (550g), 750 kcal) [exact 2.00]
-- `Gothic Smash Burger` → **Gothic Burger** (Sandwich (408g), 1180 kcal) [manual]
 - ❔ `Bahn Mi Burger` unmatched (closest: Gothic Burger 0.57)
 - ❔ `Pizza Burger` unmatched (closest: Gothic Burger 0.73)
 
 **Sandwiches**
-- `Chicken Caesar Wrap` → **Chicken Caesar Wrap** (Wrap (393g), 870 kcal) [exact 2.08]
 - `BLTA` → **BLT-A Sandwich** (Sandwich (274g), 280 kcal) [fuzzy 1.08]
-- `Chicken Philly` → **Chicken Philly Sandwich** (Sandwich (188g), 350 kcal) [fuzzy 1.08]
-- `Buffalo Shrimp Wrap` → **Buffalo Shrimp Wrap** (Wrap (379g), 760 kcal) [exact 2.08]
 - `Buffalo Chicken Wrap` → **Buffalo Chicken Wrap** (Wrap (350g), 830 kcal) [exact 2.08]
+- `Buffalo Shrimp Wrap` → **Buffalo Shrimp Wrap** (Wrap (379g), 760 kcal) [exact 2.08]
+- `Chicken Caesar Wrap` → **Chicken Caesar Wrap** (Wrap (393g), 870 kcal) [exact 2.08]
+- ❔ `Chicken Focaccia` unmatched (closest: Grilled Chicken Sandwich 0.67)
+- `Chicken Philly` → **Chicken Philly Sandwich** (Sandwich (188g), 350 kcal) [fuzzy 1.08]
 - `Southern Fried Chicken Sandwich` → **Southern Fried Chicken Sandwich** (Sandwich (193g), 410 kcal) [exact 2.00]
-- ❔ `Chicken Focaccia` unmatched (closest: Grilled Chicken Sandwich 0.67)
 - `Grilled Chicken Parm Sandwich` → **Chicken Parmesan Sandwich** (Sandwich (283g), 490 kcal) [manual]
-- `Philly Cheesesteak` → **Philly Cheesesteak Sandwich** (Sandwich (175g), 300 kcal) [fuzzy 1.08]
-- `Vegetable Cheesesteak` → **Vegetable Cheesesteak** (Sandwich (258g), 340 kcal) [exact 2.08]
-- ❔ `Turkey Grinder` unmatched (closest: Turkey Club Wrap 0.59)
-- ❔ `Grilled Cheese` unmatched (closest: Macaroni and Cheese Cup 0.73)
 - `Grilled Chicken Sandwich` → **Grilled Chicken Sandwich** (Sandwich (333g), 390 kcal) [fuzzy 1.00]
-- ❔ `Crispy Sweet Chili Chicken Sandwich` unmatched (closest: Grilled Chicken Sandwich 0.58)
-- ❔ `Crispy Buffalo Chicken Sandwich` unmatched (closest: Crispy Buffalo Chicken Salad 0.76)
-- `Turkey Club Wrap` → **Turkey Club Wrap** (Wrap (442g), 650 kcal) [exact 2.08]
-- ❔ `Steak Wrap` unmatched (closest: Steak 0.79)
-- ❔ `Chicken Bahn Mi Sandwich` unmatched (closest: Grilled Chicken Sandwich 0.60)
-- `Buffalo Cauliflower Wrap` → **Buffalo Cauliflower Wrap** (Wrap (435g), 1020 kcal) [exact 2.08]
+- `Philly Cheesesteak` → **Philly Cheesesteak Sandwich** (Sandwich (175g), 300 kcal) [fuzzy 1.08]
+- ❔ `Turkey Grinder` unmatched (closest: Turkey Club Wrap 0.59)
+- `Vegetable Cheesesteak` → **Vegetable Cheesesteak** (Sandwich (258g), 340 kcal) [exact 2.08]
+- ❔ `Grilled Cheese` unmatched (closest: Macaroni and Cheese Cup 0.73)
 - ❔ `Chicken Focaccia` unmatched (closest: Grilled Chicken Sandwich 0.67)
+- `Buffalo Cauliflower Wrap` → **Buffalo Cauliflower Wrap** (Wrap (435g), 1020 kcal) [exact 2.08]
+- ❔ `Crispy Buffalo Chicken Sandwich` unmatched (closest: Crispy Buffalo Chicken Salad 0.76)
+- ❔ `Crispy Sweet Chili Chicken Sandwich` unmatched (closest: Grilled Chicken Sandwich 0.58)
+- `Turkey Club Wrap` → **Turkey Club Wrap** (Wrap (442g), 650 kcal) [exact 2.08]
+- ❔ `Chicken Bahn Mi Sandwich` unmatched (closest: Grilled Chicken Sandwich 0.60)
+- ❔ `Steak Wrap` unmatched (closest: Steak 0.79)
 
 **Pizzas**
-- `Buffalo Chicken Pizza` → **Buffalo Chicken Pizza** (Pizza (594g), 1370 kcal) [exact 2.00]
 - ❔ `Cali Chicken Pizza` unmatched (closest: Cali Pizza 0.88)
 - `Island Pizza` → **Island Pizza** (Pizza (622g), 1210 kcal) [exact 2.00]
 - `Veg G Pizza` → **Veg Pizza** (Pizza (618g), 880 kcal) [manual]
+- `Buffalo Chicken Pizza` → **Buffalo Chicken Pizza** (Pizza (594g), 1370 kcal) [exact 2.00]
 - `Meateater Pizza` → **Meateater Pizza** (Pizza (566g), 1410 kcal) [exact 2.00]
-- `Build Your Own Calzone` composed from its options
 - `BBQ Chicken Pizza` → **Barbecue Chicken Pizza** (Pizza (634g), 1130 kcal) [exact 2.00]
 - `Pepperoni Calzone` → **Pepperoni Calzone** (Calzone (469g), 1200 kcal) [exact 2.00]
+- `Build Your Own Calzone` composed from its options
 - `Veggie Calzone` → **Veggie Calzone** (Calzone (550g), 1090 kcal) [exact 2.00]
 
 **Sides**
-- `Fries` → **Fresh Cut Fries** (4 oz Portion (113g), 240 kcal) [manual]
-- `Mac and Cheese Cup` → **Macaroni and Cheese Cup** (6.5 oz Portion (184g), 360 kcal) [exact 2.00]
-- `Chips` → **House Made Chips** (8 oz Portion (221g), 580 kcal) [exact 2.00]
 - `Side Salad` variants: Caesar Salad ⇐ ['caesar']
 - ❔ `Side Salad` unmatched (closest: Caesar Salad 0.75)
+- `Mac and Cheese Cup` → **Macaroni and Cheese Cup** (6.5 oz Portion (184g), 360 kcal) [exact 2.00]
+- `Chips` → **House Made Chips** (8 oz Portion (221g), 580 kcal) [exact 2.00]
+- `Fries` → **Fresh Cut Fries** (4 oz Portion (113g), 240 kcal) [manual]
 
 **Non Alcoholic Beverages**
 
@@ -1657,9 +1657,9 @@ Source: mobile_order; NetNutrition units: J.B.'s Roast & Chops (56 labels). Item
 - `Prime Rib 8oz` → **Prime Rib** (8 oz Portion (227g), 560 kcal) [manual]
 
 **Rotisserie**
+- ❔ `Bone-In Pork Chop 6 oz` unmatched (closest: Pork Chop 0.69)
 - `Beef Skewer` → **Beef Skewer** (Skewer (218g), 400 kcal) [exact 2.00]
 - `Ribeye 8oz` → **Ribeye** (Portion (224g), 550 kcal) [manual]
-- ❔ `Bone-In Pork Chop 6 oz` unmatched (closest: Pork Chop 0.69)
 
 **Chop House Classics**
 - `Quarter Flame Roasted Chicken` → **Flame Roasted Chicken** (Quarter (213g), 490 kcal) [manual]
@@ -2069,8 +2069,8 @@ Source: mobile_order; NetNutrition units: The Pitchfork (88 labels). Items with 
 
 **Biscuits Bagels Pancakes**
 - `Lox & Bagel` → **Lox and Bagel** (Sandwich (288g), 580 kcal) [exact 2.00]
-- ❔ `Fried Chicken Biscuit` unmatched (closest: Fried Chicken Breast 0.76)
 - `Plain Bagel` → **Plain Bagel** (Bagel (113g), 300 kcal) [fuzzy 1.00]
+- ❔ `Fried Chicken Biscuit` unmatched (closest: Fried Chicken Breast 0.76)
 - `Breakfast Biscuit` → **Breakfast Biscuit** (Biscuit (80g), 250 kcal) [exact 2.00]
 - ❔ `Breakfast Biscuit Protein` unmatched (closest: Breakfast Biscuit 0.80)
 - ❔ `Breakfast Biscuit Egg Cheese & Protein` unmatched (closest: Breakfast Biscuit 0.68)
@@ -2094,12 +2094,12 @@ Source: mobile_order; NetNutrition units: The Pitchfork (88 labels). Items with 
 
 **Entrees**
 - `Spaghetti and Meatballs` → **Spaghetti and Meatballs** (Portion (709g), 1350 kcal) [exact 2.00]
+- `Veggie Lasagna` → **Veggie Lasagna** (10 oz Portion (283g), 360 kcal) [exact 2.00]
 - ❔ `Spaghetti No Meatballs` unmatched (closest: Spaghetti and Meatballs 0.80)
 - `Chicken Parmesan` → **Chicken Parmesan Pitchfork** (Portion (652g), 880 kcal) [fuzzy 1.00]
 - ❔ `Flank Steak Frites` unmatched (closest: Steak 0.60)
 - `Salmon Hot Pot` → **Salmon Hot Pot** (Portion (919g), 1380 kcal) [exact 2.00]
 - `Veggie Hot Pot` → **Veggie Hot Pot Pitchfork** (Portion (573g), 500 kcal) [fuzzy 1.00]
-- `Veggie Lasagna` → **Veggie Lasagna** (10 oz Portion (283g), 360 kcal) [exact 2.00]
 
 **Sandwiches**
 - `Grilled Cheese Sandwich` → **Grilled Cheese Sandwich** (Sandwich (214g), 830 kcal) [exact 2.00]
@@ -2162,10 +2162,10 @@ Source: mobile_order; NetNutrition units: The Pitchfork (88 labels). Items with 
 
 **Grub Late Night**
 - `Fried Chicken Sandwich` → **Fried Chicken Sandwich** (Sandwich (302g), 670 kcal) [exact 2.00]
-- `Black Angus Burger` → **Black Angus Burger** (Sandwich (373g), 720 kcal) [exact 2.08]
 - `Mac and Cheese Bites` → **Mac and Cheese Bites** (15 Piece Portion (340g), 1250 kcal) [exact 2.08]
-- `Grilled Cheese Sandwich` → **Grilled Cheese Sandwich** (Sandwich (214g), 830 kcal) [exact 2.08]
 - `Vegetable Samosas` → **Vegetable Samosas with Tomato Chutney** (4 Piece Portion (292g), 820 kcal) [manual]
+- `Black Angus Burger` → **Black Angus Burger** (Sandwich (373g), 720 kcal) [exact 2.08]
+- `Grilled Cheese Sandwich` → **Grilled Cheese Sandwich** (Sandwich (214g), 830 kcal) [exact 2.08]
 - `Grilled Chicken Sandwich` → **Grilled Chicken Sandwich** (Sandwich (293g), 490 kcal) [exact 2.00]
 - `Falafel Sandwich on Pita` → **Falafel Sandwich on Whole Wheat Pita** (Sandwich (374g), 810 kcal) [manual]
 - ❔ `Grilled Quesadilla` unmatched (closest: Cheese Quesadilla 0.66)
@@ -2714,8 +2714,8 @@ Source: mobile_order; NetNutrition units: Sazon (65 labels). Items with nutritio
 - `Arepa Bowl` + components: Latin Arepa Bowl
 
 **Extras & Drinks**
-- ❔ `Churro Donut` unmatched (closest: Churros 0.70)
 - `Churros` → **Churros** (1 Churro (36g), 130 kcal) [exact 2.00]
+- ❔ `Churro Donut` unmatched (closest: Churros 0.70)
 - ❔ `Chips & Guacamole` unmatched (closest: Chips 0.73)
 - `Chips & Salsa` → **Chips and Salsa** (Portion (152g), 370 kcal) [exact 2.00]
 - ❔ `Chips & Queso` unmatched (closest: Chips 0.73)
@@ -2730,7 +2730,7 @@ Source: mobile_order; NetNutrition units: Sazon (65 labels). Items with nutritio
 - `Add Egg` → Fried Egg (Egg (57g), 110 kcal) [fuzzy 1.04]
 - `Arepa` → —
 - `Barbacoa` → —
-- `Black Beans` → Black Beans (Arepa Bowl Portion (99g), 30 kcal) [exact 2.04]
+- `Black Beans` → Black Beans (Taco Portion (99g), 30 kcal) [exact 2.04]
 - `Blackened Shrimp` → Blackened Shrimp (Arepa Bowl Portion (139g), 150 kcal) [exact 2.04]
 - `Blueberry` → —
 - `Carnitas` → —
@@ -2957,20 +2957,20 @@ Source: mobile_order; NetNutrition units: The Devils Krafthouse (128 labels). It
 - `Southwest wrap` → **Southwest Wrap** (Wrap (383g), 760 kcal) [exact 2.00]
 - `Egg & cheese breakfast sandwich` → **Egg and Cheese Sandwich** (Sandwich (141g), 350 kcal) [manual]
 - `Grilled Veg Goat Cheese Breakfast Bowl` → **Vegetable Goat Cheese Bowl** (Bowl (482g), 680 kcal) [manual]
-- `Side of breakfast potatoes` → **Breakfast Potatoes** (4 oz Portion (113g), 170 kcal) [exact 2.00]
-- `Baco Egg and Cheese Bagel` → **Bacon Egg and Cheese Bagel** (Sandwich (246g), 560 kcal) [fuzzy 0.98]
-- `Southwest Breakfast Bowl` → **Southwest Breakfast Bowl** (Bowl (468g), 930 kcal) [exact 2.00]
 - `Turkey Sausage Egg and Cheese Bagel` → **Turkey Sausage Egg Bagel** (Sandwich (210g), 470 kcal) [fuzzy 0.93]
+- `Baco Egg and Cheese Bagel` → **Bacon Egg and Cheese Bagel** (Sandwich (246g), 560 kcal) [fuzzy 0.98]
+- `Side of breakfast potatoes` → **Breakfast Potatoes** (4 oz Portion (113g), 170 kcal) [exact 2.00]
+- `Southwest Breakfast Bowl` → **Southwest Breakfast Bowl** (Bowl (468g), 930 kcal) [exact 2.00]
 
 **Small Plates**
 - `Chicken Tenders` → **Chicken Tenders** (4 Pc Portion (217g), 530 kcal) [exact 2.08]
 - `Chicken Wings` → **Chicken Wings** (6 Pc Portion (286g), 720 kcal) [exact 2.08]
 - `Sweet Potato Fries` → **Sweet Potato Fries** (10 oz Portion (207g), 550 kcal) [exact 2.08]
-- `Nachos` → **Nachos** (Plate (450g), 710 kcal) [exact 2.08]
-- `Fried Cheese Curds` → **Cheese Curds** (5 oz Portion (156g), 620 kcal) [manual]
-- `Crispy Vegan Tenders` → **Vegan Crispy Garden Tenders** (7 oz Portion (216g), 490 kcal) [manual]
 - `Onion Rings` → **Battered Onion Rings** (5 oz Portion (153g), 490 kcal) [fuzzy 1.08]
+- `Nachos` → **Nachos** (Plate (450g), 710 kcal) [exact 2.08]
+- `Crispy Vegan Tenders` → **Vegan Crispy Garden Tenders** (7 oz Portion (216g), 490 kcal) [manual]
 - `Mac and Cheese Bites` → **Mac and Cheese Bites** (6.9 oz Portion (196g), 600 kcal) [exact 2.08]
+- `Fried Cheese Curds` → **Cheese Curds** (5 oz Portion (156g), 620 kcal) [manual]
 - ❔ `Fried Green Tomatoes` unmatched (closest: Tomato 0.63)
 
 **Salads**

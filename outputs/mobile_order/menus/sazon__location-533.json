@@ -4,17 +4,17 @@
   "location_id": 533,
   "cafeteria_id": 475,
   "icon_image_url": "campuses/icon_location_19_18_127_1701729943321.jpg",
-  "estimated_wait_time_minutes": 13,
-  "currently_open": true,
-  "takeout_open": true,
-  "delivery_open": true,
+  "estimated_wait_time_minutes": 0,
+  "currently_open": false,
+  "takeout_open": false,
+  "delivery_open": false,
   "takeout_hours": {
     "open": "10:30:00",
-    "close": "21:00:00"
+    "close": "19:00:00"
   },
   "delivery_hours": {
     "open": "10:30:00",
-    "close": "21:00:00"
+    "close": "19:00:00"
   },
   "hours": {
     "Monday": {
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-23 16:37:09",
-  "menu_last_updated": "2026-11-23 16:37:10",
+  "retrieved_at": "2026-11-25 01:13:43",
+  "menu_last_updated": "2026-11-25 01:13:44",
   "sections": [
     {
       "name": "SAZ - Game Day Specials Online",
@@ -210,18 +210,18 @@
           "is_hidden": false
         },
         {
-          "name": "Vegan Arepa Bowl",
-          "description": "Romaine Brown Rice Black Beans Mushrooms Arepa Peppers and Onions Guacamole Pico de Gallo Roasted Corn Salsa Habanero Coleslaw",
-          "price": 10.59,
+          "name": "Shrimp Tacos",
+          "description": "Shredded Cheese Brown Rice Shredded Romaine Blackened Shrimp Plantains Pico de Gallo Roasted Corn Salsa Habanero Coleslaw",
+          "price": 14.55,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
         },
         {
-          "name": "Shrimp Tacos",
-          "description": "Shredded Cheese Brown Rice Shredded Romaine Blackened Shrimp Plantains Pico de Gallo Roasted Corn Salsa Habanero Coleslaw",
-          "price": 14.55,
+          "name": "Vegan Arepa Bowl",
+          "description": "Romaine Brown Rice Black Beans Mushrooms Arepa Peppers and Onions Guacamole Pico de Gallo Roasted Corn Salsa Habanero Coleslaw",
+          "price": 10.59,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -285,7 +285,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Flour tortilla",
+                  "name": "Corn tortilla",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -293,7 +293,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Corn tortilla",
+                  "name": "Flour tortilla",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -357,14 +357,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Cheese-No Protein",
-                  "price": 9.89,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Grilled Chicken",
                   "price": 12.85,
                   "is_default": false,
@@ -375,6 +367,14 @@
                 {
                   "name": "Portobello",
                   "price": 11.99,
+                  "is_default": false,
+                  "is_hidden": true,
+                  "is_out_of_stock": true,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cheese-No Protein",
+                  "price": 9.89,
                   "is_default": false,
                   "is_hidden": true,
                   "is_out_of_stock": true,
@@ -461,39 +461,7 @@
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Fried Egg",
-                  "price": 1.05,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Fajita Peppers and Onion",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pinto Beans",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pickled onions",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Black Beans",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -510,6 +478,38 @@
                 },
                 {
                   "name": "Fresh jalapenos",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fried Egg",
+                  "price": 1.05,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Black Beans",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pinto Beans",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pickled onions",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -999,23 +999,7 @@
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Fajita Peppers and Onion",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Black Beans",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Fresh jalapenos",
+                  "name": "Super Food Lettuce",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1031,7 +1015,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Super Food Lettuce",
+                  "name": "Pinto Beans",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1039,7 +1023,23 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Pinto Beans",
+                  "name": "Black Beans",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fajita Peppers and Onion",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Fresh jalapenos",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1481,6 +1481,14 @@
               "allow_quantity": false,
               "values": [
                 {
+                  "name": "Super Food Lettuce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Black Beans",
                   "price": 0.0,
                   "is_default": false,
@@ -1489,7 +1497,15 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Super Food Lettuce",
+                  "name": "Pickled onions",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Pinto Beans",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1514,22 +1530,6 @@
                 },
                 {
                   "name": "Fresh jalapenos",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pinto Beans",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Pickled onions",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1609,7 +1609,7 @@
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Chipotle Crema",
+                  "name": "Habanero",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1617,7 +1617,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Habanero",
+                  "name": "Chipotle Crema",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1673,18 +1673,18 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "No Extra Protein",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": true,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Extra Shrimp Protein",
                   "price": 5.35,
                   "is_default": false,
                   "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "No Extra Protein",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": true,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
@@ -1955,22 +1955,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Pinto Beans",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Super Food Lettuce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Pickled onions",
                   "price": 0.0,
                   "is_default": false,
@@ -1995,8 +1979,24 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Pinto Beans",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Fried Egg",
                   "price": 1.05,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Super Food Lettuce",
+                  "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
@@ -2139,18 +2139,18 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Extra Shrimp Protein",
-                  "price": 5.35,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "No Extra Protein",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Extra Shrimp Protein",
+                  "price": 5.35,
+                  "is_default": false,
+                  "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
                 },
@@ -2216,6 +2216,15 @@
       "is_hidden": false,
       "items": [
         {
+          "name": "Churros",
+          "description": "10' Churro",
+          "price": 3.19,
+          "options": [],
+          "busy_min": 5,
+          "normal_min": 3,
+          "is_hidden": false
+        },
+        {
           "name": "Churro Donut",
           "description": "",
           "price": 3.55,
@@ -2231,15 +2240,6 @@
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Churros",
-          "description": "10' Churro",
-          "price": 3.19,
-          "options": [],
-          "busy_min": 5,
-          "normal_min": 3,
           "is_hidden": false
         },
         {
@@ -2433,7 +2433,7 @@
       "is_hidden": true,
       "items": [
         {
-          "name": "Brown Rice",
+          "name": "White Rice",
           "description": "",
           "price": 2.69,
           "options": [],
@@ -2443,6 +2443,15 @@
         },
         {
           "name": "Tostones",
+          "description": "",
+          "price": 2.69,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Brown Rice",
           "description": "",
           "price": 2.69,
           "options": [],
@@ -2469,9 +2478,36 @@
           "is_hidden": false
         },
         {
-          "name": "White Rice",
+          "name": "Black Beans",
           "description": "",
           "price": 2.69,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Mixed Fruit Cup",
+          "description": "Shrimp single taco",
+          "price": 4.59,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Egg",
+          "description": "",
+          "price": 1.05,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Single Taco",
+          "description": "",
+          "price": 4.39,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -2499,42 +2535,6 @@
           "name": "Coleslaw",
           "description": "",
           "price": 2.69,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Black Beans",
-          "description": "",
-          "price": 2.69,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Mixed Fruit Cup",
-          "description": "Shrimp single taco",
-          "price": 4.59,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Single Taco",
-          "description": "",
-          "price": 4.39,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Egg",
-          "description": "",
-          "price": 1.05,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
