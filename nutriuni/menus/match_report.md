@@ -1,6 +1,6 @@
 # Nutriuni menu match report
 
-Data version 2026-11-25T22:07:07+00:00.
+Data version 2026-11-26T13:06:16+00:00.
 
 
 ---
@@ -1341,48 +1341,48 @@ Source: mobile_order; NetNutrition units: Gyotaku (102 labels). Items with nutri
 **SASHIMI BOWL**
 
 **STARTERS & SALADS**
+- `MISO SOUP` → **Miso Soup** (Cup Portion (193g), 25 kcal) [exact 2.00]
 - `EDAMAME` → **Edamame** (5 oz Portion (171g), 240 kcal) [exact 2.00]
 - `Lemonaise` → **Lemonaise Dill Sauce** (.5 oz Portion (14g), 90 kcal) [manual]
-- `MISO SOUP` → **Miso Soup** (Cup Portion (193g), 25 kcal) [exact 2.00]
-- ❔ `Salmon Tower` unmatched (closest: Salmon 0.64)
 - `SEAWEED SALAD` → **Seaweed Salad** (1.5 oz Portion (43g), 40 kcal) [exact 2.00]
+- ❔ `Salmon Tower` unmatched (closest: Salmon 0.64)
 - ❔ `Tuna Tower` unmatched (closest: Tuna 0.63)
 
 **Make Your Own Sushi**
-- ❔ `Extra Veggies` unmatched (closest: Veggie Roll 0.57)
 - `Make Your Own Sushi` composed from its options
+- ❔ `Extra Veggies` unmatched (closest: Veggie Roll 0.57)
 
 **Sushi Burrito**
 - `Atlantic` → **Atlantic Sushi Burrito** (Burrito (256g), 390 kcal) [fuzzy 1.08]
-- `Pacific` → **Pacific Sushi Burrito** (Burrito (250g), 330 kcal) [fuzzy 1.08]
 - `Arctic` → **Arctic Sushi Burrito** (Burrito (259g), 350 kcal) [fuzzy 1.08]
-- `Southern` → **Southern Sushi Burrito** (Burrito (279g), 410 kcal) [fuzzy 1.08]
+- `Pacific` → **Pacific Sushi Burrito** (Burrito (250g), 330 kcal) [fuzzy 1.08]
 - ❔ `Extra Vegetables` unmatched (closest: Veggie Roll 0.57)
+- `Southern` → **Southern Sushi Burrito** (Burrito (279g), 410 kcal) [fuzzy 1.08]
 
 **Sushi Roll**
-- `Blossom Roll` → **Blossom Roll** (Roll (250g), 410 kcal) [exact 2.04]
-- ❔ `California Roll Combo` unmatched (closest: California Roll 0.78)
-- `Coco Roll` → **Coco Roll** (Roll (241g), 360 kcal) [exact 2.04]
-- `Fire Cracker Roll` → **Fire Cracker Roll** (Roll (199g), 290 kcal) [exact 2.04]
-- `Mary roll` → **Mary Roll** (Roll (230g), 350 kcal) [exact 2.04]
-- `White Tiger Roll` → **White Tiger Roll** (Roll (225g), 380 kcal) [exact 2.04]
 - `California Roll` → **California Roll** (Roll (173g), 250 kcal) [exact 2.04]
-- `Veggie` → **Veggie Roll** (Roll (178g), 210 kcal) [fuzzy 1.08]
-- `Salmon Avocado` → **Salmon Avocado Roll** (Roll (169g), 270 kcal) [fuzzy 1.08]
-- `Salmon Crunch Roll` → **Salmon Crunch Roll** (Roll (192g), 350 kcal) [exact 2.04]
+- `Mary roll` → **Mary Roll** (Roll (230g), 350 kcal) [exact 2.04]
 - `Spicy Tuna` → **Spicy Tuna** (1.5 oz Portion (43g), 50 kcal) [exact 2.03]
 - `Dancing Eel` → **Dancing Eel Roll** (Roll (215g), 380 kcal) [fuzzy 1.08]
-- `Rainbow` → **Rainbow Roll** (Roll (215g), 330 kcal) [fuzzy 1.08]
+- `White Tiger Roll` → **White Tiger Roll** (Roll (225g), 380 kcal) [exact 2.04]
+- `Veggie` → **Veggie Roll** (Roll (178g), 210 kcal) [fuzzy 1.08]
+- `Salmon Avocado` → **Salmon Avocado Roll** (Roll (169g), 270 kcal) [fuzzy 1.08]
+- `Blossom Roll` → **Blossom Roll** (Roll (250g), 410 kcal) [exact 2.04]
+- `Coco Roll` → **Coco Roll** (Roll (241g), 360 kcal) [exact 2.04]
+- `Fire Cracker Roll` → **Fire Cracker Roll** (Roll (199g), 290 kcal) [exact 2.04]
 - `Red Dragon` → **Red Dragon Roll** (Roll (226g), 340 kcal) [fuzzy 1.08]
-- `Shrimp Tempura` → **Shrimp Tempura** (1 oz Portion (31g), 45 kcal) [exact 2.03]
+- `Salmon Crunch Roll` → **Salmon Crunch Roll** (Roll (192g), 350 kcal) [exact 2.04]
 - ❔ `Extra Vegetables` unmatched (closest: Veggie Roll 0.76)
+- ❔ `California Roll Combo` unmatched (closest: California Roll 0.78)
+- `Rainbow` → **Rainbow Roll** (Roll (215g), 330 kcal) [fuzzy 1.08]
+- `Shrimp Tempura` → **Shrimp Tempura** (1 oz Portion (31g), 45 kcal) [exact 2.03]
 
 **Yubu Sushi**
 - `Shrimp Tempura Yubu Sushi` → **Shrimp Tempura Yubu Sushi** (2.4 oz Portion (68g), 120 kcal) [exact 2.00]
+- `Spicy Tuna Yubu Sushi` → **Spicy Tuna Yubu Sushi** (2.25 oz Portion (64g), 120 kcal) [exact 2.00]
+- `Seaweed Salad Yubu Sushi` → **Seaweed Salad Yubu Sushi** (2.3 oz Portion (65g), 90 kcal) [exact 2.00]
 - ❔ `Avocado Yubu Sushi` unmatched (closest: Avocado 0.67)
 - `Salmon Yubu Sushi` → **Salmon Yubu Sushi** (2.45 oz Portion (69g), 170 kcal) [exact 2.00]
-- `Seaweed Salad Yubu Sushi` → **Seaweed Salad Yubu Sushi** (2.3 oz Portion (65g), 90 kcal) [exact 2.00]
-- `Spicy Tuna Yubu Sushi` → **Spicy Tuna Yubu Sushi** (2.25 oz Portion (64g), 120 kcal) [exact 2.00]
 
 **Option values**
 

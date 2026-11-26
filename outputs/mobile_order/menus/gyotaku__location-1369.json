@@ -9,12 +9,12 @@
   "takeout_open": false,
   "delivery_open": false,
   "takeout_hours": {
-    "open": "11:00:00",
-    "close": "19:00:00"
+    "open": "00:00:00",
+    "close": "00:00:00"
   },
   "delivery_hours": {
-    "open": "11:00:00",
-    "close": "19:00:00"
+    "open": "00:00:00",
+    "close": "00:00:00"
   },
   "hours": {
     "Monday": {
@@ -116,8 +116,8 @@
       ]
     }
   },
-  "retrieved_at": "2026-11-11 01:11:34",
-  "menu_last_updated": "2026-11-11 01:11:35",
+  "retrieved_at": "2026-11-25 23:24:10",
+  "menu_last_updated": "2026-11-25 23:24:11",
   "sections": [
     {
       "name": "Specials",
@@ -135,7 +135,7 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "California Handroll",
+                  "name": "Veggie Handroll",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
@@ -151,7 +151,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Veggie Handroll",
+                  "name": "California Handroll",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": true,
@@ -191,6 +191,14 @@
               "allow_quantity": true,
               "values": [
                 {
+                  "name": "Tuna Sashimi(2pcs)",
+                  "price": 5.59,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 99
+                },
+                {
                   "name": "Eel Sashimi(2pcs)",
                   "price": 5.59,
                   "is_default": false,
@@ -215,14 +223,6 @@
                   "max_quantity": 99
                 },
                 {
-                  "name": "Tuna Sashimi(2pcs)",
-                  "price": 5.59,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 99
-                },
-                {
                   "name": "Yellowtail Sashimi(2pcs)",
                   "price": 5.59,
                   "is_default": false,
@@ -239,14 +239,6 @@
               "allow_quantity": true,
               "values": [
                 {
-                  "name": "Eel Nigiri (2pcs)",
-                  "price": 5.59,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 99
-                },
-                {
                   "name": "Salmon Nigiri (2pcs)",
                   "price": 5.59,
                   "is_default": false,
@@ -256,6 +248,14 @@
                 },
                 {
                   "name": "Shrimp Nigiri (2pcs)",
+                  "price": 5.59,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 99
+                },
+                {
+                  "name": "Eel Nigiri (2pcs)",
                   "price": 5.59,
                   "is_default": false,
                   "is_hidden": false,
@@ -291,15 +291,6 @@
       "name": "SASHIMI BOWL",
       "is_hidden": false,
       "items": [
-        {
-          "name": "Extra Vegetables",
-          "description": "",
-          "price": 1.39,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
         {
           "name": "Sashimi Bowl",
           "description": "Choose a base  a sashimi selection  and up to two sauces  served with crab salad  cucumber  oshinko  edamame  and red pepper",
@@ -440,7 +431,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "No Sauce",
+                  "name": "Yuzu miso",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -456,7 +447,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Yuzu miso",
+                  "name": "No Sauce",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -493,6 +484,15 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
+        },
+        {
+          "name": "Extra Vegetables",
+          "description": "",
+          "price": 1.39,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
         }
       ]
     },
@@ -500,6 +500,15 @@
       "name": "STARTERS & SALADS",
       "is_hidden": false,
       "items": [
+        {
+          "name": "MISO SOUP",
+          "description": "",
+          "price": 2.35,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
         {
           "name": "EDAMAME",
           "description": "",
@@ -519,9 +528,9 @@
           "is_hidden": false
         },
         {
-          "name": "MISO SOUP",
+          "name": "SEAWEED SALAD",
           "description": "",
-          "price": 2.35,
+          "price": 4.49,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -531,15 +540,6 @@
           "name": "Salmon Tower",
           "description": "Salmon Tower: Layers of fresh salmon sushi rice avocado crab salad and cucumber topped with white sauce spicy mayo and eel sauce and garnished with Masago scallions cilantro and sesame seeds served with crispy chips",
           "price": 14.45,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "SEAWEED SALAD",
-          "description": "",
-          "price": 4.49,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -561,6 +561,33 @@
       "is_hidden": true,
       "items": [
         {
+          "name": "Shrimp Tempura Grab and Go",
+          "description": "In: shrimp tempura crab salad cucumber and avocado  Out: spicy mayo eel-sauce and crispy onion",
+          "price": 11.79,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "SPICY TUNA Grab and Go",
+          "description": "In: spicy tuna and cucumber  Out: sesame seed and spicy mayo",
+          "price": 9.95,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Blossom Grab and Go",
+          "description": "In: spicy tuna crab salad and cucumber  Out: seared salmon crispy onion white sauce and eel sauce",
+          "price": 11.79,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
           "name": "California Roll Grab and Go",
           "description": "In: crab salad - avocado - and cucumber Out: sesame seed",
           "price": 8.45,
@@ -570,9 +597,9 @@
           "is_hidden": false
         },
         {
-          "name": "Vege Roll Grab and Go",
-          "description": "In: avocado - cucumber - and pickled carrot  Out: sesame seed",
-          "price": 8.45,
+          "name": "Special Nigiri Combo Grab and go",
+          "description": "2pcs Tuna - 2pcs Salmon - 2pcs Shrimp",
+          "price": 12.89,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -581,15 +608,6 @@
         {
           "name": "Salmon Avocado Grab and Go",
           "description": "In: salmon and avocado Out: sesame seed",
-          "price": 9.95,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "SPICY TUNA Grab and Go",
-          "description": "In: spicy tuna and cucumber  Out: sesame seed and spicy mayo",
           "price": 9.95,
           "options": [],
           "busy_min": 15,
@@ -606,24 +624,6 @@
           "is_hidden": false
         },
         {
-          "name": "White Tiger Grab and Go",
-          "description": "In: shrimp tempura and spicy tuna  Out: crab salad spicy mayo and eel sauce",
-          "price": 11.05,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Blossom Grab and Go",
-          "description": "In: spicy tuna crab salad and cucumber  Out: seared salmon crispy onion white sauce and eel sauce",
-          "price": 11.79,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
           "name": "Red Dragon Grab and Go",
           "description": "In: spicy tuna and cucumber  Out: tuna avocado eel sauce spicy mayo and crispy onion",
           "price": 11.79,
@@ -633,18 +633,18 @@
           "is_hidden": false
         },
         {
-          "name": "Shrimp Tempura Grab and Go",
-          "description": "In: shrimp tempura crab salad cucumber and avocado  Out: spicy mayo eel-sauce and crispy onion",
-          "price": 11.79,
+          "name": "Vege Roll Grab and Go",
+          "description": "In: avocado - cucumber - and pickled carrot  Out: sesame seed",
+          "price": 8.45,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
         },
         {
-          "name": "Special Nigiri Combo Grab and go",
-          "description": "2pcs Tuna - 2pcs Salmon - 2pcs Shrimp",
-          "price": 12.89,
+          "name": "White Tiger Grab and Go",
+          "description": "In: shrimp tempura and spicy tuna  Out: crab salad spicy mayo and eel sauce",
+          "price": 11.05,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -656,24 +656,6 @@
       "name": "Make Your Own Sushi",
       "is_hidden": false,
       "items": [
-        {
-          "name": "Extra Proteins per piece",
-          "description": "",
-          "price": 1.85,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Extra Veggies",
-          "description": "",
-          "price": 1.39,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
         {
           "name": "Make Your Own Sushi",
           "description": "",
@@ -758,6 +740,14 @@
                   "max_quantity": 0
                 },
                 {
+                  "name": "Tamago - IN",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
                   "name": "Carrot  - IN",
                   "price": 0.0,
                   "is_default": false,
@@ -767,14 +757,6 @@
                 },
                 {
                   "name": "Lettuce - IN",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Tamago - IN",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -950,14 +932,6 @@
               "allow_quantity": false,
               "values": [
                 {
-                  "name": "Cusabi - Sauce",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": true,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Lemonaise",
                   "price": 0.0,
                   "is_default": false,
@@ -971,6 +945,14 @@
                   "is_default": false,
                   "is_hidden": false,
                   "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Cusabi - Sauce",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": true,
                   "max_quantity": 0
                 },
                 {
@@ -1035,6 +1017,24 @@
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
+        },
+        {
+          "name": "Extra Proteins per piece",
+          "description": "",
+          "price": 1.85,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Extra Veggies",
+          "description": "",
+          "price": 1.39,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
         }
       ]
     },
@@ -1045,6 +1045,15 @@
         {
           "name": "Atlantic",
           "description": "salmon, avocado, cucumber, lettuce, slaw, masago, crunch, and spicy mayo",
+          "price": 12.85,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Arctic",
+          "description": "spicy tuna, crab salad, cucumber, lettuce, avocado, masago, and sriracha",
           "price": 12.85,
           "options": [],
           "busy_min": 15,
@@ -1070,9 +1079,9 @@
           "is_hidden": true
         },
         {
-          "name": "Arctic",
-          "description": "spicy tuna, crab salad, cucumber, lettuce, avocado, masago, and sriracha",
-          "price": 12.85,
+          "name": "Extra Vegetables",
+          "description": "",
+          "price": 1.39,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -1082,15 +1091,6 @@
           "name": "Southern",
           "description": "shrimp tempura, avocado, cucumber, lettuce, slaw, masago, crab salad, crunch, eel sauce, and spicy mayo",
           "price": 12.85,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Extra Vegetables",
-          "description": "",
-          "price": 1.39,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -1112,45 +1112,9 @@
       "is_hidden": false,
       "items": [
         {
-          "name": "Blossom Roll",
-          "description": "In: spicy tuna crab salad and cucumber  Out: seared salmon crispy onion white sauce and eel sauce",
-          "price": 11.79,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "California Roll Combo",
-          "description": "",
-          "price": 9.95,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Coco Roll",
-          "description": "In: spicy tuna and cucumber  Out: crab salad - seaweed salad - and white sauce",
-          "price": 11.05,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Fire Cracker Roll",
-          "description": "In: shrimp tempura pickled jalapeno and cucumber   Out: seared tuna black rice crunch and soy garlic mayo",
-          "price": 12.85,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Mary roll",
-          "description": "In: crab salad - avocado - and cucumber Out: spicy tuna - scallion - masago - and spicy mayo",
-          "price": 11.05,
+          "name": "California Roll",
+          "description": "In: crab salad - avocado - and cucumber Out: sesame seed",
+          "price": 8.45,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -1166,45 +1130,9 @@
           "is_hidden": false
         },
         {
-          "name": "White Tiger Roll",
-          "description": "In: shrimp tempura and spicy tuna  Out: crab salad spicy mayo and eel sauce",
+          "name": "Mary roll",
+          "description": "In: crab salad - avocado - and cucumber Out: spicy tuna - scallion - masago - and spicy mayo",
           "price": 11.05,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "California Roll",
-          "description": "In: crab salad - avocado - and cucumber Out: sesame seed",
-          "price": 8.45,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Veggie",
-          "description": "In: avocado cucumber and pickled carrot  Out: sesame seed",
-          "price": 8.45,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Salmon Avocado",
-          "description": "In: salmon and avocado Out: sesame seed",
-          "price": 9.95,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Salmon Crunch Roll",
-          "description": "In: salmon - avocado - and cream cheese  Out: crunch and eel sauce",
-          "price": 9.95,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -1229,9 +1157,63 @@
           "is_hidden": false
         },
         {
-          "name": "Rainbow",
-          "description": "In: crab salad cucumber and avocado Out: tuna salmon and yellowtail",
+          "name": "White Tiger Roll",
+          "description": "In: shrimp tempura and spicy tuna  Out: crab salad spicy mayo and eel sauce",
+          "price": 11.05,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Veggie",
+          "description": "In: avocado cucumber and pickled carrot  Out: sesame seed",
+          "price": 8.45,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Salmon Avocado",
+          "description": "In: salmon and avocado Out: sesame seed",
+          "price": 9.95,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Extra Proteins per piece",
+          "description": "",
+          "price": 1.95,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Blossom Roll",
+          "description": "In: spicy tuna crab salad and cucumber  Out: seared salmon crispy onion white sauce and eel sauce",
           "price": 11.79,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Coco Roll",
+          "description": "In: spicy tuna and cucumber  Out: crab salad - seaweed salad - and white sauce",
+          "price": 11.05,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Fire Cracker Roll",
+          "description": "In: shrimp tempura pickled jalapeno and cucumber   Out: seared tuna black rice crunch and soy garlic mayo",
+          "price": 12.85,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -1247,9 +1229,9 @@
           "is_hidden": false
         },
         {
-          "name": "Shrimp Tempura",
-          "description": "In: shrimp tempura crab salad cucumber and avocado  Out: spicy mayo eel-sauce and crispy onion",
-          "price": 11.79,
+          "name": "Salmon Crunch Roll",
+          "description": "In: salmon - avocado - and cream cheese  Out: crunch and eel sauce",
+          "price": 9.95,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -1265,9 +1247,27 @@
           "is_hidden": false
         },
         {
-          "name": "Extra Proteins per piece",
+          "name": "California Roll Combo",
           "description": "",
-          "price": 1.95,
+          "price": 9.95,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Rainbow",
+          "description": "In: crab salad cucumber and avocado Out: tuna salmon and yellowtail",
+          "price": 11.79,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Shrimp Tempura",
+          "description": "In: shrimp tempura crab salad cucumber and avocado  Out: spicy mayo eel-sauce and crispy onion",
+          "price": 11.79,
           "options": [],
           "busy_min": 15,
           "normal_min": 10,
@@ -1281,58 +1281,6 @@
       "items": [
         {
           "name": "Lychee Tea",
-          "description": "",
-          "price": 5.35,
-          "options": [
-            {
-              "name": "Bubble Tea Add On",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Extra Tapioca",
-                  "price": 1.29,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 7,
-          "normal_min": 5,
-          "is_hidden": false
-        },
-        {
-          "name": "Mango Tea",
-          "description": "",
-          "price": 5.35,
-          "options": [
-            {
-              "name": "Bubble Tea Add On",
-              "minimum": 0,
-              "maximum": 50,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Extra Tapioca",
-                  "price": 1.29,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 7,
-          "normal_min": 5,
-          "is_hidden": false
-        },
-        {
-          "name": "Matcha Tea",
           "description": "",
           "price": 5.35,
           "options": [
@@ -1408,6 +1356,58 @@
           "busy_min": 7,
           "normal_min": 5,
           "is_hidden": false
+        },
+        {
+          "name": "Matcha Tea",
+          "description": "",
+          "price": 5.35,
+          "options": [
+            {
+              "name": "Bubble Tea Add On",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Extra Tapioca",
+                  "price": 1.29,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 7,
+          "normal_min": 5,
+          "is_hidden": false
+        },
+        {
+          "name": "Mango Tea",
+          "description": "",
+          "price": 5.35,
+          "options": [
+            {
+              "name": "Bubble Tea Add On",
+              "minimum": 0,
+              "maximum": 50,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Extra Tapioca",
+                  "price": 1.29,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 7,
+          "normal_min": 5,
+          "is_hidden": false
         }
       ]
     },
@@ -1425,26 +1425,8 @@
           "is_hidden": false
         },
         {
-          "name": "Amago Yubu Sushi",
-          "description": "",
-          "price": 11.25,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Avocado Yubu Sushi",
-          "description": "",
-          "price": 11.25,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Salmon Yubu Sushi",
-          "description": "seasoned fried tofu, salmon, crispy onion, and spicy mayo",
+          "name": "Spicy Tuna Yubu Sushi",
+          "description": "seasoned fried tofu, spicy tuna, crispy onion, and spicy mayo",
           "price": 11.25,
           "options": [],
           "busy_min": 15,
@@ -1461,8 +1443,26 @@
           "is_hidden": false
         },
         {
-          "name": "Spicy Tuna Yubu Sushi",
-          "description": "seasoned fried tofu, spicy tuna, crispy onion, and spicy mayo",
+          "name": "Avocado Yubu Sushi",
+          "description": "",
+          "price": 11.25,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Amago Yubu Sushi",
+          "description": "",
+          "price": 11.25,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Salmon Yubu Sushi",
+          "description": "seasoned fried tofu, salmon, crispy onion, and spicy mayo",
           "price": 11.25,
           "options": [],
           "busy_min": 15,
@@ -1475,92 +1475,6 @@
       "name": "Beverage",
       "is_hidden": true,
       "items": [
-        {
-          "name": "Tractor",
-          "description": "",
-          "price": 4.19,
-          "options": [
-            {
-              "name": "Tractor Beverage Option",
-              "minimum": 1,
-              "maximum": 1,
-              "allow_quantity": true,
-              "values": [
-                {
-                  "name": "Lemonade",
-                  "price": 0.0,
-                  "is_default": true,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Mango Peach",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Punch",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
-                  "name": "Strawberry Dragon Fruit",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                }
-              ]
-            }
-          ],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": true
-        },
-        {
-          "name": "Milk Tea Boba Cold",
-          "description": "",
-          "price": 5.35,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Taro Boba Cold",
-          "description": "",
-          "price": 5.35,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "S PELLEGRINO SPRK WATER",
-          "description": "",
-          "price": 2.35,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
-        {
-          "name": "Aqua Panna Water",
-          "description": "",
-          "price": 2.79,
-          "options": [],
-          "busy_min": 15,
-          "normal_min": 10,
-          "is_hidden": false
-        },
         {
           "name": "ITO EN TEA",
           "description": "",
@@ -1581,7 +1495,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Jasmin Tea",
+                  "name": "Oolong Tea",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1597,7 +1511,7 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Oolong Tea",
+                  "name": "Jasmin Tea",
                   "price": 0.0,
                   "is_default": false,
                   "is_hidden": false,
@@ -1639,14 +1553,6 @@
                   "max_quantity": 0
                 },
                 {
-                  "name": "Clementine",
-                  "price": 0.0,
-                  "is_default": false,
-                  "is_hidden": false,
-                  "is_out_of_stock": false,
-                  "max_quantity": 0
-                },
-                {
                   "name": "Grapefruit",
                   "price": 0.0,
                   "is_default": false,
@@ -1661,10 +1567,104 @@
                   "is_hidden": false,
                   "is_out_of_stock": false,
                   "max_quantity": 0
+                },
+                {
+                  "name": "Clementine",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
                 }
               ]
             }
           ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Tractor",
+          "description": "",
+          "price": 4.19,
+          "options": [
+            {
+              "name": "Tractor Beverage Option",
+              "minimum": 1,
+              "maximum": 1,
+              "allow_quantity": true,
+              "values": [
+                {
+                  "name": "Lemonade",
+                  "price": 0.0,
+                  "is_default": true,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Strawberry Dragon Fruit",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Punch",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                },
+                {
+                  "name": "Mango Peach",
+                  "price": 0.0,
+                  "is_default": false,
+                  "is_hidden": false,
+                  "is_out_of_stock": false,
+                  "max_quantity": 0
+                }
+              ]
+            }
+          ],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": true
+        },
+        {
+          "name": "S PELLEGRINO SPRK WATER",
+          "description": "",
+          "price": 2.35,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Milk Tea Boba Cold",
+          "description": "",
+          "price": 5.35,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Aqua Panna Water",
+          "description": "",
+          "price": 2.79,
+          "options": [],
+          "busy_min": 15,
+          "normal_min": 10,
+          "is_hidden": false
+        },
+        {
+          "name": "Taro Boba Cold",
+          "description": "",
+          "price": 5.35,
+          "options": [],
           "busy_min": 15,
           "normal_min": 10,
           "is_hidden": false
